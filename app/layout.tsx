@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Promenade Dental – Award-Winning Dentistry in Toronto",
+  title: "Promenade Dental",
   description:
     "Promenade Dental offers general, cosmetic, and orthodontic dentistry in a warm, modern environment. Book your free consultation today.",
   keywords: "dentist Toronto, cosmetic dentistry, Invisalign, dental implants, teeth whitening",
