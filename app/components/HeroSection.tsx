@@ -1,204 +1,114 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { ArrowRight } from "lucide-react";
-
-const slides = [
-  {
-    subtitle: "Your Smile, Our Passion",
-    title: "Advanced Dental & Cosmetic Care",
-    description:
-      "Experience dentistry redefined — where cutting-edge technology meets compassionate care. Transform your smile with our award-winning team.",
-    cta1: "Book a Free Consultation",
-    cta2: "Explore Services",
-  },
-  {
-    subtitle: "Painless & Comfortable",
-    title: "Gentle Care & Modern Techniques",
-    description:
-      "We believe dental visits shouldn't be something you dread. Our anxiety-free environment and advanced techniques ensure a calm, comfortable experience every time.",
-    cta1: "Meet Our Doctors",
-    cta2: "Our Technology",
-  },
-  {
-    subtitle: "Smile Transformation",
-    title: "Invisalign & Teeth Whitening",
-    description:
-      "Straighter, brighter teeth without the hassle. Our certified Invisalign providers and professional whitening treatments deliver stunning results in record time.",
-    cta1: "Get a Smile Makeover",
-    cta2: "See Before & After",
-  },
-  {
-    subtitle: "Trusted by 5,000+ Patients",
-    title: "Implants & Restorative Dentistry",
-    description:
-      "Missing teeth? Worn enamel? We restore full function and natural beauty with state-of-the-art implants, crowns, and veneers designed to last a lifetime.",
-    cta1: "Start Your Restoration",
-    cta2: "View Gallery",
-  },
-];
-
-const ctaHrefs = [
-  { cta1: "#contact", cta2: "#services" },
-  { cta1: "#about", cta2: "#services" },
-  { cta1: "#contact", cta2: "#services" },
-  { cta1: "#contact", cta2: "#services" },
-];
-
-const slideImages = [
-  "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1600&q=80",
-  "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80",
-  "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1600&q=80",
-  "https://images.pexels.com/photos/19976588/pexels-photo-19976588.jpeg",
-];
-
-const VIDEO_DURATION = 6000;
+import { ArrowRight, Star, ShieldCheck } from "lucide-react";
 
 export default function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const progressIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const mountedRef = useRef(true);
-
-  useEffect(() => {
-    mountedRef.current = true;
-    return () => { mountedRef.current = false; };
-  }, []);
-
-  const cleanupInterval = () => {
-    if (progressIntervalRef.current) {
-      clearInterval(progressIntervalRef.current);
-      progressIntervalRef.current = null;
-    }
-  };
-
-  const startProgress = (slideIndex: number) => {
-    cleanupInterval();
-    setProgress(0);
-    const startTime = Date.now();
-    progressIntervalRef.current = setInterval(() => {
-      if (!mountedRef.current) { cleanupInterval(); return; }
-      const elapsed = Date.now() - startTime;
-      const pct = Math.min((elapsed / VIDEO_DURATION) * 100, 100);
-      setProgress(pct);
-      if (elapsed >= VIDEO_DURATION) {
-        cleanupInterval();
-        if (mountedRef.current) transitionTo((slideIndex + 1) % slides.length);
-      }
-    }, 50);
-  };
-
-  const transitionTo = (index: number) => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setTimeout(() => {
-      if (!mountedRef.current) return;
-      setCurrentSlide(index);
-      setProgress(0);
-      setIsTransitioning(false);
-    }, 500);
-  };
-
-  const handleSlideSwitch = (index: number) => {
-    if (index === currentSlide || isTransitioning) return;
-    cleanupInterval();
-    transitionTo(index);
-  };
-
-  useEffect(() => {
-    if (!isTransitioning) startProgress(currentSlide);
-    return cleanupInterval;
-  }, [currentSlide, isTransitioning]);
-
-  const current = slides[currentSlide];
-  const titleParts = current.title.split(" & ");
-
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end text-white overflow-hidden">
-      {slideImages.map((src, i) => (
-        <div
-          key={i}
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            currentSlide === i && !isTransitioning ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <img src={src} alt="" className="w-full h-full object-cover" loading={i === 0 ? "eager" : "lazy"} />
-        </div>
-      ))}
+    <section 
+      id="home" 
+      className="relative min-h-[100svh] pt-36 pb-20 lg:pt-40 lg:pb-20 flex items-center bg-[#FDE8D8] overflow-hidden"
+    >
+      {/* Background brand elements for 'ownable identity' 
+        Soft, warm organic shapes replacing clinical white 
+      */}
+      <div className="absolute top-0 right-0 w-2/3 h-full bg-gradient-to-bl from-white/40 to-transparent pointer-events-none" />
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-[#ffa07a]/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="absolute inset-0 bg-linear-to-b from-[#0d1f3c]/75 via-[#0d1f3c]/35 to-[#0d1f3c]/85 z-10" />
-      <div className="absolute top-0 right-10 w-96 h-96 rounded-full bg-[#ffa07a]/8 blur-3xl z-10 pointer-events-none" />
-
-      <div
-        className={`relative z-20 w-[90%] mx-auto pt-28 pb-10 lg:pb-36 transition-all duration-500 ${
-          isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-        }`}
-      >
-        <div className="space-y-6 max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2">
-            <span className="w-2 h-2 rounded-full bg-[#F4845F] animate-pulse" />
-            <span className="text-xs font-medium tracking-[0.2em] uppercase font-['Cormorant_Garamond'] text-white/90">
-              {current.subtitle}
+      <div className="w-[92%] max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 lg:gap-8 items-center relative z-10">
+        
+        {/* Left Column: Bold Typography & Content */}
+        <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="inline-flex items-center gap-3 mb-6 animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <span className="w-10 h-[2px] bg-[#ffa07a]" />
+            <span className="text-sm font-['DM_Sans'] text-[#1A365D] tracking-[0.25em] uppercase font-bold">
+              Award-Winning Care Since 2009
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white font-['Poppins']">
-            <span className="block">{titleParts[0]} {titleParts[1] ? "&" : ""}</span>
-            {titleParts[1] && <span className="block text-[#F4A87C]">{titleParts[1]}</span>}
+          <h1 className="font-['Poppins'] font-bold leading-[1.05] text-[#1A365D] mb-6 tracking-tighter animate-fade-in" style={{ animationDelay: "200ms" }}>
+            <span className="block text-[clamp(3.2rem,6vw,5.5rem)]">Advanced Dental</span>
+            <span className="block text-[clamp(3.2rem,6vw,5.5rem)] text-[#ffa07a]">& Cosmetic Care.</span>
           </h1>
 
-          <p className="text-lg md:text-xl leading-relaxed text-white/80 max-w-2xl font-['Poppins'] font-light">
-            {current.description}
+          <p className="text-[clamp(1.1rem,1.5vw,1.25rem)] text-[#1A365D]/80 font-['DM_Sans'] font-medium leading-relaxed mb-10 max-w-xl animate-fade-in" style={{ animationDelay: "300ms" }}>
+            Where cutting-edge technology meets genuine compassion. Step into a warm, stress-free environment designed to bring out your best smile.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-4 pt-2">
+          {/* Primary & Secondary Actions */}
+          <div className="flex flex-col sm:flex-row gap-5 mb-14 animate-fade-in" style={{ animationDelay: "400ms" }}>
             <a
-              href={ctaHrefs[currentSlide].cta1}
-              className="group inline-flex items-center justify-center gap-3 bg-[#ffa07a] text-white font-semibold px-9 py-4.5 hover:bg-[#d05a24] hover:shadow-[0_8px_30px_rgba(232,101,42,0.4)] transition-all duration-300 rounded-full font-['Poppins'] text-base"
+              href="#contact"
+              className="group inline-flex justify-center items-center gap-3 bg-[#1A365D] text-white font-bold font-['DM_Sans'] text-[16px] px-9 py-4.5 rounded-full shadow-[0_12px_30px_rgba(26,54,93,0.15)] hover:shadow-[0_15px_40px_rgba(26,54,93,0.25)] hover:-translate-y-1 hover:bg-[#204273] transition-all duration-300"
             >
-              {current.cta1}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Book Free Consultation
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
             </a>
             <a
-              href={ctaHrefs[currentSlide].cta2}
-              className="inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white font-medium px-9 py-4.5 hover:bg-white hover:text-[#1A365D] transition-all duration-300 rounded-full font-['Poppins'] text-base"
+              href="#services"
+              className="inline-flex justify-center items-center gap-3 border-2 border-[#1A365D]/15 text-[#1A365D] font-bold font-['DM_Sans'] text-[16px] px-9 py-4.5 rounded-full hover:bg-[#1A365D]/5 transition-all duration-300"
             >
-              {current.cta2}
+              Explore Treatments
             </a>
           </div>
 
-          <div className="flex items-center gap-8 pt-4 flex-wrap">
-            {["5★ Google Rating", "5,000+ Happy Patients", "15+ Years Experience"].map((badge) => (
-              <div key={badge} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#F4845F]" />
-                <span className="text-sm text-white/70 font-['Poppins']">{badge}</span>
+          {/* Social Proof / Trust Indicators */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10 pt-8 border-t border-[#1A365D]/10 animate-fade-in" style={{ animationDelay: "500ms" }}>
+            <div className="flex items-center gap-4">
+              <div className="flex -space-x-3">
+                {[11, 32, 44, 25].map((img, i) => (
+                  <img 
+                    key={i} 
+                    src={`https://i.pravatar.cc/100?img=${img}`} 
+                    alt="Patient" 
+                    className="w-12 h-12 rounded-full border-2 border-[#FDE8D8] shadow-sm object-cover" 
+                  />
+                ))}
               </div>
-            ))}
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1 text-[#ffa07a] mb-0.5">
+                  {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                </div>
+                <span className="text-[13px] font-['DM_Sans'] font-bold text-[#1A365D]">5,000+ Happy Patients</span>
+              </div>
+            </div>
+
+            <div className="hidden sm:block w-px h-10 bg-[#1A365D]/10" />
+
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-[#ffa07a]">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[13px] font-['DM_Sans'] font-bold text-[#1A365D]">Top Rated Clinic</span>
+                <span className="text-[12px] font-['DM_Sans'] text-[#1A365D]/60">Certified Specialists</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="relative z-20 pb-10">
-        <div className="w-[90%] mx-auto">
-          <div className="flex items-center gap-3">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handleSlideSwitch(index)}
-                disabled={isTransitioning}
-                className="relative h-1.5 rounded-full overflow-hidden transition-all duration-300 disabled:cursor-not-allowed"
-                style={{ width: currentSlide === index ? "64px" : "24px" }}
-              >
-                <div className="absolute inset-0 bg-white/20 rounded-full" />
-                {currentSlide === index && (
-                  <div
-                    className="absolute inset-y-0 left-0 bg-[#ffa07a] rounded-full transition-none"
-                    style={{ width: `${progress}%` }}
-                  />
-                )}
-              </button>
-            ))}
+        {/* Right Column: Ownable Visual Moment (Split Layout) */}
+        <div className="lg:col-span-5 relative lg:h-[750px] flex items-center justify-center w-full animate-fade-in" style={{ animationDelay: "300ms" }}>
+          
+          {/* Distinctive Architectural Shape - Replaces generic squares/circles */}
+          <div className="absolute inset-0 bg-white rounded-t-[12rem] rounded-b-[3rem] rotate-3 scale-105 shadow-[0_20px_60px_rgba(26,54,93,0.08)] transition-transform duration-700 hover:rotate-6" />
+          
+          <img
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=90"
+            alt="Confident patient smiling after dental treatment"
+            className="relative z-10 w-full h-[500px] lg:h-[90%] object-cover rounded-t-[12rem] rounded-b-[3rem] shadow-xl"
+            loading="eager"
+          />
+
+          {/* Floating Dimensional Card */}
+          <div className="absolute -bottom-6 -left-4 lg:-left-12 z-20 bg-white p-5 lg:p-6 rounded-3xl shadow-[0_20px_50px_rgba(26,54,93,0.12)] border border-white/50 flex items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
+            <div className="w-14 h-14 rounded-2xl bg-[#FDE8D8] text-[#ffa07a] flex items-center justify-center shrink-0">
+               <span className="text-[#1A365D] font-black text-2xl font-['Poppins']">15</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[#1A365D] font-bold font-['Poppins'] text-lg leading-none mb-1">Years of</span>
+              <span className="text-[#1A365D]/60 text-sm font-['DM_Sans'] font-medium uppercase tracking-widest">Excellence</span>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

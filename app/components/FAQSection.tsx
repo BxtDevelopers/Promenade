@@ -1,6 +1,13 @@
+/*
+ * Updates applied based on design feedback:
+ * - Typography: Updated heading typography to Poppins to command visual authority, and body/subtitle text to DM Sans to establish a clear hierarchy and character[cite: 7].
+ * - Cards & Components: Replaced flat accordion borders with subtle shadow layering, premium padding, and smooth transition states to make them feel tactile and interactive[cite: 7].
+ * - Whitespace & Section Differentiation: Applied a soft warm background tone with generous spacing to break visual uniformity and create a comfortable reading rhythm[cite: 7].
+ */
+
 "use client";
 import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, PhoneCall, ArrowRight } from "lucide-react";
 
 const faqs = [
   {
@@ -64,85 +71,114 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<string | null>("0-0");
 
   return (
-    <section id="faq" className="bg-white pt-16 md:pt-24 lg:pt-32">
-      <div className="w-[90%] mx-auto">
-        <div className="grid lg:grid-cols-5 gap-16">
-          {/* Left sticky header */}
-          <div className="lg:col-span-2 lg:sticky lg:top-24 h-fit">
-            <span className="inline-block text-xs font-semibold tracking-[0.28em] uppercase text-[#ffa07a] font-['Cormorant_Garamond'] mb-4">
-              Got Questions?
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium font-['Poppins'] text-[#1A365D] mb-6 leading-tight">
-              Frequently Asked <span className=" text-[#ffa07a]">Questions</span>
+    <section id="faq" className="bg-[#FDE8D8]/30 py-24 lg:py-32 relative overflow-hidden">
+      {/* Background Visual Elements */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/40 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#ffa07a]/5 rounded-full blur-[80px] pointer-events-none translate-y-1/3 -translate-x-1/3" />
+
+      <div className="w-[92%] max-w-7xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-12 gap-16 lg:gap-12">
+          
+          {/* Left Column: Sticky Header & CTA */}
+          <div className="lg:col-span-5 lg:sticky lg:top-32 h-fit">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-10 h-[2px] bg-[#ffa07a]" />
+              <span className="text-sm font-bold tracking-[0.25em] uppercase text-[#ffa07a] font-['DM_Sans']">
+                Got Questions?
+              </span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-['Poppins'] text-[#1A365D] mb-6 leading-[1.15] tracking-tight">
+              Frequently Asked <br />
+              <span className="text-[#ffa07a]">Questions</span>
             </h2>
-            <p className="text-[16px] text-[#64748B] font-['Poppins'] leading-relaxed mb-8 font-light">
+            
+            <p className="text-[17px] text-[#1A365D]/70 font-['DM_Sans'] font-medium leading-relaxed mb-10 max-w-md">
               We understand you may have questions before your first visit. Here are the answers to the most common ones. Can't find what you're looking for?
             </p>
+            
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-[#1A365D] text-white font-semibold font-['Poppins'] text-[15px] px-8 py-4 rounded-full hover:bg-[#ffa07a] transition-colors duration-300"
+              className="group inline-flex items-center gap-3 bg-[#1A365D] text-white font-bold font-['DM_Sans'] text-[16px] px-9 py-4.5 rounded-full hover:bg-[#ffa07a] transition-all duration-300 shadow-[0_10px_30px_rgba(26,54,93,0.15)] hover:shadow-[0_15px_40px_rgba(26,54,93,0.25)] hover:-translate-y-1"
             >
-              Ask Us Directly →
+              Ask Us Directly
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
 
-            {/* Decorative */}
-            <div className="mt-12 hidden lg:block p-7 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm">
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-12 h-12 rounded-xl bg-[#1A365D] flex items-center justify-center">
-                  <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                  </svg>
+            {/* Tactile Support Card */}
+            <div className="mt-14 hidden lg:block p-8 rounded-[2rem] bg-white border border-[#1A365D]/5 shadow-[0_20px_50px_rgba(26,54,93,0.05)] hover:shadow-[0_25px_60px_rgba(26,54,93,0.1)] hover:-translate-y-1 transition-all duration-300">
+              <div className="flex items-center gap-5 mb-5">
+                <div className="w-14 h-14 rounded-2xl bg-[#FDE8D8] text-[#ffa07a] flex items-center justify-center shrink-0">
+                  <PhoneCall className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-[13px] text-[#64748B] font-['Poppins']">Call us anytime</p>
-                  <p className="text-[#1A365D] font-bold font-['Poppins'] text-[16px]">(555) 123-4567</p>
+                  <p className="text-[14px] text-[#1A365D]/60 font-['DM_Sans'] font-bold uppercase tracking-wider mb-1">
+                    Call Us Anytime
+                  </p>
+                  <p className="text-[#1A365D] font-black font-['Poppins'] text-xl">
+                    (555) 123-4567
+                  </p>
                 </div>
               </div>
-              <p className="text-[13px] text-[#64748B] font-['Poppins']">Mon–Fri 8am–7pm · Sat 9am–5pm</p>
+              <div className="w-full h-px bg-[#1A365D]/10 my-4" />
+              <p className="text-[14px] text-[#1A365D]/70 font-['DM_Sans'] font-medium flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-green-500" />
+                Mon–Fri 8am–7pm · Sat 9am–5pm
+              </p>
             </div>
           </div>
 
-          {/* Right accordion */}
-          <div className="lg:col-span-3 space-y-10">
+          {/* Right Column: Accordion */}
+          <div className="lg:col-span-7 space-y-12">
             {faqs.map((category, catIdx) => (
               <div key={catIdx}>
-                <h3 className="text-[13px] font-bold tracking-[0.2em] uppercase text-[#2B6CB0] font-['Poppins'] mb-5">
+                <h3 className="text-[22px] font-bold text-[#1A365D] font-['Poppins'] mb-6 flex items-center gap-4">
                   {category.category}
+                  <span className="h-px flex-1 bg-[#1A365D]/10" />
                 </h3>
-                <div className="space-y-3">
+                
+                <div className="space-y-4">
                   {category.questions.map((item, qIdx) => {
                     const key = `${catIdx}-${qIdx}`;
                     const isOpen = openIndex === key;
+                    
                     return (
                       <div
                         key={key}
-                        className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                        className={`rounded-2xl transition-all duration-300 overflow-hidden border ${
                           isOpen
-                            ? "border-[#ffa07a]/40 bg-white shadow-md"
-                            : "border-gray-100 bg-white hover:border-gray-200 hover:shadow-sm"
+                            ? "bg-white border-[#ffa07a]/30 shadow-[0_15px_35px_rgba(26,54,93,0.08)]"
+                            : "bg-white border-[#1A365D]/5 shadow-[0_4px_15px_rgba(26,54,93,0.03)] hover:shadow-[0_10px_25px_rgba(26,54,93,0.06)] hover:border-[#ffa07a]/20"
                         }`}
                       >
                         <button
-                          className="w-full flex items-center justify-between gap-4 px-7 py-5 text-left"
+                          className="w-full flex items-center justify-between gap-6 px-8 py-6 text-left group cursor-pointer"
                           onClick={() => setOpenIndex(isOpen ? null : key)}
                         >
-                          <span className="font-semibold text-[#1A365D] font-['Poppins'] text-[15px] pr-2">
+                          <span className={`font-bold font-['Poppins'] text-[17px] transition-colors duration-300 ${isOpen ? "text-[#ffa07a]" : "text-[#1A365D] group-hover:text-[#ffa07a]"}`}>
                             {item.q}
                           </span>
                           <div
-                            className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-colors ${
-                              isOpen ? "bg-[#ffa07a] text-white" : "bg-gray-100 text-[#1A365D]"
+                            className={`shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+                              isOpen 
+                                ? "bg-[#ffa07a] text-white rotate-180 shadow-md" 
+                                : "bg-[#FDE8D8]/50 text-[#1A365D] group-hover:bg-[#FDE8D8]"
                             }`}
                           >
-                            {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                            {isOpen ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
                           </div>
                         </button>
+                        
                         <div
-                          className={`transition-all duration-300 overflow-hidden ${
-                            isOpen ? "max-h-64 pb-6 px-7" : "max-h-0"
+                          className={`transition-all duration-500 ease-[0.22,1,0.36,1] ${
+                            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                           }`}
                         >
-                          <p className="text-[#64748B] font-['Poppins'] text-[15px] leading-relaxed font-light">{item.a}</p>
+                          <div className="pb-8 px-8 border-t border-[#1A365D]/5 pt-5">
+                            <p className="text-[#1A365D]/70 font-['DM_Sans'] text-[16px] leading-relaxed font-medium">
+                              {item.a}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     );

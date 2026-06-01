@@ -1,168 +1,113 @@
-import { Phone, Mail, MapPin } from "lucide-react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaXTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
+/*
+ * Updates applied based on design feedback:
+ * - Typography: Implemented Poppins for headers and the logo, while using DM Sans for navigation links and body text to ensure strong hierarchy and character[cite: 9].
+ * - Color System & Distinctiveness: Anchored the bottom of the page with the rich dark navy (#1A365D) to create a clear visual cadence, offset by the warm accent color (#ffa07a) for hover states[cite: 9].
+ * - Whitespace & Layout: Built with a generous spacing scale, giving the columns and content blocks room to breathe, elevating the premium feel[cite: 9].
+ * - Micro-interactions: Added refined, smooth hover states on all links and social icons for tactile feedback without excessive motion[cite: 9].
+ */
 
-const footerLinks = {
-  Services: [
-    "General Dentistry",
-    "Cosmetic Dentistry",
-    "Orthodontics & Invisalign",
-    "Dental Implants",
-    "Teeth Whitening",
-    "Pediatric Dentistry",
-    "Emergency Dentistry",
-  ],
-  "Patient Info": [
-    "New Patients",
-    "Insurance & Financing",
-    "Patient Forms",
-    "Smile Gallery",
-    "Dental Blog",
-    "Refer a Friend",
-  ],
-  Clinic: [
-    "About Us",
-    "Meet the Team",
-    "Careers",
-    "Technology & Equipment",
-    "Testimonials",
-    "Contact Us",
-  ],
-};
-
-const socials = [
-  { icon: FaFacebookF, href: "#", label: "Facebook" },
-  { icon: FaInstagram, href: "#", label: "Instagram" },
-  { icon: FaXTwitter, href: "#", label: "X" },
-  { icon: FaYoutube, href: "#", label: "YouTube" },
-];
+"use client";
+import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import { FaFacebook,FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F1E35] text-white">
-      {/* Top band */}
-      <div className="bg-[#ffa07a] py-4">
-        <div className="w-[95%] mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white font-['Poppins'] text-[15px] font-medium">
-            🎉 New Patient Special: Exam + X-rays at just $99 on your first visit. Limited spots available.
-          </p>
-          <a
-            href="#contact"
-            className="shrink-0 bg-white text-[#ffa07a] font-bold font-['Poppins'] text-[14px] px-7 py-2.5 rounded-full hover:bg-gray-100 transition-colors"
-          >
-            Claim Offer →
-          </a>
-        </div>
-      </div>
+    <footer className="bg-[#1A365D] relative overflow-hidden pt-24 pb-8 border-t border-[#1A365D]/20">
+      {/* Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#ffa07a]/30 to-transparent" />
+      <div className="absolute -bottom-[50%] -right-[10%] w-[80vw] h-[80vw] rounded-full bg-[#ffa07a]/5 blur-[120px] pointer-events-none" />
 
-      {/* Main footer */}
-      <div className="w-[95%] mx-auto py-20">
-        <div className="grid lg:grid-cols-5 gap-12">
-          {/* Brand column - text only */}
-          <div className="lg:col-span-2 space-y-7">
-            <div className="flex flex-col leading-none">
-              <span className="text-3xl font-bold font-['Cormorant_Garamond'] tracking-tight text-white">
-                Promenade Dental
+      <div className="w-[92%] max-w-7xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+          
+          {/* Brand Column */}
+          <div className="lg:col-span-4 lg:pr-8">
+            <a href="#home" className="flex flex-col leading-none group mb-6 inline-block">
+              <span className="text-3xl font-black font-['Poppins'] text-white tracking-tight">
+                Promenade<span className="text-[#ffa07a] ml-1.5 inline-block group-hover:-translate-y-1 transition-transform duration-300">✦</span>
               </span>
-              <span className="text-[11px] tracking-[0.22em] uppercase text-white/40 font-['Poppins'] mt-1">
-                Studio · Est. 2009
+              <span className="text-[11px] tracking-[0.4em] uppercase font-['DM_Sans'] font-medium mt-1.5 text-white/50">
+                Dental Studio
               </span>
-            </div>
-
-            <p className="text-white/60 font-['Poppins'] text-[15px] leading-relaxed max-w-xs font-light">
-              Award-winning dental care delivered with compassion, precision, and a genuine love for creating beautiful smiles.
+            </a>
+            <p className="text-white/70 font-['DM_Sans'] text-[15px] leading-relaxed mb-8 max-w-sm">
+              Where cutting-edge technology meets genuine compassion. We are dedicated to providing award-winning care in a warm, stress-free environment.
             </p>
-
-            {/* Contact info */}
-            <div className="space-y-4">
-              {[
-                { icon: Phone, text: "(555) 123-4567", href: "tel:+15551234567" },
-                { icon: Mail, text: "hello@promenadedental.ca", href: "mailto:hello@promenadedental.ca" },
-                { icon: MapPin, text: "123 Smile Ave, Suite 200, Toronto ON M5V 1J2", href: "#" },
-              ].map((item) => (
-                <a
-                  key={item.text}
-                  href={item.href}
-                  className="flex items-start gap-3 text-white/60 hover:text-[#F4845F] transition-colors text-[15px] font-['Poppins'] font-light"
-                >
-                  <item.icon className="w-4 h-4 mt-0.5 shrink-0 text-[#F4845F]" />
-                  {item.text}
-                </a>
-              ))}
-            </div>
-
-            {/* Socials */}
-            <div className="flex items-center gap-3">
-              {socials.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#ffa07a] transition-colors"
-                >
-                  <social.icon className="w-4 h-4" />
+            <div className="flex items-center gap-4">
+              {[FaFacebook, FaXTwitter, FaInstagram].map((Icon, i) => (
+                <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:bg-[#ffa07a] hover:text-[#1A365D] hover:-translate-y-1 transition-all duration-300">
+                  <Icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Links */}
-          {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category}>
-              <h4 className="text-white font-bold font-['Poppins'] text-[13px] mb-6 uppercase tracking-[0.2em]">
-                {category}
-              </h4>
-              <ul className="space-y-3.5">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-white/50 hover:text-[#F4845F] font-['Poppins'] text-[15px] transition-colors font-light"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+          {/* Quick Links */}
+          <div className="lg:col-span-2 lg:col-start-6">
+            <h4 className="text-white font-bold font-['Poppins'] text-[18px] mb-6">Explore</h4>
+            <ul className="space-y-4">
+              {['Home', 'About Us', 'Treatments', 'Patient Reviews', 'FAQ'].map((link) => (
+                <li key={link}>
+                  <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="text-white/70 font-['DM_Sans'] text-[15px] hover:text-[#ffa07a] transition-colors flex items-center gap-2 group">
+                    <ArrowRight className="w-3 h-3 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Newsletter */}
-        <div className="mt-16 p-9 rounded-3xl bg-white/5 border border-white/10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div>
-              <h4 className="text-2xl font-semibold font-['Cormorant_Garamond'] text-white mb-1">
-                Get Dental Tips & Exclusive Offers
-              </h4>
-              <p className="text-white/50 font-['Poppins'] text-[15px] font-light">
-                Subscribe to our newsletter for oral health tips, special promotions, and clinic updates.
-              </p>
-            </div>
-            <div className="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-1 lg:w-72 px-5 py-3.5 rounded-full bg-white/10 border border-white/20 text-white font-['Poppins'] text-[15px] placeholder-white/30 focus:outline-none focus:border-[#F4845F] transition-colors"
-              />
-              <button className="shrink-0 bg-[#ffa07a] text-white font-bold font-['Poppins'] text-[14px] px-7 py-3.5 rounded-full hover:bg-[#d05a24] transition-all">
-                Subscribe
-              </button>
-            </div>
+          {/* Services */}
+          <div className="lg:col-span-2">
+            <h4 className="text-white font-bold font-['Poppins'] text-[18px] mb-6">Services</h4>
+            <ul className="space-y-4">
+              {['General Dentistry', 'Cosmetic Care', 'Invisalign', 'Dental Implants', 'Emergency Care'].map((link) => (
+                <li key={link}>
+                  <a href="#services" className="text-white/70 font-['DM_Sans'] text-[15px] hover:text-[#ffa07a] transition-colors flex items-center gap-2 group">
+                    <ArrowRight className="w-3 h-3 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="lg:col-span-3">
+            <h4 className="text-white font-bold font-['Poppins'] text-[18px] mb-6">Contact</h4>
+            <ul className="space-y-5">
+              <li>
+                <a href="#" className="flex items-start gap-3 text-white/70 hover:text-[#ffa07a] transition-colors group">
+                  <MapPin className="w-5 h-5 mt-0.5 shrink-0 text-white/40 group-hover:text-[#ffa07a] transition-colors" />
+                  <span className="font-['DM_Sans'] text-[15px] leading-relaxed">
+                    123 Smile Avenue, Suite 200<br />Toronto, ON M5V 1J2
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+15551234567" className="flex items-center gap-3 text-white/70 hover:text-[#ffa07a] transition-colors group">
+                  <Phone className="w-5 h-5 shrink-0 text-white/40 group-hover:text-[#ffa07a] transition-colors" />
+                  <span className="font-['DM_Sans'] text-[15px]">(555) 123-4567</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@promenadedental.ca" className="flex items-center gap-3 text-white/70 hover:text-[#ffa07a] transition-colors group">
+                  <Mail className="w-5 h-5 shrink-0 text-white/40 group-hover:text-[#ffa07a] transition-colors" />
+                  <span className="font-['DM_Sans'] text-[15px]">hello@promenade.ca</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-[14px] text-white/40 font-['Poppins']">
-          <p>© {new Date().getFullYear()} Promenade Dental Studio. All rights reserved.</p>
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/40 font-['DM_Sans'] text-[13px]">
+            &copy; {new Date().getFullYear()} Promenade Dental Studio. All rights reserved.
+          </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white/70 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white/70 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white/70 transition-colors">Accessibility</a>
+            <a href="#" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Privacy Policy</a>
+            <a href="#" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
