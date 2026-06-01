@@ -21,7 +21,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" className="bg-white pt-24 lg:pt-36 overflow-hidden" ref={ref}>
-      <div className="w-[90%] mx-auto">
+      <div className="w-[92%] max-w-7xl mx-auto">
 
         {/* Editorial section marker */}
         <div className="flex items-center gap-6 mb-20">
