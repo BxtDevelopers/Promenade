@@ -1,24 +1,26 @@
-import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/ContactSection";
-import CTASection from "./components/CtaSection";
-import FAQSection from "./components/FAQSection";
-import Footer from "./components/Footer";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
+import AboutSection from "./components/Hero1/AboutSection";
+import ContactSection from "./components/Hero1/ContactSection";
+import CTASection from "./components/Hero1/CtaSection";
+import FAQSection from "./components/Hero1/FaqSection";
+import Footer from "./components/Hero1/Footer";
+import HeroSection from "./components/Hero1/HeroSection";
+import Navbar from "./components/Hero1/Navbar";
+import DentalProblemsSection from "./components/Hero1/ProblemCards";
+import ServicesSection from "./components/Hero1/ServicesSection";
+import StatsBar from "./components/Hero1/Stats";
+import Team from "./components/Hero1/Team";
 import ReviewsSection from "./components/ReviewsSection";
-import ServicesSection from "./components/ServicesSection";
-import StatsBar from "./components/StatsBar";
-import Team from "./components/Team";
 
 
-export default function HomePage() {
+export default function Page() {
   return (
-    <main className="antialiased">
+    <main className="antialiased bg-[#fdfaf5]">
       <Navbar />
       <HeroSection />
       <StatsBar />
       <AboutSection />
       <ServicesSection />
+      <DentalProblemsSection />
       <Team/>
       <CTASection/>
       <ReviewsSection />
