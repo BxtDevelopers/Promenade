@@ -115,7 +115,7 @@ export default function DentalProblemsSection() {
   return (
     <section
       id="problems"
-      className="relative min-h-screen py-20 lg:py-0 overflow-hidden mt-32"
+      className="relative min-h-screen py-20 lg:py-60 overflow-hidden mt-32"
     >
       {/* Replace with your image */}
       <div
