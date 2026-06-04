@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import AnimatedHeading from "../common/AnimatedHeading";
 
 const hours = [
   { day: "Monday – Friday", time: "8:00 AM – 7:00 PM" },
@@ -27,9 +28,14 @@ export default function ContactSection() {
           <span className="inline-block text-sm font-semibold tracking-[0.28em] uppercase text-[#ffa07a] font-['Cormorant_Garamond'] mb-4">
             Get in Touch
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5">
+            <AnimatedHeading
+            text="Book Your"
+            highlight="Appointment"
+            className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5 leading-tight"
+          />
+          {/* <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5">
             Book Your <span className=" text-[#ffa07a]">Appointment</span>
-          </h2>
+          </h2> */}
           <p className="text-xl text-[#64748B] font-['Poppins'] max-w-2xl mx-auto font-medium leading-relaxed">
             Ready for a healthier, more beautiful smile? Fill out the form below and our team will confirm your appointment within 2 hours.
           </p>

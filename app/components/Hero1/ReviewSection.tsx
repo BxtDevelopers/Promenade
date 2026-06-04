@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import AnimatedHeading from "../common/AnimatedHeading";
 
 const reviews = [
   {
@@ -86,9 +87,14 @@ export default function ReviewsSection() {
           <span className="inline-block text-xs font-semibold tracking-[0.28em] uppercase text-[#ffa07a] font-['Cormorant_Garamond'] mb-4">
             Patient Stories
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium font-['Sora'] text-[#1A365D] mb-5">
-            What Our Patients <span className=" text-[#ffa07a]">Say</span>
-          </h2>
+          <AnimatedHeading
+            text="What Our"
+            highlight="Patients Say"
+            className="text-4xl md:text-5xl lg:text-7xl font-medium font-['Sora'] text-[#1A365D] mb-5 leading-tight"
+          />
+          {/* <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium font-['Sora'] text-[#1A365D] mb-5">
+            What Our <span className=" text-[#ffa07a]">Patients Say</span>
+          </h2> */}
           <div className="flex items-center justify-center gap-3">
             <div className="flex">
               {[...Array(5)].map((_, i) => (

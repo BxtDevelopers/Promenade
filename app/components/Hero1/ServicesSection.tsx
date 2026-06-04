@@ -9,6 +9,7 @@ import {
   Siren,
   ArrowRight,
 } from "lucide-react";
+import AnimatedHeading from "../common/AnimatedHeading";
 
 const services = [
   {
@@ -113,7 +114,7 @@ export default function ServicesSection() {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <section id="services" className=" lg:pt-32">
+    <section id="services" className=" ">
       <div className="w-[90%] mx-auto">
         {/* Header */}
         <div className="flex flex-col lg:justify-between mb-16 gap-6">
@@ -121,11 +122,17 @@ export default function ServicesSection() {
             <span className="inline-block text-sm font-semibold tracking-[0.28em] uppercase text-[#ffa07a] font-['Cormorant_Garamond'] mb-4">
               What We Offer
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5 ">
-             Our Comprehensive <br className="hidden lg:block"/> <span className=" text-[#ffa07a]">Dental Services</span>
-            </h2>
+            <AnimatedHeading
+              text="Our Comprehensive"
+              highlight="Dental Services"
+              className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5 leading-tight"
+            />
+
+            {/* <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-5 ">
+             Our Comprehensive <span className=" text-[#ffa07a]">Dental Services</span>
+            </h2> */}
           </div>
-          <p className="text-xl text-[#64748B] font-['Poppins'] max-w-lg leading-relaxed  font-medium">
+          <p className="text-xl text-[#64748B] font-['Poppins'] max-w-4xl leading-relaxed  font-medium">
             From your first check-up to a complete smile transformation, we provide every dental service your family needs under one roof.
           </p>
         </div>

@@ -50,7 +50,7 @@ export default function StatsBar() {
   }, []);
 
   return (
-    <div ref={ref} className="bg-[#fdfaf5] border-y border-gray-100 shadow-lg shadow-gray-200 z-10 mb-6 ">
+    <div ref={ref} className="bg-[#fdfaf5] border-y border-gray-100 shadow-lg shadow-gray-200 z-10 mb-6">
       <div className="w-[95%] mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-gray-100 ">
           {stats.map((stat, i) => (

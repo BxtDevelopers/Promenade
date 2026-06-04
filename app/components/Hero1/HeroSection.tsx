@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { gsap } from "gsap";
 
 const slides = [
   {
@@ -53,18 +54,164 @@ const slideImages = [
 
 const VIDEO_DURATION = 6000;
 
+// Split a title on " & " and return structured parts
+function parseTitleParts(title: string) {
+  const parts = title.split(" & ");
+  return {
+    line1: parts[0] + (parts[1] ? " &" : ""),
+    line2: parts[1] ?? null,
+  };
+}
+
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+
   const progressIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const mountedRef = useRef(true);
 
+  // Animation target refs
+  const badgeRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descRef = useRef<HTMLParagraphElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+  const statsRef = useRef<HTMLDivElement>(null);
+  const dotsRef = useRef<HTMLDivElement>(null);
+
+  // ─── Mount animation (runs once on load) ───────────────────────────────────
   useEffect(() => {
     mountedRef.current = true;
-    return () => { mountedRef.current = false; };
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ delay: 0.1 });
+
+      // Badge slides up
+      tl.fromTo(
+        badgeRef.current,
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }
+      );
+
+      // Title words cascade in (same style as AnimatedHeading)
+      const words = titleRef.current?.querySelectorAll(".hero-word");
+      if (words?.length) {
+        tl.fromTo(
+          words,
+          { y: "110%", opacity: 0, rotateX: -40, transformOrigin: "50% 0%" },
+          {
+            y: "0%",
+            opacity: 1,
+            rotateX: 0,
+            duration: 0.7,
+            ease: "power3.out",
+            stagger: 0.07,
+          },
+          "-=0.25"
+        );
+      }
+
+      // Description fades + slides up
+      tl.fromTo(
+        descRef.current,
+        { y: 18, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.55, ease: "power2.out" },
+        "-=0.3"
+      );
+
+      // CTA buttons scale + fade in
+      tl.fromTo(
+        ctaRef.current?.children ?? [],
+        { y: 14, opacity: 0, scale: 0.97 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 0.45,
+          ease: "back.out(1.4)",
+          stagger: 0.1,
+        },
+        "-=0.25"
+      );
+
+      // Stats badges stagger in
+      tl.fromTo(
+        statsRef.current?.children ?? [],
+        { x: -12, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.4,
+          ease: "power2.out",
+          stagger: 0.08,
+        },
+        "-=0.2"
+      );
+
+      // Slide dots drop in from below
+      tl.fromTo(
+        dotsRef.current,
+        { y: 16, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" },
+        "-=0.15"
+      );
+    });
+
+    return () => {
+      ctx.revert();
+      mountedRef.current = false;
+    };
   }, []);
 
+  // ─── Re-animate content on slide change ────────────────────────────────────
+  useEffect(() => {
+    if (isTransitioning) return;
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ delay: 0.15 });
+
+      tl.fromTo(
+        badgeRef.current,
+        { y: 12, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }
+      );
+
+      const words = titleRef.current?.querySelectorAll(".hero-word");
+      if (words?.length) {
+        tl.fromTo(
+          words,
+          { y: "110%", opacity: 0, rotateX: -40, transformOrigin: "50% 0%" },
+          {
+            y: "0%",
+            opacity: 1,
+            rotateX: 0,
+            duration: 0.65,
+            ease: "power3.out",
+            stagger: 0.065,
+          },
+          "-=0.2"
+        );
+      }
+
+      tl.fromTo(
+        descRef.current,
+        { y: 14, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" },
+        "-=0.25"
+      );
+
+      tl.fromTo(
+        ctaRef.current?.children ?? [],
+        { y: 10, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.38, ease: "power2.out", stagger: 0.08 },
+        "-=0.2"
+      );
+    });
+
+    return () => ctx.revert();
+  }, [currentSlide, isTransitioning]);
+
+  // ─── Progress / auto-advance logic (unchanged) ─────────────────────────────
   const cleanupInterval = () => {
     if (progressIntervalRef.current) {
       clearInterval(progressIntervalRef.current);
@@ -110,11 +257,35 @@ export default function HeroSection() {
     return cleanupInterval;
   }, [currentSlide, isTransitioning]);
 
+  // ─── Render ─────────────────────────────────────────────────────────────────
   const current = slides[currentSlide];
-  const titleParts = current.title.split(" & ");
+  const { line1, line2 } = parseTitleParts(current.title);
+
+  // Helper: wrap each word in the clip+word span pair (same pattern as AnimatedHeading)
+  const renderWords = (text: string, colorClass = "text-white") =>
+    text.split(" ").map((word, i, arr) => (
+      <span
+        key={i}
+        className="inline-block overflow-hidden"
+        style={{ verticalAlign: "bottom" }}
+      >
+        <span
+          className={`hero-word inline-block will-change-transform ${colorClass}`}
+          style={{ opacity: 0 }}
+        >
+          {word}
+        </span>
+        {i < arr.length - 1 && <span className="inline-block">&nbsp;</span>}
+      </span>
+    ));
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-end text-white overflow-hidden">
+    <div className='overflow-hidden'>
+    <section
+      id="home"
+      className="relative min-h-screen flex flex-col justify-end text-white overflow-hidden"
+    >
+      {/* Background images */}
       {slideImages.map((src, i) => (
         <div
           key={i}
@@ -122,38 +293,62 @@ export default function HeroSection() {
             currentSlide === i && !isTransitioning ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={src} alt="" className="w-full h-full object-cover" loading={i === 0 ? "eager" : "lazy"} />
+          <img
+            src={src}
+            alt=""
+            className="w-full h-full object-cover"
+            loading={i === 0 ? "eager" : "lazy"}
+          />
         </div>
       ))}
 
       <div className="absolute inset-0 bg-black/70 z-10" />
-      <div className="absolute top-0 right-10 w-96 h-96 rounded-full bg-[#ffa07a]/8 blur-3xl z-10 pointer-events-none" />
+      {/* <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 rounded-full bg-[#ffa07a]/8 blur-3xl z-10 pointer-events-none" /> */}
 
-      <div
-        className={`relative z-20 w-[90%] mx-auto pt-32 pb-10 lg:pb-36 transition-all duration-500 ${
-          isTransitioning ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-        }`}
-      >
+      {/* Main content — remove the old opacity/translate transition; GSAP handles it */}
+      <div className="relative z-20 w-[90%] mx-auto pt-32 pb-10 lg:pb-36">
         <div className="space-y-6 max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2">
+
+          {/* Subtitle badge */}
+          <div
+            ref={badgeRef}
+            style={{ opacity: 0 }}
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2"
+          >
             <span className="w-2 h-2 rounded-full bg-[#F4845F] animate-pulse" />
             <span className="text-xs font-medium tracking-[0.2em] uppercase font-['Cormorant_Garamond'] text-white/90">
               {current.subtitle}
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white font-['Sora']">
-            <span className="block">{titleParts[0]} {titleParts[1] ? "&" : ""}</span>
-            {titleParts[1] && <span className="block text-[#F4A87C]">{titleParts[1]}</span>}
+          {/* Title — word-split for GSAP, same architecture as AnimatedHeading */}
+          <h1
+            ref={titleRef}
+            className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight font-['Sora']"
+            style={{ perspective: "600px" }}
+          >
+            <span className="block">{renderWords(line1)}</span>
+            {line2 && (
+              <span className="block">
+                {renderWords(line2, "text-[#F4A87C]")}
+              </span>
+            )}
           </h1>
 
-          <p className="text-lg md:text-xl leading-relaxed text-white/80 max-w-2xl font-['Poppins'] font-light">
+          {/* Description */}
+          <p
+            ref={descRef}
+            style={{ opacity: 0 }}
+            className="text-lg md:text-xl leading-relaxed text-white/80 max-w-2xl font-['Poppins'] font-light"
+          >
             {current.description}
           </p>
 
-          <div className="flex flex-col md:flex-row gap-4 pt-2">
+          {/* CTAs */}
+          <div ref={ctaRef} className="flex flex-col md:flex-row gap-4 pt-2">
             <a
               href={ctaHrefs[currentSlide].cta1}
+              style={{ opacity: 0 }}
               className="group inline-flex items-center justify-center gap-3 bg-[#ffa07a] text-white font-semibold px-9 py-4.5 hover:bg-[#d05a24] hover:shadow-[0_8px_30px_rgba(232,101,42,0.4)] transition-all duration-300 rounded-full font-['Poppins'] text-base"
             >
               {current.cta1}
@@ -161,15 +356,17 @@ export default function HeroSection() {
             </a>
             <a
               href={ctaHrefs[currentSlide].cta2}
+              style={{ opacity: 0 }}
               className="inline-flex items-center justify-center gap-3 border-2 border-white/60 text-white font-medium px-9 py-4.5 hover:bg-white hover:text-[#1A365D] transition-all duration-300 rounded-full font-['Poppins'] text-base"
             >
               {current.cta2}
             </a>
           </div>
 
-          <div className="flex items-center gap-8 pt-4 flex-wrap">
+          {/* Trust badges */}
+          <div ref={statsRef} className="flex items-center gap-8 pt-4 flex-wrap">
             {["5★ Google Rating", "5,000+ Happy Patients", "15+ Years Experience"].map((badge) => (
-              <div key={badge} className="flex items-center gap-2">
+              <div key={badge} className="flex items-center gap-2" style={{ opacity: 0 }}>
                 <div className="w-1.5 h-1.5 rounded-full bg-[#F4845F]" />
                 <span className="text-lg text-white/70 font-['Poppins']">{badge}</span>
               </div>
@@ -178,7 +375,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="relative z-20 pb-10">
+      {/* Slide dots */}
+      <div ref={dotsRef} className="relative z-20 pb-10" style={{ opacity: 0 }}>
         <div className="w-[90%] mx-auto">
           <div className="flex items-center gap-3">
             {slides.map((_, index) => (
@@ -202,5 +400,6 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

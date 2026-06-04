@@ -5,6 +5,7 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
+import { MdCelebration } from "react-icons/md";
 
 const footerLinks = {
   Services: [
@@ -47,8 +48,8 @@ export default function Footer() {
       {/* Top band */}
       <div className="bg-[#ffa07a] py-4">
         <div className="w-[95%] mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white font-['Poppins'] text-lg font-medium">
-            🎉 New Patient Special: Exam + X-rays at just $99 on your first visit. Limited spots available.
+          <p className="text-white font-['Poppins'] text-lg font-medium flex flex-wrap gap-3">
+           <MdCelebration className="hidden md:block md:w-6 md:h-6" /> New Patient Special: Exam + X-rays at just $99 on your first visit. Limited spots available.
           </p>
           <a
             href="#contact"
@@ -65,12 +66,7 @@ export default function Footer() {
           {/* Brand column - text only */}
           <div className="lg:col-span-2 space-y-7">
             <div className="flex flex-col leading-none">
-              <span className="text-3xl font-bold font-['Cormorant_Garamond'] tracking-tight text-white">
-                Promenade Dental
-              </span>
-              <span className="text-[11px] tracking-[0.22em] uppercase text-white/40 font-['Poppins'] mt-1">
-                Studio · Est. 2009
-              </span>
+              <img src='/assets/PDlogo_red3.webp' alt='Promenade Dental Logo' className="w-72 h-auto" />
             </div>
 
             <p className="text-white/60 font-['Poppins'] text-[15px] leading-relaxed max-w-xs font-light">

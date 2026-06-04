@@ -126,11 +126,11 @@ export default function DentalProblemsSection() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/80" />
 
       <div className="relative z-10 h-full flex items-center">
         <div className="w-[92%] mx-auto">
-          <div className="grid lg:grid-cols-[520px_1fr] gap-10 items-center">
+          <div className="grid lg:grid-cols-[520px_1fr] gap-10 items-center min-w-0">
             {/* Left Content */}
             <div className="max-w-xl">
               <span className="inline-flex items-center px-6 py-2 rounded-full border border-white/30 text-white text-sm font-medium font-['Poppins'] mb-8">
@@ -155,12 +155,12 @@ export default function DentalProblemsSection() {
             </div>
 
             {/* Right Cards */}
-            <div className="relative overflow-hidden">
-              <div
-                ref={scrollRef}
-                /* Removed snap-x and snap-mandatory here */
-                className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
-              >
+            <div className="relative overflow-hidden min-w-0 max-w-full">
+            <div
+              ref={scrollRef}
+              className="flex gap-6 overflow-hidden scrollbar-hide pb-4"
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
                 {problems.map((problem) => {
                   const Icon = problem.icon;
 
@@ -168,7 +168,7 @@ export default function DentalProblemsSection() {
                     <div
                       key={problem.number}
                       /* Removed snap-start here */
-                      className="group relative min-w-[340px] md:min-w-[380px] h-[580px] rounded-[32px] overflow-hidden shrink-0"
+                      className="group relative min-w-[340px] md:min-w-[380px] h-[580px] rounded-[32px] overflow-hidden shrink-0 scroll-hide"
                     >
                       <img
                         src={problem.image}

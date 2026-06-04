@@ -73,7 +73,7 @@ export default function FAQSection() {
               Got Questions?
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-['Sora'] text-[#1A365D] mb-6 leading-tight">
-              Frequently Asked <span className=" text-[#ffa07a]">Questions</span>
+              Frequently <br/> Asked <span className=" text-[#ffa07a]">Questions</span>
             </h2>
             <p className="text-xl text-[#64748B] font-['Poppins'] leading-relaxed mb-8 font-medium">
               We understand you may have questions before your first visit. Here are the answers to the most common ones. Can't find what you're looking for?
