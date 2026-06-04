@@ -44,40 +44,6 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Info panel */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Map placeholder */}
-            <div className="rounded-3xl overflow-hidden h-56 bg-[#1A365D] relative shadow-xl">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <MapPin className="w-10 h-10 mx-auto mb-2 text-[#F4845F]" />
-                  <p className="font-['Poppins'] font-semibold text-[16px]">Promenade Dental Studio</p>
-                  <p className="text-sm text-white/70 font-['Poppins']">123 Smile Avenue, Suite 200</p>
-                  <p className="text-sm text-white/70 font-['Poppins']">Toronto, ON M5V 1J2</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact cards */}
-            {[
-              { icon: Phone, label: "Call Us", value: "(555) 123-4567", href: "tel:+15551234567" },
-              { icon: Mail, label: "Email Us", value: "hello@promenadedental.ca", href: "mailto:hello@promenadedental.ca" },
-              { icon: MapPin, label: "Visit Us", value: "123 Smile Ave, Suite 200, Toronto ON", href: "#" },
-            ].map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="flex items-center gap-5 p-5 bg-white rounded-2xl border border-gray-100 hover:border-[#ffa07a]/30 hover:shadow-lg transition-all group shadow-sm"
-              >
-                <div className="w-13 h-13 rounded-xl bg-[#1A365D] flex items-center justify-center shrink-0 group-hover:bg-[#ffa07a] transition-colors p-3">
-                  <item.icon className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-[13px] text-[#64748B] font-['Poppins']">{item.label}</p>
-                  <p className="text-[15px] font-semibold text-[#1A365D] font-['Poppins']">{item.value}</p>
-                </div>
-              </a>
-            ))}
-
-            {/* Hours */}
             <div className="p-7 bg-white rounded-2xl border border-gray-100 shadow-sm">
               <div className="flex items-center gap-3 mb-5">
                 <Clock className="w-5 h-5 text-[#ffa07a]" />
@@ -92,6 +58,30 @@ export default function ContactSection() {
                 ))}
               </div>
             </div>
+            {/* Contact cards */}
+            {[
+              { icon: Phone, label: "Call Us", value: " (480) 802-8188", href:"tel:+14808028188"},
+              { icon: Mail, label: "Email Us", value: "info@promenadedds.com", href: "mailto:info@promenadedds.com" },
+              { icon: MapPin, label: "Visit Us", value: "4905 S. Alma School Road, Suite 1 Chandler, AZ 85248 ", href: "https://www.google.com/maps?sll=33.235985,-111.859246&q=4905+S.+Alma+School+Road,+Suite+1+Chandler,+AZ+85248,+United+States&z=16" },
+            ].map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                className="flex items-center gap-5 p-5 bg-white rounded-2xl border border-gray-100 hover:border-[#ffa07a]/30 hover:shadow-lg transition-all group shadow-sm"
+              >
+                <div className="w-13 h-13 rounded-xl bg-[#1A365D] flex items-center justify-center shrink-0 group-hover:bg-[#ffa07a] transition-colors p-3">
+                  <item.icon className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-[13px] text-[#64748B] font-['Poppins']">{item.label}</p>
+                  <p className="text-[15px] font-semibold text-[#1A365D] font-['Poppins']">{item.value}</p>
+                </div>
+              </a>
+            ))}
+
+            {/* Hours */}
+            
           </div>
 
           {/* Form */}

@@ -117,13 +117,13 @@ export default function Navbar() {
 
                     {/* Dropdown */}
                     {link.children && openDropdown === link.label && (
-                      <div className="absolute top-full left-0 w-56 bg-white rounded-2xl shadow-[0_16px_48px_rgba(26,54,93,0.14)] border border-[#1A365D]/06 overflow-hidden z-50">
+                      <div className="absolute top-full left-0 w-72 bg-white rounded-2xl shadow-[0_16px_48px_rgba(26,54,93,0.14)]  overflow-hidden z-50">
                         {/* Dropdown top accent */}
                         {link.children.map((child, i) => (
                           <a
                             key={child.label}
                             href={child.href}
-                            className="flex items-center gap-3 px-5 py-3.5 text-[13px] font-['Poppins'] font-medium text-[#1A365D] hover:bg-[#fdfaf5] hover:text-[#ffa07a] transition-colors group/item border-b border-[#1A365D]/04 last:border-0"
+                            className="flex items-center gap-3 px-5 py-3.5 text-[13px] font-['Poppins'] font-medium text-[#1A365D] hover:bg-[#fdfaf5] hover:text-[#ffa07a] transition-colors group/item border-b border-gray-200 hover:border-[#ffa07a]/80 last:border-0"
                           >
                             {/* Tiny dot accent */}
                             <span className="w-1 h-1 rounded-full bg-[#ffa07a]/40 group-hover/item:bg-[#ffa07a] transition-colors shrink-0" />
