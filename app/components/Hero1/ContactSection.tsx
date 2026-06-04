@@ -44,20 +44,6 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Info panel */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="p-7 bg-white rounded-2xl border border-gray-100 shadow-sm">
-              <div className="flex items-center gap-3 mb-5">
-                <Clock className="w-5 h-5 text-[#ffa07a]" />
-                <span className="font-bold text-[#1A365D] font-['Poppins'] text-[15px]">Opening Hours</span>
-              </div>
-              <div className="space-y-3">
-                {hours.map((h) => (
-                  <div key={h.day} className="flex justify-between text-[15px] font-['Poppins']">
-                    <span className="text-[#64748B] font-light">{h.day}</span>
-                    <span className={`font-semibold ${h.time === "Emergency Only" ? "text-[#ffa07a]" : "text-[#1A365D]"}`}>{h.time}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
             {/* Contact cards */}
             {[
               { icon: Phone, label: "Call Us", value: " (480) 802-8188", href:"tel:+14808028188"},
@@ -79,6 +65,21 @@ export default function ContactSection() {
                 </div>
               </a>
             ))}
+
+            <div className="p-7 bg-white rounded-2xl border border-gray-100 shadow-sm">
+              <div className="flex items-center gap-3 mb-5">
+                <Clock className="w-5 h-5 text-[#ffa07a]" />
+                <span className="font-bold text-[#1A365D] font-['Poppins'] text-[15px]">Opening Hours</span>
+              </div>
+              <div className="space-y-3">
+                {hours.map((h) => (
+                  <div key={h.day} className="flex justify-between text-[15px] font-['Poppins']">
+                    <span className="text-[#64748B] font-light">{h.day}</span>
+                    <span className={`font-semibold ${h.time === "Emergency Only" ? "text-[#ffa07a]" : "text-[#1A365D]"}`}>{h.time}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             {/* Hours */}
             
