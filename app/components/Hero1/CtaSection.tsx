@@ -16,7 +16,7 @@ export default function CTASection() {
   }, []);
 
   return (
-    <section id="cta" className="overflow-hidden" ref={ref}>
+    <section id="cta" className="overflow-hidden lg:py-32" ref={ref}>
       <div className="w-[90%] mx-auto">
         <div className="relative rounded-[2.5rem] bg-[#1A365D] overflow-hidden">
 
@@ -115,18 +115,18 @@ export default function CTASection() {
 
               <div className="flex flex-col md:flex-row gap-4">
                 <a
-                  href="#contact"
+                  href="/contact-us"
                   className="group inline-flex items-center justify-center gap-3 bg-[#ffa07a] text-white font-semibold font-['Poppins'] text-[15px] px-9 py-4 rounded-full hover:bg-white hover:text-[#1A365D] transition-all duration-300 shadow-xl shadow-[#ffa07a]/20"
                 >
                   Claim My Exam
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+14808028188"
                   className="inline-flex items-center justify-center gap-3 border border-white/20 text-white font-semibold font-['Poppins'] text-[15px] px-9 py-4 rounded-full hover:border-white/50 hover:bg-white/8 transition-all duration-300"
                 >
                   <Phone className="w-5 h-5" />
-                  (555) 123-4567
+                  (480) 802-8188
                 </a>
               </div>
             </div>

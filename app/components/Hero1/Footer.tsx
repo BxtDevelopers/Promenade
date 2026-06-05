@@ -76,9 +76,9 @@ export default function Footer() {
             {/* Contact info */}
             <div className="space-y-4">
               {[
-                { icon: Phone, text: "(555) 123-4567", href: "tel:+15551234567" },
-                { icon: Mail, text: "hello@promenadedental.ca", href: "mailto:hello@promenadedental.ca" },
-                { icon: MapPin, text: "123 Smile Ave, Suite 200, Toronto ON M5V 1J2", href: "#" },
+                { icon: Phone, text: "(480) 802-8188", href: "tel:+14808028188" },
+                { icon: Mail, text: "info@.promenadedds.com", href: "mailto:info@.promenadedds.com" },
+                { icon: MapPin, text: "4905 S Alma School Rd, Chandler, AZ 85248, USA", href: "https://maps.app.goo.gl/13ePYvxzcpXJqD4e7" },
               ].map((item) => (
                 <a
                   key={item.text}

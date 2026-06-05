@@ -104,7 +104,7 @@ export default function Navbar() {
                             : "text-[#1A365D] hover:text-[#ffa07a]"
                           : isActive
                           ? "text-[#ffa07a]"
-                          : "text-white hover:text-white/70"
+                          : "text-black hover:text-black/70"
                       }`}
                     >
                       {link.label}
@@ -143,12 +143,12 @@ export default function Navbar() {
               <a
                 href="tel:+15551234567"
                 className={`flex items-center gap-2 text-[14px] font-medium font-['Poppins'] transition-colors group ${
-                  scrolled ? "text-[#1A365D]" : "text-white/85"
+                  scrolled ? "text-[#1A365D]" : "text-black/85"
                 }`}
               >
                 <div
                   className="w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200"
-                  style={{ background: scrolled ? "#ffa07a18" : "rgba(255,255,255,0.12)" }}
+                  style={{ background: scrolled ? "#ffa07a18" : "rgba(255,255,255,0.3)" }}
                 >
                   <Phone className="w-3.5 h-3.5 text-[#ffa07a]" />
                 </div>
@@ -175,7 +175,7 @@ export default function Navbar() {
               className={`lg:hidden w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 ${
                 scrolled
                   ? "bg-[#1A365D]/06 text-[#1A365D] hover:bg-[#1A365D]/10"
-                  : "bg-white/10 text-white hover:bg-white/20"
+                  : "bg-[#1A365D]/10 text-white hover:bg-[#1A365D]/20"
               }`}
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
