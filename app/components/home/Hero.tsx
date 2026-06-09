@@ -1,0 +1,201 @@
+'use client';
+
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+
+const ARC_COUNT = 15;
+
+const HEADLINE_LINES: { text?: string; italic?: string; delay: number }[] = [
+  { text: 'Elevated dental',   delay: 0.45 },
+  { text: 'care for Chandler', delay: 0.58 },
+  { italic: 'families.',       delay: 0.71 },
+];
+
+export default function Hero() {
+  const archGroupRef = useRef<SVGGElement>(null);
+  const cursorGlowRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const arcsRef = useRef<SVGPathElement[]>([]);
+
+  useEffect(() => {
+    const group = archGroupRef.current;
+    if (!group) return;
+    group.innerHTML = '';
+    arcsRef.current = [];
+    const CX = 500, CY = 560;
+    for (let a = 0; a < ARC_COUNT; a++) {
+      const r = 82 + a * 33;
+      const isCoral = a === 4 || a === 9 || a === 13;
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', `M${CX - r} ${CY} A${r} ${r} 0 0 1 ${CX + r} ${CY}`);
+      p.setAttribute('pathLength', '1');
+      p.style.cssText = [
+        'fill:none',
+        `stroke:${isCoral ? 'rgba(232,154,114,0.5)' : 'rgba(244,236,221,0.14)'}`,
+        'stroke-linecap:round',
+        'stroke-dasharray:1',
+        'stroke-dashoffset:1',
+        `transition:stroke-dashoffset 1.7s ease ${a * 0.055}s`,
+      ].join(';');
+      group.appendChild(p);
+      arcsRef.current.push(p);
+    }
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() =>
+        arcsRef.current.forEach((p) => (p.style.strokeDashoffset = '0'))
+      )
+    );
+  }, []);
+
+  useEffect(() => {
+    const hero = heroRef.current;
+    const glow = cursorGlowRef.current;
+    if (!hero) return;
+    const onMove = (e: MouseEvent) => {
+      const r = hero.getBoundingClientRect();
+      const nx = (e.clientX - r.left) / r.width;
+      const ny = (e.clientY - r.top) / r.height;
+      glow?.style.setProperty('--mx', `${nx * 100}%`);
+      glow?.style.setProperty('--my', `${ny * 100}%`);
+      const dx = nx - 0.5, dy = ny - 0.5;
+      arcsRef.current.forEach((arc, i) => {
+        const k = (i + 1) / arcsRef.current.length;
+        arc.setAttribute('transform', `translate(${dx * 46 * k},${dy * 18 * k})`);
+      });
+    };
+    const onLeave = () => arcsRef.current.forEach((a) => a.removeAttribute('transform'));
+    hero.addEventListener('mousemove', onMove);
+    hero.addEventListener('mouseleave', onLeave);
+    return () => {
+      hero.removeEventListener('mousemove', onMove);
+      hero.removeEventListener('mouseleave', onLeave);
+    };
+  }, []);
+
+  return (
+    <header
+      ref={heroRef}
+      className="relative flex items-end overflow-hidden"
+      style={{ minHeight: 'clamp(580px, 94vh, 900px)' }}
+    >
+      {/* Arch SVG field */}
+      <div className="absolute inset-0 z-0">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 1000 560"
+          preserveAspectRatio="xMidYMax slice"
+          aria-hidden="true"
+        >
+          <g ref={archGroupRef} className="animate-breathe" style={{ transformOrigin: '500px 560px' }} />
+        </svg>
+      </div>
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 z-[1] bg-hero-grade" />
+
+      {/* Cursor glow */}
+      <div
+        ref={cursorGlowRef}
+        className="absolute inset-0 z-[1] pointer-events-none hidden md:block"
+        style={{
+          background:
+            'radial-gradient(300px 300px at var(--mx,72%) var(--my,28%), rgba(232,154,114,0.2), transparent 70%)',
+        }}
+      />
+
+      {/* Content */}
+      <div
+        className="relative z-[2] w-full max-w-[1240px] mx-auto px-site"
+        style={{ paddingBottom: 'clamp(48px, 7vw, 96px)' }}
+      >
+        {/* Eyebrow */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
+        >
+          Family &amp; Cosmetic Dentistry · Chandler, AZ
+        </motion.div>
+
+        {/* Headline */}
+        <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ivory">
+          {HEADLINE_LINES.map((line, i) => (
+            <span key={i} className="block overflow-hidden">
+              <motion.span
+                className="inline-block"
+                initial={{ y: '110%' }}
+                animate={{ y: 0 }}
+                transition={{ delay: line.delay, duration: 1.1, ease: [0.16, 0.84, 0.34, 1] }}
+              >
+                {line.text ? (
+                  line.text
+                ) : (
+                  <em className="not-italic font-normal text-coral">{line.italic}</em>
+                )}
+              </motion.span>
+            </span>
+          ))}
+        </h1>
+
+        {/* Footer row */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.1, duration: 1.2 }}
+          className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-[30px] mt-8 md:mt-10"
+        >
+          <p className="max-w-[46ch] text-muted text-body-lg font-light leading-[1.7]">
+            Modern, comfortable dentistry for the whole family — gentle care, honest guidance,
+            and most PPO plans accepted, right here in Chandler.
+          </p>
+          <div className="flex-shrink-0">
+            <HeroButton />
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Scroll cue — hide on short mobile screens */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 1.4 }}
+        className="absolute left-1/2 bottom-6 -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ivory/60"
+      >
+        <span>Scroll</span>
+        <span className="block w-px h-8 bg-gradient-to-b from-ivory/60 to-transparent animate-cue" />
+      </motion.div>
+    </header>
+  );
+}
+
+function HeroButton() {
+  const ref = useRef<HTMLButtonElement>(null);
+  const [hov, setHov] = useState(false);
+
+  const onMove = (e: React.MouseEvent) => {
+    const r = ref.current!.getBoundingClientRect();
+    ref.current!.style.transform = `translate(${(e.clientX - (r.left + r.width / 2)) * 0.25}px,${(e.clientY - (r.top + r.height / 2)) * 0.4}px)`;
+  };
+  const onLeave = () => {
+    if (ref.current) ref.current.style.transform = '';
+    setHov(false);
+  };
+
+  return (
+    <button
+      ref={ref}
+      onMouseMove={onMove}
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={onLeave}
+      className={[
+        'inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
+        'px-[26px] md:px-[30px] py-[15px] md:py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300',
+        'shadow-btn text-bg',
+        hov ? 'bg-ivory -translate-y-0.5' : 'bg-coral',
+      ].join(' ')}
+    >
+      Book an Appointment →
+    </button>
+  );
+}

@@ -157,10 +157,12 @@ export default function DentalProblemsSection() {
             {/* Right Cards */}
             <div className="relative overflow-hidden min-w-0 max-w-full">
             <div
-              ref={scrollRef}
-              className="flex gap-6 overflow-hidden scrollbar-hide pb-4"
-              style={{ WebkitOverflowScrolling: "touch" }}
-            >
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto overflow-y-hidden scrollbar-hide pb-4 cursor-grab active:cursor-grabbing"
+            style={{
+              WebkitOverflowScrolling: "touch",
+            }}
+          >
                 {problems.map((problem) => {
                   const Icon = problem.icon;
 
@@ -210,13 +212,13 @@ export default function DentalProblemsSection() {
 
       <style jsx>{`
         .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
 
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
       `}</style>
     </section>
   );
