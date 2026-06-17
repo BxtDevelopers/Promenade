@@ -3,6 +3,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
   --color-bg: #0B1C2C;
   --color-bg-2: #0E2335;
   --color-panel: #13293C;
@@ -14,8 +15,12 @@
   --color-coral: #E89A72;
   --color-coral-deep: #D98155;
   --color-sand: #EDE2CF;
-}
 
+  /* Fonts */
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Hanken Grotesk", -apple-system, sans-serif;
+
+}
 
 /* ── Base ──────────────────────────────────────────────── */
 @layer base {

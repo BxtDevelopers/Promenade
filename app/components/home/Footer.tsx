@@ -15,12 +15,13 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
-            <div
-              className="font-serif text-[18px] uppercase text-ivory mb-5"
-              style={{ letterSpacing: '0.14em' }}
-            >
-              Promenade·Dental
-            </div>
+            <a href="#home" className="flex items-center">
+              <img
+                src="/assets/PDlogo_red3.webp"
+                alt="Promenade Dental Logo"
+                className="w-52 md:w-56 h-auto transition-opacity duration-300"
+              />
+            </a>
 
             <p className="text-muted max-w-[32ch] leading-relaxed text-[15px]">
               Modern family dentistry designed around comfort,

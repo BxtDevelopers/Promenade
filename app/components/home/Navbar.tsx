@@ -1,35 +1,124 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
+import { SERVICES } from '@/app/lib/serviceData';
 
-const NAV_LINKS = ['Doctors', 'Treatments', 'Experience', 'Reviews', 'Visit'] as const;
+const NAV_LINKS = [
+  {
+    label: 'Home',
+    href: '/home02',
+  },
+  {
+    label: 'About Us',
+    href: '/about-us',
+  },
+  {
+    label: 'Contact',
+    href: '/contact-us',
+  },
+];
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 20);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-20">
+    <nav
+  className={`
+    fixed top-0 left-0 right-0 z-50
+    transition-all duration-300
+    ${
+      scrolled
+        ? 'bg-bg/95 backdrop-blur-xl border-b border-line shadow-lg'
+        : 'bg-transparent'
+    }
+  `}
+>
       <div className="px-site max-w-[1240px] mx-auto flex items-center justify-between h-[90px]">
 
         {/* Logo */}
-        <div className="font-serif font-normal text-[21px] tracking-logo uppercase text-ivory">
-          Promenade<strong className="font-medium">·</strong>Dental
-        </div>
+        <a href="/home02" className="flex items-center">
+              <img
+                src="/assets/PDlogo_red3.webp"
+                alt="Promenade Dental Logo"
+                className="w-52 md:w-56 h-auto transition-opacity duration-300"
+              />
+            </a>
 
         {/* Nav links — hidden below md */}
-        <ul className="hidden lg:flex gap-[34px] list-none text-[13.5px] tracking-nav font-normal">
-          {NAV_LINKS.map((item) => (
-            <li key={item}>
-              <a
-                href="#"
-                className="text-ivory/[0.78] no-underline transition-colors duration-300 hover:text-ivory"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <ul className="hidden lg:flex items-center gap-[34px] list-none text-[13.5px] tracking-nav font-normal">
+  {NAV_LINKS.slice(0, 2).map((item) => (
+    <li key={item.label}>
+      <Link
+        href={item.href}
+        className="text-ivory/[0.78] transition-colors duration-300 hover:text-ivory"
+      >
+        {item.label}
+      </Link>
+    </li>
+  ))}
+
+  {/* Treatments Dropdown */}
+  <li className="relative group">
+    <button className="flex items-center gap-1 text-ivory/[0.78] hover:text-ivory transition-colors">
+      Treatments
+      <ChevronDown size={14} />
+    </button>
+
+    <div
+      className="
+        absolute left-1/2 -translate-x-1/2 top-full mt-4
+        w-[320px]
+        opacity-0 invisible
+        group-hover:opacity-100 group-hover:visible
+        transition-all duration-300
+        bg-panel border border-line rounded-2xl
+        p-3 shadow-xl
+      "
+    >
+      <Link
+        href="/services"
+        className="block px-4 py-3 rounded-lg text-coral hover:bg-bg-2 transition-colors"
+      >
+        View All Treatments
+      </Link>
+
+      <div className="h-px bg-line my-2" />
+
+      {SERVICES.map((service) => (
+        <Link
+          key={service.slug}
+          href={`/services/${service.slug}`}
+          className="block px-4 py-3 rounded-lg text-ivory/80 hover:text-ivory hover:bg-bg-2 transition-colors"
+        >
+          {service.name}
+        </Link>
+      ))}
+    </div>
+  </li>
+
+  <li>
+    <Link
+      href="/contact-us"
+      className="text-ivory/[0.78] transition-colors duration-300 hover:text-ivory"
+    >
+      Contact
+    </Link>
+  </li>
+</ul>
 
         {/* Actions */}
         <div className="flex items-center gap-[22px]">
@@ -84,17 +173,54 @@ export default function Nav() {
             className="lg:hidden absolute top-[90px] left-0 right-0 bg-bg/95 backdrop-blur-md border-t border-line px-site pb-8 pt-6"
           >
             <ul className="flex flex-col gap-5 list-none mb-7">
-              {NAV_LINKS.map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    onClick={() => setMenuOpen(false)}
-                    className="text-ivory/80 no-underline text-[16px] tracking-nav font-normal hover:text-ivory transition-colors duration-200"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+  <Link
+    href="/home02"
+    onClick={() => setMenuOpen(false)}
+    className="text-ivory/80 text-[16px]"
+  >
+    Home
+  </Link>
+</li>
+
+<li>
+  <Link
+    href="/about-us"
+    onClick={() => setMenuOpen(false)}
+    className="text-ivory/80 text-[16px]"
+  >
+    About Us
+  </Link>
+</li>
+
+<li>
+  <div className="text-ivory font-medium mb-2">
+    Treatments
+  </div>
+
+  <div className="pl-4 flex flex-col gap-3">
+    {SERVICES.map((service) => (
+      <Link
+        key={service.slug}
+        href={`/services/${service.slug}`}
+        onClick={() => setMenuOpen(false)}
+        className="text-muted hover:text-ivory transition-colors"
+      >
+        {service.name}
+      </Link>
+    ))}
+  </div>
+</li>
+
+<li>
+  <Link
+    href="/contact-us"
+    onClick={() => setMenuOpen(false)}
+    className="text-ivory/80 text-[16px]"
+  >
+    Contact
+  </Link>
+</li>
             </ul>
             <a
               href="tel:+14808028188"

@@ -6,19 +6,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 const DOCTORS = [
   {
     id: 0,
-    firstName: 'Dr. Vishal',
-    lastName: 'Verma',
-    role: 'General & Family Dentistry',
-    bio: 'Warm, unhurried, and meticulous — Dr. Vishal explains every option in plain language, so you can decide with confidence and never feel rushed.',
-    facts: [
-      { value: '15+ yrs', label: 'Clinical experience' },
-      { value: 'All ages', label: 'True family care' },
-    ],
-    img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&q=80',
-    alt: 'Dr. Vishal Verma',
-  },
-  {
-    id: 1,
     firstName: 'Dr. Shriya',
     lastName: 'Verma',
     role: 'Comfort-Focused & Cosmetic Care',
@@ -27,7 +14,7 @@ const DOCTORS = [
       { value: 'Cosmetic', label: 'Smile design' },
       { value: 'Gentle', label: 'Anxiety-friendly' },
     ],
-    img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80',
+    img: '/assets/dr-shriya.jpeg',
     alt: 'Dr. Shriya Verma',
   },
 ] as const;
