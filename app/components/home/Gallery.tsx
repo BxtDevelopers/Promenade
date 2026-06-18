@@ -56,8 +56,7 @@ export default function PracticeGallery() {
           </h2>
           {/* Hint changes based on device capability */}
           <p className="text-muted font-light text-[15px] md:text-[16px]">
-            <span className="hidden md:inline">Hover to step through the space — calm, modern, and spotless.</span>
-            <span className="md:hidden">Tap to step through the space — calm, modern, and spotless.</span>
+            Explore our thoughtfully designed practice, created for comfort, care, and peace of mind.
           </p>
         </div>
 
@@ -105,43 +104,32 @@ export default function PracticeGallery() {
           ))}
         </div>
 
-        {/* Mobile: vertical tap-through stack */}
-        <div className="md:hidden flex flex-col gap-[10px]">
-          {PANELS.map((panel, i) => (
-            <div
-              key={panel.label}
-              onClick={() => setActive(i)}
-              className={[
-                'relative overflow-hidden cursor-pointer rounded-arch-xs bg-center bg-cover',
-                'transition-all ease-[cubic-bezier(0.7,0,0.2,1)] duration-[600ms]',
-                active === i ? 'filter-none' : 'brightness-[0.55] grayscale-[0.2]',
-              ].join(' ')}
-              style={{
-                height: active === i ? '260px' : '72px',
-                backgroundImage: `url('${panel.img}')`,
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/80 via-transparent to-transparent" />
-              {/* Label always visible on mobile */}
-              <div
-                className={[
-                  'absolute z-[2] left-5 right-5 bottom-5',
-                  'font-serif text-ivory transition-all duration-400',
-                  active === i ? 'text-[20px] opacity-100' : 'text-[14px] opacity-70',
-                ].join(' ')}
-              >
-                <h3>
-                {panel.label}
-                </h3>
+        {/* Mobile: Horizontal Scroll Gallery */}
+<div className="md:hidden">
+  <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-hide">
+    {PANELS.map((panel) => (
+      <div
+        key={panel.label}
+        className="relative shrink-0 w-[280px] h-[360px] overflow-hidden rounded-arch-xs bg-center bg-cover snap-start"
+        style={{
+          backgroundImage: `url('${panel.img}')`,
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-bg/[0.9] via-bg/[0.15] to-transparent" />
 
-                <p className="text-[12px] leading-relaxed text-ivory/80 max-w-[34ch]">
-                  {panel.desc}
-                </p>
+        <div className="absolute z-[2] left-5 right-5 bottom-5">
+          <h3 className="font-serif text-[22px] text-ivory mb-2">
+            {panel.label}
+          </h3>
 
-              </div>
-            </div>
-          ))}
+          <p className="text-[13px] leading-relaxed text-ivory/80">
+            {panel.desc}
+          </p>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
       </div>
     </section>

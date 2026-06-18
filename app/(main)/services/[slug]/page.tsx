@@ -14,6 +14,7 @@ import PracticeGallery from '@/app/components/home/Gallery';
 import ServiceStats from '@/app/components/services/subServices/ServiceStats';
 import ServiceTestimonials from '@/app/components/services/subServices/ServiceTestimonials';
 import ServiceComparison from '@/app/components/services/subServices/ServiceComparison';
+import ServiceDoctor from '@/app/components/services/subServices/ServiceDoctor';
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -41,7 +42,7 @@ export default async function ServicePage({ params }: Props) {
   <ServiceHero {...service.hero} />
 
   <ServiceOverview {...service.overview} />
-
+   <ServiceDoctor />
   <ServiceBenefits
     eyebrow={service.benefits.eyebrow}
     heading={service.benefits.heading}

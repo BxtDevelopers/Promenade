@@ -32,7 +32,7 @@ export default function ServiceOverview({
           ].join(' ')}
           style={{ transitionDelay: '0.15s' }}
         >
-          <div className="relative rounded-arch overflow-hidden aspect-[4/5] max-w-[460px] mx-auto border border-line">
+          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-[460px] mx-auto border border-line">
             <Image src={image} alt={heading} fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
           </div>
