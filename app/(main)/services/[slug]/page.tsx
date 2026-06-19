@@ -15,6 +15,18 @@ import ServiceStats from '@/app/components/services/subServices/ServiceStats';
 import ServiceTestimonials from '@/app/components/services/subServices/ServiceTestimonials';
 import ServiceComparison from '@/app/components/services/subServices/ServiceComparison';
 import ServiceDoctor from '@/app/components/services/subServices/ServiceDoctor';
+import FamilyDentalServices from '@/app/components/services/subServices/FamilyDentalServices';
+import EducationSection from '@/app/components/services/subServices/EducationSection';
+import PatientTypesSection from '@/app/components/services/subServices/PatientTypesSection';
+import SymptomsSection from '@/app/components/services/subServices/SymptomsSection';
+import WhyChooseSection from '@/app/components/services/subServices/WhyChooseSection';
+import LocalAreaSection from '@/app/components/services/subServices/LocalAreaSection';
+import RelatedServicesSection from '@/app/components/services/subServices/RelatedServicesSection';
+import ServiceFAQSection from '@/app/components/services/subServices/ServiceFAQ';
+import FinalCTASection from '@/app/components/services/subServices/ServiceCTA';
+import ServiceDecisionSection from '@/app/components/services/subServices/ServiceDecisionSection';
+import type { Metadata } from 'next';
+import SolutionsGridSection from '@/app/components/services/subServices/SolutionsGridSection';
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -25,6 +37,35 @@ type Props = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const service = getServiceBySlug(slug);
+
+  if (!service) {
+    return {
+      title: 'Service Not Found | Promenade Dental',
+    };
+  }
+
+  return {
+    title: service.metaTitle,
+    description: service.metaDescription,
+    openGraph: {
+      title: service.metaTitle,
+      description: service.metaDescription,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.metaTitle,
+      description: service.metaDescription,
+    },
+  };
+}
 
 export default async function ServicePage({ params }: Props) {
   const { slug } = await params;
@@ -39,54 +80,52 @@ export default async function ServicePage({ params }: Props) {
    <main>
   <Navbar />
 
-  <ServiceHero {...service.hero} />
-
-  <ServiceOverview {...service.overview} />
-   <ServiceDoctor />
+  <ServiceHero {...service.hero} /> 
+  <ServiceOverview {...service.overview}/> 
   <ServiceBenefits
-    eyebrow={service.benefits.eyebrow}
-    heading={service.benefits.heading}
-    benefits={service.benefits.items}
-  />
+  eyebrow={service.whyItMatters.eyebrow}
+  heading={service.whyItMatters.heading}
+  description={service.whyItMatters.description}
+  benefits={service.whyItMatters.items}
+/>
+<FamilyDentalServices 
+  eyebrow={service.servicesGrid.eyebrow}
+  heading={service.servicesGrid.heading}
+  intro={service.servicesGrid.intro}
+  services={service.servicesGrid.services}
+/>
+{service.educationSection && (
+  <EducationSection data={service.educationSection} />
+)}
 
-  {service.stats && (
-    <ServiceStats
-      eyebrow={service.stats.eyebrow}
-      heading={service.stats.heading}
-      stats={service.stats.items}
-    />
-  )}
+{service.comparison &&(<ServiceDecisionSection data={service.comparison}/> )}
+{service.solutionsGrid && (<SolutionsGridSection data={service.solutionsGrid}/>)}
 
-  <PracticeGallery />
+  {service.patientTypesSection && (<PatientTypesSection data={service.patientTypesSection} />)}
+  {service.process && (
+  <ServiceProcess data={service.process} />
+)}
 
-  <ServiceProcess {...service.process} />
+   {service.symptomsSection && (
+        <SymptomsSection data={service.symptomsSection} />
+      )}
 
-  {service.testimonials && (
-    <ServiceTestimonials
-      eyebrow={service.testimonials.eyebrow}
-      heading={service.testimonials.heading}
-      testimonials={service.testimonials.items}
-    />
-  )}
+      {service.benefits && (
+        <WhyChooseSection data={service.benefits} />
+      )}
 
-  {service.comparison && (
-    <ServiceComparison
-      eyebrow={service.comparison.eyebrow}
-      heading={service.comparison.heading}
-      subtitle={service.comparison.subtitle}
-      without={service.comparison.without}
-      withUs={service.comparison.withUs}
-    />
-  )}
-
-  <ServiceFAQ
-    eyebrow={service.faq.eyebrow}
-    heading={service.faq.heading}
-    faqs={service.faq.items}
-  />
-
-  <ServiceCTA {...service.cta} />
-
+      {service.localArea && (
+        <LocalAreaSection data={service.localArea} />
+      )}
+      {service.relatedServices && (
+        <RelatedServicesSection data={service.relatedServices} />
+      )}
+      {service.faq && (
+        <ServiceFAQSection data={service.faq} />
+      )}
+      {service.cta && (
+        <FinalCTASection data={service.cta} />
+      )}
   <Footer />
 </main>
   );

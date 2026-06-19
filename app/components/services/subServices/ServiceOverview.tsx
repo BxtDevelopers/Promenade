@@ -3,6 +3,7 @@
 
 import Image from 'next/image';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
+import BookingForm from './BookingForm';
 
 export default function ServiceOverview({
   eyebrow,
@@ -22,7 +23,7 @@ export default function ServiceOverview({
 
   return (
     <section className="py-24 bg-bg-2">
-      <div className="px-site max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
+      <div className="px-site max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
 
         <div
           ref={imgRef as React.RefObject<HTMLDivElement>}
@@ -32,10 +33,15 @@ export default function ServiceOverview({
           ].join(' ')}
           style={{ transitionDelay: '0.15s' }}
         >
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-[460px] mx-auto border border-line">
-            <Image src={image} alt={heading} fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
-          </div>
+          <div className="relative rounded-2xl overflow-hidden w-full border border-line">
+        {/* <Image
+          src={image}
+          alt={heading}
+          fill
+          className="object-cover"
+        /> */}
+        <BookingForm service={eyebrow}/>
+      </div>
           <div className="absolute -z-10 -bottom-8 -right-8 w-40 h-40 rounded-full bg-coral/10 blur-3xl hidden md:block" />
         </div>
 

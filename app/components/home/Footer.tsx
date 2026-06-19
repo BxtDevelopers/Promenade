@@ -10,7 +10,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 export default function Footer() {
   return (
     <footer className="border-t border-line">
-      <div className="max-w-[1240px] mx-auto px-[clamp(22px,4vw,60px)] py-[80px]">
+      <div className="max-w-[90%] mx-auto px-[clamp(22px,4vw,60px)] py-[80px]">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           
           {/* Brand */}

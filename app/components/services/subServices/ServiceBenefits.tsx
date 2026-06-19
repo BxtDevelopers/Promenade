@@ -6,23 +6,36 @@ import { useEffect, useRef, useState } from 'react';
 export default function ServiceBenefits({
   eyebrow,
   heading,
+  description,
   benefits,
 }: {
   eyebrow: string;
   heading: string;
-  benefits: { title: string; body: string; paths: string[] }[];
+  description?: string;
+  benefits: {
+    title: string;
+    body: string;
+    paths: string[];
+  }[];
 }) {
   return (
     <section className="py-section">
-      <div className="px-site max-w-[1240px] mx-auto">
-        <div className="mb-12 max-w-2xl">
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
-            {eyebrow}
-          </span>
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory">
-            {heading}
-          </h2>
-        </div>
+      <div className="px-site max-w-[90%] mx-auto">
+        <div className="mb-12 ">
+  <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+    {eyebrow}
+  </span>
+
+  <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+    {heading}
+  </h2>
+
+  {description && (
+    <p className="text-muted text-lg font-light leading-relaxed max-w-[80%]">
+      {description}
+    </p>
+  )}
+</div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px]">
           {benefits.map((b, i) => (

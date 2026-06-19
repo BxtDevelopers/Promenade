@@ -47,7 +47,7 @@ useEffect(() => {
     }
   `}
 >
-      <div className="px-site max-w-[1240px] mx-auto flex items-center justify-between h-[90px]">
+      <div className="px-site max-w-[90%] mx-auto flex items-center justify-between h-[90px]">
 
         {/* Logo */}
         <a href="/home02" className="flex items-center">
@@ -74,7 +74,7 @@ useEffect(() => {
   {/* Treatments Dropdown */}
   <li className="relative group">
     <button className="flex items-center gap-1 text-ivory/[0.78] hover:text-ivory transition-colors">
-      Treatments
+      Services
       <ChevronDown size={14} />
     </button>
 
@@ -93,7 +93,7 @@ useEffect(() => {
         href="/services"
         className="block px-4 py-3 rounded-lg text-coral hover:bg-bg-2 transition-colors"
       >
-        View All Treatments
+        View All Services
       </Link>
 
       <div className="h-px bg-line my-2" />
@@ -195,7 +195,7 @@ useEffect(() => {
 
 <li>
   <div className="text-ivory font-medium mb-2">
-    Treatments
+    Services
   </div>
 
   <div className="pl-4 flex flex-col gap-3">

@@ -2,20 +2,27 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-/* ── SVG icon paths per service ─────────────────────────── */
 const SERVICES = [
   {
     no: '01',
-    title: 'General & Family Dentistry',
+    title: 'Family & Preventive Dentistry',
     body:
-      'Comprehensive preventive and restorative care for children, teens, and adults—helping every member of your family maintain a healthy, confident smile for life.',
+      'Preventive dentistry helps protect your teeth and gums before small issues become painful or expensive. Our family dental care includes exams, cleanings, digital evaluation, children\u2019s dentistry, gum health checks, night guards, and routine monitoring for patients of all ages.',
+    body2:
+      'Whether you are bringing your child for an early dental visit or scheduling your own routine cleaning, we focus on prevention, education, and early diagnosis.',
+    ctaLabel: 'Explore Family Dentistry',
+    ctaHref: '#',
     paths: ['M6 38 A18 18 0 0 1 42 38', 'M14 38 A10 10 0 0 1 34 38'],
   },
   {
     no: '02',
     title: 'Cosmetic Dentistry',
     body:
-      'Enhance the appearance of your smile with professional whitening, bonding, veneers, and personalized cosmetic treatments designed to look naturally beautiful.',
+      'Cosmetic dentistry improves the appearance of your smile while respecting your natural teeth, facial features, and oral health. Treatment may include teeth whitening, ZOOM! whitening, porcelain veneers, cosmetic bonding, and smile makeover planning.',
+    body2:
+      'If your concern is tooth color, chips, uneven edges, gaps, worn teeth, or an overall lack of smile confidence, Dr. Shriya can help you understand which options fit your goals.',
+    ctaLabel: 'Explore Cosmetic Dentistry',
+    ctaHref: '#',
     paths: [
       'M6 38 A18 18 0 0 1 42 38',
       'M24 4 L24 14 M19 9 L29 9 M20.8 5.8 L27.2 12.2 M27.2 5.8 L20.8 12.2',
@@ -23,39 +30,41 @@ const SERVICES = [
   },
   {
     no: '03',
-    title: 'ZOOM!™ Whitening',
+    title: 'Restorative Dentistry',
     body:
-      'Achieve a noticeably brighter smile in a single visit with professional-grade whitening that delivers fast, safe, and long-lasting results.',
-    paths: [
-      'M6 38 A18 18 0 0 1 42 38',
-      'M24 3 L24 11 M14 7 L17 13 M34 7 L31 13 M8 15 L13 18 M40 15 L35 18',
-    ],
-  },
-  {
-    no: '04',
-    title: 'Implants & Crowns',
-    body:
-      'Restore strength, function, and confidence with custom-crafted crowns and dental implants that blend seamlessly with your natural smile.',
+      'Restorative dentistry repairs teeth that are decayed, cracked, weakened, infected, or missing. Our care includes tooth-colored fillings, dental crowns, dental bridges, root canal therapy, tooth extractions, dentures, inlays, and onlays.',
+    body2:
+      'The purpose of restorative care is not only to fix a tooth. It is to rebuild chewing comfort, protect your bite, prevent further damage, and help your smile function naturally again.',
+    ctaLabel: 'Explore Restorative Dentistry',
+    ctaHref: '#',
     paths: [
       'M6 38 A18 18 0 0 1 42 38',
       'M24 12 L24 33 M18 33 L30 33 M20 18 L28 18 M20 23 L28 23',
     ],
   },
   {
-    no: '05',
-    title: 'Root Canal Therapy',
+    no: '04',
+    title: 'Dental Implants',
     body:
-      'Modern root canal treatment is comfortable, efficient, and highly effective at eliminating pain while preserving your natural tooth.',
+      'Dental implants replace missing teeth with stable, natural-looking tooth replacements. Depending on your needs, implant treatment may support a single crown, a bridge, or a denture\u2014built around your bone support, bite, and long-term comfort.',
+    body2:
+      'At Promenade Dental, implant consultations focus on your bone support, bite, smile goals, health history, and the best replacement option for long-term comfort and function.',
+    ctaLabel: 'Explore Dental Implants',
+    ctaHref: '#',
     paths: [
       'M6 38 A18 18 0 0 1 42 38',
-      'M24 38 L24 46 M19 38 L16 46 M29 38 L32 46',
+      'M24 9 L24 25 M16 17 L32 17',
     ],
   },
   {
-    no: '06',
+    no: '05',
     title: 'Emergency Dentistry',
     body:
-      'Dental emergencies can’t wait. We offer prompt same-day appointments for tooth pain, broken teeth, injuries, and urgent dental concerns.',
+      'Dental emergencies can happen suddenly. Severe tooth pain, swelling, a broken tooth, a knocked-out tooth, or a lost restoration should be evaluated quickly.',
+    body2:
+      'If you are looking for an emergency dentist in Chandler, call Promenade Dental. We help patients understand what may be causing the pain and what treatment can provide relief.',
+    ctaLabel: 'Call for Emergency Dental Care',
+    ctaHref: '#',
     paths: ['M6 38 A18 18 0 0 1 42 38', 'M24 9 L24 25 M16 17 L32 17'],
   },
 ] as const;
@@ -63,15 +72,23 @@ const SERVICES = [
 export default function ServicesSection() {
   return (
     <section className="py-section">
-      <div className="px-site max-w-[1240px] mx-auto">
+      <div className="px-site max-w-[90%] mx-auto">
 
         {/* Header */}
-        <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px]">
-          <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
-            Comprehensive care,{' '}
-            <em className="not-italic text-coral">under one roof</em>.
-          </h2>
+        <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px] text-center">
+          <div>
+            <h2 className="font-serif font-light text-3xl 
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+              Complete Dental Services{' '}
+              <em className="not-italic text-coral">in Chandler, AZ</em>.
+            </h2>
+            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 lg:max-w-[80%] mx-auto">
+              Promenade Dental provides care across the main areas patients
+              commonly need from a trusted local dentist: prevention,
+              cosmetic improvement, tooth repair, tooth replacement, and
+              urgent dental care.
+            </p>
+          </div>
         </div>
 
         {/* Card grid */}
@@ -161,6 +178,20 @@ function ServiceCard({
       <p className="text-muted text-[14.5px] font-light leading-[1.65]">
         {service.body}
       </p>
+
+      {/* Second paragraph */}
+      <p className="text-muted text-[14.5px] font-light leading-[1.65] mt-3">
+        {service.body2}
+      </p>
+
+      {/* CTA */}
+      <a
+        href={service.ctaHref}
+        className="inline-flex items-center gap-2 mt-5 text-[14px] text-coral font-light tracking-[0.02em]
+          underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors"
+      >
+        {service.ctaLabel}
+      </a>
     </div>
   );
 }

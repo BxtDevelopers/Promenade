@@ -1,113 +1,124 @@
-// components/services/ServiceStats.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
-export default function ServiceStats({
-  eyebrow,
-  heading,
-  stats,
-}: {
+interface ProcessData {
   eyebrow: string;
   heading: string;
-  stats: { value: number; suffix?: string; prefix?: string; label: string }[];
-}) {
+  subtitle: string;
+  steps: { title: string; body: string }[];
+  cta?: { label: string; href: string };
+}
+
+export default function ServiceProcess({ data }: { data: ProcessData }) {
   const [headRef, headIn] = useScrollReveal();
-  const [panelRef, panelIn] = useScrollReveal();
 
   return (
     <section className="py-section bg-bg-2">
-      <div className="px-site max-w-[1240px] mx-auto">
-
+      <div className="px-site max-w-[90%] mx-auto">
+        
+        {/* Header */}
         <div
           ref={headRef as React.RefObject<HTMLDivElement>}
           className={[
-            'mb-12 md:mb-16 max-w-3xl transition-all duration-1000 ease-out',
+            'flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-16 mb-16 md:mb-20',
+            'transition-all duration-1000 ease-out',
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
-            {eyebrow}
-          </span>
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory">
-            {heading}
-          </h2>
+          <div className="flex-1">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+              {data.eyebrow}
+            </span>
+            <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ivory max-w-[20ch]">
+              {data.heading}
+            </h2>
+          </div>
+          <div className="flex-1 lg:max-w-[500px]">
+            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7]">
+              {data.subtitle}
+            </p>
+          </div>
         </div>
 
-        <div
-          ref={panelRef as React.RefObject<HTMLDivElement>}
-          className={[
-            'rounded-[22px] border border-line bg-ivory/[0.02]',
-            'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4',
-            'transition-all duration-1000 ease-out',
-            panelIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
-          ].join(' ')}
-        >
-          {stats.map((s, i) => (
-            <StatCell key={i} stat={s} delay={i * 0.08} index={i} total={stats.length} />
-          ))}
+        {/* Process Steps Grid */}
+        <div className="relative">
+          {/* Horizontal connecting line on large screens */}
+          <div className="absolute left-0 right-0 top-[26px] h-px bg-line hidden lg:block" />
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+            {data.steps.map((s, i) => (
+              <ProcessStep key={i} step={s} index={i} delay={i * 0.15} />
+            ))}
+          </div>
         </div>
+
+        {/* Optional CTA */}
+        {data.cta && (
+          <div className="mt-16 md:mt-24 flex justify-center lg:justify-start">
+            <Link 
+              href={data.cta.href}
+              className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase
+                transition-all duration-300 hover:text-ivory"
+            >
+              <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-ivory/60 transition-colors">
+                {data.cta.label}
+              </span>
+              <svg 
+                width="16" 
+                height="16" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="1.5" 
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7 7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        )}
 
       </div>
     </section>
   );
 }
 
-function StatCell({
-  stat,
-  delay,
+/* ── Individual Step Component ─────────────────────────── */
+
+function ProcessStep({
+  step,
   index,
-  total,
+  delay,
 }: {
-  stat: { value: number; suffix?: string; prefix?: string; label: string };
-  delay: number;
+  step: { title: string; body: string };
   index: number;
-  total: number;
+  delay: number;
 }) {
   const [ref, inView] = useScrollReveal();
-  const [display, setDisplay] = useState(0);
-
-  useEffect(() => {
-    if (!inView) return;
-    const duration = 1200;
-    const start = performance.now();
-    let raf: number;
-    const tick = (now: number) => {
-      const p = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setDisplay(Math.round(stat.value * eased));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [inView, stat.value]);
-
-  const isLast = index === total - 1;
-  const isLastInMobileRow = index % 2 === 1;
-  const isLastInTabletRow = index % 2 === 1;
-
+  
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={[
-        'px-7 md:px-8 py-8 md:py-10 transition-all duration-700 ease-out',
-        'border-b border-line sm:border-b-0',
-        !isLast ? 'lg:border-r lg:border-line' : '',
-        !isLastInTabletRow ? 'sm:border-r sm:border-line' : '',
-        index >= total - (total % 2 === 0 ? 2 : 1) && total % 1 === 0 ? '' : '',
-        index === total - 1 ? 'border-b-0' : '',
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
-      ].join(' ')}
-      style={{ transitionDelay: `${delay}s` }}
+      className="group relative transition-all duration-1000 ease-out"
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'none' : 'translateY(28px)',
+        transitionDelay: `${delay}s`,
+      }}
     >
-      <div className="font-serif font-light text-4xl leading-none text-coral tracking-[-0.02em]">
-        {stat.prefix}
-        {display.toLocaleString()}
-        {stat.suffix}
+      {/* Number Node */}
+      <div className="relative z-10 w-[52px] h-[52px] rounded-full bg-bg-2 border border-coral/40 flex items-center justify-center font-serif text-coral text-[17px] mb-6 transition-colors duration-500 group-hover:bg-coral/10">
+        {String(index + 1).padStart(2, '0')}
       </div>
-      <p className="mt-3 text-muted text-sm font-light leading-[1.55] max-w-[22ch]">
-        {stat.label}
+      
+      {/* Content */}
+      <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ivory mb-3">
+        {step.title}
+      </h3>
+      <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">
+        {step.body}
       </p>
     </div>
   );

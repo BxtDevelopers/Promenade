@@ -9,7 +9,7 @@ const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
   `Promenade Dental, ${ADDRESS}`
 )}`;
 
-export default function ClosingCTA() {
+export default function ServiceCTA() {
   const [h1Ref, h1Vis] = useScrollReveal();
   const [textRef, textVis] = useScrollReveal();
   const [rowRef, rowVis] = useScrollReveal();
@@ -27,7 +27,7 @@ export default function ClosingCTA() {
 
       <div className="relative max-w-[1240px] mx-auto px-[clamp(22px,4vw,60px)]">
         <span className="block mb-[22px] text-[11.5px] tracking-eyebrow uppercase font-medium text-coral">
-  New Patients Welcome
+  Comprehensive Dental Care in Chandler, AZ
 </span>
 
 <h2
@@ -40,14 +40,14 @@ export default function ClosingCTA() {
       'opacity 1s ease, transform 1s cubic-bezier(0.16,0.84,0.34,1)',
   }}
 >
-  Ready to visit a
+  Find the right
   <br />
-  <em className="italic text-coral">dentist in Chandler?</em>
+  <em className="italic text-coral">dental treatment.</em>
 </h2>
 
 <div
   ref={textRef as React.RefObject<HTMLDivElement>}
-  className="max-w-[700px] mx-auto mt-[26px] text-muted text-[15px] md:text-[16px] font-light leading-[1.8]"
+  className="max-w-[720px] mx-auto mt-[26px] text-muted text-[15px] md:text-[16px] font-light leading-[1.8]"
   style={{
     opacity: textVis ? 1 : 0,
     transform: textVis ? 'none' : 'translateY(34px)',
@@ -56,14 +56,16 @@ export default function ClosingCTA() {
   }}
 >
   <p>
-    Whether you need a routine cleaning, cosmetic smile improvement,
-    tooth repair, dental implants, or urgent dental care, Promenade
-    Dental is here to help you take the next step with confidence.
+    Whether you need a dental cleaning, cosmetic smile improvement,
+    tooth repair, a dental implant consultation, or emergency dental
+    care, Promenade Dental helps you understand your options clearly
+    and choose treatment that supports your long-term oral health.
   </p>
 
   <p className="mt-4">
-    Call our Chandler dental office or request an appointment online.
-    New patients are always welcome.
+    Schedule a visit with Dr. Shriya at Promenade Dental in Fulton
+    Ranch, Chandler, AZ and take the next step toward a healthier,
+    more confident smile.
   </p>
 </div>
 
@@ -115,10 +117,9 @@ function GhostButton() {
   return (
     <button
       className="
-        border border-line
-        hover:border-ivory
-        text-ivory
-        bg-transparent
+        bg-coral
+        hover:bg-ivory
+        text-bg
         px-[30px]
         py-[17px]
         rounded-full
@@ -126,9 +127,11 @@ function GhostButton() {
         text-[14px]
         tracking-[0.05em]
         uppercase
-        font-medium
+        font-semibold
         transition-all
         duration-300
+        hover:-translate-y-[2px]
+        shadow-btn
       "
     >
       Book an Appointment

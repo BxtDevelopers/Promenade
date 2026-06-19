@@ -5,45 +5,76 @@ import React, { useEffect, useRef, useState } from 'react';
 const STEPS = [
   {
     n: '01',
-    title: 'Severe Tooth Pain',
-    body:
-      'Persistent toothaches, sensitivity, and discomfort can affect eating, sleeping, and everyday life. Our team identifies the source of the pain and provides fast, effective relief.',
-    img: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1200&q=80',
+    title: 'Preventive & Family Care',
+    items: [
+      'Dental exams and cleanings',
+      'Children\u2019s dentistry',
+      'Gum disease treatment',
+      'Night guards for teeth grinding',
+      'Oral cancer screening',
+      'Dental hygiene education',
+    ],
+    img: '/assets/preventiveandfamily.jpg',
+    ctaLabel: 'Explore Preventive Care',
+    ctaHref: '/services/family-dentistry',
   },
   {
     n: '02',
-    title: 'Broken or Chipped Teeth',
-    body:
-      'Whether caused by an accident or everyday wear, damaged teeth can impact both appearance and function. We offer durable restorations to protect and rebuild your smile.',
-    img: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80',
+    title: 'Cosmetic Dentistry',
+    items: [
+      'Teeth whitening',
+      'ZOOM! professional whitening',
+      'Porcelain veneers',
+      'Cosmetic dental bonding',
+      'Smile makeover planning',
+      'Tooth shape and color improvement',
+    ],
+    img: '/assets/cosmetic.jfif',
+    ctaLabel: 'Explore Cosmetic Dentistry',
+    ctaHref: '/services/cosmetic-dentistry',
   },
   {
     n: '03',
-    title: 'Missing Teeth',
-    body:
-      'Missing teeth can affect confidence, speech, and chewing ability. From dental implants to bridges, we provide modern solutions that look and feel natural.',
-    img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=80',
+    title: 'Restorative Dentistry',
+    items: [
+      'Tooth-colored fillings',
+      'Dental crowns',
+      'Dental bridges',
+      'Root canal therapy',
+      'Tooth extractions',
+      'Dentures and partial dentures',
+      'Inlays and onlays',
+    ],
+    img: '/assets/resorative.jpg',
+    ctaLabel: 'Explore Restorative Care',
+    ctaHref: '/services/restorative-dentistry',
   },
   {
     n: '04',
-    title: 'Gum Disease',
-    body:
-      'Healthy gums are the foundation of a healthy smile. Our advanced periodontal treatments help stop infection, protect teeth, and restore long-term oral health.',
-    img: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1200&q=80',
+    title: 'Dental Implants',
+    items: [
+      'Single tooth implants',
+      'Implant-supported bridges',
+      'Implant-supported dentures',
+      'Missing tooth consultations',
+    ],
+    img: '/assets/dentalimplants.jfif',
+    ctaLabel: 'Explore Dental Implants',
+    ctaHref: '/services/dental-implants',
   },
   {
     n: '05',
-    title: 'Crooked Teeth',
-    body:
-      'Misaligned teeth can affect both aesthetics and oral health. We offer clear aligners and orthodontic treatments designed to create a straighter, healthier smile.',
-    img: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80',
-  },
-  {
-    n: '06',
-    title: 'Smile Makeovers',
-    body:
-      'Transform the appearance of your smile with customized cosmetic treatments including whitening, veneers, bonding, and complete smile design solutions.',
-    img: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80',
+    title: 'Emergency Dentistry',
+    items: [
+      'Toothache relief',
+      'Broken or chipped tooth care',
+      'Knocked-out tooth guidance',
+      'Swelling or infection evaluation',
+      'Lost crown or filling support',
+    ],
+    img: '/assets/emergency.jfif',
+    ctaLabel: 'Get Emergency Help',
+    ctaHref: '/services/emergency-dentistry',
   },
 ] as const;
 
@@ -149,7 +180,8 @@ export default function ScrollStory() {
           {/* Eyebrow */}
         
           {/* Step slides — fixed height keeps layout stable */}
-          <div className="relative h-[260px] sm:h-[260px]">
+          {/* Step slides — fixed height keeps layout stable */}
+          <div className="relative h-[480px] sm:h-[460px]">
             {STEPS.map((s, i) => (
               <div
                 key={i}
@@ -168,14 +200,46 @@ export default function ScrollStory() {
                   {s.n}
                 </span>
                 <p className="text-[11.5px] tracking-eyebrow uppercase font-medium text-coral mt-[34px]">
-            Dental Problems , We Solve
-          </p>
+                  Dental Treatments We Provide
+                </p>
                 <h2 className="font-serif font-light text-story-head leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ivory mt-[14px] mb-5">
                   {s.title}
                 </h2>
-                <p className="text-muted text-story-body font-light leading-[1.6] max-w-[36ch]">
-                  {s.body}
-                </p>
+
+                {/* Service list */}
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-[10px] max-w-[44ch] sm:max-w-[56ch]">
+                  {s.items.map((item, j) => (
+                    <li
+                      key={j}
+                      className="text-muted text-story-body font-light leading-[1.5] flex items-start gap-[10px]"
+                    >
+                      <span className="text-coral mt-[2px] shrink-0">—</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* ── Added CTA Below Bullet Points ── */}
+                <div className="mt-8 md:mt-10">
+                  <a
+                    href={s.ctaHref || '#'} // Assumes you add ctaHref to your STEPS data
+                    className="group inline-flex items-center gap-3 text-[13px] text-ivory font-medium tracking-[0.04em] uppercase rounded-full border border-ivory/20 px-7 py-[14px] hover:border-coral hover:bg-coral/5 transition-all duration-300"
+                  >
+                    {s.ctaLabel || 'Explore Services'} {/* Assumes you add ctaLabel to your STEPS data */}
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      className="text-coral transition-transform duration-[400ms] ease-out group-hover:translate-x-1"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2 7h10M8 3l4 4-4 4" />
+                    </svg>
+                  </a>
+                </div>
+
               </div>
             ))}
           </div>

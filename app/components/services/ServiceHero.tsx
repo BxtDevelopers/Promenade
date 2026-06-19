@@ -2,16 +2,17 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ARC_COUNT = 15;
 
 const HEADLINE_LINES: { text?: string; italic?: string; delay: number }[] = [
-  { text: 'Gentle , Personal Dental',   delay: 0.45 },
-  { text: ' Care for Healthy', delay: 0.58 },
-  { italic: 'Confident Smiles.',       delay: 0.71 },
+  { text: 'Complete Dental Care', delay: 0.45 },
+  { text: 'for Your Health, Comfort,', delay: 0.58 },
+  { italic: 'and Smile Confidence.', delay: 0.71 },
 ];
 
-export default function Hero() {
+export default function ServiceHero() {
   const archGroupRef = useRef<SVGGElement>(null);
   const cursorGlowRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLElement>(null);
@@ -78,7 +79,7 @@ export default function Hero() {
       className="relative flex items-end overflow-hidden min-h-screen"
     >
       {/* Arch SVG field */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <svg
           className="w-full h-full"
           viewBox="0 0 1000 560"
@@ -87,7 +88,18 @@ export default function Hero() {
         >
           <g ref={archGroupRef} className="animate-breathe" style={{ transformOrigin: '500px 560px' }} />
         </svg>
-      </div>
+      </div> */}
+      <div className="absolute inset-0 z-0">
+              <Image
+                src="/assets/h-hero.jpg"
+                alt="hero-img"
+                fill
+                priority
+                className="object-cover object-center"
+              />
+              {/* ── Added Solid Dark Overlay for Text Legibility ── */}
+              <div className="absolute inset-0 bg-bg/60" />
+            </div>
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 z-[1] bg-hero-grade" />
@@ -114,7 +126,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 1 }}
           className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
         >
-          Promenade Dental in Fulton Ranch, Chandler AZ
+          Promenade Dental Services in Chandler, AZ
         </motion.div>
 
         {/* Headline */}
@@ -144,11 +156,20 @@ export default function Hero() {
           transition={{ delay: 1.1, duration: 1.2 }}
           className="flex flex-col  md:justify-between gap-6 md:gap-[30px] mt-8 md:mt-10 max-w-5xl"
         >
-          <p className=" text-muted text-body-lg font-light leading-[1.7]">
-            Promenade Dental is a family and cosmetic dental practice in Chandler, AZ, serving patients from Fulton Ranch, Ocotillo, Sun Lakes, and nearby communities. Led by Dr. Shriya Verma, our office provides preventive, cosmetic, restorative, implant, and emergency dental care in one calm and patient-focused environment.
-    Here, you are not rushed from room to room or passed between different providers. You see the same dentist, receive clear explanations, and get treatment recommendations based on your oral health, comfort, goals, and long-term smile function.
+          <p className="text-ivory text-body-lg font-light leading-[1.7]">
+            Promenade Dental provides comprehensive dental services in Chandler, AZ
+            for patients who need preventive care, cosmetic smile improvement,
+            tooth repair, tooth replacement, or urgent dental treatment.
 
-          </p>
+            Led by Dr. Shriya Verma, our Fulton Ranch dental office helps patients
+            understand their oral health clearly and choose treatment that supports
+            long-term comfort, function, and confidence.
+
+            Whether you are visiting for a routine cleaning, tooth pain, teeth
+            whitening, a dental crown, missing teeth, or a complete smile makeover,
+            your care begins with careful diagnosis and a clear conversation about
+            your options.
+            </p>
                   <div className="flex flex-wrap gap-2.5 mt-6">
           {[
             "Welcoming New Patients",
@@ -163,22 +184,29 @@ export default function Hero() {
             </span>
           ))}
         </div>  
-          <div className="flex-shrink-0">
-            <HeroButton />
-          </div>
+          <div className="flex flex-wrap gap-4 items-center">
+  <HeroButton />
+
+  <a
+    href="tel:+14808028188"
+    className="
+      inline-flex items-center gap-3
+      border border-line
+      text-ivory
+      px-[26px] md:px-[30px]
+      py-[15px] md:py-[17px]
+      rounded-full
+      text-[13px] md:text-[14px]
+      uppercase tracking-wide2
+      transition-all duration-300
+      hover:border-coral
+    "
+  >
+    Call (480) 802-8188
+  </a>
+</div>
         </motion.div>
       </div>
-
-      {/* Scroll cue — hide on short mobile screens */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 1.4 }}
-        className="absolute left-1/2 bottom-6 -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ivory/60"
-      >
-        <span>Scroll</span>
-        <span className="block w-px h-8 bg-gradient-to-b from-ivory/60 to-transparent animate-cue" />
-      </motion.div>
     </header>
   );
 }
