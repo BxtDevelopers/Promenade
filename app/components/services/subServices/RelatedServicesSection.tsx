@@ -22,7 +22,7 @@ export default function RelatedServicesSection({ data }: { data: RelatedServices
 
   return (
     <section className="py-section bg-bg border-t border-line">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* ── Header ── */}
         <div

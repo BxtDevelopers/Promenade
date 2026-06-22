@@ -23,7 +23,7 @@ export default function ServiceOverview({
 
   return (
     <section className="py-24 bg-bg-2">
-      <div className="px-site max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
+      <div className="lg:px-site max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
 
         <div
           ref={imgRef as React.RefObject<HTMLDivElement>}
@@ -55,10 +55,10 @@ export default function ServiceOverview({
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {eyebrow}
           </span>
-          <h2 className="font-serif font-light text-4xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ivory mb-8">
+          <h2 className="font-serif font-light text-3xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ivory mb-8">
             {heading}
           </h2>
-          <p className="text-muted text-xl font-light leading-[1.5]  mb-10">
+          <p className="text-muted lg:text-xl font-light leading-[1.5]  mb-10">
             {body}
           </p>
 

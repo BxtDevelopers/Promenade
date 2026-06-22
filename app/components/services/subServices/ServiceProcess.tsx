@@ -16,7 +16,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
 
   return (
     <section className="py-section bg-bg border-t border-line">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 lg:gap-24 items-start">
           
           {/* ── Left Column: Sticky Header ── */}

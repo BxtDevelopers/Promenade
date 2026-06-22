@@ -27,7 +27,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
         <div className="w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(232,154,114,0.08),transparent_70%)]" />
       </div>
 
-      <div className="px-site max-w-[90%] mx-auto relative z-10">
+      <div className="lg:px-site max-w-[90%] mx-auto relative z-10">
         
         {/* ── Centered Header ── */}
         <div

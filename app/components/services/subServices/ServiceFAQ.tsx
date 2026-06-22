@@ -183,7 +183,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
 
   return (
     <section className="py-section bg-bg-2 border-t border-line">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* ── Header ── */}
         <div

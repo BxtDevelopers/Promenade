@@ -20,7 +20,7 @@ export default function ServiceBenefits({
 }) {
   return (
     <section className="py-section">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="mb-12 ">
   <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
     {eyebrow}
@@ -31,7 +31,7 @@ export default function ServiceBenefits({
   </h2>
 
   {description && (
-    <p className="text-muted text-lg font-light leading-relaxed max-w-[80%]">
+    <p className="text-muted lg:text-lg font-light leading-relaxed lg:max-w-[80%]">
       {description}
     </p>
   )}

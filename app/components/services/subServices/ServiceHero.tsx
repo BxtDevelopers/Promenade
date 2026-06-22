@@ -126,10 +126,10 @@ export default function ServiceHero({
 
       {/* Content */}
       <div
-        className="relative z-[2] w-full max-w-[90%] mx-auto px-site"
+        className="relative z-[2] w-full max-w-[90%] mx-auto lg:px-site"
         style={{ paddingTop: 'clamp(96px, 12vw, 140px)', paddingBottom: 'clamp(48px, 7vw, 96px)' }}
       >
-        <div className="max-w-5xl items-center">
+        <div className="lg:max-w-6xl items-center">
 
           {/* Left — Copy */}
           <div>

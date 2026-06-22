@@ -27,7 +27,7 @@ export default function FamilyDentalServices({
   return (
     // Adding a subtle background difference or top border can help separate it from the previous section
     <section className="py-section relative border-t border-line/50">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* Header - Slightly adjusted to a centered layout to break the visual rhythm from the previous section */}
         <div className="mb-16 text-center flex flex-col items-center">

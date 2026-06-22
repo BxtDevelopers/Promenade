@@ -30,7 +30,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
 
   return (
     <section className="py-section bg-bg border-t border-line relative overflow-hidden">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 lg:gap-20 items-center">
           
           {/* ── Left: Content & Address Card ── */}
