@@ -5,7 +5,7 @@ import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
 const DOCTORS = [
   {
-    name: 'Dr. Shriya Verma',
+    name: 'Dr. Shriya Sarin',
     role: 'Cosmetic & Restorative Dentistry',
     bio: 'Detail-driven and design-minded, Dr. Shriya focuses on results that look entirely natural \u2014 combining modern technique with a careful aesthetic eye.',
     stats: [

@@ -252,7 +252,7 @@ export default function OurStory() {
 
           <div className="mt-8 space-y-5 text-ivory-2 text-[15px] md:text-[16px] font-light leading-[1.7]">
             <p>
-              Dr. Vishal and Dr. Shriya Verma opened Promenade Dental in
+              Dr. Vishal and Dr. Shriya Sarin opened Promenade Dental in
               Fulton Ranch because they kept hearing the same thing from
               patients — that going to the dentist felt cold, rushed, and
               transactional. They wanted to build the opposite: a practice

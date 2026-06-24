@@ -1,7 +1,7 @@
 export default function NewPatientsSection() {
   return (
     <section className="py-section bg-panel">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[70px] items-center">
 

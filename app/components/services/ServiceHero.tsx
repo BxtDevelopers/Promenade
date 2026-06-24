@@ -161,7 +161,7 @@ export default function ServiceHero() {
             for patients who need preventive care, cosmetic smile improvement,
             tooth repair, tooth replacement, or urgent dental treatment.
 
-            Led by Dr. Shriya Verma, our Fulton Ranch dental office helps patients
+            Led by Dr. Shriya Sarin, our Fulton Ranch dental office helps patients
             understand their oral health clearly and choose treatment that supports
             long-term comfort, function, and confidence.
 

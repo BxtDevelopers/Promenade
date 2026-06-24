@@ -65,13 +65,13 @@ export default function ServiceDoctor() {
             >
               Dr. Shriya
               <br />
-              <em className="not-italic text-coral">Verma</em>
+              <em className="not-italic text-coral">Sarin</em>
               <span className="text-muted" style={{ fontSize: '0.55em' }}> D.D.S.</span>
             </h2>
 
             {/* Bio */}
             <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 md:mt-6 max-w-[50ch]">
-              Dr. Shriya Verma is dedicated to providing patient-centered dental
+              Dr. Shriya Sarin is dedicated to providing patient-centered dental
               care at Promenade Dental. A UCLA School of Dentistry graduate, she
               combines advanced training, modern techniques, and a meticulous
               attention to detail to help Chandler families achieve healthy,
@@ -95,7 +95,7 @@ export default function ServiceDoctor() {
                 comfortable, and genuinely cared for — not just treated.&rdquo;
               </p>
               <p className="text-ivory text-[13px] mt-3 font-medium tracking-wide">
-                — Dr. Shriya Verma
+                — Dr. Shriya Sarin
               </p>
             </div>
           </motion.div>
@@ -112,7 +112,7 @@ export default function ServiceDoctor() {
             <div className="absolute inset-0 rounded-arch-sm overflow-hidden">
               <img
                 src="/assets/dr-shriya.jpeg"
-                alt="Dr. Shriya Verma, D.D.S. — Promenade Dental, Chandler AZ"
+                alt="Dr. Shriya Sarin, D.D.S. — Promenade Dental, Chandler AZ"
                 className="w-full h-full object-cover object-top"
               />
             </div>

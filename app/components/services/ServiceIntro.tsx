@@ -32,7 +32,7 @@ export default function ServiceIntro() {
             <div className="absolute inset-0 rounded-arch-sm overflow-hidden">
               <img
                 src="/assets/pd-office.jpeg"
-                alt="Dr. Shriya Verma examining a patient at Promenade Dental, Chandler AZ"
+                alt="Dr. Shriya Sarin examining a patient at Promenade Dental, Chandler AZ"
                 className="w-full h-full object-cover"
               />
             </div>

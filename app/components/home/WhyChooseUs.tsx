@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
 
   return (
     <section className="py-section">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
 
         {/* Lead */}
         <p
@@ -86,7 +86,7 @@ function MetaCard({
     transitionDelay: `${delay}s`,
   }}
 >
-    <span className="absolute top-6 right-6 text-coral/40 font-serif text-3xl">
+    <span className="absolute top-1 lg:top-6 right-6 text-coral/40 font-serif text-3xl">
   0{index + 1}
 </span>
       <h4 className="font-serif text-[24px] lg:text-[28px] text-ivory mb-4">

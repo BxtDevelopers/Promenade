@@ -104,7 +104,7 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className="relative z-[2] w-full max-w-[90%] mx-auto px-site pt-40 text-left"
+        className="relative z-[2] w-full max-w-[90%] mx-auto lg:px-site pt-40 text-left"
         style={{ paddingBottom: 'clamp(48px, 7vw, 96px)' }}
       >
         {/* Eyebrow */}
@@ -145,7 +145,7 @@ export default function Hero() {
           className="flex flex-col  md:justify-between gap-6 md:gap-[30px] mt-8 md:mt-10 max-w-5xl"
         >
           <p className=" text-muted text-body-lg font-light leading-[1.7]">
-            Promenade Dental is a family and cosmetic dental practice in Chandler, AZ, serving patients from Fulton Ranch, Ocotillo, Sun Lakes, and nearby communities. Led by Dr. Shriya Verma, our office provides preventive, cosmetic, restorative, implant, and emergency dental care in one calm and patient-focused environment.
+            Promenade Dental is a family and cosmetic dental practice in Chandler, AZ, serving patients from Fulton Ranch, Ocotillo, Sun Lakes, and nearby communities. Led by Dr. Shriya Sarin, our office provides preventive, cosmetic, restorative, implant, and emergency dental care in one calm and patient-focused environment.
     Here, you are not rushed from room to room or passed between different providers. You see the same dentist, receive clear explanations, and get treatment recommendations based on your oral health, comfort, goals, and long-term smile function.
 
           </p>

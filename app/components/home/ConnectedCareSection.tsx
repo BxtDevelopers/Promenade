@@ -34,7 +34,7 @@ const CONNECTIONS = [
 export default function ConnectedCareSection() {
   return (
     <section className="py-section bg-bg">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
 
         {/* Heading + intro */}
         <div className="text-center">

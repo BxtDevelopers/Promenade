@@ -52,7 +52,7 @@ export default function ServiceFeatures({ data }: { data: ServiceFeature }) {
           </div>
 
           {/* ── Right: Horizontal Feature Strips ── */}
-          <div className="flex flex-col gap-4 md:gap-6 mt-4 lg:mt-0">
+          <div className="flex flex-col gap-4 md:gap-6 mt-4 lg:my-auto">
             {data.features.map((feature, i) => (
               <FeatureStrip key={i} feature={feature} index={i} delay={i * 0.15} />
             ))}

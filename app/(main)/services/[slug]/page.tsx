@@ -27,6 +27,9 @@ import FinalCTASection from '@/app/components/services/subServices/ServiceCTA';
 import ServiceDecisionSection from '@/app/components/services/subServices/ServiceDecisionSection';
 import type { Metadata } from 'next';
 import SolutionsGridSection from '@/app/components/services/subServices/SolutionsGridSection';
+import ServiceFeatures from '@/app/components/services/subServices/ServiceFeatures';
+import SuitabilitySection from '@/app/components/services/subServices/SuitabilitySection';
+import MaintenanceGridSection from '@/app/components/services/subServices/MaintenanceGridSection';
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -88,6 +91,11 @@ export default async function ServicePage({ params }: Props) {
   description={service.whyItMatters.description}
   benefits={service.whyItMatters.items}
 />
+{
+  service.features && (
+    <ServiceFeatures data={service.features}/>
+  )
+}
 <FamilyDentalServices 
   eyebrow={service.servicesGrid.eyebrow}
   heading={service.servicesGrid.heading}
@@ -97,6 +105,9 @@ export default async function ServicePage({ params }: Props) {
 {service.educationSection && (
   <EducationSection data={service.educationSection} />
 )}
+{service.suitability && (
+  <SuitabilitySection data={service.suitability}/>
+ )}
 
 {service.comparison &&(<ServiceDecisionSection data={service.comparison}/> )}
 {service.solutionsGrid && (<SolutionsGridSection data={service.solutionsGrid}/>)}
@@ -105,6 +116,9 @@ export default async function ServicePage({ params }: Props) {
   {service.process && (
   <ServiceProcess data={service.process} />
 )}
+{service.maintenance && (
+   <MaintenanceGridSection data={service.maintenance} />
+ )}
 
    {service.symptomsSection && (
         <SymptomsSection data={service.symptomsSection} />

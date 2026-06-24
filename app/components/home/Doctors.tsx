@@ -7,7 +7,7 @@ const DOCTORS = [
   {
     id: 0,
     firstName: 'Dr. Shriya',
-    lastName: 'Verma',
+    lastName: 'Sarin',
     role: 'Comfort-Focused & Cosmetic Care',
     bio: 'Gentle hands and a careful aesthetic eye, with a special focus on making anxious and first-time patients feel completely at ease from the first visit.',
     facts: [
@@ -15,7 +15,7 @@ const DOCTORS = [
       { value: 'Gentle', label: 'Anxiety-friendly' },
     ],
     img: '/assets/dr-shriya.jpeg',
-    alt: 'Dr. Shriya Verma',
+    alt: 'Dr. Shriya Sarin',
   },
 ] as const;
 

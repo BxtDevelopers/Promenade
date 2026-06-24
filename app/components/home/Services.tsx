@@ -72,7 +72,7 @@ const SERVICES = [
 export default function ServicesSection() {
   return (
     <section className="py-section">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
 
         {/* Header */}
         <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px] text-center">

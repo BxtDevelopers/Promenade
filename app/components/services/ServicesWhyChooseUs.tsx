@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/app/lib/useScrollReveal";
 const META = [
   {
     title: 'Care Led by Dr. Shriya',
-    body: 'Every patient is cared for by Dr. Shriya Verma, whose approach combines clear communication, gentle treatment, and personalized recommendations. Her focus is helping patients understand their options and feel comfortable with every step of their care.',
+    body: 'Every patient is cared for by Dr. Shriya Sarin, whose approach combines clear communication, gentle treatment, and personalized recommendations. Her focus is helping patients understand their options and feel comfortable with every step of their care.',
   },
   {
     title: 'Complete Treatment Planning',

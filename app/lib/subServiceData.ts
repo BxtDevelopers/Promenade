@@ -4774,6 +4774,1178 @@ secondaryButtonHref: 'tel:+14808028188',
 image: '/assets/dental-lobby.jpg',
 },
 
+},
+{
+  serviceSlug: 'restorative-dentistry',
+  slug: 'dentures',
+
+  name: 'Dentures & Partials',
+
+  metaTitle:
+    'Dentures & Partials in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Dentures and partial dentures in Chandler AZ for replacing multiple missing teeth. Visit Promenade Dental for removable tooth replacement near Fulton Ranch.',
+
+hero: {
+    eyebrow: 'Removable Tooth Replacement in Fulton Ranch',
+
+    title: 'Dentures and Partials for',
+
+    highlight:
+      'Multiple Missing Teeth and Removable Tooth Replacement in Chandler',
+
+    description:
+      'Promenade Dental helps patients replace missing teeth with full dentures and partial dentures planned around chewing comfort, speech support, facial support, gum health, appearance, and long-term function.',
+
+    image: '/assets/h-dentures.jfif',
+
+    trustPoints: [
+      'Full and partial denture options',
+      'Replacement for multiple missing teeth',
+      'Planned around comfort, fit, and function',
+      'Tooth replacement options explained clearly',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book a Denture Consultation',
+      href: '/contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+overview: {
+  eyebrow: 'Dentures & Partials',
+
+  heading:
+    'Dentures and Partials for Missing Teeth, Chewing Difficulty, Speech Changes, and Smile Gaps',
+
+  body:
+    'Multiple missing teeth can affect eating, speaking, facial support, and confidence in daily interactions. Missing teeth can also place extra pressure on remaining teeth and make chewing less comfortable. Dentures and partial dentures are removable tooth replacement options designed to restore missing teeth and support everyday function. Dr. Shriya evaluates the number of missing teeth, remaining tooth health, gum condition, bite, jaw support, comfort needs, and replacement goals before recommending a denture option.',
+
+  features: [
+    'Removable options for replacing multiple missing teeth',
+    'Supports chewing comfort and everyday function',
+    'Helps restore speech, appearance, and facial support',
+    'Treatment recommendations based on oral health and replacement goals',
+  ],
+
+  image: '/assets/service-dentures.jpg',
+
+  cta: {
+    label: 'Start Your Denture Consultation',
+    href: '/contact',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Denture Evaluation',
+
+  heading:
+    'Denture Evaluation for Missing Teeth, Gum Health, Bite Support, Fit, and Replacement Options',
+
+  description:
+    'Denture treatment should be planned around the entire mouth, not only the missing teeth. The comfort and stability of a denture depend on gum health, jaw support, remaining teeth, bite pressure, muscle movement, and how the appliance fits during speaking and chewing. A denture consultation helps determine whether a full denture, partial denture, immediate denture, implant-supported denture, bridge, or implant option should be considered.',
+
+  items: [
+    {
+      title: 'Number of Missing Teeth',
+
+      body:
+        'The number and location of missing teeth help determine whether a partial denture, full denture, bridge, or implant-supported option may be appropriate.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 16 h20 M12 24 h24 M16 32 h16',
+      ],
+    },
+
+    {
+      title: 'Health of Remaining Teeth',
+
+      body:
+        'Partial dentures rely on remaining teeth for support and stability, so those teeth must be evaluated carefully.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M20 18 h8 M20 24 h8 M20 30 h6',
+      ],
+    },
+
+    {
+      title: 'Gum and Jaw Support',
+
+      body:
+        'The fit and comfort of a denture depend on the gums, jaw ridge, bite relationship, and soft tissue support.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 30 h20 M18 14 v12 M24 14 v12 M16 22 h10',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out Which Denture Option Fits Your Needs',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'Why Dentures and Partials May Be Recommended',
+
+  heading:
+  'Dentures and Partials for Smile Restoration, Chewing Support, and Facial Balance',
+
+  body:
+    'Dentures and partials can help restore the areas left by missing teeth. They are designed to support chewing, speech, smile appearance, and facial structure while giving patients a removable tooth replacement option.',
+
+  features: [
+    {
+      title: 'Replaces Several or All Missing Teeth',
+
+      body:
+        'A denture or partial denture can replace multiple missing teeth when fixed replacement options are not preferred or not suitable.',
+    },
+
+    {
+      title: 'Supports Eating and Speaking',
+
+      body:
+        'Replacing missing teeth can help improve chewing ability and speech support.',
+    },
+
+    {
+      title: 'Restores Smile Appearance',
+
+      body:
+        'Dentures and partials are planned to help fill visible gaps and support the appearance of the smile and face.',
+    },
+  ],
+},
+servicesGrid: {
+  eyebrow: 'Denture Treatment Options',
+
+  heading:
+  'Denture Options for Missing Teeth and Implant Support',
+
+  intro:
+    'Different denture options serve different needs. The right option depends on how many teeth are missing, whether healthy teeth remain, whether implants are suitable, and whether the patient prefers removable or more stable tooth replacement.',
+
+  services: [
+    {
+      title: 'Full Dentures',
+
+      description:
+        'Full dentures replace all teeth in the upper arch, lower arch, or both arches with a removable appliance.',
+
+      bestFor: [
+        'Complete tooth loss',
+        'Full arch replacement',
+        'Removable tooth replacement',
+        'Facial support',
+      ],
+
+      cta: 'Ask About Full Dentures',
+
+      href: '/services/restorative-dentistry/dentures',
+    },
+
+    {
+      title: 'Partial Dentures',
+
+      description:
+        'Partial dentures replace several missing teeth while using remaining natural teeth for support and stability.',
+
+      bestFor: [
+        'Several missing teeth',
+        'Remaining healthy teeth',
+        'Removable partial replacement',
+        'Tooth gaps',
+      ],
+
+      cta: 'Ask About Partial Dentures',
+
+      href: '/services/restorative-dentistry/dentures',
+    },
+
+    {
+      title: 'Immediate Dentures',
+
+      description:
+        'Immediate dentures may be placed after extractions so the patient does not go without teeth during the initial healing period.',
+
+      bestFor: [
+        'Planned extractions',
+        'Temporary tooth replacement',
+        'Transition after tooth removal',
+        'Healing period support',
+      ],
+
+      cta: 'Ask About Immediate Dentures',
+
+      href: '/services/restorative-dentistry/dentures',
+    },
+
+    {
+      title: 'Implant-Supported Dentures',
+
+      description:
+        'Implant-supported dentures use dental implants to improve denture stability when bone support, healing, and oral health are suitable.',
+
+      bestFor: [
+        'Improved denture stability',
+        'Full arch replacement',
+        'Implant-supported options',
+        'Reduced movement',
+      ],
+
+      cta: 'Ask About Implant-Supported Dentures',
+
+      href: '/services/restorative-dentistry/dentures',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Denture and Partial Denture Assessment',
+
+  heading:
+    'Dentures and Partials for Patients Who Need to Replace Several or All Missing Teeth',
+
+  body:
+    'Dentures or partials may be recommended when several teeth are missing or when a removable replacement is the most practical option. Some patients choose dentures because they need to replace many teeth. Others may consider bridges or implants depending on tooth position, bone support, budget, and long-term goals.\n\nAt Promenade Dental, Dr. Shriya explains whether a denture, partial denture, bridge, implant, or implant-supported option may be most suitable.',
+
+  goodFit: {
+    title: 'Dentures or Partials May Be Right If',
+
+    items: [
+      'You are missing several teeth',
+      'You need full arch tooth replacement',
+      'You want a removable replacement option',
+      'You have remaining teeth that can support a partial',
+      'You need a practical replacement after extractions',
+    ],
+  },
+
+  alternative: {
+    title: 'Another Option May Be Better If',
+
+    items: [
+      'You want a fixed replacement option',
+      'You are replacing only one missing tooth',
+      'A dental bridge is suitable for the missing space',
+      'You want implant-supported stability',
+      'Remaining teeth or gums need treatment first',
+    ],
+  },
+
+  cta: {
+    label: 'Find Out If Dentures Are Right for You',
+    href: '/contact',
+  },
+},
+comparison: {
+  eyebrow: 'Dentures vs Partials vs Bridges vs Implants',
+
+  heading:
+    'Dentures, Partials, Bridges, and Implants for Different Missing Tooth Replacement Needs',
+
+  body:
+    'Missing teeth can be replaced in different ways. Dentures are removable and can replace many teeth. Partials replace several missing teeth while some natural teeth remain. Bridges are fixed restorations for selected missing tooth spaces. Implants may support crowns, bridges, or dentures when suitable.',
+
+  matches: [
+    {
+      title: 'Full Dentures for Complete Tooth Loss',
+
+      body:
+        'Full dentures may be recommended when all teeth in an arch need replacement.',
+    },
+
+    {
+      title: 'Partial Dentures for Several Missing Teeth',
+
+      body:
+        'Partials may be suitable when some natural teeth remain and several teeth need replacement.',
+    },
+
+    {
+      title: 'Dental Bridges for Fixed Tooth Replacement',
+
+      body:
+        'A bridge may replace one or more missing teeth when neighboring teeth or implants can support the restoration.',
+    },
+
+    {
+      title: 'Dental Implants for Stable Replacement Support',
+
+      body:
+        'Implants may replace individual teeth or support dentures and bridges when bone and oral health are suitable.',
+    },
+  ],
+},
+process: {
+  eyebrow: 'Denture Treatment Process',
+
+  heading:
+  'Denture Treatment Planning for Fit, Comfort, and Function',
+
+  subtitle:
+    'Denture treatment is planned around the gums, jaw shape, missing teeth, remaining teeth, bite, and facial support. The goal is to create a replacement that supports daily function while fitting as comfortably as possible.',
+
+  steps: [
+    {
+      title: 'Missing Tooth and Gum Evaluation',
+
+      body:
+        'Dr. Shriya evaluates missing teeth, remaining teeth, gums, jaw support, bite relationship, and oral health.',
+    },
+
+    {
+      title: 'Replacement Option Review',
+
+      body:
+        'You receive a clear explanation of full dentures, partial dentures, immediate dentures, bridges, implants, and implant-supported options when relevant.',
+    },
+
+    {
+      title: 'Denture Design and Fitting',
+
+      body:
+        'The denture or partial is designed around fit, tooth position, bite, comfort, speech support, and appearance.',
+    },
+
+    {
+      title: 'Adjustment and Follow-Up',
+
+      body:
+        'Follow-up visits may be needed to adjust comfort, fit, pressure points, bite, or appliance stability.',
+    },
+  ],
+
+  cta: {
+    label: 'Book a Denture Consultation',
+    href: '/contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Denture Adjustment and Maintenance',
+
+  heading:
+    'Denture Care for Patients Who Want Better Fit, Comfort, and Long-Term Use',
+
+  body:
+    'Dentures and partials need regular care and periodic evaluation. The mouth can change over time, which may affect fit and comfort. Routine dental visits help check the denture, gums, remaining teeth, and bite support.',
+
+  cards: [
+    {
+      title: 'Clean Dentures Daily',
+
+      body:
+        'Dentures should be cleaned regularly to reduce buildup, odor, staining, and irritation.',
+    },
+
+    {
+      title: 'Remove and Store as Directed',
+
+      body:
+        'The dental team will explain how and when to remove, clean, and store your denture safely.',
+    },
+
+    {
+      title: 'Check for Sore Spots',
+
+      body:
+        'Pressure areas, rubbing, or sore gums should be evaluated so adjustments can be made.',
+    },
+
+    {
+      title: 'Monitor Fit Over Time',
+
+      body:
+        'Gums and jaw support can change, so dentures may need adjustment, relining, or replacement over time.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+  'Dentist-Led Denture Planning for Comfort, Fit, and Tooth Replacement',
+
+  description:
+    'Dentures should be planned around comfort, function, and long-term oral health. Promenade Dental evaluates the teeth, gums, bite, and replacement needs before recommending a denture or partial.',
+
+  items: [
+    {
+      title: 'Diagnosis Before Replacement',
+
+      body:
+        'Dr. Shriya evaluates missing teeth, remaining teeth, gums, bite, jaw support, and X-rays when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Replacement Options Explained Clearly',
+
+      body:
+        'Patients are guided through full dentures, partial dentures, bridges, implants, and implant-supported dentures when relevant.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Fit and Function Considered Together',
+
+      body:
+        'Denture planning considers chewing comfort, speech support, appliance stability, smile appearance, and facial support.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Restorative and Implant Care in One Office',
+
+      body:
+        'Promenade Dental can connect denture planning with extractions, bridges, implants, crowns, and preventive care.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Dentures and Partials Near Fulton Ranch',
+
+  heading:
+    'Dentures and Partials Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for dentures, partial dentures, full dentures, removable tooth replacement, or restorative dentistry near Chandler 85248, Promenade Dental offers denture consultations based on missing teeth, gum health, comfort, fit, and long-term function.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Restorative Services',
+
+  heading:
+  'Related Treatments for Missing Teeth and Tooth Replacement',
+
+  intro:
+    'Dentures and partials are one option for tooth replacement. Some patients may also need extractions, bridges, implants, or restorative treatment before or after denture planning.',
+
+  services: [
+    {
+      title: 'Tooth Extractions',
+
+      description:
+        'Extractions may be needed before dentures if remaining teeth cannot be predictably restored.',
+
+      href: '/services/restorative-dentistry/tooth-extractions',
+    },
+
+    {
+      title: 'Dental Bridges',
+
+      description:
+        'Bridges may replace one or more missing teeth with a fixed restoration when suitable.',
+
+      href: '/services/restorative-dentistry/dental-bridges',
+    },
+
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Implants may replace teeth or support dentures when oral health and bone support are suitable.',
+
+      href: '/services/restorative-dentistry/dental-implants',
+    },
+
+    {
+      title: 'Implant-Supported Dentures',
+
+      description:
+        'Implant-supported dentures may improve stability for patients who want more support than traditional removable dentures.',
+
+      href: '/services/restorative-dentistry/dental-implants',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading: 'About Missing Teeth, Partial Dentures, Full Dentures and Tooth Replacement',
+
+  items: [
+    {
+      q: 'What are dentures?',
+      a: 'Dentures are removable appliances used to replace missing teeth. Full dentures replace all teeth in an arch, while partial dentures replace several missing teeth when some natural teeth remain.',
+    },
+
+    {
+      q: 'What is the difference between full dentures and partial dentures?',
+      a: 'Full dentures replace all teeth in the upper arch, lower arch, or both. Partial dentures replace several missing teeth while using remaining natural teeth for support.',
+    },
+
+    {
+      q: 'When do I need dentures?',
+      a: 'Dentures may be considered when several or all teeth are missing, when teeth need removal, or when a removable replacement option is preferred.',
+    },
+
+    {
+      q: 'Are dentures removable?',
+      a: 'Yes. Traditional full and partial dentures are removable. Implant-supported denture options may provide additional support when suitable.',
+    },
+
+    {
+      q: 'Can dentures help with chewing?',
+      a: 'Dentures can help restore chewing ability, but they may feel different from natural teeth. Fit, adjustment, and practice are important for comfort and function.',
+    },
+
+    {
+      q: 'Do dentures affect speech?',
+      a: 'Dentures may affect speech at first while your mouth adapts. Proper fit and practice can help improve comfort and speech support.',
+    },
+
+    {
+      q: 'Can I get dentures after tooth extraction?',
+      a: 'Yes. Dentures may be planned after extractions. In some cases, immediate dentures may be used during the initial healing period.',
+    },
+
+    {
+      q: 'Are dental implants better than dentures?',
+      a: 'Dental implants and dentures serve different needs. Implants may provide more stable support when bone and oral health are suitable, while dentures can replace many teeth with a removable appliance.',
+    },
+
+    {
+      q: 'Do dentures need adjustments?',
+      a: 'Yes. Dentures may need adjustments over time because gums and jaw support can change. Sore spots, looseness, or bite discomfort should be checked.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Schedule a Denture Consultation',
+
+  highlight: 'for Multiple Missing Teeth',
+
+  subtitle:
+    'Promenade Dental helps patients replace missing teeth with full dentures, partial dentures, and related tooth replacement options planned around comfort, fit, chewing support, speech, appearance, and long-term function.',
+
+  buttonText: 'Book a Denture Consultation',
+
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+
+{
+  serviceSlug: 'restorative-dentistry',
+  slug: 'inlays-onlays',
+
+  name: 'Inlays & Onlays',
+
+  metaTitle:
+    'Inlays & Onlays in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Inlays and onlays in Chandler AZ for larger cavities, moderate tooth damage, and teeth that need more support than a filling. Visit Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Conservative Tooth Restoration in Fulton Ranch',
+
+    title: 'Inlays and Onlays for',
+
+    highlight:
+      'Larger Cavities, Moderate Tooth Damage, and Weakened Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients restore damaged teeth with inlays and onlays when a filling may not provide enough support, but a full dental crown may not be necessary.',
+
+    image: '/assets/h-inlays.jpg',
+
+    trustPoints: [
+      'For larger cavities and moderate tooth damage',
+      'More support than a filling in selected cases',
+      'May preserve more tooth structure than a crown',
+      'Planned around bite comfort and tooth strength',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book an Inlay or Onlay Consultation',
+      href: '/contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: 'Inlays & Onlays',
+
+  heading:
+    'Inlays and Onlays for Teeth That Need More Support Than a Filling',
+
+  body:
+    'Some cavities or damaged teeth are too large for a standard filling, but not damaged enough to require a full dental crown. In these cases, an inlay or onlay may help restore the tooth while preserving healthy structure. Inlays and onlays are custom restorations used to repair moderate tooth damage. They are planned around the size of the cavity, the remaining tooth structure, chewing pressure, tooth shape, and long-term function.',
+
+  features: [
+    'Designed for larger cavities and moderate tooth damage',
+    'Provides more support than a standard filling',
+    'May preserve more healthy tooth structure than a crown',
+    'Planned around strength, fit, and long-term function',
+  ],
+
+  image: '/assets/service-inlays-onlays.jpg',
+
+  cta: {
+    label: 'Schedule a Tooth Restoration Evaluation',
+    href: '/contact',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Inlay and Onlay Evaluation',
+
+  heading:
+    'Inlay and Onlay Evaluation for Large Cavities, Tooth Strength, Bite Pressure, and Remaining Tooth Structure',
+
+  description:
+    'The right restoration depends on how much tooth structure remains after decay or damage is removed. A small cavity may need a filling. A larger damaged area may need an inlay, onlay, or crown. A deeply infected tooth may need root canal therapy before it can be restored. Dr. Shriya evaluates the tooth, existing fillings, cavity size, cracks, bite pressure, gum health, and symptoms before recommending the most suitable restoration.',
+
+  items: [
+    {
+      title: 'Size of the Damaged Area',
+
+      body:
+        'The larger the cavity or damaged portion, the more support the tooth may need after repair.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 16 h20 M12 24 h24 M16 32 h16',
+      ],
+    },
+
+    {
+      title: 'Remaining Tooth Strength',
+
+      body:
+        'An inlay or onlay may be considered when the tooth still has enough structure to avoid full crown coverage.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M20 18 h8 M20 24 h8 M20 30 h6',
+      ],
+    },
+
+    {
+      title: 'Bite and Chewing Pressure',
+
+      body:
+        'Back teeth handle heavy chewing forces, so restoration planning must consider how the tooth functions during biting and chewing.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 30 h20 M18 14 v12 M24 14 v12 M16 22 h10',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out If an Inlay or Onlay Is Right for You',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'What Inlays and Onlays Do',
+
+  heading:
+    'Dental Inlays and Onlays for Moderate Tooth Repair Without Full Crown Coverage',
+
+  body:
+    'Inlays and onlays are often described as conservative restorations because they can repair larger areas of damage while preserving more natural tooth structure than a full crown in selected cases.',
+
+  features: [
+    {
+      title: 'Dental Inlays for Damage Inside the Tooth Cusps',
+
+      body:
+        'An inlay repairs damage within the chewing surface of the tooth, between the raised points called cusps.',
+    },
+
+    {
+      title: 'Dental Onlays for Damage That Extends Over a Cusp',
+
+      body:
+        'An onlay repairs a larger area of tooth damage and may cover one or more cusps for added protection.',
+    },
+  ],
+},
+servicesGrid: {
+  eyebrow: 'Inlay and Onlay Treatment Situations',
+
+  heading:
+  'Inlays and Onlays for Large Cavities and Worn Fillings',
+
+  intro:
+    'Inlays and onlays may be recommended when a tooth needs stronger support than a filling but does not require full coverage with a dental crown.',
+
+  services: [
+    {
+      title: 'Inlays and Onlays for Larger Cavities',
+
+      description:
+        'When a cavity is too large for a regular filling, an inlay or onlay may help restore the tooth with stronger support.',
+
+      bestFor: [
+        'Larger cavities',
+        'Moderate decay',
+        'Damaged back teeth',
+        'Filling alternatives',
+      ],
+
+      cta: 'Ask About Large Cavity Restoration',
+
+      href: '/services/restorative-dentistry/inlays-onlays',
+    },
+
+    {
+      title: 'Inlays and Onlays for Old or Failing Fillings',
+
+      description:
+        'An older filling may weaken, leak, crack, or leave the tooth with less support. An inlay or onlay may be considered when replacing a larger restoration.',
+
+      bestFor: [
+        'Large old fillings',
+        'Worn restorations',
+        'Leaking fillings',
+        'Weakened tooth structure',
+      ],
+
+      cta: 'Ask About Replacing an Old Filling',
+
+      href: '/services/restorative-dentistry/inlays-onlays',
+    },
+
+    {
+      title: 'Inlays and Onlays for Moderate Tooth Damage',
+
+      description:
+        'If a tooth has damage that is more extensive than a small chip or cavity, an inlay or onlay may restore function without covering the full tooth.',
+
+      bestFor: [
+        'Moderate tooth damage',
+        'Weakened cusps',
+        'Back tooth repair',
+        'Partial tooth restoration',
+      ],
+
+      cta: 'Ask About Moderate Tooth Repair',
+
+      href: '/services/restorative-dentistry/inlays-onlays',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Inlay and Onlay Assessment',
+
+  heading:
+    'Inlays and Onlays for Patients Who Need Stronger Tooth Repair Than a Filling',
+
+  body:
+    'An inlay or onlay may be suitable when a tooth has moderate damage and still has enough healthy structure to avoid a full crown. It can be a useful option when a filling may not be strong enough, but a crown may remove more tooth structure than needed.\n\nAt Promenade Dental, Dr. Shriya helps you understand whether an inlay, onlay, filling, crown, root canal, or extraction is the right next step.',
+
+  goodFit: {
+    title: 'An Inlay or Onlay May Be Right If',
+
+    items: [
+      'You have a larger cavity',
+      'A regular filling may not be strong enough',
+      'The tooth still has good remaining structure',
+      'An old large filling needs replacement',
+      'The damage affects the chewing surface or cusps',
+    ],
+  },
+
+  alternative: {
+    title: 'Another Treatment May Be Better If',
+
+    items: [
+      'The cavity is small enough for a filling',
+      'The tooth is cracked or severely weakened',
+      'The tooth needs full crown coverage',
+      'Decay or infection has reached the nerve',
+      'The tooth cannot be predictably restored',
+    ],
+  },
+
+  cta: {
+    label: 'Find Out If an Inlay or Onlay Fits Your Tooth',
+    href: '/contact',
+  },
+},
+comparison: {
+  eyebrow: 'Inlay vs Onlay vs Filling vs Crown',
+
+  heading:
+    'Fillings, Inlays, Onlays, and Crowns for Different Levels of Tooth Damage',
+
+  body:
+    'The difference between these restorations comes down to how much tooth damage exists and how much support the tooth needs after repair.',
+
+  matches: [
+    {
+      title: 'Fillings for Smaller Cavities',
+
+      body:
+        'A filling may be recommended when decay is limited and the tooth has enough structure for a direct restoration.',
+    },
+
+    {
+      title: 'Inlays for Larger Damage Within the Cusps',
+
+      body:
+        'An inlay may be used when the damaged area is larger than a filling but does not extend over the tooth cusps.',
+    },
+
+    {
+      title: 'Onlays for Damage Involving the Cusps',
+
+      body:
+        'An onlay may be used when the restoration needs to cover one or more cusps for added support.',
+    },
+
+    {
+      title: 'Crowns for Full Tooth Protection',
+
+      body:
+        'A crown may be recommended when the tooth is cracked, heavily damaged, root canal-treated, or too weak for a partial restoration.',
+    },
+  ],
+},
+process: {
+  eyebrow: 'Inlay and Onlay Treatment Process',
+
+  heading:
+  'Inlay and Onlay Planning for Bite Comfort and Long-Term Function',
+
+  subtitle:
+    'Inlays and onlays are planned around the shape of the damaged tooth, the chewing surface, the bite, and the amount of healthy tooth that can be preserved. The goal is to restore the tooth in a way that supports chewing while protecting the remaining structure.',
+
+  steps: [
+    {
+      title: 'Tooth Diagnosis',
+
+      body:
+        'Dr. Shriya evaluates the cavity, tooth damage, symptoms, old fillings, bite pressure, and X-rays when needed.',
+    },
+
+    {
+      title: 'Restoration Recommendation',
+
+      body:
+        'You receive a clear explanation of whether a filling, inlay, onlay, crown, root canal, or another treatment is most appropriate.',
+    },
+
+    {
+      title: 'Tooth Preparation and Restoration Design',
+
+      body:
+        'The damaged area is prepared, and the inlay or onlay is designed to fit the tooth shape and chewing surface.',
+    },
+
+    {
+      title: 'Placement and Bite Check',
+
+      body:
+        'The restoration is placed and checked for fit, comfort, bite contact, and chewing function.',
+    },
+  ],
+
+  cta: {
+    label: 'Book an Inlay or Onlay Consultation',
+    href: '/contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Inlay and Onlay Maintenance',
+
+  heading:
+    'Inlay and Onlay Care for Patients Who Want Long-Term Tooth Protection',
+
+  body:
+    'Inlays and onlays restore damaged teeth, but the natural tooth and gums still need regular care. Good oral hygiene and routine dental visits help protect the restoration and surrounding tooth structure.',
+
+  cards: [
+    {
+      title: 'Brush and Floss Around the Restoration',
+
+      body:
+        'Plaque can collect around restoration edges, so brushing and flossing remain important.',
+    },
+
+    {
+      title: 'Avoid Chewing Hard Objects',
+
+      body:
+        'Hard objects can damage restorations and natural tooth structure.',
+    },
+
+    {
+      title: 'Monitor Bite Comfort',
+
+      body:
+        'A restoration that feels high, uneven, or uncomfortable when chewing should be checked.',
+    },
+
+    {
+      title: 'Keep Up With Dental Exams',
+
+      body:
+        'Routine exams help monitor restoration fit, tooth health, gum condition, and bite function.',
+    },
+  ],
+},
+benefits: {
+eyebrow: 'Why Choose Promenade Dental',
+
+heading:
+'Dentist-Led Inlay and Onlay Planning for Tooth Preservation and Bite Comfort',
+
+description:
+'Inlays and onlays require careful treatment planning because they sit between simple fillings and full dental crowns. The right choice depends on tooth strength, cavity size, chewing pressure, and how much healthy tooth can be preserved.',
+
+items: [
+{
+title: 'Diagnosis Before Restoration',
+
+  body:
+    'Dr. Shriya evaluates decay, cracks, old fillings, symptoms, X-rays when needed, and tooth strength before recommending treatment.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+  ],
+},
+
+{
+  title: 'Conservative Restoration Planning',
+
+  body:
+    'When suitable, inlays and onlays may preserve more healthy tooth structure than a full crown.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+  ],
+},
+
+{
+  title: 'Function and Fit Considered Together',
+
+  body:
+    'Treatment planning considers chewing comfort, bite contact, tooth shape, and long-term stability.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+  ],
+},
+
+{
+  title: 'Restorative Options Explained Clearly',
+
+  body:
+    'Promenade Dental helps patients understand whether a filling, inlay, onlay, crown, root canal, or extraction is the right option.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+  ],
+},
+
+],
+},
+localArea: {
+  eyebrow: 'Inlays and Onlays Near Fulton Ranch',
+
+  heading:
+    'Inlays and Onlays Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for dental inlays, dental onlays, large cavity restoration, filling alternatives, crown alternatives, or restorative dentistry near Chandler 85248, Promenade Dental offers inlay and onlay evaluations planned around tooth strength, bite comfort, and long-term function.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Restorative Services',
+
+  heading:
+    'Related Treatments for Cavities, Weak Teeth, and Tooth Repair',
+
+  intro:
+    'Inlays and onlays are used for moderate tooth damage. Some teeth may need a smaller filling, full crown, root canal, or broader restorative treatment depending on diagnosis.',
+
+  services: [
+    {
+      title: 'Tooth-Colored Fillings',
+
+      description:
+        'Fillings may repair smaller cavities or minor tooth damage when the tooth does not need additional support.',
+
+      href: '/services/restorative-dentistry/tooth-colored-fillings',
+    },
+
+    {
+      title: 'Dental Crowns',
+
+      description:
+        'Crowns may be needed when a tooth requires full coverage protection.',
+
+      href: '/services/restorative-dentistry/dental-crowns',
+    },
+
+    {
+      title: 'Root Canal Therapy',
+
+      description:
+        'Root canal therapy may be needed when decay or infection reaches the inside of the tooth.',
+
+      href: '/services/restorative-dentistry/root-canals',
+    },
+
+    {
+      title: 'Restorative Dentistry',
+
+      description:
+        'Explore restorative treatments for damaged, decayed, infected, weak, worn, or missing teeth.',
+
+      href: '/services/restorative-dentistry',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+    'About Inlays, Onlays, Fillings, Crowns, and Tooth Restoration',
+
+  items: [
+    {
+      q: 'What are dental inlays and onlays?',
+      a: 'Dental inlays and onlays are custom restorations used to repair moderate tooth damage. They are often used when a filling may not provide enough support but a full crown may not be necessary.',
+    },
+
+    {
+      q: 'What is the difference between an inlay and an onlay?',
+      a: 'An inlay repairs damage within the chewing surface of the tooth, usually between the cusps. An onlay covers a larger area and may extend over one or more cusps.',
+    },
+
+    {
+      q: 'When do I need an inlay or onlay?',
+      a: 'An inlay or onlay may be recommended when a cavity or damaged area is too large for a regular filling but the tooth does not need full crown coverage.',
+    },
+
+    {
+      q: 'Is an onlay the same as a crown?',
+      a: 'No. An onlay covers part of the tooth, often including one or more cusps. A crown covers the full visible portion of the tooth.',
+    },
+
+    {
+      q: 'Are inlays and onlays better than fillings?',
+      a: 'They are not automatically better. Fillings may be right for smaller cavities. Inlays and onlays may be better when the tooth needs more support than a filling can provide.',
+    },
+
+    {
+      q: 'Are inlays and onlays better than crowns?',
+      a: 'Inlays and onlays may preserve more tooth structure than crowns in selected cases. Crowns may be better when the tooth needs full coverage protection.',
+    },
+
+    {
+      q: 'Can an old filling be replaced with an inlay or onlay?',
+      a: 'Yes. If an old filling is large, worn, leaking, or weakening the tooth, an inlay or onlay may be considered as a replacement option.',
+    },
+
+    {
+      q: 'Do inlays and onlays look natural?',
+      a: 'Inlays and onlays can be designed to blend with the surrounding tooth depending on the material and tooth location.',
+    },
+
+    {
+      q: 'How do I know if I need a filling, inlay, onlay, or crown?',
+      a: 'A dental exam helps determine how much tooth structure remains and how much support the tooth needs after decay or damage is removed.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Schedule an Inlay or Onlay Consultation',
+
+highlight: 'for Large Cavities',
+
+  subtitle:
+    'Promenade Dental helps patients restore moderately damaged teeth with inlays and onlays planned around tooth preservation, bite comfort, tooth strength, and long-term function.',
+
+  buttonText: 'Book an Inlay or Onlay Consultation',
+
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
 }
 
 ]
