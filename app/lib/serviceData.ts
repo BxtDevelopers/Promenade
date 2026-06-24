@@ -666,7 +666,7 @@ export const SERVICES = [
           highlight: 'or worn teeth with cosmetic dentistry.',
           description:
             'Promenade Dental helps patients improve tooth color, shape, spacing, chips, worn edges, and smile balance with cosmetic treatments such as teeth whitening, ZOOM whitening, veneers, bonding, and smile makeover planning.',
-          image: '/assets/cosmetic.jfif',
+          image: '/assets/cosmetic.jpg',
 
           trustPoints: [
             'Natural-Looking Smile Improvements',
@@ -1665,7 +1665,7 @@ hero: {
   description:
     'Promenade Dental helps patients explore dental implant options for replacing one tooth, several teeth, or supporting dentures with treatment planning focused on oral health, bone support, chewing function, smile appearance, and long-term stability.',
 
-  image: '/assets/dental-implants.jpg',
+  image: '/assets/h-dentalimplants.jpg',
 
   trustPoints: [
     'Single Tooth Implant Options',

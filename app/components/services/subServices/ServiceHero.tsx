@@ -144,7 +144,7 @@ export default function ServiceHero({
             </motion.div>
 
             {/* Headline */}
-            <h1 className="font-serif font-light text-5xl lg:text-7xl leading-[1.1em] text-ivory">
+            <h1 className="font-serif font-light text-4xl lg:text-7xl leading-[1.1em] text-ivory">
               <span className="block">
                 <motion.span
                   className="inline-block"
@@ -162,7 +162,7 @@ export default function ServiceHero({
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.9, duration: 1 }}
-  className="max-w-[80%] text-muted text-xl font-light leading-[1.7] mt-6"
+  className="lg:max-w-[80%] text-white/80  lg:text-xl font-light leading-[1.7] mt-6"
 >
   {description}
 </motion.p>

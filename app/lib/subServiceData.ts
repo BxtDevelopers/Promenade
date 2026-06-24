@@ -4798,7 +4798,7 @@ hero: {
     description:
       'Promenade Dental helps patients replace missing teeth with full dentures and partial dentures planned around chewing comfort, speech support, facial support, gum health, appearance, and long-term function.',
 
-    image: '/assets/h-dentures.jfif',
+    image: '/assets/h-dentures.jpg',
 
     trustPoints: [
       'Full and partial denture options',
