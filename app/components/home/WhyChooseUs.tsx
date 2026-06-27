@@ -1,5 +1,4 @@
 'use client';
-
 import { useScrollReveal } from "@/app/lib/useScrollReveal";
 
 const META = [
@@ -99,3 +98,5 @@ function MetaCard({
     </div>
   );
 }
+
+

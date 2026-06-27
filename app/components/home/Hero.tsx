@@ -2,14 +2,9 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { ArrowBigLeft, ArrowRight } from 'lucide-react';
 
 const ARC_COUNT = 15;
-
-const HEADLINE_LINES: { text?: string; italic?: string; delay: number }[] = [
-  { text: 'Gentle , Personal Dental',   delay: 0.45 },
-  { text: ' Care for Healthy', delay: 0.58 },
-  { italic: 'Confident Smiles.',       delay: 0.71 },
-];
 
 export default function Hero() {
   const archGroupRef = useRef<SVGGElement>(null);
@@ -73,10 +68,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <header
-      ref={heroRef}
-      className="relative flex items-end overflow-hidden min-h-screen"
-    >
+    <header ref={heroRef} className="relative flex flex-col overflow-hidden min-h-[90vh]">
       {/* Arch SVG field */}
       <div className="absolute inset-0 z-0">
         <svg
@@ -102,9 +94,9 @@ export default function Hero() {
         }}
       />
 
-      {/* Content */}
+      {/* ── Main content ── */}
       <div
-        className="relative z-[2] w-full max-w-[90%] mx-auto lg:px-site pt-40 text-left"
+        className="relative z-[2] w-full max-w-[90%] mx-auto lg:px-site pt-40 text-left flex-1 flex flex-col justify-end"
         style={{ paddingBottom: 'clamp(48px, 7vw, 96px)' }}
       >
         {/* Eyebrow */}
@@ -114,12 +106,16 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 1 }}
           className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
         >
-          Promenade Dental in Fulton Ranch, Chandler AZ
+          Promenade Dental · Fulton Ranch, Chandler AZ
         </motion.div>
 
-        {/* Headline */}
+        {/* Headline — shorter, punchier */}
         <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ivory">
-          {HEADLINE_LINES.map((line, i) => (
+          {[
+            { text: 'Gentle, Personal', delay: 0.45 },
+            { text: 'Care for Your', delay: 0.58 },
+            { italic: 'Best Smile.', delay: 0.71 },
+          ].map((line, i) => (
             <span key={i} className="block overflow-hidden">
               <motion.span
                 className="inline-block"
@@ -137,52 +133,141 @@ export default function Hero() {
           ))}
         </h1>
 
-        {/* Footer row */}
-        <motion.div
+        {/* Single punchy subline */}
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 1.2 }}
-          className="flex flex-col  md:justify-between gap-6 md:gap-[30px] mt-8 md:mt-10 max-w-5xl"
+          transition={{ delay: 0.9, duration: 1 }}
+          className="text-muted text-body-lg font-light leading-[1.7] mt-6 max-w-[52ch]"
         >
-          <p className=" text-muted text-body-lg font-light leading-[1.7]">
-            Promenade Dental is a family and cosmetic dental practice in Chandler, AZ, serving patients from Fulton Ranch, Ocotillo, Sun Lakes, and nearby communities. Led by Dr. Shriya Sarin, our office provides preventive, cosmetic, restorative, implant, and emergency dental care in one calm and patient-focused environment.
-    Here, you are not rushed from room to room or passed between different providers. You see the same dentist, receive clear explanations, and get treatment recommendations based on your oral health, comfort, goals, and long-term smile function.
+          Family, cosmetic, restorative, and emergency dentistry — all with the same dentist, every visit.
+        </motion.p>
 
-          </p>
-                  <div className="flex flex-wrap gap-2.5 mt-6">
-          {[
-            "Welcoming New Patients",
-            "Same-Day Appointments Available",
-            "Trusted by 200+ Patients",
-          ].map((item) => (
-            <span
-              key={item}
-              className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 md:text-body-lg text-ivory/80 tracking-[0.02em]"
-            >
-              {item}
-            </span>
-          ))}
-        </div>  
-          <div className="flex-shrink-0">
-            <HeroButton />
-          </div>
-        </motion.div>
+        {/* CTA button */}
+        {/* <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.1, duration: 1 }}
+          className="mt-8"
+        >
+          <HeroButton />
+        </motion.div> */}
       </div>
 
-      {/* Scroll cue — hide on short mobile screens */}
+      {/* ── Trust bar — below hero content, above fold on desktop ── */}
+      {/* <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.3, duration: 1 }}
+        className="relative z-[2] w-full border-t border-white/10 bg-white/[0.04] backdrop-blur-sm"
+      >
+        <div className="max-w-[90%] mx-auto lg:px-site py-4 flex flex-wrap items-center gap-x-8 gap-y-3">
+          {[
+            { icon: '✓', text: 'Welcoming New Patients' },
+            { icon: '✓', text: 'Most PPO Plans Accepted' },
+            { icon: '✓', text: 'Same-Day Emergency Appointments' },
+            { icon: '★', text: '200+ Happy Patients' },
+          ].map((item) => (
+            <span key={item.text} className="flex items-center gap-2 text-[13px] text-ivory/70 tracking-[0.02em]">
+              <span className="text-coral text-[11px]">{item.icon}</span>
+              {item.text}
+            </span>
+          ))}
+        </div>
+      </motion.div>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.6, duration: 1.4 }}
-        className="absolute left-1/2 bottom-6 -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ivory/60"
+        transition={{ delay: 1.4, duration: 1 }}
+        className="relative z-[2] lg:max-w-[50%] bg-bg"
+      >
+        <div className="max-w-[90%] mx-auto lg:px-site py-5 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <QuickAction
+            href="#book"
+            label="Book an Appointment"
+            sub="Online scheduling, 24/7"
+            icon={
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M7 2v3M13 2v3M3 8h14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+            }
+            primary
+          />
+          <QuickAction
+            href="/services"
+            label="Our Services"
+            sub="Family · Cosmetic · Implants"
+            icon={
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 3a7 7 0 1 0 0 14A7 7 0 0 0 10 3Z" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M10 7v3l2 2" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+            }
+          />
+          <QuickAction
+            href="tel:+14808028188"
+            label="Dental Emergency?"
+            sub="Call (480) 802-8188 now"
+            icon={
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 4h4l1.5 3.5-2 1.5a9 9 0 0 0 3.5 3.5l1.5-2L16 12v4a1 1 0 0 1-1 1C7 17 3 11 3 5a1 1 0 0 1 1-1Z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            }
+            urgent
+          />
+        </div>
+      </motion.div> */}
+
+      {/* Scroll cue */}
+      {/* <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.8, duration: 1.4 }}
+        className="absolute left-1/2 bottom-[clamp(140px,20vw,180px)] -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ivory/60"
       >
         <span>Scroll</span>
         <span className="block w-px h-8 bg-gradient-to-b from-ivory/60 to-transparent animate-cue" />
-      </motion.div>
+      </motion.div> */}
     </header>
   );
 }
 
+/* ── Quick action tile ── */
+function QuickAction({
+  href, label, sub, icon, primary, urgent,
+}: {
+  href: string;
+  label: string;
+  sub: string;
+  icon: React.ReactNode;
+  primary?: boolean;
+  urgent?: boolean;
+}) {
+  return (
+    <a
+      href={href}
+      className={[
+        'group flex items-center gap-4 px-5 py-4 rounded-[14px] border transition-all duration-300',
+        primary
+          ? 'bg-coral border-coral hover:bg-coral/90 text-bg'
+          : urgent
+          ? 'bg-ivory/[0.03] border-line hover:border-coral/50 hover:bg-coral/5 text-ivory'
+          : 'bg-ivory/[0.03] border-line hover:border-ivory/30 hover:bg-ivory/5 text-ivory',
+      ].join(' ')}
+    >
+      <span className={primary ? 'text-bg' : 'text-coral'}>{icon}</span>
+      <span className="min-w-0">
+        <span className="block text-[13.5px] font-medium tracking-[0.01em]">{label}</span>
+        <span className={`block text-[11.5px] mt-0.5 ${primary ? 'text-bg/70' : 'text-muted'}`}>{sub}</span>
+      </span>
+      <ArrowRight size={20}/>
+    </a>
+  );
+}
+
+/* ── Primary CTA button ── */
 function HeroButton() {
   const ref = useRef<HTMLButtonElement>(null);
   const [hov, setHov] = useState(false);
@@ -213,3 +298,5 @@ function HeroButton() {
     </button>
   );
 }
+
+

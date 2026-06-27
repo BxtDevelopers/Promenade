@@ -103,7 +103,7 @@ export default function ScrollStory() {
   ref={sectionRef}
   className="relative"
   style={{
-    height: `${STEPS.length * 80}vh`,
+    height: `${STEPS.length * 100}vh`,
   }}
 >
 
@@ -175,7 +175,7 @@ export default function ScrollStory() {
 </div>
 
         {/* ── Foreground copy ── */}
-        <div className="relative z-[2] w-full max-w-[1240px] mx-auto px-site">
+        <div className="relative z-[2] w-full max-w-[90%] mx-auto px-site">
 
           {/* Eyebrow */}
         
@@ -202,7 +202,7 @@ export default function ScrollStory() {
                 <p className="text-[11.5px] tracking-eyebrow uppercase font-medium text-coral mt-[34px]">
                   Dental Treatments We Provide
                 </p>
-                <h2 className="font-serif font-light text-story-head leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ivory mt-[14px] mb-5">
+                <h2 className="font-serif font-light text-4xl lg:text-7xl lg:leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ivory mt-[14px] mb-5 max-w-[80%] md:max-w-full">
                   {s.title}
                 </h2>
 
@@ -247,7 +247,7 @@ export default function ScrollStory() {
 
         {/* ── Progress dots ── */}
         <div className="absolute left-0 right-0 bottom-[8vh] z-[2]">
-          <div className="max-w-[1240px] mx-auto px-site flex gap-[14px]">
+          <div className="max-w-[90%] mx-auto px-site flex gap-[14px]">
             {STEPS.map((_, i) => (
               <div
                 key={i}

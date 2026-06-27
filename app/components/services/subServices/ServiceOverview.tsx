@@ -22,7 +22,7 @@ export default function ServiceOverview({
   const [imgRef, imgIn] = useScrollReveal();
 
   return (
-    <section className="py-24 bg-bg-2">
+    <section id='contact' className="py-24 bg-bg-2">
       <div className="lg:px-site max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
 
         <div

@@ -5946,6 +5946,1814 @@ highlight: 'for Large Cavities',
 
   image: '/assets/dental-lobby.jpg',
 },
+},
+{
+  serviceSlug: 'dental-implants',
+slug: 'single-tooth-implant',
+
+name: 'Single Tooth Implant',
+
+metaTitle:
+  'Single Tooth Implant in Chandler, AZ | Promenade Dental',
+
+metaDescription:
+  'Single tooth implant in Chandler AZ for replacing one missing tooth with a stable implant-supported crown. Visit Promenade Dental near Fulton Ranch.',
+
+hero: {
+  eyebrow: 'One Missing Tooth Replacement in Fulton Ranch',
+
+  title: 'Single Tooth Implant for',
+
+  highlight:
+    'Replacing One Missing Tooth in Chandler',
+
+  description:
+    'Promenade Dental helps patients explore single tooth implant treatment for replacing one missing tooth with an implant-supported crown planned around bone support, gum health, bite comfort, tooth position, and natural-looking function.',
+
+  image: '/assets/h-dental-implants.jpg',
+
+  trustPoints: [
+    'Replacement for one missing tooth',
+    'Implant-supported crown planning',
+    'Does not rely on neighboring teeth like a traditional bridge',
+    'Planned around bone and gum health',
+    'Located in Fulton Ranch',
+    'New Patients Welcome',
+  ],
+
+  primaryCTA: {
+    label: 'Book a Single Tooth Implant Consultation',
+    href: '#contact',
+  },
+
+  secondaryCTA: {
+    label: 'Call (480) 802-8188',
+    href: 'tel:+14808028188',
+  },
+},
+overview: {
+  eyebrow: 'Single Tooth Implant',
+
+  heading:
+    'Single Tooth Implant for One Missing Tooth, Chewing Gaps, and Smile Imbalance',
+
+  body:
+    'One missing tooth can change more than the way your smile looks. It can affect chewing comfort, create pressure on nearby teeth, allow teeth to shift, and leave an open space that becomes more noticeable over time.\n\nA single tooth implant is designed to replace one missing tooth without depending on neighboring teeth for support in the same way a traditional dental bridge does. At Promenade Dental, Dr. Shriya evaluates the missing tooth area, bone support, gum health, bite pressure, nearby teeth, and replacement goals before discussing whether a single implant is suitable.',
+
+  features: [
+    'Designed to replace one missing tooth',
+    'Does not rely on neighboring teeth for support',
+    'Planned around bone support and gum health',
+    'Focused on chewing comfort and smile function',
+  ],
+
+  image: '/assets/service-single-tooth-implant.jpg',
+
+  cta: {
+    label: 'Start Your Missing Tooth Evaluation',
+    href: '/contact',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Single Tooth Implant Evaluation',
+
+  heading:
+    'Single Tooth Implant Evaluation for Bone Support, Gum Health, Bite Pressure, and Tooth Position',
+
+  description:
+    'A single tooth implant needs the right foundation. Before implant treatment is recommended, Dr. Shriya evaluates whether the missing tooth area has enough bone support, healthy gums, stable nearby teeth, and bite conditions that can support an implant crown.\n\nThe evaluation also helps compare a single implant with other replacement options such as a dental bridge or partial denture.',
+
+  items: [
+    {
+      title: 'Bone Support in the Missing Tooth Area',
+
+      body:
+        'The implant needs adequate bone support for stability. If bone support is limited, additional planning may be needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 12 v20 M24 12 v20 M14 30 h14',
+      ],
+    },
+
+    {
+      title: 'Gum Health Around the Implant Site',
+
+      body:
+        'Healthy gums help support healing, implant maintenance, and long-term stability.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 22 q10 -10 20 0 M18 28 h12',
+      ],
+    },
+
+    {
+      title: 'Bite Pressure and Tooth Position',
+
+      body:
+        'The implant crown must be planned around chewing forces, tooth spacing, and how the upper and lower teeth meet.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 30 h20 M18 14 v12 M24 14 v12 M16 22 h10',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out If a Single Tooth Implant Is Right for You',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'Why Choose a Single Tooth Implant',
+
+  heading:
+  'Single Tooth Implant Treatment for Tooth Replacement and Function',
+
+  body:
+    'A single tooth implant can support a replacement crown in the missing tooth space. When suitable, it can help restore chewing support and smile appearance without preparing neighboring teeth for a traditional bridge.',
+
+  features: [
+    {
+      title: 'Replaces One Missing Tooth',
+
+      body:
+        'A single implant is used to support one replacement tooth in a specific missing tooth space.',
+    },
+
+    {
+      title: 'Supports an Implant Crown',
+
+      body:
+        'The implant acts as support for a crown designed to restore the visible tooth shape and chewing surface.',
+    },
+
+    {
+      title: 'Helps Protect Neighboring Teeth',
+
+      body:
+        'A single implant can replace one tooth without using nearby teeth as bridge supports in selected cases.',
+    },
+  ],
+},
+servicesGrid: {
+  eyebrow: 'Single Tooth Implant Treatment Situations',
+
+  heading:
+  'Single Tooth Implant Options for Front and Back Teeth',
+
+  intro:
+    'Single tooth implant planning depends on where the missing tooth is located, how visible the area is when smiling, and how much chewing pressure the replacement tooth needs to handle.',
+
+  services: [
+    {
+      title: 'Single Implant for a Missing Front Tooth',
+
+      description:
+        'A front tooth implant is planned around gum shape, smile line, tooth color, tooth size, and natural appearance.',
+
+      bestFor: [
+        'Missing front tooth',
+        'Visible smile gap',
+        'Natural-looking crown planning',
+        'Cosmetic tooth replacement',
+      ],
+
+      cta: 'Ask About Front Tooth Implant Options',
+
+      href: '/services/dental-implants/single-tooth-implant',
+    },
+
+    {
+      title: 'Single Implant for a Missing Back Tooth',
+
+      description:
+        'A back tooth implant is planned around chewing pressure, bite contact, crown strength, and long-term function.',
+
+      bestFor: [
+        'Missing molar',
+        'Missing premolar',
+        'Chewing support',
+        'Back tooth replacement',
+      ],
+
+      cta: 'Ask About Back Tooth Implant Options',
+
+      href: '/services/dental-implants/single-tooth-implant',
+    },
+
+    {
+      title: 'Single Implant After Tooth Extraction',
+
+      description:
+        'A single tooth implant may be considered after a tooth is removed, depending on healing, bone support, gum health, and the condition of the extraction site.',
+
+      bestFor: [
+        'Tooth extraction planning',
+        'Non-restorable tooth replacement',
+        'Missing tooth prevention',
+        'Future implant planning',
+      ],
+
+      cta: 'Ask About Implant Planning After Extraction',
+
+      href: '/services/dental-implants/single-tooth-implant',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Single Tooth Implant Assessment',
+
+  heading:
+    'Single Tooth Implant Treatment for Patients With One Missing Tooth and Suitable Bone Support',
+
+  body:
+    'A single tooth implant may be suitable when one tooth is missing and the patient has the oral health needed to support implant treatment. Suitability depends on bone support, gum health, bite pressure, medical history, oral hygiene, and the condition of nearby teeth.\n\nAt Promenade Dental, Dr. Shriya explains whether a single implant, dental bridge, partial denture, or another replacement option may fit your needs.',
+
+  goodFit: {
+    title: 'A Single Tooth Implant May Be Right If',
+
+    items: [
+      'You are missing one tooth',
+      'You want a stable replacement option',
+      'You want to avoid support from neighboring teeth when possible',
+      'You have suitable gum and bone support',
+      'You want an implant-supported crown',
+    ],
+  },
+
+  alternative: {
+    title: 'Another Option May Be Better If',
+
+    items: [
+      'Bone support is limited without additional treatment',
+      'Gum disease needs treatment first',
+      'Medical factors may affect healing',
+      'You prefer a non-implant replacement option',
+      'A bridge or partial denture is more practical for your situation',
+    ],
+  },
+
+  cta: {
+    label: 'Schedule a Single Tooth Implant Evaluation',
+    href: '/contact',
+  },
+},
+comparison: {
+  eyebrow: 'Single Tooth Implant vs Dental Bridge vs Partial Denture',
+
+  heading:
+    'Single Tooth Implant, Dental Bridge, or Partial Denture for Replacing One Missing Tooth',
+
+  body:
+    'One missing tooth can be replaced in different ways. A single implant supports an implant crown. A traditional bridge may use nearby teeth for support. A partial denture is removable and may replace one or more missing teeth.',
+
+  matches: [
+    {
+      title: 'Single Tooth Implant for Independent Replacement',
+
+      body:
+        'A single implant may replace one missing tooth without relying on neighboring teeth for support in the same way as a traditional bridge.',
+    },
+
+    {
+      title: 'Dental Bridge for Fixed Tooth Replacement',
+
+      body:
+        'A bridge may replace one missing tooth with a fixed restoration supported by neighboring teeth or implants.',
+    },
+
+    {
+      title: 'Partial Denture for Removable Replacement',
+
+      body:
+        'A partial denture may replace a missing tooth with a removable appliance, especially when multiple teeth are missing or removable treatment is preferred.',
+    },
+  ],
+},
+process: {
+  eyebrow: 'Single Tooth Implant Process',
+
+  heading:
+  'Single Tooth Implant Planning for Crown Fit and Bite Comfort',
+
+  subtitle:
+    'A single tooth implant is planned around the missing tooth space and the final crown. The goal is to create a replacement that fits the bite, supports chewing, and looks natural in the smile.',
+
+  steps: [
+    {
+      title: 'Missing Tooth and Implant Site Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth area, gums, bone support, nearby teeth, bite, and X-rays when needed.',
+    },
+
+    {
+      title: 'Replacement Option Review',
+
+      body:
+        'You receive a clear explanation of whether a single implant, bridge, partial denture, or another option may be suitable.',
+    },
+
+    {
+      title: 'Implant and Crown Planning',
+
+      body:
+        'The implant and final crown are planned around tooth position, bite pressure, gum support, and appearance.',
+    },
+
+    {
+      title: 'Restoration and Maintenance Planning',
+
+      body:
+        'After the implant restoration is complete, ongoing cleaning, gum monitoring, and routine visits help maintain long-term function.',
+    },
+  ],
+
+  cta: {
+    label: 'Book a Single Tooth Implant Consultation',
+    href: '/contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Implant Crown Planning',
+
+  heading:
+    'Implant Crown Planning for Tooth Shape, Bite Contact, Gum Line, and Smile Appearance',
+
+  body:
+    'The implant crown is the visible replacement tooth attached to the implant. Its design matters because it must fit the space, contact nearby teeth properly, meet the opposing tooth comfortably, and blend with the smile.',
+
+  supportingText:
+    'For front teeth, crown planning often focuses more on gum shape, shade, and smile appearance. For back teeth, the crown must handle stronger chewing forces and bite pressure.',
+
+  image:
+    '/assets/single-tooth-implant.webp',
+
+  imageAlt:
+    'Single tooth implant crown designed for proper bite function, tooth shape, gum support, and natural smile appearance',
+
+  cta: {
+    label: 'Ask About Implant Crown Planning',
+    href: '/contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Single Tooth Implant Maintenance',
+
+  heading:
+    'Single Tooth Implant Care for Healthy Gums, Stable Bite, and Long-Term Function',
+
+  body:
+    'A single tooth implant needs regular care to protect the surrounding gums, implant crown, and bite. Daily cleaning and routine dental visits help support long-term stability.',
+
+  cards: [
+    {
+      title: 'Clean Around the Implant Crown',
+
+      body:
+        'Plaque can collect around the implant crown and gumline, so daily cleaning is important.',
+    },
+
+    {
+      title: 'Keep Gums Healthy',
+
+      body:
+        'Healthy gum tissue helps support implant maintenance and reduces inflammation risk.',
+    },
+
+    {
+      title: 'Monitor Bite Pressure',
+
+      body:
+        'Grinding, clenching, or a high bite can place extra stress on the implant crown and surrounding teeth.',
+    },
+
+    {
+      title: 'Attend Routine Dental Visits',
+
+      body:
+        'Regular visits help monitor the implant crown, gum health, bite comfort, and surrounding teeth.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+  'Dentist-Led Single Tooth Implant Planning and Replacement',
+
+  description:
+    'Replacing one missing tooth requires more than filling the gap. The implant, crown, gum tissue, bite, and nearby teeth must work together for comfort, function, and appearance.',
+
+  items: [
+    {
+      title: 'Complete Missing Tooth Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth area, bone support, gums, bite, nearby teeth, and X-rays when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Implant and Crown Planning Together',
+
+      body:
+        'Treatment planning considers both the implant foundation and the final visible crown.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Alternatives Explained Clearly',
+
+      body:
+        'Patients are guided through single implants, dental bridges, partial dentures, and other tooth replacement options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Restorative and Preventive Care in One Office',
+
+      body:
+        'Promenade Dental can connect implant care with crowns, bridges, extractions, cleanings, and long-term oral health monitoring.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Single Tooth Implants Near Fulton Ranch',
+
+  heading:
+    'Single Tooth Implants Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for a single tooth implant, tooth implant, implant crown, replacement for one missing tooth, or dental implants near Chandler 85248, Promenade Dental offers single implant consultations based on bone support, gum health, bite function, tooth position, and long-term replacement goals.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Dental Implant Services',
+
+  heading:
+    'Related Implant and Restorative Services for Missing Tooth Replacement',
+
+  intro:
+    'A single tooth implant is one option for replacing one missing tooth. Some patients may need tooth extraction, a bridge, a crown, or broader dental implant planning depending on the situation.',
+
+  services: [
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Explore implant options for replacing one tooth, several teeth, or supporting dentures.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Dental Bridges',
+
+      description:
+        'A dental bridge may replace one missing tooth with a fixed restoration supported by nearby teeth or implants.',
+
+      href: '/services/restorative-dentistry/dental-bridges',
+    },
+
+    {
+      title: 'Tooth Extractions',
+
+      description:
+        'Extraction planning may include a future replacement option if the tooth cannot be saved.',
+
+      href: '/services/oral-surgery/tooth-extractions',
+    },
+
+    {
+      title: 'Dental Crowns',
+
+      description:
+        'An implant crown restores the visible tooth portion after the implant foundation is ready.',
+
+      href: '/services/restorative-dentistry/dental-crowns',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+  'Single Tooth Implant Questions About Treatment and Suitability',
+
+  items: [
+    {
+      q: 'What is a single tooth implant?',
+      a: 'A single tooth implant is a tooth replacement option used to replace one missing tooth with an implant-supported crown.',
+    },
+
+    {
+      q: 'When should I consider a single tooth implant?',
+      a: 'A single tooth implant may be considered when one tooth is missing and the area has suitable bone support, gum health, and bite conditions.',
+    },
+
+    {
+      q: 'Is a single tooth implant better than a bridge?',
+      a: 'A single implant and dental bridge replace missing teeth differently. An implant does not rely on neighboring teeth in the same way a traditional bridge does, but suitability depends on bone support, gum health, medical history, bite, and treatment goals.',
+    },
+
+    {
+      q: 'Can I get an implant after a tooth extraction?',
+      a: 'A single tooth implant may be possible after extraction depending on healing, bone support, gum health, and the condition of the extraction site.',
+    },
+
+    {
+      q: 'What is an implant crown?',
+      a: 'An implant crown is the visible replacement tooth attached to the implant. It is designed to restore tooth shape, chewing surface, and appearance.',
+    },
+
+    {
+      q: 'Can a single tooth implant replace a front tooth?',
+      a: 'Yes, a single implant may replace a missing front tooth when the area is suitable. Front tooth planning also considers gum line, tooth shade, smile line, and appearance.',
+    },
+
+    {
+      q: 'Can a single tooth implant replace a molar?',
+      a: 'Yes, a single implant may replace a missing molar when bone support, gum health, and bite conditions are suitable.',
+    },
+
+    {
+      q: 'What happens if I do not replace one missing tooth?',
+      a: 'Nearby teeth may shift, chewing pressure may change, and the missing tooth space may affect bite support and smile appearance over time.',
+    },
+
+    {
+      q: 'How do I know if I have enough bone for an implant?',
+      a: 'A dental implant consultation helps evaluate bone support using an exam and imaging when needed.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Schedule an Implant Consultation',
+
+highlight: 'for One Missing Tooth',
+
+  subtitle:
+    'Promenade Dental helps patients explore single tooth implant treatment with planning based on bone support, gum health, tooth position, implant crown design, bite function, and long-term oral health.',
+
+  buttonText: 'Book a Single Tooth Implant Consultation',
+
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+{
+  serviceSlug: 'dental-implants',
+
+  slug: 'implant-supported-bridge',
+
+  name: 'Implant-Supported Bridge',
+
+  metaTitle:
+    'Implant-Supported Bridge in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Implant-supported bridges in Chandler AZ for replacing several missing teeth with fixed implant-supported tooth replacement. Visit Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Fixed Implant Tooth Replacement in Fulton Ranch',
+
+    title: 'Implant-Supported Bridges for',
+
+    highlight:
+      'Replacing Several Missing Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients explore implant-supported bridges for replacing multiple missing teeth with a fixed restoration planned around bone support, gum health, bite function, smile appearance, and long-term stability.',
+
+    image: '/assets/h-dental-bridge.jpg',
+
+    trustPoints: [
+      'Fixed replacement for multiple missing teeth',
+      'Supported by dental implants',
+      'Alternative to traditional bridges or removable partials in selected cases',
+      'Planned around bone, gums, and bite',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book an Implant Bridge Consultation',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: 'Implant-Supported Bridge',
+
+  heading:
+    'Implant-Supported Bridges for Multiple Missing Teeth, Chewing Difficulty, and Smile Gaps',
+
+  body:
+    'Several missing teeth in one area can make chewing uncomfortable, change bite balance, leave visible spaces, and place extra pressure on the remaining teeth. A removable partial denture may help some patients, but others may want a more stable fixed replacement option.\n\nAn implant-supported bridge replaces multiple missing teeth using dental implants for support. Instead of relying only on natural teeth, the bridge is supported by implants placed in the jaw when bone support, gum health, and healing conditions are suitable.',
+
+  features: [
+    'Designed to replace multiple missing teeth',
+    'Supported by dental implants rather than only natural teeth',
+    'Planned around bone support and gum health',
+    'Focused on chewing function and smile stability',
+  ],
+
+  image: '/assets/service-implant-supported-bridge.jpg',
+
+  cta: {
+    label: 'Start Your Implant Bridge Evaluation',
+    href: '/contact',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Implant Bridge Evaluation',
+
+  heading:
+    'Implant Bridge Evaluation for Missing Teeth, Bone Support, Gum Health, and Bite Pressure',
+
+  description:
+    'An implant-supported bridge needs a strong foundation. Before treatment is recommended, Dr. Shriya evaluates the number and position of missing teeth, available bone support, gum health, bite pressure, medical history, oral hygiene, nearby teeth, and long-term replacement goals.\n\nThe evaluation helps determine whether an implant-supported bridge, traditional bridge, partial denture, implant-supported denture, or another replacement option may be the best fit.',
+
+  items: [
+    {
+      title: 'Number and Location of Missing Teeth',
+
+      body:
+        'The missing tooth pattern helps determine whether a bridge can be supported by implants and how the final restoration should be planned.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 12 v20 M24 12 v20 M14 30 h14',
+      ],
+    },
+
+    {
+      title: 'Bone and Gum Support',
+
+      body:
+        'Dental implants need suitable bone and gum conditions for support, healing, and long-term maintenance.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 22 q10 -10 20 0 M18 28 h12',
+      ],
+    },
+
+    {
+      title: 'Bite and Chewing Forces',
+
+      body:
+        'An implant bridge must be planned around chewing pressure, bite balance, and how the replacement teeth will function every day.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 30 h20 M18 14 v12 M24 14 v12 M16 22 h10',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out If an Implant Bridge Is Right for You',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'Why Choose an Implant-Supported Bridge',
+
+ heading:
+  'Implant-Supported Bridges for Fixed Tooth Replacement',
+
+  body:
+    'An implant-supported bridge can replace several missing teeth with a fixed restoration supported by dental implants. For suitable patients, this can reduce the need to use natural neighboring teeth as the main support for the bridge.',
+
+  features: [
+    {
+      title: 'Replaces Multiple Missing Teeth',
+
+      body:
+        'An implant-supported bridge can fill a larger missing tooth space with a fixed restoration.',
+    },
+
+    {
+      title: 'Uses Dental Implants for Support',
+
+      body:
+        'Implants act as support points for the bridge instead of relying only on natural teeth.',
+    },
+
+    {
+      title: 'Helps Restore Chewing and Smile Function',
+
+      body:
+        'A fixed implant bridge can support chewing comfort, speech, smile appearance, and tooth replacement stability.',
+    },
+  ],
+},
+servicesGrid: {
+  eyebrow: 'Implant-Supported Bridge Treatment Situations',
+
+  heading:
+    'Implant-Supported Bridge Options for Side Teeth, Back Teeth, and Larger Missing Tooth Spaces',
+
+  intro:
+    'Implant-supported bridge planning depends on where teeth are missing, how much chewing pressure the area receives, how visible the space is, and whether the mouth has enough support for dental implants.',
+
+  services: [
+    {
+      title: 'Implant Bridge for Several Missing Teeth',
+
+      description:
+        'An implant-supported bridge may replace several missing teeth in one area with a fixed restoration supported by implants.',
+
+      bestFor: [
+        'Several missing teeth',
+        'Fixed tooth replacement',
+        'Larger smile gaps',
+        'Stable replacement planning',
+      ],
+
+      cta: 'Ask About Replacing Several Missing Teeth',
+
+      href: '/services/dental-implants/implant-supported-bridge',
+    },
+
+    {
+      title: 'Implant Bridge for Missing Back Teeth',
+
+      description:
+        'Back teeth handle heavy chewing forces, so implant bridge planning must consider bite pressure, crown strength, and long-term function.',
+
+      bestFor: [
+        'Missing molars',
+        'Missing premolars',
+        'Chewing difficulty',
+        'Posterior tooth replacement',
+      ],
+
+      cta: 'Ask About Back Tooth Implant Bridges',
+
+      href: '/services/dental-implants/implant-supported-bridge',
+    },
+
+    {
+      title: 'Implant Bridge as an Alternative to a Removable Partial',
+
+      description:
+        'For suitable patients, an implant-supported bridge may offer a fixed replacement option instead of a removable partial denture.',
+
+      bestFor: [
+        'Patients wanting fixed replacement',
+        'Partial denture alternatives',
+        'Improved stability',
+        'Multiple missing teeth',
+      ],
+
+      cta: 'Ask About Fixed Replacement Options',
+
+      href: '/services/dental-implants/implant-supported-bridge',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Implant-Supported Bridge Assessment',
+
+  heading:
+    'Implant-Supported Bridges for Patients With Several Missing Teeth and Suitable Bone Support',
+
+  body:
+    'An implant-supported bridge may be suitable when several teeth are missing in one area and the patient wants a fixed replacement supported by implants. Suitability depends on bone support, gum health, bite pressure, medical history, oral hygiene, and the condition of nearby teeth.\n\nAt Promenade Dental, Dr. Shriya explains whether an implant-supported bridge, traditional bridge, partial denture, implant-supported denture, or another option may fit your needs.',
+
+  goodFit: {
+    title: 'An Implant Bridge May Be Right If',
+
+    items: [
+      'You are missing several teeth in one area',
+      'You want a fixed replacement option',
+      'You want support from implants rather than only natural teeth',
+      'You have suitable gum and bone support',
+      'You want to improve chewing stability and smile appearance',
+    ],
+  },
+
+  alternative: {
+    title: 'Another Option May Be Better If',
+
+    items: [
+      'Bone support is limited without additional treatment',
+      'Gum disease needs treatment first',
+      'Medical factors may affect healing',
+      'You prefer a removable partial denture',
+      'A traditional bridge or implant-supported denture is more practical',
+    ],
+  },
+
+  cta: {
+    label: 'Schedule an Implant Bridge Suitability Evaluation',
+    href: '/contact',
+  },
+},
+comparison: {
+  eyebrow: 'Implant-Supported Bridge vs Traditional Bridge vs Partial Denture',
+
+  heading:
+    'Implant-Supported Bridges, Traditional Bridges, and Partial Dentures for Multiple Missing Teeth',
+
+  body:
+    'Several missing teeth can be replaced in different ways. An implant-supported bridge uses dental implants for support. A traditional bridge may use natural teeth for support. A partial denture is removable and may replace multiple missing teeth in different areas of the mouth.',
+
+  matches: [
+    {
+      title: 'Implant-Supported Bridge for Fixed Implant Support',
+
+      body:
+        'An implant bridge may be recommended when several missing teeth can be replaced with a fixed restoration supported by implants.',
+    },
+
+    {
+      title: 'Traditional Bridge for Fixed Tooth-Supported Replacement',
+
+      body:
+        'A traditional bridge may be recommended when neighboring teeth can support the replacement and implant treatment is not preferred or suitable.',
+    },
+
+    {
+      title: 'Partial Denture for Removable Tooth Replacement',
+
+      body:
+        'A partial denture may be recommended when multiple teeth are missing, especially in different areas, or when removable treatment is preferred.',
+    },
+  ],
+},
+process: {  
+  eyebrow: 'Implant-Supported Bridge Process',
+
+  heading:
+  'Implant Bridge Planning for Fit, Comfort, and Function',
+  subtitle:
+    'An implant-supported bridge is planned around both the implants and the final bridge. The implants must support the bridge properly, and the bridge must fit the bite, gums, smile, and chewing needs.',
+
+  steps: [
+    {
+      title: 'Missing Teeth and Implant Site Evaluation',
+
+      body:
+        'Dr. Shriya evaluates missing tooth spaces, gums, bone support, bite pressure, nearby teeth, and X-rays when needed.',
+    },
+
+    {
+      title: 'Replacement Option Review',
+
+      body:
+        'You receive a clear explanation of whether an implant-supported bridge, traditional bridge, partial denture, or another option may be suitable.',
+    },
+
+    {
+      title: 'Implant and Bridge Planning',
+
+      body:
+        'The implant positions and final bridge design are planned around chewing support, smile appearance, bridge span, and long-term stability.',
+    },
+
+    {
+      title: 'Restoration and Maintenance Planning',
+
+      body:
+        'After the implant bridge is complete, ongoing cleaning, gum monitoring, bite checks, and routine visits help maintain function.',
+    },
+  ],
+
+  cta: {
+    label: 'Book an Implant Bridge Consultation',
+    href: '/contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Fixed Implant Bridge Planning',
+
+  heading:
+    'Fixed Implant Bridge Planning for Tooth Shape, Gum Fit, Chewing Pressure, and Smile Appearance',
+
+  body:
+    'The final implant bridge must do more than fill a gap. It needs to fit the gum area, contact the bite correctly, support chewing, and look natural in the smile. For visible areas, tooth shape, shade, gum line, and smile balance are especially important.',
+
+  supportingText:
+    'For back teeth, strength and chewing support are major planning factors. Promenade Dental plans implant-supported bridges with attention to the final restoration, not only the implant foundation.',
+
+  image:
+    '/assets/implant-Supported.png',
+
+  imageAlt:
+    'Implant-supported bridge planned for proper gum fit, chewing function, bite comfort, tooth shape, and natural smile appearance',
+
+  cta: {
+    label: 'Ask About Fixed Implant Bridge Planning',
+    href: '/contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Implant-Supported Bridge Maintenance',
+
+  heading:
+    'Implant-Supported Bridge Care for Healthy Gums, Clean Implant Areas, and Long-Term Stability',
+
+  body:
+    'An implant-supported bridge needs daily cleaning and regular dental monitoring. Even though the bridge is not a natural tooth, the gums, implant areas, and surrounding teeth still need careful maintenance.',
+
+  cards: [
+    {
+      title: 'Clean Under and Around the Bridge',
+
+      body:
+        'Special floss, brushes, or cleaning tools may be recommended to clean around and under the implant bridge.',
+    },
+
+    {
+      title: 'Keep Implant Gums Healthy',
+
+      body:
+        'Healthy gum tissue helps support implant maintenance and reduces inflammation risk around the implant areas.',
+    },
+
+    {
+      title: 'Monitor Bite Pressure',
+
+      body:
+        'Grinding, clenching, or uneven bite contact can place stress on the implant bridge and surrounding teeth.',
+    },
+
+    {
+      title: 'Attend Routine Dental Visits',
+
+      body:
+        'Regular visits help monitor the bridge, implant areas, gum health, bite comfort, and oral hygiene.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Dentist-Led Implant Bridge Planning for Multiple Missing Teeth, Chewing Support, and Fixed Replacement',
+
+  description:
+    'Replacing several missing teeth with an implant-supported bridge requires careful planning. The implants, bridge design, gums, bite, and surrounding teeth must work together for comfort, function, and long-term maintenance.',
+
+  items: [
+    {
+      title: 'Complete Missing Teeth Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth pattern, bone support, gums, bite, nearby teeth, and X-rays when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Implant and Bridge Planning Together',
+
+      body:
+        'Treatment planning considers both the implant support and the final fixed bridge.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Alternatives Explained Clearly',
+
+      body:
+        'Patients are guided through implant-supported bridges, traditional bridges, partial dentures, and implant-supported denture options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Restorative and Preventive Care in One Office',
+
+      body:
+        'Promenade Dental can connect implant bridge planning with dental implants, crowns, bridges, extractions, cleanings, and long-term oral health monitoring.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Implant-Supported Bridges Near Fulton Ranch',
+
+  heading:
+    'Implant-Supported Bridges Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for an implant-supported bridge, dental implant bridge, fixed implant bridge, multiple missing tooth replacement, or dental implants near Chandler 85248, Promenade Dental offers implant bridge consultations based on bone support, gum health, bite function, tooth replacement needs, and long-term stability.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Dental Implant Services',
+
+  heading:
+    'Related Implant and Restorative Services for Multiple Missing Teeth',
+
+  intro:
+    'An implant-supported bridge is one option for replacing several missing teeth. Some patients may need a single implant, implant-supported denture, traditional bridge, or broader dental implant planning.',
+
+  services: [
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Explore implant options for replacing one tooth, several teeth, or supporting dentures.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Single Tooth Implant',
+
+      description:
+        'A single tooth implant may replace one missing tooth with an implant-supported crown.',
+
+      href: '/services/dental-implants/single-tooth-implant',
+    },
+
+    {
+      title: 'Implant-Supported Dentures',
+
+      description:
+        'Implant-supported dentures may improve stability for patients replacing many or all teeth.',
+
+      href: '/services/dental-implants/implant-supported-dentures',
+    },
+
+    {
+      title: 'Dental Bridges',
+
+      description:
+        'Traditional dental bridges may replace missing teeth with support from neighboring teeth or implants.',
+
+      href: '/services/restorative-dentistry/dental-bridges',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+    'Implant Bridge Questions About Multiple Missing Teeth, Fixed Replacement, Dentures, and Care',
+
+  items: [
+    {
+      q: 'What is an implant-supported bridge?',
+      a: 'An implant-supported bridge is a fixed tooth replacement that uses dental implants to support a bridge replacing several missing teeth.',
+    },
+
+    {
+      q: 'When should I consider an implant-supported bridge?',
+      a: 'An implant-supported bridge may be considered when several teeth are missing in one area and the patient wants a fixed replacement supported by dental implants.',
+    },
+
+    {
+      q: 'How is an implant bridge different from a traditional bridge?',
+      a: 'A traditional bridge may use neighboring natural teeth for support. An implant-supported bridge uses dental implants as support points for the bridge.',
+    },
+
+    {
+      q: 'Can an implant bridge replace several missing teeth?',
+      a: 'Yes. Implant-supported bridges are commonly considered for replacing multiple missing teeth in one area, depending on bone support, gum health, and bite conditions.',
+    },
+
+    {
+      q: 'Is an implant bridge removable?',
+      a: 'Many implant-supported bridges are fixed in place. The exact design depends on the treatment plan and replacement needs.',
+    },
+
+    {
+      q: 'Is an implant bridge better than a partial denture?',
+      a: 'An implant bridge and partial denture serve different needs. An implant bridge is fixed and implant-supported, while a partial denture is removable. The better option depends on oral health, bone support, budget, comfort goals, and treatment preference.',
+    },
+
+    {
+      q: 'Do I need enough bone for an implant bridge?',
+      a: 'Yes. Dental implants need suitable bone support. A consultation and imaging can help determine whether the area can support implants.',
+    },
+
+    {
+      q: 'How do I clean an implant-supported bridge?',
+      a: 'Cleaning may require special floss, brushes, or tools to clean under and around the bridge. The dental team can show you the correct method.',
+    },
+
+    {
+      q: 'Can I get an implant bridge after extractions?',
+      a: 'An implant-supported bridge may be considered after extractions depending on healing, bone support, gum health, and replacement planning.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Schedule an Implant Consultation',
+
+highlight: 'for Several Missing Teeth',
+
+  subtitle:
+    'Promenade Dental helps patients explore implant-supported bridges for fixed replacement of multiple missing teeth, with planning based on bone support, gum health, bite function, bridge design, and long-term oral health.',
+
+  buttonText: 'Book an Implant Bridge Consultation',
+
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+
+{
+  serviceSlug: 'dental-implants',
+
+  slug: 'implant-supported-dentures',
+
+  name: 'Implant-Supported Dentures',
+
+  metaTitle:
+    'Implant-Supported Dentures in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Implant-supported dentures in Chandler AZ for loose dentures, full arch tooth replacement, and improved denture stability. Visit Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Implant Denture Options in Fulton Ranch',
+
+    title: 'Implant-Supported Dentures for',
+
+    highlight:
+      'Loose Dentures, Multiple Missing Teeth, and Full Arch Tooth Replacement in Chandler',
+
+    description:
+      'Promenade Dental helps patients explore implant-supported dentures for improved denture stability, chewing support, comfort, and full arch tooth replacement planning based on gum health, bone support, bite function, and long-term oral health.',
+
+    image: '/assets/h-implants-dentures.webp',
+
+    trustPoints: [
+      'Implant support for dentures',
+      'Options for loose denture concerns',
+      'Full arch tooth replacement planning',
+      'Based on bone and gum health',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book an Implant Denture Consultation',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: 'Implant-Supported Dentures',
+
+  heading:
+    'Implant-Supported Dentures for Loose Dentures, Chewing Difficulty, and Unstable Tooth Replacement',
+
+  body:
+    'Traditional dentures can help replace missing teeth, but some patients struggle with movement, sore spots, chewing limitations, speech changes, or reduced confidence when the denture feels unstable.\n\nImplant-supported dentures use dental implants to help support or retain a denture. For suitable patients, this can improve stability compared with traditional removable dentures. At Promenade Dental, Dr. Shriya evaluates the gums, bone support, bite, denture fit, medical history, oral hygiene, and replacement goals before discussing implant denture options.',
+
+  features: [
+    'Designed to improve denture stability',
+    'Supported or retained by dental implants',
+    'Evaluated around bone support and gum health',
+    'Focused on chewing comfort and function',
+  ],
+
+  image: '/assets/service-implant-supported-dentures.jpg',
+
+  cta: {
+    label: 'Start Your Implant Denture Evaluation',
+    href: '/contact',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Implant Denture Evaluation',
+
+  heading:
+    'Implant Denture Evaluation for Bone Support, Gum Health, Denture Fit, and Full Arch Replacement Needs',
+
+  description:
+    'Implant-supported dentures require proper planning because the implants, gums, jaw support, bite, and denture design all need to work together. Before recommending treatment, Dr. Shriya evaluates the number of missing teeth, current denture concerns, bone support, gum health, jaw shape, medical history, and oral hygiene.\n\nThe consultation helps determine whether a traditional denture, partial denture, implant-supported denture, implant-supported bridge, or another replacement option may be more suitable.',
+
+  items: [
+    {
+      title: 'Bone Support for Implants',
+
+      body:
+        'Dental implants need suitable bone support. If bone support is limited, additional treatment planning may be required.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 12 v20 M24 12 v20 M14 30 h14',
+      ],
+    },
+
+    {
+      title: 'Gum and Jaw Health',
+
+      body:
+        'Healthy gums and stable jaw support help improve denture fit, implant maintenance, and long-term comfort.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 22 q10 -10 20 0 M18 28 h12',
+      ],
+    },
+
+    {
+      title: 'Existing Denture Problems',
+
+      body:
+        'Loose fit, sore spots, movement while eating, speech changes, or difficulty chewing may help guide the treatment plan.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 30 h20 M18 14 v12 M24 14 v12 M16 22 h10',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out If Implant Dentures Are Right for You',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'Why Choose Implant-Supported Dentures',
+
+  heading: 'Implant-Supported Dentures for Stability and Comfort',
+
+  body:
+    'Implant-supported dentures are designed to improve how a denture is supported or retained in the mouth. For suitable patients, this can make tooth replacement feel more stable during daily activities like eating, speaking, and smiling.',
+
+  features: [
+    {
+      title: 'Helps Reduce Denture Movement',
+
+      body:
+        'Implants can help support or retain the denture, which may reduce movement compared with a traditional removable denture.',
+    },
+
+    {
+      title: 'Supports Chewing Function',
+
+      body:
+        'Improved denture stability may help patients chew more comfortably than with an unstable denture.',
+    },
+
+    {
+      title: 'Improves Confidence With Tooth Replacement',
+
+      body:
+        'A more stable denture can help patients feel more comfortable while speaking, smiling, and eating.',
+    },
+  ],
+},
+servicesGrid: {
+  eyebrow: 'Implant Denture Treatment Options',
+
+  heading:
+  'Implant Denture Options for Full Arch Replacement',
+
+  intro:
+    'Implant-supported dentures can be planned in different ways depending on the patient’s oral health, bone support, treatment goals, and whether the appliance is designed to be removable or more fixed in function.',
+
+  services: [
+    {
+      title: 'Implant-Retained Dentures',
+
+      description:
+        'Implant-retained dentures attach to dental implants for added retention while still being removable for cleaning in many cases.',
+
+      bestFor: [
+        'Loose denture concerns',
+        'Improved retention',
+        'Removable appliance preference',
+        'Full arch tooth replacement',
+      ],
+
+      cta: 'Ask About Implant-Retained Dentures',
+
+      href: '/services/dental-implants/implant-supported-dentures',
+    },
+
+    {
+      title: 'Implant-Supported Full Dentures',
+
+      description:
+        'Implant-supported full dentures use dental implants to help support replacement teeth for an upper arch, lower arch, or both arches.',
+
+      bestFor: [
+        'Complete tooth loss',
+        'Full arch replacement',
+        'Improved denture support',
+        'Multiple missing teeth',
+      ],
+
+      cta: 'Ask About Full Arch Implant Dentures',
+
+      href: '/services/dental-implants/implant-supported-dentures',
+    },
+
+    {
+      title: 'Lower Implant Dentures',
+
+      description:
+        'Lower dentures often move more than upper dentures. Dental implants may help improve lower denture retention when suitable.',
+
+      bestFor: [
+        'Loose lower dentures',
+        'Difficulty chewing',
+        'Lower arch tooth loss',
+        'Denture movement',
+      ],
+
+      cta: 'Ask About Lower Implant Dentures',
+
+      href: '/services/dental-implants/implant-supported-dentures',
+    },
+
+    {
+      title: 'Implant Denture Planning After Extractions',
+
+      description:
+        'If remaining teeth need removal, implant denture planning may be discussed before extractions so replacement options are considered early.',
+
+      bestFor: [
+        'Planned extractions',
+        'Full arch transition',
+        'Failing teeth',
+        'Future implant denture planning',
+      ],
+
+      cta: 'Ask About Denture Planning After Extractions',
+
+      href: '/services/dental-implants/implant-supported-dentures',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Implant-Supported Denture Assessment',
+
+  heading:
+    'Implant-Supported Dentures for Patients With Multiple Missing Teeth and Suitable Bone Support',
+
+  body:
+    'Implant-supported dentures may be suitable for patients who are missing many or all teeth and want better denture support than a traditional removable appliance can provide. Suitability depends on bone support, gum health, healing ability, oral hygiene, bite pressure, medical history, and treatment goals.\n\nAt Promenade Dental, Dr. Shriya helps patients understand whether implant-supported dentures, traditional dentures, partial dentures, implant-supported bridges, or other implant options may fit their needs.',
+
+  goodFit: {
+    title: 'Implant Dentures May Be Right If',
+
+    items: [
+      'You are missing many or all teeth',
+      'Your denture feels loose or unstable',
+      'You want improved denture support',
+      'You have suitable bone and gum health',
+      'You want full arch tooth replacement planning',
+    ],
+  },
+
+  alternative: {
+    title: 'Another Option May Be Better If',
+
+    items: [
+      'Bone support is limited without additional treatment',
+      'Gum disease needs treatment first',
+      'Medical factors may affect implant healing',
+      'You prefer traditional removable dentures',
+      'An implant-supported bridge or individual implants may be more suitable',
+    ],
+  },
+
+  cta: {
+    label: 'Schedule an Implant Denture Suitability Evaluation',
+    href: '/contact',
+  },
+},
+comparison: {
+  eyebrow:
+    'Implant-Supported Dentures vs Traditional Dentures vs Implant Bridges',
+
+  heading:
+    'Implant-Supported Dentures, Traditional Dentures, and Implant Bridges for Missing Teeth',
+
+  body:
+    'Patients with multiple missing teeth may have more than one replacement option. Traditional dentures are removable and rest on the gums. Implant-supported dentures use implants to improve retention or support. Implant bridges are fixed restorations used for selected missing tooth patterns.',
+
+  matches: [
+    {
+      title: 'Traditional Dentures for Removable Tooth Replacement',
+
+      body:
+        'Traditional dentures replace many or all teeth with a removable appliance that rests on the gums.',
+    },
+
+    {
+      title: 'Implant-Supported Dentures for Improved Stability',
+
+      body:
+        'Implant-supported dentures use dental implants to help retain or support the denture for selected patients.',
+    },
+
+    {
+      title: 'Implant-Supported Bridges for Fixed Replacement',
+
+      body:
+        'Implant-supported bridges may replace several missing teeth with a fixed restoration supported by implants.',
+    },
+  ],
+},
+process: {
+  eyebrow: 'Implant Denture Planning Process',
+
+  heading:
+  'Implant Denture Planning for Fit, Comfort, and Stability',
+
+  subtitle:
+    'Implant-supported denture treatment is planned around both the implants and the denture design. The goal is to improve support and function while making sure the appliance can be cleaned, maintained, and monitored over time.',
+
+  steps: [
+    {
+      title: 'Missing Teeth and Denture Evaluation',
+
+      body:
+        'Dr. Shriya evaluates missing teeth, existing dentures, gums, bone support, jaw shape, bite, and X-rays when needed.',
+    },
+
+    {
+      title: 'Implant Suitability Review',
+
+      body:
+        'You receive a clear explanation of whether dental implants are suitable and whether additional treatment may be needed first.',
+    },
+
+    {
+      title: 'Denture and Implant Planning',
+
+      body:
+        'The implant positions and denture design are planned around stability, chewing support, comfort, speech, and appearance.',
+    },
+
+    {
+      title: 'Maintenance and Follow-Up Planning',
+
+      body:
+        'After treatment, routine visits help monitor denture fit, implant areas, gum health, bite comfort, and cleaning.',
+    },
+  ],
+
+  cta: {
+    label: 'Book an Implant Denture Consultation',
+    href: '/contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Loose Denture Solutions',
+
+  heading:
+    'Implant-Supported Denture Planning for Patients With Loose Lower Dentures or Denture Movement',
+
+  body:
+    'Loose dentures can make eating and speaking frustrating. Lower dentures are often more difficult to stabilize because the tongue, floor of the mouth, and jaw movement can affect the fit.',
+
+  supportingText:
+    'For suitable patients, dental implants may help improve denture retention and reduce movement. Dr. Shriya evaluates the denture, gums, jaw support, bone availability, and bite before recommending whether implant-supported dentures may help.',
+
+  image:
+    '/assets/implant-dentures.webp',
+
+  imageAlt:
+    'Implant-supported denture planning for loose lower dentures, improved denture retention, chewing comfort, and reduced denture movement',
+
+  cta: {
+    label: 'Ask About Loose Denture Solutions',
+    href: '/contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Implant-Supported Denture Maintenance',
+
+  heading:
+    'Implant-Supported Denture Care for Clean Implants, Healthy Gums, and Better Long-Term Fit',
+
+  body:
+    'Implant-supported dentures need daily cleaning and ongoing dental monitoring. The appliance, implants, gums, bite, and oral tissues must be checked regularly to support long-term comfort and function.',
+
+  cards: [
+    {
+      title: 'Clean Around Implant Attachments',
+
+      body:
+        'Plaque can collect around implant attachments, so daily cleaning is important.',
+    },
+
+    {
+      title: 'Remove and Clean the Denture as Directed',
+
+      body:
+        'Many implant-retained dentures are removable and must be cleaned properly outside the mouth.',
+    },
+
+    {
+      title: 'Watch for Sore Spots or Looseness',
+
+      body:
+        'Changes in comfort, fit, or stability should be checked so adjustments can be made.',
+    },
+
+    {
+      title: 'Attend Routine Maintenance Visits',
+
+      body:
+        'Regular visits help monitor implant health, gum tissue, denture attachments, bite comfort, and oral hygiene.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+  'Dentist-Led Implant Denture Planning for Stability and Comfort',
+
+  description:
+    'Implant-supported dentures require planning beyond the appliance itself. The implants, gums, jaw support, bite, denture fit, and maintenance needs all affect the final result.',
+
+  items: [
+    {
+      title: 'Complete Denture and Implant Evaluation',
+
+      body:
+        'Dr. Shriya evaluates missing teeth, existing dentures, gums, bone support, jaw shape, bite, and X-rays when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Options Explained Clearly',
+
+      body:
+        'Patients are guided through traditional dentures, implant-retained dentures, implant-supported dentures, implant bridges, and other tooth replacement options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Fit and Function Considered Together',
+
+      body:
+        'Planning considers stability, chewing comfort, speech, appearance, cleaning access, and long-term maintenance.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Restorative and Preventive Care in One Office',
+
+      body:
+        'Promenade Dental can connect implant denture planning with extractions, dentures, dental implants, bridges, cleanings, and ongoing oral health monitoring.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Implant-Supported Dentures Near Fulton Ranch',
+
+  heading:
+    'Implant-Supported Dentures Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for implant-supported dentures, implant dentures, implant-retained dentures, snap-in dentures, loose denture solutions, or dental implants near Chandler 85248, Promenade Dental offers implant denture consultations based on bone support, gum health, denture fit, bite function, and long-term replacement goals.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Dental Implant Services',
+
+  heading:
+  'Related Services for Full Arch Tooth Replacement',
+
+  intro:
+    'Implant-supported dentures are one option for replacing many or all missing teeth. Some patients may also need traditional dentures, implant-supported bridges, extractions, or broader implant planning.',
+
+  services: [
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Explore implant options for replacing one tooth, several teeth, or supporting dentures.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Dentures & Partials',
+
+      description:
+        'Traditional dentures and partial dentures may replace several or all missing teeth with removable appliances.',
+
+      href: '/services/restorative-dentistry/dentures-partials',
+    },
+
+    {
+      title: 'Implant-Supported Bridge',
+
+      description:
+        'An implant-supported bridge may replace several missing teeth with a fixed implant-supported restoration.',
+
+      href: '/services/dental-implants/implant-supported-bridge',
+    },
+
+    {
+      title: 'Tooth Extractions',
+
+      description:
+        'Extractions may be needed before denture or implant denture planning if remaining teeth cannot be restored.',
+
+      href: '/services/oral-surgery/tooth-extractions',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+  'Implant Denture Questions About Treatment and Care',
+
+  items: [
+    {
+      q: 'What are implant-supported dentures?',
+      a: 'Implant-supported dentures are dentures that use dental implants for added support or retention. They may help improve stability compared with traditional removable dentures for suitable patients.',
+    },
+
+    {
+      q: 'Who should consider implant-supported dentures?',
+      a: 'Patients who are missing many or all teeth, have loose denture concerns, or want improved denture stability may consider implant-supported dentures if bone support, gum health, and medical factors are suitable.',
+    },
+
+    {
+      q: 'Are implant-supported dentures removable?',
+      a: 'Some implant-supported dentures are removable for cleaning, while other designs may be more fixed. The right design depends on oral health, implant planning, cleaning access, and treatment goals.',
+    },
+
+    {
+      q: 'Are implant-supported dentures better than regular dentures?',
+      a: 'Implant-supported dentures may offer better retention or support than traditional dentures for suitable patients. Traditional dentures may still be the better option for some patients depending on health, anatomy, budget, or preference.',
+    },
+
+    {
+      q: 'Can implants help with loose lower dentures?',
+      a: 'Dental implants may help improve lower denture retention when bone support and oral health are suitable. A consultation is needed to confirm whether this is an option.',
+    },
+
+    {
+      q: 'Do I need enough bone for implant dentures?',
+      a: 'Yes. Dental implants need suitable bone support. If bone support is limited, additional planning or alternative treatment options may be discussed.',
+    },
+
+    {
+      q: 'Can I get implant-supported dentures after extractions?',
+      a: 'Implant-supported dentures may be considered after extractions depending on healing, bone support, gum health, and the overall treatment plan.',
+    },
+
+    {
+      q: 'How do I clean implant-supported dentures?',
+      a: 'Cleaning depends on the denture design. Many require cleaning around implant attachments and removing the denture for cleaning as directed by the dental team.',
+    },
+
+    {
+      q: 'What is the difference between implant dentures and implant bridges?',
+      a: 'Implant dentures are often used for full arch replacement and may be removable depending on the design. Implant bridges are fixed restorations used to replace selected missing tooth spaces.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+ title: 'Implant Denture Consultation',
+
+highlight: 'for Stability and Comfort',
+
+  subtitle:
+    'Promenade Dental helps patients explore implant-supported dentures with planning based on denture stability, bone support, gum health, bite comfort, cleaning needs, and long-term oral health.',
+
+  buttonText: 'Book an Implant Denture Consultation',
+
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
 }
 
 ]
