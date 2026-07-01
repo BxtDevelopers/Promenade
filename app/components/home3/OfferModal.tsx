@@ -112,7 +112,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
             </ul>
 
             <Link
-              href={`${BASE}/contact-us`}
+              href={`/contact-us`}
               className="block w-full rounded-full text-center text-bg bg-coral font-sans text-[14px] font-semibold tracking-[0.03em] no-underline transition-colors duration-200 hover:bg-ivory mt-5"
               style={{ padding: '14px 22px' }}
             >

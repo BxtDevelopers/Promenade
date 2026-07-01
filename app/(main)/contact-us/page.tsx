@@ -7,8 +7,8 @@ import FAQSection from "@/app/components/contact/FaqsSection";
 import InsuranceInfo from "@/app/components/contact/InsuranceInfo";
 import LocationMap from "@/app/components/contact/LocationMap";
 import ClosingCTA from "@/app/components/home/ClosingCTA";
-import Footer from "@/app/components/home/Footer";
-import Navbar from "@/app/components/home/Navbar";
+import Footer from "@/app/components/home3/Footer";
+import Navbar from "@/app/components/home3/Navbar";
 
 
 // import ContactFAQSection from "@/app/components/contact/ContactFAQSection";

@@ -1,5 +1,6 @@
-import Footer from "@/app/components/home/Footer"
-import Navbar from "@/app/components/home/Navbar"
+
+import Footer from "@/app/components/home3/Footer"
+import Navbar from "@/app/components/home3/Navbar"
 import ServiceCTA from "@/app/components/services/ServiceCTA"
 import ServiceFAQSection from "@/app/components/services/ServiceFaq"
 import ServiceHero from "@/app/components/services/ServiceHero"

@@ -6,19 +6,19 @@ const BASE = 'https://promenade-dental.vercel.app'
 
 const actions = [
   {
-    href: `${BASE}/contact-us`,
+    href: `/contact-us`,
     icon: <CalendarCheck className="w-[22px] h-[22px] flex-none text-coral" strokeWidth={1.6} />,
     title: 'Book your first visit',
     sub: 'New patients welcome',
   },
   {
-    href: `${BASE}/services`,
+    href: `/services`,
     icon: <LiaToothSolid  className="w-[22px] h-[22px] flex-none text-coral" strokeWidth={1.6} />,
     title: 'Our services',
     sub: 'Family · cosmetic · sleep apnea',
   },
   {
-    href: `${BASE}/services/emergency-dentistry`,
+    href: `/services/emergency-dentistry`,
     icon: <ShieldAlert className="w-[22px] h-[22px] flex-none text-coral" strokeWidth={1.6} />,
     title: 'Dental emergency',
     sub: 'Same-day relief',

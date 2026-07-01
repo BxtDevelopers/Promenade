@@ -122,7 +122,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
           )}
 
           {/* ── Content ── */}
-          <div className="relative z-20 w-full p-8 md:p-16 lg:p-20">
+          <div className="relative z-20 w-full px-2 py-8 md:p-16 lg:p-20">
             <div className="max-w-[700px] mx-auto text-center">
               
               <h2 className="font-serif font-light text-[clamp(40px,5vw,72px)] leading-[1.05] tracking-[-0.02em] text-ivory mb-6">

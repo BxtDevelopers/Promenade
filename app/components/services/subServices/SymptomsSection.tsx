@@ -20,7 +20,7 @@ export default function SymptomsSection({ data }: { data: SymptomsData }) {
 
   return (
     <section className="py-section relative border-t border-line bg-bg">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-24 items-start">
           
           {/* ── Left Column (Sticky) ── */}

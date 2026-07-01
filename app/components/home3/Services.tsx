@@ -3,11 +3,10 @@
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 const services = [
   {
-    href:    `${BASE}/services/cosmetic-dentistry`,
+    href:    `/services/cosmetic-dentistry`,
     num:     '01',
     title:   'Cosmetic Dentistry',
     desc:    'Whitening, veneers, and natural-looking smile work.',
@@ -19,7 +18,7 @@ const services = [
     ),
   },
   {
-    href:    `${BASE}/services/family-dentistry`,
+    href:    `/services/family-dentistry`,
     num:     '02',
     title:   'Family Dentistry',
     desc:    'Cleanings, exams, and gentle care for every age.',
@@ -31,19 +30,22 @@ const services = [
     ),
   },
   {
-    href:    `${BASE}/services/sleep-apnea`,
-    num:     '03',
-    title:   'Sleep Apnea',
-    desc:    'Custom oral appliances for snoring and better sleep.',
-    iconPath: (
-      <>
-        <path pathLength="1" d="M6 38 A18 18 0 0 1 42 38" />
-        <path pathLength="1" d="M15 9 H23 L15 18 H23 M26 13 H31 L26 20 H31" />
-      </>
-    ),
-  },
+      href: `/services/dental-implants`,
+      num: '03',
+      title: 'Dental Implants',
+      desc: 'Permanent tooth replacement solutions that restore function and appearance.',
+      iconPath: (
+        <>
+          <path pathLength="1" d="M6 38 A18 18 0 0 1 42 38" />
+          <path pathLength="1" d="M24 10 V28" />
+          <path pathLength="1" d="M18 10 H30" />
+          <path pathLength="1" d="M18 28 H30" />
+          <path pathLength="1" d="M20 34 H28" />
+        </>
+      ),
+    },
   {
-    href:    `${BASE}/services/emergency-dentistry`,
+    href:    `/services/emergency-dentistry`,
     num:     '04',
     title:   'Emergency Care',
     desc:    "Same-day relief when pain can't wait.",
@@ -136,7 +138,7 @@ export default function ServicesGrid() {
 
         {/* All services link */}
         <Link
-          href={`${BASE}/services`}
+          href={`/services`}
           className="inline-flex items-center gap-[10px] mt-[34px] no-underline text-[13px] tracking-[0.08em] uppercase font-medium text-ivory transition-[gap] duration-300 hover:gap-[18px] border-b border-coral pb-[6px]"
         >
           See all services <span className="text-coral">→</span>

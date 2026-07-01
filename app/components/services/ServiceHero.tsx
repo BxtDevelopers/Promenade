@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ARC_COUNT = 15;
 
@@ -116,7 +117,7 @@ export default function ServiceHero() {
 
       {/* Content */}
       <div
-        className="relative z-[2] w-full max-w-[90%] mx-auto px-site pt-40 text-left"
+        className="relative z-[2] w-full max-w-[90%] mx-auto lg:px-site pt-40 text-left"
         style={{ paddingBottom: 'clamp(48px, 7vw, 96px)' }}
       >
         {/* Eyebrow */}
@@ -225,8 +226,9 @@ function HeroButton() {
   };
 
   return (
-    <button
-      ref={ref}
+    <Link href="/contact-us"
+    //@ts-ignore  
+    ref={ref}
       onMouseMove={onMove}
       onMouseEnter={() => setHov(true)}
       onMouseLeave={onLeave}
@@ -238,6 +240,6 @@ function HeroButton() {
       ].join(' ')}
     >
       Book an Appointment →
-    </button>
+    </Link >
   );
 }

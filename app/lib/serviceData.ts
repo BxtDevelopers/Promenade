@@ -240,7 +240,7 @@ export const SERVICES = [
 
   primaryCTA: {
     label: 'Book a Family Dental Visit',
-    href: '/contact',
+    href: '#contact',
   },
 
   secondaryCTA: {
@@ -297,7 +297,7 @@ export const SERVICES = [
 
   cta: {
     label: 'View New Patient Information',
-    href: '/new-patients',
+    href: '/home03#new-patients',
   },
 },
     whyItMatters: {
@@ -355,7 +355,7 @@ export const SERVICES = [
               'Gum monitoring',
             ],
             cta: 'Learn About Dental Cleanings',
-            href: '/services/dental-cleanings',
+            href: '/services/family-dentistry/dental-exams-cleanings',
           },
 
           {
@@ -370,7 +370,7 @@ export const SERVICES = [
               'Family dental care',
             ],
             cta: "Learn About Children's Dentistry",
-            href: '/services/children-dentistry',
+            href: '/services/family-dentistry/childrens-dentistry',
           },
 
           {
@@ -385,7 +385,7 @@ export const SERVICES = [
               'Periodontal maintenance',
             ],
             cta: 'Learn About Gum Disease Care',
-            href: '/services/gum-disease-treatment',
+            href: '/services/family-dentistry/gum-disease-treatment',
           },
 
           {
@@ -401,7 +401,7 @@ export const SERVICES = [
               'Chipped teeth',
             ],
             cta: 'Learn About Night Guards',
-            href: '/services/night-guards',
+            href: '/services/family-dentistry/night-guards-teeth-grinding',
           },
         ],
       },
@@ -420,7 +420,7 @@ export const SERVICES = [
           'Dentist reviewing dental X-rays and discussing oral health with a patient',
         cta: {
           label: 'Book a Preventive Dental Exam',
-          href: '/contact',
+          href: '#contact',
         },
       },
       patientTypesSection: {
@@ -647,7 +647,7 @@ export const SERVICES = [
       subtitle:
         'Promenade Dental helps families stay ahead of cavities, gum problems, tooth wear, and emergency visits with preventive dental care that is clear, gentle, and personal.',
       buttonText: 'Book a Family Dental Appointment',
-      buttonHref: '/contact',
+      buttonHref: '/contact-us',
       image:'/assets/dental-lobby.jpg'
     },
   },
@@ -679,7 +679,7 @@ export const SERVICES = [
 
           primaryCTA: {
             label: 'Book a Cosmetic Consultation',
-            href: '/contact',
+            href: '#contact',
           },
 
           secondaryCTA: {
@@ -759,7 +759,7 @@ export const SERVICES = [
         'Brighter smile',
         ],
         cta: 'Learn About Teeth Whitening',
-        href: '/services/teeth-whitening',
+        href: '/services/cosmetic-dentistry/teeth-whitening',
         },
 
         {
@@ -773,7 +773,7 @@ export const SERVICES = [
             'Brighter smile before events',
           ],
           cta: 'Ask About ZOOM Whitening',
-          href: '/services/zoom-whitening',
+          href: '/services/cosmetic-dentistry/teeth-whitening',
         },
 
         {
@@ -789,7 +789,7 @@ export const SERVICES = [
             'Smile redesign',
           ],
           cta: 'Learn About Veneers',
-          href: '/services/porcelain-veneers',
+          href: '/services/cosmetic-dentistry/veneers',
         },
 
         {
@@ -804,7 +804,7 @@ export const SERVICES = [
             'Tooth reshaping',
           ],
           cta: 'Learn About Dental Bonding',
-          href: '/services/dental-bonding',
+          href: '/services/cosmetic-dentistry/dental-bonding',
         },
 
         {
@@ -819,7 +819,7 @@ export const SERVICES = [
             'Uneven smile',
           ],
           cta: 'Plan Your Smile Makeover',
-          href: '/services/smile-makeover',
+          href: '#contact',
         },
         ],
         },
@@ -922,7 +922,7 @@ export const SERVICES = [
 
           cta: {
           label: 'Book a Cosmetic Consultation',
-          href: '/contact',
+          href: '#contact',
           },
           },
 
@@ -940,7 +940,7 @@ export const SERVICES = [
           'Patient discussing cosmetic dentistry goals with Dr. Shriya during a smile consultation',
           cta: {
           label: 'Talk to Dr. Shriya About Your Smile Goals',
-          href: '/contact',
+          href: '#contact',
           },
           },
           benefits: {
@@ -1022,7 +1022,7 @@ export const SERVICES = [
         title: 'Family & Preventive Dentistry',
         description:
         'Regular exams, cleanings, and gum evaluations help keep your teeth and gums healthy before cosmetic treatment.',
-        href: '/services/family-preventive-dentistry',
+        href: '/services/family-dentistry',
         },
         {
         title: 'Restorative Dentistry',
@@ -1097,7 +1097,7 @@ export const SERVICES = [
   subtitle:
     'Promenade Dental helps patients improve stained, chipped, uneven, worn, or dull-looking teeth with cosmetic dentistry that is clear, natural-looking, and planned around long-term oral health.',
   buttonText: 'Book a Cosmetic Consultation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -1135,7 +1135,7 @@ export const SERVICES = [
 
         primaryCTA: {
           label: 'Book a Restorative Consultation',
-          href: '/contact',
+          href: '#contact',
         },
 
         secondaryCTA: {
@@ -1228,7 +1228,7 @@ export const SERVICES = [
               'Early tooth repair',
             ],
             cta: 'Learn About Tooth-Colored Fillings',
-            href: '/services/tooth-colored-fillings',
+            href: '/services/restorative-dentistry/tooth-colored-fillings',
           },
 
           {
@@ -1243,7 +1243,7 @@ export const SERVICES = [
               'Post-root canal protection',
             ],
             cta: 'Learn About Dental Crowns',
-            href: '/services/dental-crowns',
+            href: '/services/restorative-dentistry/dental-crowns',
           },
 
           {
@@ -1257,7 +1257,7 @@ export const SERVICES = [
               'Smile restoration',
             ],
             cta: 'Learn About Dental Bridges',
-            href: '/services/dental-bridges',
+            href: '/services/restorative-dentistry/dental-bridges',
           },
 
           {
@@ -1272,7 +1272,7 @@ export const SERVICES = [
               'Lingering sensitivity',
             ],
             cta: 'Learn About Root Canals',
-            href: '/services/root-canal-therapy',
+            href: '/services/restorative-dentistry/root-canals',
           },
 
           {
@@ -1287,7 +1287,7 @@ export const SERVICES = [
               'Painful teeth',
             ],
             cta: 'Learn About Tooth Extractions',
-            href: '/services/tooth-extractions',
+            href: '/services/restorative-dentistry/tooth-extractions',
           },
 
           {
@@ -1301,7 +1301,7 @@ export const SERVICES = [
               'Partial tooth replacement',
             ],
             cta: 'Learn About Dentures',
-            href: '/services/dentures-partials',
+            href: '/services/restorative-dentistry/dentures',
           },
 
           {
@@ -1315,7 +1315,7 @@ export const SERVICES = [
               'Partial restorations',
             ],
             cta: 'Learn About Inlays & Onlays',
-            href: '/services/inlays-onlays',
+            href: '/services/restorative-dentistry/inlays-onlays',
           },
         ],
       },
@@ -1380,7 +1380,7 @@ export const SERVICES = [
         ],
         cta: {
           label: 'Discuss Tooth Replacement Options',
-          href: '/contact',
+          href: '#contact',
         },
       },
       symptomsSection: {
@@ -1467,7 +1467,7 @@ export const SERVICES = [
 
         cta: {
           label: 'Book a Restorative Dental Visit',
-          href: '/contact',
+          href: '#contact',
         },
       },
       benefits: {
@@ -1556,7 +1556,7 @@ export const SERVICES = [
             title: 'Family & Preventive Dentistry',
             description:
               'Preventive visits help catch cavities, gum disease, tooth wear, and dental problems before larger restorative treatment is needed.',
-            href: '/services/family-preventive-dentistry',
+            href: '/services/family-dentistry',
           },
 
           {
@@ -1638,7 +1638,7 @@ export const SERVICES = [
           'Promenade Dental helps patients repair damaged teeth, restore chewing comfort, relieve dental problems when possible, and replace missing teeth with restorative care planned around diagnosis, function, and long-term oral health.',
 
         buttonText: 'Book a Restorative Consultation',
-        buttonHref: '/contact',
+        buttonHref: '/contact-us',
 
         secondaryButtonText: 'Call (480) 802-8188',
         secondaryButtonHref: 'tel:+14808028188',
@@ -1678,7 +1678,7 @@ hero: {
 
   primaryCTA: {
     label: 'Book an Implant Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 
   secondaryCTA: {
@@ -1812,7 +1812,7 @@ servicesGrid: {
 
       cta: 'Learn About Single Tooth Implants',
 
-      href: '/services/single-tooth-implant',
+      href: '/services/dental-implants/single-tooth-implant',
     },
 
     {
@@ -1830,7 +1830,7 @@ servicesGrid: {
 
       cta: 'Learn About Implant-Supported Bridges',
 
-      href: '/services/implant-supported-bridge',
+      href: '/services/dental-implants/implant-supported-bridge',
     },
 
     {
@@ -1848,7 +1848,7 @@ servicesGrid: {
 
       cta: 'Learn About Implant-Supported Dentures',
 
-      href: '/services/implant-supported-dentures',
+      href: '/services/dental-implants/implant-supported-dentures',
     },
   ],
 },
@@ -1963,7 +1963,7 @@ process: {
 
   cta: {
     label: 'Book an Implant Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -2101,7 +2101,7 @@ relatedServices: {
       description:
         'A single tooth implant can replace one missing tooth with an implant-supported crown when suitable.',
 
-      href: '/services/single-tooth-implant',
+      href: '/services/dental-implants/single-tooth-implant',
     },
 
     {
@@ -2110,7 +2110,7 @@ relatedServices: {
       description:
         'An implant-supported bridge may replace several missing teeth with support from dental implants.',
 
-      href: '/services/implant-supported-bridge',
+      href: '/services/dental-implants/implant-supported-bridge',
     },
 
     {
@@ -2119,7 +2119,7 @@ relatedServices: {
       description:
         'Implant-supported dentures may improve denture stability for patients replacing many or all teeth.',
 
-      href: '/services/implant-supported-dentures',
+      href: '/services/dental-implants/implant-supported-dentures',
     },
 
     {
@@ -2198,14 +2198,626 @@ cta: {
     'Promenade Dental helps patients explore dental implant options for single tooth replacement, multiple tooth replacement, and denture support with treatment planning based on gum health, bone support, bite function, appearance, and long-term oral health.',
 
   buttonText: 'Book an Implant Consultation',
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+  },
+  {
+  slug: 'emergency-dentistry',
+  name: 'Emergency Dentistry',
+
+  metaTitle: 'Emergency Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Emergency dentist in Chandler AZ for tooth pain, broken teeth, chipped teeth, knocked-out teeth, swelling, infection, and urgent dental problems near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Urgent Dental Care in Fulton Ranch',
+
+    title: 'Emergency Dental Care for Tooth Pain, Broken Teeth,',
+    highlight: 'Swelling, or Knocked-Out Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients evaluate urgent dental problems such as severe tooth pain, broken or chipped teeth, swelling, infection symptoms, loose dental work, and knocked-out teeth with care planned around diagnosis, comfort, and the right next treatment.',
+
+    image: '/assets/h-emergency-dental.webp',
+
+    trustPoints: [
+      'Urgent Dental Evaluations',
+      'Tooth Pain and Swelling Concerns',
+      'Broken, Chipped, or Knocked-Out Teeth',
+      'Restorative and Emergency Care in One Office',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+
+    secondaryCTA: {
+      label: 'Request an Emergency Visit',
+      href: '#contact',
+    },
+  },
+  overview: {
+  eyebrow: 'Emergency Dental Care',
+
+  heading:
+    'Emergency Dental Care for Pain, Infection, Broken Teeth, and Dental Injuries',
+
+  body:
+    'Dental emergencies can happen suddenly or develop over time. A toothache may become severe, a crown may loosen, a tooth may break while eating, or swelling may appear near the gums or jaw. These problems should be evaluated promptly because the cause may involve decay, infection, trauma, cracks, gum disease, or damaged dental work. At Promenade Dental, Dr. Shriya evaluates the source of the emergency and explains whether the tooth may need a filling, crown, root canal therapy, extraction, replacement planning, or another appropriate treatment.',
+
+  features: [
+    'Evaluation of severe tooth pain',
+    'Assessment of swelling and infection symptoms',
+    'Care for broken, chipped, or injured teeth',
+    'Treatment planning based on the cause of the emergency',
+  ],
+
+  image: '/assets/service-emergency-dentist.jpg',
+
+  cta: {
+    label: 'Call for Emergency Dental Help',
+    href: 'tel:+14808028188',
+  },
+},
+whyItMatters: {
+  eyebrow: 'Emergency Dental Evaluation',
+
+  heading:
+    'Emergency Dental Evaluation for Tooth Pain, Swelling, Trauma, Cracks, and Infection Symptoms',
+
+  description:
+    'Emergency dental care starts with diagnosis because the same symptom can have different causes. Tooth pain may result from decay, infection, cracks, bite pressure, gum inflammation, or sinus-related pressure. A broken tooth may require a filling, crown, root canal therapy, or extraction depending on the extent of damage. Dr. Shriya evaluates the tooth, gums, bite, symptoms, dental history, swelling, trauma, and X-rays when needed before recommending treatment.',
+
+  items: [
+    {
+      title: 'Pain and Symptom Location',
+      body:
+        'The location, timing, and intensity of pain help identify whether the issue may involve the tooth nerve, gum tissue, bite, or surrounding structures.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 q8 6 0 12 q-8 6 0 12 q8 -4 12 -12 q4 -8 -12 -12',
+      ],
+    },
+
+    {
+      title: 'Tooth Damage and Existing Dental Work',
+      body:
+        'Broken teeth, loose crowns, lost fillings, and cracked restorations need evaluation to help prevent further damage or infection.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 l8 8 l-4 6 l4 10 l-8 -6 l-8 6 l4 -10 l-4 -6 z',
+      ],
+    },
+
+    {
+      title: 'Swelling and Infection Signs',
+      body:
+        'Swelling, pus, fever, or spreading discomfort may indicate infection and should be evaluated as soon as possible.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 14 q10 6 8 16 q-2 10 -12 10 q-10 0 -12 -10 q-2 -10 8 -16',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Dental Evaluation',
+    href: '/contact',
+  },
+},
+features: {
+  eyebrow: 'Emergency Dental Evaluation',
+
+  heading:
+  'Emergency Dental Evaluation for Pain, Swelling, and Trauma',
+
+  body:
+    'Emergency dental care starts with diagnosis. The same symptom can come from different causes. Tooth pain may be caused by decay, infection, cracks, bite pressure, gum inflammation, or sinus-related pressure. A broken tooth may need a filling, crown, root canal therapy, or extraction depending on the depth of damage. Dr. Shriya evaluates the tooth, gums, bite, symptoms, dental history, swelling, trauma, and X-rays when needed before recommending treatment.',
+
+  features: [
+    {
+      title: 'Pain and Symptom Location',
+
+      body:
+        'The location, timing, and intensity of pain help identify whether the issue may involve the tooth nerve, gum tissue, bite, or surrounding structures.',
+    },
+
+    {
+      title: 'Tooth Damage and Existing Dental Work',
+
+      body:
+        'Broken teeth, loose crowns, lost fillings, and cracked restorations require evaluation to help prevent further damage or infection.',
+    },
+
+    {
+      title: 'Swelling and Infection Signs',
+
+      body:
+        'Swelling, pus, fever, or spreading discomfort may indicate infection and should be evaluated promptly.',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Dental Evaluation',
+    href: '/contact',
+  },
+},
+servicesGrid: {
+  eyebrow: 'Emergency Dental Services',
+
+  heading:
+  'Emergency Dental Care for Tooth Pain and Damaged Teeth',
+
+  intro:
+    'Dental emergencies can involve pain, infection, injury, or damage to dental restorations. The right treatment depends on what caused the problem and whether the tooth can be repaired, saved, or may require removal.',
+
+  services: [
+    {
+      title: 'Toothache and Dental Pain Relief',
+
+      description:
+        'Severe or lingering tooth pain may be caused by decay, infection, cracks, bite pressure, or gum problems. A dental evaluation helps identify the source of the pain.',
+
+      bestFor: [
+        'Toothache',
+        'Throbbing pain',
+        'Pain when chewing',
+        'Sensitivity or possible infection',
+      ],
+
+      cta: 'Learn About Toothache Relief',
+
+      href: '/services/emergency-dentistry/toothache-relief',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth Care',
+
+      description:
+        'A broken or chipped tooth may need bonding, a filling, a crown, root canal therapy, or extraction depending on the depth and location of the damage.',
+
+      bestFor: [
+        'Chipped teeth',
+        'Broken teeth',
+        'Cracked enamel',
+        'Sharp edges or fractured restorations',
+      ],
+
+      cta: 'Learn About Broken Tooth Care',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+
+    {
+      title: 'Knocked-Out Tooth Emergency',
+
+      description:
+        'A knocked-out tooth needs urgent dental guidance. Fast action may affect whether the tooth can be evaluated for possible reimplantation or replacement planning.',
+
+      bestFor: [
+        'Avulsed tooth',
+        'Dental trauma',
+        'Sports injury',
+        'Fall-related tooth injury',
+      ],
+
+      cta: 'Learn About Knocked-Out Tooth Care',
+
+      href: '/services/emergency-dentistry/knocked-out-tooth',
+    },
+
+    {
+      title: 'Swelling, Abscess, or Infection Symptoms',
+
+      description:
+        'Swelling, gum bumps, pus, fever, or severe pressure may indicate infection that requires prompt evaluation.',
+
+      bestFor: [
+        'Dental abscess',
+        'Swollen gums',
+        'Facial swelling',
+        'Gum boil or infection symptoms',
+      ],
+
+      cta: 'Call for Urgent Evaluation',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Lost Fillings and Loose Crowns',
+
+      description:
+        'A lost filling or loose crown can expose the tooth to sensitivity, bacteria, decay, or fracture risk.',
+
+      bestFor: [
+        'Lost filling',
+        'Loose crown',
+        'Broken crown',
+        'Sensitive restored tooth',
+      ],
+
+      cta: 'Ask About Restorative Repair',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Dental Injury and Tooth Trauma',
+
+      description:
+        'Tooth trauma should be evaluated even if pain seems manageable because cracks, nerve injury, or root damage may not be obvious immediately after the injury.',
+
+      bestFor: [
+        'Fall injuries',
+        'Sports injuries',
+        'Impact injuries',
+        'Loose teeth or bleeding around teeth',
+      ],
+
+      cta: 'Request Emergency Dental Care',
+
+      href: '#contact',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Dental Emergency Guidance',
+
+  heading:
+    'Dental Emergency Signs That Need Prompt Evaluation',
+
+  body:
+    'Some dental problems need urgent attention because they may involve infection, trauma, severe pain, or risk of losing the tooth. Other problems may not be life-threatening but should still be scheduled quickly before they worsen.\n\nIf you are unsure whether your dental problem is an emergency, contacting Promenade Dental can help you understand the next appropriate step.',
+
+  goodFit: {
+    title: 'Call Promptly If You Have',
+
+    items: [
+      'Severe tooth pain',
+      'Swelling in the gums, jaw, or face',
+      'A knocked-out adult tooth',
+      'A broken tooth with pain or sharp edges',
+      'Bleeding after injury',
+      'A loose permanent tooth',
+      'Signs of infection such as pus or fever',
+    ],
+  },
+
+  alternative: {
+    title: 'Schedule Soon If You Have',
+
+    items: [
+      'A mild chip without pain',
+      'A lost filling with sensitivity',
+      'A loose crown',
+      'Food trapping around a damaged tooth',
+      'Dull tooth discomfort',
+      'A cracked restoration',
+      'A tooth that feels different when biting',
+    ],
+  },
+
+  cta: {
+    label: 'Call Promenade Dental for Guidance',
+    href: 'tel:+14808028188',
+  },
+},
+solutionsGrid: {
+  eyebrow: 'Emergency Dental Treatment Options',
+
+  heading:
+  'Emergency Treatment Options for Pain, Tooth Damage, and Infection',
+
+  body:
+    'Emergency treatment depends on the diagnosis. The goal may be to relieve pain, protect a damaged tooth, treat infection, save the natural tooth, remove a non-restorable tooth, or plan replacement after tooth loss.',
+
+  cards: [
+    {
+      title: 'Fillings or Bonding',
+      subtitle: 'Smaller Tooth Damage',
+
+      body:
+        'Small chips, cavities, or lost filling areas may be treated with tooth-colored material when the remaining tooth structure is stable.',
+
+      image: '/assets/dental-filling.jpg',
+    },
+
+    {
+      title: 'Dental Crowns',
+      subtitle: 'Broken or Weak Teeth',
+
+      body:
+        'Crowns may help protect teeth that are cracked, broken, weakened, or too damaged to be predictably restored with a filling alone.',
+
+      image: '/assets/dental-crowns.jpg',
+    },
+
+    {
+      title: 'Root Canal Therapy',
+      subtitle: 'Infected Teeth',
+
+      body:
+        'Root canal therapy may be recommended when the inside of the tooth is inflamed or infected and the tooth can still be preserved.',
+
+      image: '/assets/root-canal.webp',
+    },
+
+    {
+      title: 'Tooth Extraction',
+      subtitle: 'Non-Restorable Teeth',
+
+      body:
+        'Extraction may be recommended when a tooth is severely damaged, infected, loose, or fractured beyond predictable restoration.',
+
+      image: '/assets/tooth-extraction.png',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Dental Visit',
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: 'Emergency Dental Visit Process',
+
+  heading:
+  'Emergency Dental Visits for Diagnosis, Treatment, and Follow-Up',
+
+  subtitle:
+    'An emergency dental visit is designed to identify the source of the problem and determine the safest next step. Some emergencies can be treated the same day depending on diagnosis, scheduling, and the treatment needed. Other cases may require stabilization, medication, follow-up treatment, or referral when the condition is more complex.',
+
+  steps: [
+    {
+      title: 'Urgent Symptom Review',
+
+      body:
+        'The dental team reviews your pain, swelling, injury, broken tooth, loose restoration, or other emergency concern.',
+    },
+
+    {
+      title: 'Dental Exam and X-Rays When Needed',
+
+      body:
+        'Dr. Shriya evaluates the tooth, gums, bite, dental restorations, trauma, and imaging when needed to better understand the cause of the problem.',
+    },
+
+    {
+      title: 'Diagnosis and Treatment Options',
+
+      body:
+        'You receive a clear explanation of what is causing the emergency and which treatment options may be appropriate for your situation.',
+    },
+
+    {
+      title: 'Same-Day Care or Follow-Up Plan',
+
+      body:
+        'When possible, treatment may begin during the emergency visit. If additional care is needed, a follow-up treatment plan is created.',
+    },
+  ],
+
+  cta: {
+    label: 'Request an Emergency Dental Visit',
+    href: '#contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Urgent Dental Appointments',
+
+  heading:
+    'Urgent Dental Appointments for Tooth Pain, Broken Teeth, Swelling, and Dental Injuries',
+
+  body:
+    'If you have a dental emergency, calling the office is usually the fastest way to explain your symptoms and find out what appointment options are available. Promenade Dental can help determine whether your problem needs prompt evaluation, restorative treatment, emergency pain relief, or additional dental care.',
+
+  supportingText:
+    'Many dental emergencies benefit from early evaluation. Speaking with the dental team can help you understand the urgency of your situation and the next appropriate step for care.',
+
+  image:
+    '/assets/emergency-dentistry.webp',
+
+  imageAlt:
+    'Patient speaking with the dental team about an urgent dental concern at Promenade Dental',
+
+  cta: {
+    label: 'Call (480) 802-8188',
+    href: 'tel:+14808028188',
+  },
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+  'Emergency Dental Care for Diagnosis, Relief, and Treatment',
+
+  description:
+    'Emergency dentistry requires quick decision-making, but treatment should still be based on diagnosis. Promenade Dental focuses on identifying the cause of the problem and guiding patients toward the most appropriate next step for relief, repair, and long-term oral health.',
+
+  items: [
+    {
+      title: 'Diagnosis Before Treatment',
+
+      body:
+        'Dr. Shriya evaluates symptoms, tooth structure, gums, bite, trauma, restorations, and X-rays when needed before recommending treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Restorative Options Available',
+
+      body:
+        'Emergency care can connect to fillings, crowns, root canals, extractions, bridges, dentures, and implant planning when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Tooth-Saving Treatment Considered',
+
+      body:
+        'When possible, treatment focuses on repairing or saving the natural tooth before removal is considered.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M18 18 q6 -6 12 0 q-2 8 -6 12 q-4 -4 -6 -12',
+      ],
+    },
+
+    {
+      title: 'Local Care Near Fulton Ranch',
+
+      body:
+        'Promenade Dental is located in Chandler 85248 and serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 14 l8 8 l-8 12 l-8 -12 z M24 22 v10',
+      ],
+    },
+  ],
+},
+relatedServices: {
+  eyebrow: 'Explore Related Emergency Care',
+
+  heading:
+  'Related Care for Toothaches, Broken Teeth, and Urgent Treatment',
+
+  intro:
+    'Emergency dental problems often connect with restorative treatment. The right page depends on the symptom, the condition of the tooth, and whether repair, infection treatment, or tooth replacement is needed.',
+
+  services: [
+    {
+      title: 'Toothache & Dental Pain Relief',
+
+      description:
+        'Evaluation and treatment planning for tooth pain, sensitivity, pressure, swelling, and possible infection.',
+
+      href: '/services/emergency-dentistry/toothache-relief',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+
+      description:
+        'Care for chipped, cracked, fractured, or broken teeth that may need repair, protection, or restorative treatment.',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+
+    {
+      title: 'Knocked-Out Tooth',
+
+      description:
+        'Urgent guidance for adult teeth that have been knocked out because of injury, sports accidents, or dental trauma.',
+
+      href: '/services/emergency-dentistry/knocked-out-tooth',
+    },
+
+    {
+      title: 'Root Canal Therapy',
+
+      description:
+        'Root canal therapy may be recommended when tooth pain is caused by infection or inflammation inside the tooth and the tooth can still be saved.',
+
+      href: '/services/restorative-dentistry/root-canals',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+  'Emergency Dental FAQs for Pain, Swelling, and Injuries',
+
+  items: [
+    {
+      q: 'What is considered a dental emergency?',
+      a: 'A dental emergency may include severe tooth pain, swelling, infection signs, a broken tooth, a knocked-out tooth, a loose permanent tooth, dental trauma, or uncontrolled bleeding after injury.',
+    },
+
+    {
+      q: 'Should I call for severe tooth pain?',
+      a: 'Yes. Severe tooth pain should be evaluated because it may involve deep decay, infection, cracks, gum problems, or bite-related damage.',
+    },
+
+    {
+      q: 'What should I do for a broken tooth?',
+      a: 'Call the dental office and avoid chewing on the broken tooth. A broken tooth may need bonding, a filling, crown, root canal therapy, or extraction depending on the extent of the damage.',
+    },
+
+    {
+      q: 'What should I do if a tooth is knocked out?',
+      a: 'Call the dental office immediately for guidance. A knocked-out adult tooth is time-sensitive and needs urgent evaluation.',
+    },
+
+    {
+      q: 'Is swelling a dental emergency?',
+      a: 'Swelling can be a sign of infection and should be evaluated promptly, especially if it involves the face, jaw, fever, pus, or worsening pain.',
+    },
+
+    {
+      q: 'Can emergency dental care save my tooth?',
+      a: 'Sometimes. Depending on the diagnosis, a painful or damaged tooth may be saved with a filling, crown, root canal therapy, or another restorative treatment.',
+    },
+
+    {
+      q: 'Will I need a root canal for tooth pain?',
+      a: 'Not always. Tooth pain can have several causes. Root canal therapy may be recommended if the inside of the tooth is inflamed or infected.',
+    },
+
+    {
+      q: 'Can a lost filling or loose crown wait?',
+      a: 'A lost filling or loose crown should be checked soon because the tooth may be exposed to sensitivity, decay, fracture risk, or bite-related problems.',
+    },
+
+    {
+      q: 'Do you treat chipped teeth?',
+      a: 'Yes. Promenade Dental evaluates chipped teeth and recommends treatment based on the size, location, sensitivity, and condition of the remaining tooth structure.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Call for Emergency Dental Care',
+highlight: 'and Prompt Evaluation',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate urgent dental problems with emergency care focused on diagnosis, comfort, tooth repair, infection treatment, and the right next step.',
+
+  buttonText: 'Request an Emergency Visit',
   buttonHref: '/contact',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
 
-  image: '/assets/dental-implants-cta.jpg',
+  image: '/assets/dental-lobby.jpg',
 },
-  }
+}
 
 
 ];

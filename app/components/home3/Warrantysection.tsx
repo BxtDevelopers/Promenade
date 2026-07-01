@@ -71,7 +71,7 @@ export default function WarrantySection() {
           </div>
 
           <Link
-            href={`${BASE}/warranty`}
+            href={`/warranty`}
             className="inline-flex items-center gap-[10px] mt-[30px] no-underline text-[13px] tracking-[0.08em] uppercase font-medium text-ivory transition-[gap] duration-300 hover:gap-[18px] border-b border-coral pb-[6px]"
           >
             Read our full guarantee{' '}

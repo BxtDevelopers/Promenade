@@ -21,7 +21,7 @@ export default function ClosingCTA() {
 
         <div className="rv flex items-center justify-center gap-[18px] mt-[42px] flex-wrap">
           <Link
-            href={`${BASE}/contact-us`}
+            href={`/contact-us`}
             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-bg bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5 px-[30px] py-[17px] shadow-[0_20px_44px_-18px_rgba(232,154,114,0.7)]"
           >
             Schedule my first visit →

@@ -13,7 +13,7 @@ export default function AnnouncementBar({ onOpenModal }: AnnouncementBarProps) {
 
   return (
     <div
-      className="relative z-30 flex items-center justify-center h-[46px] px-[46px]"
+      className="relative z-30 flex items-center justify-center h-[46px] lg:px-[46px]"
       style={{
         background: 'rgba(232,154,114,0.12)',
         borderBottom: '1px solid rgba(232,154,114,0.22)',

@@ -99,7 +99,7 @@ export default function Hero() {
               className="inline-block"
               style={{ transform: 'translateY(110%)', animation: 'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.45s forwards' }}
             >
-              Comfortable dental care
+              Family Dentist 
             </span>
           </span>
           <span className="block overflow-hidden">
@@ -107,8 +107,8 @@ export default function Hero() {
               className="inline-block"
               style={{ transform: 'translateY(110%)', animation: 'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.58s forwards' }}
             >
-              for busy{' '}
-              <em className="not-italic font-normal text-coral">Chandler families.</em>
+              in{' '}
+              <em className="not-italic font-normal text-coral">Chandler, AZ.</em>
             </span>
           </span>
         </h1>
@@ -142,10 +142,10 @@ export default function Hero() {
             className="text-ivory font-light leading-[1.55]"
             style={{ maxWidth: '42ch', fontSize: 'clamp(16px,1.3vw,19px)' }}
           >
-            Gentle, unhurried care from a dentist who explains everything — and never rushes you.
+            Comprehensive, gentle dental care for families across Chandler — Ocotillo, Fulton Ranch, and Sun Lakes.
           </p>
           <Link
-            href={`${BASE}/contact-us`}
+            href={`/contact-us`}
             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-[var(--bg)] bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-[var(--ivory)] hover:-translate-y-0.5"
             style={{
               padding: '17px 30px',

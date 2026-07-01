@@ -59,7 +59,7 @@ export interface LocalAreaSection {
     href: string;
   };
 }
-  export interface ServiceData {
+  export interface Sub_ServiceData {
     serviceSlug?:string
     slug: string;
     name: string;
@@ -98,6 +98,7 @@ export interface LocalAreaSection {
   intro: string;
   services: ServiceGridCard[];
 }
+
 features?:{
     eyebrow: string;
       heading: string;
@@ -109,6 +110,15 @@ features?:{
 }
 educationSection?: EducationSection;
 patientTypesSection?: PatientTypesSection;
+maintenance?:{
+  eyebrow: string;
+    heading: string;
+    body: string;
+    cards:{
+      title:string;
+      body:string;
+    }[]
+}
 localArea?: LocalAreaSection;
     doctor?:{
       eyebrow: string;
@@ -220,7 +230,7 @@ export const SUB_SERVICES = [
 
   primaryCTA: {
     label: 'Book a Whitening Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 
   secondaryCTA: {
@@ -248,7 +258,7 @@ overview: {
 
   cta: {
     label: 'Start Your Whitening Consultation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -335,7 +345,7 @@ heading: 'Teeth Whitening Options for Stains and Sensitivity',
 
       cta: 'Ask About Professional Whitening',
 
-      href: '/services/cosmetic-dentistry/teeth-whitening',
+      href: '#contact',
     },
 
     {
@@ -353,7 +363,7 @@ heading: 'Teeth Whitening Options for Stains and Sensitivity',
 
       cta: 'Ask About ZOOM Whitening',
 
-      href: '/services/cosmetic-dentistry/zoom-whitening',
+      href: '#contact',
     },
 
     {
@@ -372,7 +382,7 @@ heading: 'Teeth Whitening Options for Stains and Sensitivity',
 
       cta: 'Book a Whitening Consultation',
 
-      href: '/contact',
+      href: '#contact',
     },
   ],
 },
@@ -396,7 +406,7 @@ educationSection: {
 
   cta: {
     label: 'Ask If ZOOM Whitening Is Right for You',
-    href: '/contact',
+    href: '#contact',
   },
 },
 suitability: {
@@ -425,7 +435,7 @@ suitability: {
   },
   cta: {
     label: 'Find Out If Whitening Fits Your Smile',
-    href: '/contact',
+    href: '#contact',
   },
 },
 solutionsGrid: {
@@ -511,7 +521,7 @@ process: {
 
   cta: {
     label: 'Book a Whitening Appointment',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -642,7 +652,7 @@ relatedServices: {
       description:
         'Veneers may help when stains, tooth shape, gaps, or uneven teeth need more complete cosmetic improvement.',
 
-      href: '/services/cosmetic-dentistry/porcelain-veneers',
+      href: '/services/cosmetic-dentistry/veneers',
     },
 
     {
@@ -660,7 +670,7 @@ relatedServices: {
       description:
         'A smile makeover may combine whitening, veneers, bonding, crowns, or other treatments into one planned result.',
 
-      href: '/services/cosmetic-dentistry/smile-makeover',
+      href: '#contact',
     },
   ],
 },
@@ -729,7 +739,7 @@ cta: {
     'Promenade Dental helps patients improve yellow, stained, or dull-looking teeth with professional whitening options planned around oral health, sensitivity, and realistic cosmetic goals.',
 
   buttonText: 'Book a Whitening Consultation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -771,7 +781,7 @@ image: '/assets/dental-lobby.jpg',
 
     primaryCTA: {
       label: 'Book a Veneers Consultation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -799,7 +809,7 @@ image: '/assets/dental-lobby.jpg',
 
   cta: {
     label: 'Start Your Veneers Consultation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -902,7 +912,7 @@ title: 'Single-Tooth Veneer',
 
   cta: 'Ask About a Single Veneer',
 
-  href: '/services/cosmetic-dentistry/porcelain-veneers',
+  href: '#contact',
 },
 
 {
@@ -921,7 +931,7 @@ title: 'Single-Tooth Veneer',
 
   cta: 'Ask About Multiple Veneers',
 
-  href: '/services/cosmetic-dentistry/porcelain-veneers',
+  href: '#contact',
 },
 
 {
@@ -940,7 +950,7 @@ title: 'Single-Tooth Veneer',
 
   cta: 'Plan a Smile Makeover',
 
-  href: '/services/cosmetic-dentistry/smile-makeover',
+  href: '#contact',
 },
 
 ],
@@ -981,7 +991,7 @@ items: [
 
 cta: {
 label: 'Find Out If Veneers Fit Your Smile',
-href: '/contact',
+href: '#contact',
 },
 },
 comparison: {
@@ -1058,7 +1068,7 @@ title: 'Smile Goals and Cosmetic Concerns',
 
 cta: {
 label: 'Book a Veneers Consultation',
-href: '/contact',
+href: '#contact',
 },
 },
 educationSection: {
@@ -1081,7 +1091,7 @@ educationSection: {
 
   cta: {
     label: 'Talk to Dr. Shriya About Veneers',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -1242,7 +1252,7 @@ relatedServices: {
       description:
         'A smile makeover may combine veneers, whitening, bonding, crowns, gum care, or other treatments into one complete plan.',
 
-      href: '/services/cosmetic-dentistry/smile-makeover',
+      href: '#contact',
     },
   ],
 },
@@ -1312,7 +1322,7 @@ cta: {
     'Promenade Dental helps patients improve visible smile concerns with porcelain veneers planned around tooth shape, enamel health, bite function, and natural-looking cosmetic results.',
 
   buttonText: 'Book a Veneers Consultation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -1355,7 +1365,7 @@ cta: {
 
     primaryCTA: {
       label: 'Book a Bonding Consultation',
-      href: '/contact',
+      href: '/contact-us',
     },
 
     secondaryCTA: {
@@ -1383,7 +1393,7 @@ cta: {
 
   cta: {
     label: 'Start Your Bonding Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 whyItMatters: {
@@ -1487,7 +1497,7 @@ servicesGrid: {
 
       cta: 'Ask About Chipped Tooth Bonding',
 
-      href: '/services/cosmetic-dentistry/dental-bonding',
+      href: '#contact',
     },
 
     {
@@ -1505,7 +1515,7 @@ servicesGrid: {
 
       cta: 'Ask About Gap Bonding',
 
-      href: '/services/cosmetic-dentistry/dental-bonding',
+      href: '#contact',
     },
 
     {
@@ -1524,7 +1534,7 @@ servicesGrid: {
 
       cta: 'Ask About Tooth Reshaping',
 
-      href: '/services/cosmetic-dentistry/dental-bonding',
+      href: '#contact',
     },
   ],
 },
@@ -1563,7 +1573,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If Bonding Fits Your Smile',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -1638,7 +1648,7 @@ heading:
 
   cta: {
     label: 'Book a Bonding Appointment',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -1790,7 +1800,7 @@ relatedServices: {
       description:
         'Veneers may be better when several teeth need changes in color, shape, size, spacing, or symmetry.',
 
-      href: '/services/cosmetic-dentistry/porcelain-veneers',
+      href: '/services/cosmetic-dentistry/veneers',
     },
 
     {
@@ -1799,7 +1809,7 @@ relatedServices: {
       description:
         'A smile makeover may combine bonding, veneers, whitening, crowns, or other treatments into one planned result.',
 
-      href: '/services/cosmetic-dentistry/smile-makeover',
+      href: '#contact',
     },
   ],
 },
@@ -1869,7 +1879,7 @@ highlight: 'for a More Balanced Smile',
     'Promenade Dental helps patients improve small cosmetic tooth concerns with dental bonding planned around tooth health, bite comfort, tooth color, and natural-looking results.',
 
   buttonText: 'Book a Bonding Consultation',
-  buttonHref: '/contact',
+  buttonHref: '#contact',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -1911,7 +1921,7 @@ highlight: 'for a More Balanced Smile',
 
     primaryCTA: {
       label: 'Book a Filling Appointment',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -1939,7 +1949,7 @@ highlight: 'for a More Balanced Smile',
 
   cta: {
     label: 'Schedule a Cavity Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -2043,7 +2053,7 @@ servicesGrid: {
 
       cta: 'Book a Cavity Filling',
 
-      href: '/services/restorative-dentistry/tooth-colored-fillings',
+      href: '#contact',
     },
 
     {
@@ -2062,7 +2072,7 @@ servicesGrid: {
 
       cta: 'Check an Old Filling',
 
-      href: '/services/restorative-dentistry/tooth-colored-fillings',
+      href: '#contact',
     },
 
     {
@@ -2080,7 +2090,7 @@ servicesGrid: {
 
       cta: 'Ask About Tooth Repair',
 
-      href: '/services/restorative-dentistry/tooth-colored-fillings',
+      href: '#contact',
     },
   ],
 },
@@ -2119,7 +2129,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If You Need a Filling',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -2195,7 +2205,7 @@ process: {
 
   cta: {
     label: 'Book a Filling Appointment',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -2355,7 +2365,7 @@ relatedServices: {
       description:
         'Root canal therapy may be needed when decay or infection reaches the inside of the tooth.',
 
-      href: '/services/restorative-dentistry/root-canal-therapy',
+      href: '/services/restorative-dentistry/root-canals',
     },
   ],
 },
@@ -2425,7 +2435,7 @@ highlight: 'for a Healthier Smile',
     'Promenade Dental helps patients repair cavities and small areas of tooth damage with tooth-colored fillings planned around tooth health, comfort, bite function, and natural appearance.',
 
   buttonText: 'Book a Filling Appointment',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -2469,7 +2479,7 @@ hero: {
 
   primaryCTA: {
     label: 'Book a Crown Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 
   secondaryCTA: {
@@ -2497,7 +2507,7 @@ overview: {
 
   cta: {
     label: 'Start Your Crown Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -2602,7 +2612,7 @@ servicesGrid: {
 
       cta: 'Ask About a Crown for a Cracked Tooth',
 
-      href: '/services/restorative-dentistry/dental-crowns',
+      href: '#contact',
     },
 
     {
@@ -2621,7 +2631,7 @@ servicesGrid: {
 
       cta: 'Ask About a Crown After Root Canal',
 
-      href: '/services/restorative-dentistry/dental-crowns',
+      href: '#contact',
     },
 
     {
@@ -2640,7 +2650,7 @@ servicesGrid: {
 
       cta: 'Ask About Crown Treatment',
 
-      href: '/services/restorative-dentistry/dental-crowns',
+      href: '#contact',
     },
   ],
 },
@@ -2679,7 +2689,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If Crown Treatment Fits Your Tooth',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -2754,7 +2764,7 @@ process: {
 
   cta: {
     label: 'Book a Crown Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -2906,7 +2916,7 @@ relatedServices: {
       description:
         'Root canal therapy may be needed when infection or inflammation reaches the inside of the tooth.',
 
-      href: '/services/restorative-dentistry/root-canal-therapy',
+      href: '/services/restorative-dentistry/root-canals',
     },
 
     {
@@ -2985,7 +2995,7 @@ highlight: 'for Damaged Teeth',
     'Promenade Dental helps patients protect and restore damaged teeth with dental crowns planned around diagnosis, tooth strength, bite comfort, appearance, and long-term oral health.',
 
   buttonText: 'Book a Crown Consultation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -3028,7 +3038,7 @@ highlight: 'for Damaged Teeth',
 
     primaryCTA: {
       label: 'Book a Bridge Consultation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -3056,7 +3066,7 @@ highlight: 'for Damaged Teeth',
 
   cta: {
     label: 'Start Your Missing Tooth Consultation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -3160,7 +3170,7 @@ servicesGrid: {
 
       cta: 'Ask About a Traditional Bridge',
 
-      href: '/services/restorative-dentistry/dental-bridges',
+      href: '#contact',
     },
 
     {
@@ -3178,7 +3188,7 @@ servicesGrid: {
 
       cta: 'Ask About Multiple Tooth Replacement',
 
-      href: '/services/restorative-dentistry/dental-bridges',
+      href: '#contact',
     },
 
     {
@@ -3196,7 +3206,7 @@ servicesGrid: {
 
       cta: 'Ask About Implant-Supported Bridges',
 
-      href: '/services/restorative-dentistry/dental-bridges',
+      href: '#contact',
     },
   ],
 },
@@ -3235,7 +3245,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If a Dental Bridge Fits Your Smile',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -3311,7 +3321,7 @@ process: {
 
   cta: {
     label: 'Book a Dental Bridge Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -3463,7 +3473,7 @@ relatedServices: {
       description:
         'Dentures and partials may help replace multiple missing teeth with removable appliances.',
 
-      href: '/services/restorative-dentistry/dentures-partials',
+      href: '/services/restorative-dentistry/dentures',
     },
 
     {
@@ -3472,7 +3482,7 @@ relatedServices: {
       description:
         'Dental implants may replace missing teeth or support a bridge when oral health and bone support are suitable.',
 
-      href: '/services/restorative-dentistry/dental-implants',
+      href: '/services/dental-implants',
     },
   ],
 },
@@ -3542,7 +3552,7 @@ cta: {
     'Promenade Dental helps patients replace missing teeth with dental bridges planned around chewing comfort, smile appearance, neighboring teeth, gum health, and long-term function.',
 
   buttonText: 'Book a Bridge Consultation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -3586,7 +3596,7 @@ cta: {
 
     primaryCTA: {
       label: 'Book a Root Canal Evaluation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -3614,7 +3624,7 @@ cta: {
 
   cta: {
     label: 'Schedule a Tooth Pain Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -3721,7 +3731,7 @@ servicesGrid: {
 
       cta: 'Ask About Deep Decay Treatment',
 
-      href: '/services/restorative-dentistry/root-canals',
+      href: '#contact',
     },
 
     {
@@ -3740,7 +3750,7 @@ servicesGrid: {
 
       cta: 'Ask About Tooth Infection Treatment',
 
-      href: '/services/restorative-dentistry/root-canals',
+      href: '#contact',
     },
 
     {
@@ -3759,7 +3769,7 @@ servicesGrid: {
 
       cta: 'Ask About Cracked Tooth Evaluation',
 
-      href: '/services/restorative-dentistry/root-canals',
+      href: '#contact',
     },
   ],
 },
@@ -3798,7 +3808,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If Your Tooth Can Be Saved',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -3853,7 +3863,7 @@ educationSection: {
 
   cta: {
     label: 'Ask About Crown Protection After Root Canal',
-    href: '/contact',
+    href: '#contact',
   },
 },
 process: {
@@ -3897,7 +3907,7 @@ process: {
 
   cta: {
     label: 'Book a Root Canal Evaluation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -4128,7 +4138,7 @@ highlight: 'for Infected Teeth',
     'Promenade Dental helps patients evaluate and treat infected or inflamed teeth with root canal therapy planned around diagnosis, comfort, tooth preservation, and final restoration needs.',
 
   buttonText: 'Book a Root Canal Evaluation',
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
   secondaryButtonHref: 'tel:+14808028188',
@@ -4172,7 +4182,7 @@ highlight: 'for Infected Teeth',
 
     primaryCTA: {
       label: 'Book a Tooth Extraction Evaluation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -4200,7 +4210,7 @@ highlight: 'for Infected Teeth',
 
   cta: {
     label: 'Schedule an Extraction Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -4252,7 +4262,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out If the Tooth Can Be Saved',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -4312,7 +4322,7 @@ servicesGrid: {
 
       cta: 'Ask About Severe Decay Treatment',
 
-      href: '/services/restorative-dentistry/tooth-extractions',
+      href: '#contact',
     },
 
     {
@@ -4330,7 +4340,7 @@ servicesGrid: {
 
       cta: 'Ask About Broken Tooth Evaluation',
 
-      href: '/services/restorative-dentistry/tooth-extractions',
+      href: '#contact',
     },
 
     {
@@ -4349,7 +4359,7 @@ servicesGrid: {
 
       cta: 'Ask About Tooth Infection Treatment',
 
-      href: '/services/restorative-dentistry/tooth-extractions',
+      href: '#contact',
     },
 
     {
@@ -4367,7 +4377,7 @@ servicesGrid: {
 
       cta: 'Ask About Loose Tooth Evaluation',
 
-      href: '/services/restorative-dentistry/tooth-extractions',
+      href: '#contact',
     },
   ],
 },
@@ -4406,7 +4416,7 @@ suitability: {
 
   cta: {
     label: 'Find Out Whether Extraction Is Necessary',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -4487,7 +4497,7 @@ solutionsGrid: {
 
   cta: {
     label: 'Discuss Tooth Replacement Options',
-    href: '/contact',
+    href: '#contact',
   },
 },
 process: {
@@ -4531,7 +4541,7 @@ process: {
 
   cta: {
     label: 'Book a Tooth Extraction Evaluation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -4696,7 +4706,7 @@ relatedServices: {
       description:
         'A dental implant may be considered after extraction when oral health, bone support, and healing are suitable.',
 
-      href: '/services/restorative-dentistry/dental-implants',
+      href: '/services/dental-implants',
     },
   ],
 },
@@ -4766,7 +4776,7 @@ subtitle:
 'Promenade Dental helps patients evaluate whether a tooth can be saved or should be removed, with extraction planning focused on diagnosis, comfort, healing, and future replacement options.',
 
 buttonText: 'Book a Tooth Extraction Evaluation',
-buttonHref: '/contact',
+buttonHref: '/contact-us',
 
 secondaryButtonText: 'Call (480) 802-8188',
 secondaryButtonHref: 'tel:+14808028188',
@@ -4811,7 +4821,7 @@ hero: {
 
     primaryCTA: {
       label: 'Book a Denture Consultation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -4839,7 +4849,7 @@ overview: {
 
   cta: {
     label: 'Start Your Denture Consultation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -4891,7 +4901,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out Which Denture Option Fits Your Needs',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -4951,7 +4961,7 @@ servicesGrid: {
 
       cta: 'Ask About Full Dentures',
 
-      href: '/services/restorative-dentistry/dentures',
+      href: '#contact',
     },
 
     {
@@ -4969,7 +4979,7 @@ servicesGrid: {
 
       cta: 'Ask About Partial Dentures',
 
-      href: '/services/restorative-dentistry/dentures',
+      href: '#contact',
     },
 
     {
@@ -4987,7 +4997,7 @@ servicesGrid: {
 
       cta: 'Ask About Immediate Dentures',
 
-      href: '/services/restorative-dentistry/dentures',
+      href: '#contact',
     },
 
     {
@@ -5005,7 +5015,7 @@ servicesGrid: {
 
       cta: 'Ask About Implant-Supported Dentures',
 
-      href: '/services/restorative-dentistry/dentures',
+      href: '#contact',
     },
   ],
 },
@@ -5044,7 +5054,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If Dentures Are Right for You',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -5127,7 +5137,7 @@ process: {
 
   cta: {
     label: 'Book a Denture Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -5283,7 +5293,7 @@ relatedServices: {
       description:
         'Implants may replace teeth or support dentures when oral health and bone support are suitable.',
 
-      href: '/services/restorative-dentistry/dental-implants',
+      href: '/services/dental-implants',
     },
 
     {
@@ -5292,7 +5302,7 @@ relatedServices: {
       description:
         'Implant-supported dentures may improve stability for patients who want more support than traditional removable dentures.',
 
-      href: '/services/restorative-dentistry/dental-implants',
+      href: '/services/dental-implants',
     },
   ],
 },
@@ -5363,7 +5373,7 @@ cta: {
 
   buttonText: 'Book a Denture Consultation',
 
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
 
@@ -5409,7 +5419,7 @@ cta: {
 
     primaryCTA: {
       label: 'Book an Inlay or Onlay Consultation',
-      href: '/contact',
+      href: '#contact',
     },
 
     secondaryCTA: {
@@ -5437,7 +5447,7 @@ cta: {
 
   cta: {
     label: 'Schedule a Tooth Restoration Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -5489,7 +5499,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out If an Inlay or Onlay Is Right for You',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -5542,7 +5552,7 @@ servicesGrid: {
 
       cta: 'Ask About Large Cavity Restoration',
 
-      href: '/services/restorative-dentistry/inlays-onlays',
+      href: '#contact',
     },
 
     {
@@ -5560,7 +5570,7 @@ servicesGrid: {
 
       cta: 'Ask About Replacing an Old Filling',
 
-      href: '/services/restorative-dentistry/inlays-onlays',
+      href: '#contact',
     },
 
     {
@@ -5578,7 +5588,7 @@ servicesGrid: {
 
       cta: 'Ask About Moderate Tooth Repair',
 
-      href: '/services/restorative-dentistry/inlays-onlays',
+      href: '#contact',
     },
   ],
 },
@@ -5617,7 +5627,7 @@ suitability: {
 
   cta: {
     label: 'Find Out If an Inlay or Onlay Fits Your Tooth',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -5700,7 +5710,7 @@ process: {
 
   cta: {
     label: 'Book an Inlay or Onlay Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -5938,7 +5948,7 @@ highlight: 'for Large Cavities',
 
   buttonText: 'Book an Inlay or Onlay Consultation',
 
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
 
@@ -6011,7 +6021,7 @@ overview: {
 
   cta: {
     label: 'Start Your Missing Tooth Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -6063,7 +6073,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out If a Single Tooth Implant Is Right for You',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -6123,7 +6133,7 @@ servicesGrid: {
 
       cta: 'Ask About Front Tooth Implant Options',
 
-      href: '/services/dental-implants/single-tooth-implant',
+      href: '#contact',
     },
 
     {
@@ -6141,7 +6151,7 @@ servicesGrid: {
 
       cta: 'Ask About Back Tooth Implant Options',
 
-      href: '/services/dental-implants/single-tooth-implant',
+      href: '#contact',
     },
 
     {
@@ -6159,7 +6169,7 @@ servicesGrid: {
 
       cta: 'Ask About Implant Planning After Extraction',
 
-      href: '/services/dental-implants/single-tooth-implant',
+      href: '#contact',
     },
   ],
 },
@@ -6198,7 +6208,7 @@ suitability: {
 
   cta: {
     label: 'Schedule a Single Tooth Implant Evaluation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -6274,7 +6284,7 @@ process: {
 
   cta: {
     label: 'Book a Single Tooth Implant Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 educationSection: {
@@ -6297,7 +6307,7 @@ educationSection: {
 
   cta: {
     label: 'Ask About Implant Crown Planning',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -6453,7 +6463,7 @@ relatedServices: {
       description:
         'Extraction planning may include a future replacement option if the tooth cannot be saved.',
 
-      href: '/services/oral-surgery/tooth-extractions',
+      href: '/services/restorative-dentistry/tooth-extractions',
     },
 
     {
@@ -6534,7 +6544,7 @@ highlight: 'for One Missing Tooth',
 
   buttonText: 'Book a Single Tooth Implant Consultation',
 
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
 
@@ -6608,7 +6618,7 @@ highlight: 'for One Missing Tooth',
 
   cta: {
     label: 'Start Your Implant Bridge Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -6660,7 +6670,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out If an Implant Bridge Is Right for You',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -6720,7 +6730,7 @@ servicesGrid: {
 
       cta: 'Ask About Replacing Several Missing Teeth',
 
-      href: '/services/dental-implants/implant-supported-bridge',
+      href: '#contact',
     },
 
     {
@@ -6738,7 +6748,7 @@ servicesGrid: {
 
       cta: 'Ask About Back Tooth Implant Bridges',
 
-      href: '/services/dental-implants/implant-supported-bridge',
+      href: '#contact',
     },
 
     {
@@ -6756,7 +6766,7 @@ servicesGrid: {
 
       cta: 'Ask About Fixed Replacement Options',
 
-      href: '/services/dental-implants/implant-supported-bridge',
+      href: '#contact',
     },
   ],
 },
@@ -6795,7 +6805,7 @@ suitability: {
 
   cta: {
     label: 'Schedule an Implant Bridge Suitability Evaluation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -6870,7 +6880,7 @@ process: {
 
   cta: {
     label: 'Book an Implant Bridge Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 educationSection: {
@@ -6893,7 +6903,7 @@ educationSection: {
 
   cta: {
     label: 'Ask About Fixed Implant Bridge Planning',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -7130,7 +7140,7 @@ highlight: 'for Several Missing Teeth',
 
   buttonText: 'Book an Implant Bridge Consultation',
 
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
 
@@ -7205,7 +7215,7 @@ highlight: 'for Several Missing Teeth',
 
   cta: {
     label: 'Start Your Implant Denture Evaluation',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 whyItMatters: {
@@ -7257,7 +7267,7 @@ whyItMatters: {
 
   cta: {
     label: 'Find Out If Implant Dentures Are Right for You',
-    href: '/contact',
+    href: '/contact-us',
   },
 },
 features: {
@@ -7316,7 +7326,7 @@ servicesGrid: {
 
       cta: 'Ask About Implant-Retained Dentures',
 
-      href: '/services/dental-implants/implant-supported-dentures',
+      href: '#contact',
     },
 
     {
@@ -7334,7 +7344,7 @@ servicesGrid: {
 
       cta: 'Ask About Full Arch Implant Dentures',
 
-      href: '/services/dental-implants/implant-supported-dentures',
+      href: '#contact',
     },
 
     {
@@ -7352,7 +7362,7 @@ servicesGrid: {
 
       cta: 'Ask About Lower Implant Dentures',
 
-      href: '/services/dental-implants/implant-supported-dentures',
+      href: '#contact',
     },
 
     {
@@ -7370,7 +7380,7 @@ servicesGrid: {
 
       cta: 'Ask About Denture Planning After Extractions',
 
-      href: '/services/dental-implants/implant-supported-dentures',
+      href: '#contact',
     },
   ],
 },
@@ -7409,7 +7419,7 @@ suitability: {
 
   cta: {
     label: 'Schedule an Implant Denture Suitability Evaluation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 comparison: {
@@ -7486,7 +7496,7 @@ process: {
 
   cta: {
     label: 'Book an Implant Denture Consultation',
-    href: '/contact',
+    href: '#contact',
   },
 },
 educationSection: {
@@ -7509,7 +7519,7 @@ educationSection: {
 
   cta: {
     label: 'Ask About Loose Denture Solutions',
-    href: '/contact',
+    href: '#contact',
   },
 },
 maintenance: {
@@ -7656,7 +7666,7 @@ relatedServices: {
       description:
         'Traditional dentures and partial dentures may replace several or all missing teeth with removable appliances.',
 
-      href: '/services/restorative-dentistry/dentures-partials',
+      href: '/services/restorative-dentistry/dentures',
     },
 
     {
@@ -7746,7 +7756,4398 @@ highlight: 'for Stability and Comfort',
 
   buttonText: 'Book an Implant Denture Consultation',
 
-  buttonHref: '/contact',
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+{
+serviceSlug: 'emergency-dentistry',
+
+slug: 'toothache-relief',
+
+name: 'Toothache & Dental Pain Relief',
+
+metaTitle:
+'Toothache Relief in Chandler, AZ | Promenade Dental',
+
+metaDescription:
+'Toothache relief in Chandler AZ for severe tooth pain, sensitivity, chewing pain, swelling, and possible infection. Visit Promenade Dental near Fulton Ranch.',
+
+hero: {
+eyebrow: 'Tooth Pain Evaluation in Fulton Ranch',
+
+title: 'Toothache Relief for',
+
+highlight:
+  'Severe Tooth Pain, Sensitivity, Swelling, or Pain When Chewing in Chandler',
+
+description:
+  'Promenade Dental helps patients evaluate toothaches and dental pain caused by cavities, infection, cracks, gum problems, bite pressure, loose dental work, or dental trauma with care planned around diagnosis, comfort, and the right next treatment.',
+
+image: '/assets/h-tooth-ache.jpg',
+
+trustPoints: [
+  'Evaluation for severe tooth pain',
+  'Diagnosis for sensitivity and chewing pain',
+  'Treatment options for decay, cracks, and infection',
+  'Emergency and restorative care in one office',
+  'Located in Fulton Ranch',
+  'New Patients Welcome',
+],
+
+primaryCTA: {
+  label: 'Request a Tooth Pain Visit',
+  href: '#contact',
+},
+
+secondaryCTA: {
+  label: 'Call (480) 802-8188',
+  href: 'tel:+14808028188',
+},
+
+},
+overview: {
+eyebrow: 'Toothache & Dental Pain Evaluation',
+
+heading:
+'Toothache Relief for Pain Caused by Cavities, Infection, Cracks, or Bite Pressure',
+
+body:
+'A toothache is a symptom, not a diagnosis. The pain may come from a cavity, deep decay, tooth infection, cracked tooth, worn filling, loose crown, gum inflammation, grinding, bite pressure, or dental injury. Some toothaches feel sharp and sudden. Others become dull, throbbing, or constant over time.\n\nAt Promenade Dental, Dr. Shriya evaluates the source of the pain before recommending treatment. The goal is to understand whether the tooth can be repaired, needs infection treatment, requires stronger protection, or should be removed if it cannot be saved.',
+
+features: [
+'Evaluation of tooth pain and sensitivity',
+'Diagnosis of cavities, cracks, and infection',
+'Assessment of bite pressure and dental restorations',
+'Treatment planning focused on relieving pain and saving teeth',
+],
+
+image: '/assets/service-toothache-relief.jpg',
+
+cta: {
+label: 'Schedule a Tooth Pain Evaluation',
+href: '/contact-us',
+},
+},
+whyItMatters: {
+eyebrow: 'Tooth Pain Evaluation',
+
+heading:
+'Tooth Pain Evaluation for Deep Decay, Infection, Sensitivity, Cracks, and Gum Inflammation',
+
+description:
+'Different types of tooth pain can point to different problems. Pain when chewing may suggest a crack, bite issue, infection, or damaged restoration. Lingering sensitivity may suggest deeper nerve irritation. Swelling may indicate infection. A sharp edge or broken tooth may need urgent repair.\n\nDr. Shriya evaluates your symptoms, tooth structure, gums, bite, dental history, existing restorations, and X-rays when needed to identify the cause of the pain.',
+
+items: [
+{
+title: 'Pain Pattern and Triggers',
+
+  body:
+    'Cold, heat, sweets, chewing, pressure, or spontaneous pain can help identify what may be causing the toothache.',
+
+  paths: [
+    'M24 12 C18 18 14 24 24 38',
+    'M24 12 C30 18 34 24 24 38',
+  ],
+},
+
+{
+  title: 'Tooth and Restoration Condition',
+
+  body:
+    'Cavities, cracks, old fillings, loose crowns, and broken restorations can expose the tooth to sensitivity or infection.',
+
+  paths: [
+    'M12 12 h20 v20 h-20 z',
+    'M18 18 h8 M18 24 h8',
+  ],
+},
+
+{
+  title: 'Gum and Infection Signs',
+
+  body:
+    'Swelling, gum bumps, pus, tenderness, or fever may suggest infection that needs prompt evaluation.',
+
+  paths: [
+    'M12 20 h24',
+    'M16 28 h16',
+  ],
+},
+
+],
+
+cta: {
+label: 'Find the Cause of Your Tooth Pain',
+href: '/contact-us',
+},
+},
+servicesGrid: {
+eyebrow: 'Common Causes of Tooth Pain',
+
+heading:
+'Dental Pain Causes That Need Diagnosis Before Treatment',
+
+intro:
+'Tooth pain can come from several conditions. The same symptom may need different treatment depending on the cause, tooth condition, and severity.',
+
+services: [
+{
+title: 'Tooth Pain From Cavities or Deep Decay',
+
+  description:
+    'A small cavity may cause sensitivity. Deep decay may cause stronger pain, lingering sensitivity, or infection inside the tooth.',
+
+  bestFor: [
+    'Cold sensitivity',
+    'Sweet sensitivity',
+    'Deep cavities',
+    'Decay-related tooth pain',
+  ],
+
+  cta: 'Ask About Cavity Treatment',
+
+  href: '#contact',
+},
+
+{
+  title: 'Tooth Pain From Infection or Abscess',
+
+  description:
+    'Throbbing pain, swelling, pressure, pus, or a gum bump may point to infection involving the inside of the tooth or surrounding tissues.',
+
+  bestFor: [
+    'Tooth infections',
+    'Dental abscesses',
+    'Swelling and pressure',
+    'Severe tooth pain',
+  ],
+
+  cta: 'Ask About Infection Treatment',
+
+  href: '#contact',
+},
+
+{
+  title: 'Tooth Pain From Cracks or Fractures',
+
+  description:
+    'A cracked tooth may hurt when chewing or releasing bite pressure. Some cracks are difficult to see without dental evaluation.',
+
+  bestFor: [
+    'Chewing discomfort',
+    'Cracked teeth',
+    'Bite-related pain',
+    'Fracture concerns',
+  ],
+
+  cta: 'Ask About Cracked Tooth Care',
+
+  href: '#contact',
+},
+
+{
+  title: 'Pain From Gum Inflammation or Periodontal Problems',
+
+  description:
+    'Gum infection, inflammation, recession, or bone loss may cause soreness, sensitivity, loose teeth, or pressure discomfort.',
+
+  bestFor: [
+    'Gum tenderness',
+    'Periodontal disease',
+    'Tooth sensitivity',
+    'Loose teeth',
+  ],
+
+  cta: 'Ask About Gum Treatment',
+
+  href: '#contact',
+},
+
+{
+  title: 'Pain From Lost Fillings or Loose Crowns',
+
+  description:
+    'When a filling or crown loosens, the tooth may become sensitive to air, cold, chewing, or bacteria entering around the restoration.',
+
+  bestFor: [
+    'Lost fillings',
+    'Loose crowns',
+    'Damaged restorations',
+    'Restoration-related sensitivity',
+  ],
+
+  cta: 'Ask About Dental Work Repair',
+
+  href: '#contact',
+},
+
+{
+  title: 'Pain From Grinding, Clenching, or Bite Pressure',
+
+  description:
+    'Heavy bite pressure can make teeth sore, cracked, sensitive, or painful when chewing.',
+
+  bestFor: [
+    'Teeth grinding',
+    'Jaw clenching',
+    'Bite-related pain',
+    'Chewing discomfort',
+  ],
+
+  cta: 'Ask About Bite Pressure Evaluation',
+
+  href: '#contact',
+},
+
+],
+},
+warningSection: {
+eyebrow: 'Toothache Warning Signs',
+
+heading:
+'Toothache Warning Signs That Should Be Evaluated Promptly',
+
+body:
+'Some toothaches should not be ignored. Pain that is severe, worsening, or combined with swelling may indicate infection or tooth damage that needs urgent dental evaluation.',
+
+cta: {
+subtext: 'Need Prompt Tooth Pain Relief?',
+phoneNumber: '(480) 802-8188',
+phoneLink: 'tel:+14808028188',
+buttonText: 'Call for a Tooth Pain Evaluation',
+},
+
+gridHeading:
+'Common Reasons Patients Seek Care for Tooth Pain and Dental Discomfort',
+
+warnings: [
+'Severe or throbbing tooth pain',
+'Swelling in the gums, jaw, or face',
+'Pain that wakes you up at night',
+'Pain when biting or chewing',
+'A gum bump, pus, or bad taste',
+'Fever with dental pain',
+'A broken tooth with pain',
+'A loose crown or filling with sensitivity',
+'Lingering sensitivity to hot or cold',
+'Pressure or tenderness around a tooth',
+'Sudden worsening of tooth discomfort',
+'Tooth pain that interferes with daily activities',
+],
+},
+solutionsGrid: {
+eyebrow: 'Toothache Treatment Options',
+
+heading:
+'Toothache Treatment Options for Pain, Infection, and Cracks',
+
+body:
+'The right treatment depends on the diagnosis. Toothache relief may require a simple filling, a crown, root canal therapy, extraction, gum treatment, or repair of old dental work.',
+
+cards: [
+{
+title: 'Tooth-Colored Fillings',
+
+  subtitle: 'Treatment for Smaller Cavities',
+
+  body:
+    'A filling may repair a cavity when decay is limited and the tooth remains strong enough for a smaller restoration.',
+
+  image: '/assets/tooth-colored-fillings.jpg',
+},
+
+{
+  title: 'Dental Crowns',
+
+  subtitle: 'Protection for Cracked or Weak Teeth',
+
+  body:
+    'A crown may protect a tooth that is cracked, broken, heavily filled, or too weak for a filling.',
+
+  image: '/assets/dental-crowns.jpg',
+},
+
+{
+  title: 'Root Canal Therapy',
+
+  subtitle: 'Treatment for Infected Teeth',
+
+  body:
+    'Root canal therapy may be needed when infection or inflammation reaches the inside of the tooth and the tooth can still be saved.',
+
+  image: '/assets/root-canal.webp',
+},
+
+{
+  title: 'Tooth Extraction',
+
+  subtitle: 'Care for Non-Restorable Teeth',
+
+  body:
+    'Extraction may be recommended when a painful tooth is too damaged, infected, loose, or cracked to be restored predictably.',
+
+  image: '/assets/tooth-extraction.png',
+},
+
+],
+
+cta: {
+label: 'Discuss Toothache Treatment Options',
+href: '#contact',
+},
+},
+process: {
+eyebrow: 'Tooth Pain Visit Process',
+
+heading:
+'Tooth Pain Visit Process for Diagnosis and Treatment',
+
+subtitle:
+'A tooth pain visit is designed to find the cause of the pain and determine the next step. Some problems can be treated during the visit depending on diagnosis and scheduling. Others may require stabilization, follow-up treatment, or additional restorative planning.',
+
+steps: [
+{
+title: 'Symptom Review',
+
+  body:
+    'The dental team reviews where the pain is, how long it has been present, what triggers it, and whether swelling or injury is involved.',
+},
+
+{
+  title: 'Tooth Exam and X-Rays When Needed',
+
+  body:
+    'Dr. Shriya evaluates the tooth, gums, bite, existing restorations, cracks, and imaging when needed.',
+},
+
+{
+  title: 'Diagnosis and Treatment Options',
+
+  body:
+    'You receive a clear explanation of what may be causing the pain and what treatment options may be appropriate.',
+},
+
+{
+  title: 'Same-Day Care or Follow-Up Plan',
+
+  body:
+    'When possible, treatment may begin during the visit. If additional care is needed, a follow-up plan is created.',
+},
+
+],
+
+cta: {
+label: 'Request a Tooth Pain Visit',
+href: '#contact',
+},
+},
+educationSection: {
+eyebrow: 'Tooth Pain and Root Canal Therapy',
+
+heading:
+'Root Canal Therapy for Tooth Pain Caused by Infection or Inflamed Tooth Nerves',
+
+body:
+'A toothache does not always mean a root canal is needed. But when deep decay, infection, or inflammation affects the inside of the tooth, root canal therapy may be recommended to treat the source of the pain and preserve the tooth when possible.',
+
+supportingText:
+'Dr. Shriya evaluates whether root canal therapy is needed or whether the tooth can be treated with a filling, crown, gum care, bite adjustment, or another option.',
+
+image:
+'/assets/root-canal-therapy.webp',
+
+imageAlt:
+'Root canal therapy for tooth pain caused by infection, inflamed tooth nerves, deep decay, and tooth preservation treatment',
+
+cta: {
+label: 'Learn About Root Canal Therapy',
+href: '/services/restorative-dentistry/root-canals',
+},
+},
+educationSection2: {
+eyebrow: 'Tooth Pain and Emergency Dental Care',
+
+heading:
+'Emergency Dental Care for Severe Toothache, Swelling, or Dental Pain That Gets Worse',
+
+bodyParagraphs: [
+'If tooth pain is severe, worsening, or connected with swelling, it should be evaluated promptly. Dental infections and deep tooth damage can become more difficult to treat if delayed.',
+
+'Calling Promenade Dental can help you explain your symptoms and find out what appointment options are available. Early evaluation may help identify whether the problem involves decay, infection, a cracked tooth, damaged dental work, gum concerns, or another source of pain.',
+],
+
+image:
+'/assets/emergency-dentistry.webp',
+
+imageAlt:
+'Emergency dental care for severe toothache, swelling, worsening dental pain, infection concerns, and urgent evaluation needs',
+
+cta: {
+label: 'Call (480) 802-8188',
+href: 'tel:+14808028188',
+},
+},
+benefits: {
+eyebrow: 'Why Choose Promenade Dental',
+
+heading:
+'Dentist-Led Toothache Care for Diagnosis and Treatment',
+
+description:
+'Tooth pain can have many causes, so treatment should be based on diagnosis. Promenade Dental focuses on identifying the source of the pain and recommending the most appropriate next step.',
+
+items: [
+{
+title: 'Diagnosis Before Treatment',
+
+  body:
+    'Dr. Shriya evaluates symptoms, tooth structure, gums, bite, restorations, and X-rays when needed.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+  ],
+},
+
+{
+  title: 'Emergency and Restorative Care Connected',
+
+  body:
+    'Tooth pain care can connect to fillings, crowns, root canal therapy, extractions, gum treatment, or emergency dental care when needed.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+  ],
+},
+
+{
+  title: 'Tooth-Saving Options Considered',
+
+  body:
+    'When possible, treatment planning considers whether the painful tooth can be repaired or saved before removal is considered.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+  ],
+},
+
+{
+  title: 'Local Dental Care Near Fulton Ranch',
+
+  body:
+    'Promenade Dental serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and Chandler 85248.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+  ],
+},
+
+],
+},
+relatedServices: {
+eyebrow: 'Related Emergency and Restorative Services',
+
+heading:
+'Related Services for Tooth Pain and Dental Emergencies',
+
+intro:
+'Toothache treatment often connects with restorative and emergency dentistry. The right next page depends on what is causing the pain and whether the tooth needs repair, infection treatment, protection, or removal.',
+
+services: [
+{
+title: 'Emergency Dentist',
+
+  description:
+    'Emergency dental care for severe tooth pain, swelling, broken teeth, knocked-out teeth, and urgent dental problems.',
+
+  href: '/services/emergency-dentistry',
+},
+
+{
+  title: 'Root Canal Therapy',
+
+  description:
+    'Root canal therapy may be needed when tooth pain is caused by infection or inflammation inside the tooth.',
+
+  href: '/services/restorative-dentistry/root-canals',
+},
+
+{
+  title: 'Tooth-Colored Fillings',
+
+  description:
+    'Fillings may treat smaller cavities or minor areas of decay that cause sensitivity or discomfort.',
+
+  href: '/services/restorative-dentistry/tooth-colored-fillings',
+},
+
+{
+  title: 'Dental Crowns',
+
+  description:
+    'Crowns may protect cracked, weak, broken, or heavily filled teeth that cause pain when chewing.',
+
+  href: '/services/restorative-dentistry/dental-crowns',
+},
+
+],
+},
+faq: {
+eyebrow: 'Frequently Asked Questions',
+
+heading:
+'Toothache Questions About Pain, Infection, and Treatment',
+
+items: [
+{
+q: 'What causes a toothache?',
+a: 'A toothache may be caused by cavities, deep decay, infection, cracks, gum inflammation, bite pressure, grinding, loose dental work, or dental trauma.',
+},
+
+{
+  q: 'When should I see a dentist for tooth pain?',
+  a: 'You should schedule an evaluation if tooth pain is severe, lasts more than a short time, worsens, wakes you up, causes pain when chewing, or comes with swelling.',
+},
+
+{
+  q: 'Is tooth pain always a sign of infection?',
+  a: 'No. Tooth pain can come from cavities, cracks, sensitivity, gum problems, or bite pressure. Infection is one possible cause and needs dental evaluation.',
+},
+
+{
+  q: 'Do I need a root canal for tooth pain?',
+  a: 'Not always. Root canal therapy may be needed when the inside of the tooth is infected or inflamed. Smaller cavities or cracks may need different treatment.',
+},
+
+{
+  q: 'Can a cavity cause severe tooth pain?',
+  a: 'Yes. A cavity can cause severe pain if it becomes deep enough to irritate or infect the inside of the tooth.',
+},
+
+{
+  q: 'Why does my tooth hurt when I chew?',
+  a: 'Pain when chewing may be caused by a cracked tooth, deep cavity, infection, high filling, loose crown, gum problem, or bite pressure.',
+},
+
+{
+  q: 'Is swelling with tooth pain serious?',
+  a: 'Swelling may indicate infection and should be evaluated promptly, especially if it involves the face, jaw, fever, pus, or worsening discomfort.',
+},
+
+{
+  q: 'Can tooth pain go away on its own?',
+  a: 'Tooth pain may come and go, but the underlying cause can remain. A dental evaluation helps determine whether treatment is needed.',
+},
+
+{
+  q: 'What treatment gives toothache relief?',
+  a: 'Treatment depends on the cause. Options may include a filling, crown, root canal therapy, extraction, gum treatment, bite adjustment, or repair of damaged dental work.',
+},
+
+{
+  q: 'Where is Promenade Dental located?',
+  a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+},
+
+],
+},
+cta: {
+title: 'Call Promenade Dental',
+highlight: 'for Tooth Pain Evaluation and Relief',
+
+subtitle:
+'Promenade Dental helps patients evaluate tooth pain with emergency and restorative care focused on diagnosis, comfort, tooth repair, infection treatment, and the right step.',
+
+buttonText: 'Request a Tooth Pain Visit',
+
+buttonHref: '/contact-us',
+
+secondaryButtonText: 'Call (480) 802-8188',
+
+secondaryButtonHref: 'tel:+14808028188',
+
+image: '/assets/dental-lobby.jpg',
+},
+
+},
+{
+  serviceSlug: 'emergency-dentistry',
+
+  slug: 'broken-chipped-tooth',
+
+  name: 'Broken or Chipped Tooth',
+
+  metaTitle:
+    'Broken or Chipped Tooth Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Broken or chipped tooth care in Chandler AZ for cracked, fractured, painful, or sharp teeth. Visit Promenade Dental near Fulton Ranch for urgent tooth repair.',
+
+  hero: {
+    eyebrow: 'Urgent Tooth Repair in Fulton Ranch',
+
+    title: 'Broken or Chipped Tooth Care for',
+
+    highlight:
+      'Cracked, Fractured, Sharp, or Painful Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients evaluate broken, chipped, cracked, or fractured teeth with care planned around diagnosis, pain relief, tooth repair, bite comfort, and whether the tooth can be restored.',
+
+    image: '/assets/h-broken-chipped-tooth.webp',
+
+    trustPoints: [
+      'Care for chipped, broken, and cracked teeth',
+      'Treatment for sharp edges and tooth pain',
+      'Bonding, fillings, crowns, or root canals when needed',
+      'Emergency and restorative care in one office',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Request a Broken Tooth Visit',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+eyebrow: 'Broken or Chipped Tooth Treatment',
+
+heading:
+'Broken or Chipped Tooth Treatment for Pain and Tooth Damage',
+
+body:
+'A chipped or broken tooth may seem minor at first, but the damage can expose sensitive tooth layers, create sharp edges, affect chewing, or allow cracks to spread deeper. Some chips are cosmetic. Others involve tooth structure, old fillings, dental crowns, or the nerve inside the tooth.\n\nAt Promenade Dental, Dr. Shriya evaluates the depth of the damage, symptoms, bite pressure, tooth stability, and X-rays when needed before recommending the right repair option.',
+
+features: [
+'Evaluation of chipped, broken, and cracked teeth',
+'Assessment of tooth structure and damage depth',
+'Diagnosis based on symptoms, bite, and X-rays',
+'Treatment planning focused on tooth preservation',
+],
+
+image: '/assets/service-broken-chipped-tooth.jpg',
+
+cta: {
+label: 'Schedule a Broken Tooth Evaluation',
+href: '/contact-us',
+},
+},
+whyItMatters: {
+eyebrow: 'Broken Tooth Evaluation',
+
+heading:
+'Broken Tooth Evaluation for Enamel Chips, Cracks, Fractures, Sensitivity, and Bite Pain',
+
+description:
+'Not every broken tooth needs the same treatment. A small chip may be repaired with bonding or smoothing. A larger broken area may need a filling, crown, or onlay. If the crack reaches the inside of the tooth, root canal therapy may be needed. If the tooth is too damaged to restore predictably, extraction may be recommended.\n\nDr. Shriya checks the tooth structure, pain level, crack depth, gum line, existing dental work, bite contact, and whether the tooth can still be protected.',
+
+items: [
+{
+title: 'Size and Depth of the Break',
+
+  body:
+    'The depth of the chip, crack, or fracture helps determine whether cosmetic bonding, a filling, crown, root canal, or extraction may be needed.',
+
+  paths: [
+    'M12 12 h20 v20 h-20 z',
+    'M18 18 h8 M18 24 h8',
+  ],
+},
+
+{
+  title: 'Pain and Sensitivity',
+
+  body:
+    'Pain, cold sensitivity, chewing discomfort, or throbbing can suggest deeper damage or nerve involvement.',
+
+  paths: [
+    'M24 12 C18 18 14 24 24 38',
+    'M24 12 C30 18 34 24 24 38',
+  ],
+},
+
+{
+  title: 'Bite Pressure and Tooth Stability',
+
+  body:
+    'A damaged tooth may continue to break if bite pressure, grinding, or weak tooth structure is not addressed.',
+
+  paths: [
+    'M12 20 h24',
+    'M16 28 h16',
+  ],
+},
+
+],
+
+cta: {
+label: 'Find Out How the Tooth Can Be Repaired',
+href: '/contact-us',
+},
+},
+warningSection: {
+eyebrow: 'Broken Tooth Warning Signs',
+
+heading:
+'Signs a Broken or Chipped Tooth May Need Prompt Dental Attention',
+
+body:
+'Some chipped teeth cause little discomfort, while others can expose sensitive tooth structure, create sharp edges, affect chewing, or develop deeper cracks over time. An evaluation can help determine whether the tooth needs simple repair or more extensive treatment to protect long-term function and comfort.',
+
+cta: {
+subtext: 'Need Prompt Tooth Repair?',
+phoneNumber: '(480) 802-8188',
+phoneLink: 'tel:+14808028188',
+buttonText: 'Call for a Broken Tooth Evaluation',
+},
+
+gridHeading:
+'Common Reasons Patients Seek Care for a Broken or Chipped Tooth',
+
+warnings: [
+'A piece of the tooth has broken off',
+'Sharp edges are cutting the tongue, cheek, or lip',
+'Pain when biting or chewing',
+'Sensitivity to cold, hot, or sweet foods',
+'A visible crack or fracture line in the tooth',
+'A broken filling or damaged dental crown',
+'Pain that developed after a tooth chipped',
+'A tooth injury caused by a fall, accident, or sports impact',
+'A cracked tooth that feels unstable',
+'Food getting trapped in the damaged area',
+'Swelling or discomfort around the affected tooth',
+'A previously repaired tooth that has broken again',
+],
+},
+servicesGrid: {
+eyebrow: 'Broken Tooth Treatment Options',
+
+heading:
+'Broken or Chipped Tooth Care for Cracks, Damage, and Injuries',
+
+intro:
+'Tooth damage can happen from biting hard food, grinding, trauma, old restorations, large cavities, weakened enamel, or accidents. The right treatment depends on the extent of the damage and whether the tooth is painful or stable.',
+
+services: [
+{
+title: 'Small Chipped Tooth',
+
+  description:
+    'A small chip may affect appearance, create rough edges, or cause mild sensitivity. Treatment may involve smoothing, bonding, or tooth-colored repair.',
+
+  bestFor: [
+    'Minor enamel chips',
+    'Rough tooth edges',
+    'Cosmetic concerns',
+    'Mild tooth sensitivity',
+  ],
+
+  cta: 'Ask About Chipped Tooth Repair',
+
+  href: '#contact',
+},
+
+{
+  title: 'Broken Tooth With Pain',
+
+  description:
+    'Pain after a tooth breaks may suggest deeper damage, exposed dentin, cracks, infection, or nerve involvement.',
+
+  bestFor: [
+    'Tooth pain after breakage',
+    'Sensitive teeth',
+    'Possible nerve involvement',
+    'Urgent dental evaluation',
+  ],
+
+  cta: 'Ask About Painful Broken Teeth',
+
+  href: '#contact',
+},
+
+{
+  title: 'Cracked Tooth or Fracture Line',
+
+  description:
+    'A cracked tooth may hurt when chewing or releasing bite pressure. Some cracks are difficult to detect and require careful examination.',
+
+  bestFor: [
+    'Chewing discomfort',
+    'Visible tooth cracks',
+    'Fracture line concerns',
+    'Bite-related pain',
+  ],
+
+  cta: 'Ask About Cracked Tooth Treatment',
+
+  href: '#contact',
+},
+
+{
+  title: 'Broken Filling or Crown',
+
+  description:
+    'When a filling or crown breaks, the tooth underneath may become sensitive or vulnerable to decay and additional fracture.',
+
+  bestFor: [
+    'Lost fillings',
+    'Broken crowns',
+    'Damaged dental work',
+    'Tooth protection needs',
+  ],
+
+  cta: 'Ask About Repairing Dental Work',
+
+  href: '#contact',
+},
+
+{
+  title: 'Broken Tooth From Injury or Accident',
+
+  description:
+    'Falls, sports injuries, or impact trauma can chip, loosen, crack, or displace teeth even when pain is not immediate.',
+
+  bestFor: [
+    'Sports injuries',
+    'Falls and accidents',
+    'Trauma-related tooth damage',
+    'Emergency dental evaluation',
+  ],
+
+  cta: 'Ask About Injury-Related Tooth Repair',
+
+  href: '#contact',
+},
+
+{
+  title: 'Sharp or Rough Tooth Edge',
+
+  description:
+    'A sharp tooth edge can irritate the tongue, cheek, or lip and may indicate a larger fracture that needs evaluation.',
+
+  bestFor: [
+    'Sharp tooth edges',
+    'Tongue or cheek irritation',
+    'Minor tooth fractures',
+    'Comfort-focused repairs',
+  ],
+
+  cta: 'Ask About Smoothing or Repair Options',
+
+  href: '#contact',
+},
+
+],
+},
+solutionsGrid: {
+eyebrow: 'Broken Tooth Repair Options',
+
+heading:
+'Broken or Chipped Tooth Repair Options for Fractures and Damage',
+
+body:
+'Treatment depends on how much tooth structure is missing, whether the tooth hurts, and whether the crack or fracture affects the inner tooth. Promenade Dental connects emergency evaluation with restorative repair when needed.',
+
+cards: [
+{
+title: 'Bonding for Small Chips',
+
+  subtitle: 'Conservative Cosmetic Repair',
+
+  body:
+    'Cosmetic dental bonding may repair small chips, rough edges, or minor shape concerns when the tooth structure is stable.',
+
+  image: '/assets/dental-bonding.jpg',
+},
+
+{
+  title: 'Tooth-Colored Fillings',
+
+  subtitle: 'Repair for Limited Damage',
+
+  body:
+    'A tooth-colored filling may repair a small broken area or cavity-related chip when enough healthy tooth remains.',
+
+  image: '/assets/tooth-colored-fillings.jpg',
+},
+
+{
+  title: 'Inlays or Onlays',
+
+  subtitle: 'Support for Moderate Damage',
+
+  body:
+    'An inlay or onlay may be considered when a tooth needs more support than a filling but may not require a full crown.',
+
+  image: '/assets/inlay-onlay.jpg',
+},
+
+{
+  title: 'Dental Crowns',
+
+  subtitle: 'Protection for Broken Teeth',
+
+  body:
+    'A dental crown may protect a tooth that is cracked, weakened, broken, or too damaged for a filling.',
+
+  image: '/assets/dental-crowns.jpg',
+},
+
+{
+  title: 'Root Canal or Extraction',
+
+  subtitle: 'Treatment for Deep Fractures',
+
+  body:
+    'Root canal therapy may be needed if the inner tooth is involved. Extraction may be recommended if the tooth cannot be predictably restored.',
+
+  image: '/assets/root-canal.webp',
+},
+
+],
+
+cta: {
+label: 'Discuss Broken Tooth Repair Options',
+href: '#contact',
+},
+},
+process: {
+eyebrow: 'Broken Tooth Visit Process',
+
+heading:
+'Broken Tooth Visit Process for Diagnosis and Repair',
+
+subtitle:
+'A broken tooth visit is designed to determine how deep the damage goes and what treatment can protect the tooth. Some repairs may be completed during the visit depending on diagnosis and scheduling. Other cases may require staged treatment or follow-up.',
+
+steps: [
+{
+title: 'Damage and Symptom Review',
+
+  body:
+    'The dental team reviews how the tooth broke, whether there is pain, and whether the tooth is sharp, loose, sensitive, or bleeding.',
+},
+
+{
+  title: 'Tooth Exam and X-Rays When Needed',
+
+  body:
+    'Dr. Shriya evaluates the damaged tooth, gums, bite, cracks, existing restorations, and imaging when needed.',
+},
+
+{
+  title: 'Repair Option Recommendation',
+
+  body:
+    'You receive a clear explanation of whether bonding, filling, crown, root canal therapy, extraction, or another option may be needed.',
+},
+
+{
+  title: 'Treatment and Bite Comfort Check',
+
+  body:
+    'When treatment is completed or started, the repaired tooth is checked for comfort, bite contact, and follow-up needs.',
+},
+
+],
+
+cta: {
+label: 'Request a Broken Tooth Visit',
+href: 'contact',
+},
+},
+educationSection: {
+eyebrow: 'Broken Teeth and Root Canal Therapy',
+
+heading:
+'Root Canal Therapy for Broken Teeth With Deep Cracks, Nerve Pain, or Infection Risk',
+
+body:
+'A broken tooth does not always need root canal therapy. But if the fracture or decay reaches the inner tooth tissue, or if symptoms suggest infection or nerve inflammation, root canal therapy may be recommended before the tooth is restored with a crown.',
+
+supportingText:
+'Dr. Shriya evaluates the tooth to determine whether it can be repaired with a smaller restoration or whether deeper treatment is needed.',
+
+image:
+'/assets/root-canal-therapy.webp',
+
+imageAlt:
+'Root canal therapy for broken teeth with deep cracks, nerve pain, infection risk, and crown restoration planning',
+
+cta: {
+label: 'Learn About Root Canal Therapy',
+href: '/services/restorative-dentistry/root-canals',
+},
+},
+educationSection2: {
+eyebrow: 'Broken Teeth and Dental Crowns',
+
+heading:
+'Dental Crowns for Broken, Cracked, or Weak Teeth That Need Stronger Protection',
+
+bodyParagraphs: [
+'A crown may be recommended when a tooth has lost too much structure for a filling or bonding. Crowns help cover and protect the remaining tooth while restoring the shape needed for chewing and bite support.',
+
+'For teeth that broke because of large fillings, deep cavities, grinding, or cracks, crown treatment may help reduce the risk of further fracture when the tooth can still be restored.',
+
+],
+
+image:
+'/assets/dental-crown-broken.jpg',
+
+imageAlt:
+'Dental crown treatment for broken, cracked, weakened, or damaged teeth requiring long-term protection and chewing support',
+
+cta: {
+label: 'Learn About Dental Crowns',
+href: '/services/restorative-dentistry/dental-crowns',
+},
+},
+benefits: {
+eyebrow: 'Why Choose Promenade Dental',
+
+heading:
+'Dentist-Led Broken Tooth Care for Diagnosis and Repair',
+
+description:
+'Broken tooth treatment should be based on the depth of damage, not just the visible chip. Promenade Dental focuses on identifying whether the tooth needs minor repair, stronger protection, infection treatment, or removal.',
+
+items: [
+{
+title: 'Diagnosis Before Repair',
+
+  body:
+    'Dr. Shriya evaluates the tooth structure, cracks, symptoms, bite, restorations, gums, and X-rays when needed.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+  ],
+},
+
+{
+  title: 'Emergency and Restorative Care Connected',
+
+  body:
+    'Broken tooth care can connect to bonding, fillings, crowns, inlays, onlays, root canal therapy, extractions, and replacement planning.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+  ],
+},
+
+{
+  title: 'Tooth-Saving Options Considered',
+
+  body:
+    'When possible, treatment planning considers whether the tooth can be repaired and protected before extraction is recommended.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+  ],
+},
+
+{
+  title: 'Local Care Near Fulton Ranch',
+
+  body:
+    'Promenade Dental serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and Chandler 85248.',
+
+  paths: [
+    'M6 38 A18 18 0 0 1 42 38',
+    'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+  ],
+},
+
+],
+},
+localArea: {
+eyebrow: 'Broken Tooth Care Near Fulton Ranch',
+
+heading:
+'Broken or Chipped Tooth Dentist Near Fulton Ranch and Chandler 85248',
+
+body:
+'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for broken tooth repair, chipped tooth repair, cracked tooth evaluation, emergency dental care, dental bonding, dental crowns, or urgent tooth repair near Chandler 85248, Promenade Dental offers broken tooth evaluations based on diagnosis, comfort, tooth strength, and the right repair option.',
+
+address: {
+practice: 'Promenade Dental',
+street: '4905 S. Alma School Rd, Suite 1',
+cityStateZip: 'Chandler, AZ 85248',
+phone: '(480) 802-8188',
+},
+
+cta: {
+label: 'Get Directions',
+href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+},
+},
+relatedServices: {
+eyebrow: 'Related Emergency and Restorative Services',
+
+heading:
+'Related Services for Chipped, Cracked, and Painful Teeth',
+
+intro:
+'A broken or chipped tooth may need cosmetic, restorative, or emergency treatment depending on the damage. These related services help patients understand the possible next step.',
+
+services: [
+{
+title: 'Emergency Dentist',
+
+  description:
+    'Emergency dental care for tooth pain, swelling, broken teeth, chipped teeth, knocked-out teeth, and urgent dental problems.',
+
+  href: '/services/emergency-dentistry',
+},
+
+{
+  title: 'Cosmetic Dental Bonding',
+
+  description:
+    'Bonding may repair small chips, rough edges, and minor cosmetic tooth damage.',
+
+  href: '/services/cosmetic-dentistry/dental-bonding',
+},
+
+{
+  title: 'Dental Crowns',
+
+  description:
+    'Crowns may protect broken, cracked, weak, or heavily damaged teeth that need stronger coverage.',
+
+  href: '/services/restorative-dentistry/dental-crowns',
+},
+
+{
+  title: 'Toothache & Dental Pain Relief',
+
+  description:
+    'Pain after a tooth breaks should be evaluated to identify cracks, infection, nerve irritation, or bite-related damage.',
+
+  href: '/services/emergency-dentistry/toothache-relief',
+},
+
+],
+},
+faq: {
+eyebrow: 'Frequently Asked Questions',
+
+heading:
+'Broken or Chipped Tooth Questions About Repair and Pain',
+
+items: [
+{
+q: 'Is a chipped tooth a dental emergency?',
+a: 'A small chip without pain may not be urgent, but a chipped tooth should be evaluated if it is painful, sharp, sensitive, bleeding, loose, or caused by injury.',
+},
+
+{
+  q: 'What should I do if my tooth breaks?',
+  a: 'Call the dental office, avoid chewing on the broken tooth, and keep the area clean. If there is pain, swelling, bleeding, or a large break, request urgent evaluation.',
+},
+
+{
+  q: 'Can a broken tooth be repaired?',
+  a: 'Many broken teeth can be repaired with bonding, fillings, crowns, inlays, onlays, or root canal therapy depending on the damage. Some teeth may need extraction if they cannot be restored.',
+},
+
+{
+  q: 'Why does my broken tooth hurt?',
+  a: 'Pain may come from exposed dentin, a deep crack, decay, infection, nerve irritation, or bite pressure on the damaged tooth.',
+},
+
+{
+  q: 'Do I need a crown for a broken tooth?',
+  a: 'A crown may be needed when the tooth has lost too much structure for bonding or a filling, or when the tooth is cracked or weakened.',
+},
+
+{
+  q: 'Do I need a root canal for a broken tooth?',
+  a: 'Not always. Root canal therapy may be needed if the crack, fracture, or decay reaches the inner tooth tissue or causes infection or nerve inflammation.',
+},
+
+{
+  q: 'Can bonding fix a chipped tooth?',
+  a: 'Bonding may repair small chips, rough edges, or minor cosmetic damage when the tooth is otherwise stable.',
+},
+
+{
+  q: 'What if the broken tooth has a sharp edge?',
+  a: 'A sharp edge can irritate the tongue, cheek, or lip. The tooth should be evaluated and may need smoothing, bonding, filling, or another repair.',
+},
+
+{
+  q: 'Can a broken tooth get worse if I wait?',
+  a: 'Yes. A broken tooth can become more sensitive, crack further, collect bacteria, or develop deeper damage if left untreated.',
+},
+
+{
+  q: 'Where is Promenade Dental located?',
+  a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+},
+
+],
+},
+cta: {
+ title: 'Call Promenade Dental',
+
+highlight: 'for a Broken or Chipped Tooth',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate and repair broken or chipped teeth with emergency and restorative care focused on diagnosis, comfort, tooth protection, and the right next treatment.',
+
+  buttonText: 'Request a Broken Tooth Visit',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+
+},
+{
+  serviceSlug: 'emergency-dentistry',
+
+  slug: 'knocked-out-tooth',
+
+  name: 'Knocked-Out Tooth',
+
+  metaTitle:
+    'Knocked-Out Tooth Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Knocked-out tooth emergency care in Chandler AZ for adult tooth injuries, dental trauma, and urgent tooth loss. Call Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Dental Trauma Care in Fulton Ranch',
+
+    title: 'Knocked-Out Tooth Emergency Care for',
+
+    highlight:
+      'Adult Tooth Injuries and Dental Trauma in Chandler',
+
+    description:
+      'A knocked-out adult tooth needs urgent dental guidance. Promenade Dental helps patients evaluate dental trauma, tooth loss, injury-related pain, bleeding, and replacement needs with emergency care planned around diagnosis, comfort, and the right next step.',
+
+    image: '/assets/h-knocked-out.jpg',
+
+    trustPoints: [
+      'Urgent evaluation for knocked-out teeth',
+      'Dental trauma and tooth injury care',
+      'Guidance for adult tooth loss',
+      'Replacement options discussed when needed',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Request an Emergency Visit',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  immediateGuidance: {
+  eyebrow: 'Dental Trauma Emergency',
+
+  heading:
+    'Call a Dentist Immediately if an Adult Tooth Is Knocked Out',
+
+  bodyMain:
+    'A knocked-out adult tooth is time-sensitive. Call Promenade Dental as soon as possible for instructions. Do not wait to see if the area improves on its own.',
+
+  handlingInstructions:
+    'If the tooth is available, handle it carefully by the crown portion, not the root. Keep it moist and bring it with you if you are coming to the dental office. The dental team can guide you based on the injury, tooth condition, bleeding, pain, and appointment availability.',
+
+  cta: {
+    label: 'Call Now',
+    phoneDisplay: '(480) 802-8188',
+    phoneLink: 'tel:+14808028188',
+  },
+
+  medicalWarning:
+    'If the injury involves heavy bleeding, facial trauma, loss of consciousness, difficulty breathing, or a suspected jaw fracture, seek emergency medical care immediately.',
+},
+  overview: {
+  eyebrow: 'Knocked-Out Tooth Emergency Care',
+
+  heading:
+    'Call a Dentist Immediately if an Adult Tooth Is Knocked Out',
+
+  body:
+    'A knocked-out adult tooth is time-sensitive. Call Promenade Dental as soon as possible for guidance. Do not wait to see if the area improves on its own.\n\nIf the tooth is available, handle it carefully by the crown portion rather than the root. Keep it moist and bring it with you to your appointment. The dental team will guide you based on the injury, tooth condition, bleeding, pain, and appointment availability.',
+
+  features: [
+    'Immediate guidance for knocked-out adult teeth',
+    'Instructions for handling and transporting the tooth',
+    'Evaluation of dental trauma and tooth condition',
+    'Treatment planning based on the injury and diagnosis',
+  ],
+
+  image: '/assets/service-knocked-out-tooth.jpg',
+
+  cta: {
+    label: 'Call (480) 802-8188',
+    href: 'tel:+14808028188',
+  },
+
+  note:
+    'If the injury involves heavy bleeding, facial trauma, loss of consciousness, difficulty breathing, or a suspected jaw fracture, seek emergency medical care immediately.',
+},
+whyItMatters: {
+  eyebrow: 'Knocked-Out Tooth Evaluation',
+
+  heading:
+    'Knocked-Out Tooth Evaluation for Tooth Loss, Gum Injury, Bone Trauma, and Nearby Tooth Damage',
+
+  description:
+    'A knocked-out tooth can affect more than one tooth. Nearby teeth may be loose, cracked, shifted, or injured even if they look normal. The gums and bone around the missing tooth may also need evaluation.\n\nDr. Shriya checks the injured area, bleeding, tooth socket, gum tissue, neighboring teeth, bite alignment, and imaging when needed. The treatment plan depends on the type of tooth, how long it has been out, how it was stored, the condition of the root, the condition of the socket, and whether other injuries are present.',
+
+  items: [
+    {
+      title: 'Tooth Type and Injury Timing',
+
+      body:
+        'An adult tooth injury is handled differently from a baby tooth injury. Timing and how the tooth has been handled can influence the available treatment options.',
+
+      paths: [
+        'M12 12 h20 v20 h-20 z',
+        'M18 18 h8 M18 24 h8',
+      ],
+    },
+
+    {
+      title: 'Tooth Socket and Gum Condition',
+
+      body:
+        'The tooth socket and surrounding gum tissue are examined for bleeding, debris, tissue damage, and healing needs before treatment is planned.',
+
+      paths: [
+        'M24 12 C18 18 14 24 24 38',
+        'M24 12 C30 18 34 24 24 38',
+      ],
+    },
+
+    {
+      title: 'Nearby Teeth and Bite Alignment',
+
+      body:
+        'Dental trauma can loosen, crack, or shift neighboring teeth, so the bite and the entire injury area are evaluated for additional damage.',
+
+      paths: [
+        'M12 20 h24',
+        'M16 28 h16',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Tooth Injury Evaluation',
+    href: '/contact-us',
+  },
+},
+features: {
+  eyebrow: 'Knocked-Out Tooth First Steps',
+
+  heading:
+    'Steps to Take After an Adult Tooth Is Knocked Out',
+
+  body:
+    'A knocked-out tooth needs urgent dental guidance. These steps can help protect the tooth and injury area while you contact the dental office.',
+
+  features: [
+    {
+      title: 'Call the Dental Office Immediately',
+
+      body:
+        'Call Promenade Dental at (480) 802-8188 and explain that an adult tooth was knocked out.',
+    },
+
+    {
+      title: 'Handle the Tooth Carefully',
+
+      body:
+        'If you have the tooth, hold it by the crown portion. Avoid touching or scrubbing the root.',
+    },
+
+    {
+      title: 'Keep the Tooth Moist',
+
+      body:
+        'Do not let the tooth dry out. The dental team can guide you on the best way to keep it moist based on your situation.',
+    },
+
+    {
+      title: 'Avoid Chewing on the Injured Area',
+
+      body:
+        'Do not bite or chew with the injured area until a dentist evaluates the tooth, gums, and surrounding tissues.',
+    },
+
+    {
+      title: 'Bring the Tooth to the Visit',
+
+      body:
+        'If the tooth is available, bring it with you so the dentist can evaluate its condition.',
+    },
+  ],
+
+  cta: {
+    label: 'Call for Knocked-Out Tooth Guidance',
+    href: 'tel:+14808028188',
+  },
+},
+comparisonSection: {
+  eyebrow: 'Adult vs Baby Tooth Injuries',
+
+  heading:
+    'Knocked-Out Adult Teeth and Baby Teeth Need Different Dental Guidance',
+
+  bodyParagraphs: [
+    'A knocked-out adult tooth is usually handled as a time-sensitive dental emergency. A knocked-out baby tooth is different because placing it back may damage the developing adult tooth underneath.',
+
+    'If you are not sure whether the tooth is a baby tooth or adult tooth, call Promenade Dental for guidance. The age of the patient, tooth location, and dental development can help determine the right next step.',
+  ],
+
+  adultTooth: {
+    title: 'Adult Tooth Injury',
+
+    body:
+      'Adult tooth injuries may require urgent dental evaluation to assess whether the tooth, socket, nearby teeth, and gums can be treated.',
+  },
+
+  babyTooth: {
+    title: 'Baby Tooth Injury',
+
+    body:
+      'Baby tooth injuries should still be evaluated, but the approach is different because of the developing permanent tooth.',
+  },
+
+  cta: {
+    label: 'Call for Tooth Injury Guidance',
+    href: 'tel:+14808028188',
+  },
+},
+solutionsGrid: {
+  eyebrow: 'Knocked-Out Tooth Treatment Options',
+
+  heading:
+    'Knocked-Out Tooth Treatment Options for Healing and Replacement',
+
+  body:
+    'Treatment depends on the tooth type, injury timing, tooth condition, gum and bone injury, and whether the tooth can be saved. Some cases may involve attempted repositioning or stabilization. Other cases may need healing care and replacement planning.',
+
+  cards: [
+    {
+      title: 'Tooth Repositioning Evaluation',
+
+      subtitle: 'Assessment for Tooth Repositioning',
+
+      body:
+        'If an adult tooth is available and the situation is suitable, the dentist can evaluate whether repositioning may be possible.',
+
+      image: '/assets/dental-repost.webp',
+    },
+
+    {
+      title: 'Stabilization of Injured Teeth',
+
+      subtitle: 'Support for Dental Trauma',
+
+      body:
+        'Nearby loose or displaced teeth may need stabilization depending on the injury and the findings during the dental evaluation.',
+
+      image: '/assets/injury-teeth.webp',
+    },
+
+    {
+      title: 'Root Canal or Follow-Up Care',
+
+      subtitle: 'Ongoing Healing and Monitoring',
+
+      body:
+        'A knocked-out or severely injured adult tooth may require follow-up care, including root canal evaluation, depending on the extent of the injury.',
+
+      image: '/assets/root-canal.webp',
+    },
+
+    {
+      title: 'Tooth Replacement Planning',
+
+      subtitle: 'Options When a Tooth Cannot Be Saved',
+
+      body:
+        'If the tooth cannot be saved, replacement options such as a dental implant, bridge, or partial denture may be discussed.',
+
+      image: '/assets/tooth-replacement.jpg',
+    },
+  ],
+
+  cta: {
+    label: 'Discuss Knocked-Out Tooth Treatment Options',
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: 'Knocked-Out Tooth Visit Process',
+
+  heading: 'Knocked-Out Tooth Emergency Visit Process',
+
+  subtitle:
+    'A knocked-out tooth visit is designed to evaluate the injury quickly and determine the safest next step. The visit may include tooth evaluation, socket assessment, X-rays when needed, stabilization, medication discussion, referral if complex, or replacement planning if the tooth cannot be saved.',
+
+  steps: [
+    {
+      title: 'Injury and Timing Review',
+
+      body:
+        'The dental team reviews when the tooth was knocked out, how the injury happened, and how the tooth was handled or stored.',
+    },
+
+    {
+      title: 'Tooth, Gum, and Socket Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth area, bleeding, gum tissue, socket condition, and the tooth if it is available.',
+    },
+
+    {
+      title: 'Nearby Teeth and Bite Check',
+
+      body:
+        'The surrounding teeth are checked for looseness, cracks, shifting, bite changes, and trauma-related damage.',
+    },
+
+    {
+      title: 'Treatment or Replacement Plan',
+
+      body:
+        'You receive a clear explanation of whether the tooth can be treated, whether stabilization is needed, or whether replacement planning should begin.',
+    },
+  ],
+
+  cta: {
+    label: 'Request a Knocked-Out Tooth Visit',
+    href: '#contact',
+  },
+},
+replacementOptions: {
+  eyebrow: 'Tooth Replacement Options',
+
+  heading:
+    'Replacement Options if a Knocked-Out Tooth Cannot Be Saved',
+
+  body:
+    'If a knocked-out tooth cannot be saved, replacing the missing tooth may help restore chewing support, smile appearance, and tooth position. The best replacement option depends on the location of the missing tooth, bone support, gum health, age, bite, and treatment goals.',
+
+  cards: [
+    {
+      title: 'Dental Implant',
+
+      body:
+        'A dental implant may replace the missing tooth with an implant-supported crown when bone support, gum health, and healing are suitable.',
+    },
+
+    {
+      title: 'Dental Bridge',
+
+      body:
+        'A dental bridge may replace the missing tooth with a fixed restoration supported by nearby teeth or implants when appropriate.',
+    },
+
+    {
+      title: 'Partial Denture',
+
+      body:
+        'A partial denture may replace the missing tooth with a removable appliance, especially when multiple teeth are missing or removable treatment is preferred.',
+    },
+  ],
+
+  cta: {
+    label: 'Discuss Tooth Replacement Options',
+    href: '#contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Dental Trauma and Medical Emergencies',
+
+  heading:
+    'Dental Trauma With Facial Injury, Heavy Bleeding, or Jaw Pain May Need Medical Emergency Care',
+
+  body:
+    'Some mouth injuries involve more than teeth. If the injury includes heavy bleeding, facial cuts, loss of consciousness, trouble breathing, severe swelling, suspected jaw fracture, or head injury symptoms, seek emergency medical care immediately.',
+
+  supportingText:
+    'After medical stabilization, dental evaluation may still be needed for teeth, gums, bite, and replacement planning.',
+
+  image:
+    '/assets/dental-trauma.jpg',
+
+  imageAlt:
+    'Emergency evaluation for dental trauma with facial injury, heavy bleeding, jaw pain, and medical emergency symptoms',
+
+  cta: {
+    label: 'Call 911 or Seek Emergency Medical Care',
+    href: 'tel:911',
+  },
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+ heading:
+  'Dentist-Led Care for Knocked-Out Teeth and Dental Trauma',
+
+  description:
+    'A knocked-out tooth needs fast guidance and careful evaluation. Promenade Dental focuses on diagnosing the full injury area, checking whether the tooth or nearby teeth can be treated, and explaining replacement options if needed.',
+
+  items: [
+    {
+      title: 'Urgent Dental Trauma Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth area, gums, socket, nearby teeth, bite, symptoms, and imaging when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Adult and Baby Tooth Guidance',
+
+      body:
+        'The dental team helps patients understand why adult and baby tooth injuries are handled differently.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Tooth-Saving Evaluation When Possible',
+
+      body:
+        'When appropriate, the tooth and socket are evaluated for possible treatment based on timing, condition, and injury factors.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Replacement Planning if Needed',
+
+      body:
+        'If the tooth cannot be saved, Promenade Dental can discuss bridges, implants, partial dentures, and restorative options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Knocked-Out Tooth Care Near Fulton Ranch',
+
+  heading:
+    'Knocked-Out Tooth Dentist Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for a knocked-out tooth dentist, dental trauma care, emergency dentist, adult tooth injury care, or urgent dental care near Chandler 85248, Promenade Dental offers emergency evaluations based on diagnosis, comfort, injury assessment, and tooth replacement needs when appropriate.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Emergency and Restorative Services',
+
+  heading:
+  'Related Services for Dental Trauma and Tooth Loss',
+
+  intro:
+    'A knocked-out tooth may connect with emergency dentistry, tooth replacement, root canal evaluation, or restorative care depending on the injury.',
+
+  services: [
+    {
+      title: 'Emergency Dentist',
+
+      description:
+        'Emergency dental care for tooth pain, swelling, broken teeth, chipped teeth, knocked-out teeth, and urgent dental problems.',
+
+      href: '/services/emergency-dentistry',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+
+      description:
+        'Dental trauma may also cause cracked, chipped, fractured, or painful teeth that need repair.',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Dental implants may replace a missing tooth when the knocked-out tooth cannot be saved and the patient is suitable.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Dental Bridges',
+
+      description:
+        'A dental bridge may replace a missing tooth with a fixed restoration supported by nearby teeth or implants.',
+
+      href: '/services/restorative-dentistry/dental-bridges',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+ heading:
+  'Knocked-Out Tooth Questions and Answers',
+
+  items: [
+    {
+      q: 'Is a knocked-out tooth a dental emergency?',
+      a: 'Yes. A knocked-out adult tooth is a dental emergency and should be handled with urgent dental guidance.',
+    },
+
+    {
+      q: 'What should I do first if an adult tooth is knocked out?',
+      a: 'Call the dental office immediately. If you have the tooth, handle it by the crown, avoid touching the root, keep it moist, and bring it with you.',
+    },
+
+    {
+      q: 'Can a knocked-out tooth be saved?',
+      a: 'Sometimes, depending on the type of tooth, how long it has been out, how it was stored, the condition of the root and socket, and whether other injuries are present.',
+    },
+
+    {
+      q: 'Should I put a knocked-out baby tooth back in?',
+      a: 'A knocked-out baby tooth is handled differently from an adult tooth. Do not assume it should be placed back. Call the dental office for guidance.',
+    },
+
+    {
+      q: 'What if I cannot find the knocked-out tooth?',
+      a: 'Still call for an emergency evaluation. The dentist can check the socket, nearby teeth, gums, bite, and discuss replacement options if needed.',
+    },
+
+    {
+      q: 'What if nearby teeth feel loose after the injury?',
+      a: 'Nearby teeth should be evaluated because trauma can loosen, crack, or shift teeth even if they were not knocked out.',
+    },
+
+    {
+      q: 'Will I need a root canal after a knocked-out tooth?',
+      a: 'A severely injured adult tooth may need root canal evaluation depending on the case. Dr. Shriya will explain follow-up needs after diagnosis.',
+    },
+
+    {
+      q: 'What replacement options are available if the tooth cannot be saved?',
+      a: 'Replacement options may include a dental implant, dental bridge, or partial denture depending on tooth location, bone support, gum health, bite, and treatment goals.',
+    },
+
+    {
+      q: 'When should I go to the emergency room instead of the dentist?',
+      a: 'Seek emergency medical care for heavy bleeding, facial trauma, head injury symptoms, difficulty breathing, suspected jaw fracture, or loss of consciousness.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Call Promenade Dental',
+
+highlight: 'for a Knocked-Out Tooth Emergency',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate knocked-out teeth, tooth injuries, nearby tooth trauma, gum damage, pain, bleeding, and replacement needs with emergency dental care focused on diagnosis, comfort, and the right next step.',
+
+  buttonText: 'Request an Emergency Visit',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+
+{
+  serviceSlug: 'family-dentistry',
+
+  slug: 'dental-exams-cleanings',
+
+  name: 'Dental Exams & Cleanings',
+
+  metaTitle:
+    'Dental Exams & Cleanings in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Dental exams and cleanings in Chandler AZ for cavity prevention, gum health, plaque removal, and routine checkups. Visit Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Preventive Dental Care in Fulton Ranch',
+
+    title: 'Dental Exams and Cleanings for',
+
+    highlight:
+      'Cavity Prevention, Gum Health, and Routine Oral Care in Chandler',
+
+    description:
+      'Promenade Dental helps patients maintain healthier teeth and gums with routine dental exams and professional cleanings focused on cavity detection, plaque removal, gum evaluation, oral health monitoring, and prevention-focused care.',
+
+    image: '/assets/h-dental-exams.jpg',
+
+    trustPoints: [
+      'Routine dental checkups',
+      'Professional teeth cleanings',
+      'Cavity and gum health evaluation',
+      'Preventive care for adults and children',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book a Dental Cleaning',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+overview: {
+  eyebrow: 'Preventive Dental Care',
+
+  heading:
+    'Dental Exams and Cleanings for Plaque Buildup, Cavities, Gum Inflammation, and Oral Health Changes',
+
+  body:
+    'Many dental problems begin quietly. Cavities, gum inflammation, enamel wear, cracked teeth, and old filling problems may not cause pain in the early stages. Routine dental exams and cleanings help identify these concerns before they become more serious or expensive to treat.\n\nProfessional cleanings remove plaque and tartar that brushing and flossing may miss. Dental exams help Dr. Shriya check the teeth, gums, bite, existing dental work, and signs of oral health changes over time.',
+
+  features: [
+    'Routine exams for early cavity detection',
+    'Professional plaque and tartar removal',
+    'Gum health and bite evaluation',
+    'Monitoring of existing dental work and oral health changes',
+  ],
+
+  image: '/assets/service-dental-exams-cleanings.jpg',
+
+  cta: {
+    label: 'Schedule a Preventive Dental Visit',
+    href: '#contact',
+  },
+
+  note:
+    'Routine preventive visits help detect oral health concerns early and support long-term dental health for both adults and children.',
+},
+whyItMatters: {
+  eyebrow: 'Comprehensive Dental Examination',
+
+  heading:
+    'Dental Exam for Cavities, Gum Health, Bite Changes, Tooth Wear, and Existing Dental Work',
+
+  description:
+    'A dental exam is more than a quick look at the teeth. It helps evaluate the condition of your mouth as a whole, including the teeth, gums, bite, jaw function, restorations, and areas that may need monitoring.\n\nDr. Shriya checks for cavities, gum inflammation, tooth wear, cracked teeth, loose fillings, crown issues, bite-related stress, and other changes that may affect long-term oral health.',
+
+  items: [
+    {
+      title: 'Cavity Detection',
+
+      body:
+        'Dental exams help identify early decay before it becomes tooth pain, infection, or larger restorative treatment.',
+
+      paths: [
+        'M12 12 h24 v24 h-24 z',
+        'M18 18 h12',
+      ],
+    },
+
+    {
+      title: 'Gum Health Evaluation',
+
+      body:
+        'The gums are checked for inflammation, bleeding, recession, pocketing, or signs that gum disease treatment may be needed.',
+
+      paths: [
+        'M12 30 C18 18 30 18 36 30',
+        'M16 34 h16',
+      ],
+    },
+
+    {
+      title: 'Existing Dental Work Check',
+
+      body:
+        'Fillings, crowns, bridges, dentures, and implant restorations are monitored for wear, damage, fit, and long-term function.',
+
+      paths: [
+        'M16 16 h16 v16 h-16 z',
+        'M20 24 h8',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Book a Dental Exam',
+    href: '#contact',
+  },
+},
+features: {
+  eyebrow: 'Professional Dental Cleanings',
+
+  heading:
+    'Professional Teeth Cleanings for Plaque, Tartar, Stains, and Gum Health Support',
+
+  body:
+    'Even with good brushing and flossing, plaque can harden into tartar in areas that are difficult to clean at home. Professional dental cleanings help remove buildup from the teeth and gumline while supporting fresher breath, cleaner teeth, and healthier gums.',
+
+  features: [
+    {
+      title: 'Removes Plaque and Tartar',
+
+      body:
+        'Professional cleanings remove buildup that cannot always be cleared with home brushing alone.',
+    },
+
+    {
+      title: 'Supports Healthier Gums',
+
+      body:
+        'Cleanings help reduce plaque around the gumline, supporting healthier gums and lowering the risk of inflammation.',
+    },
+
+    {
+      title: 'Helps Keep Teeth Feeling Cleaner',
+
+      body:
+        'A professional cleaning polishes the teeth and removes surface buildup that can affect how the teeth look and feel.',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule a Professional Cleaning',
+    href: '#contact',
+  },
+},
+servicesGrid: {
+  eyebrow: 'Preventive Dental Services',
+
+  heading:
+    'Dental Checkup Services for Preventive Oral Care',
+
+  intro:
+    'A routine dental visit may include several preventive steps depending on the patient’s age, oral health, symptoms, risk factors, and dental history.',
+
+  services: [
+    {
+      title: 'Tooth and Cavity Evaluation',
+
+      description:
+        'Dr. Shriya checks for cavities, enamel changes, cracks, worn areas, broken fillings, and signs of tooth damage.',
+
+      bestFor: [
+        'Early decay',
+        'Tooth sensitivity',
+        'Routine checkups',
+        'Preventive monitoring',
+      ],
+
+      cta: 'Ask About a Cavity Check',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Gum Health Evaluation',
+
+      description:
+        'The gums are evaluated for inflammation, bleeding, recession, pocket depth, and signs of periodontal problems.',
+
+      bestFor: [
+        'Bleeding gums',
+        'Gum sensitivity',
+        'Bad breath',
+        'Gum disease prevention',
+      ],
+
+      cta: 'Ask About Gum Health',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Professional Teeth Cleaning',
+
+      description:
+        'Plaque and tartar are removed from the teeth and gumline, followed by polishing when appropriate.',
+
+      bestFor: [
+        'Routine cleaning',
+        'Tartar buildup',
+        'Plaque control',
+        'Fresher-feeling teeth',
+      ],
+
+      cta: 'Book a Teeth Cleaning',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Dental X-Rays When Needed',
+
+      description:
+        'X-rays may be recommended to check areas that cannot be fully seen during a visual exam, including between teeth, below old restorations, and around tooth roots.',
+
+      bestFor: [
+        'Hidden cavities',
+        'Root concerns',
+        'Bone support',
+        'Infection signs',
+      ],
+
+      cta: 'Ask About Dental X-Rays',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Oral Health Screening',
+
+      description:
+        'The mouth is checked for changes in the soft tissues, gums, tongue, cheeks, and other visible oral structures.',
+
+      bestFor: [
+        'Routine monitoring',
+        'Tissue changes',
+        'Preventive dental care',
+        'Oral health assessment',
+      ],
+
+      cta: 'Schedule a Checkup',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Personalized Prevention Plan',
+
+      description:
+        'Patients receive guidance based on cavity risk, gum health, brushing habits, flossing habits, diet, sensitivity, and dental history.',
+
+      bestFor: [
+        'Cavity prevention',
+        'Gum health support',
+        'Home care improvement',
+        'Long-term oral health',
+      ],
+
+      cta: 'Build a Prevention Plan',
+
+      href: '#contact',
+    },
+  ],
+},
+solutionsGrid: {
+  eyebrow: 'Who Benefits From Preventive Dental Care',
+
+  heading:
+    'Preventive Dental Care for Adults and Children',
+
+  body:
+    'Dental exams and cleanings are important for patients at different stages of life. The purpose may change depending on age, gum health, cavity risk, existing dental work, and treatment history.',
+
+  cards: [
+    {
+      title: 'Adults Maintaining Oral Health',
+
+      subtitle: 'Routine Preventive Care',
+
+      body:
+        'Routine exams help adults monitor cavities, gum health, existing dental work, tooth wear, and bite-related changes before larger problems develop.',
+
+      image: '/assets/adult-dental-exam.jpg',
+    },
+
+    {
+      title: 'Children Learning Preventive Habits',
+
+      subtitle: 'Growing Smiles',
+
+      body:
+        'Cleanings and exams help children become comfortable with dental visits while monitoring tooth development, oral hygiene, and cavity risk.',
+
+      image: '/assets/child-dental-cleaning.jpg',
+    },
+
+    {
+      title: 'Patients With Crowns, Fillings, Bridges, or Implants',
+
+      subtitle: 'Monitoring Existing Dental Work',
+
+      body:
+        'Existing restorations benefit from regular evaluation to check their fit, wear, surrounding gum health, and overall function.',
+
+      image: '/assets/dental-restoration-check.jpg',
+    },
+
+    {
+      title: 'Patients With Gum Sensitivity or Bleeding',
+
+      subtitle: 'Gum Health Support',
+
+      body:
+        'Patients experiencing bleeding gums, bad breath, or gum tenderness can benefit from regular evaluations and preventive care to monitor gum health.',
+
+      image: '/assets/gum-health-evaluation.jpg',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule Your Preventive Dental Visit',
+    href: '#contact',
+  },
+},
+suitability: {
+  eyebrow: 'Recommended Preventive Visit Schedule',
+
+  heading:
+    'Dental Cleaning Schedule Based on Cavity Risk, Gum Health, and Oral Care Needs',
+
+  body:
+    'Many patients benefit from regular dental exams and cleanings, but the right schedule depends on oral health. Some patients may need routine preventive visits. Others may need more frequent maintenance if they have gum disease, heavy tartar buildup, high cavity risk, dry mouth, orthodontic appliances, or extensive dental work.\n\nPromenade Dental can recommend a visit schedule based on your teeth, gums, home care, medical history, and past dental needs.',
+
+  goodFit: {
+    title: 'Routine Preventive Visits May Be Enough If',
+
+    items: [
+      'Your gums are healthy',
+      'You have low cavity risk',
+      'Plaque and tartar buildup are controlled',
+      'You have no active dental symptoms',
+      'Existing dental work is stable',
+    ],
+  },
+
+  alternative: {
+    title: 'More Frequent Visits May Be Needed If',
+
+    items: [
+      'You have a history of gum disease',
+      'Your gums bleed easily',
+      'You build tartar quickly',
+      'You have frequent cavities',
+      'You have dry mouth or high cavity risk',
+      'You have implants, bridges, or extensive restorations',
+    ],
+  },
+
+  cta: {
+    label: 'Ask About Your Cleaning Schedule',
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: 'Dental Exam and Cleaning Process',
+
+  heading:
+    'What to Expect During Your Dental Exam and Cleaning',
+
+  subtitle:
+    'A preventive dental visit is designed to clean the teeth, evaluate oral health, identify early concerns, and help patients understand what needs attention now or later.',
+
+  steps: [
+    {
+      title: 'Oral Health Review',
+
+      body:
+        'The dental team reviews your dental history, symptoms, home care habits, tooth sensitivity, gum concerns, and previous dental treatment.',
+    },
+
+    {
+      title: 'Dental Exam',
+
+      body:
+        'Dr. Shriya evaluates the teeth, gums, bite, existing dental work, and any areas that may need monitoring or additional evaluation.',
+    },
+
+    {
+      title: 'Professional Cleaning',
+
+      body:
+        'Plaque and tartar are removed from the teeth and along the gumline, followed by polishing when appropriate.',
+    },
+
+    {
+      title: 'Prevention and Follow-Up Plan',
+
+      body:
+        'You receive personalized guidance on home care, cavity prevention, gum health, recommended follow-up visits, and any treatment that may be beneficial.',
+    },
+  ],
+
+  cta: {
+    label: 'Book a Dental Exam and Cleaning',
+    href: '#contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Preventive Dental Care',
+
+  heading:
+    'Dental Checkups for Finding Small Problems Before They Become Tooth Pain or Emergencies',
+
+  body:
+    'Routine dental visits can help detect cavities, gum inflammation, cracked teeth, loose fillings, and worn dental work before symptoms become severe. When small problems are found early, treatment may be simpler than waiting until the tooth hurts or breaks.',
+
+  supportingText:
+    'If an issue is found during your exam, Promenade Dental can connect preventive care with restorative treatments such as fillings, crowns, gum disease treatment, night guards, or root canal evaluation when needed.',
+
+  image: '/assets/dental-exams.jpg',
+
+  imageAlt:
+    'Routine dental exam and professional cleaning focused on early cavity detection, gum health evaluation, and preventive oral care',
+
+  cta: {
+    label: 'Schedule a Preventive Checkup',
+    href: '#contact',
+  },
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+  'Dentist-Led Dental Exams and Cleanings for Family Oral Health',
+
+  description:
+    'Preventive dentistry should be practical, consistent, and based on each patient’s oral health needs. Promenade Dental helps patients maintain clean teeth, healthier gums, and clearer awareness of their dental condition over time.',
+
+  items: [
+    {
+      title: 'Complete Preventive Evaluation',
+
+      body:
+        'Dr. Shriya evaluates your teeth, gums, bite, existing restorations, symptoms, and recommends X-rays when needed to monitor your oral health.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Professional Cleaning and Plaque Control',
+
+      body:
+        'Professional cleanings remove plaque and tartar that daily brushing may miss, supporting healthier gums and long-term oral health.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'Prevention for Adults and Children',
+
+      body:
+        'Preventive dental care is tailored for children, adults, families, and patients with ongoing oral health or restorative needs.',
+
+      paths: [
+        'M12 34 A10 10 0 1 1 36 34',
+        'M18 18 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Restorative Care Connected When Needed',
+
+      body:
+        'If a concern is identified during your visit, Promenade Dental can connect you with fillings, crowns, gum care, root canal evaluation, or other restorative treatments.',
+
+      paths: [
+        'M12 14 h24 v20 h-24 z',
+        'M18 20 h12 M24 14 v20',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Dental Exams and Cleanings Near Fulton Ranch',
+
+  heading:
+    'Dental Exams and Cleanings Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for dental cleanings, routine dental exams, preventive dentistry, teeth cleanings, cavity checks, or family dental care near Chandler 85248, Promenade Dental offers preventive visits focused on plaque removal, gum health, cavity detection, and long-term oral health.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Preventive and Family Services',
+
+  heading:
+  'Related Services for Preventive Dentistry and Family Care',
+
+  intro:
+    'Dental exams and cleanings are the foundation of preventive care. Depending on the exam findings, patients may also benefit from related family and preventive services.',
+
+  services: [
+    {
+      title: 'Family & Preventive Dentistry',
+
+      description:
+        'Explore preventive dental care for adults, children, families, gum health, cavities, and long-term oral health.',
+
+      href: '/services/family-dentistry',
+    },
+
+    {
+      title: 'Children’s Dentistry',
+
+      description:
+        'Dental visits for children help monitor tooth development, cavity risk, healthy hygiene habits, and comfort with dental care.',
+
+      href: '/services/family-dentistry/childrens-dentistry',
+    },
+
+    {
+      title: 'Gum Disease Treatment',
+
+      description:
+        'Gum treatment may be recommended when bleeding, inflammation, pocketing, or periodontal concerns are identified during an exam.',
+
+      href: '/services/family-dentistry/gum-disease-treatment',
+    },
+
+    {
+      title: 'Night Guards & Teeth Grinding',
+
+      description:
+        'Custom night guards may help protect teeth from grinding, clenching, tooth wear, and bite-related damage.',
+
+      href: '/services/family-dentistry/night-guards-teeth-grinding',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+  'Dental Exam and Cleaning Questions About Preventive Care',
+
+  items: [
+    {
+      q: 'What happens during a dental exam and cleaning?',
+      a: 'A dental exam checks the teeth, gums, bite, existing dental work, and overall oral health. A professional cleaning removes plaque and tartar buildup and may include polishing when appropriate.',
+    },
+
+    {
+      q: 'Why do I need dental cleanings if I brush and floss?',
+      a: 'Brushing and flossing are important, but plaque can harden into tartar that cannot be removed with a toothbrush. Professional cleanings help remove buildup from areas that are difficult to clean at home.',
+    },
+
+    {
+      q: 'How often should I get a dental cleaning?',
+      a: 'The right schedule depends on your gum health, cavity risk, tartar buildup, medical history, and dental needs. Promenade Dental can recommend a cleaning schedule based on your oral health.',
+    },
+
+    {
+      q: 'Can dental exams find cavities before they hurt?',
+      a: 'Yes. Dental exams can identify early cavities before they become painful or require more extensive treatment.',
+    },
+
+    {
+      q: 'Do dental cleanings help with gum health?',
+      a: 'Yes. Cleanings remove plaque and tartar around the gumline, supporting gum health and helping reduce the risk of inflammation.',
+    },
+
+    {
+      q: 'Will I need dental X-rays?',
+      a: 'Dental X-rays may be recommended when needed to evaluate areas that cannot be fully seen during a visual exam, such as between teeth, around tooth roots, or beneath existing dental work.',
+    },
+
+    {
+      q: 'Are dental cleanings important for children?',
+      a: 'Yes. Dental cleanings and exams help monitor tooth development, cavity risk, oral hygiene habits, and a child’s comfort with routine dental care.',
+    },
+
+    {
+      q: 'Can a cleaning remove stains?',
+      a: 'Professional cleanings may remove some surface stains and buildup, but deeper discoloration may require teeth whitening or another cosmetic treatment.',
+    },
+
+    {
+      q: 'What if the dentist finds a cavity during my exam?',
+      a: 'If a cavity is found, Dr. Shriya will explain its size, location, and treatment options. A tooth-colored filling may be recommended for smaller cavities.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248, in the Fulton Ranch area.',
+    },
+  ],
+},
+cta: {
+ title: 'Schedule a Dental Exam and Cleaning',
+
+highlight: 'for Cavity Prevention and Gum Health',
+
+  subtitle:
+    'Promenade Dental helps patients maintain healthier teeth and gums with preventive dental visits focused on professional cleanings, dental exams, cavity detection, gum evaluation, and long-term oral health planning.',
+
+  buttonText: 'Book a Dental Cleaning',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+
+},
+{
+  serviceSlug: 'family-dentistry',
+
+  slug: 'childrens-dentistry',
+
+  name: "Children's Dentistry",
+
+  metaTitle:
+    "Children's Dentist in Chandler, AZ | Promenade Dental",
+
+  metaDescription:
+    "Children's dentistry in Chandler AZ for kids' dental exams, cleanings, cavity prevention, oral hygiene guidance, and family dental care near Fulton Ranch.",
+
+  hero: {
+    eyebrow: "Kids' Dental Care in Fulton Ranch",
+
+    title: "Children's Dentistry for",
+
+    highlight:
+      'Cavity Prevention, Healthy Tooth Development, and Comfortable Dental Visits in Chandler',
+
+    description:
+      'Promenade Dental helps children build healthier dental habits with gentle exams, cleanings, cavity checks, preventive guidance, and family-focused dental care planned around comfort, development, and long-term oral health.',
+
+    image: '/assets/h-children-dentistry.webp',
+
+    trustPoints: [
+      'Dental care for children and families',
+      "Kids' exams and cleanings",
+      'Cavity prevention and oral hygiene guidance',
+      'Comfort-focused dental visits',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book a Child Dental Visit',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: "Children's Preventive Dental Care",
+
+  heading:
+    "Children's Dental Care for Cavities, Plaque Buildup, Tooth Development, and Dental Visit Anxiety",
+
+  body:
+    "Children's dental needs change as baby teeth come in, permanent teeth develop, and oral hygiene habits form. Cavities, plaque buildup, tooth sensitivity, brushing difficulties, crowding, thumb habits, grinding, and fear of dental visits can all affect a child's oral health.\n\nPromenade Dental provides children's dentistry focused on prevention, early detection, comfort, and parent guidance. Dr. Shriya helps families understand what is normal, what needs monitoring, and what treatment may be needed if a dental problem is found.",
+
+  features: [
+    'Cavity detection and prevention',
+    'Gentle dental exams and cleanings',
+    'Monitoring tooth development and oral habits',
+    'Parent guidance for healthy smiles',
+  ],
+
+  image: '/assets/service-childrens-dentistry.jpg',
+
+  cta: {
+    label: "Schedule a Kids' Dental Checkup",
+    href: '#contact',
+  },
+
+  note:
+    "Early preventive dental visits help children develop healthy habits, reduce dental anxiety, and support strong teeth through every stage of growth.",
+},
+whyItMatters: {
+  eyebrow: "Comprehensive Children's Dental Exam",
+
+  heading:
+    "Child Dental Exams for Cavities, Gum Health, Tooth Development, Bite Changes, and Oral Habits",
+
+  description:
+    "A child's dental exam helps monitor tooth development and identify problems early. The visit may include checking baby teeth, permanent teeth, gums, bite development, brushing effectiveness, cavity risk, enamel strength, and oral habits that may affect dental growth.\n\nDr. Shriya also helps parents understand how to support their child's oral care at home, including brushing, flossing, snacks, fluoride exposure, and when to schedule follow-up visits.",
+
+  items: [
+    {
+      title: 'Cavity Risk Evaluation',
+
+      body:
+        'Children can develop cavities quickly, especially around grooves, between teeth, and areas that are difficult to brush.',
+
+      paths: [
+        'M12 12 h24 v24 h-24 z',
+        'M18 18 h12',
+      ],
+    },
+
+    {
+      title: 'Tooth Development Monitoring',
+
+      body:
+        'Dental visits help monitor baby teeth, permanent teeth, eruption patterns, spacing, and bite changes.',
+
+      paths: [
+        'M12 30 C18 18 30 18 36 30',
+        'M16 34 h16',
+      ],
+    },
+
+    {
+      title: 'Oral Habit Guidance',
+
+      body:
+        'Thumb sucking, mouth breathing, grinding, snacking habits, and brushing challenges may need monitoring or parent guidance.',
+
+      paths: [
+        'M16 16 h16 v16 h-16 z',
+        'M20 24 h8',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Book a Child Dental Exam',
+    href: '#contact',
+  },
+},
+features: {
+  eyebrow: "Children's Professional Dental Cleanings",
+
+  heading:
+    "Children's Dental Cleanings for Cavity Prevention and Healthy Gums",
+
+  body:
+    "Even children who brush regularly may miss areas near the gumline, between teeth, or around back molars. Professional cleanings help remove plaque buildup, polish the teeth, and give children a clearer understanding of how to care for their smile at home.",
+
+  features: [
+    {
+      title: 'Removes Plaque Buildup',
+
+      body:
+        'Professional cleanings help remove plaque from areas children may miss while brushing.',
+    },
+
+    {
+      title: 'Supports Gum Health',
+
+      body:
+        'Cleanings help reduce buildup around the gumline and support healthier gums.',
+    },
+
+    {
+      title: 'Builds Better Home Habits',
+
+      body:
+        'Children can learn age-appropriate brushing and flossing habits during preventive visits.',
+    },
+  ],
+
+  cta: {
+    label: "Schedule a Kids' Dental Cleaning",
+    href: '#contact',
+  },
+},
+servicesGrid: {
+  eyebrow: "Children's Preventive Dental Services",
+
+  heading: "Children's Dental Services for Exams and Prevention",
+
+  intro:
+    "Children's dentistry at Promenade Dental focuses on prevention, comfort, early diagnosis, and helping families make informed decisions about oral health.",
+
+  services: [
+    {
+      title: "Children's Dental Exams",
+
+      description:
+        "A child's dental exam checks teeth, gums, bite development, oral hygiene, cavity risk, and any concerns parents may have.",
+
+      bestFor: [
+        'Routine checkups',
+        'Tooth development',
+        'Cavity detection',
+        'Dental growth monitoring',
+      ],
+
+      cta: 'Book a Child Dental Exam',
+
+      href: '#contact',
+    },
+
+    {
+      title: "Children's Teeth Cleanings",
+
+      description:
+        'Professional cleanings help remove plaque buildup, polish teeth, and support healthier gums and cavity prevention.',
+
+      bestFor: [
+        'Plaque buildup',
+        'Routine cleanings',
+        'Brushing support',
+        'Preventive dental care',
+      ],
+
+      cta: "Schedule a Kids' Cleaning",
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Cavity Prevention for Children',
+
+      description:
+        'Preventive care helps identify cavity risk and guide families on brushing, flossing, snacks, fluoride, and routine dental visits.',
+
+      bestFor: [
+        'High cavity risk',
+        'Frequent snacking',
+        'Brushing difficulties',
+        'Early enamel concerns',
+      ],
+
+      cta: 'Ask About Cavity Prevention',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Tooth Growth and Bite Monitoring',
+
+      description:
+        'Dental visits help monitor baby teeth, permanent teeth, tooth spacing, eruption timing, and bite changes.',
+
+      bestFor: [
+        'Growing children',
+        'Mixed dentition',
+        'Crowding concerns',
+        'Delayed eruption',
+      ],
+
+      cta: 'Ask About Tooth Development',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Parent Guidance for Brushing and Flossing',
+
+      description:
+        'Parents receive practical guidance on brushing routines, flossing support, age-appropriate habits, and cavity prevention at home.',
+
+      bestFor: [
+        'Young children',
+        'Brushing resistance',
+        'Flossing challenges',
+        'Family oral care routines',
+      ],
+
+      cta: 'Build a Better Home Routine',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Urgent Dental Evaluation for Kids',
+
+      description:
+        'Children may need urgent care for tooth pain, broken teeth, knocked-out teeth, swelling, or dental injury.',
+
+      bestFor: [
+        'Toothache',
+        'Chipped tooth',
+        'Dental trauma',
+        'Swelling',
+      ],
+
+      cta: "Call for Kids' Dental Help",
+
+      href: '#contact',
+    },
+  ],
+},
+solutionsGrid: {
+  eyebrow: "Who Benefits From Children's Dental Care",
+
+  heading: "Children's Dentistry for Every Stage of Growth",
+
+  body:
+    "Children's dental care should change as the child grows. A toddler's visit may focus on comfort and parent guidance. A school-age child may need cavity prevention and brushing support. A teen may need monitoring for wisdom teeth, orthodontic concerns, grinding, or sports-related dental risks.",
+
+  cards: [
+    {
+      title: 'Toddlers and Young Children',
+
+      subtitle: 'Early Dental Visits',
+
+      body:
+        'Early visits help children become familiar with the dental office while parents receive guidance on brushing, diet, and tooth development.',
+
+      image: '/assets/toddlers.webp',
+    },
+
+    {
+      title: 'School-Age Children',
+
+      subtitle: 'Preventive Dental Care',
+
+      body:
+        'Dental visits help monitor cavities, plaque, permanent teeth, spacing, brushing habits, and bite development.',
+
+      image: '/assets/school-child.jpg',
+    },
+
+    {
+      title: 'Teens',
+
+      subtitle: 'Growing Smiles',
+
+      body:
+        'Teen dental care may include cavity prevention, gum health, wisdom tooth monitoring, grinding concerns, sports injury prevention, and cosmetic concerns.',
+
+      image: '/assets/teens.jpg',
+    },
+
+    {
+      title: 'Families With Multiple Children',
+
+      subtitle: 'Family Dental Scheduling',
+
+      body:
+        'Family dental scheduling helps parents keep preventive visits consistent for children at different ages and stages.',
+
+      image: '/assets/family-visit.jpg',
+    },
+  ],
+
+  cta: {
+    label: "Schedule a Child's Dental Visit",
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: "Children's Dental Visit Process",
+
+  heading:
+    "What to Expect During Your Child's Dental Visit",
+
+  subtitle:
+    "A child's dental visit is designed to be clear, calm, and age-appropriate. The goal is to check oral health, clean the teeth, build comfort with dental care, and guide parents on prevention.",
+
+  steps: [
+    {
+      title: 'Friendly Introduction and Health Review',
+
+      body:
+        "The team reviews the child's dental history, brushing habits, symptoms, diet, parent concerns, and past dental experiences.",
+    },
+
+    {
+      title: 'Child Dental Exam',
+
+      body:
+        'Dr. Shriya checks teeth, gums, bite development, tooth eruption, cavity risk, and oral habits.',
+    },
+
+    {
+      title: 'Cleaning and Preventive Guidance',
+
+      body:
+        "The child's teeth are cleaned when appropriate, and the family receives practical guidance on brushing, flossing, snacks, and home care.",
+    },
+
+    {
+      title: 'Follow-Up or Treatment Plan',
+
+      body:
+        'If concerns are found, Promenade Dental explains whether monitoring, preventive care, fillings, emergency care, or specialist referral may be needed.',
+    },
+  ],
+
+  cta: {
+    label: "Book a Children's Dental Visit",
+    href: '#contact',
+  },
+},
+educationSection: {
+  eyebrow: "Children's Cavity Prevention",
+
+  heading:
+    'Cavity Prevention for Children With Brushing Challenges, Frequent Snacks, or Early Tooth Decay Risk',
+
+  body:
+    "Children are still learning how to clean their teeth properly. Back teeth, grooves, gumline areas, and spaces between teeth can be difficult for them to reach. Frequent snacks, juice, sweets, dry mouth, weak enamel, or inconsistent brushing can increase cavity risk.",
+
+  supportingText:
+    'Promenade Dental helps families reduce cavity risk through routine exams, cleanings, parent guidance, brushing instruction, and early treatment when decay is found.',
+
+  image: '/assets/cavity.webp',
+
+  imageAlt:
+    'Parent helping a child brush their teeth while learning healthy oral hygiene habits for cavity prevention',
+
+  cta: {
+    label: 'Ask About Cavity Prevention for Your Child',
+    href: '#contact',
+  },
+},
+educationSection2: {
+  eyebrow: "Comfort-Focused Children's Dentistry",
+
+  heading:
+    "Comfort-Focused Children's Dentistry for Kids Who Feel Nervous About Dental Visits",
+
+  bodyParagraphs: [
+    "Some children feel nervous before a dental visit, especially if they have had pain, previous dental treatment, or unfamiliar experiences. A calm dental environment can help children understand what is happening and feel more comfortable with preventive care.",
+
+    "Promenade Dental focuses on simple explanations, gentle communication, and helping children build a more positive relationship with dental visits over time.",
+  ],
+
+  image: "/assets/children-comfort.jpeg",
+
+  imageAlt:
+    "Friendly children's dental visit with a calm dental team helping a young patient feel comfortable during preventive care",
+
+  cta: {
+    label: "Schedule a Comfortable Kids' Dental Visit",
+    href: "#contact",
+  },
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading: "Family-Focused Children's Dentistry",
+
+  description:
+    "Children's dental care should support both the child and the parent. Promenade Dental helps families understand oral health needs at each stage while keeping visits practical, preventive, and comfort-focused.",
+
+  items: [
+    {
+      title: 'Preventive Care for Growing Smiles',
+
+      body:
+        'Dental exams and cleanings help monitor cavities, gum health, tooth development, and brushing habits.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Parent Guidance Included',
+
+      body:
+        'Families receive practical advice on brushing, flossing, diet, snacking habits, and follow-up care.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Dental Visits',
+
+      body:
+        'The team helps children feel more comfortable with dental care through calm communication and age-appropriate explanations.',
+
+      paths: [
+        'M12 34 A10 10 0 1 1 36 34',
+        'M18 18 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Family Dentistry in One Office',
+
+      body:
+        'Promenade Dental provides preventive, restorative, cosmetic, emergency, and family dental care for different ages and needs.',
+
+      paths: [
+        'M12 14 h24 v20 h-24 z',
+        'M18 20 h12 M24 14 v20',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: "Children's Dentist Near Fulton Ranch",
+
+  heading:
+    "Children's Dentist Near Fulton Ranch and Chandler 85248",
+
+  body:
+    "Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves families from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for a children's dentist, kids' dental cleaning, child dental checkup, cavity prevention for children, or family dentist near Chandler 85248, Promenade Dental offers children's dental care focused on comfort, prevention, tooth development, and parent guidance.",
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Preventive and Family Services',
+
+  heading: "Related Children's and Family Dental Services",
+
+  intro:
+    "Children's dentistry connects closely with preventive care, cavity treatment, emergency care, and family dental visits.",
+
+  services: [
+    {
+      title: 'Family & Preventive Dentistry',
+
+      description:
+        'Explore preventive dental care for adults, children, families, gum health, cavities, and long-term oral health.',
+
+      href: '/services/family-dentistry',
+    },
+
+    {
+      title: 'Dental Exams & Cleanings',
+
+      description:
+        'Routine exams and cleanings help monitor cavities, gum health, tooth development, and preventive needs.',
+
+      href: '/services/family-dentistry/dental-exams-cleanings',
+    },
+
+    {
+      title: 'Tooth-Colored Fillings',
+
+      description:
+        'Tooth-colored fillings may repair cavities when decay is found and treatment is needed.',
+
+      href: '/services/restorative-dentistry/tooth-colored-fillings',
+    },
+
+    {
+      title: 'Emergency Dentist',
+
+      description:
+        'Emergency dental care may be needed for children with tooth pain, broken teeth, knocked-out teeth, swelling, or dental injuries.',
+
+      href: '/services/emergency-dentistry',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading: "Children's Dentistry FAQs",
+
+  items: [
+    {
+      q: "What does a children's dental visit include?",
+      a: "A children's dental visit may include a dental exam, cleaning, cavity check, gum evaluation, tooth development review, oral hygiene guidance, and parent discussion.",
+    },
+
+    {
+      q: 'When should children start seeing the dentist?',
+      a: 'Children should begin dental visits early so the dentist can monitor tooth development, guide parents, and help the child become comfortable with dental care.',
+    },
+
+    {
+      q: 'How often should kids have dental cleanings?',
+      a: "The right schedule depends on the child's cavity risk, gum health, plaque buildup, brushing habits, and dental history. Promenade Dental can recommend a schedule based on the child's needs.",
+    },
+
+    {
+      q: 'Why do baby teeth matter if they fall out?',
+      a: 'Baby teeth help children chew, speak, hold space for permanent teeth, and support dental development. Cavities in baby teeth can still cause pain or infection.',
+    },
+
+    {
+      q: 'Can children get cavities even if they brush?',
+      a: 'Yes. Children may miss areas while brushing, snack frequently, or have grooves in back teeth that trap plaque. Routine exams help identify cavities early.',
+    },
+
+    {
+      q: 'What if my child is scared of the dentist?',
+      a: 'Promenade Dental focuses on calm communication, age-appropriate explanations, and helping children feel more comfortable with dental visits over time.',
+    },
+
+    {
+      q: 'Do children need dental X-rays?',
+      a: 'Dental X-rays may be recommended when needed to check areas not visible during the exam, monitor tooth development, or evaluate dental concerns.',
+    },
+
+    {
+      q: 'What should I do if my child has a toothache?',
+      a: 'Call Promenade Dental for guidance. Tooth pain in children may come from cavities, infection, injury, loose teeth, gum problems, or eruption changes.',
+    },
+
+    {
+      q: 'Can Promenade Dental treat chipped teeth in children?',
+      a: 'Promenade Dental can evaluate chipped or broken teeth in children and recommend the appropriate next step based on the tooth type, injury, pain, and damage.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248, in the Fulton Ranch area.',
+    },
+  ],
+},
+cta: {
+  title: "Schedule a Children's Checkup",
+
+highlight: "for Growing Healthy Smiles",
+
+  subtitle:
+    'Promenade Dental helps children maintain healthier teeth and gums with preventive exams, cleanings, cavity checks, oral hygiene guidance, and family-focused dental care in Chandler.',
+
+  buttonText: 'Book a Child Dental Visit',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+{
+  serviceSlug: 'family-dentistry',
+
+  slug: 'gum-disease-treatment',
+
+  name: 'Gum Disease Treatment',
+
+  metaTitle:
+    'Gum Disease Treatment in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Gum disease treatment in Chandler AZ for bleeding gums, gum inflammation, periodontal pockets, plaque buildup, and deep cleaning needs near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Periodontal Care in Fulton Ranch',
+
+    title: 'Gum Disease Treatment for',
+
+    highlight:
+      'Bleeding Gums, Gum Inflammation, and Periodontal Pockets in Chandler',
+
+    description:
+      'Promenade Dental helps patients evaluate and manage gum disease with periodontal care focused on bleeding gums, plaque and tartar buildup, gum inflammation, deep cleaning needs, pocket depth, and long-term tooth support.',
+
+    image: '/assets/h-gum-diseases.webp',
+
+    trustPoints: [
+      'Evaluation for bleeding gums',
+      'Deep cleaning and periodontal care',
+      'Gum inflammation and pocket monitoring',
+      'Maintenance planning for long-term gum health',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book a Gum Health Evaluation',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: 'Periodontal Care',
+
+  heading:
+    'Gum Disease Treatment for Bleeding Gums, Plaque Buildup, Bad Breath, and Loose Tooth Risk',
+
+  body:
+    'Bleeding gums are not something to ignore. Gum disease can begin with redness, swelling, tenderness, bleeding when brushing or flossing, persistent bad breath, and plaque buildup around the gumline. If the condition progresses, the gums may pull away from the teeth, creating pockets where bacteria and tartar can collect.\n\nGum disease treatment at Promenade Dental is designed to evaluate the gums, remove buildup where needed, reduce inflammation, monitor pocket depth, and help protect the structures that support the teeth.',
+
+  features: [
+    'Evaluation for bleeding gums',
+    'Deep cleaning and plaque removal',
+    'Periodontal pocket monitoring',
+    'Long-term gum health maintenance',
+  ],
+
+  image: '/assets/service-gum-disease-treatment.jpg',
+
+  cta: {
+    label: 'Schedule a Periodontal Evaluation',
+    href: '#contact',
+  },
+
+  note:
+    'Early treatment can help reduce gum inflammation, protect supporting bone and tissue, and lower the risk of advanced periodontal disease.',
+},
+whyItMatters: {
+  eyebrow: 'Comprehensive Gum Disease Evaluation',
+
+  heading:
+    'Gum Disease Evaluation for Bleeding, Pocket Depth, Tartar Buildup, Gum Recession, and Bone Support',
+
+  description:
+    'A gum disease evaluation helps determine whether the gums are healthy, inflamed, or showing signs of periodontal disease. Dr. Shriya checks the gum tissue, bleeding points, pocket depth, recession, tartar buildup, tooth mobility, bone support, bite pressure, and X-rays when needed.\n\nThis evaluation helps decide whether a routine cleaning, deep cleaning, periodontal maintenance, or referral to a gum specialist may be appropriate.',
+
+  items: [
+    {
+      title: 'Gum Bleeding and Inflammation',
+
+      body:
+        'Bleeding, swelling, redness, and tenderness can indicate gingivitis or more advanced periodontal concerns.',
+
+      paths: [
+        'M12 12 h24 v24 h-24 z',
+        'M18 18 h12',
+      ],
+    },
+
+    {
+      title: 'Periodontal Pocket Depth',
+
+      body:
+        'Deeper spaces between the gums and teeth may collect plaque and tartar that cannot be removed with regular brushing.',
+
+      paths: [
+        'M12 30 C18 18 30 18 36 30',
+        'M16 34 h16',
+      ],
+    },
+
+    {
+      title: 'Tooth Support and Mobility',
+
+      body:
+        'Advanced gum disease can affect the bone and tissues that hold teeth in place, which may lead to loose teeth if untreated.',
+
+      paths: [
+        'M16 16 h16 v16 h-16 z',
+        'M20 24 h8',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out What Your Gums Need',
+    href: '#contact',
+  },
+},
+features: {
+  eyebrow: 'Understanding Gum Disease',
+
+  heading: 'Treatment for Every Stage of Gum Disease',
+
+  body:
+    'Gum disease can range from early inflammation to more advanced damage around the teeth. The treatment plan depends on how much inflammation, pocketing, tartar buildup, and tooth support loss is present.',
+
+  features: [
+    {
+      title: 'Healthy Gums With Preventive Maintenance',
+
+      body:
+        'Healthy gums usually do not bleed easily, feel swollen, or show deep periodontal pockets. Routine cleanings help maintain gum health.',
+    },
+
+    {
+      title: 'Gingivitis With Bleeding or Swollen Gums',
+
+      body:
+        'Gingivitis is early gum inflammation. It may cause red, swollen, or easily bleeding gums and can often improve with professional care and better home hygiene.',
+    },
+
+    {
+      title: 'Periodontitis With Pocketing or Tooth Support Loss',
+
+      body:
+        'Periodontitis involves deeper gum and supporting tissue problems. Treatment may include scaling and root planing, maintenance visits, monitoring, and specialist referral when needed.',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule a Gum Health Evaluation',
+    href: '#contact',
+  },
+},
+servicesGrid: {
+  eyebrow: 'Periodontal Treatment Options',
+
+  heading:
+    'Gum Disease Treatment Options for Healthier Gums',
+
+  intro:
+    'Gum treatment depends on diagnosis. Some patients need a routine cleaning and better home care. Others need deep cleaning below the gumline or ongoing periodontal maintenance to control inflammation and monitor gum health.',
+
+  services: [
+    {
+      title: 'Routine Cleaning for Healthy or Mildly Inflamed Gums',
+
+      description:
+        'Routine cleanings help remove plaque and tartar from the teeth and gumline when there are no deeper periodontal pockets requiring advanced cleaning.',
+
+      bestFor: [
+        'Preventive care',
+        'Mild buildup',
+        'Routine maintenance',
+        'Healthy gums',
+      ],
+
+      cta: 'Book a Dental Cleaning',
+
+      href: '/family-dentistry/dental-exams-cleanings',
+    },
+
+    {
+      title: 'Scaling and Root Planing for Gum Disease',
+
+      description:
+        'Scaling and root planing is a deep cleaning below the gumline used when plaque and tartar collect in periodontal pockets.',
+
+      bestFor: [
+        'Gum disease',
+        'Deeper pockets',
+        'Tartar below the gumline',
+        'Bleeding gums',
+      ],
+
+      cta: 'Ask About Deep Cleaning',
+
+      href: '/family-dentistry/gum-disease-treatment',
+    },
+
+    {
+      title: 'Periodontal Maintenance for Ongoing Gum Disease Control',
+
+      description:
+        'Periodontal maintenance helps monitor gum health after gum disease treatment and may be scheduled more frequently than routine cleanings.',
+
+      bestFor: [
+        'Gum disease history',
+        'Recurring inflammation',
+        'Deeper pockets',
+        'Long-term periodontal care',
+      ],
+
+      cta: 'Ask About Gum Maintenance',
+
+      href: '/family-dentistry/gum-disease-treatment',
+    },
+
+    {
+      title: 'Periodontal Referral for Advanced Gum Disease',
+
+      description:
+        'If gum disease is advanced or requires surgical treatment, Promenade Dental may recommend evaluation with a periodontist.',
+
+      bestFor: [
+        'Advanced periodontitis',
+        'Significant bone loss',
+        'Severe pocketing',
+        'Complex gum treatment needs',
+      ],
+
+      cta: 'Ask About Your Gum Treatment Options',
+
+      href: '/family-dentistry/gum-disease-treatment',
+    },
+  ],
+},
+symptomsSection: {
+  eyebrow: 'Signs of Gum Disease',
+
+  heading:
+    'Gum Disease Symptoms That Should Be Evaluated Early',
+
+  body:
+    'Gum disease can be painless in its early stages, making symptoms easy to overlook. Bleeding, swelling, bad breath, gum recession, and loose teeth should be evaluated before the condition becomes more difficult to manage.',
+
+  symptoms: [
+    {
+      title: 'Bleeding Gums',
+
+      body:
+        'Gums that bleed during brushing, flossing, or eating may be inflamed.',
+    },
+
+    {
+      title: 'Swollen or Tender Gums',
+
+      body:
+        'Swelling and tenderness may indicate irritation, plaque buildup, or gum infection.',
+    },
+
+    {
+      title: 'Persistent Bad Breath',
+
+      body:
+        'Bad breath that does not improve may be related to bacteria around the gums or periodontal pockets.',
+    },
+
+    {
+      title: 'Gum Recession',
+
+      body:
+        'Receding gums can expose root surfaces and may be related to gum disease, brushing trauma, bite pressure, or other factors.',
+    },
+
+    {
+      title: 'Loose Teeth',
+
+      body:
+        'Loose teeth may indicate advanced periodontal support loss and should be evaluated promptly.',
+    },
+
+    {
+      title: 'Pain When Chewing',
+
+      body:
+        'Chewing discomfort may occur if gum disease affects tooth support or if infection is present.',
+    },
+  ],
+},
+educationSection: {
+  eyebrow: 'Scaling and Root Planing',
+
+  heading:
+    'Scaling and Root Planing for Plaque and Tartar Below the Gumline',
+
+  body:
+    'Scaling and root planing is commonly called a deep cleaning. It is used when plaque and tartar are present below the gumline and regular cleaning is not enough to address periodontal pockets. Scaling removes buildup from tooth and root surfaces, while root planing smooths root surfaces to support gum healing and maintenance.',
+
+  supportingText:
+    'At Promenade Dental, deep cleaning recommendations are based on gum measurements, bleeding, tartar buildup, X-rays when needed, and the overall condition of the gums and supporting bone.',
+
+  image: '/assets/gum-tartar.webp',
+
+  imageAlt:
+    'Scaling and root planing deep cleaning treatment for plaque and tartar below the gumline to support periodontal health',
+
+  cta: {
+    label: 'Ask About Scaling and Root Planing',
+    href: '#contact',
+  },
+},
+educationSection2: {
+  eyebrow: 'Protecting Long-Term Gum Health',
+
+  heading:
+    'Gum Disease Treatment for Protecting Tooth Support, Bone Health, and Long-Term Oral Function',
+
+  bodyParagraphs: [
+    'The gums and bone help hold teeth in place. When gum disease progresses, inflammation and bacteria can affect the tissues that support the teeth. Over time, this may contribute to gum recession, pocketing, bone loss, loose teeth, chewing discomfort, and tooth loss.',
+
+    'Treating gum disease early and maintaining regular periodontal care can help reduce the risk of worsening damage and support long-term oral health.',
+  ],
+
+  image: '/assets/gum-disease.jpg',
+
+  imageAlt:
+    'Diagram showing how healthy gums and bone support teeth and how gum disease can affect tooth stability over time',
+
+  cta: {
+    label: 'Protect Your Gum and Tooth Health',
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: 'Gum Disease Treatment Process',
+
+  heading:
+    'What to Expect During Your Gum Disease Treatment',
+
+  subtitle:
+    'Gum disease treatment is planned around the condition of the gums and the level of inflammation or support loss. The goal is to reduce buildup, monitor healing, and create a maintenance plan that supports long-term gum health.',
+
+  steps: [
+    {
+      title: 'Gum Health Evaluation',
+
+      body:
+        'Dr. Shriya evaluates gum tissue, bleeding, pocket depth, tartar buildup, recession, tooth mobility, and X-rays when needed.',
+    },
+
+    {
+      title: 'Diagnosis and Treatment Recommendation',
+
+      body:
+        'You receive a clear explanation of whether you need a routine cleaning, scaling and root planing, periodontal maintenance, or referral.',
+    },
+
+    {
+      title: 'Gum Treatment or Deep Cleaning',
+
+      body:
+        'Treatment may include professional cleaning above and below the gumline depending on diagnosis and pocket depth.',
+    },
+
+    {
+      title: 'Maintenance and Home Care Plan',
+
+      body:
+        'A follow-up schedule and home care recommendations are created based on gum health, inflammation risk, and periodontal history.',
+    },
+  ],
+
+  cta: {
+    label: 'Book a Gum Disease Treatment Visit',
+    href: '#contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Periodontal Maintenance',
+
+  heading:
+    'Periodontal Maintenance for Patients With Gum Disease History, Deep Pockets, or Recurring Bleeding',
+
+  body:
+    'After gum disease treatment, maintenance matters. Periodontal maintenance visits help monitor pocket depths, remove buildup, check bleeding, evaluate gum stability, and reduce the risk of disease progression.\n\nSome patients need more frequent maintenance than routine dental cleanings because gum disease can return if plaque and tartar collect again.',
+
+  cards: [
+    {
+      title: 'Pocket Depth Monitoring',
+
+      body:
+        'Gum measurements help track whether periodontal pockets are improving, stable, or worsening.',
+    },
+
+    {
+      title: 'Plaque and Tartar Removal',
+
+      body:
+        'Professional maintenance removes buildup from areas that are difficult to clean at home.',
+    },
+
+    {
+      title: 'Bleeding and Inflammation Checks',
+
+      body:
+        'Bleeding points help show where gum inflammation may still be active.',
+    },
+
+    {
+      title: 'Home Care Adjustments',
+
+      body:
+        'Brushing, flossing, interdental brushes, or other tools may be recommended based on your gum condition.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Dentist-Led Gum Disease Treatment for Long-Term Gum Health',
+
+  description:
+    'Gum disease treatment should be based on measurements, symptoms, buildup, and tooth support. Promenade Dental focuses on evaluating gum health clearly and helping patients understand the difference between routine cleaning, deep cleaning, and periodontal maintenance.',
+
+  items: [
+    {
+      title: 'Gum Measurements Before Treatment',
+
+      body:
+        'Dr. Shriya evaluates pocket depth, bleeding, recession, tartar buildup, tooth mobility, and X-rays when needed.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Clear Cleaning Recommendations',
+
+      body:
+        'Patients are guided on whether they need a routine cleaning, scaling and root planing, or periodontal maintenance.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'Long-Term Gum Health Planning',
+
+      body:
+        'Gum disease often requires ongoing monitoring, home care, and maintenance to protect tooth support.',
+
+      paths: [
+        'M12 34 A10 10 0 1 1 36 34',
+        'M18 18 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Preventive and Restorative Care Connected',
+
+      body:
+        'Promenade Dental can connect gum care with exams, cleanings, fillings, crowns, implants, dentures, and tooth replacement planning when needed.',
+
+      paths: [
+        'M12 14 h24 v20 h-24 z',
+        'M18 20 h12 M24 14 v20',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Gum Disease Treatment Near Fulton Ranch',
+
+  heading:
+    'Gum Disease Treatment Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for gum disease treatment, bleeding gums treatment, deep cleaning, scaling and root planing, periodontal maintenance, or a gum disease dentist near Chandler 85248, Promenade Dental offers periodontal evaluations based on gum inflammation, pocket depth, tartar buildup, and long-term tooth support.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Preventive and Family Services',
+
+  heading:
+    'Related Services for Gum Health and Preventive Care',
+
+  intro:
+    'Gum disease treatment connects closely with preventive dentistry, routine cleanings, tooth replacement planning, and care for patients with dental restorations.',
+
+  services: [
+    {
+      title: 'Family & Preventive Dentistry',
+
+      description:
+        'Explore preventive dental care for adults, children, families, gum health, cavities, and long-term oral health.',
+
+      href: '/services/family-dentistry',
+    },
+
+    {
+      title: 'Dental Exams & Cleanings',
+
+      description:
+        'Routine exams and cleanings help monitor plaque, tartar, cavities, gum health, and oral health changes.',
+
+      href: '/services/family-dentistry/dental-exams-cleanings',
+    },
+
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Healthy gums are important for implant planning, implant maintenance, and long-term tooth replacement stability.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Dentures & Partials',
+
+      description:
+        'Advanced gum disease may affect tooth support and lead to replacement planning when teeth cannot be saved.',
+
+      href: '/services/restorative-dentistry/dentures',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading: 'FAQs About Gum Disease and Deep Cleaning',
+
+  items: [
+    {
+      q: 'What is gum disease?',
+      a: 'Gum disease is inflammation or infection of the tissues that support the teeth. It can begin as gingivitis and may progress to periodontitis if not treated.',
+    },
+
+    {
+      q: 'Why do my gums bleed when I brush or floss?',
+      a: 'Bleeding gums may be caused by plaque buildup, gum inflammation, gingivitis, periodontal disease, brushing technique, or other oral health factors. A dental evaluation can identify the cause.',
+    },
+
+    {
+      q: 'What is scaling and root planing?',
+      a: 'Scaling and root planing is a deep cleaning below the gumline used to remove plaque and tartar from periodontal pockets and root surfaces.',
+    },
+
+    {
+      q: 'Is deep cleaning different from a regular cleaning?',
+      a: 'Yes. A routine cleaning is used for preventive care when there are no deeper periodontal pockets requiring advanced cleaning. Deep cleaning is used when gum disease creates pockets where buildup collects below the gumline.',
+    },
+
+    {
+      q: 'Can gum disease be reversed?',
+      a: 'Early gingivitis can often improve with professional care and better home hygiene. Periodontitis involves deeper support changes and usually requires ongoing management.',
+    },
+
+    {
+      q: 'Can gum disease cause loose teeth?',
+      a: 'Yes. Advanced gum disease can affect the bone and tissues that hold teeth in place, which may lead to tooth mobility or tooth loss.',
+    },
+
+    {
+      q: 'How often do I need periodontal maintenance?',
+      a: 'The right maintenance schedule depends on your gum measurements, bleeding, buildup, periodontal history, and risk factors. Promenade Dental can recommend a schedule based on your condition.',
+    },
+
+    {
+      q: 'Does gum disease always hurt?',
+      a: 'No. Gum disease can be painless, especially early on. Bleeding, swelling, bad breath, gum recession, or loose teeth may be warning signs.',
+    },
+
+    {
+      q: 'Can gum disease affect dental implants?',
+      a: 'Yes. Healthy gums and good oral hygiene are important for implant maintenance. Gum inflammation around implants should be monitored carefully.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248, in the Fulton Ranch area.',
+    },
+  ],
+},
+cta: {
+  title: 'Book a Gum Disease Evaluation',
+
+highlight: 'for Long-Term Gum Health',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate and manage gum disease with care focused on bleeding gums, periodontal pockets, tartar buildup, deep cleaning, maintenance, and long-term tooth support.',
+
+  buttonText: 'Book a Gum Health Evaluation',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+{
+  serviceSlug: 'family-dentistry',
+
+  slug: 'night-guards-teeth-grinding',
+
+  name: 'Night Guards & Teeth Grinding',
+
+  metaTitle:
+    'Night Guards for Teeth Grinding in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Custom night guards in Chandler AZ for teeth grinding, clenching, worn teeth, jaw soreness, cracked teeth, and bite-related tooth protection near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Custom Night Guards in Fulton Ranch',
+
+    title: 'Night Guards for',
+
+    highlight:
+      'Teeth Grinding, Clenching, Worn Teeth, and Jaw Soreness in Chandler',
+
+    description:
+      'Promenade Dental helps patients protect their teeth from grinding and clenching with custom night guard evaluations focused on tooth wear, cracked teeth, jaw soreness, bite pressure, morning discomfort, and long-term tooth protection.',
+
+    image: '/assets/h-night-guards.jpg',
+
+    trustPoints: [
+      'Custom night guard evaluations',
+      'Protection for grinding and clenching',
+      'Care for worn, cracked, or sensitive teeth',
+      'Bite and jaw comfort assessment',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Book a Night Guard Consultation',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+  eyebrow: 'Teeth Grinding Protection',
+
+  heading: 'Night Guards for Teeth Grinding, Tooth Wear, and Jaw Pain',
+
+  body:
+    'Teeth grinding and clenching can happen during sleep without the patient realizing it. Over time, this pressure can wear down enamel, chip teeth, crack restorations, cause tooth sensitivity, strain the jaw, and contribute to morning headaches or facial soreness.\n\nA custom night guard is designed to place a protective barrier between the upper and lower teeth during sleep. At Promenade Dental, Dr. Shriya evaluates tooth wear, bite pressure, jaw symptoms, cracked teeth, existing dental work, and grinding signs before recommending a night guard.',
+
+  features: [
+    'Custom night guard evaluations',
+    'Assessment of tooth wear and bite pressure',
+    'Protection for cracked teeth and restorations',
+    'Jaw comfort and long-term tooth protection',
+  ],
+
+  image: '/assets/service-night-guards.jpg',
+
+  cta: {
+    label: 'Schedule a Teeth Grinding Evaluation',
+    href: '#contact',
+  },
+
+  note:
+    'Early treatment can help reduce tooth wear, protect dental restorations, ease jaw discomfort, and prevent long-term damage caused by grinding and clenching.',
+},
+whyItMatters: {
+  eyebrow: 'Comprehensive Teeth Grinding Evaluation',
+
+  heading:
+    'Teeth Grinding Evaluation for Tooth Wear, Bite Pressure, Jaw Soreness, Sensitivity, and Cracked Teeth',
+
+  description:
+    'Grinding and clenching can create different signs in the mouth. Some patients have flat or worn biting edges. Others develop small cracks, chipped enamel, jaw tension, sensitive teeth, broken fillings, or crowns that wear faster than expected.\n\nDr. Shriya evaluates the teeth, bite, jaw muscles, dental restorations, symptoms, and tooth wear patterns to understand whether grinding or clenching may be affecting your oral health.',
+
+  items: [
+    {
+      title: 'Tooth Wear and Flattened Edges',
+
+      body:
+        'Worn enamel, flat biting surfaces, and shortened tooth edges may suggest repeated grinding pressure.',
+
+      paths: [
+        'M12 12 h24 v24 h-24 z',
+        'M18 18 h12',
+      ],
+    },
+
+    {
+      title: 'Cracked Teeth and Broken Restorations',
+
+      body:
+        'Grinding and clenching can increase stress on teeth, fillings, crowns, veneers, and other restorations.',
+
+      paths: [
+        'M12 30 C18 18 30 18 36 30',
+        'M16 34 h16',
+      ],
+    },
+
+    {
+      title: 'Jaw Soreness and Morning Symptoms',
+
+      body:
+        'Jaw tightness, morning soreness, facial discomfort, and headaches may be connected with nighttime clenching or grinding.',
+
+      paths: [
+        'M16 16 h16 v16 h-16 z',
+        'M20 24 h8',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Find Out If Grinding Is Damaging Your Teeth',
+    href: '#contact',
+  },
+},
+symptomsSection: {
+  eyebrow: 'Signs of Teeth Grinding',
+
+  heading: 'Signs and Symptoms of Teeth Grinding',
+
+  body:
+    'Many patients do not know they grind their teeth until signs appear. Symptoms may involve the teeth, jaw, face, head, or dental restorations.',
+
+  symptoms: [
+    {
+      title: 'Worn or Flattened Teeth',
+
+      body:
+        'Grinding can wear down the chewing surfaces and edges of the teeth over time.',
+    },
+
+    {
+      title: 'Chipped or Cracked Teeth',
+
+      body:
+        'Repeated pressure can contribute to small chips, cracks, fractures, or broken restorations.',
+    },
+
+    {
+      title: 'Tooth Sensitivity',
+
+      body:
+        'Worn enamel or cracked tooth structure may make teeth more sensitive to cold, sweets, or pressure.',
+    },
+
+    {
+      title: 'Jaw Pain or Tightness',
+
+      body:
+        'Clenching can strain the jaw muscles and create soreness, tightness, or fatigue.',
+    },
+
+    {
+      title: 'Morning Headaches',
+
+      body:
+        'Some patients wake up with headaches or facial soreness related to nighttime clenching.',
+    },
+
+    {
+      title: 'Broken Fillings or Crowns',
+
+      body:
+        'Heavy bite pressure may damage dental restorations or cause them to wear prematurely.',
+    },
+  ],
+},
+features: {
+  eyebrow: 'Custom Night Guard Benefits',
+
+  heading: 'Custom Night Guards for Grinding and Bite Protection',
+
+  body:
+    'A custom night guard is made to fit the patient’s teeth more closely than over-the-counter guards. It helps reduce direct tooth-to-tooth contact during sleep and can protect teeth, restorations, and bite surfaces from excessive grinding pressure.',
+
+  features: [
+    {
+      title: 'Protects Teeth From Direct Grinding Contact',
+
+      body:
+        'A night guard creates a protective layer between the upper and lower teeth while sleeping.',
+    },
+
+    {
+      title: 'Helps Protect Restorations',
+
+      body:
+        'Night guards can help reduce grinding stress on crowns, veneers, fillings, bridges, and implant restorations.',
+    },
+
+    {
+      title: 'Designed for a More Comfortable Fit',
+
+      body:
+        'A custom guard is made from dental impressions or scans so it fits the patient’s mouth more accurately.',
+    },
+  ],
+
+  cta: {
+    label: 'Schedule a Night Guard Consultation',
+    href: '#contact',
+  },
+},
+servicesGrid: {
+  eyebrow: 'Night Guard Treatment Options',
+
+  heading: 'Night Guard Treatment for Teeth Grinding and Clenching',
+
+  intro:
+    'Night guards may be recommended when grinding or clenching creates signs of tooth wear, jaw strain, cracked teeth, or risk to existing dental work.',
+
+  services: [
+    {
+      title: 'Night Guards for Sleep Grinding',
+
+      description:
+        'A night guard can help protect teeth from repeated grinding contact during sleep.',
+
+      bestFor: [
+        'Worn teeth',
+        'Flattened biting edges',
+        'Morning tooth soreness',
+        'Enamel wear',
+      ],
+
+      cta: 'Ask About Sleep Grinding Protection',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Night Guards for Clenching and Jaw Soreness',
+
+      description:
+        'A night guard may help reduce the effects of nighttime clenching by creating a protective bite surface.',
+
+      bestFor: [
+        'Jaw tightness',
+        'Morning soreness',
+        'Facial discomfort',
+        'Clenching habits',
+      ],
+
+      cta: 'Ask About Clenching Protection',
+
+      href: '#contact',
+    },
+
+    {
+      title: 'Night Guards for Worn or Cracked Teeth',
+
+      description:
+        'When teeth show wear, chips, or small cracks, a night guard may help reduce further grinding-related damage.',
+
+      bestFor: [
+        'Cracked teeth',
+        'Chipped enamel',
+        'Tooth sensitivity',
+        'Worn edges',
+      ],
+
+      cta: 'Ask About Protecting Worn Teeth',
+
+      href: '#contact',
+    },
+
+    {
+      title:
+        'Night Guards for Crowns, Veneers, Fillings, and Implant Restorations',
+
+      description:
+        'Patients with restorative or cosmetic dental work may need a night guard if grinding places extra stress on restorations.',
+
+      bestFor: [
+        'Crowns',
+        'Veneers',
+        'Fillings',
+        'Bridges and implant restorations',
+      ],
+
+      cta: 'Ask About Protecting Dental Work',
+
+      href: '#contact',
+    },
+  ],
+},
+suitability: {
+  eyebrow: 'Night Guard Comparison',
+
+  heading:
+    'Custom Night Guards and Store-Bought Guards for Teeth Grinding Protection',
+
+  body:
+    'Store-bought guards may provide a quick temporary option for some people, but they are not designed around a patient’s bite, tooth shape, or dental history. A custom night guard is made to fit the mouth more precisely and can be planned around tooth wear, restorations, jaw symptoms, and bite pressure.',
+
+  goodFit: {
+    title: 'Custom Night Guard',
+
+    items: [
+      'Made to fit your teeth',
+      'Designed around bite and tooth shape',
+      'Can protect crowns, veneers, and restorations',
+      'More stable fit for many patients',
+      'Recommended after dental evaluation',
+    ],
+  },
+
+  alternative: {
+    title: 'Store-Bought Guard',
+
+    items: [
+      'Generic shape and fit',
+      'May feel bulky or loose',
+      'Not customized for bite pressure',
+      'May not account for dental restorations',
+      'May be used temporarily but should not replace evaluation',
+    ],
+  },
+
+  cta: {
+    label: 'Ask About a Custom Night Guard',
+    href: '#contact',
+  },
+},
+process: {
+  eyebrow: 'Night Guard Process',
+
+  heading: 'Custom Night Guard Process From Evaluation to Fit',
+
+  subtitle:
+    'A night guard should be planned around the patient’s mouth, not selected randomly. Promenade Dental evaluates tooth wear, bite pressure, jaw symptoms, and restoration needs before creating or recommending a guard.',
+
+  steps: [
+    {
+      title: 'Grinding and Clenching Evaluation',
+
+      body:
+        'Dr. Shriya checks tooth wear, cracks, sensitivity, jaw symptoms, restorations, and bite pressure signs.',
+    },
+
+    {
+      title: 'Night Guard Recommendation',
+
+      body:
+        'You receive a clear explanation of whether a night guard may help protect your teeth and restorations.',
+    },
+
+    {
+      title: 'Impressions or Digital Records',
+
+      body:
+        'Records of the teeth are taken so the night guard can be made to fit your mouth.',
+    },
+
+    {
+      title: 'Guard Fit and Comfort Check',
+
+      body:
+        'The night guard is checked for fit, comfort, and bite contact, with follow-up adjustments if needed.',
+    },
+  ],
+
+  cta: {
+    label: 'Book a Custom Night Guard Visit',
+    href: '#contact',
+  },
+},
+educationSection: {
+  eyebrow: 'Night Guards and Restorative Dentistry',
+
+  heading:
+    'Night Guards for Patients With Crowns, Veneers, Fillings, Bridges, or Implant Restorations',
+
+  body:
+    'Grinding can place heavy force on dental restorations. Crowns, veneers, fillings, bridges, and implant-supported restorations may be more vulnerable to chips, cracks, or wear when bite pressure is not managed.\n\nIf you have existing dental work and signs of grinding, a custom night guard may be recommended to help protect your investment and reduce stress on the teeth and restorations.',
+
+  supportingText:
+    'At Promenade Dental, Dr. Shriya evaluates tooth wear, bite pressure, restoration condition, and grinding patterns to determine whether a night guard may help protect existing dental work.',
+
+  image: '/assets/night-guards.webp',
+
+  imageAlt:
+    'Custom night guard used to protect crowns, veneers, fillings, bridges, and implant restorations from grinding and bite pressure',
+
+  cta: {
+    label: 'Protect Your Dental Work From Grinding',
+    href: '#contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Night Guard Maintenance',
+
+  heading:
+    'Night Guard Care for Clean Appliance Use, Better Fit, and Long-Term Tooth Protection',
+
+  body:
+    'A night guard needs proper cleaning and routine checks. Over time, grinding pressure, dental changes, or appliance wear can affect the guard’s fit and function.',
+
+  cards: [
+    {
+      title: 'Clean the Guard Daily',
+
+      body:
+        'The guard should be cleaned regularly to reduce buildup, odor, and bacteria.',
+    },
+
+    {
+      title: 'Store It Safely',
+
+      body:
+        'Using a proper case helps protect the guard from damage, contamination, or accidental loss.',
+    },
+
+    {
+      title: 'Bring It to Dental Visits',
+
+      body:
+        'The dentist can check the guard for wear, fit, bite marks, and whether adjustments are needed.',
+    },
+
+    {
+      title: 'Replace When Worn or Damaged',
+
+      body:
+        'A cracked, loose, or heavily worn night guard may no longer protect the teeth properly.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading: 'Dentist-Led Night Guard Care for Grinding and Clenching',
+
+  description:
+    'Grinding and clenching can affect the teeth, jaw, restorations, and long-term oral health. Promenade Dental evaluates the cause and signs of wear before recommending a custom night guard.',
+
+  items: [
+    {
+      title: 'Bite and Tooth Wear Evaluation',
+
+      body:
+        'Dr. Shriya evaluates tooth wear, bite pressure, jaw symptoms, cracks, restorations, and sensitivity.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Custom Fit for Better Comfort',
+
+      body:
+        'Custom night guards are designed from dental records for a more precise fit than generic options.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'Protection for Natural Teeth and Restorations',
+
+      body:
+        'Night guard planning considers enamel wear, crowns, veneers, fillings, bridges, and implant restorations.',
+
+      paths: [
+        'M12 34 A10 10 0 1 1 36 34',
+        'M18 18 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Preventive and Restorative Care Connected',
+
+      body:
+        'Promenade Dental can connect night guard care with exams, cleanings, crowns, bonding, cracked tooth evaluation, and restorative treatment.',
+
+      paths: [
+        'M12 14 h24 v20 h-24 z',
+        'M18 20 h12 M24 14 v20',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Custom Night Guards Near Fulton Ranch',
+
+  heading:
+    'Custom Night Guards Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for a night guard dentist, custom night guard, teeth grinding treatment, bruxism evaluation, jaw soreness care, or clenching protection near Chandler 85248, Promenade Dental offers night guard evaluations based on tooth wear, bite pressure, jaw symptoms, and long-term tooth protection.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Family, Preventive, and Restorative Services',
+
+  heading: 'Related Services for Tooth Wear and Grinding Protection',
+
+  intro:
+    'Teeth grinding can connect with preventive care, restorative treatment, cosmetic concerns, and emergency dental problems. Related services may help repair damage or prevent future issues.',
+
+  services: [
+    {
+      title: 'Family & Preventive Dentistry',
+
+      description:
+        'Preventive dental visits help monitor tooth wear, gum health, bite changes, and early signs of grinding damage.',
+
+      href: '/services/family-dentistry',
+    },
+
+    {
+      title: 'Dental Exams & Cleanings',
+
+      description:
+        'Routine exams help identify worn teeth, cracked enamel, jaw symptoms, and damaged restorations.',
+
+      href: '/services/family-dentistry/dental-exams-cleanings',
+    },
+
+    {
+      title: 'Dental Crowns',
+
+      description:
+        'Crowns may protect teeth that are cracked, worn, broken, or weakened by grinding pressure.',
+
+      href: '/services/restorative-dentistry/dental-crowns',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+
+      description:
+        'Grinding and clenching can contribute to chipped, cracked, or fractured teeth that need evaluation.',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading: 'Night Guard Questions About Teeth Grinding and Clenching',
+
+  items: [
+    {
+      q: 'What is a night guard?',
+      a: 'A night guard is a dental appliance worn during sleep to help protect teeth from grinding and clenching pressure.',
+    },
+
+    {
+      q: 'How do I know if I grind my teeth?',
+      a: 'Signs may include worn teeth, chipped enamel, jaw soreness, morning headaches, tooth sensitivity, cracked teeth, or broken dental restorations.',
+    },
+
+    {
+      q: 'Can a night guard stop teeth grinding?',
+      a: 'A night guard does not necessarily stop the habit, but it can help protect the teeth and restorations from direct grinding contact.',
+    },
+
+    {
+      q: 'Is a custom night guard better than a store-bought guard?',
+      a: 'A custom night guard is made to fit your teeth and bite more accurately. Store-bought guards are generic and may not fit comfortably or account for dental restorations.',
+    },
+
+    {
+      q: 'Can grinding cause cracked teeth?',
+      a: 'Yes. Grinding and clenching can place heavy pressure on teeth and may contribute to cracks, chips, tooth wear, and broken restorations.',
+    },
+
+    {
+      q: 'Can a night guard help with jaw pain?',
+      a: 'A night guard may help reduce the effects of nighttime clenching for some patients, but jaw pain can have different causes and should be evaluated.',
+    },
+
+    {
+      q: 'Do I need a night guard if I have crowns or veneers?',
+      a: 'If you grind or clench, a night guard may be recommended to help protect crowns, veneers, fillings, bridges, or implant restorations from excess bite pressure.',
+    },
+
+    {
+      q: 'How long does a night guard last?',
+      a: 'Night guard lifespan varies based on grinding intensity, cleaning habits, fit, and material. A worn or damaged guard should be checked.',
+    },
+
+    {
+      q: 'Should I bring my night guard to dental visits?',
+      a: 'Yes. Bringing your night guard allows the dentist to check its fit, wear pattern, and whether adjustments or replacement are needed.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248, in Fulton Ranch.',
+    },
+  ],
+},
+cta: {
+  title: 'Schedule a Night Guard Visit',
+
+highlight: 'for Tooth Protection',
+
+  subtitle:
+    'Promenade Dental helps patients protect teeth from grinding and clenching with custom night guard evaluations focused on tooth wear, bite pressure, cracked teeth, jaw symptoms, and long-term oral health.',
+
+  buttonText: 'Book a Night Guard Consultation',
+
+  buttonHref: '/contact-us',
 
   secondaryButtonText: 'Call (480) 802-8188',
 
@@ -7756,9 +12157,12 @@ highlight: 'for Stability and Comfort',
 },
 }
 
+
+
+
 ]
 
 
-export function getServiceBySlug(slug: string): ServiceData | undefined {
+export function getServiceBySlug(slug: string): Sub_ServiceData | undefined {
   return SUB_SERVICES.find((s) => s.slug === slug);
 }

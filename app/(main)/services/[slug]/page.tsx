@@ -5,16 +5,6 @@ import ServiceHero from '@/app/components/services/subServices/ServiceHero';
 import ServiceOverview from '@/app/components/services/subServices/ServiceOverview';
 import ServiceProcess from '@/app/components/services/subServices/ServiceProcess';
 import ServiceBenefits from '@/app/components/services/subServices/ServiceBenefits';
-import ServiceGallery from '@/app/components/services/subServices/ServiceGallery';
-import ServiceFAQ from '@/app/components/services/subServices/ServiceFAQ';
-import ServiceCTA from '@/app/components/services/subServices/ServiceCTA';
-import Navbar from '@/app/components/home/Navbar';
-import Footer from '@/app/components/home/Footer';
-import PracticeGallery from '@/app/components/home/Gallery';
-import ServiceStats from '@/app/components/services/subServices/ServiceStats';
-import ServiceTestimonials from '@/app/components/services/subServices/ServiceTestimonials';
-import ServiceComparison from '@/app/components/services/subServices/ServiceComparison';
-import ServiceDoctor from '@/app/components/services/subServices/ServiceDoctor';
 import FamilyDentalServices from '@/app/components/services/subServices/FamilyDentalServices';
 import EducationSection from '@/app/components/services/subServices/EducationSection';
 import PatientTypesSection from '@/app/components/services/subServices/PatientTypesSection';
@@ -30,6 +20,8 @@ import SolutionsGridSection from '@/app/components/services/subServices/Solution
 import ServiceFeatures from '@/app/components/services/subServices/ServiceFeatures';
 import SuitabilitySection from '@/app/components/services/subServices/SuitabilitySection';
 import MaintenanceGridSection from '@/app/components/services/subServices/MaintenanceGridSection';
+import Navbar from '@/app/components/home3/Navbar';
+import Footer from '@/app/components/home3/Footer';
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));

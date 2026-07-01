@@ -115,7 +115,8 @@ function CallButton() {
 
 function GhostButton() {
   return (
-    <button
+    <a
+      href="/contact-us"
       className="
         bg-coral
         hover:bg-ivory
@@ -135,6 +136,6 @@ function GhostButton() {
       "
     >
       Book an Appointment
-    </button>
+    </a>
   );
 }

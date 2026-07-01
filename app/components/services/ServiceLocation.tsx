@@ -7,7 +7,7 @@ export default function LocationMap() {
 
   return (
     <section className="py-section">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div
           ref={ref as React.RefObject<HTMLDivElement>}
           className={[

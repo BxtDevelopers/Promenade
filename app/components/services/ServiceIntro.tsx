@@ -18,7 +18,7 @@ const fadeUp = (delay = 0) => ({
 export default function ServiceIntro() {
   return (
     <section className="py-section border-t border-line">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="=lg:px-site max-w-[90%] mx-auto">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[clamp(48px,6vw,96px)] items-center">
 

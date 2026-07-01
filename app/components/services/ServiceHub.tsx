@@ -4,6 +4,7 @@ interface ServiceCard {
   title: string;
   description: string;
   bestFor: string;
+  href:string;
 }
 
 interface ServiceGroup {
@@ -23,27 +24,31 @@ const SERVICE_GROUPS: ServiceGroup[] = [
     heading: 'Healthy teeth start with showing up.',
     body: 'Preventive care keeps your teeth, gums, and mouth healthy before problems become serious — for children, adults, and seniors alike. We help families build healthy dental habits and monitor changes over time.',
     ctaLabel: 'Explore Family Dentistry',
-    ctaHref: '/services/general-family-dentistry',
+    ctaHref: '/services/family-dentistry',
     cards: [
       {
         title: 'Dental Exams & Cleanings',
         description: 'Routine exams and professional cleanings detect cavities, gum disease, enamel wear, and early signs of oral health problems. Cleanings remove plaque and tartar that brushing cannot reach.',
         bestFor: 'Routine checkups · Plaque buildup · Preventive care · New patient evaluation',
+        href: '/services/family-dentistry/dental-exams-cleanings',
       },
       {
         title: "Children's Dentistry",
         description: 'Early care helps young patients feel comfortable while protecting growing teeth and gums. We monitor development, prevent cavities, and build positive dental habits.',
         bestFor: "Kids' dental visits · Family care · Cavity prevention · Dental education",
+        href: '/services/family-dentistry/childrens-dentistry',
       },
       {
         title: 'Gum Disease Treatment',
         description: 'Gum disease can cause bleeding gums, bad breath, recession, and tooth loss if left untreated. Treatment may include deep cleaning, periodontal maintenance, and home care guidance.',
         bestFor: 'Bleeding gums · Gum infection · Periodontal disease · Bad breath',
+        href: '/services/family-dentistry/gum-disease-treatment',
       },
       {
         title: 'Night Guards for Grinding',
         description: 'A custom night guard protects teeth from grinding and clenching during sleep — preventing worn enamel, jaw soreness, headaches, and cracked teeth.',
         bestFor: 'Bruxism · Jaw tension · Worn teeth · Cracked tooth prevention',
+        href: '/services/family-dentistry/night-guards-teeth-grinding',
       },
     ],
   },
@@ -58,22 +63,25 @@ const SERVICE_GROUPS: ServiceGroup[] = [
         title: 'Teeth Whitening',
         description: 'Professional whitening brightens stains from coffee, tea, wine, and aging. We offer ZOOM! in-office whitening for patients who want dramatic results under expert supervision.',
         bestFor: 'Yellow teeth · Stained teeth · Dull smile · ZOOM! whitening',
+        href: '/services/cosmetic-dentistry/teeth-whitening',
       },
       {
         title: 'Porcelain Veneers',
         description: 'Thin custom porcelain restorations placed on the front surface of teeth to improve color, shape, and spacing — for chipped, stained, small, or uneven teeth.',
         bestFor: 'Smile enhancement · Chipped teeth · Gaps · Permanent cosmetic improvement',
+        href: '/services/cosmetic-dentistry/veneers',
       },
       {
         title: 'Cosmetic Dental Bonding',
         description: 'Tooth-colored material repairs small chips, closes minor gaps, and reshapes uneven edges. A conservative option for smaller cosmetic changes with minimal prep.',
         bestFor: 'Chipped tooth · Small gaps · Uneven edges · Minor cosmetic fixes',
+        href: '/services/cosmetic-dentistry/dental-bonding',
       },
-      {
-        title: 'Smile Makeover',
-        description: 'A smile makeover combines multiple cosmetic or restorative treatments into one planned result — whitening, veneers, bonding, crowns, or tooth replacement.',
-        bestFor: 'Multiple cosmetic concerns · Full smile improvement · Worn or uneven smile',
-      },
+      // {
+      //   title: 'Smile Makeover',
+      //   description: 'A smile makeover combines multiple cosmetic or restorative treatments into one planned result — whitening, veneers, bonding, crowns, or tooth replacement.',
+      //   bestFor: 'Multiple cosmetic concerns · Full smile improvement · Worn or uneven smile',
+      // },
     ],
   },
   {
@@ -81,37 +89,43 @@ const SERVICE_GROUPS: ServiceGroup[] = [
     heading: 'Rebuild strength. Protect what`s left.',
     body: 'Restorative dentistry repairs teeth that are damaged, decayed, infected, or missing. The goal is to rebuild strength, protect natural teeth, restore chewing comfort, and prevent future complications.',
     ctaLabel: 'Explore Restorative Dentistry',
-    ctaHref: '/services/crowns-bridges',
+    ctaHref: '/services/restorative-dentistry',
     cards: [
       {
         title: 'Tooth-Colored Fillings',
         description: 'Fillings repair cavities using material matched to your natural tooth color — stopping decay from spreading and restoring normal tooth shape.',
         bestFor: 'Cavities · Small decay · Replacing old fillings · Minor tooth repair',
+        href: '/services/restorative-dentistry/tooth-colored-fillings',
       },
       {
         title: 'Dental Crowns',
         description: 'A crown covers and protects a weakened or damaged tooth — recommended for cracked, broken, or heavily filled teeth, and after root canal therapy.',
         bestFor: 'Cracked teeth · Broken teeth · Large fillings · Post-root canal restoration',
+        href: '/services/restorative-dentistry/dental-crowns',
       },
       {
         title: 'Dental Bridges',
         description: 'A bridge replaces one or more missing teeth by anchoring an artificial tooth to neighboring teeth or implants — restoring chewing and preventing shifting.',
         bestFor: 'Missing teeth · Fixed tooth replacement · Alternative to removable dentures',
+        href: '/services/restorative-dentistry/dental-bridges',
       },
       {
         title: 'Root Canal Therapy',
         description: 'Root canal therapy treats infection inside a tooth — removing infected tissue, relieving pain, and preserving the natural tooth whenever possible.',
         bestFor: 'Severe toothache · Infected tooth · Deep decay · Dental abscess',
+        href: '/services/restorative-dentistry/root-canals',
       },
       {
         title: 'Tooth Extractions',
         description: 'Extraction is recommended when a tooth cannot be saved due to severe decay, fracture, or infection. Dr. Shriya discusses replacement options when appropriate.',
         bestFor: 'Severely damaged teeth · Non-restorable teeth · Infection · Painful teeth',
+        href: '/services/restorative-dentistry/tooth-extractions',
       },
       {
         title: 'Dentures & Partial Dentures',
         description: 'Removable appliances that replace multiple missing teeth — improving chewing, speech, facial support, and smile appearance.',
         bestFor: 'Several missing teeth · Full tooth loss · Removable tooth replacement',
+        href: '/services/restorative-dentistry/dentures',
       },
     ],
   },
@@ -126,16 +140,19 @@ const SERVICE_GROUPS: ServiceGroup[] = [
         title: 'Single Tooth Implant',
         description: 'Replaces one missing tooth without relying on neighboring teeth for support — a fixed, natural-looking replacement that stands entirely on its own.',
         bestFor: 'One missing tooth · Fixed replacement · Avoiding a traditional bridge',
+        href: '/services/dental-implants/single-tooth-implant',
       },
       {
         title: 'Implant-Supported Bridge',
         description: 'Replaces multiple missing teeth using implants as anchors — reducing the need to prepare healthy neighboring teeth while restoring full function.',
         bestFor: 'Several missing teeth · Stronger bridge support · Fixed replacement option',
+        href: '/services/dental-implants/implant-supported-bridge',
       },
       {
         title: 'Implant-Supported Dentures',
         description: 'More stable than traditional removable dentures — improving chewing comfort and reducing movement while speaking or eating.',
         bestFor: 'Loose dentures · Multiple missing teeth · Full-arch tooth replacement',
+        href: '/services/dental-implants/implant-supported-dentures',
       },
     ],
   },
@@ -143,23 +160,26 @@ const SERVICE_GROUPS: ServiceGroup[] = [
     eyebrow: 'Emergency Dentistry',
     heading: 'Urgent care when you need it most.',
     body: 'Tooth pain, swelling, broken teeth, and knocked-out teeth should not be ignored — they may involve infection, trauma, or nerve damage. Call Promenade Dental and our team will guide you on the next step.',
-    ctaLabel: 'Call for Emergency Care',
-    ctaHref: 'tel:+14808028188',
+    ctaLabel: 'Explore Emergency Dentistry',
+    ctaHref: '/services/emergency-dentistry',
     cards: [
       {
         title: 'Toothache Relief',
         description: 'Tooth pain may be caused by cavities, infection, gum disease, cracked teeth, or bite pressure. The right treatment depends on the cause — an exam is always the first step.',
         bestFor: 'Severe toothache · Throbbing pain · Sensitivity · Dental infection',
+        href: '/services/emergency-dentistry/toothache-relief',
       },
       {
         title: 'Broken or Chipped Tooth',
         description: 'A broken, chipped, or cracked tooth should be evaluated to determine whether bonding, a filling, a crown, or root canal therapy is the right path.',
         bestFor: 'Chipped tooth · Broken tooth · Cracked tooth · Damaged restoration',
+        href: '/services/emergency-dentistry/broken-chipped-tooth',
       },
       {
         title: 'Knocked-Out Tooth',
         description: 'A knocked-out permanent tooth is time-sensitive. Call us immediately — in some cases, fast action may improve the chances of saving the tooth.',
         bestFor: 'Dental trauma · Knocked-out tooth · Sports injury · Accident-related tooth loss',
+        href: '/services/emergency-dentistry/knocked-out-tooth',
       },
     ],
   },
@@ -191,7 +211,8 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
   const [ref, inView] = useScrollReveal();
 
   return (
-    <div
+    <Link href={card.href}
+      //@ts-ignore  
       ref={ref as React.RefObject<HTMLDivElement>}
       className={[
         'group relative flex flex-col rounded-[20px] border p-6 lg:p-7 transition-colors duration-500',
@@ -234,7 +255,7 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
           {card.bestFor}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -250,7 +271,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
   return (
     <div className={`py-16 md:py-20 lg:py-24 border-t ${isAlternate ? 'border-bg/10' : 'border-white/[0.06]'} first:border-t-0 ${bgClass}`}>
       {/* Inner container to keep content aligned */}
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.65fr] gap-12 lg:gap-[clamp(48px,6vw,96px)] items-start">
 
           {/* Left — sticky copy */}
@@ -324,7 +345,7 @@ function SectionHeader() {
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="pb-14 md:pb-16 px-site max-w-[90%] mx-auto"
+      className="pb-14 md:pb-16 lg:px-site max-w-[90%] mx-auto"
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? 'none' : 'translateY(24px)',

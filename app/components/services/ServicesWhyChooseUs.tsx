@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
 
   return (
     <section className="pb-10">
-      <div className="px-site max-w-[90%] mx-auto">
+      <div className="lg:px-site max-w-[90%] mx-auto">
 
         {/* Lead */}
         <p

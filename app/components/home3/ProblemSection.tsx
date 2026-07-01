@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Activity, Zap, Droplet, Crown, Sparkles, Moon } from 'lucide-react'
+import { Activity, Zap, Droplet, Crown, Sparkles, Moon, Smile } from 'lucide-react'
 import { LiaToothSolid } from 'react-icons/lia'
 
 const BASE = 'https://promenade-dental.vercel.app'
@@ -13,47 +13,47 @@ interface Problem {
 
 const problems: Problem[] = [
   {
-    href: `${BASE}/services/emergency-dentistry`,
+    href: `/services/emergency-dentistry`,
     icon: <Activity className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Tooth pain',
     desc: 'Ache, throbbing, or sensitivity',
   },
   {
-    href: `${BASE}/services/restorative-dentistry`,
+    href: `/services/restorative-dentistry`,
     icon: <Zap className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Chipped or broken tooth',
     desc: 'Cracks, breaks, worn edges',
   },
   {
-    href: `${BASE}/services/restorative-dentistry`,
+    href: `/services/restorative-dentistry`,
     icon: <LiaToothSolid  className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Missing tooth',
     desc: 'Gaps or a failing tooth',
   },
   {
-    href: `${BASE}/services/family-dentistry`,
+    href: `/services/family-dentistry`,
     icon: <Droplet className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Bleeding gums',
     desc: 'Tenderness or swelling',
   },
   {
-    href: `${BASE}/services/restorative-dentistry`,
+    href: `/services/restorative-dentistry`,
     icon: <Crown className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Lost filling or crown',
     desc: 'Something came loose',
   },
   {
-    href: `${BASE}/services/cosmetic-dentistry`,
+    href: `/services/cosmetic-dentistry`,
     icon: <Sparkles className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Stained or dull smile',
     desc: 'Whitening & cosmetic work',
   },
   {
-    href: `${BASE}/services/sleep-apnea`,
-    icon: <Moon className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
-    title: 'Snoring or poor sleep',
-    desc: 'Sleep apnea & oral appliances',
-  },
+  href: `/services/dental-implants`,
+  icon: <Smile className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+  title: 'Missing teeth',
+  desc: 'Dental implants & tooth replacement',
+},
 ]
 
 export default function ProblemsSection() {

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const BASE = 'https://promenade-dental.vercel.app'
@@ -12,9 +13,16 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
-            <span className="font-serif font-normal text-[18px] tracking-[0.1em] uppercase text-ivory block mb-4">
-              Promenade<span className="font-medium text-coral">·</span>Dental
-            </span>
+            <Link href="/home03" className="flex items-center no-underline">
+              <Image
+                src="/assets/PDlogo_red3.webp"
+                alt="Promenade Dental"
+                width={220}
+                height={60}
+                priority
+                className="w-48 md:w-72 h-auto mb-2"
+              />
+            </Link>
             <p className="text-[14px] font-light leading-[1.65] text-[color:var(--muted)]">
               Modern family dentistry designed around comfort, transparency, and long-term oral health — for every stage of life.
             </p>
@@ -25,11 +33,11 @@ export default function Footer() {
             <h5 className="footer-col-heading">Treatments</h5>
             <ul className="list-none space-y-[10px]">
               {[
-                [`${BASE}/services/family-dentistry`,      'Family & Preventive'],
-                [`${BASE}/services/cosmetic-dentistry`,    'Cosmetic Dentistry'],
-                [`${BASE}/services/restorative-dentistry`, 'Restorative Dentistry'],
-                [`${BASE}/services/sleep-apnea`,           'Sleep Apnea'],
-                [`${BASE}/services/emergency-dentistry`,   'Emergency Care'],
+                [`/services/family-dentistry`,      'Family & Preventive'],
+                [`/services/cosmetic-dentistry`,    'Cosmetic Dentistry'],
+                [`/services/restorative-dentistry`, 'Restorative Dentistry'],
+                [`/services/dental-implants`,           'Dental Implants'],
+                [`/services/emergency-dentistry`,   'Emergency Care'],
               ].map(([href, label]) => (
                 <li key={label}>
                   <Link 
@@ -48,11 +56,11 @@ export default function Footer() {
             <h5 className="footer-col-heading">Practice</h5>
             <ul className="list-none space-y-[10px]">
               {[
-                [`${BASE}/about-us`,    'About Us'],
-                [`${BASE}/about-us`,    'Meet Dr. Shriya'],
-                [`${BASE}/contact-us`,  'New Patients'],
-                ['#insurance',          'Insurance'],
-                [`${BASE}/contact-us`,  'Contact'],
+                [`/about-us`,    'About Us'],
+                [`/about-us`,    'Meet Dr. Shriya'],
+                [`/contact-us`,  'New Patients'],
+                ['/insurance',          'Insurance'],
+                [`/contact-us`,  'Contact'],
               ].map(([href, label]) => (
                 <li key={label}>
                   <Link 
