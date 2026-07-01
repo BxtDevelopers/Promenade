@@ -128,12 +128,12 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           </Link>
         </p>
 
-        <p
+        {/* <p
           className="text-[10.5px] font-light leading-[1.5] mt-[18px]"
           style={{ color: 'var(--muted-2)' }}
         >
           Confirm what's included and AZ advertising rules before launch.
-        </p>
+        </p> */}
       </div>
     </div>
   )

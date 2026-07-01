@@ -93,7 +93,7 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-bg overflow-hidden py-section"
+      className="relative bg-bg overflow-hidden py-10 lg:py-section"
     >
       {/* Radial coral glow */}
       <div className="absolute inset-x-0 top-0 h-[420px] pointer-events-none bg-[radial-gradient(60%_40%_at_50%_0%,rgba(232,154,114,0.09),transparent_70%)]" />
@@ -109,7 +109,7 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
               {data.heading}
             </h2>
           </div>
-          <p className="text-muted font-sans font-light text-[15px] md:text-[16px] max-w-[50%] leading-[1.7]">
+          <p className="text-muted font-sans font-light text-[15px] md:text-[16px] lg:max-w-[50%] leading-[1.7]">
             {data.intro}
           </p>
         </div>
