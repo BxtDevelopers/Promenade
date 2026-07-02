@@ -115,7 +115,7 @@ export default function Navbar() {
                             <Link 
                               key={sub.slug} 
                               href={`/services/${category.slug}/${sub.slug}`} 
-                              className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-ivory/92 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-ivory hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]"
+                              className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]"
                             >
                               {sub.name}
                             </Link>
@@ -171,7 +171,7 @@ export default function Navbar() {
                     ['/referrals','Refer a Friend'],
                     [`/contact-us`, 'New Patient Forms'],
                   ].map(([href, label]) => (
-                    <Link key={label} href={href} className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-ivory/92 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-ivory hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]">{label}</Link>
+                    <Link key={label} href={href} className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]">{label}</Link>
                   ))}
                 </div>
               )}
@@ -215,7 +215,7 @@ export default function Navbar() {
           <div className="xl:hidden absolute top-[80px] left-0 right-0 max-h-[calc(100vh-90px)] overflow-y-auto bg-[#0B1C2C] border-b border-[rgba(244,236,221,0.14)] px-6 py-4 shadow-2xl z-40 flex flex-col gap-2">
             
             {/* Home */}
-            <Link href="/home03" onClick={() => setMobileMenuOpen(false)} className="text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">
+            <Link href="/home03" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">
               Home
             </Link>
 
@@ -223,7 +223,7 @@ export default function Navbar() {
             <div>
               <Link href='/about-us02'
                 onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                className="flex w-full items-center justify-between text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
+                className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
                 About
               </Link>
@@ -233,7 +233,7 @@ export default function Navbar() {
             <div>
               <button 
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex w-full items-center justify-between text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
+                className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
                 Services
                 <ChevronDown className={`w-4 h-4 text-coral transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
@@ -247,7 +247,7 @@ export default function Navbar() {
                       </Link>
                       <div className="flex flex-col gap-3 pl-3 mt-1">
                         {SUB_SERVICES.filter(sub => sub.serviceSlug === category.slug).map(sub => (
-                          <Link key={sub.slug} href={`/services/${category.slug}/${sub.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-ivory/80 text-[13px] no-underline hover:text-ivory">
+                          <Link key={sub.slug} href={`/services/${category.slug}/${sub.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-white/80 text-[13px] no-underline hover:text-white">
                             {sub.name}
                           </Link>
                         ))}
@@ -261,14 +261,14 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href={`/warranty`} onClick={() => setMobileMenuOpen(false)} className="text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Warranty</Link>
-            <Link href="/home03#reviews" onClick={() => setMobileMenuOpen(false)} className="text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Reviews</Link>
+            <Link href={`/warranty`} onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Warranty</Link>
+            <Link href="/home03#reviews" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Reviews</Link>
 
             {/* Mobile New Patients Dropdown */}
             <div>
               <button 
                 onClick={() => setMobilePatientsOpen(!mobilePatientsOpen)}
-                className="flex w-full items-center justify-between text-ivory uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
+                className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
                 New Patients
                 <ChevronDown className={`w-4 h-4 text-coral transition-transform ${mobilePatientsOpen ? 'rotate-180' : ''}`} />
@@ -282,7 +282,7 @@ export default function Navbar() {
                     ['/referrals','Refer a Friend'],
                     [`/contact-us`, 'New Patient Forms'],
                   ].map(([href, label]) => (
-                    <Link key={label} href={href} onClick={() => setMobileMenuOpen(false)} className="text-ivory/80 text-[13px] no-underline hover:text-ivory">
+                    <Link key={label} href={href} onClick={() => setMobileMenuOpen(false)} className="text-white/80 text-[13px] no-underline hover:text-white">
                       {label}
                     </Link>
                   ))}

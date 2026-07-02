@@ -13,7 +13,7 @@ export default function MobileBar() {
       >
         <Link
           href="tel:+14808028188"
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ivory text-[10.5px] tracking-[0.1em] uppercase font-medium"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-white text-[10.5px] tracking-[0.1em] uppercase font-medium"
         >
           <Phone className="w-[19px] h-[19px]" strokeWidth={1.7} />
           Call
@@ -29,7 +29,7 @@ export default function MobileBar() {
 
         <Link
           href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ivory text-[10.5px] tracking-[0.1em] uppercase font-medium"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-white text-[10.5px] tracking-[0.1em] uppercase font-medium"
         >
           <MapPin className="w-[19px] h-[19px]" strokeWidth={1.7} />
           Directions

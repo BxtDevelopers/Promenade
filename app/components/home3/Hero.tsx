@@ -22,7 +22,7 @@ export default function Hero() {
       const p = document.createElementNS('http://www.w3.org/2000/svg', 'path')
       p.setAttribute('d', `M${CX - r} ${CY} A${r} ${r} 0 0 1 ${CX + r} ${CY}`)
       p.setAttribute('fill', 'none')
-      p.setAttribute('stroke', (a === 4 || a === 9 || a === 13) ? 'rgba(232,154,114,.5)' : 'rgba(244,236,221,.14)')
+      p.setAttribute('stroke', (a === 4 || a === 9 || a === 13) ? 'rgba(232,154,114,.3)' : 'rgba(244,236,221,.5)')
       p.setAttribute('stroke-width', '1')
       p.setAttribute('stroke-linecap', 'round')
       p.style.strokeDasharray = '1'
@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Gradient overlay */}
-      <div
+      {/* <div
         className="absolute inset-0 z-[1]"
         style={{
           background: `
@@ -71,7 +71,7 @@ export default function Hero() {
             radial-gradient(70% 60% at 72% 28%,rgba(232,154,114,.12),transparent 60%)
           `,
         }}
-      />
+      /> */}
 
       {/* Content */}
       <div
@@ -121,9 +121,8 @@ export default function Hero() {
           {['Accepting new patients', 'Flexible scheduling'].map(text => (
             <span
               key={text}
-              className="inline-flex items-center gap-2 text-[12.5px] tracking-[0.03em] text-ivory rounded-full px-4 py-[9px]"
+              className="inline-flex items-center gap-2 text-[12.5px] tracking-[0.03em] text-ivory rounded-full px-4 py-[9px] border border-coral"
               style={{
-                border: '1px solid rgba(244,236,221,0.14)',
                 background: 'rgba(244,236,221,0.04)',
               }}
             >

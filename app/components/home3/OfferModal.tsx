@@ -52,8 +52,8 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute right-[15px] top-[13px] bg-transparent border-none text-[24px] leading-none cursor-pointer transition-colors duration-200 hover:text-ivory"
-          style={{ color: 'var(--muted)' }}
+          className="absolute right-[15px] top-[13px] bg-transparent border-none text-[24px] leading-none cursor-pointer transition-colors duration-200 text-muted hover:text-white"
+
         >
           ×
         </button>
@@ -63,7 +63,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
         </div>
 
         <h3
-          className="font-serif font-light leading-[1.12] text-ivory mt-3"
+          className="font-serif font-light leading-[1.12] text-white mt-3"
           style={{ fontSize: '31px' }}
         >
           $159{' '}
@@ -71,16 +71,14 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
         </h3>
 
         <p
-          className="text-[14px] leading-[1.55] mt-[14px] mb-[22px]"
-          style={{ color: 'var(--ivory-2)' }}
+          className="text-[14px] leading-[1.55] mt-[14px] mb-[22px] text-white"
         >
           No insurance? No problem. This makes it easy to take that first step.
         </p>
 
         {submitted ? (
           <p
-            className="text-[14.5px] leading-[1.5] py-[10px]"
-            style={{ color: 'var(--ivory-2)' }}
+            className="text-[14.5px] leading-[1.5] py-[10px] text-white"
           >
             Thank you — keep an eye on your inbox. (Connect email delivery to send the code.)
           </p>
@@ -98,8 +96,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
               ].map(item => (
                 <li
                   key={item}
-                  className="relative pl-[26px] py-[6px] text-[13.5px] leading-[1.45]"
-                  style={{ color: 'var(--ivory-2)' }}
+                  className="relative pl-[26px] py-[6px] text-[13.5px] leading-[1.45] text-white"
                 >
                   <span
                     className="absolute left-0 top-[6px] text-coral font-bold"
@@ -121,7 +118,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           </>
         )}
 
-        <p className="mt-4 text-[13px]" style={{ color: 'var(--muted)' }}>
+        <p className="mt-4 text-[13px] text-muted">
           or call{' '}
           <Link href="tel:+14808028188" className="text-coral no-underline hover:underline">
             (480) 802-8188

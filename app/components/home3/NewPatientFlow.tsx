@@ -1,5 +1,7 @@
 // 'use client';
 
+import { ChevronDown, ChevronRight } from "lucide-react"
+
 // import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
 // const STEPS = [
@@ -162,29 +164,43 @@ export default function NewPatientFlow() {
 
         {/* Steps */}
         <div className="grid mt-[50px] gap-[clamp(28px,4vw,56px)] grid-cols-1 md:grid-cols-3">
-          {steps.map((s, i) => (
-            <div 
-              key={s.num} 
-              className="rv relative" 
-              style={{ transitionDelay: `${i * 0.08}s` }}
-            >
-              {/* Arrow connector between steps */}
-              {i < steps.length - 1 && (
-                <div className="hidden md:block absolute top-[6px] w-[13px] h-[13px] right-[-28px] border-t-[1.5px] border-r-[1.5px] border-t-coral border-r-coral rotate-45 opacity-50" />
-              )}
-
-              <span className="font-serif text-[14px] tracking-[0.14em] text-coral">
-                {s.num}
-              </span>
-              <h3 className="font-serif font-normal text-ivory mt-[14px] mb-[14px] text-[clamp(22px,2.5vw,30px)]">
-                {s.title}
-              </h3>
-              <p className="text-[15px] font-light leading-[1.72] text-muted max-w-[32ch]">
-                {s.desc}
-              </p>
+      {steps.map((s, i) => (
+        <div 
+          key={s.num} 
+          className="rv relative flex flex-col" 
+          style={{ transitionDelay: `${i * 0.08}s` }}
+        >
+          {/* DESKTOP: Arrow connector pointing right (Centered perfectly in the fluid gap) */}
+          {i < steps.length - 1 && (
+            <div className="hidden md:flex absolute top-[50%] -right-[calc(clamp(28px,4vw,6px)/2)] translate-x-1/2 items-center justify-center">
+              <ChevronRight className="w-10 h-10 text-coral/80" strokeWidth={1.5} />
             </div>
-          ))}
+          )}
+
+          {/* Step Number */}
+          <span className="font-serif text-xl tracking-[0.14em] text-coral">
+            {s.num}
+          </span>
+          
+          {/* Step Title */}
+          <h3 className="font-serif font-normal text-ivory mt-[14px] mb-[14px] text-[clamp(22px,2.5vw,30px)]">
+            {s.title}
+          </h3>
+          
+          {/* Step Description */}
+          <p className="text-[15px] font-light leading-[1.72] text-muted max-w-[32ch]">
+            {s.desc}
+          </p>
+
+          {/* MOBILE: Arrow connector pointing down (Only shows on mobile between stacked steps) */}
+          {i < steps.length - 1 && (
+            <div className="md:hidden flex mt-8 mb-[-16px] w-full items-center">
+              <ChevronDown className="w-8 h-8 text-coral/80" strokeWidth={1.5} />
+            </div>
+          )}
         </div>
+      ))}
+    </div>
       </div>
     </section>
   )

@@ -77,7 +77,6 @@ function CountUp({ to, dec = 0, suffix = '', text }: Omit<Stat, 'label'>) {
 export default function StatsBand() {
   return (
     <section
-      className="border-b border-[rgba(244,236,221,0.14)] bg-[linear-gradient(180deg,rgba(232,154,114,0.04),transparent)]"
     >
       <div
         className="grid mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)] py-[clamp(40px,5vw,60px)] gap-[24px] grid-cols-2 sm:grid-cols-2 lg:grid-cols-4"
@@ -96,7 +95,7 @@ export default function StatsBand() {
             )}
             <CountUp to={s.to} dec={s.dec} suffix={s.suffix} text={s.text} />
             <span
-              className="block mt-3 text-[11.5px] tracking-[0.15em] uppercase font-medium text-ivory-2"
+              className="block mt-3 text-[11.5px] tracking-[0.15em] uppercase font-medium text-ivory"
             >
               {s.label}
             </span>

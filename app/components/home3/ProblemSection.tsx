@@ -13,37 +13,37 @@ interface Problem {
 
 const problems: Problem[] = [
   {
-    href: `/services/emergency-dentistry`,
+    href: `/services/emergency-dentistry/toothache-relief`,
     icon: <Activity className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Tooth pain',
     desc: 'Ache, throbbing, or sensitivity',
   },
   {
-    href: `/services/restorative-dentistry`,
+    href: `/services/emergency-dentistry/broken-chipped-tooth`,
     icon: <Zap className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Chipped or broken tooth',
     desc: 'Cracks, breaks, worn edges',
   },
   {
-    href: `/services/restorative-dentistry`,
+    href: `/services/dental-implants`,
     icon: <LiaToothSolid  className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Missing tooth',
     desc: 'Gaps or a failing tooth',
   },
   {
-    href: `/services/family-dentistry`,
+    href: `/services/family-dentistry/gum-disease-treatment`,
     icon: <Droplet className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Bleeding gums',
     desc: 'Tenderness or swelling',
   },
   {
-    href: `/services/restorative-dentistry`,
+    href: `/services/restorative-dentistry/dental-crowns`,
     icon: <Crown className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Lost filling or crown',
     desc: 'Something came loose',
   },
   {
-    href: `/services/cosmetic-dentistry`,
+    href: `/services/cosmetic-dentistry/teeth-whitening`,
     icon: <Sparkles className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Stained or dull smile',
     desc: 'Whitening & cosmetic work',
@@ -81,7 +81,7 @@ export default function ProblemsSection() {
             <Link
               key={p.title}
               href={p.href}
-              className="rv flex items-center gap-4 no-underline rounded-[18px] transition-all duration-[350ms] hover:-translate-y-1 group flex-[1_1_260px] p-[20px_24px] border border-[rgba(244,236,221,0.14)] bg-[linear-gradient(180deg,rgba(244,236,221,0.02),transparent)] hover:border-[rgba(232,154,114,0.45)] hover:bg-[linear-gradient(180deg,rgba(232,154,114,0.06),transparent)]"
+              className="rv flex items-center gap-4 no-underline rounded-[18px] transition-all duration-[350ms] hover:-translate-y-1 group flex-[1_1_260px] p-[20px_24px] border border-ivory/30 bg-[linear-gradient(180deg,rgba(244,236,221,0.02),transparent)] hover:border-[rgba(232,154,114,0.45)] hover:bg-[linear-gradient(180deg,rgba(232,154,114,0.06),transparent)]"
               style={{
                 transitionDelay: `${(i % 3) * 0.08}s`,
               }}

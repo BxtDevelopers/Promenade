@@ -34,7 +34,7 @@ export default function TestimonialsMarquee() {
           A reputation to carry forward
         </span>
         <h2
-          className="font-serif font-light leading-[1.04] tracking-[-0.02em] mt-4 text-ivory max-w-[22ch] text-[clamp(30px,4.6vw,58px)]"
+          className="font-serif font-light leading-[1.04] tracking-[-0.02em] mt-4 text-white max-w-[22ch] text-[clamp(30px,4.6vw,58px)]"
         >
           Patients don&apos;t usually rave about the dentist.{' '}
           <em className="italic text-coral">Ours do.</em>

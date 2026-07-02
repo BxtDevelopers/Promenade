@@ -42,7 +42,7 @@ export default function WhyUs() {
           {reasons.map((r, i) => (
             <div
               key={r.title}
-              className="rv pt-[22px] border-t border-[rgba(244,236,221,0.14)]"
+              className="rv pt-[22px] border-t border-coral/50"
               style={{ transitionDelay: `${(i % 3) * 0.08}s` }}
             >
               {/* Check icon in circle */}

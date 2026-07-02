@@ -14,13 +14,13 @@ export default function DoctorsSection() {
             A new chapter
           </span>
           <h2
-            className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ivory mt-2 text-[clamp(30px,4vw,52px)]"
+            className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-white mt-2 text-[clamp(30px,4vw,52px)]"
           >
             The same trusted practice,{' '}
             <em className="italic text-coral">in caring new hands</em>.
           </h2>
           <p
-            className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted max-w-[42ch]"
+            className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted lg:max-w-[80%]"
           >
             After 25 years looking after Chandler families, Dr. James Wei is handing Promenade Dental
             to Dr. Shriya Sarin — the same gentle, unhurried care and the same familiar office, now
@@ -77,7 +77,7 @@ export default function DoctorsSection() {
               Founding Dentist · since 2000
             </div>
             <h3
-              className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-ivory text-[clamp(26px,3.2vw,38px)]"
+              className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-white text-[clamp(26px,3.2vw,38px)]"
             >
               Dr. James{' '}
               <span className="italic text-coral">Wei</span>
@@ -106,7 +106,7 @@ export default function DoctorsSection() {
               Dentist &amp; Owner
             </div>
             <h3
-              className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-ivory text-[clamp(26px,3.2vw,38px)]"
+              className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-white text-[clamp(26px,3.2vw,38px)]"
             >
               Dr. Shriya{' '}
               <span className="italic text-coral">Sarin</span>
