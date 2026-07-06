@@ -24,7 +24,7 @@ const TESTIMONIALS = [
 
 function Chip({ quote, name }: { quote: string; name: string }) {
   return (
-    <div className="w-[min(390px,82vw)] shrink-0 rounded-[20px] border border-line bg-ivory/[0.03] px-[26px] py-6">
+    <div className="w-[min(390px,82vw)] shrink-0 rounded-[20px] border border-line bg-ivory px-[26px] py-6">
       <div className="mb-3 flex gap-[3px] text-coral">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} className="h-3.5 w-3.5 fill-coral text-coral" />
@@ -42,7 +42,7 @@ export default function ReferralsTestimonials() {
   const track = [...TESTIMONIALS, ...TESTIMONIALS]
 
   return (
-    <section className="bg-bg-2 py-[clamp(74px,8vw,120px)]">
+    <section className="py-[clamp(74px,8vw,120px)]">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">

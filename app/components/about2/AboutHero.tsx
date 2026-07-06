@@ -27,7 +27,7 @@ export default function AboutHero() {
         </Reveal>
 
         <Reveal delay={140}>
-          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory-2">
+          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory">
             For 18 years, Chandler families have trusted Promenade Dental for calm, unhurried
             care &mdash; the kind where you&apos;re treated like a person, never rushed, and never
             sold something you don&apos;t need. That hasn&apos;t changed; it&apos;s simply in
@@ -44,7 +44,7 @@ export default function AboutHero() {
           </Link>
           <Link
             href="tel:+14808028188"
-            className="rounded-full border border-line px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
+            className="rounded-full border border-coral/60 px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
           >
             Call (480) 802-8188
           </Link>

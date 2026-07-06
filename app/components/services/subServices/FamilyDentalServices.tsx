@@ -26,7 +26,7 @@ export default function FamilyDentalServices({
 }) {
   return (
     // Adding a subtle background difference or top border can help separate it from the previous section
-    <section className="py-section relative border-t border-line/50">
+    <section className="py-section relative border-t border-line/50 ">
       <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* Header - Slightly adjusted to a centered layout to break the visual rhythm from the previous section */}
@@ -59,33 +59,33 @@ function ServiceCard({ service, Icon }: { service: Service; Icon: any }) {
   return (
     <Link 
       href={service.href}
-      className="group relative flex flex-col rounded-[24px] p-8 lg:p-10 border border-line bg-ivory/[0.02] hover:bg-coral/[0.2] transition-colors duration-500 overflow-hidden"
+      className="group relative flex flex-col rounded-[24px] p-8 lg:p-10 border border-coral bg-ivory hover:bg-coral/[0.1] transition-colors duration-500 overflow-hidden"
     >
       {/* Icon & Title Row */}
       <div className="flex items-center gap-5 mb-6">
         <div className="flex items-center justify-center w-14 h-14 rounded-full bg-coral/10 text-coral group-hover:scale-110 transition-transform duration-500 ease-out">
           <Icon strokeWidth={1.5} className="w-7 h-7" />
         </div>
-        <h3 className="font-serif text-2xl text-ivory tracking-tight">
+        <h3 className="font-serif text-2xl text-white group-hover:text-ivory tracking-tight">
           {service.title}
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-muted font-light leading-[1.65] mb-8 flex-grow">
+      <p className="text-white/80 group-hover:text-ivory font-light leading-[1.65] mb-8 flex-grow">
         {service.description}
       </p>
 
       {/* "Best For" Pills */}
       <div className="mb-10">
-        <div className="text-[11px] uppercase tracking-widest text-muted/70 mb-3 font-medium">
+        <div className="text-[11px] uppercase tracking-widest text-ivory mb-3 font-medium">
           Best For
         </div>
         <div className="flex flex-wrap gap-2">
           {service.bestFor.map((item, i) => (
             <span 
               key={i} 
-              className="px-3 py-1.5 rounded-full text-[13px] border border-line/60 text-muted bg-black/20"
+              className="px-3 py-1.5 rounded-full text-[13px] border border-coral/60 text-white bg-ivory"
             >
               {item}
             </span>
@@ -94,7 +94,7 @@ function ServiceCard({ service, Icon }: { service: Service; Icon: any }) {
       </div>
 
       {/* CTA Bottom Bar */}
-      <div className="mt-auto pt-6 border-t border-line/50 flex items-center justify-between text-coral font-medium">
+      <div className="mt-auto pt-6 border-t border-line/50 group-hover:border-coral/50 flex items-center justify-between text-coral font-medium">
         <span className="text-[15px]">{service.cta}</span>
         <ArrowRight 
           className="w-5 h-5 transform group-hover:translate-x-1.5 transition-transform duration-300" 

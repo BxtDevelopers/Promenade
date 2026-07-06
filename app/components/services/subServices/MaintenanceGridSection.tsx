@@ -26,7 +26,7 @@ export default function MaintenanceGridSection({ data }: { data: MaintenanceGrid
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg-2 border-t border-line relative overflow-hidden">
+    <section className="py-section border-t border-line relative overflow-hidden">
       <div className="lg:px-site max-w-[90%] mx-auto relative z-10">
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-start">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:pt-8">
@@ -105,8 +105,8 @@ function MaintenanceCard({
         'rounded-[24px]',
         'p-8 md:p-9',
         'min-h-[300px]',
-        'bg-[#FCFBF8]',
-        'border border-[#E7E2D9]',
+        'bg-ivory',
+        'border border-coral',
         'overflow-hidden',
         'transition-all duration-500',
         'ease-[cubic-bezier(0.2,0.8,0.2,1)]',
@@ -141,11 +141,11 @@ function MaintenanceCard({
       </div>
 
       <div className="flex-1 flex flex-col justify-end">
-        <h3 className="font-serif font-normal text-[22px] text-slate-900 leading-snug mb-4">
+        <h3 className="font-serif font-normal text-[22px] text-white leading-snug mb-4">
           {card.title}
         </h3>
 
-        <p className="text-slate-600 text-[15px] leading-[1.75]">
+        <p className="text-muted text-[15px] leading-[1.75]">
           {card.body}
         </p>
       </div>

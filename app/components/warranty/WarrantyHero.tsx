@@ -30,7 +30,7 @@ export default function WarrantyHero() {
         </Reveal>
 
         <Reveal delay={140}>
-          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory-2">
+          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory">
             We believe in the quality of our work &mdash; and we want you to feel that confidence
             too. If something we placed doesn&apos;t hold up under normal use, we&apos;ll repair
             or replace it. Because it&apos;s the right thing to do.
@@ -41,7 +41,7 @@ export default function WarrantyHero() {
           {badges.map((badge) => (
             <span
               key={badge}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory/[0.04] px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
             >
               <Check className="h-[14px] w-[14px] text-coral" strokeWidth={2.4} />
               {badge}
@@ -58,7 +58,7 @@ export default function WarrantyHero() {
           </Link>
           <Link
             href="tel:+14808028188"
-            className="rounded-full border border-line px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
+            className="rounded-full border border-coral px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
           >
             Call (480) 802-8188
           </Link>

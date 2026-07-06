@@ -59,7 +59,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
             <span className="h-[1px] w-6 bg-coral block" aria-hidden="true" />
           </div>
 
-          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-ivory mb-6">
+          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-white mb-6">
             {data.heading}
           </h2>
 
@@ -79,7 +79,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
           {data.cards.map((card, index) => (
             <div 
               key={index}
-              className="group relative p-8 lg:p-10 rounded-[32px] bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] hover:border-coral/40 transition-all duration-500 shadow-xl overflow-hidden flex flex-col h-full"
+              className="group relative p-8 lg:p-10 rounded-[32px] bg-white/[0.02] border border-white/30 backdrop-blur-md hover:bg-white/[0.04] hover:border-coral/40 transition-all duration-500 shadow-xl overflow-hidden flex flex-col h-full"
             >
               {/* Card Hover Glow */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-coral/5 blur-[40px] rounded-full group-hover:bg-coral/20 transition-colors duration-700" />
@@ -87,12 +87,12 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
               <div className="relative z-10 flex flex-col h-full">
                 {/* Icon Circle */}
                 <div className="w-14 h-14 rounded-2xl bg-panel border border-white/10 flex items-center justify-center mb-6 group-hover:border-coral/50 group-hover:bg-coral/5 group-hover:scale-110 transition-all duration-500 shadow-inner">
-                  <svg className="w-6 h-6 text-ivory/80 group-hover:text-coral transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <svg className="w-6 h-6 text-coral/80 group-hover:text-coral transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     {icons[index % icons.length]}
                   </svg>
                 </div>
                 
-                <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-white transition-colors duration-300">
+                <h3 className="font-serif text-2xl text-white mb-4 group-hover:text-white transition-colors duration-300">
                   {card.title}
                 </h3>
                 
@@ -108,7 +108,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
         <div className="mt-16 text-center">
           <a 
             href={data.cta.href}
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-coral/50 bg-coral/5 text-ivory font-medium text-[15px] hover:bg-coral hover:text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_25px_rgba(232,154,114,0.3)]"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-coral/50 bg-coral/5  font-medium text-[15px] hover:bg-coral text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_25px_rgba(232,154,114,0.3)]"
           >
             {data.cta.label}
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">

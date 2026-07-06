@@ -12,7 +12,7 @@ import PaymentsUses from "@/app/components/payments/PaymentsUses";
 export default function PaymentsPage() {
   return (
     <>
-    <Navbar/>
+    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
     <main className="bg-bg font-sans text-ivory">
       <PaymentsHero />
       <PaymentsHowItWorks />

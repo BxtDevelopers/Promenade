@@ -21,7 +21,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
   const [ref, inView] = useScrollReveal();
 
   return (
-    <section className="py-12 lg:py-16 bg-bg overflow-hidden isolate relative">
+    <section className="py-12 lg:py-16 overflow-hidden isolate relative">
       <div className="lg:px-site max-w-[90%] mx-auto">
         
         <div 
@@ -32,7 +32,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
           ].join(' ')}
         >
           {/* Intense Ambient Glows specific to this alert box */}
-          <div className="absolute inset-0 bg-gradient-to-br from-panel via-bg to-bg -z-20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-panel via-bg-2 to-bg-2 -z-20" />
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-coral/15 blur-[120px] rounded-full pointer-events-none -z-10" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none -z-10" />
 
@@ -50,7 +50,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
                   </span>
                 </div>
                 
-                <h2 className="font-serif font-light text-3xl lg:text-5xl leading-[1.15] tracking-[-0.02em] text-ivory">
+                <h2 className="font-serif font-light text-3xl lg:text-5xl leading-[1.15] tracking-[-0.02em] text-white">
                   {data.heading}
                 </h2>
               </div>
@@ -76,7 +76,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
               
               {/* Left: General Info & Handling */}
               <div className="lg:col-span-7 flex flex-col gap-6">
-                <p className="text-ivory text-[17px] md:text-[18px] font-light leading-[1.7]">
+                <p className="text-white text-[17px] md:text-[18px] font-light leading-[1.7]">
                   {data.bodyMain}
                 </p>
                 
@@ -88,7 +88,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-ivory font-serif text-lg mb-1">If you have the tooth:</h4>
+                    <h4 className="text-white font-serif text-lg mb-1">If you have the tooth:</h4>
                     <p className="text-muted text-[15px] font-light leading-[1.6]">
                       {data.handlingInstructions}
                     </p>

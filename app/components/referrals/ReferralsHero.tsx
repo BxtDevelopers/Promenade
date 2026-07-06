@@ -26,7 +26,7 @@ export default function ReferralsHero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory-2">
+          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
             If someone you know has been putting off the dentist &mdash; or just hasn&rsquo;t
             found one they trust &mdash; introduce them to Dr.&nbsp;Shriya. They&rsquo;ll be
             welcomed like family, and you&rsquo;ll both get a little something for it.
@@ -37,7 +37,7 @@ export default function ReferralsHero() {
           {BADGES.map((badge) => (
             <span
               key={badge}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory/[0.04] px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
             >
               <Check className="h-3.5 w-3.5 stroke-[2.4] text-coral" />
               {badge}
@@ -61,7 +61,7 @@ export default function ReferralsHero() {
         </Reveal>
 
         <Reveal
-          className="relative mt-[30px] grid grid-cols-1 items-center gap-5 overflow-hidden rounded-[26px] border border-line px-[clamp(30px,4vw,46px)] py-[clamp(30px,4vw,46px)] sm:grid-cols-[1fr_auto_1fr]"
+          className="relative mt-[30px] grid grid-cols-1 items-center gap-5 overflow-hidden rounded-[26px] border border-ivory/20 px-[clamp(30px,4vw,46px)] py-[clamp(30px,4vw,46px)] sm:grid-cols-[1fr_auto_1fr]"
           delay={0.25}
         >
           <div
@@ -74,16 +74,16 @@ export default function ReferralsHero() {
             <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-coral">
               $50
             </b>
-            <span className="mt-2.5 block text-sm text-ivory-2">
+            <span className="mt-2.5 block text-sm text-coral">
               off your friend&rsquo;s first visit
             </span>
           </div>
-          <div className="rotate-90 text-center font-serif text-[34px] text-muted sm:rotate-0">+</div>
+          <div className="rotate-90 text-center font-serif text-[34px] text-ivory sm:rotate-0">+</div>
           <div className="text-center">
             <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-coral">
               $50
             </b>
-            <span className="mt-2.5 block text-sm text-ivory-2">
+            <span className="mt-2.5 block text-sm text-coral">
               credit toward your next visit
             </span>
           </div>

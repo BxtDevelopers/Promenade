@@ -20,7 +20,7 @@ export default function ServiceFeatures({ data }: { data: ServiceFeature }) {
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg border-t border-line overflow-hidden relative">
+    <section className="py-section bg-bg-2 border-t border-line overflow-hidden relative">
       
       {/* Subtle ambient background glow */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-coral/5 blur-[120px] rounded-full pointer-events-none" />
@@ -42,7 +42,7 @@ export default function ServiceFeatures({ data }: { data: ServiceFeature }) {
               </span>
             </div>
             
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6 max-w-[16ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6 max-w-[16ch]">
               {data.heading}
             </h2>
             
@@ -106,8 +106,8 @@ function FeatureStrip({
         <span className="font-serif text-[20px] text-muted-2 group-hover:text-coral transition-colors duration-300">
           {num}
         </span>
-        <div className="w-12 h-12 rounded-full bg-bg-2 border border-line flex items-center justify-center transition-colors duration-300 group-hover:border-coral/40 group-hover:bg-coral/10">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-ivory group-hover:text-coral transition-colors duration-300">
+        <div className="w-12 h-12 rounded-full bg-coral border border-line flex items-center justify-center transition-colors duration-300 group-hover:border-coral/40 group-hover:bg-coral/10">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white group-hover:text-coral transition-colors duration-300">
             {icons[index % icons.length]}
           </svg>
         </div>
@@ -115,7 +115,7 @@ function FeatureStrip({
 
       {/* Content Area */}
       <div>
-        <h3 className="font-serif font-normal text-[20px] text-ivory mb-2 leading-snug">
+        <h3 className="font-serif font-normal text-[20px] text-white mb-2 leading-snug">
           {feature.title}
         </h3>
         <p className="text-muted text-[14.5px] font-light leading-[1.65]">

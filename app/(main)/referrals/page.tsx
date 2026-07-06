@@ -11,7 +11,7 @@ import ReferralsWhyRefer from "@/app/components/referrals/ReferralsWhyRefer";
 export default function ReferralsPage() {
   return (
     <>
-    <Navbar/>
+    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
     <main className="bg-bg font-sans text-ivory">
       <ReferralsHero />
       <ReferralsHowItWorks />

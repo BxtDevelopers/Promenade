@@ -56,10 +56,10 @@ export default function Footer() {
             <h5 className="footer-col-heading">Practice</h5>
             <ul className="list-none space-y-[10px]">
               {[
-                [`/about-us`,    'About Us'],
-                [`/about-us`,    'Meet Dr. Shriya'],
+                [`/about-us02`,    'About Us'],
+                [`/about-us02`,    'Meet Dr. Shriya'],
                 [`/contact-us`,  'New Patients'],
-                ['/insurance',          'Insurance'],
+                ['/insurance',     'Insurance'],
                 [`/contact-us`,  'Contact'],
               ].map(([href, label]) => (
                 <li key={label}>

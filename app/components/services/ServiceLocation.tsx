@@ -42,20 +42,20 @@ export default function LocationMap() {
           </div>
 
           {/* Address card */}
-          <div className="rounded-[22px] border border-line bg-ivory/[0.02] p-7 md:p-9 flex flex-col justify-between">
+          <div className="rounded-[22px] border border-line bg-ivory p-7 md:p-9 flex flex-col justify-between">
   <div>
-    <h3 className="font-serif font-normal text-[22px] text-ivory mb-4">
+    <h3 className="font-serif font-normal text-[22px] text-white mb-4">
       Promenade Dental
     </h3>
 
-    <p className="text-muted text-[14.5px] font-light leading-[1.8]">
+    <p className="text-white text-[14.5px] font-light leading-[1.8]">
       Promenade Dental serves patients looking for dental care near
       Fulton Ranch, Ocotillo, Sun Lakes, and Chandler 85248.
     </p>
 
     <div className="h-px bg-line my-6" />
 
-    <p className="text-muted text-[14.5px] font-light leading-[1.8]">
+    <p className="text-white text-[14.5px] font-light leading-[1.8]">
       Our office provides preventive, cosmetic, restorative,
       implant, and emergency dental services for patients who
       want local care from a dentist who takes time to explain
@@ -64,7 +64,7 @@ export default function LocationMap() {
 
     <div className="h-px bg-line my-6" />
 
-    <p className="text-muted text-[14.5px] font-light leading-[1.8]">
+    <p className="text-white text-[14.5px] font-light leading-[1.8]">
       Whether you're searching for a dentist in Chandler,
       a cosmetic dentist near Fulton Ranch, a family dentist
       near Ocotillo, or emergency dental care near Chandler
@@ -81,7 +81,7 @@ export default function LocationMap() {
       ].map((area) => (
         <span
           key={area}
-          className="px-3 py-1.5 rounded-full border border-line text-[12px] text-muted"
+          className="px-3 py-1.5 rounded-full border border-coral text-[12px] text-white"
         >
           {area}
         </span>
@@ -93,7 +93,7 @@ export default function LocationMap() {
     href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
     target="_blank"
     rel="noreferrer"
-    className="inline-flex items-center justify-center mt-8 text-ivory border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
+    className="inline-flex items-center justify-center mt-8 text-white border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
   >
     Get Directions &rarr;
   </a>

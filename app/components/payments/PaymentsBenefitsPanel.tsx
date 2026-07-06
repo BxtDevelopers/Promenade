@@ -21,14 +21,14 @@ export default function PaymentsBenefitsPanel() {
             Works <em className="italic font-normal text-coral">with</em> your insurance, not
             instead of it.
           </h2>
-          <p className="mt-4 max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory-2">
+          <p className="mt-4 max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
             Already have a plan? A payment plan simply covers the portion your insurance
             doesn&rsquo;t &mdash; so larger treatment never has to wait.
           </p>
           <div className="mt-[18px]">
             <Link
               href="/insurance"
-              className="inline-flex whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory"
+              className="inline-flex whitespace-nowrap rounded-full border border-coral px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory"
             >
               See insurance we accept
             </Link>
@@ -46,7 +46,7 @@ export default function PaymentsBenefitsPanel() {
             {KNOWNS.map((item) => (
               <li
                 key={item}
-                className="relative pl-6 text-[14.5px] font-light leading-[1.55] text-muted"
+                className="relative pl-6 text-[14.5px] font-light leading-[1.55] text-ivory/80"
               >
                 <Check className="absolute left-0 top-2 h-3.5 w-3.5 stroke-[2.5] text-coral" />
                 {item}

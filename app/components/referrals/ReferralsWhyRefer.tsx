@@ -32,7 +32,7 @@ export default function ReferralsWhyRefer() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Why patients refer us
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
             Care worth <em className="italic font-normal text-coral">passing along</em>.
           </h2>
         </Reveal>
@@ -43,7 +43,7 @@ export default function ReferralsWhyRefer() {
               <span className="mb-[18px] inline-flex h-[30px] w-[30px] items-center justify-center rounded-full border border-coral/50">
                 <Icon className="h-[15px] w-[15px] text-coral" strokeWidth={2.2} />
               </span>
-              <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-ivory">
+              <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-white">
                 {title}
               </b>
               <p className="text-[14.5px] font-light leading-[1.65] text-muted">{body}</p>

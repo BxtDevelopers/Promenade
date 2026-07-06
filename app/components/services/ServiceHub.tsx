@@ -217,8 +217,8 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
       className={[
         'group relative flex flex-col rounded-[20px] border p-6 lg:p-7 transition-colors duration-500',
         isAlternate 
-          ? 'border-bg/30 bg-bg hover:border-coral hover:bg-bg/90' 
-          : 'border-white/[0.07] bg-white/[0.02] hover:border-coral/25 hover:bg-white/[0.035]'
+          ? 'border-ivory/30 bg-ivory hover:border-coral hover:bg-ivory/90' 
+          : 'border-coral bg-white hover:border-coral/25 hover:bg-white/90'
       ].join(' ')}
       style={{
         opacity: inView ? 1 : 0,
@@ -238,13 +238,13 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
 
       <p className={[
         'text-[13.5px] lg:text-[14px] font-light leading-[1.85] flex-1 mb-6',
-        isAlternate ? 'text-ivory/90' : 'text-muted'
+        isAlternate ? 'text-white/90' : 'text-ivory/60'
       ].join(' ')}>
         {card.description}
       </p>
 
       {/* Best for — pinned to bottom */}
-      <div className={`mt-auto pt-4 border-t ${isAlternate ? 'border-white/10' : 'border-white/[0.06]'}`}>
+      <div className={`mt-auto pt-4 border-t ${isAlternate ? 'border-white/10' : 'border-coral/50'}`}>
         <span className="text-coral font-medium uppercase tracking-[0.14em] text-[9.5px] block mb-1">
           Best for
         </span>
@@ -266,7 +266,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
 
   // Alternating background logic
   const isAlternate = index % 2 === 0;
-  const bgClass = isAlternate ? 'bg-white' : 'bg-transparent';
+  const bgClass = isAlternate ? 'bg-white' : 'bg-bg-2';
 
   return (
     <div className={`py-16 md:py-20 lg:py-24 border-t ${isAlternate ? 'border-bg/10' : 'border-white/[0.06]'} first:border-t-0 ${bgClass}`}>
@@ -296,13 +296,13 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
             </div>
 
             <h2
-              className={`font-serif font-light leading-[1.08] tracking-[-0.02em] ${isAlternate ? 'text-bg' : 'text-ivory'}`}
+              className={`font-serif font-light leading-[1.08] tracking-[-0.02em] ${isAlternate ? 'text-ivory' : 'text-white'}`}
               style={{ fontSize: 'clamp(26px, 3.2vw, 32px)' }}
             >
               {group.heading}
             </h2>
 
-            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[40ch] ${isAlternate ? 'text-bg/80' : 'text-muted'}`}>
+            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[80%] ${isAlternate ? 'text-ivory/80' : 'text-muted'}`}>
               {group.body}
             </p>
 
@@ -312,8 +312,8 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
                 className={[
                   'inline-flex items-center gap-2.5 text-[13px] font-medium tracking-[0.02em] rounded-full border px-5 py-2.5 transition-all duration-300',
                   isAlternate 
-                    ? 'text-bg border-bg/20 hover:border-bg/50 hover:bg-bg/5' 
-                    : 'text-ivory border-ivory/15 hover:border-ivory/50 hover:bg-ivory/[0.04]'
+                    ? 'text-ivory border-ivory/20 hover:border-ivory/50 hover:bg-ivory/5' 
+                    : 'text-white border-white/15 hover:border-white/50 hover:bg-white/[0.04]'
                 ].join(' ')}
               >
                 {group.ctaLabel}

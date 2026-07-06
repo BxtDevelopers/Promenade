@@ -108,7 +108,7 @@ export default function ServiceHero({
           className="object-cover object-center"
         />
         {/* ── Added Solid Dark Overlay for Text Legibility ── */}
-        <div className="absolute inset-0 bg-bg/60" />
+        <div className="absolute inset-0 bg-ivory/60" />
       </div>
 
       {/* Your custom gradient overlay */}
@@ -144,7 +144,7 @@ export default function ServiceHero({
             </motion.div>
 
             {/* Headline */}
-            <h1 className="font-serif font-light text-4xl lg:text-7xl leading-[1.1em] text-ivory">
+            <h1 className="font-serif font-light text-4xl lg:text-7xl leading-[1.1em] text-white">
               <span className="block">
                 <motion.span
                   className="inline-block"
@@ -178,7 +178,7 @@ export default function ServiceHero({
     {trustPoints.map((item) => (
       <span
         key={item}
-        className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-ivory/80"
+        className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-white/80"
       >
         {item}
       </span>
@@ -202,7 +202,7 @@ export default function ServiceHero({
           px-8 py-4
           rounded-full
           bg-coral
-          text-ivory
+          text-white
           text-[14px]
           uppercase
           tracking-wide
@@ -222,7 +222,7 @@ export default function ServiceHero({
           px-8 py-4
           rounded-full
           border border-line
-          text-ivory
+          text-white
           text-[14px]
           uppercase
           tracking-wide

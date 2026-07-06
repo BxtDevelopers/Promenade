@@ -22,14 +22,14 @@ export default function ReferralsForm() {
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
             Introduce a friend in <em className="italic font-normal text-coral">under a minute</em>.
           </h2>
-          <p className="mt-[18px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory-2">
+          <p className="mt-[18px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
             Tell us who to expect and we&rsquo;ll reach out to get them booked. Your credit lands
             on your account the moment their first visit is complete.
           </p>
         </Reveal>
 
         <Reveal
-          className="rounded-[24px] border border-line bg-ivory/[0.03] px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
+          className="rounded-[24px] border border-line bg-ivory/90 px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
           delay={0.1}
         >
           {submitted ? (
@@ -70,7 +70,7 @@ export default function ReferralsForm() {
                   name="notes"
                   rows={3}
                   placeholder="They're a little nervous about dental visits&hellip;"
-                  className="w-full rounded-[14px] border border-line bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-ivory outline-none focus:border-coral"
+                  className="w-full rounded-[14px] border border-white bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
                 />
               </div>
 
@@ -81,7 +81,7 @@ export default function ReferralsForm() {
                 Send referral
               </button>
 
-              <p className="mt-3 text-[12px] font-light text-muted-2">
+              <p className="mt-3 text-[12px] font-light text-white">
                 By sending, you confirm your friend is okay with us reaching out. We&rsquo;ll
                 never share their details with anyone else.
               </p>
@@ -108,7 +108,7 @@ function Field({
     <div className="mb-[15px]">
       <label
         htmlFor={name}
-        className="mb-[7px] block text-[11.5px] font-medium uppercase tracking-[0.04em] text-ivory-2"
+        className="mb-[7px] block text-[11.5px] font-medium uppercase tracking-[0.04em] text-white"
       >
         {label}
       </label>
@@ -117,7 +117,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-[14px] border border-line bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-ivory outline-none focus:border-coral"
+        className="w-full rounded-[14px] border border-white bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
       />
     </div>
   )

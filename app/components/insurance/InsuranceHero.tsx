@@ -27,7 +27,7 @@ export default function InsuranceHero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory-2">
+          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
             We&rsquo;re in-network with most major dental plans, and we bill your insurance
             directly &mdash; so there&rsquo;s no paperwork on your end and no guessing about
             what you&rsquo;ll owe.
@@ -38,7 +38,7 @@ export default function InsuranceHero() {
           {BADGES.map((badge) => (
             <span
               key={badge}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory/[0.04] px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
             >
               <Check className="h-3.5 w-3.5 stroke-[2.4] text-coral" />
               {badge}

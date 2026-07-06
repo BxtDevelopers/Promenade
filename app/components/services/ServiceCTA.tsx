@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
 const ADDRESS = '4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248';
@@ -15,8 +15,66 @@ export default function ServiceCTA() {
   const [rowRef, rowVis] = useScrollReveal();
   const [addrRef, addrVis] = useScrollReveal();
 
+  const archRef = useRef<SVGGElement>(null)
+
+  useEffect(() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const group = archRef.current
+    if (!group) return
+
+    const CX = 500, CY = 560, AN = 15
+    const arcs: SVGPathElement[] = []
+
+    for (let a = 0; a < AN; a++) {
+      const r = 82 + a * 33
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+      p.setAttribute('d', `M${CX - r} ${CY} A${r} ${r} 0 0 1 ${CX + r} ${CY}`)
+      p.setAttribute('fill', 'none')
+      p.setAttribute('stroke', (a === 4 || a === 9 || a === 13) ? 'rgba(232,154,114,0.4)' : 'rgba(244,236,221,0.14)')
+      p.setAttribute('stroke-width', '1')
+      p.setAttribute('stroke-linecap', 'round')
+      
+      // Added pathLength to ensure the 1 dasharray trick works consistently across all browsers
+      p.setAttribute('pathLength', '1') 
+      p.style.strokeDasharray = '1'
+      p.style.strokeDashoffset = reduce ? '0' : '1'
+      
+      group.appendChild(p)
+      arcs.push(p)
+    }
+
+    if (!reduce) {
+      arcs.forEach((p, i) => {
+        p.style.transition = `stroke-dashoffset 1.7s ease ${i * 0.055}s`
+      })
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          arcs.forEach(p => { p.style.strokeDashoffset = '0' })
+        })
+      })
+    }
+
+    return () => { while (group.firstChild) group.removeChild(group.firstChild) }
+  }, [])
+
+
   return (
-    <section className="relative overflow-hidden py-10 lg:py-32 text-center">
+    <section className="relative text-center overflow-hidden py-[clamp(84px,10vw,150px)] bg-bg-2">
+      
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(60%_80%_at_50%_50%,rgba(232,154,114,0.14),transparent_65%)] z-0" />
+
+      {/* Background Arch SVG */}
+      <div className="absolute inset-0 z-0">
+        <svg
+          viewBox="0 0 1000 560"
+          preserveAspectRatio="xMidYMax slice"
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full"
+        >
+          <g ref={archRef} />
+        </svg>
+      </div>
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -32,7 +90,7 @@ export default function ServiceCTA() {
 
 <h2
   ref={h1Ref as React.RefObject<HTMLHeadingElement>}
-  className="font-serif font-light text-[clamp(40px,7vw,96px)] leading-none tracking-[-0.03em] text-ivory"
+  className="font-serif font-light text-[clamp(40px,7vw,96px)] leading-none tracking-[-0.03em] text-white"
   style={{
     opacity: h1Vis ? 1 : 0,
     transform: h1Vis ? 'none' : 'translateY(34px)',
@@ -93,8 +151,8 @@ function CallButton() {
       href="tel:+14808028188"
       className="
         border border-line
-        hover:border-ivory
-        text-ivory
+        hover:border-coral
+        text-white
         bg-transparent
         px-[30px]
         py-[17px]

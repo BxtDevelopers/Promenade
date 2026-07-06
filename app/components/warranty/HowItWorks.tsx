@@ -30,8 +30,8 @@ export default function HowItWorks() {
 
         <div className="mt-[40px] grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
           {points.map((point, i) => (
-            <Reveal key={point.title} delay={i * 60} className="border-t border-line pt-5">
-              <b className="mb-2 block font-serif text-[18px] font-normal text-ivory">
+            <Reveal key={point.title} delay={i * 60} className="border-t border-coral/50 pt-5">
+              <b className="mb-2 block font-serif text-2xl font-normal text-ivory">
                 {point.title}
               </b>
               <p className="text-[14px] font-light leading-[1.6] text-muted">{point.body}</p>

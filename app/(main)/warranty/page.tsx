@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function WarrantyPage() {
   return (
     <>
-    <Navbar/>
+    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
     <main className="bg-bg text-ivory">
       <WarrantyHero />
       <WarrantyGuarantee />

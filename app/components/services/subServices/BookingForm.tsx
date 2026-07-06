@@ -20,9 +20,9 @@ export default function BookingForm({ service }: { service: string }) {
   };
 
   const inputClass =
-    'w-full bg-white border border-bg rounded-[10px] px-4 py-[13px] text-bg text-[14px] font-light placeholder:text-bg focus:outline-none focus:border-coral/60 transition-colors duration-200';
+    'w-full bg-white border border-ivory/50 rounded-[10px] px-4 py-[13px] text-ivory text-[14px] font-light placeholder:text-ivory focus:outline-none focus:border-coral/60 transition-colors duration-200';
 
-  const labelClass = 'block text-[11px] tracking-eyebrow uppercase font-medium text-bg mb-[7px]';
+  const labelClass = 'block text-[11px] tracking-eyebrow uppercase font-medium text-ivory mb-[7px]';
 
   if (submitted) {
     return (
@@ -41,12 +41,12 @@ export default function BookingForm({ service }: { service: string }) {
 
   return (
     <div
-      className="rounded-[20px] border border-ivory/10 p-7 md:p-8 bg-white"
+      className="rounded-[20px] border border-coral/60 p-7 md:p-8 bg-white"
     //   style={{ background: 'rgba(244,236,221,0.04)', backdropFilter: 'blur(12px)' }}
     >
       {/* Form header */}
       <p className="text-[11px] tracking-eyebrow uppercase font-medium text-coral mb-1">Request an Appointment</p>
-      <p className="font-serif font-light text-bg text-xl leading-snug mb-6">
+      <p className="font-serif font-light text-ivory text-xl leading-snug mb-6">
         Book your visit in&nbsp;<em className="not-italic text-coral">60 seconds</em>
       </p>
 
@@ -117,7 +117,7 @@ export default function BookingForm({ service }: { service: string }) {
           Request Appointment →
         </button>
 
-        <p className="text-center text-[11px] text-ivory/25 font-light -mt-1">
+        <p className="text-center text-sm text-ivory/60 font-light -mt-1">
           No commitment — we'll confirm availability with you first.
         </p>
       </div>

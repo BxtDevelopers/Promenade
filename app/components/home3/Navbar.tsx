@@ -15,7 +15,10 @@ import { SUB_SERVICES } from '@/app/lib/subServiceData'
 import Image from 'next/image'
 
 
-export default function Navbar() {
+export default function Navbar({ 
+  textColor = 'text-white', 
+  hoverColor = 'hover:text-white/80' 
+}) {
   const [servicesOpen, setServicesOpen] = useState(false)
   const [aboutOpen, setAboutOpen]       = useState(false)
   const [patientsOpen, setPatientsOpen] = useState(false)
@@ -56,30 +59,9 @@ export default function Navbar() {
               onMouseEnter={() => setAboutOpen(true)}
               onMouseLeave={() => setAboutOpen(false)}
             >
-              <Link href='/about-us02' className="flex items-center gap-[6px] bg-transparent border-none cursor-pointer text-ivory/80 hover:text-ivory transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2">
+              <Link href='/about-us02' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
                 About
-                {/* <ChevronDown 
-                  className={`w-[14px] h-[14px] text-coral transition-transform duration-250 ${aboutOpen ? 'rotate-180' : ''}`} 
-                /> */}
               </Link>
-              {/* {aboutOpen && (
-                <div className="absolute top-[calc(100%+1px)] left-0 min-w-[236px] rounded-2xl p-[13px] z-50 bg-[#173552] border border-[rgba(244,236,221,0.22)] shadow-[0_30px_64px_-24px_rgba(0,0,0,0.9),0_0_0_1px_rgba(0,0,0,0.25)]">
-                  {[
-                    [`/about-us`, 'Our Story'],
-                    [`/about-us`, 'Meet Dr. Shriya'],
-                    [`/about-us`, 'Our Office'],
-                    ['#reviews', 'Patient Reviews'],
-                  ].map(([href, label]) => (
-                    <Link
-                      key={label}
-                      href={href}
-                      className="block px-[14px] py-[10px] rounded-[10px] text-[13px] tracking-[0.01em] text-ivory/92 normal-case font-[450] no-underline transition-all duration-[160ms] hover:bg-[rgba(232,154,114,0.18)] hover:text-ivory hover:shadow-[inset_3px_0_0_theme(colors.coral)]"
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              )} */}
             </li>
 
             {/* Services (Dynamic Mega Menu) */}
@@ -88,10 +70,10 @@ export default function Navbar() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-[6px] bg-transparent border-none cursor-pointer text-ivory/80 hover:text-ivory transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2">
+              <button className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
                 Services
                 <ChevronDown 
-                  className={`w-[14px] h-[14px] text-coral transition-transform duration-250 ${servicesOpen ? 'rotate-180' : ''}`} 
+                  className={`w-[14px] h-[14px] transition-transform duration-250 ${servicesOpen ? 'rotate-180' : ''}`} 
                 />
               </button>
               {servicesOpen && (
@@ -139,13 +121,13 @@ export default function Navbar() {
             </li>
 
             <li className="flex items-center">
-              <Link href={`/warranty`} className="text-ivory/80 hover:text-ivory no-underline transition-colors duration-[250ms]">
+              <Link href={`/warranty`} className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
                 Warranty
               </Link>
             </li>
 
             <li className="flex items-center">
-              <Link href="/home03#reviews" className="text-ivory/80 hover:text-ivory no-underline transition-colors duration-[250ms]">
+              <Link href="/home03#reviews" className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
                 Reviews
               </Link>
             </li>
@@ -156,10 +138,10 @@ export default function Navbar() {
               onMouseEnter={() => setPatientsOpen(true)}
               onMouseLeave={() => setPatientsOpen(false)}
             >
-              <button className="flex items-center gap-[6px] bg-transparent border-none cursor-pointer text-ivory/80 hover:text-ivory transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2">
+              <button className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
                 New patients
                 <ChevronDown 
-                  className={`w-[14px] h-[14px] text-coral transition-transform duration-250 ${patientsOpen ? 'rotate-180' : ''}`} 
+                  className={`w-[14px] h-[14px] transition-transform duration-250 ${patientsOpen ? 'rotate-180' : ''}`} 
                 />
               </button>
               {patientsOpen && (
@@ -182,7 +164,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center gap-[18px] ml-auto xl:ml-0">
             <Link
               href="tel:+14808028188"
-              className="inline-block text-ivory no-underline text-[13px] tracking-[0.03em] whitespace-nowrap rounded-full px-[18px] py-[10px] transition-all duration-300 hover:border-ivory/70 border border-[rgba(244,236,221,0.32)]"
+              className={`${textColor} ${hoverColor} inline-block  no-underline text-[13px] tracking-[0.03em] whitespace-nowrap rounded-full px-[18px] py-[10px] transition-all duration-300 hover:border-ivory/70 border border-[rgba(244,236,221,0.32)]`}
             >
               (480) 802-8188
             </Link>
@@ -318,9 +300,6 @@ export default function Navbar() {
           Directions
         </Link>
       </div>
-      
-      {/* Spacer */}
-      {/* <div className="hidden md:block h-[64px] w-full" /> */}
     </>
   )
 }

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="bg-bg text-ivory ">
-      <Navbar/>
+      <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
       <AboutHero />
       <OurStory />
       <MeetDoctors />

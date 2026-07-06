@@ -37,7 +37,7 @@ export default function PaymentsProviders() {
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
             Two ways to <em className="italic font-normal text-coral">pay over time</em>.
           </h2>
-          <p className="mt-3 max-w-[60ch] text-[15.5px] font-light leading-relaxed text-muted">
+          <p className="mt-3 max-w-[60ch] text-[15.5px] font-light leading-relaxed text-ivory">
             We partner with Cherry and CareCredit, so you can pick whichever fits you best. Both
             let you apply online in minutes and check your options with no impact to your credit
             score.
@@ -48,7 +48,7 @@ export default function PaymentsProviders() {
           {PROVIDERS.map((p, i) => (
             <Reveal
               key={p.name}
-              className="flex flex-col rounded-[22px] border border-line bg-ivory/[0.02] px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
+              className="flex flex-col rounded-[22px] border border-ivory bg-ivory/[0.02] px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
               delay={i * 0.1}
             >
               <h3 className="font-serif text-[26px] font-normal text-ivory">{p.name}</h3>
@@ -57,7 +57,7 @@ export default function PaymentsProviders() {
               </div>
               <ul className="mb-[26px] space-y-1.5">
                 {p.points.map((point) => (
-                  <li key={point} className="relative pl-[26px] text-[14.5px] font-light leading-[1.55] text-muted">
+                  <li key={point} className="relative pl-[26px] text-[14.5px] font-light leading-[1.55] text-ivory">
                     <Check className="absolute left-0 top-[7px] h-3.5 w-3.5 stroke-[3] text-coral" />
                     {point}
                   </li>
@@ -75,7 +75,7 @@ export default function PaymentsProviders() {
           ))}
         </div>
 
-        <Reveal className="mt-4 text-[13px] font-light text-muted-2" delay={0.25}>
+        <Reveal className="mt-4 text-sm font-light text-muted-2" delay={0.25}>
           Not sure which to choose? Call us at{' '}
           <a href="tel:+14808028188" className="text-coral no-underline">
             (480) 802-8188

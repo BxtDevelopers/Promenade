@@ -43,14 +43,14 @@ export default function InsuranceCarriers() {
           {CARRIERS.map((carrier) => (
             <div
               key={carrier}
-              className="rounded-xl border border-line bg-ivory/[0.03] px-3 py-[14px] text-center font-serif text-[16px] text-ivory-2"
+              className="rounded-xl border border-line bg-ivory px-3 py-[14px] text-center font-serif text-[16px] text-white"
             >
               {carrier}
             </div>
           ))}
         </Reveal>
 
-        <Reveal
+        {/* <Reveal
           className="mt-[26px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-[13px] font-light leading-[1.55] text-ivory-2"
           delay={0.2}
         >
@@ -58,7 +58,7 @@ export default function InsuranceCarriers() {
           &ldquo;in-network&rdquo; is plan- and provider-specific. Please verify which of these
           you&rsquo;re truly in-network with versus simply accept, and swap these name chips for
           official carrier logos when you have them.
-        </Reveal>
+        </Reveal> */}
       </div>
     </section>
   )

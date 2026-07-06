@@ -21,7 +21,7 @@ export default function WarrantyGuarantee() {
           <div className="relative text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             We stand behind our work
           </div>
-          <h2 className="relative mt-[10px] font-serif text-[clamp(30px,4.2vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="relative mt-[10px] font-serif text-[clamp(30px,4.2vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
             A guarantee, <em className="italic font-normal text-coral">not just a promise</em>.
           </h2>
           <p className="relative mx-auto mt-5 max-w-[56ch] text-[16px] font-light leading-[1.7] text-muted">

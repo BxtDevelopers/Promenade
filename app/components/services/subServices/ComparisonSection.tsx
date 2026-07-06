@@ -27,7 +27,7 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
   const [gridRef, gridIn] = useScrollReveal();
 
   return (
-    <section className="py-section relative overflow-hidden bg-bg-2 border-t border-line isolate">
+    <section className="py-section relative overflow-hidden border-t border-line isolate">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-coral/5 blur-[120px] rounded-full pointer-events-none -z-10" />
 
@@ -77,11 +77,11 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
             <div className="relative z-10">
               <div className="w-14 h-14 rounded-2xl bg-panel border border-white/10 flex items-center justify-center mb-6 group-hover:border-coral/40 group-hover:scale-110 transition-all duration-500 shadow-inner">
                 {/* Standard Tooth Icon */}
-                <svg className="w-7 h-7 text-ivory group-hover:text-coral transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-7 h-7 text-coral group-hover:text-coral transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4h.002m0 0v-.001" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-white transition-colors">
+              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-coral transition-colors">
                 {data.adultTooth.title}
               </h3>
               <p className="text-muted text-[15px] font-light leading-[1.7]">
@@ -97,11 +97,11 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
             <div className="relative z-10">
               <div className="w-14 h-14 rounded-2xl bg-panel border border-white/10 flex items-center justify-center mb-6 group-hover:border-coral-deep/40 group-hover:scale-110 transition-all duration-500 shadow-inner">
                 {/* Shield/Protection Icon for Baby Tooth */}
-                <svg className="w-7 h-7 text-ivory group-hover:text-coral-deep transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-7 h-7 text-coral group-hover:text-coral-deep transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-white transition-colors">
+              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-coral transition-colors">
                 {data.babyTooth.title}
               </h3>
               <p className="text-muted text-[15px] font-light leading-[1.7]">

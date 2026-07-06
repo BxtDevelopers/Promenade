@@ -15,7 +15,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg border-t border-line">
+    <section className="py-section  border-t border-line">
       <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 lg:gap-24 items-start">
           
@@ -33,7 +33,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6 max-w-[18ch]">
               {data.heading}
             </h2>
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%] mb-10">
+            <p className="text-ivory/80 text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%] mb-10">
               {data.subtitle}
             </p>
 
@@ -64,7 +64,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
           {/* ── Right Column: Vertical Timeline ── */}
           <div className="relative">
             {/* The continuous vertical line (Desktop only) */}
-            <div className="absolute left-[26px] top-[52px] bottom-10 w-px bg-line hidden md:block" />
+            <div className="absolute left-[26px] top-[52px] bottom-10 w-px bg-ivory/10 hidden md:block" />
 
             <div className="flex flex-col gap-6 md:gap-10">
               {data.steps.map((step, i) => (
@@ -112,7 +112,7 @@ function ProcessStep({
             inView 
               ? 'border-coral/50 text-coral shadow-[0_0_20px_rgba(232,154,114,0.15)]' 
               : 'border-line text-muted-2',
-            'group-hover:bg-coral/10 group-hover:border-coral group-hover:scale-110'
+            'group-hover:bg-coral/20 group-hover:border-coral group-hover:scale-110'
           ].join(' ')}
         >
           {stepNum}
@@ -126,13 +126,13 @@ function ProcessStep({
       <div 
         className={[
           'flex-1 rounded-[22px] p-7 md:p-9',
-          'border border-line bg-panel/[0.4]',
+          'border border-coral bg-ivory',
           'transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
           'hover:-translate-y-1 hover:border-coral/40 hover:bg-coral/5 hover:shadow-[0_16px_32px_-16px_rgba(0,0,0,0.5)]',
           'coral-underline'
         ].join(' ')}
       >
-        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ivory mb-3 transition-colors group-hover:text-white">
+        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white/90 mb-3 transition-colors group-hover:text-ivory">
           {step.title}
         </h3>
         <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">

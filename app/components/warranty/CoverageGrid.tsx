@@ -61,7 +61,7 @@ export default function CoverageGrid() {
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             What&apos;s covered
           </span>
-          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
             Coverage by <em className="italic font-normal text-coral">treatment</em>.
           </h2>
         </Reveal>
@@ -76,7 +76,7 @@ export default function CoverageGrid() {
               <div className="mb-4 flex h-[38px] w-[38px] items-center justify-center rounded-full border border-coral/50">
                 <Icon className="h-[18px] w-[18px] text-coral" strokeWidth={1.8} />
               </div>
-              <h3 className="mb-1 font-serif text-[21px] font-normal text-ivory">{title}</h3>
+              <h3 className="mb-1 font-serif text-[21px] font-normal text-white">{title}</h3>
               <div className="mb-2 text-[12px] font-medium uppercase tracking-[0.06em] text-coral">
                 {period}
               </div>
@@ -104,12 +104,6 @@ export default function CoverageGrid() {
           ))}
         </div>
 
-        <Reveal className="mt-[26px] rounded-[14px] border border-dashed border-coral/50 bg-coral/10 px-[18px] py-[15px] text-[13px] font-light leading-[1.55] text-ivory-2">
-          <b className="font-semibold text-coral">Set before launch:</b> the warranty periods and
-          terms above are placeholders modeled on common dental warranties. Set the exact
-          commitments Dr. Shriya is comfortable making (periods, what&apos;s covered, what&apos;s
-          excluded) and have them reviewed before this goes live.
-        </Reveal>
       </div>
     </section>
   )

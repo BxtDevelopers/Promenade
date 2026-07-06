@@ -49,7 +49,7 @@ export default function SolutionsGridSection({ data }: { data: SolutionsGridData
             </h2>
           </div>
           <div className="flex-1 lg:max-w-[500px]">
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7]">
+            <p className="text-ivory/80 text-[15px] md:text-[16px] font-light leading-[1.7]">
               {data.body}
             </p>
           </div>
@@ -126,7 +126,7 @@ function SolutionCard({
           className="object-cover object-center filter brightness-90 transition-transform duration-[1200ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-105 group-hover:brightness-100"
         />
         {/* Gradient overlay so text is always readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ivory via-ivory/80 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80" />
       </div>
 
       {/* Card Content */}
@@ -134,7 +134,7 @@ function SolutionCard({
         <span className="block text-coral font-sans text-[10.5px] tracking-eyebrow uppercase font-medium mb-3">
           {card.subtitle}
         </span>
-        <h3 className="font-serif font-normal text-[22px] md:text-[26px] text-ivory leading-[1.1] mb-4">
+        <h3 className="font-serif font-normal text-[22px] md:text-[26px] text-white leading-[1.1] mb-4">
           {card.title}
         </h3>
         <p className="text-ivory-2/80 font-sans font-light text-[14.5px] leading-[1.7]">

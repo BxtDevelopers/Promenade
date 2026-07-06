@@ -19,7 +19,7 @@ export default function SymptomsSection({ data }: { data: SymptomsData }) {
   const [textRef, textIn] = useScrollReveal();
 
   return (
-    <section className="py-section relative border-t border-line bg-bg">
+    <section className="py-section relative border-t border-line bg-bg-2">
       <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-24 items-start">
           
@@ -34,7 +34,7 @@ export default function SymptomsSection({ data }: { data: SymptomsData }) {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6 max-w-[18ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6 max-w-[18ch]">
               {data.heading}
             </h2>
             <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
@@ -101,7 +101,7 @@ function SymptomCard({
       <h3 className="font-serif font-normal text-[19px] md:text-[21px] text-coral leading-snug mb-2 md:mb-3">
         {symptom.title}
       </h3>
-      <p className="text-bg group-hover:text-muted font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
+      <p className="text-ivory group-hover:text-muted font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
         {symptom.body}
       </p>
     </div>

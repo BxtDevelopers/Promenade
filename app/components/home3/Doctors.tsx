@@ -46,7 +46,7 @@ export default function DoctorsSection() {
             className="absolute left-0 right-0 bottom-0 flex flex-col gap-[7px] p-[64px_30px_26px] bg-[linear-gradient(transparent,rgba(11,28,44,0.88))]"
           >
             <span
-              className="font-serif font-light leading-[1.12] text-ivory text-[clamp(20px,2.4vw,30px)]"
+              className="font-serif font-light leading-[1.12] text-white text-[clamp(20px,2.4vw,30px)]"
             >
               Passing the torch — Dr. Wei welcomes Dr. Shriya.
             </span>

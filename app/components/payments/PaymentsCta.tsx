@@ -1,8 +1,68 @@
+'use client'
+import { useEffect, useRef } from 'react'
 import Reveal from '../common/Reveal'
 
 export default function PaymentsCta() {
+  const archRef = useRef<SVGGElement>(null)
+
+  useEffect(() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const group = archRef.current
+    if (!group) return
+
+    const CX = 500, CY = 560, AN = 15
+    const arcs: SVGPathElement[] = []
+
+    for (let a = 0; a < AN; a++) {
+      const r = 82 + a * 33
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+      p.setAttribute('d', `M${CX - r} ${CY} A${r} ${r} 0 0 1 ${CX + r} ${CY}`)
+      p.setAttribute('fill', 'none')
+      p.setAttribute('stroke', (a === 4 || a === 9 || a === 13) ? 'rgba(232,154,114,0.4)' : 'rgba(244,236,221,0.14)')
+      p.setAttribute('stroke-width', '1')
+      p.setAttribute('stroke-linecap', 'round')
+      
+      // Added pathLength to ensure the 1 dasharray trick works consistently across all browsers
+      p.setAttribute('pathLength', '1') 
+      p.style.strokeDasharray = '1'
+      p.style.strokeDashoffset = reduce ? '0' : '1'
+      
+      group.appendChild(p)
+      arcs.push(p)
+    }
+
+    if (!reduce) {
+      arcs.forEach((p, i) => {
+        p.style.transition = `stroke-dashoffset 1.7s ease ${i * 0.055}s`
+      })
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          arcs.forEach(p => { p.style.strokeDashoffset = '0' })
+        })
+      })
+    }
+
+    return () => { while (group.firstChild) group.removeChild(group.firstChild) }
+  }, [])
+
+
   return (
-    <section className="relative overflow-hidden py-[clamp(84px,10vw,150px)] text-center">
+    <section className="relative text-center overflow-hidden py-[clamp(84px,10vw,150px)] bg-bg-2">
+      
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(60%_80%_at_50%_50%,rgba(232,154,114,0.14),transparent_65%)] z-0" />
+
+      {/* Background Arch SVG */}
+      <div className="absolute inset-0 z-0">
+        <svg
+          viewBox="0 0 1000 560"
+          preserveAspectRatio="xMidYMax slice"
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full"
+        >
+          <g ref={archRef} />
+        </svg>
+      </div>
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -17,7 +77,7 @@ export default function PaymentsCta() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-ivory">
+          <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Get started today.
             <br />
             <em className="italic font-normal text-coral">See your options.</em>
@@ -33,23 +93,13 @@ export default function PaymentsCta() {
           </a>
           <a
             href="tel:+14808028188"
-            className="whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory"
+            className="whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-white transition hover:border-coral"
           >
             Call (480) 802-8188
           </a>
         </Reveal>
 
-        <Reveal
-          className="mx-auto mt-[48px] max-w-[820px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-left text-[13px] font-light leading-[1.55] text-ivory-2"
-          delay={0.15}
-        >
-          <b className="font-semibold text-coral">Before launch:</b> swap the apply links for
-          your real ones &mdash; Cherry issues a practice-specific link
-          (pay.withcherry.com/your-practice; the one here is a guess), and CareCredit can give you
-          a provider-branded prequalify link in place of the generic one.
-        </Reveal>
-
-        <Reveal className="mx-auto mt-5 max-w-[94ch] text-[11.5px] font-light leading-[1.55] text-muted-2" delay={0.2}>
+        <Reveal className="mx-auto mt-5 max-w-[89ch] text-[13.5px] font-light leading-[1.55] text-muted-2" delay={0.2}>
           *Financing is provided by third-party lenders &mdash; Cherry and CareCredit (a Synchrony
           product) &mdash; not by Promenade Dental. Approval, payment amounts, terms, interest
           rates, and any credit impact are determined by the provider and subject to their

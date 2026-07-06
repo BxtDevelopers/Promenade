@@ -27,7 +27,7 @@ export default function ReferralsHowItWorks() {
             <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
               How it works
             </div>
-            <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+            <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
               Three <em className="italic font-normal text-coral">easy steps</em>.
             </h2>
           </div>
@@ -36,8 +36,8 @@ export default function ReferralsHowItWorks() {
         <div className="grid grid-cols-1 gap-[clamp(28px,4vw,56px)] sm:grid-cols-3">
           {STEPS.map(({ n, title, body }, i) => (
             <Reveal key={n} className="relative" delay={i * 0.1}>
-              <span className="font-serif text-sm tracking-[0.14em] text-coral">{n}</span>
-              <h3 className="mb-[14px] mt-[14px] font-serif text-[clamp(22px,2.5vw,30px)] font-normal text-ivory">
+              <span className="font-serif text-lg tracking-[0.14em] text-coral">{n}</span>
+              <h3 className="mb-[14px] mt-[14px] font-serif text-[clamp(22px,2.5vw,30px)] font-normal text-white">
                 {title}
               </h3>
               <p className="max-w-[32ch] text-[15px] font-light leading-[1.72] text-muted">{body}</p>

@@ -128,7 +128,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
 
   // Helper function to render a column of FAQs
   const renderFAQColumn = (items: FAQItem[], offset: number) => (
-    <div className="flex flex-col divide-y divide-line ">
+    <div className="flex flex-col divide-y divide-coral ">
       {items.map((item, index) => {
         // Calculate the true global index to keep the accordion state synced
         const actualIndex = index + offset;
@@ -182,7 +182,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
   );
 
   return (
-    <section className="py-section bg-bg-2 border-t border-line">
+    <section className="py-section  border-t border-line">
       <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* ── Header ── */}

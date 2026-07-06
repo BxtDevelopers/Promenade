@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
   const [leadRef, leadIn] = useScrollReveal();
 
   return (
-    <section className="pb-10">
+    <section className="py-20 bg-bg-2">
       <div className="lg:px-site max-w-[90%] mx-auto">
 
         {/* Lead */}
@@ -89,11 +89,11 @@ function MetaCard({
     <span className="absolute top-6 right-6 text-coral/40 font-serif text-3xl">
   0{index + 1}
 </span>
-      <h4 className="font-serif text-[24px] lg:text-[28px] text-ivory mb-4">
+      <h4 className="font-serif text-[24px] lg:text-[28px] text-white mb-4">
   {item.title}
 </h4>
 
-<p className="text-muted text-[15px] lg:text-[16px] leading-[1.9] max-w-[42ch]">
+<p className="text-muted text-[15px] lg:text-[16px] leading-[1.9] lg:max-w-[80%]">
   {item.body}
 </p>
     </div>

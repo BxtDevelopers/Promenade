@@ -48,14 +48,14 @@ export default function WhyChooseUs() {
 
         <div className="mt-[46px] grid grid-cols-1 gap-[clamp(20px,2.5vw,32px)] sm:grid-cols-2 lg:grid-cols-4">
           {cards.map(({ icon: Icon, title, body }, i) => (
-            <Reveal key={title} delay={i * 60} className="border-t border-line pt-[22px]">
-              <span className="mb-[18px] inline-flex h-[30px] w-[30px] items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-[15px] w-[15px] text-coral" strokeWidth={2.2} />
+            <Reveal key={title} delay={i * 60} className="border-t border-coral/50 pt-[22px]">
+              <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
+                <Icon className="h-6 w-6 text-coral" strokeWidth={2.2} />
               </span>
-              <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-ivory">
+              <b className="mb-[10px] block font-serif text-2xl font-normal leading-[1.15] text-ivory">
                 {title}
               </b>
-              <p className="text-[14.5px] font-light leading-[1.65] text-muted">{body}</p>
+              <p className="text-lg font-light leading-[1.65] text-muted">{body}</p>
             </Reveal>
           ))}
         </div>

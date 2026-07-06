@@ -41,7 +41,7 @@ export default function ServiceDecisionSection({ data }: { data: ServiceDecision
               {data.eyebrow}
             </span>
           )}
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6">
             {data.heading}
           </h2>
           <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
@@ -66,7 +66,7 @@ export default function ServiceDecisionSection({ data }: { data: ServiceDecision
                     <span className={`font-serif text-sm transition-colors duration-300 ${isOpen ? 'text-coral' : 'text-muted-2'}`}>
                       {num}
                     </span>
-                    <h3 className={`font-serif font-normal text-[18px] leading-snug transition-colors duration-300 ${isOpen ? 'text-ivory' : 'text-muted'}`}>
+                    <h3 className={`font-serif font-normal text-[18px] leading-snug transition-colors duration-300 ${isOpen ? 'text-white' : 'text-muted'}`}>
                       {match.title}
                     </h3>
                   </div>
@@ -127,7 +127,7 @@ export default function ServiceDecisionSection({ data }: { data: ServiceDecision
                   className={[
                     'relative text-left py-6 w-full',
                     'transition-all duration-300 group',
-                    isActive ? 'text-ivory' : 'text-muted hover:text-ivory/70',
+                    isActive ? 'text-white' : 'text-muted hover:text-white/70',
                   ].join(' ')}
                 >
                   {isActive && (

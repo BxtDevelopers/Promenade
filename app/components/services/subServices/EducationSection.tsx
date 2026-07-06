@@ -54,7 +54,7 @@ export default function EducationSection({
           <div>
             <Link 
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-coral text-ivory font-medium text-[15px] hover:bg-coral/90 transition-all duration-300 ease-out"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-coral text-white font-medium text-[15px] hover:bg-coral/90 transition-all duration-300 ease-out"
             >
               {data.cta.label}
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />

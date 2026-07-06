@@ -42,7 +42,7 @@ export default function WarrantyFAQ() {
             <details
               key={q}
               open={i === 0}
-              className="group mb-3 rounded-[16px] border border-line bg-ivory/[0.03] px-[22px]"
+              className="group mb-3 rounded-[16px] border border-line bg-ivory/[0.06] px-[22px]"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[19px] font-normal text-ivory marker:content-none [&::-webkit-details-marker]:hidden">
                 {q}

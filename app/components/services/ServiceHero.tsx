@@ -103,7 +103,7 @@ export default function ServiceHero() {
             </div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 z-[1] bg-hero-grade" />
+      <div className="absolute inset-0 z-[1] bg-coral/5" />
 
       {/* Cursor glow */}
       <div
@@ -179,7 +179,7 @@ export default function ServiceHero() {
           ].map((item) => (
             <span
               key={item}
-              className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 md:text-body-lg text-ivory/80 tracking-[0.02em]"
+              className="px-4 py-2 rounded-full bg-white backdrop-blur-sm border border-coral/60 md:text-body-lg text-ivory/80 tracking-[0.02em]"
             >
               {item}
             </span>

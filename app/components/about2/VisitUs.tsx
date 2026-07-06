@@ -3,13 +3,13 @@ import Reveal from '../common/Reveal'
 
 export default function VisitUs() {
   return (
-    <section id="visit" className="py-section">
+    <section id="visit" className="py-section bg-bg-2">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Visit us
           </span>
-          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
             Right here in <em className="italic font-normal text-coral">Fulton Ranch</em>.
           </h2>
         </Reveal>

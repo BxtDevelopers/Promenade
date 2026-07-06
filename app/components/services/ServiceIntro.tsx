@@ -17,7 +17,7 @@ const fadeUp = (delay = 0) => ({
 
 export default function ServiceIntro() {
   return (
-    <section className="py-section border-t border-line">
+    <section className="py-section border-t border-line bg-bg-2">
       <div className="=lg:px-site max-w-[90%] mx-auto">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[clamp(48px,6vw,96px)] items-center">
@@ -47,10 +47,10 @@ export default function ServiceIntro() {
                 'px-5 py-4',
               ].join(' ')}
             >
-              <p className="text-coral text-[11px] tracking-wide3 uppercase font-medium mb-1">
+              <p className="text-white text-[11px] tracking-wide3 uppercase font-semibold  mb-1">
                 Before Any Treatment
                 </p>
-                <p className="text-ivory text-[13px] font-light leading-snug max-w-[22ch]">
+                <p className="text-white text-[13px] font-light leading-snug max-w-[22ch]">
                 Every recommendation begins with a complete evaluation.
                 </p>
             </motion.div>
@@ -70,7 +70,7 @@ export default function ServiceIntro() {
             <h2
             className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)]
-            leading-[1.05] tracking-[-0.02em] text-ivory"
+            leading-[1.05] tracking-[-0.02em] text-white"
             >
             Dental treatment starts with the{' '}
             <em className="not-italic text-coral">right diagnosis.</em>

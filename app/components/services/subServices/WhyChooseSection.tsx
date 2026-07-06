@@ -21,7 +21,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg-2 border-t border-line relative">
+    <section className="py-section  border-t border-line relative">
       {/* Subtle background glow to contrast with previous section */}
       <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none opacity-50">
         <div className="w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(232,154,114,0.08),transparent_70%)]" />
@@ -96,7 +96,7 @@ function TrustCard({ item }: { item: BenefitItem }) {
         'coral-underline', 
         isHovered
           ? 'border-coral/40 bg-coral/5 -translate-y-[5px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]'
-          : 'border-line bg-panel/[0.4]', // Slightly different card background to stand out
+          : 'border-line bg-ivory', // Slightly different card background to stand out
       ].join(' ')}
     >
       {/* Animated SVG Icon */}
@@ -124,7 +124,7 @@ function TrustCard({ item }: { item: BenefitItem }) {
       </svg>
 
       <div className="flex-1">
-        <h3 className="font-serif font-normal text-[22px] lg:text-[24px] mb-3 text-ivory transition-colors group-hover:text-white">
+        <h3 className="font-serif font-normal text-[22px] lg:text-[24px] mb-3 text-white group-hover:text-coral transition-colors ">
           {item.title}
         </h3>
         <p className="text-muted text-[15px] font-light leading-[1.7]">

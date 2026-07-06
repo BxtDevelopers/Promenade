@@ -15,15 +15,15 @@ export default function PaymentsUses() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             What it covers
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
             Use it for the care that <em className="italic font-normal text-coral">matters most</em>.
           </h2>
         </Reveal>
 
         <div className="mt-[42px] grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {USES.map((use, i) => (
-            <Reveal key={use.title} className="rounded-[18px] border border-line p-6" delay={i * 0.08}>
-              <b className="mb-1.5 block font-serif text-[18px] font-normal text-ivory">
+            <Reveal key={use.title} className="rounded-[18px] border border-coral p-6" delay={i * 0.08}>
+              <b className="mb-1.5 block font-serif text-[18px] font-normal text-white">
                 {use.title}
               </b>
               <span className="block text-[13.5px] font-light leading-[1.55] text-muted">

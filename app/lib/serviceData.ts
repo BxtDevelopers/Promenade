@@ -1647,565 +1647,565 @@ export const SERVICES = [
       },
   },
 
-  {
-    slug: 'dental-implants',
-name: 'Dental Implants',
-
-metaTitle: 'Dental Implants in Chandler, AZ | Promenade Dental',
-
-metaDescription:
-  'Dental implants in Chandler AZ for replacing missing teeth with stable, natural-looking restorations. Visit Promenade Dental near Fulton Ranch for implant consultation.',
-
-hero: {
-  eyebrow: 'Tooth Replacement Options in Fulton Ranch',
-
-  title: 'Dental Implants for Missing Teeth and',
-  highlight: 'Stable Tooth Replacement in Chandler',
-
-  description:
-    'Promenade Dental helps patients explore dental implant options for replacing one tooth, several teeth, or supporting dentures with treatment planning focused on oral health, bone support, chewing function, smile appearance, and long-term stability.',
-
-  image: '/assets/h-dentalimplants.jpg',
-
-  trustPoints: [
-    'Single Tooth Implant Options',
-    'Implant-Supported Bridges',
-    'Implant-Supported Dentures',
-    'Treatment Planning Based on Bone and Gum Health',
-    'Located in Fulton Ranch',
-    'New Patients Welcome',
-  ],
-
-  primaryCTA: {
-    label: 'Book an Implant Consultation',
-    href: '#contact',
-  },
-
-  secondaryCTA: {
-    label: 'Call (480) 802-8188',
-    href: 'tel:+14808028188',
-  },
-},
-overview: {
-  eyebrow: 'Dental Implant Solutions',
-
-  heading:
-    'Dental Implants for Missing Teeth, Chewing Difficulty, Tooth Shifting, and Denture Instability',
-
-  body:
-    'Missing teeth can affect chewing comfort, speech, smile appearance, bite balance, and the position of nearby teeth. For some patients, missing teeth may also make dentures feel loose or uncomfortable during daily use. Dental implants are designed to support replacement teeth by acting as artificial tooth roots. Depending on the case, implants may support a single crown, bridge, or denture. At Promenade Dental, Dr. Shriya evaluates your missing tooth area, gum health, bone support, bite, medical history, and replacement goals before discussing implant options.',
-
-  features: [
-    'Replace one or multiple missing teeth',
-    'Support crowns, bridges, or dentures',
-    'Help maintain bite balance and function',
-    'Treatment planned around oral health goals',
-  ],
-
-  image: '/assets/service-dental-implants.jpg',
-
-  cta: {
-    label: 'Start Your Implant Evaluation',
-    href: '/contact',
-  },
-},
-whyItMatters: {
-  eyebrow: 'Dental Implant Evaluation',
-
-  heading:
-    'Dental Implant Evaluation for Missing Teeth, Bone Support, Gum Health, Bite Function, and Replacement Options',
-
-  description:
-    'Dental implant treatment depends on the health and structure of the mouth. Before implant treatment is recommended, Dr. Shriya evaluates the missing tooth area, bone support, gum health, nearby teeth, bite pressure, medical history, oral hygiene, and whether additional treatment may be needed first. The consultation helps determine whether a single implant, implant-supported bridge, implant-supported denture, traditional bridge, or removable denture should be considered.',
-
-  items: [
-    {
-      title: 'Bone Support',
-      body:
-        'Dental implants need adequate bone support for stability. If bone support is limited, additional planning may be needed.',
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M14 30 h20 M18 22 h12 M20 14 q4 6 8 0 q4 6 8 0',
-      ],
-    },
-
-    {
-      title: 'Gum Health',
-      body:
-        'Healthy gums help support implant treatment and long-term maintenance.',
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M14 24 q10 -10 20 0 q-2 8 -10 12 q-8 -4 -10 -12',
-      ],
-    },
-
-    {
-      title: 'Missing Tooth Pattern',
-      body:
-        'The number and position of missing teeth help determine whether a single implant, bridge, or denture-supported option may be suitable.',
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M12 24 h8 M24 24 h8 M18 18 v12',
-      ],
-    },
-  ],
+//   {
+//     slug: 'dental-implants',
+// name: 'Dental Implants',
+
+// metaTitle: 'Dental Implants in Chandler, AZ | Promenade Dental',
+
+// metaDescription:
+//   'Dental implants in Chandler AZ for replacing missing teeth with stable, natural-looking restorations. Visit Promenade Dental near Fulton Ranch for implant consultation.',
+
+// hero: {
+//   eyebrow: 'Tooth Replacement Options in Fulton Ranch',
+
+//   title: 'Dental Implants for Missing Teeth and',
+//   highlight: 'Stable Tooth Replacement in Chandler',
+
+//   description:
+//     'Promenade Dental helps patients explore dental implant options for replacing one tooth, several teeth, or supporting dentures with treatment planning focused on oral health, bone support, chewing function, smile appearance, and long-term stability.',
+
+//   image: '/assets/h-dentalimplants.jpg',
+
+//   trustPoints: [
+//     'Single Tooth Implant Options',
+//     'Implant-Supported Bridges',
+//     'Implant-Supported Dentures',
+//     'Treatment Planning Based on Bone and Gum Health',
+//     'Located in Fulton Ranch',
+//     'New Patients Welcome',
+//   ],
+
+//   primaryCTA: {
+//     label: 'Book an Implant Consultation',
+//     href: '#contact',
+//   },
+
+//   secondaryCTA: {
+//     label: 'Call (480) 802-8188',
+//     href: 'tel:+14808028188',
+//   },
+// },
+// overview: {
+//   eyebrow: 'Dental Implant Solutions',
+
+//   heading:
+//     'Dental Implants for Missing Teeth, Chewing Difficulty, Tooth Shifting, and Denture Instability',
+
+//   body:
+//     'Missing teeth can affect chewing comfort, speech, smile appearance, bite balance, and the position of nearby teeth. For some patients, missing teeth may also make dentures feel loose or uncomfortable during daily use. Dental implants are designed to support replacement teeth by acting as artificial tooth roots. Depending on the case, implants may support a single crown, bridge, or denture. At Promenade Dental, Dr. Shriya evaluates your missing tooth area, gum health, bone support, bite, medical history, and replacement goals before discussing implant options.',
+
+//   features: [
+//     'Replace one or multiple missing teeth',
+//     'Support crowns, bridges, or dentures',
+//     'Help maintain bite balance and function',
+//     'Treatment planned around oral health goals',
+//   ],
+
+//   image: '/assets/service-dental-implants.jpg',
+
+//   cta: {
+//     label: 'Start Your Implant Evaluation',
+//     href: '/contact',
+//   },
+// },
+// whyItMatters: {
+//   eyebrow: 'Dental Implant Evaluation',
+
+//   heading:
+//     'Dental Implant Evaluation for Missing Teeth, Bone Support, Gum Health, Bite Function, and Replacement Options',
+
+//   description:
+//     'Dental implant treatment depends on the health and structure of the mouth. Before implant treatment is recommended, Dr. Shriya evaluates the missing tooth area, bone support, gum health, nearby teeth, bite pressure, medical history, oral hygiene, and whether additional treatment may be needed first. The consultation helps determine whether a single implant, implant-supported bridge, implant-supported denture, traditional bridge, or removable denture should be considered.',
+
+//   items: [
+//     {
+//       title: 'Bone Support',
+//       body:
+//         'Dental implants need adequate bone support for stability. If bone support is limited, additional planning may be needed.',
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M14 30 h20 M18 22 h12 M20 14 q4 6 8 0 q4 6 8 0',
+//       ],
+//     },
+
+//     {
+//       title: 'Gum Health',
+//       body:
+//         'Healthy gums help support implant treatment and long-term maintenance.',
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M14 24 q10 -10 20 0 q-2 8 -10 12 q-8 -4 -10 -12',
+//       ],
+//     },
+
+//     {
+//       title: 'Missing Tooth Pattern',
+//       body:
+//         'The number and position of missing teeth help determine whether a single implant, bridge, or denture-supported option may be suitable.',
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M12 24 h8 M24 24 h8 M18 18 v12',
+//       ],
+//     },
+//   ],
 
-  cta: {
-    label: 'Find Out If Dental Implants Are Right for You',
-    href: '/contact',
-  },
-},
-features: {
-  eyebrow: 'Benefits of Dental Implants',
-
-  heading:
-    'Dental Implants for Stable Tooth Replacement, Chewing Support, and Smile Function',
-
-  body:
-    'Dental implants can provide support for replacement teeth in a way that helps restore everyday function. They are often considered for patients who want a stable replacement option and have suitable oral health, gum health, and bone support.',
+//   cta: {
+//     label: 'Find Out If Dental Implants Are Right for You',
+//     href: '/contact',
+//   },
+// },
+// features: {
+//   eyebrow: 'Benefits of Dental Implants',
+
+//   heading:
+//     'Dental Implants for Stable Tooth Replacement, Chewing Support, and Smile Function',
+
+//   body:
+//     'Dental implants can provide support for replacement teeth in a way that helps restore everyday function. They are often considered for patients who want a stable replacement option and have suitable oral health, gum health, and bone support.',
 
-  features: [
-    {
-      title: 'Supports Replacement Teeth',
+//   features: [
+//     {
+//       title: 'Supports Replacement Teeth',
 
-      body:
-        'Implants can support crowns, bridges, or dentures depending on how many teeth need replacement.',
-    },
-
-    {
-      title: 'Helps Restore Chewing Comfort',
-
-      body:
-        'Implant-supported restorations can improve chewing support compared with an untreated missing tooth space.',
-    },
-
-    {
-      title: 'Helps Maintain Tooth Replacement Stability',
-
-      body:
-        'Implants may help provide stability for replacement teeth, bridges, or dentures when properly planned.',
-    },
-  ],
-},
-servicesGrid: {
-  eyebrow: 'Dental Implant Treatment Options',
-
-  heading:
-    'Dental Implant Options for One Missing Tooth, Several Missing Teeth, or Denture Support',
-
-  intro:
-    'Dental implants can be used in different ways depending on how many teeth are missing and what type of replacement is needed. Promenade Dental helps patients understand the differences between single implants, implant-supported bridges, and implant-supported dentures.',
-
-  services: [
-    {
-      title: 'Single Tooth Implant',
-
-      description:
-        'A single tooth implant can replace one missing tooth with an implant-supported crown when gum health and bone support are suitable.',
-
-      bestFor: [
-        'One missing tooth',
-        'Independent tooth replacement',
-        'Avoiding support from neighboring teeth',
-        'Stable single tooth restoration',
-      ],
-
-      cta: 'Learn About Single Tooth Implants',
-
-      href: '/services/dental-implants/single-tooth-implant',
-    },
-
-    {
-      title: 'Implant-Supported Bridge',
-
-      description:
-        'An implant-supported bridge can replace multiple missing teeth using dental implants for support instead of relying only on natural teeth.',
-
-      bestFor: [
-        'Several missing teeth',
-        'Fixed replacement',
-        'Implant-supported chewing support',
-        'Avoiding traditional bridge support in selected cases',
-      ],
-
-      cta: 'Learn About Implant-Supported Bridges',
-
-      href: '/services/dental-implants/implant-supported-bridge',
-    },
-
-    {
-      title: 'Implant-Supported Dentures',
-
-      description:
-        'Implant-supported dentures use dental implants to help improve denture stability for patients replacing many or all teeth.',
-
-      bestFor: [
-        'Full arch tooth replacement',
-        'Loose denture concerns',
-        'Improved denture support',
-        'Removable or fixed implant-supported options',
-      ],
-
-      cta: 'Learn About Implant-Supported Dentures',
-
-      href: '/services/dental-implants/implant-supported-dentures',
-    },
-  ],
-},
-suitability: {
-  eyebrow: 'Is Implant Treatment Right for You?',
-
-  heading:
-    'Dental Implants for Patients With Missing Teeth and Suitable Gum and Bone Support',
-
-  body:
-    'Dental implants may be suitable for patients who want a stable tooth replacement option and have the oral health needed to support implant treatment. The right recommendation depends on gum health, bone support, medical history, bite pressure, oral hygiene, and the number of missing teeth.\n\nAt Promenade Dental, Dr. Shriya helps you understand whether dental implants, bridges, dentures, partials, or another restorative option may fit your needs.',
-
-  goodFit: {
-    title: 'Dental Implants May Be Right If',
-
-    items: [
-      'You are missing one or more teeth',
-      'You want a stable replacement option',
-      'You want to avoid a removable appliance when possible',
-      'You have suitable gum and bone support',
-      'You want to support a crown, bridge, or denture with implants',
-    ],
-  },
-
-  alternative: {
-    title: 'Another Option May Be Better If',
-
-    items: [
-      'Bone support is limited without additional treatment',
-      'Gum disease needs treatment first',
-      'Medical factors affect healing or implant suitability',
-      'You prefer a removable denture or partial',
-      'A traditional bridge may be more practical for the missing tooth space',
-    ],
-  },
-
-  cta: {
-    label: 'Schedule an Implant Suitability Evaluation',
-    href: '/contact',
-  },
-},
-comparison: {
-  eyebrow: 'Dental Implants, Bridges, or Dentures?',
-
-  heading:
-    'Dental Implants, Bridges, and Dentures for Different Missing Tooth Replacement Needs',
-
-  body:
-    'Missing teeth can be replaced in different ways. Dental implants may support individual crowns, bridges, or dentures. Traditional bridges are fixed restorations that may use neighboring teeth for support. Dentures and partials are removable options for replacing several or all missing teeth.',
-
-  matches: [
-    {
-      title: 'Dental Implants for Stable Replacement Support',
-
-      body:
-        'Implants may be recommended when a patient wants stable support for a crown, bridge, or denture and has suitable oral health.',
-    },
-
-    {
-      title: 'Dental Bridges for Fixed Tooth Replacement',
-
-      body:
-        'A bridge may be recommended when one or more missing teeth can be replaced with a fixed restoration supported by neighboring teeth or implants.',
-    },
-
-    {
-      title: 'Dentures and Partials for Removable Replacement',
-
-      body:
-        'Dentures and partials may be recommended when several or all teeth need replacement with a removable appliance.',
-    },
-  ],
-},
-process: {
-  eyebrow: 'Dental Implant Planning Process',
-
-  heading:
-    'Dental Implant Planning for Bone Support, Gum Health, Tooth Replacement, and Long-Term Function',
-
-  subtitle:
-    'Dental implant treatment is planned around the health of the mouth and the type of replacement needed. The goal is to determine whether implants are suitable and how they can support the final restoration.',
-
-  steps: [
-    {
-      title: 'Missing Tooth and Oral Health Evaluation',
-
-      body:
-        'Dr. Shriya evaluates the missing tooth area, gums, nearby teeth, bite, bone support, and overall oral health.',
-    },
-
-    {
-      title: 'Implant Suitability Review',
-
-      body:
-        'You receive a clear explanation of whether dental implants are suitable and whether additional treatment may be needed before implant placement.',
-    },
-
-    {
-      title: 'Tooth Replacement Planning',
-
-      body:
-        'The final replacement is planned based on whether you need a single implant crown, implant-supported bridge, or implant-supported denture.',
-    },
-
-    {
-      title: 'Restoration and Maintenance Planning',
-
-      body:
-        'Implant restorations require ongoing cleaning, gum monitoring, bite evaluation, and routine dental visits.',
-    },
-  ],
-
-  cta: {
-    label: 'Book an Implant Consultation',
-    href: '#contact',
-  },
-},
-maintenance: {
-  eyebrow: 'Dental Implant Maintenance',
-
-  heading:
-    'Dental Implant Care for Patients Who Want Long-Term Stability and Healthy Gums',
-
-  body:
-    'Dental implants need ongoing care just like natural teeth and other restorations. Healthy gums, good home hygiene, routine dental exams, and bite monitoring help support long-term implant success.',
-
-  cards: [
-    {
-      title: 'Clean Around the Implant Restoration',
-
-      body:
-        'Plaque and bacteria can collect around implant-supported crowns, bridges, or dentures, so daily cleaning is important.',
-    },
-
-    {
-      title: 'Keep Gums Healthy',
-
-      body:
-        'Gum inflammation around implants should be monitored because healthy tissue helps support implant stability.',
-    },
-
-    {
-      title: 'Avoid Excessive Bite Stress',
-
-      body:
-        'Grinding, clenching, or heavy bite pressure can affect implant restorations and surrounding teeth.',
-    },
-
-    {
-      title: 'Attend Routine Dental Visits',
-
-      body:
-        'Regular visits help monitor implant restorations, bite comfort, gum health, and oral hygiene.',
-    },
-  ],
-},
-benefits: {
-  eyebrow: 'Why Choose Promenade Dental',
-
-  heading:
-    'Dentist-Led Implant Planning for Missing Teeth, Function, Appearance, and Long-Term Oral Health',
-
-  description:
-    'Dental implant treatment should be planned around the patient’s whole mouth, not only the missing tooth. Promenade Dental evaluates gum health, bone support, bite function, restorative needs, and replacement goals before discussing implant options.',
-
-  items: [
-    {
-      title: 'Complete Missing Tooth Evaluation',
-
-      body:
-        'Dr. Shriya evaluates the missing tooth area, nearby teeth, gums, bite, bone support, and X-rays when needed.',
-
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
-      ],
-    },
-
-    {
-      title: 'Implant Options Explained Clearly',
-
-      body:
-        'Patients are guided through single implants, implant-supported bridges, implant-supported dentures, traditional bridges, and removable options when relevant.',
-
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
-      ],
-    },
-
-    {
-      title: 'Restorative Planning Around the Final Tooth',
-
-      body:
-        'Implant treatment planning considers how the final crown, bridge, or denture should function and look.',
-
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M24 12 L24 30 M14 22 L34 22',
-      ],
-    },
-
-    {
-      title: 'Restorative and Preventive Care in One Office',
-
-      body:
-        'Promenade Dental can connect implant planning with crowns, bridges, dentures, extractions, preventive care, and long-term maintenance.',
-
-      paths: [
-        'M6 38 A18 18 0 0 1 42 38',
-        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-      ],
-    },
-  ],
-},
-localArea: {
-  eyebrow: 'Local Dental Implant Care',
-
-  heading:
-    'Dental Implants Near Fulton Ranch and Chandler 85248',
-
-  body:
-    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for dental implants, single tooth implants, implant-supported bridges, implant-supported dentures, or missing tooth replacement near Chandler 85248, Promenade Dental offers implant consultations based on oral health, bone support, gum health, bite function, and long-term replacement goals.',
-
-  address: {
-    practice: 'Promenade Dental',
-    street: '4905 S. Alma School Rd, Suite 1',
-    cityStateZip: 'Chandler, AZ 85248',
-    phone: '(480) 802-8188',
-  },
-
-  cta: {
-    label: 'Get Directions',
-    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
-  },
-},
-relatedServices: {
-  eyebrow: 'Explore Related Implant Care',
-
-  heading:
-    'Related Implant and Restorative Services for Missing Teeth and Tooth Replacement',
-
-  intro:
-    'Dental implants are one option for replacing missing teeth. Some patients may need single tooth replacement, multiple tooth replacement, denture support, extractions, or restorative treatment before or after implant planning.',
-
-  services: [
-    {
-      title: 'Single Tooth Implant',
-
-      description:
-        'A single tooth implant can replace one missing tooth with an implant-supported crown when suitable.',
-
-      href: '/services/dental-implants/single-tooth-implant',
-    },
-
-    {
-      title: 'Implant-Supported Bridge',
-
-      description:
-        'An implant-supported bridge may replace several missing teeth with support from dental implants.',
-
-      href: '/services/dental-implants/implant-supported-bridge',
-    },
-
-    {
-      title: 'Implant-Supported Dentures',
-
-      description:
-        'Implant-supported dentures may improve denture stability for patients replacing many or all teeth.',
-
-      href: '/services/dental-implants/implant-supported-dentures',
-    },
-
-    {
-      title: 'Restorative Dentistry',
-
-      description:
-        'Restorative dentistry may be needed before or after implant treatment to protect remaining teeth and support long-term oral health.',
-
-      href: '/services/restorative-dentistry',
-    },
-  ],
-},
-faq: {
-  eyebrow: 'Frequently Asked Questions',
-
-  heading:
-    'Dental Implant Questions About Missing Teeth, Bone Support, Bridges, Dentures, and Long-Term Care',
-
-  items: [
-    {
-      q: 'What are dental implants?',
-      a: 'Dental implants are artificial tooth roots used to support replacement teeth such as crowns, bridges, or dentures.',
-    },
-
-    {
-      q: 'Who is a good candidate for dental implants?',
-      a: 'A good implant candidate usually needs suitable bone support, healthy gums, good oral hygiene, and medical factors that support proper healing. A dental evaluation is needed to confirm suitability.',
-    },
-
-    {
-      q: 'Can one missing tooth be replaced with an implant?',
-      a: 'Yes. A single tooth implant may replace one missing tooth with an implant-supported crown when the area has suitable gum and bone support.',
-    },
-
-    {
-      q: 'Can implants replace several missing teeth?',
-      a: 'Yes. Multiple missing teeth may be replaced with an implant-supported bridge or implant-supported denture depending on the case.',
-    },
-
-    {
-      q: 'Are dental implants better than bridges?',
-      a: 'Implants and bridges solve missing tooth problems differently. Implants do not rely on neighboring teeth in the same way a traditional bridge may, but suitability depends on bone support, gum health, medical history, and treatment goals.',
-    },
-
-    {
-      q: 'Can dental implants support dentures?',
-      a: 'Yes. Implant-supported dentures use dental implants to help improve denture support and stability when the patient is a suitable candidate.',
-    },
-
-    {
-      q: 'Do dental implants need special care?',
-      a: 'Dental implants need daily cleaning, healthy gums, routine dental visits, and bite monitoring. Implant-supported restorations should be maintained carefully.',
-    },
-
-    {
-      q: 'Can I get an implant after tooth extraction?',
-      a: 'A dental implant may be possible after extraction depending on healing, bone support, gum health, and the condition of the extraction site.',
-    },
-
-    {
-      q: 'What happens if I do not replace a missing tooth?',
-      a: 'A missing tooth can affect chewing, tooth position, bite support, and smile appearance. Nearby teeth may shift over time.',
-    },
-
-    {
-      q: 'Where is Promenade Dental located?',
-      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
-    },
-  ],
-},
-cta: {
-  title: 'Schedule a Dental Implant Consultation',
-  highlight: 'for Missing Teeth or Stable Tooth Replacement',
-
-  subtitle:
-    'Promenade Dental helps patients explore dental implant options for single tooth replacement, multiple tooth replacement, and denture support with treatment planning based on gum health, bone support, bite function, appearance, and long-term oral health.',
-
-  buttonText: 'Book an Implant Consultation',
-  buttonHref: '/contact-us',
-
-  secondaryButtonText: 'Call (480) 802-8188',
-  secondaryButtonHref: 'tel:+14808028188',
-
-  image: '/assets/dental-lobby.jpg',
-},
-  },
+//       body:
+//         'Implants can support crowns, bridges, or dentures depending on how many teeth need replacement.',
+//     },
+
+//     {
+//       title: 'Helps Restore Chewing Comfort',
+
+//       body:
+//         'Implant-supported restorations can improve chewing support compared with an untreated missing tooth space.',
+//     },
+
+//     {
+//       title: 'Helps Maintain Tooth Replacement Stability',
+
+//       body:
+//         'Implants may help provide stability for replacement teeth, bridges, or dentures when properly planned.',
+//     },
+//   ],
+// },
+// servicesGrid: {
+//   eyebrow: 'Dental Implant Treatment Options',
+
+//   heading:
+//     'Dental Implant Options for One Missing Tooth, Several Missing Teeth, or Denture Support',
+
+//   intro:
+//     'Dental implants can be used in different ways depending on how many teeth are missing and what type of replacement is needed. Promenade Dental helps patients understand the differences between single implants, implant-supported bridges, and implant-supported dentures.',
+
+//   services: [
+//     {
+//       title: 'Single Tooth Implant',
+
+//       description:
+//         'A single tooth implant can replace one missing tooth with an implant-supported crown when gum health and bone support are suitable.',
+
+//       bestFor: [
+//         'One missing tooth',
+//         'Independent tooth replacement',
+//         'Avoiding support from neighboring teeth',
+//         'Stable single tooth restoration',
+//       ],
+
+//       cta: 'Learn About Single Tooth Implants',
+
+//       href: '/services/dental-implants/single-tooth-implant',
+//     },
+
+//     {
+//       title: 'Implant-Supported Bridge',
+
+//       description:
+//         'An implant-supported bridge can replace multiple missing teeth using dental implants for support instead of relying only on natural teeth.',
+
+//       bestFor: [
+//         'Several missing teeth',
+//         'Fixed replacement',
+//         'Implant-supported chewing support',
+//         'Avoiding traditional bridge support in selected cases',
+//       ],
+
+//       cta: 'Learn About Implant-Supported Bridges',
+
+//       href: '/services/dental-implants/implant-supported-bridge',
+//     },
+
+//     {
+//       title: 'Implant-Supported Dentures',
+
+//       description:
+//         'Implant-supported dentures use dental implants to help improve denture stability for patients replacing many or all teeth.',
+
+//       bestFor: [
+//         'Full arch tooth replacement',
+//         'Loose denture concerns',
+//         'Improved denture support',
+//         'Removable or fixed implant-supported options',
+//       ],
+
+//       cta: 'Learn About Implant-Supported Dentures',
+
+//       href: '/services/dental-implants/implant-supported-dentures',
+//     },
+//   ],
+// },
+// suitability: {
+//   eyebrow: 'Is Implant Treatment Right for You?',
+
+//   heading:
+//     'Dental Implants for Patients With Missing Teeth and Suitable Gum and Bone Support',
+
+//   body:
+//     'Dental implants may be suitable for patients who want a stable tooth replacement option and have the oral health needed to support implant treatment. The right recommendation depends on gum health, bone support, medical history, bite pressure, oral hygiene, and the number of missing teeth.\n\nAt Promenade Dental, Dr. Shriya helps you understand whether dental implants, bridges, dentures, partials, or another restorative option may fit your needs.',
+
+//   goodFit: {
+//     title: 'Dental Implants May Be Right If',
+
+//     items: [
+//       'You are missing one or more teeth',
+//       'You want a stable replacement option',
+//       'You want to avoid a removable appliance when possible',
+//       'You have suitable gum and bone support',
+//       'You want to support a crown, bridge, or denture with implants',
+//     ],
+//   },
+
+//   alternative: {
+//     title: 'Another Option May Be Better If',
+
+//     items: [
+//       'Bone support is limited without additional treatment',
+//       'Gum disease needs treatment first',
+//       'Medical factors affect healing or implant suitability',
+//       'You prefer a removable denture or partial',
+//       'A traditional bridge may be more practical for the missing tooth space',
+//     ],
+//   },
+
+//   cta: {
+//     label: 'Schedule an Implant Suitability Evaluation',
+//     href: '/contact',
+//   },
+// },
+// comparison: {
+//   eyebrow: 'Dental Implants, Bridges, or Dentures?',
+
+//   heading:
+//     'Dental Implants, Bridges, and Dentures for Different Missing Tooth Replacement Needs',
+
+//   body:
+//     'Missing teeth can be replaced in different ways. Dental implants may support individual crowns, bridges, or dentures. Traditional bridges are fixed restorations that may use neighboring teeth for support. Dentures and partials are removable options for replacing several or all missing teeth.',
+
+//   matches: [
+//     {
+//       title: 'Dental Implants for Stable Replacement Support',
+
+//       body:
+//         'Implants may be recommended when a patient wants stable support for a crown, bridge, or denture and has suitable oral health.',
+//     },
+
+//     {
+//       title: 'Dental Bridges for Fixed Tooth Replacement',
+
+//       body:
+//         'A bridge may be recommended when one or more missing teeth can be replaced with a fixed restoration supported by neighboring teeth or implants.',
+//     },
+
+//     {
+//       title: 'Dentures and Partials for Removable Replacement',
+
+//       body:
+//         'Dentures and partials may be recommended when several or all teeth need replacement with a removable appliance.',
+//     },
+//   ],
+// },
+// process: {
+//   eyebrow: 'Dental Implant Planning Process',
+
+//   heading:
+//     'Dental Implant Planning for Bone Support, Gum Health, Tooth Replacement, and Long-Term Function',
+
+//   subtitle:
+//     'Dental implant treatment is planned around the health of the mouth and the type of replacement needed. The goal is to determine whether implants are suitable and how they can support the final restoration.',
+
+//   steps: [
+//     {
+//       title: 'Missing Tooth and Oral Health Evaluation',
+
+//       body:
+//         'Dr. Shriya evaluates the missing tooth area, gums, nearby teeth, bite, bone support, and overall oral health.',
+//     },
+
+//     {
+//       title: 'Implant Suitability Review',
+
+//       body:
+//         'You receive a clear explanation of whether dental implants are suitable and whether additional treatment may be needed before implant placement.',
+//     },
+
+//     {
+//       title: 'Tooth Replacement Planning',
+
+//       body:
+//         'The final replacement is planned based on whether you need a single implant crown, implant-supported bridge, or implant-supported denture.',
+//     },
+
+//     {
+//       title: 'Restoration and Maintenance Planning',
+
+//       body:
+//         'Implant restorations require ongoing cleaning, gum monitoring, bite evaluation, and routine dental visits.',
+//     },
+//   ],
+
+//   cta: {
+//     label: 'Book an Implant Consultation',
+//     href: '#contact',
+//   },
+// },
+// maintenance: {
+//   eyebrow: 'Dental Implant Maintenance',
+
+//   heading:
+//     'Dental Implant Care for Patients Who Want Long-Term Stability and Healthy Gums',
+
+//   body:
+//     'Dental implants need ongoing care just like natural teeth and other restorations. Healthy gums, good home hygiene, routine dental exams, and bite monitoring help support long-term implant success.',
+
+//   cards: [
+//     {
+//       title: 'Clean Around the Implant Restoration',
+
+//       body:
+//         'Plaque and bacteria can collect around implant-supported crowns, bridges, or dentures, so daily cleaning is important.',
+//     },
+
+//     {
+//       title: 'Keep Gums Healthy',
+
+//       body:
+//         'Gum inflammation around implants should be monitored because healthy tissue helps support implant stability.',
+//     },
+
+//     {
+//       title: 'Avoid Excessive Bite Stress',
+
+//       body:
+//         'Grinding, clenching, or heavy bite pressure can affect implant restorations and surrounding teeth.',
+//     },
+
+//     {
+//       title: 'Attend Routine Dental Visits',
+
+//       body:
+//         'Regular visits help monitor implant restorations, bite comfort, gum health, and oral hygiene.',
+//     },
+//   ],
+// },
+// benefits: {
+//   eyebrow: 'Why Choose Promenade Dental',
+
+//   heading:
+//     'Dentist-Led Implant Planning for Missing Teeth, Function, Appearance, and Long-Term Oral Health',
+
+//   description:
+//     'Dental implant treatment should be planned around the patient’s whole mouth, not only the missing tooth. Promenade Dental evaluates gum health, bone support, bite function, restorative needs, and replacement goals before discussing implant options.',
+
+//   items: [
+//     {
+//       title: 'Complete Missing Tooth Evaluation',
+
+//       body:
+//         'Dr. Shriya evaluates the missing tooth area, nearby teeth, gums, bite, bone support, and X-rays when needed.',
+
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+//       ],
+//     },
+
+//     {
+//       title: 'Implant Options Explained Clearly',
+
+//       body:
+//         'Patients are guided through single implants, implant-supported bridges, implant-supported dentures, traditional bridges, and removable options when relevant.',
+
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+//       ],
+//     },
+
+//     {
+//       title: 'Restorative Planning Around the Final Tooth',
+
+//       body:
+//         'Implant treatment planning considers how the final crown, bridge, or denture should function and look.',
+
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M24 12 L24 30 M14 22 L34 22',
+//       ],
+//     },
+
+//     {
+//       title: 'Restorative and Preventive Care in One Office',
+
+//       body:
+//         'Promenade Dental can connect implant planning with crowns, bridges, dentures, extractions, preventive care, and long-term maintenance.',
+
+//       paths: [
+//         'M6 38 A18 18 0 0 1 42 38',
+//         'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+//       ],
+//     },
+//   ],
+// },
+// localArea: {
+//   eyebrow: 'Local Dental Implant Care',
+
+//   heading:
+//     'Dental Implants Near Fulton Ranch and Chandler 85248',
+
+//   body:
+//     'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for dental implants, single tooth implants, implant-supported bridges, implant-supported dentures, or missing tooth replacement near Chandler 85248, Promenade Dental offers implant consultations based on oral health, bone support, gum health, bite function, and long-term replacement goals.',
+
+//   address: {
+//     practice: 'Promenade Dental',
+//     street: '4905 S. Alma School Rd, Suite 1',
+//     cityStateZip: 'Chandler, AZ 85248',
+//     phone: '(480) 802-8188',
+//   },
+
+//   cta: {
+//     label: 'Get Directions',
+//     href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+//   },
+// },
+// relatedServices: {
+//   eyebrow: 'Explore Related Implant Care',
+
+//   heading:
+//     'Related Implant and Restorative Services for Missing Teeth and Tooth Replacement',
+
+//   intro:
+//     'Dental implants are one option for replacing missing teeth. Some patients may need single tooth replacement, multiple tooth replacement, denture support, extractions, or restorative treatment before or after implant planning.',
+
+//   services: [
+//     {
+//       title: 'Single Tooth Implant',
+
+//       description:
+//         'A single tooth implant can replace one missing tooth with an implant-supported crown when suitable.',
+
+//       href: '/services/dental-implants/single-tooth-implant',
+//     },
+
+//     {
+//       title: 'Implant-Supported Bridge',
+
+//       description:
+//         'An implant-supported bridge may replace several missing teeth with support from dental implants.',
+
+//       href: '/services/dental-implants/implant-supported-bridge',
+//     },
+
+//     {
+//       title: 'Implant-Supported Dentures',
+
+//       description:
+//         'Implant-supported dentures may improve denture stability for patients replacing many or all teeth.',
+
+//       href: '/services/dental-implants/implant-supported-dentures',
+//     },
+
+//     {
+//       title: 'Restorative Dentistry',
+
+//       description:
+//         'Restorative dentistry may be needed before or after implant treatment to protect remaining teeth and support long-term oral health.',
+
+//       href: '/services/restorative-dentistry',
+//     },
+//   ],
+// },
+// faq: {
+//   eyebrow: 'Frequently Asked Questions',
+
+//   heading:
+//     'Dental Implant Questions About Missing Teeth, Bone Support, Bridges, Dentures, and Long-Term Care',
+
+//   items: [
+//     {
+//       q: 'What are dental implants?',
+//       a: 'Dental implants are artificial tooth roots used to support replacement teeth such as crowns, bridges, or dentures.',
+//     },
+
+//     {
+//       q: 'Who is a good candidate for dental implants?',
+//       a: 'A good implant candidate usually needs suitable bone support, healthy gums, good oral hygiene, and medical factors that support proper healing. A dental evaluation is needed to confirm suitability.',
+//     },
+
+//     {
+//       q: 'Can one missing tooth be replaced with an implant?',
+//       a: 'Yes. A single tooth implant may replace one missing tooth with an implant-supported crown when the area has suitable gum and bone support.',
+//     },
+
+//     {
+//       q: 'Can implants replace several missing teeth?',
+//       a: 'Yes. Multiple missing teeth may be replaced with an implant-supported bridge or implant-supported denture depending on the case.',
+//     },
+
+//     {
+//       q: 'Are dental implants better than bridges?',
+//       a: 'Implants and bridges solve missing tooth problems differently. Implants do not rely on neighboring teeth in the same way a traditional bridge may, but suitability depends on bone support, gum health, medical history, and treatment goals.',
+//     },
+
+//     {
+//       q: 'Can dental implants support dentures?',
+//       a: 'Yes. Implant-supported dentures use dental implants to help improve denture support and stability when the patient is a suitable candidate.',
+//     },
+
+//     {
+//       q: 'Do dental implants need special care?',
+//       a: 'Dental implants need daily cleaning, healthy gums, routine dental visits, and bite monitoring. Implant-supported restorations should be maintained carefully.',
+//     },
+
+//     {
+//       q: 'Can I get an implant after tooth extraction?',
+//       a: 'A dental implant may be possible after extraction depending on healing, bone support, gum health, and the condition of the extraction site.',
+//     },
+
+//     {
+//       q: 'What happens if I do not replace a missing tooth?',
+//       a: 'A missing tooth can affect chewing, tooth position, bite support, and smile appearance. Nearby teeth may shift over time.',
+//     },
+
+//     {
+//       q: 'Where is Promenade Dental located?',
+//       a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+//     },
+//   ],
+// },
+// cta: {
+//   title: 'Schedule a Dental Implant Consultation',
+//   highlight: 'for Missing Teeth or Stable Tooth Replacement',
+
+//   subtitle:
+//     'Promenade Dental helps patients explore dental implant options for single tooth replacement, multiple tooth replacement, and denture support with treatment planning based on gum health, bone support, bite function, appearance, and long-term oral health.',
+
+//   buttonText: 'Book an Implant Consultation',
+//   buttonHref: '/contact-us',
+
+//   secondaryButtonText: 'Call (480) 802-8188',
+//   secondaryButtonHref: 'tel:+14808028188',
+
+//   image: '/assets/dental-lobby.jpg',
+// },
+//   },
   {
   slug: 'emergency-dentistry',
   name: 'Emergency Dentistry',

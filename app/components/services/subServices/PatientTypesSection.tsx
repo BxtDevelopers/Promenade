@@ -171,8 +171,8 @@ function PatientTypeCard({
       
       {/* Step dot + number (External to card) */}
       <div className="flex items-center gap-3 mb-5 md:mb-6">
-        <div className="w-4 h-4 rounded-full bg-coral ring-4 ring-coral/20 shrink-0 transition-transform duration-300 group-hover:scale-125" />
-        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ivory/25 tracking-tight">
+        <div className="w-4 h-4 rounded-full bg-coral ring-4 ring-coral/50 shrink-0 transition-transform duration-300 group-hover:scale-125" />
+        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ivory/50 tracking-tight">
           {step}
         </span>
       </div>
@@ -189,7 +189,7 @@ function PatientTypeCard({
         ].join(' ')}
       >
         <div className="mt-2 md:mt-4">
-          <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ivory leading-snug mb-3">
+          <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white leading-snug mb-3">
             {item.title}
           </h3>
           <p className="text-muted font-sans font-light text-[14.5px] md:text-[15px] leading-[1.7]">

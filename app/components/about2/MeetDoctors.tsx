@@ -24,7 +24,7 @@ export default function MeetDoctors() {
               <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
                 Meet the Doctors
               </span>
-              <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+              <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
                 The same trusted practice, <em className="italic font-normal text-coral">in caring new hands</em>.
               </h2>
             </div>
@@ -49,7 +49,7 @@ export default function MeetDoctors() {
             <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
               Dentist &amp; Owner
             </div>
-            <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-ivory">
+            <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
               Dr. Shriya <span className="italic text-coral">Sarin</span>, DMD
             </h3>
 
@@ -85,7 +85,7 @@ export default function MeetDoctors() {
             <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
               Family &amp; Cosmetic Dentist &middot; Founding, since 2008
             </div>
-            <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-ivory">
+            <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
               Dr. James M. <span className="italic text-coral">Wei</span>, DDS
             </h3>
 
@@ -128,11 +128,6 @@ export default function MeetDoctors() {
               />
             </div>
           </div>
-        </Reveal>
-
-        <Reveal className="mt-[26px] rounded-[14px] border border-dashed border-coral/50 bg-coral/10 px-[18px] py-[15px] text-[13px] font-light leading-[1.55] text-ivory-2">
-          Add each dentist&apos;s real bio details (degrees, memberships, interests) and replace
-          the initials with portrait photos before launch.
         </Reveal>
       </div>
     </section>

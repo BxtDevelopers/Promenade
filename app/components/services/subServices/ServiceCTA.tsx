@@ -89,7 +89,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
   const [ref, inView] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg">
+    <section className="py-section bg-bg-2">
       <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* ── Banner Container ── */}
@@ -112,7 +112,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
                 className="object-cover object-center"
               />
               {/* Your custom global gradient veil to ensure text readability */}
-              <div className="absolute inset-0 bg-story-veil z-10" />
+              <div className="absolute inset-0 bg-bg-2/60 z-10" />
             </>
           ) : (
             /* Fallback background if no image is passed */
@@ -125,7 +125,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
           <div className="relative z-20 w-full px-2 py-8 md:p-16 lg:p-20">
             <div className="max-w-[700px] mx-auto text-center">
               
-              <h2 className="font-serif font-light text-[clamp(40px,5vw,72px)] leading-[1.05] tracking-[-0.02em] text-ivory mb-6">
+              <h2 className="font-serif font-light text-[clamp(40px,5vw,72px)] leading-[1.05] tracking-[-0.02em] text-white mb-6">
                 {data.title} {" "}
                 <em className="not-italic text-coral">{data.highlight}</em>
               </h2>

@@ -27,7 +27,7 @@ const actions = [
 
 export default function QuickActions() {
   return (
-    <section className="border-y border-coral/20 ">
+    <section className="border-y border-coral/20 hidden lg:block">
       <div className="grid mx-auto max-w-[1240px] grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[rgba(244,236,221,0.14)]">
         {actions.map((a) => (
           <Link

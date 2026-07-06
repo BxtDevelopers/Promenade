@@ -28,7 +28,7 @@ export default function InsuranceHowItWorks() {
             <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
               How it works
             </div>
-            <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+            <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
               Coverage made <em className="italic font-normal text-coral">simple</em>.
             </h2>
           </div>
@@ -37,10 +37,10 @@ export default function InsuranceHowItWorks() {
         <div className="grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <Reveal key={title} className="border-t border-line pt-[22px]" delay={i * 0.1}>
-              <span className="mb-[18px] inline-flex h-[30px] w-[30px] items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-[15px] w-[15px] text-coral" strokeWidth={2.2} />
+              <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
+                <Icon className="h-6 w-6 text-coral" strokeWidth={2.2} />
               </span>
-              <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-ivory">
+              <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-white">
                 {title}
               </b>
               <p className="text-[14.5px] font-light leading-[1.65] text-muted">{body}</p>

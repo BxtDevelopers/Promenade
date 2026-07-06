@@ -71,7 +71,7 @@ function BenefitCard({ benefit }: { benefit: { title: string; body: string; path
       className={[
         'relative rounded-[22px] px-7 pt-[30px] pb-8 overflow-hidden cursor-pointer',
         'border transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] coral-underline',
-        hov ? 'border-coral/40 bg-coral/5 -translate-y-[5px]' : 'border-line bg-ivory/[0.02]',
+        hov ? 'border-coral/40 bg-coral/5 -translate-y-[5px]' : 'border-ivory/60 bg-ivory/[0.02]',
       ].join(' ')}
     >
       <svg viewBox="0 0 48 46" aria-hidden="true" className="w-[52px] h-auto mb-[22px] block">

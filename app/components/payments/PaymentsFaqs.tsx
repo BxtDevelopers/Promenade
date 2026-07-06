@@ -31,7 +31,7 @@ export default function PaymentsFaqs() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Common questions
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
             Payment plans, <em className="italic font-normal text-coral">answered</em>.
           </h2>
         </Reveal>
@@ -43,7 +43,7 @@ export default function PaymentsFaqs() {
                 open={i === 0}
                 className="group rounded-2xl border border-line bg-ivory/[0.03] px-[22px]"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[17px] font-normal text-ivory marker:content-none sm:text-[19px]">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[17px] font-normal text-white marker:content-none sm:text-[19px]">
                   {faq.q}
                   <span className="shrink-0 text-[22px] leading-none text-coral group-open:hidden">
                     +
@@ -52,7 +52,7 @@ export default function PaymentsFaqs() {
                     &ndash;
                   </span>
                 </summary>
-                <div className="-mt-1 pb-5 text-[14.5px] font-light leading-[1.7] text-muted">
+                <div className="-mt-1 pb-5 text-left text-[14.5px] font-light leading-[1.7] text-muted">
                   {faq.a}
                 </div>
               </details>

@@ -22,7 +22,7 @@ export default function ServiceOverview({
   const [imgRef, imgIn] = useScrollReveal();
 
   return (
-    <section id='contact' className="py-24 bg-bg-2">
+    <section id='contact' className="py-24 ">
       <div className="lg:px-site max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px] items-center">
 
         <div
@@ -58,13 +58,13 @@ export default function ServiceOverview({
           <h2 className="font-serif font-light text-3xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ivory mb-8">
             {heading}
           </h2>
-          <p className="text-muted lg:text-xl font-light leading-[1.5]  mb-10">
+          <p className="text-ivory/70 lg:text-xl font-light leading-[1.5]  mb-10">
             {body}
           </p>
 
           <ul className="flex flex-col gap-4">
             {features.map((f, i) => (
-              <li key={i} className="flex items-start gap-4 text-ivory-2 text-lg md:text-xl font-light leading-relaxed">
+              <li key={i} className="flex items-start gap-4 text-coral text-lg md:text-xl font-light leading-relaxed">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 mt-1 flex-shrink-0 text-coral" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 13l4 4L19 7" />
                 </svg>

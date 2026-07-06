@@ -10,7 +10,7 @@ import InsuranceNoCoverageCta from "@/app/components/insurance/InsuranceNoCovera
 export default function InsurancePage() {
   return (
     <>
-    <Navbar/>
+    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
     <main className="bg-bg font-sans text-ivory">
       <InsuranceHero />
       <InsuranceHowItWorks />

@@ -53,25 +53,25 @@ export default function WarningSection({ data }: { data: WarningData }) {
               </span>
             </div>
 
-            <h2 className="font-serif font-light text-4xl lg:text-[clamp(40px,4.5vw,56px)] leading-[1.1] tracking-[-0.02em] text-ivory mb-6">
+            <h2 className="font-serif font-light text-4xl lg:text-[clamp(40px,4.5vw,56px)] leading-[1.1] tracking-[-0.02em] text-white mb-6">
               {data.heading}
             </h2>
 
-            <p className="text-muted text-body-lg font-light leading-[1.75] mb-10 max-w-[48ch]">
+            <p className="text-muted text-body-lg font-light leading-[1.75] mb-10 lg:max-w-[80%]">
               {data.body}
             </p>
 
             {/* Premium Phone CTA Block */}
-            <div className="group relative p-8 rounded-[24px] bg-gradient-to-br from-coral/10 via-bg to-bg border border-coral/30 overflow-hidden hover:border-coral transition-colors duration-500 shadow-[0_0_40px_rgba(250,114,104,0.08)]">
+            <div className="group relative p-8 rounded-[24px] bg-gradient-to-br from-coral/10 via-ivory to-ivory border border-coral/30 overflow-hidden hover:border-coral transition-colors duration-500 shadow-[0_0_40px_rgba(250,114,104,0.08)]">
               <div className="absolute -right-12 -top-12 w-40 h-40 bg-coral/20 blur-[40px] rounded-full group-hover:bg-coral/30 transition-colors duration-500" />
               
               <div className="relative z-10">
-                <p className="text-ivory/80 text-[13px] font-bold tracking-[0.1em] uppercase mb-2">
+                <p className="text-white/80 text-[13px] font-bold tracking-[0.1em] uppercase mb-2">
                   {data.cta.subtext}
                 </p>
                 <a 
                   href={data.cta.phoneLink} 
-                  className="block font-serif text-4xl lg:text-5xl text-ivory group-hover:text-coral transition-colors duration-300 mb-6"
+                  className="block font-serif text-4xl lg:text-5xl text-white group-hover:text-coral transition-colors duration-300 mb-6"
                 >
                   {data.cta.phoneNumber}
                 </a>
@@ -96,7 +96,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
             ].join(' ')}
           >
             <div className="p-8 lg:p-10 rounded-[32px] bg-white/[0.02] border border-white/5 backdrop-blur-md shadow-2xl">
-              <h3 className="text-xl text-ivory font-serif mb-8 border-b border-line pb-6">
+              <h3 className="text-xl text-white font-serif mb-8 border-b border-line pb-6">
                 {data.gridHeading}
               </h3>
               
@@ -111,7 +111,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
                       <IoWarningOutline className='w-5 h-5 text-coral group-hover:text-white' />
                     </div>
                     {/* Text */}
-                    <p className="text-white text-[15px] leading-[1.6] group-hover:text-ivory transition-colors duration-300">
+                    <p className="text-white text-[15px] leading-[1.6] group-hover:text-white/90 transition-colors duration-300 my-auto">
                       {sign}
                     </p>
                   </div>

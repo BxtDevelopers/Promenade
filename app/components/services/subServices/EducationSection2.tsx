@@ -71,7 +71,7 @@ export default function EducationSection2({
             <span className="h-[1px] w-12 bg-coral/40 block" aria-hidden="true" />
           </div>
           
-          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-ivory mb-8">
+          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-white mb-8">
             {data.heading}
           </h2>
           
@@ -86,7 +86,7 @@ export default function EducationSection2({
           <div>
             <Link 
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-coral/50 bg-coral/5 text-ivory font-medium text-[15px] hover:bg-coral hover:text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_20px_rgba(232,154,114,0.3)]"
+              className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-coral/50 bg-coral/5 text-white font-medium text-[15px] hover:bg-coral hover:text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_20px_rgba(232,154,114,0.3)]"
             >
               {data.cta.label}
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
