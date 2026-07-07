@@ -136,7 +136,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
           <div className="mt-14 md:mt-20 flex justify-center">
             <Link
               href={data.cta.href}
-              className="group inline-flex items-center justify-center py-[16px] px-9 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none transition-all duration-300 hover:bg-white hover:text-bg hover:-translate-y-0.5 shadow-btn"
+              className="group inline-flex items-center justify-center py-[16px] px-9 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-white border-none transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-0.5 shadow-btn"
             >
               {data.cta.label} →
             </Link>

@@ -13,7 +13,7 @@ import WhyChooseUs from "@/app/components/services/ServicesWhyChooseUs"
 export default function ServicePage (){
     return (
         <>
-        <Navbar/>
+        <Navbar textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'/>
         <ServiceHero/>
         <ServiceIntro/>
         <ServicesHub/>

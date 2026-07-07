@@ -71,12 +71,12 @@ const SERVICE_GROUPS: ServiceGroup[] = [
         bestFor: 'Smile enhancement · Chipped teeth · Gaps · Permanent cosmetic improvement',
         href: '/services/cosmetic-dentistry/veneers',
       },
-      {
-        title: 'Cosmetic Dental Bonding',
-        description: 'Tooth-colored material repairs small chips, closes minor gaps, and reshapes uneven edges. A conservative option for smaller cosmetic changes with minimal prep.',
-        bestFor: 'Chipped tooth · Small gaps · Uneven edges · Minor cosmetic fixes',
-        href: '/services/cosmetic-dentistry/dental-bonding',
-      },
+      // {
+      //   title: 'Cosmetic Dental Bonding',
+      //   description: 'Tooth-colored material repairs small chips, closes minor gaps, and reshapes uneven edges. A conservative option for smaller cosmetic changes with minimal prep.',
+      //   bestFor: 'Chipped tooth · Small gaps · Uneven edges · Minor cosmetic fixes',
+      //   href: '/services/cosmetic-dentistry/dental-bonding',
+      // },
       // {
       //   title: 'Smile Makeover',
       //   description: 'A smile makeover combines multiple cosmetic or restorative treatments into one planned result — whitening, veneers, bonding, crowns, or tooth replacement.',
@@ -129,33 +129,33 @@ const SERVICE_GROUPS: ServiceGroup[] = [
       },
     ],
   },
-  {
-    eyebrow: 'Dental Implants',
-    heading: 'A permanent tooth that feels like your own.',
-    body: 'Dental implants replace missing teeth with stable, natural-looking restorations. Missing teeth affect how you chew, pressure other teeth, cause shifting, and affect bite balance — implant planning considers all of it.',
-    ctaLabel: 'Explore Dental Implants',
-    ctaHref: '/services/dental-implants',
-    cards: [
-      {
-        title: 'Single Tooth Implant',
-        description: 'Replaces one missing tooth without relying on neighboring teeth for support — a fixed, natural-looking replacement that stands entirely on its own.',
-        bestFor: 'One missing tooth · Fixed replacement · Avoiding a traditional bridge',
-        href: '/services/dental-implants/single-tooth-implant',
-      },
-      {
-        title: 'Implant-Supported Bridge',
-        description: 'Replaces multiple missing teeth using implants as anchors — reducing the need to prepare healthy neighboring teeth while restoring full function.',
-        bestFor: 'Several missing teeth · Stronger bridge support · Fixed replacement option',
-        href: '/services/dental-implants/implant-supported-bridge',
-      },
-      {
-        title: 'Implant-Supported Dentures',
-        description: 'More stable than traditional removable dentures — improving chewing comfort and reducing movement while speaking or eating.',
-        bestFor: 'Loose dentures · Multiple missing teeth · Full-arch tooth replacement',
-        href: '/services/dental-implants/implant-supported-dentures',
-      },
-    ],
-  },
+  // {
+  //   eyebrow: 'Dental Implants',
+  //   heading: 'A permanent tooth that feels like your own.',
+  //   body: 'Dental implants replace missing teeth with stable, natural-looking restorations. Missing teeth affect how you chew, pressure other teeth, cause shifting, and affect bite balance — implant planning considers all of it.',
+  //   ctaLabel: 'Explore Dental Implants',
+  //   ctaHref: '/services/dental-implants',
+  //   cards: [
+  //     {
+  //       title: 'Single Tooth Implant',
+  //       description: 'Replaces one missing tooth without relying on neighboring teeth for support — a fixed, natural-looking replacement that stands entirely on its own.',
+  //       bestFor: 'One missing tooth · Fixed replacement · Avoiding a traditional bridge',
+  //       href: '/services/dental-implants/single-tooth-implant',
+  //     },
+  //     {
+  //       title: 'Implant-Supported Bridge',
+  //       description: 'Replaces multiple missing teeth using implants as anchors — reducing the need to prepare healthy neighboring teeth while restoring full function.',
+  //       bestFor: 'Several missing teeth · Stronger bridge support · Fixed replacement option',
+  //       href: '/services/dental-implants/implant-supported-bridge',
+  //     },
+  //     {
+  //       title: 'Implant-Supported Dentures',
+  //       description: 'More stable than traditional removable dentures — improving chewing comfort and reducing movement while speaking or eating.',
+  //       bestFor: 'Loose dentures · Multiple missing teeth · Full-arch tooth replacement',
+  //       href: '/services/dental-implants/implant-supported-dentures',
+  //     },
+  //   ],
+  // },
   {
     eyebrow: 'Emergency Dentistry',
     heading: 'Urgent care when you need it most.',
@@ -265,7 +265,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
   const [headRef, headIn] = useScrollReveal();
 
   // Alternating background logic
-  const isAlternate = index % 2 === 0;
+  const isAlternate = index % 2 === 1;
   const bgClass = isAlternate ? 'bg-white' : 'bg-bg-2';
 
   return (

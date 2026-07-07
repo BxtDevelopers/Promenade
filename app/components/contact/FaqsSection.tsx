@@ -53,7 +53,7 @@ export default function FAQSection() {
         </div>
 
         {/* Accordion */}
-        <div className="max-w-[760px] mx-auto divide-y divide-line border-y border-line">
+        <div className="max-w-[760px] mx-auto divide-y divide-coral/80 border-y border-coral/80">
           {FAQS.map((item, i) => {
             const isOpen = open === i;
             return (

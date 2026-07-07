@@ -25,7 +25,7 @@ export default function LocationMap() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-[18px] mt-12 md:mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 mt-12 md:mt-16">
 
           {/* Map embed */}
           <div className="relative rounded-arch-sm overflow-hidden border border-line aspect-[16/11] lg:aspect-auto lg:min-h-[420px]">
@@ -40,9 +40,9 @@ export default function LocationMap() {
           </div>
 
           {/* Address card */}
-          <div className="rounded-[22px] border border-line bg-ivory/[0.02] p-7 md:p-9 flex flex-col justify-between">
+          <div className="rounded-[22px] border border-line bg-ivory p-7 md:p-9 flex flex-col justify-between">
             <div>
-              <h3 className="font-serif font-normal text-[22px] text-ivory mb-4">
+              <h3 className="font-serif font-normal text-[22px] text-white mb-4">
                 Promenade Dental
               </h3>
               <p className="text-muted text-[14.5px] font-light leading-[1.8]">
@@ -73,7 +73,7 @@ export default function LocationMap() {
               href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center mt-8 text-ivory border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
+              className="inline-flex items-center justify-center mt-8 text-white border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
             >
               Get Directions &rarr;
             </a>

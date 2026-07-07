@@ -242,7 +242,7 @@ export default function ContactHero() {
       p.setAttribute('pathLength', '1');
       p.style.cssText = [
         'fill:none',
-        `stroke:${isCoral ? 'rgba(232,154,114,0.45)' : 'rgba(244,236,221,0.12)'}`,
+        `stroke:${isCoral ? 'rgba(232,154,114,0.4)' : 'rgba(244,236,221,0.5)'}`,
         'stroke-linecap:round',
         'stroke-dasharray:1',
         'stroke-dashoffset:1',
@@ -303,7 +303,7 @@ export default function ContactHero() {
       </div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 z-[1] bg-hero-grade" />
+      {/* <div className="absolute inset-0 z-[1] bg-hero-grade" /> */}
 
       {/* Cursor glow */}
       <div

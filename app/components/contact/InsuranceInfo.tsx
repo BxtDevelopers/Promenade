@@ -34,7 +34,7 @@ export default function InsuranceInfo() {
               Insurance &amp; New Patients
             </span>
             <h2 className="font-serif font-light text-3xl
-              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[16ch]">
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-white max-w-[16ch]">
               Most major PPO plans{' '}
               <em className="not-italic text-coral">accepted</em>.
             </h2>

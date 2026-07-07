@@ -41,7 +41,7 @@ import Navbar from "@/app/components/home3/Navbar";
 export default function ContactPage() {
   return (
     <>
-    <Navbar/>
+    <Navbar textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80' />
     <main className="bg-bg text-ivory">
       <ContactHero />
       <ContactDetails />

@@ -31,7 +31,7 @@ export default function ContactForm() {
               Send a Message
             </span>
             <h2 className="font-serif font-light text-3xl
-              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[16ch]">
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-white max-w-[16ch]">
               Tell us how we can{' '}
               <em className="not-italic text-coral">help</em>.
             </h2>
@@ -147,7 +147,7 @@ function Field({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full bg-transparent border border-line rounded-xl px-4 py-3 text-[14.5px] text-ivory font-light placeholder:text-muted-2 focus:outline-none focus:border-coral transition-colors"
+        className="w-full bg-transparent border border-line rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted-2 focus:outline-none focus:border-coral transition-colors"
       />
     </div>
   );
