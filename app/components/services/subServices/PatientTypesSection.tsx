@@ -26,65 +26,80 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
   const lineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    /* ── Only run horizontal GSAP scroll on non-touch / md+ screens ── */
-    const mq = window.matchMedia('(min-width: 768px)');
-    if (!mq.matches) return;
-
     const ctx = gsap.context(() => {
+      const mm = gsap.matchMedia();
       const track = trackRef.current!;
-      const totalWidth = track.scrollWidth - sectionRef.current!.offsetWidth + 200;
+      const section = sectionRef.current!;
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top top',
-          end: `+=${totalWidth + 400}`,
-          scrub: 1,
-          pin: true,
-          anticipatePin: 1,
-        },
-      });
+      // ── Helper Function: Keeps our code DRY for both screen heights ──
+      const createScrollAnimation = (triggerElement: HTMLElement, startPosition: string, elementToPin: HTMLElement | boolean) => {
+        const totalWidth = Math.max(0, track.scrollWidth - section.offsetWidth + 200);
 
-      tl.to(trackRef.current, { x: -totalWidth, ease: 'none' });
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: triggerElement,
+            start: startPosition,
+            end: `+=${totalWidth + 400}`,
+            scrub: 1,
+            pin: elementToPin,
+            anticipatePin: 1,
+            invalidateOnRefresh: true,
+          },
+        });
 
-      /* Progress line */
-      tl.to(lineRef.current, { scaleX: 1, ease: 'none' }, 0);
+        /* Track scroll */
+        tl.to(track, { x: -totalWidth, ease: 'none' });
 
-      /* Card stagger fade-in */
-      gsap.utils.toArray<HTMLElement>('.patient-card').forEach((card) => {
+        /* Progress line */
+        if (lineRef.current) {
+          tl.to(lineRef.current, { scaleX: 1, ease: 'none' }, 0);
+        }
+
+        /* Card stagger fade-in */
+        gsap.utils.toArray<HTMLElement>('.patient-card').forEach((card) => {
+          gsap.fromTo(
+            card,
+            { opacity: 0.25, scale: 0.93, y: 16 },
+            {
+              opacity: 1,
+              scale: 1,
+              y: 0,
+              duration: 0.5,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: card,
+                containerAnimation: tl,
+                start: 'left 95%', // Ensures cards appear early on small screens
+                end: 'left 65%',
+                scrub: true,
+              },
+            }
+          );
+        });
+
+        /* Header reveal */
         gsap.fromTo(
-          card,
-          { opacity: 0.25, scale: 0.93, y: 16 },
+          '.patient-header > *',
+          { y: 40, opacity: 0 },
           {
-            opacity: 1,
-            scale: 1,
             y: 0,
-            duration: 0.5,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: card,
-              containerAnimation: tl,
-              start: 'left 80%',
-              end: 'left 40%',
-              scrub: true,
-            },
+            opacity: 1,
+            stagger: 0.14,
+            duration: 0.9,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.patient-header', start: 'top 80%' },
           }
         );
+      };
+
+      mm.add('(min-width: 768px) and (min-height: 881px)', () => {        
+        createScrollAnimation(section, 'top top', true); 
       });
 
-      /* Header reveal */
-      gsap.fromTo(
-        '.patient-header > *',
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.14,
-          duration: 0.9,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: '.patient-header', start: 'top 80%' },
-        }
-      );
+      mm.add('(min-width: 768px) and (min-height: 400px) and (max-height: 880px)', () => {
+        createScrollAnimation(track, 'center center', section);
+      });
+
     }, sectionRef);
 
     return () => ctx.revert();
@@ -156,7 +171,6 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
   );
 }
 
-/* ── Individual Card Component ── */
 function PatientTypeCard({
   item,
   index,
