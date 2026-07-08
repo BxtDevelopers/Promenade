@@ -33,7 +33,7 @@ function CustomReasonDropdown() {
 
   return (
     <div ref={dropdownRef}>
-      <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-muted-2 mb-2">
+      <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-white mb-2">
         Reason for visit
       </label>
 
@@ -48,7 +48,7 @@ function CustomReasonDropdown() {
             justify-between
             bg-transparent
             border
-            border-line
+            border-white/70
             rounded-xl
             px-4
             py-3
@@ -63,7 +63,7 @@ function CustomReasonDropdown() {
         >
           <span
             className={
-              selected ? 'text-ivory' : 'text-muted-2'
+              selected ? 'text-white' : 'text-muted-2'
             }
           >
             {selected || 'Select an option'}
@@ -114,7 +114,7 @@ function CustomReasonDropdown() {
                   px-4
                   py-3
                   text-[14.5px]
-                  text-ivory/80
+                  text-white/80
                   hover:bg-bg
                   hover:text-ivory
                   transition-colors

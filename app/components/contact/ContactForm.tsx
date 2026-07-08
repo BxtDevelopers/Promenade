@@ -15,7 +15,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-section bg-bg-2">
+    <section id="contact" className="py-section bg-bg-2">
       <div className="px-site max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[60px]">
 
@@ -67,7 +67,7 @@ export default function ContactForm() {
           <div
             ref={formRef as React.RefObject<HTMLDivElement>}
             className={[
-              'rounded-[22px] border border-line bg-ivory/[0.02] p-7 md:p-9',
+              'rounded-[22px] border border-white/80 bg-ivory/[0.02] p-7 md:p-9',
               'transition-all duration-1000 ease-out delay-150',
               formIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
@@ -96,7 +96,7 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-muted-2 mb-2">
+                  <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-white mb-2">
                     Message
                   </label>
                   <textarea
@@ -104,7 +104,7 @@ export default function ContactForm() {
                     rows={5}
                     required
                     placeholder="How can we help?"
-                    className="w-full bg-transparent border border-line rounded-xl px-4 py-3 text-[14.5px] text-ivory font-light placeholder:text-muted-2 focus:outline-none focus:border-coral transition-colors resize-none"
+                    className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted focus:outline-none focus:border-coral transition-colors resize-none"
                   />
                 </div>
 
@@ -139,7 +139,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-muted-2 mb-2">
+      <label className="block text-[12.5px] tracking-eyebrow uppercase font-medium text-white mb-2">
         {label}
       </label>
       <input
@@ -147,7 +147,7 @@ function Field({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full bg-transparent border border-line rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted-2 focus:outline-none focus:border-coral transition-colors"
+        className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted focus:outline-none focus:border-coral transition-colors"
       />
     </div>
   );

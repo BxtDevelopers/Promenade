@@ -19,6 +19,7 @@ import Footer from './Footer'
 import MobileBar from './MobileBar'
 import OfferModal from './OfferModal'
 import TestimonialsMarquee from './Testimonials'
+import FirstVisitTimeline from './FirstVisitTimeline'
 
 
 export default function HomePage() {
@@ -46,6 +47,7 @@ export default function HomePage() {
       <ProblemsSection />
       <ServicesGrid />
       <NewPatientFlow />
+      <FirstVisitTimeline />
       <InsuranceSection />
       <ClosingCTA />
       <Footer />

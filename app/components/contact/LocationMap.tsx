@@ -28,7 +28,7 @@ export default function LocationMap() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 mt-12 md:mt-16">
 
           {/* Map embed */}
-          <div className="relative rounded-arch-sm overflow-hidden border border-line aspect-[16/11] lg:aspect-auto lg:min-h-[420px]">
+          <div className="relative rounded-sm overflow-hidden border border-line aspect-[16/11] lg:aspect-auto lg:min-h-[420px]">
             <iframe
               title="Promenade Dental location"
               src="https://www.google.com/maps?q=4905+S+Alma+School+Rd+Suite+1+Chandler+AZ+85248&output=embed"

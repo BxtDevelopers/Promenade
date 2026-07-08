@@ -362,7 +362,7 @@ export default function ContactHero() {
           className="flex flex-wrap gap-4 justify-center mt-10"
         >
           <a
-            href="#"
+            href="/contact-us#contact"
             className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep"
           >
             Book an Appointment &rarr;
