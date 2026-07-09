@@ -185,7 +185,7 @@ export default function Navbar({
               Book
             </Link>
             <button 
-              className="text-ivory p-1"
+              className={`${textColor} ${hoverColor} p-1`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -280,7 +280,7 @@ export default function Navbar({
       <div className="fixed left-0 right-0 bottom-0 z-50 hidden max-[760px]:grid grid-cols-3 bg-[#0B1C2C]/95 backdrop-blur-[10px] border-t border-[rgba(244,236,221,0.14)] pb-safe">
         <Link 
           href="tel:+14808028188"
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ivory text-[10.5px] tracking-[0.1em] uppercase font-medium"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-white text-[10.5px] tracking-[0.1em] uppercase font-medium"
         >
           <Phone className="w-[19px] h-[19px] stroke-[1.7]" />
           Call
@@ -294,7 +294,7 @@ export default function Navbar({
         </Link>
         <Link 
           href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ivory text-[10.5px] tracking-[0.1em] uppercase font-medium"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-white text-[10.5px] tracking-[0.1em] uppercase font-medium"
         >
           <MapPin className="w-[19px] h-[19px] stroke-[1.7]" />
           Directions

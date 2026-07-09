@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ScrollToTop from "./components/contact/ScrollToTop";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Promenade Dental",

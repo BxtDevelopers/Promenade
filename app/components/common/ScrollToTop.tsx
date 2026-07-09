@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowUp } from 'lucide-react';
 import { useEffect, useState, useCallback } from 'react';
 
 export default function ScrollToTop({ threshold = 480 }: { threshold?: number }) {
@@ -36,30 +37,28 @@ export default function ScrollToTop({ threshold = 480 }: { threshold?: number })
       aria-label="Scroll back to top"
       className={[
         'fixed z-40 flex items-center justify-center w-11 h-11 rounded-full cursor-pointer',
-        'bg-bg/90 backdrop-blur-sm border border-line',
+        'bg-bg/90 backdrop-blur-sm border border-coral',
         'transition-all duration-300 ease-out hover:-translate-y-0.5',
-        'bottom-[22px] right-[22px] sm:bottom-[30px] sm:right-[30px]',
+        'bottom-[70px] right-[22px] md:bottom-[30px] md:right-[30px]',
         visible ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-3 pointer-events-none',
       ].join(' ')}
     >
-      <svg width="40" height="40" viewBox="0 0 40 40" className="absolute inset-0 -rotate-90">
-        <circle cx="20" cy="20" r={r} fill="none" stroke="rgba(244,236,221,0.12)" strokeWidth="2" />
-        <circle
-          cx="20"
-          cy="20"
-          r={r}
-          fill="none"
-          stroke="#e89a72"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeDasharray={circumference}
-          strokeDashoffset={offset}
-          style={{ transition: 'stroke-dashoffset 120ms linear' }}
-        />
-      </svg>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="relative text-ivory">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 19V5M5 12l7-7 7 7" />
-      </svg>
+        {/* <svg width="40" height="40" viewBox="0 0 40 40" className="absolute inset-0 -rotate-90">
+          <circle cx="20" cy="20" r={r} fill="none" stroke="rgba(244,236,221,0.12)" strokeWidth="2" />
+          <circle
+            cx="20"
+            cy="20"
+            r={r}
+            fill="none"
+            stroke="#e89a72"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeDasharray={circumference}
+            strokeDashoffset={offset}
+            style={{ transition: 'stroke-dashoffset 120ms linear' }}
+          />
+        </svg> */}
+      <ArrowUp className="w-5 h-5 text-ivory relative" />
     </button>
   );
 }

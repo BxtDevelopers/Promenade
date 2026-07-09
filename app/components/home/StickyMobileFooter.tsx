@@ -7,7 +7,7 @@ export default function StickyMobileFooter() {
 
         <a
           href="tel:+14808028188"
-          className="flex flex-col items-center gap-1 py-3 px-2 text-ivory hover:text-coral transition-colors active:bg-white/5"
+          className="flex flex-col items-center gap-1 py-3 px-2 text-white hover:text-coral transition-colors active:bg-white/5"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path

@@ -21,7 +21,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section  border-t border-line relative">
+    <section className="py-section bg-bg-2  border-t border-line relative">
       {/* Subtle background glow to contrast with previous section */}
       <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none opacity-50">
         <div className="w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(232,154,114,0.08),transparent_70%)]" />
@@ -41,7 +41,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {data.eyebrow}
           </span>
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6">
             {data.heading}
           </h2>
           <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-2xl mx-auto">

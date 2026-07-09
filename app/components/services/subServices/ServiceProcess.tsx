@@ -15,7 +15,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section  border-t border-line">
+    <section className="py-section bg-bg-2  border-t border-line">
       <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 lg:gap-24 items-start">
           
@@ -30,10 +30,10 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6 max-w-[18ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6 max-w-[18ch]">
               {data.heading}
             </h2>
-            <p className="text-ivory/80 text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%] mb-10">
+            <p className="text-white/80 text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%] mb-10">
               {data.subtitle}
             </p>
 
@@ -64,7 +64,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
           {/* ── Right Column: Vertical Timeline ── */}
           <div className="relative">
             {/* The continuous vertical line (Desktop only) */}
-            <div className="absolute left-[26px] top-[52px] bottom-10 w-px bg-ivory/10 hidden md:block" />
+            <div className="absolute left-[26px] top-[52px] bottom-10 w-px bg-white/10 hidden md:block" />
 
             <div className="flex flex-col gap-6 md:gap-10">
               {data.steps.map((step, i) => (
@@ -132,7 +132,7 @@ function ProcessStep({
           'coral-underline'
         ].join(' ')}
       >
-        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white/90 mb-3 transition-colors group-hover:text-ivory">
+        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white/90 mb-3 transition-colors group-hover:text-coral">
           {step.title}
         </h3>
         <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">

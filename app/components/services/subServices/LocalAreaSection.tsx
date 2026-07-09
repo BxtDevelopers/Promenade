@@ -63,7 +63,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
   };
 
   return (
-    <section className="py-section bg-bg border-t border-line relative overflow-hidden">
+    <section className="py-section bg-bg-2 border-t border-line relative overflow-hidden">
       <div className="lg:pl-24 w-[90%] lg:w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 lg:gap-20 items-center">
 
@@ -78,7 +78,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6">
               {data.heading}
             </h2>
 

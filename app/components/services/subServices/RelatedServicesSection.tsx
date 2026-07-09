@@ -21,7 +21,7 @@ export default function RelatedServicesSection({ data }: { data: RelatedServices
   const [headRef, headIn] = useScrollReveal();
 
   return (
-    <section className="py-section bg-bg-2 border-t border-line">
+    <section className="py-section border-t border-line">
       <div className="lg:px-site max-w-[90%] mx-auto">
         
         {/* ── Header ── */}
@@ -37,12 +37,12 @@ export default function RelatedServicesSection({ data }: { data: RelatedServices
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white max-w-[22ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory max-w-[22ch]">
               {data.heading}
             </h2>
           </div>
           <div className="flex-1 lg:max-w-[500px]">
-            <p className="text-muted text-body-lg md:text-[16px] font-light leading-[1.7]">
+            <p className="text-ivory/80 text-body-lg md:text-[16px] font-light leading-[1.7]">
               {data.intro}
             </p>
           </div>
@@ -77,7 +77,7 @@ function RelatedServiceCard({
       ref={ref as React.RefObject<HTMLAnchorElement>}
       className={[
         'group block relative rounded-[22px] p-7 md:p-8 h-full flex flex-col justify-between',
-        'border border-line bg-panel/[0.4]',
+        'border border-line bg-panel',
         'transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
         'hover:-translate-y-[5px] hover:border-coral/40 hover:bg-coral/5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]',
         'coral-underline'
@@ -85,11 +85,10 @@ function RelatedServiceCard({
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? 'none' : 'translateY(24px)',
-        transitionDelay: `${delay}s`,
       }}
     >
       <div>
-        <h3 className="font-serif font-normal text-[20px] md:text-[22px] eading-snug mb-3 transition-colors text-white">
+        <h3 className="font-serif font-normal text-[20px] md:text-[22px] eading-snug mb-3 transition-colors text-white group-hover:text-coral">
           {item.title}
         </h3>
         <p className="text-muted font-sans font-light text-[14.5px] leading-[1.65]">
