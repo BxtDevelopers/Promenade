@@ -52,9 +52,6 @@ export default function HomePage() {
       <ClosingCTA />
       <Footer />
 
-      {/* Mobile sticky bar */}
-      <MobileBar />
-
       {/* Welcome offer modal */}
       <OfferModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </div>

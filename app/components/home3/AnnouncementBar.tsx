@@ -25,7 +25,7 @@ export default function AnnouncementBar({ onOpenModal }: AnnouncementBarProps) {
         className="flex items-center gap-[9px] bg-transparent border-none cursor-pointer font-sans text-[13px] tracking-[0.04em] text-ivory"
       >
         <span className="text-coral">✦</span>
-        New patient special: $159 cleaning, exam &amp; X-rays
+        New patient special: $109 cleaning, exam &amp; X-rays
         <span
           className="text-coral transition-transform duration-[250ms] group-hover:translate-x-1"
         >

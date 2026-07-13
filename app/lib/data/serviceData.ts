@@ -510,49 +510,88 @@ symptomsSection?: {
         ],
       },
       benefits: {
-        eyebrow: 'Why Choose Promenade Dental',
-        heading: 'Why Families Choose Promenade Dental for Preventive Care',
-        description:
-          'Families choose Promenade Dental because the care is personal, clear, and built around long-term oral health. Patients are not treated like a number or rushed through a quick appointment.',
-        items: [
-          {
-            title: 'Same Dentist Every Visit',
-            body:
-              'Seeing Dr. Shriya consistently helps create better continuity. She can understand your history, track changes, and notice patterns over time.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M17 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M25 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M16 28 q8 6 16 0',
-            ],
-          },
-          {
-            title: 'Clear Explanations',
-            body:
-              'You should understand what is happening in your mouth. Findings are explained in simple language, without pressure or confusion.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
-            ],
-          },
-          {
-            title: 'Prevention Before Bigger Treatment',
-            body:
-              'The goal is to catch smaller issues before they turn into pain, emergency visits, or more complex dental work.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M24 12 L24 30 M14 22 L34 22',
-            ],
-          },
-          {
-            title: 'One Office for the Whole Family',
-            body:
-              'Promenade Dental provides preventive, cosmetic, restorative, implant, and emergency care, making it easier for families to stay consistent with dental visits.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-            ],
-          },
-        ],
-      },
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Why Families Choose Promenade Dental for Preventive Care',
+
+  description:
+    'Families choose Promenade Dental because the care is personal, clear, and focused on long-term oral health. Patients are given time to ask questions, understand recommendations, and build lasting relationships with their dental team.',
+
+  items: [
+    {
+      title: 'Same Dentist Every Visit',
+
+      body:
+        'Seeing Dr. Shriya consistently helps create better continuity. She can understand your history, track changes, and notice patterns over time.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M17 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M25 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M16 28 q8 6 16 0',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Patient Care',
+
+      body:
+        'Our team works to create a welcoming environment where children, teens, adults, and seniors feel comfortable during dental visits.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Clear and Honest Recommendations',
+
+      body:
+        'Findings and treatment options are explained in straightforward language so patients can make informed decisions without pressure.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Prevention Before Bigger Treatment',
+
+      body:
+        'The goal is to identify concerns early and help prevent cavities, gum disease, dental emergencies, and more complex treatment needs.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'One Office for the Whole Family',
+
+      body:
+        'Promenade Dental provides preventive, cosmetic, restorative, implant, and emergency care, making it easier for families to receive care in one location.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+  ],
+},
       localArea: {
         eyebrow: 'Local Family Dental Care',
         heading:
@@ -696,6 +735,7 @@ symptomsSection?: {
       image:'/assets/dental-lobby.jpg'
     },
   },
+
 
  {
     slug: 'cosmetic-dentistry',
@@ -911,54 +951,88 @@ maintenance: {
   ],
 },
           benefits: {
-            eyebrow: 'Why Choose Promenade Dental',
-            heading: 'Why Patients Choose Promenade Dental for Cosmetic Dentistry',
-            description:
-            'Cosmetic dentistry is personal. Patients want to know their concerns are understood, their options are explained clearly, and their smile will not be overtreated.',
+  eyebrow: 'Why Choose Promenade Dental',
 
-            items: [
-            {
-            title: 'Cosmetic Care Planned Around Oral Health',
-            body:
-            'Dr. Shriya checks the teeth, gums, bite, and enamel before recommending cosmetic treatment.',
-            paths: [
-            'M6 38 A18 18 0 0 1 42 38',
-            'M18 16 h12 a6 6 0 0 1 0 12 h-12 a6 6 0 0 1 0 -12 z',
-            ],
-            },
+  heading:
+    'Why Patients Choose Promenade Dental for Cosmetic Dentistry',
 
-            {
-              title: 'Natural-Looking Results',
-              body:
-                'The goal is to improve tooth color, shape, and balance while keeping the smile realistic and comfortable.',
-              paths: [
-                'M6 38 A18 18 0 0 1 42 38',
-                'M14 24 q10 -10 20 0 q-2 10 -10 14 q-8 -4 -10 -14',
-              ],
-            },
+  description:
+    'Cosmetic dentistry is personal. Patients want to feel confident that treatment recommendations are honest, their concerns are understood, and their smile goals are approached with care and attention to detail.',
 
-            {
-              title: 'Clear Treatment Options',
-              body:
-                'Patients receive simple explanations about whitening, bonding, veneers, and smile makeover options.',
-              paths: [
-                'M6 38 A18 18 0 0 1 42 38',
-                'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
-              ],
-            },
+  items: [
+    {
+      title: 'Personalized Cosmetic Treatment Planning',
 
-            {
-              title: 'One Office for Cosmetic and General Dental Care',
-              body:
-                'Promenade Dental also provides family, preventive, restorative, implant, and emergency care, which helps cosmetic treatment fit into the bigger oral health picture.',
-              paths: [
-                'M6 38 A18 18 0 0 1 42 38',
-                'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-              ],
-            },
+      body:
+        'Dr. Shriya evaluates your teeth, gums, bite, facial balance, and smile goals before recommending cosmetic treatment options.',
 
-            ],
-            },
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 16 h12 a6 6 0 0 1 0 12 h-12 a6 6 0 0 1 0 -12 z',
+      ],
+    },
+
+    {
+      title: 'Conservative and Honest Recommendations',
+
+      body:
+        'Treatment recommendations focus on achieving your goals while preserving healthy tooth structure and avoiding unnecessary procedures whenever possible.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Natural-Looking Smile Enhancements',
+
+      body:
+        'The goal is to improve tooth color, shape, symmetry, and balance while maintaining results that look natural and comfortable.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 q10 -10 20 0 q-2 10 -10 14 q-8 -4 -10 -14',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Patient Experience',
+
+      body:
+        'Our team works to create a welcoming environment where patients feel informed, respected, and comfortable throughout the cosmetic treatment process.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental provides cosmetic, preventive, restorative, implant, and emergency dental services, allowing treatment to fit into your overall oral health plan.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+  ],
+},
      localArea: {
           eyebrow: 'Local Cosmetic Dentistry',
           heading:
@@ -1122,6 +1196,8 @@ maintenance: {
 },
 
   }, 
+
+
 {
     slug: 'restorative-dentistry',
     name: 'Restorative Dentistry',
@@ -1349,56 +1425,88 @@ maintenance: {
   ],
 },
       benefits: {
-        eyebrow: 'Why Choose Promenade Dental',
+  eyebrow: 'Why Choose Promenade Dental',
 
-        heading:
-          'Dentist-Led Restorative Care for Tooth Repair and Replacement',
+  heading:
+    'Personalized Restorative Care Focused on Long-Term Oral Health',
 
-        description:
-          'Restorative dentistry often involves important decisions about saving, repairing, protecting, or replacing teeth. Promenade Dental focuses on clear diagnosis, practical treatment planning, and care that supports long-term oral health.',
+  description:
+    'Restorative dentistry often involves important decisions about saving, protecting, or replacing teeth. Promenade Dental combines thorough diagnosis, conservative treatment planning, and patient-focused care to help patients make confident decisions about their oral health.',
 
-        items: [
-          {
-            title: 'Treatment Based on Diagnosis',
-            body:
-              'Dr. Shriya evaluates the tooth, gums, bite, X-rays, symptoms, and existing dental work before recommending treatment.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
-            ],
-          },
+  items: [
+    {
+      title: 'See the Same Dentist Throughout Your Care',
 
-          {
-            title: 'Repair Before Bigger Problems Develop',
-            body:
-              'Restorative care helps address decay, cracks, weak teeth, and loose dental work before the condition worsens.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M24 12 L24 30 M14 22 L34 22',
-            ],
-          },
+      body:
+        'Dr. Shriya personally evaluates your dental concerns, explains treatment options, and oversees your care from diagnosis through restoration whenever possible.',
 
-          {
-            title: 'Tooth Replacement Options Explained Clearly',
-            body:
-              'Patients are guided through bridges, dentures, implants, and other options when teeth are missing or cannot be saved.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
-            ],
-          },
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
 
-          {
-            title: 'Family, Cosmetic, and Restorative Care in One Office',
-            body:
-              'Promenade Dental can connect restorative care with preventive, cosmetic, implant, and emergency dentistry when needed.',
-            paths: [
-              'M6 38 A18 18 0 0 1 42 38',
-              'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-            ],
-          },
-        ],
-      },
+    {
+      title: 'Conservative and Honest Recommendations',
+
+      body:
+        'Treatment recommendations are based on your specific needs, with a focus on preserving healthy tooth structure and avoiding unnecessary procedures whenever possible.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused and Personalized Care',
+
+      body:
+        'Our team works to create a welcoming environment where patients feel informed, respected, and comfortable throughout treatment planning and restorative procedures.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect restorative treatment with preventive, cosmetic, implant, and emergency dental services when additional care is needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+
+    {
+      title: 'Most Major PPO Insurance Plans Accepted',
+
+      body:
+        'Our team helps patients understand insurance benefits, treatment options, and financial considerations so they can make informed decisions about care.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 18 h20 v12 h-20 z M18 24 h12 M20 14 v8',
+      ],
+    },
+  ],
+},
       localArea: {
         eyebrow: 'Local Restorative Dentistry',
 
@@ -1574,6 +1682,523 @@ maintenance: {
         image: '/assets/dental-lobby.jpg',
       },
   },
+
+
+   {
+  slug: 'emergency-dentistry',
+  name: 'Emergency Dentistry',
+
+  metaTitle: 'Emergency Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Emergency dentist in Chandler AZ for tooth pain, broken teeth, chipped teeth, knocked-out teeth, swelling, infection, and urgent dental problems near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Urgent Dental Care in Fulton Ranch',
+
+    title: 'Emergency Dental Care for Tooth Pain, Broken Teeth,',
+    highlight: 'Swelling, or Knocked-Out Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients evaluate urgent dental problems such as severe tooth pain, broken or chipped teeth, swelling, infection symptoms, loose dental work, and knocked-out teeth with care planned around diagnosis, comfort, and the right next treatment.',
+
+    image: '/assets/h-emergency-dental.webp',
+
+    trustPoints: [
+      'Urgent Dental Evaluations',
+      'Tooth Pain and Swelling Concerns',
+      'Broken, Chipped, or Knocked-Out Teeth',
+      'Restorative and Emergency Care in One Office',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+
+    secondaryCTA: {
+      label: 'Request an Emergency Visit',
+      href: '#contact',
+    },
+  },
+  overview: {
+  eyebrow: 'Emergency Dental Care',
+
+  heading:
+    'Emergency Dental Care for Pain, Infection, Broken Teeth, and Dental Injuries',
+
+  body:
+    'Dental emergencies can happen suddenly or develop over time. A toothache may become severe, a crown may loosen, a tooth may break while eating, or swelling may appear near the gums or jaw. These problems should be evaluated promptly because the cause may involve decay, infection, trauma, cracks, gum disease, or damaged dental work. At Promenade Dental, Dr. Shriya evaluates the source of the emergency and explains whether the tooth may need a filling, crown, root canal therapy, extraction, replacement planning, or another appropriate treatment.',
+
+  features: [
+    'Evaluation of severe tooth pain',
+    'Assessment of swelling and infection symptoms',
+    'Care for broken, chipped, or injured teeth',
+    'Treatment planning based on the cause of the emergency',
+  ],
+
+  image: '/assets/service-emergency-dentist.jpg',
+
+  cta: {
+    label: 'Call for Emergency Dental Help',
+    href: 'tel:+14808028188',
+  },
+},
+symptomsSection: {
+  eyebrow: 'When to Seek Emergency Dental Care',
+
+  heading:
+    'Emergency Dental Care for Pain, Swelling, Injuries, and Broken Teeth',
+
+  body:
+    'Dental emergencies often begin with symptoms that become difficult to ignore. Severe pain, swelling, trauma, or sudden damage to a tooth can indicate conditions that may worsen without evaluation. Early diagnosis helps determine the cause and the most appropriate next step.',
+
+  symptoms: [
+    {
+      title: 'Severe Tooth Pain',
+      body:
+        'Persistent or throbbing tooth pain may be caused by deep decay, infection, cracks, nerve inflammation, or pressure within the tooth.',
+    },
+
+    {
+      title: 'Swelling in the Gums, Jaw, or Face',
+      body:
+        'Swelling can indicate infection, inflammation, trauma, or an abscess that may require prompt dental evaluation.',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+      body:
+        'A fractured tooth can expose sensitive areas of the tooth and increase the risk of further damage or infection.',
+    },
+
+    {
+      title: 'Knocked-Out or Loose Tooth',
+      body:
+        'A tooth that has been displaced or knocked out following trauma should be evaluated as soon as possible.',
+    },
+
+    {
+      title: 'Lost Filling or Loose Crown',
+      body:
+        'Damaged dental restorations can expose the underlying tooth and lead to sensitivity, discomfort, or additional fracture risk.',
+    },
+
+    {
+      title: 'Bleeding or Injury After Trauma',
+      body:
+        'Bleeding around the teeth, gums, or mouth following an accident may indicate injury that requires professional assessment.',
+    },
+  ],
+},
+whyItMatters: {
+  eyebrow: 'Emergency Dental Evaluation',
+
+  heading:
+    'Emergency Dental Evaluation for Tooth Pain, Swelling, Trauma, Cracks, and Infection Symptoms',
+
+  description:
+    'Emergency dental care starts with diagnosis because the same symptom can have different causes. Tooth pain may result from decay, infection, cracks, bite pressure, gum inflammation, or sinus-related pressure. A broken tooth may require a filling, crown, root canal therapy, or extraction depending on the extent of damage. Dr. Shriya evaluates the tooth, gums, bite, symptoms, dental history, swelling, trauma, and X-rays when needed before recommending treatment.',
+
+  items: [
+    {
+      title: 'Pain and Symptom Location',
+      body:
+        'The location, timing, and intensity of pain help identify whether the issue may involve the tooth nerve, gum tissue, bite, or surrounding structures.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 q8 6 0 12 q-8 6 0 12 q8 -4 12 -12 q4 -8 -12 -12',
+      ],
+    },
+
+    {
+      title: 'Tooth Damage and Existing Dental Work',
+      body:
+        'Broken teeth, loose crowns, lost fillings, and cracked restorations need evaluation to help prevent further damage or infection.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 l8 8 l-4 6 l4 10 l-8 -6 l-8 6 l4 -10 l-4 -6 z',
+      ],
+    },
+
+    {
+      title: 'Swelling and Infection Signs',
+      body:
+        'Swelling, pus, fever, or spreading discomfort may indicate infection and should be evaluated as soon as possible.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 14 q10 6 8 16 q-2 10 -12 10 q-10 0 -12 -10 q-2 -10 8 -16',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Dental Evaluation',
+    href: '/contact',
+  },
+},
+process: {
+  eyebrow: 'Emergency Dental Visit Process',
+
+  heading:
+  'Emergency Dental Visits for Diagnosis, Treatment, and Follow-Up',
+
+  subtitle:
+    'An emergency dental visit is designed to identify the source of the problem and determine the safest next step. Some emergencies can be treated the same day depending on diagnosis, scheduling, and the treatment needed. Other cases may require stabilization, medication, follow-up treatment, or referral when the condition is more complex.',
+
+  steps: [
+    {
+      title: 'Urgent Symptom Review',
+
+      body:
+        'The dental team reviews your pain, swelling, injury, broken tooth, loose restoration, or other emergency concern.',
+    },
+
+    {
+      title: 'Dental Exam and X-Rays When Needed',
+
+      body:
+        'Dr. Shriya evaluates the tooth, gums, bite, dental restorations, trauma, and imaging when needed to better understand the cause of the problem.',
+    },
+
+    {
+      title: 'Diagnosis and Treatment Options',
+
+      body:
+        'You receive a clear explanation of what is causing the emergency and which treatment options may be appropriate for your situation.',
+    },
+
+    {
+      title: 'Same-Day Care or Follow-Up Plan',
+
+      body:
+        'When possible, treatment may begin during the emergency visit. If additional care is needed, a follow-up treatment plan is created.',
+    },
+  ],
+
+  cta: {
+    label: 'Request an Emergency Dental Visit',
+    href: '#contact',
+  },
+},
+maintenance: {
+  eyebrow: 'Preventing Future Dental Emergencies',
+
+  heading: 'How to Reduce the Risk of Dental Emergencies',
+
+  body:
+    'While some dental emergencies occur unexpectedly, many urgent dental problems develop from untreated decay, worn restorations, or unnoticed damage. Regular dental care and healthy habits can help reduce the likelihood of future emergencies.',
+
+  cards: [
+    {
+      title: 'Attend Routine Dental Exams',
+
+      body:
+        'Regular checkups allow potential problems such as cavities, cracks, and failing dental work to be identified before they become urgent concerns.',
+    },
+
+    {
+      title: 'Address Symptoms Early',
+
+      body:
+        'Tooth sensitivity, occasional discomfort, or minor damage should be evaluated before the condition progresses into severe pain or infection.',
+    },
+
+    {
+      title: 'Protect Teeth During Sports',
+
+      body:
+        'Custom mouthguards may help reduce the risk of dental injuries during contact sports and recreational activities.',
+    },
+
+    {
+      title: 'Avoid Habits That Increase Tooth Damage',
+
+      body:
+        'Chewing ice, biting hard objects, grinding teeth, and using teeth as tools can increase the risk of fractures and emergency dental problems.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Dentist-Led Emergency Dental Care for Pain, Injuries, and Urgent Dental Problems',
+
+  description:
+    'Dental emergencies often happen unexpectedly and can create stress, discomfort, and uncertainty. Promenade Dental focuses on identifying the cause of the problem, explaining treatment options clearly, and helping patients move forward with confidence.',
+
+  items: [
+    {
+      title: 'Diagnosis Before Treatment',
+
+      body:
+        'Dr. Shriya evaluates symptoms, tooth structure, gums, bite, trauma, restorations, and X-rays when needed before recommending treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Conservative Treatment Recommendations',
+
+      body:
+        'Whenever possible, treatment planning focuses on protecting healthy teeth and avoiding unnecessary procedures while addressing the underlying problem.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Patient Care',
+
+      body:
+        'Our team works to create a welcoming environment where patients feel informed, respected, and comfortable during emergency dental visits.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Emergency and Restorative Care in One Office',
+
+      body:
+        'Promenade Dental can connect emergency treatment with fillings, crowns, root canals, extractions, tooth replacement, and ongoing dental care when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Convenient Care Near Fulton Ranch',
+
+      body:
+        'Located in Chandler 85248, Promenade Dental serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+
+    {
+      title: 'Most Major PPO Insurance Plans Accepted',
+
+      body:
+        'Our team helps patients understand insurance benefits, treatment options, and financial considerations so they can make informed decisions about care.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 18 h20 v12 h-20 z M18 24 h12 M20 14 v8',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Local Emergency Dentistry',
+
+  heading:
+    'Emergency Dentist Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are experiencing severe tooth pain, swelling, a broken tooth, a knocked-out tooth, dental trauma, or another urgent dental concern near Chandler 85248, Promenade Dental provides emergency dental evaluations focused on diagnosis, relief, and the most appropriate next step for treatment.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Explore Related Emergency Care',
+
+  heading:
+  'Related Care for Toothaches, Broken Teeth, and Urgent Treatment',
+
+  intro:
+    'Emergency dental problems often connect with restorative treatment. The right page depends on the symptom, the condition of the tooth, and whether repair, infection treatment, or tooth replacement is needed.',
+
+  services: [
+    {
+      title: 'Toothache & Dental Pain Relief',
+
+      description:
+        'Evaluation and treatment planning for tooth pain, sensitivity, pressure, swelling, and possible infection.',
+
+      href: '/services/emergency-dentistry/toothache-relief',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+
+      description:
+        'Care for chipped, cracked, fractured, or broken teeth that may need repair, protection, or restorative treatment.',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+
+    {
+      title: 'Knocked-Out Tooth',
+
+      description:
+        'Urgent guidance for adult teeth that have been knocked out because of injury, sports accidents, or dental trauma.',
+
+      href: '/services/emergency-dentistry/knocked-out-tooth',
+    },
+
+    {
+      title: 'Root Canal Therapy',
+
+      description:
+        'Root canal therapy may be recommended when tooth pain is caused by infection or inflammation inside the tooth and the tooth can still be saved.',
+
+      href: '/services/restorative-dentistry/root-canals',
+    },
+  ],
+},
+testimonialsSection: {
+  eyebrow: 'Patient Stories',
+
+  heading:
+    'Trusted by Chandler Patients for Emergency Dental Care',
+
+  testimonials: [
+    {
+      quote:
+        'I woke up with severe tooth pain and was able to get evaluated quickly. Dr. Shriya explained the cause and helped me feel comfortable throughout the visit.',
+      name: 'Michael R.',
+      context: 'Emergency Dental Patient',
+    },
+
+    {
+      quote:
+        'After breaking a tooth during dinner, I was worried about losing it. The team got me in quickly and clearly explained my treatment options.',
+      name: 'Jennifer T.',
+      context: 'Broken Tooth Patient',
+    },
+
+    {
+      quote:
+        'Everyone was calm, professional, and reassuring when I came in with swelling and pain. I appreciated how thoroughly everything was explained.',
+      name: 'David K.',
+      context: 'Emergency Evaluation Patient',
+    },
+
+    {
+      quote:
+        'My crown came loose unexpectedly, and I was concerned about damaging the tooth. The office helped me schedule an appointment quickly and made the process easy.',
+      name: 'Susan M.',
+      context: 'Restorative Emergency Patient',
+    },
+
+    {
+      quote:
+        'The team took my dental injury seriously and helped me understand exactly what was happening and what to expect next.',
+      name: 'Amanda P.',
+      context: 'Dental Trauma Patient',
+    },
+
+    {
+      quote:
+        'From the phone call to the treatment visit, everything was organized, professional, and focused on solving the problem as quickly as possible.',
+      name: 'Mark L.',
+      context: 'Chandler Resident',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+  'Emergency Dental FAQs for Pain, Swelling, and Injuries',
+
+  items: [
+    {
+      q: 'What is considered a dental emergency?',
+      a: 'A dental emergency may include severe tooth pain, swelling, infection signs, a broken tooth, a knocked-out tooth, a loose permanent tooth, dental trauma, or uncontrolled bleeding after injury.',
+    },
+
+    {
+      q: 'Should I call for severe tooth pain?',
+      a: 'Yes. Severe tooth pain should be evaluated because it may involve deep decay, infection, cracks, gum problems, or bite-related damage.',
+    },
+
+    {
+      q: 'What should I do for a broken tooth?',
+      a: 'Call the dental office and avoid chewing on the broken tooth. A broken tooth may need bonding, a filling, crown, root canal therapy, or extraction depending on the extent of the damage.',
+    },
+
+    {
+      q: 'What should I do if a tooth is knocked out?',
+      a: 'Call the dental office immediately for guidance. A knocked-out adult tooth is time-sensitive and needs urgent evaluation.',
+    },
+
+    {
+      q: 'Is swelling a dental emergency?',
+      a: 'Swelling can be a sign of infection and should be evaluated promptly, especially if it involves the face, jaw, fever, pus, or worsening pain.',
+    },
+
+    {
+      q: 'Can emergency dental care save my tooth?',
+      a: 'Sometimes. Depending on the diagnosis, a painful or damaged tooth may be saved with a filling, crown, root canal therapy, or another restorative treatment.',
+    },
+
+    {
+      q: 'Will I need a root canal for tooth pain?',
+      a: 'Not always. Tooth pain can have several causes. Root canal therapy may be recommended if the inside of the tooth is inflamed or infected.',
+    },
+
+    {
+      q: 'Can a lost filling or loose crown wait?',
+      a: 'A lost filling or loose crown should be checked soon because the tooth may be exposed to sensitivity, decay, fracture risk, or bite-related problems.',
+    },
+
+    {
+      q: 'Do you treat chipped teeth?',
+      a: 'Yes. Promenade Dental evaluates chipped teeth and recommends treatment based on the size, location, sensitivity, and condition of the remaining tooth structure.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Call for Emergency Dental Care',
+highlight: 'and Prompt Evaluation',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate urgent dental problems with emergency care focused on diagnosis, comfort, tooth repair, infection treatment, and the right next step.',
+
+  buttonText: 'Request an Emergency Visit',
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+}
   ];
   
   

@@ -62,7 +62,7 @@ export default function ServiceOverview({
             {body}
           </p>
 
-          <ul className="flex flex-col gap-4">
+          <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {features.map((f, i) => (
               <li key={i} className="flex items-start gap-4 text-coral text-lg md:text-xl font-light leading-relaxed">
                 <svg viewBox="0 0 24 24" className="w-6 h-6 mt-1 flex-shrink-0 text-coral" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">

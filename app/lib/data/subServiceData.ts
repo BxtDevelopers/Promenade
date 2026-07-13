@@ -562,33 +562,86 @@ export const SUB_SERVICES = [
   },
 
   benefits: {
-    eyebrow: 'Why Choose Promenade Dental',
-    heading: 'Dentist-Led Dental Exams and Cleanings for Family Oral Health',
-    description:
-      'Preventive dentistry should be practical, consistent, and based on each patient’s oral health needs. Promenade Dental helps patients maintain clean teeth, healthier gums, and clearer awareness of their dental condition over time.',
-    items: [
-      {
-        title: 'Complete Preventive Evaluation',
-        body: 'Dr. Shriya evaluates your teeth, gums, bite, existing restorations, symptoms, and recommends X-rays when needed to monitor your oral health.',
-        paths: ['M8 38 A18 18 0 0 1 40 38', 'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8'],
-      },
-      {
-        title: 'Professional Cleaning and Plaque Control',
-        body: 'Professional cleanings remove plaque and tartar that daily brushing may miss, supporting healthier gums and long-term oral health.',
-        paths: ['M10 30 h28', 'M16 18 C20 12 28 12 32 18 M18 30 h12'],
-      },
-      {
-        title: 'Prevention for Adults and Children',
-        body: 'Preventive dental care is tailored for children, adults, families, and patients with ongoing oral health or restorative needs.',
-        paths: ['M12 34 A10 10 0 1 1 36 34', 'M18 18 h12 M24 14 v20'],
-      },
-      {
-        title: 'Restorative Care Connected When Needed',
-        body: 'If a concern is identified during your visit, Promenade Dental can connect you with fillings, crowns, gum care, root canal evaluation, or other restorative treatments.',
-        paths: ['M12 14 h24 v20 h-24 z', 'M18 20 h12 M24 14 v20'],
-      },
-    ],
-  },
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Personalized Dental Exams and Cleanings for Long-Term Oral Health',
+
+  description:
+    'Regular dental visits are about more than cleaning teeth. Promenade Dental focuses on building lasting relationships with patients, providing clear guidance, and helping families stay proactive about their oral health through every stage of life.',
+
+  items: [
+    {
+      title: 'See the Same Dentist Every Visit',
+
+      body:
+        'Dr. Shriya personally evaluates your oral health, helping create continuity of care and a better understanding of changes over time.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Preventive Care',
+
+      body:
+        'Our team works to create a welcoming environment where patients of all ages feel comfortable during routine dental visits and preventive care.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'Clear and Honest Guidance',
+
+      body:
+        'Findings, recommendations, and treatment options are explained in straightforward language so patients can make informed decisions about their oral health.',
+
+      paths: [
+        'M12 34 A10 10 0 1 1 36 34',
+        'M18 18 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Preventive, Restorative, and Family Care in One Office',
+
+      body:
+        'Promenade Dental provides preventive, restorative, cosmetic, implant, and emergency dental services, making it easier to manage care for the whole family.',
+
+      paths: [
+        'M12 14 h24 v20 h-24 z',
+        'M18 20 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and nearby communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+
+    {
+      title: 'Most Major PPO Insurance Plans Accepted',
+
+      body:
+        'Our team helps patients understand insurance benefits and treatment options so they can make confident decisions about their dental care.',
+
+      paths: [
+        'M14 18 h20 v12 h-20 z M18 24 h12 M20 14 v8',
+      ],
+    },
+  ],
+},
 
   testimonialsSection: {
     eyebrow: 'Patient Stories',
@@ -732,6 +785,8 @@ export const SUB_SERVICES = [
     image: '/assets/dental-lobby.jpg',
   },
 },
+
+
 {
   serviceSlug: 'family-dentistry',
 
@@ -984,41 +1039,18 @@ maintenance: {
 benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
-  heading: "Family-Focused Children's Dentistry",
+  heading:
+    "Family-Focused Children's Dentistry Designed Around Comfort and Trust",
 
   description:
-    "Children's dental care should support both the child and the parent. Promenade Dental helps families understand oral health needs at each stage while keeping visits practical, preventive, and comfort-focused.",
+    "Children's dental care should support both the child and the parent. Promenade Dental focuses on creating positive dental experiences, providing clear guidance, and helping families build healthy habits that support long-term oral health.",
 
   items: [
-    {
-      title: 'Preventive Care for Growing Smiles',
-
-      body:
-        'Dental exams and cleanings help monitor cavities, gum health, tooth development, and brushing habits.',
-
-      paths: [
-        'M8 38 A18 18 0 0 1 40 38',
-        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
-      ],
-    },
-
-    {
-      title: 'Parent Guidance Included',
-
-      body:
-        'Families receive practical advice on brushing, flossing, diet, snacking habits, and follow-up care.',
-
-      paths: [
-        'M10 30 h28',
-        'M16 18 C20 12 28 12 32 18 M18 30 h12',
-      ],
-    },
-
     {
       title: 'Comfort-Focused Dental Visits',
 
       body:
-        'The team helps children feel more comfortable with dental care through calm communication and age-appropriate explanations.',
+        'The team helps children feel more comfortable with dental care through calm communication, patience, and age-appropriate explanations.',
 
       paths: [
         'M12 34 A10 10 0 1 1 36 34',
@@ -1027,14 +1059,60 @@ benefits: {
     },
 
     {
-      title: 'Family Dentistry in One Office',
+      title: 'Clear Guidance for Parents',
 
       body:
-        'Promenade Dental provides preventive, restorative, cosmetic, emergency, and family dental care for different ages and needs.',
+        'Families receive practical explanations about oral health, tooth development, home care habits, diet, and treatment recommendations in language that is easy to understand.',
+
+      paths: [
+        'M10 30 h28',
+        'M16 18 C20 12 28 12 32 18 M18 30 h12',
+      ],
+    },
+
+    {
+      title: 'See the Same Dentist as Your Family Grows',
+
+      body:
+        'Dr. Shriya provides continuity of care by getting to know your child’s dental history, growth, habits, and oral health needs over time.',
+
+      paths: [
+        'M8 38 A18 18 0 0 1 40 38',
+        'M16 14 h16 v20 h-16 z M20 20 h8 M20 26 h8',
+      ],
+    },
+
+    {
+      title: 'Conservative and Honest Recommendations',
+
+      body:
+        'Treatment recommendations focus on what is necessary for your child’s oral health, helping parents make informed decisions with confidence.',
+
+      paths: [
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Family Dental Care in One Office',
+
+      body:
+        'Promenade Dental provides preventive, restorative, cosmetic, implant, and emergency dentistry, making it easier for families to receive care in one location.',
 
       paths: [
         'M12 14 h24 v20 h-24 z',
         'M18 20 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves families from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -1231,6 +1309,8 @@ highlight: "for Growing Healthy Smiles",
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+
 {
   serviceSlug: 'family-dentistry',
 
@@ -1494,17 +1574,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-    'Dentist-Led Gum Disease Treatment for Long-Term Gum Health',
+    'Personalized Gum Disease Care Focused on Long-Term Oral Health',
 
   description:
-    'Gum disease treatment should be based on measurements, symptoms, buildup, and tooth support. Promenade Dental focuses on evaluating gum health clearly and helping patients understand the difference between routine cleaning, deep cleaning, and periodontal maintenance.',
+    'Gum disease can affect gum health, tooth support, and long-term oral health. Promenade Dental focuses on clear communication, conservative treatment planning, and ongoing support to help patients understand their condition and protect their smiles.',
 
   items: [
     {
-      title: 'Gum Measurements Before Treatment',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates pocket depth, bleeding, recession, tartar buildup, tooth mobility, and X-rays when needed.',
+        'Dr. Shriya personally evaluates gum measurements, bleeding, recession, tooth support, symptoms, and imaging when needed before recommending treatment.',
 
       paths: [
         'M8 38 A18 18 0 0 1 40 38',
@@ -1513,10 +1593,10 @@ benefits: {
     },
 
     {
-      title: 'Clear Cleaning Recommendations',
+      title: 'Clear and Honest Treatment Recommendations',
 
       body:
-        'Patients are guided on whether they need a routine cleaning, scaling and root planing, or periodontal maintenance.',
+        'Patients receive straightforward explanations about routine cleanings, deep cleanings, periodontal maintenance, and home care recommendations without unnecessary treatment.',
 
       paths: [
         'M10 30 h28',
@@ -1525,10 +1605,10 @@ benefits: {
     },
 
     {
-      title: 'Long-Term Gum Health Planning',
+      title: 'Comfort-Focused Patient Experience',
 
       body:
-        'Gum disease often requires ongoing monitoring, home care, and maintenance to protect tooth support.',
+        'Our team works to create a welcoming environment where patients feel informed, respected, and comfortable throughout gum disease treatment and maintenance visits.',
 
       paths: [
         'M12 34 A10 10 0 1 1 36 34',
@@ -1537,14 +1617,36 @@ benefits: {
     },
 
     {
-      title: 'Preventive and Restorative Care Connected',
+      title: 'Long-Term Prevention and Maintenance Support',
 
       body:
-        'Promenade Dental can connect gum care with exams, cleanings, fillings, crowns, implants, dentures, and tooth replacement planning when needed.',
+        'Gum health often requires ongoing monitoring and maintenance. Promenade Dental helps patients build practical habits that support healthier gums over time.',
+
+      paths: [
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect gum disease treatment with preventive, restorative, implant, cosmetic, and emergency dental services when additional care is needed.',
 
       paths: [
         'M12 14 h24 v20 h-24 z',
         'M18 20 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -1742,6 +1844,8 @@ highlight: 'for Long-Term Gum Health',
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+
 {
   serviceSlug: 'family-dentistry',
 
@@ -2158,17 +2262,18 @@ maintenance: {
 benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
-  heading: 'Dentist-Led Night Guard Care for Grinding and Clenching',
+  heading:
+    'Personalized Night Guard Care for Grinding, Clenching, and Tooth Protection',
 
   description:
-    'Grinding and clenching can affect the teeth, jaw, restorations, and long-term oral health. Promenade Dental evaluates the cause and signs of wear before recommending a custom night guard.',
+    'Teeth grinding and clenching can place ongoing pressure on teeth, restorations, and jaw joints. Promenade Dental focuses on identifying the signs of bruxism, explaining treatment options clearly, and providing comfortable solutions designed around your individual needs.',
 
   items: [
     {
-      title: 'Bite and Tooth Wear Evaluation',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates tooth wear, bite pressure, jaw symptoms, cracks, restorations, and sensitivity.',
+        'Dr. Shriya evaluates tooth wear, bite pressure, jaw symptoms, restorations, enamel damage, and other signs of grinding before recommending treatment.',
 
       paths: [
         'M8 38 A18 18 0 0 1 40 38',
@@ -2177,10 +2282,10 @@ benefits: {
     },
 
     {
-      title: 'Custom Fit for Better Comfort',
+      title: 'Comfort-Focused Custom Night Guards',
 
       body:
-        'Custom night guards are designed from dental records for a more precise fit than generic options.',
+        'Custom night guards are designed from dental records to provide a more precise fit, improved comfort, and better long-term wear than over-the-counter alternatives.',
 
       paths: [
         'M10 30 h28',
@@ -2189,10 +2294,21 @@ benefits: {
     },
 
     {
-      title: 'Protection for Natural Teeth and Restorations',
+      title: 'Clear and Honest Treatment Recommendations',
 
       body:
-        'Night guard planning considers enamel wear, crowns, veneers, fillings, bridges, and implant restorations.',
+        'Patients receive straightforward explanations about grinding, clenching, tooth wear, and whether a custom night guard is appropriate for their situation.',
+
+      paths: [
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Protection for Teeth and Dental Work',
+
+      body:
+        'Night guard planning considers natural teeth, crowns, veneers, fillings, bridges, implants, and other restorations that may be affected by grinding forces.',
 
       paths: [
         'M12 34 A10 10 0 1 1 36 34',
@@ -2201,14 +2317,25 @@ benefits: {
     },
 
     {
-      title: 'Preventive and Restorative Care Connected',
+      title: 'Comprehensive Dental Care in One Office',
 
       body:
-        'Promenade Dental can connect night guard care with exams, cleanings, crowns, bonding, cracked tooth evaluation, and restorative treatment.',
+        'Promenade Dental can connect night guard care with preventive, restorative, cosmetic, implant, and emergency dental services when additional treatment is needed.',
 
       paths: [
         'M12 14 h24 v20 h-24 z',
         'M18 20 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -2405,7 +2532,9 @@ highlight: 'for Tooth Protection',
   image: '/assets/dental-lobby.jpg',
 },
 },
-   {
+
+
+{
     serviceSlug: 'cosmetic-dentistry',
     slug: 'teeth-whitening',
     name: 'Teeth Whitening',
@@ -2626,18 +2755,18 @@ maintenance: {
 benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
-heading:
-  'Dentist-Led Teeth Whitening with Clear Expectations',
+  heading:
+    'Professional Teeth Whitening Planned Around Your Smile Goals',
 
   description:
-    'Teeth whitening may seem simple, but the best results come from choosing the right treatment for the right mouth. Promenade Dental provides whitening guidance with attention to oral health, shade planning, sensitivity, and long-term cosmetic goals.',
+    'Teeth whitening is not one-size-fits-all. Promenade Dental focuses on understanding your goals, evaluating your oral health, and recommending whitening options that support both appearance and long-term dental health.',
 
   items: [
     {
-      title: 'Dentist-Led Whitening Planning',
+      title: 'Personalized Whitening Recommendations',
 
       body:
-        'Dr. Shriya checks your teeth, gums, sensitivity, and existing dental work before recommending whitening.',
+        'Dr. Shriya evaluates tooth color, enamel condition, sensitivity, existing dental work, and smile goals before recommending whitening treatment.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -2646,10 +2775,10 @@ heading:
     },
 
     {
-      title: 'ZOOM Whitening Available When Appropriate',
+      title: 'Realistic and Honest Expectations',
 
       body:
-        'ZOOM whitening may be recommended for patients who want a faster whitening option and are suitable for treatment.',
+        'Patients receive clear guidance about what whitening can improve, potential limitations, and when other cosmetic treatments may be more appropriate.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -2658,10 +2787,22 @@ heading:
     },
 
     {
-      title: 'Realistic Shade Expectations',
+      title: 'Comfort-Focused Cosmetic Care',
 
       body:
-        'Patients are guided on what whitening can improve and when another cosmetic treatment may be needed.',
+        'Our team works to create a comfortable experience while helping patients understand sensitivity concerns, treatment options, and expected outcomes.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'ZOOM Whitening Available When Appropriate',
+
+      body:
+        'ZOOM whitening may be recommended for patients seeking a faster whitening option when their oral health and treatment goals make them suitable candidates.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -2670,14 +2811,25 @@ heading:
     },
 
     {
-      title: 'Cosmetic and General Dental Care in One Office',
+      title: 'Comprehensive Cosmetic Dentistry in One Office',
 
       body:
-        'If whitening is not enough, Promenade Dental can also discuss bonding, veneers, restorative care, or smile makeover planning.',
+        'If whitening alone is not the best solution, Promenade Dental can discuss bonding, veneers, smile makeovers, and other cosmetic treatment options.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
         'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -2872,6 +3024,8 @@ cta: {
 image: '/assets/dental-lobby.jpg',
 },
   },
+
+
  {
   serviceSlug: 'cosmetic-dentistry',
   slug: 'veneers',
@@ -3145,63 +3299,86 @@ maintenance: {
   ],
 },
 benefits: {
-eyebrow: 'Why Choose Promenade Dental',
+  eyebrow: 'Why Choose Promenade Dental',
 
-heading:
-'Dentist-Led Veneer Planning for Natural-Looking Results',
+  heading:
+    'Personalized Veneer Planning for Natural-Looking Smile Transformations',
 
-description:
-'Porcelain veneers are highly personal. The best results come from careful planning, realistic expectations, and a clear understanding of what veneers can improve. Promenade Dental focuses on cosmetic outcomes that support both appearance and long-term oral health.',
+  description:
+    'Porcelain veneers are a significant cosmetic investment. Promenade Dental focuses on understanding your goals, providing honest guidance, and creating treatment plans designed to support both smile aesthetics and long-term oral health.',
 
-items: [
-{
-title: 'Treatment Planned Around Oral Health',
-  body:
-    'Dr. Shriya evaluates teeth, gums, enamel, bite, and existing dental work before recommending veneers.',
+  items: [
+    {
+      title: 'Personalized Smile Design Consultation',
 
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      body:
+        'Dr. Shriya evaluates your teeth, gums, bite, facial aesthetics, and cosmetic goals before recommending veneers or alternative treatment options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Honest and Conservative Recommendations',
+
+      body:
+        'Not every cosmetic concern requires veneers. Patients receive clear guidance about whether veneers, whitening, bonding, crowns, or another option may be the most appropriate choice.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Natural-Looking Cosmetic Results',
+
+      body:
+        'Veneer planning considers tooth color, shape, proportions, smile balance, and facial features to create results that look attractive without appearing artificial.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Cosmetic Care',
+
+      body:
+        'Our team works to create a welcoming environment where patients feel informed, respected, and confident throughout the veneer process.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Cosmetic and Restorative Care',
+
+      body:
+        'Promenade Dental provides cosmetic, restorative, preventive, implant, and family dental care, allowing veneer treatment to fit into your overall oral health plan.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
   ],
-},
-
-{
-  title: 'Cosmetic Goals Are Clearly Discussed',
-
-  body:
-    'Patients can explain what they want to change so the veneer plan reflects their actual smile concerns.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M24 12 L24 30 M14 22 L34 22',
-  ],
-},
-
-{
-  title: 'Natural-Looking Smile Design',
-
-  body:
-    'Veneer planning considers tooth color, shape, size, gum line, and smile balance.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
-  ],
-},
-
-{
-  title: 'Cosmetic and General Dental Care in One Office',
-
-  body:
-    'If veneers are not the best fit, Promenade Dental can discuss whitening, bonding, crowns, or other treatment options.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-  ],
-},
-
-],
 },
 localArea: {
 eyebrow: 'Local Porcelain Veneers',
@@ -3395,6 +3572,8 @@ cta: {
 },
 
 }, 
+
+
 {
   serviceSlug: 'restorative-dentistry',
   slug: 'tooth-colored-fillings',
@@ -3671,17 +3850,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-    'Dentist-Led Filling Treatment for Natural-Looking Cavity Repair',
+    'Personalized Cavity Treatment Focused on Long-Term Tooth Health',
 
   description:
-    'A dental filling may seem simple, but proper diagnosis and placement matter. The size of the cavity, tooth strength, bite pressure, sensitivity, and appearance all affect the right treatment decision.',
+    'Treating a cavity is about more than placing a filling. Promenade Dental focuses on understanding the condition of the tooth, explaining treatment options clearly, and helping patients make informed decisions that support long-term oral health.',
 
   items: [
     {
-      title: 'Diagnosis Before Treatment',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates the tooth, symptoms, X-rays when needed, and surrounding structure before recommending a filling.',
+        'Dr. Shriya evaluates the tooth, symptoms, bite, existing dental work, and X-rays when needed before recommending treatment.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -3690,10 +3869,10 @@ benefits: {
     },
 
     {
-      title: 'Natural-Looking Composite Material',
+      title: 'Conservative and Honest Recommendations',
 
       body:
-        'Tooth-colored material is selected to blend with the treated tooth as closely as possible.',
+        'Whenever possible, treatment focuses on preserving healthy tooth structure and addressing problems before they become more complex.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -3702,10 +3881,10 @@ benefits: {
     },
 
     {
-      title: 'Treatment Planned Around Tooth Strength',
+      title: 'Natural-Looking Tooth-Colored Fillings',
 
       body:
-        'Patients are guided on whether a filling is enough or whether the tooth needs more support.',
+        'Composite filling materials are selected to blend naturally with your smile while restoring strength and function to the tooth.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -3714,14 +3893,37 @@ benefits: {
     },
 
     {
-      title: 'Preventive and Restorative Care in One Office',
+      title: 'Comfort-Focused Patient Care',
 
       body:
-        'Promenade Dental can help treat cavities and monitor your oral health with exams, cleanings, crowns, inlays, onlays, and preventive care.',
+        'Our team works to create a welcoming environment where patients feel informed, respected, and comfortable throughout treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect filling treatment with preventive care, crowns, inlays, onlays, root canal therapy, and other restorative services when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
         'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -3917,6 +4119,8 @@ highlight: 'for a Healthier Smile',
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+
 {
 serviceSlug: 'restorative-dentistry',
 slug: 'dental-crowns',
@@ -4165,17 +4369,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-  'Dentist-Led Crown Treatment for Damaged Teeth and Bite Comfort',
+    'Personalized Crown Treatment Focused on Strength, Comfort, and Long-Term Oral Health',
 
   description:
-    'A crown is an important restorative treatment. It should be planned around the reason the tooth failed, how much tooth structure remains, and how the tooth functions under chewing pressure.',
+    'A dental crown is often recommended when a tooth needs more protection than a filling can provide. Promenade Dental focuses on careful diagnosis, honest treatment recommendations, and restorative care designed to support both function and appearance.',
 
   items: [
     {
-      title: 'Diagnosis Before Treatment',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates the tooth, symptoms, X-rays when needed, cracks, fillings, bite, and gum health before recommending a crown.',
+        'Dr. Shriya evaluates the tooth, symptoms, existing restorations, bite, gum health, and X-rays when needed before recommending treatment.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -4184,22 +4388,22 @@ benefits: {
     },
 
     {
-      title: 'Treatment Planned Around Tooth Strength',
+      title: 'Conservative and Honest Recommendations',
 
       body:
-        'Patients are guided on whether a crown is needed or whether a filling, inlay, onlay, root canal, or extraction may be more appropriate.',
+        'Patients receive clear guidance on whether a crown is appropriate or if another treatment option may better support the tooth and long-term oral health.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
-        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+        'M24 12 L24 30 M14 22 L34 22',
       ],
     },
 
     {
-      title: 'Function and Appearance Considered Together',
+      title: 'Function and Appearance Planned Together',
 
       body:
-        'Crown planning considers chewing comfort, bite fit, tooth shape, and how the restoration looks in the smile.',
+        'Crown treatment considers chewing comfort, bite balance, tooth shape, and smile appearance to create a restoration that feels and looks natural.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -4208,14 +4412,37 @@ benefits: {
     },
 
     {
-      title: 'Restorative and Preventive Care in One Office',
+      title: 'Comfort-Focused Patient Experience',
 
       body:
-        'Promenade Dental can monitor the crown, surrounding teeth, gums, and bite during ongoing preventive care.',
+        'Our team works to provide a welcoming environment where patients feel informed, comfortable, and confident throughout the treatment process.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect crown treatment with preventive care, fillings, root canals, implants, bridges, and other restorative services when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
         'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -4412,6 +4639,8 @@ highlight: 'for Damaged Teeth',
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+
 {
   serviceSlug: 'restorative-dentistry',
   slug: 'dental-bridges',
@@ -4661,17 +4890,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-    'Dentist-Led Bridge Planning for Missing Teeth and Chewing Support',
+    'Personalized Missing Tooth Solutions Focused on Comfort, Function, and Long-Term Oral Health',
 
   description:
-    'Replacing a missing tooth is an important decision. The best option depends on the teeth, gums, bite, bone support, and the patient’s preference for fixed or removable treatment.',
+    'Replacing a missing tooth is an important decision that can affect chewing, appearance, and long-term oral health. Promenade Dental focuses on understanding your needs, explaining options clearly, and helping you choose the treatment that best fits your goals.',
 
   items: [
     {
-      title: 'Diagnosis Before Treatment',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates the missing tooth space, neighboring teeth, gums, bite, and X-rays when needed before recommending a bridge.',
+        'Dr. Shriya evaluates the missing tooth area, neighboring teeth, gums, bite, bone support, and X-rays when needed before recommending treatment.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -4680,10 +4909,10 @@ benefits: {
     },
 
     {
-      title: 'Replacement Options Explained Clearly',
+      title: 'Clear Guidance on Replacement Options',
 
       body:
-        'Patients are guided through bridges, implants, implant-supported bridges, and partial dentures when relevant.',
+        'Patients receive straightforward explanations about dental bridges, implants, implant-supported restorations, and partial dentures so they can make informed decisions.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -4692,26 +4921,49 @@ benefits: {
     },
 
     {
-      title: 'Function and Appearance Planned Together',
+      title: 'Honest and Personalized Treatment Planning',
 
       body:
-        'Bridge treatment considers chewing comfort, bite support, tooth shape, and smile appearance.',
+        'Treatment recommendations are based on your oral health, goals, budget considerations, and long-term dental needs rather than a one-size-fits-all approach.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
-        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+        'M24 12 L24 30 M14 22 L34 22',
       ],
     },
 
     {
-      title: 'Restorative and Implant Care in One Office',
+      title: 'Comfort-Focused Patient Experience',
 
       body:
-        'Promenade Dental can connect bridge planning with restorative dentistry, implant consultations, dentures, crowns, and preventive care.',
+        'Our team works to create a welcoming environment where patients feel informed, comfortable, and confident throughout treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Restorative Care in One Office',
+
+      body:
+        'Promenade Dental can connect bridge treatment with crowns, implants, dentures, preventive care, and other restorative services when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
         'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+
+    {
+      title: 'Convenient Chandler Location',
+
+      body:
+        'Located in Fulton Ranch, Promenade Dental serves patients from Chandler, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+
+      paths: [
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
       ],
     },
   ],
@@ -4908,6 +5160,8 @@ cta: {
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+
 {
   serviceSlug: 'restorative-dentistry',
   slug: 'root-canals',
@@ -5157,17 +5411,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-  'Dentist-Led Root Canal Therapy for Infection and Tooth Preservation',
+    'Compassionate Root Canal Care Focused on Relief and Tooth Preservation',
 
   description:
-    'Root canal therapy requires careful diagnosis and restoration planning. The tooth must be evaluated for infection, structure, bite pressure, gum health, and whether it can be restored predictably.',
+    'Needing a root canal can feel overwhelming, especially when you are already dealing with pain or infection. Promenade Dental focuses on clear diagnosis, honest recommendations, and treatment designed to relieve discomfort while protecting long-term oral health whenever possible.',
 
   items: [
     {
-      title: 'Diagnosis Before Treatment',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates symptoms, X-rays when needed, tooth structure, gums, and bite before recommending root canal therapy.',
+        'Dr. Shriya evaluates symptoms, tooth structure, X-rays, gum health, and bite conditions before recommending root canal therapy or alternative treatment options.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5176,10 +5430,10 @@ benefits: {
     },
 
     {
-      title: 'Treatment Focused on Saving the Tooth',
+      title: 'Tooth Preservation Whenever Possible',
 
       body:
-        'Root canal therapy is considered when the natural tooth can be preserved and restored.',
+        'When a tooth can be predictably restored, treatment focuses on saving the natural tooth and helping patients avoid unnecessary extraction.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5188,10 +5442,34 @@ benefits: {
     },
 
     {
-      title: 'Crown and Restoration Planning',
+      title: 'Comfort-Focused Patient Care',
 
       body:
-        'Promenade Dental evaluates whether the tooth needs a filling or crown after root canal therapy.',
+        'Our team understands that many patients feel anxious about root canal treatment and works to provide a calm, supportive, and comfortable experience.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Honest and Conservative Recommendations',
+
+      body:
+        'Patients receive clear explanations about the condition of the tooth, expected outcomes, and whether root canal therapy is the most appropriate option.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Restoration Planning After Treatment',
+
+      body:
+        'Promenade Dental helps patients understand whether a filling, crown, or additional restorative treatment may be recommended after root canal therapy.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5200,10 +5478,10 @@ benefits: {
     },
 
     {
-      title: 'Restorative and Emergency Care in One Office',
+      title: 'Emergency and Restorative Care in One Office',
 
       body:
-        'Promenade Dental can connect root canal therapy with crowns, fillings, extractions, emergency dentistry, and long-term preventive care.',
+        'Promenade Dental can connect root canal therapy with emergency dental care, crowns, fillings, tooth replacement options, and ongoing preventive care when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5712,18 +5990,18 @@ maintenance: {
 benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
- heading:
-  'Tooth Extraction Planning for Comfort and Healing',
+  heading:
+    'Compassionate Tooth Extraction Care Focused on Comfort and Long-Term Oral Health',
 
   description:
-    'Tooth extraction should be based on diagnosis, not guesswork. Promenade Dental evaluates whether the tooth can be saved, whether removal is necessary, and what should happen after extraction.',
+    'Needing a tooth removed can feel stressful, especially when you are dealing with pain, infection, or uncertainty about your options. Promenade Dental focuses on clear diagnosis, conservative treatment recommendations, and comfortable care designed around your long-term oral health goals.',
 
   items: [
     {
-      title: 'Diagnosis Before Removal',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates the tooth, symptoms, X-rays when needed, gums, bone support, and restoration options before recommending extraction.',
+        'Dr. Shriya evaluates the tooth, symptoms, X-rays, gum health, bone support, and restoration options before recommending extraction.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5732,10 +6010,10 @@ benefits: {
     },
 
     {
-      title: 'Tooth-Saving Options Considered First',
+      title: 'Conservative and Honest Recommendations',
 
       body:
-        'Fillings, crowns, root canal therapy, and other restorative options are considered when the tooth can still be saved predictably.',
+        'Whenever possible, fillings, crowns, root canal therapy, or other restorative treatments are considered before tooth removal is recommended.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5744,10 +6022,22 @@ benefits: {
     },
 
     {
-      title: 'Clear Replacement Planning',
+      title: 'Comfort-Focused Patient Care',
 
       body:
-        'If the tooth is removed, bridge, denture, partial, or implant options can be discussed when appropriate.',
+        'Our team works to create a calm and supportive environment while helping patients feel informed and comfortable throughout treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Clear Planning After Extraction',
+
+      body:
+        'Patients receive guidance about healing, recovery expectations, and replacement options when restoring the missing tooth may be beneficial.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -5756,10 +6046,22 @@ benefits: {
     },
 
     {
-      title: 'Restorative and Emergency Care in One Office',
+      title: 'Tooth Replacement Options Explained Clearly',
 
       body:
-        'Promenade Dental can connect extractions with restorative dentistry, emergency care, implants, dentures, and preventive follow-up.',
+        'Dental implants, bridges, partial dentures, and other replacement options can be discussed based on your oral health needs and goals.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Emergency and Restorative Care in One Office',
+
+      body:
+        'Promenade Dental can connect extractions with emergency treatment, implants, dentures, restorative dentistry, and ongoing preventive care when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -6221,17 +6523,17 @@ benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 
   heading:
-  'Dentist-Led Denture Planning for Comfort, Fit, and Tooth Replacement',
+    'Personalized Denture Solutions Focused on Comfort, Function, and Confidence',
 
   description:
-    'Dentures should be planned around comfort, function, and long-term oral health. Promenade Dental evaluates the teeth, gums, bite, and replacement needs before recommending a denture or partial.',
+    'Replacing multiple missing teeth can affect eating, speaking, appearance, and everyday comfort. Promenade Dental focuses on understanding your goals, explaining treatment options clearly, and helping you choose the solution that best supports your long-term oral health and quality of life.',
 
   items: [
     {
-      title: 'Diagnosis Before Replacement',
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
       body:
-        'Dr. Shriya evaluates missing teeth, remaining teeth, gums, bite, jaw support, and X-rays when needed.',
+        'Dr. Shriya evaluates missing teeth, remaining teeth, gum health, bite, jaw support, and X-rays when needed before recommending treatment.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -6240,10 +6542,10 @@ benefits: {
     },
 
     {
-      title: 'Replacement Options Explained Clearly',
+      title: 'Clear Guidance on Tooth Replacement Options',
 
       body:
-        'Patients are guided through full dentures, partial dentures, bridges, implants, and implant-supported dentures when relevant.',
+        'Patients receive straightforward explanations about full dentures, partial dentures, bridges, implants, and implant-supported dentures so they can make informed decisions.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -6252,10 +6554,10 @@ benefits: {
     },
 
     {
-      title: 'Fit and Function Considered Together',
+      title: 'Comfort and Function Planned Together',
 
       body:
-        'Denture planning considers chewing comfort, speech support, appliance stability, smile appearance, and facial support.',
+        'Denture treatment is designed around chewing ability, speech, appliance stability, smile appearance, and overall day-to-day comfort.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -6264,10 +6566,34 @@ benefits: {
     },
 
     {
-      title: 'Restorative and Implant Care in One Office',
+      title: 'Honest and Personalized Recommendations',
 
       body:
-        'Promenade Dental can connect denture planning with extractions, bridges, implants, crowns, and preventive care.',
+        'Treatment recommendations are based on your oral health, goals, lifestyle, and long-term needs rather than a one-size-fits-all approach.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Patient Experience',
+
+      body:
+        'Our team works to provide a welcoming environment where patients feel respected, informed, and supported throughout treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Restorative Care in One Office',
+
+      body:
+        'Promenade Dental can connect denture treatment with extractions, implants, bridges, crowns, preventive care, and long-term oral health maintenance when needed.',
 
       paths: [
         'M6 38 A18 18 0 0 1 42 38',
@@ -6727,64 +7053,87 @@ maintenance: {
   ],
 },
 benefits: {
-eyebrow: 'Why Choose Promenade Dental',
+  eyebrow: 'Why Choose Promenade Dental',
 
-heading:
-'Dentist-Led Inlay and Onlay Planning for Tooth Preservation and Bite Comfort',
+  heading:
+    'Conservative Restorative Care Focused on Preserving Natural Tooth Structure',
 
-description:
-'Inlays and onlays require careful treatment planning because they sit between simple fillings and full dental crowns. The right choice depends on tooth strength, cavity size, chewing pressure, and how much healthy tooth can be preserved.',
+  description:
+    'Inlays and onlays are often chosen when a tooth needs more support than a filling but may not require a full crown. Promenade Dental focuses on careful diagnosis, conservative treatment planning, and restorative solutions that support long-term oral health.',
 
-items: [
-{
-title: 'Diagnosis Before Restoration',
+  items: [
+    {
+      title: 'Comprehensive Evaluation by Dr. Shriya',
 
-  body:
-    'Dr. Shriya evaluates decay, cracks, old fillings, symptoms, X-rays when needed, and tooth strength before recommending treatment.',
+      body:
+        'Dr. Shriya evaluates decay, cracks, existing restorations, bite pressure, symptoms, and X-rays when needed before recommending treatment.',
 
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Conservative and Honest Recommendations',
+
+      body:
+        'When appropriate, treatment focuses on preserving healthy tooth structure and avoiding more extensive treatment than necessary.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Function and Comfort Planned Together',
+
+      body:
+        'Treatment planning considers chewing comfort, bite balance, tooth strength, and long-term stability to help restorations feel natural and function properly.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Clear Explanations and Treatment Options',
+
+      body:
+        'Patients receive straightforward guidance about whether a filling, inlay, onlay, crown, root canal, or another treatment may be the most appropriate choice.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Patient Experience',
+
+      body:
+        'Our team works to provide a welcoming environment where patients feel informed, respected, and comfortable throughout treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Restorative Care in One Office',
+
+      body:
+        'Promenade Dental can connect inlay and onlay treatment with fillings, crowns, root canals, preventive care, and other restorative services when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
   ],
-},
-
-{
-  title: 'Conservative Restoration Planning',
-
-  body:
-    'When suitable, inlays and onlays may preserve more healthy tooth structure than a full crown.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
-  ],
-},
-
-{
-  title: 'Function and Fit Considered Together',
-
-  body:
-    'Treatment planning considers chewing comfort, bite contact, tooth shape, and long-term stability.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
-  ],
-},
-
-{
-  title: 'Restorative Options Explained Clearly',
-
-  body:
-    'Promenade Dental helps patients understand whether a filling, inlay, onlay, crown, root canal, or extraction is the right option.',
-
-  paths: [
-    'M6 38 A18 18 0 0 1 42 38',
-    'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
-  ],
-},
-
-],
 },
 localArea: {
   eyebrow: 'Inlays and Onlays Near Fulton Ranch',
@@ -6971,6 +7320,1678 @@ highlight: 'for Large Cavities',
     'Promenade Dental helps patients restore moderately damaged teeth with inlays and onlays planned around tooth preservation, bite comfort, tooth strength, and long-term function.',
 
   buttonText: 'Book an Inlay or Onlay Consultation',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+},
+
+{
+serviceSlug: 'emergency-dentistry',
+
+slug: 'toothache-relief',
+
+name: 'Toothache & Dental Pain Relief',
+
+metaTitle:
+'Toothache Relief in Chandler, AZ | Promenade Dental',
+
+metaDescription:
+'Toothache relief in Chandler AZ for severe tooth pain, sensitivity, chewing pain, swelling, and possible infection. Visit Promenade Dental near Fulton Ranch.',
+
+hero: {
+eyebrow: 'Tooth Pain Evaluation in Fulton Ranch',
+
+title: 'Toothache Relief for',
+
+highlight:
+  'Severe Tooth Pain, Sensitivity, Swelling, or Pain When Chewing in Chandler',
+
+description:
+  'Promenade Dental helps patients evaluate toothaches and dental pain caused by cavities, infection, cracks, gum problems, bite pressure, loose dental work, or dental trauma with care planned around diagnosis, comfort, and the right next treatment.',
+
+image: '/assets/h-tooth-ache.jpg',
+
+trustPoints: [
+  'Evaluation for severe tooth pain',
+  'Diagnosis for sensitivity and chewing pain',
+  'Treatment options for decay, cracks, and infection',
+  'Emergency and restorative care in one office',
+  'Located in Fulton Ranch',
+  'New Patients Welcome',
+],
+
+primaryCTA: {
+  label: 'Request a Tooth Pain Visit',
+  href: '#contact',
+},
+
+secondaryCTA: {
+  label: 'Call (480) 802-8188',
+  href: 'tel:+14808028188',
+},
+
+},
+overview: {
+eyebrow: 'Toothache & Dental Pain Evaluation',
+
+heading:
+'Toothache Relief for Pain Caused by Cavities, Infection, Cracks, or Bite Pressure',
+
+body:
+'A toothache is a symptom, not a diagnosis. The pain may come from a cavity, deep decay, tooth infection, cracked tooth, worn filling, loose crown, gum inflammation, grinding, bite pressure, or dental injury. Some toothaches feel sharp and sudden. Others become dull, throbbing, or constant over time.\n\nAt Promenade Dental, Dr. Shriya evaluates the source of the pain before recommending treatment. The goal is to understand whether the tooth can be repaired, needs infection treatment, requires stronger protection, or should be removed if it cannot be saved.',
+
+features: [
+'Evaluation of tooth pain and sensitivity',
+'Diagnosis of cavities, cracks, and infection',
+'Assessment of bite pressure and dental restorations',
+'Treatment planning focused on relieving pain and saving teeth',
+],
+
+image: '/assets/service-toothache-relief.jpg',
+
+cta: {
+label: 'Schedule a Tooth Pain Evaluation',
+href: '/contact-us',
+},
+},
+symptomsSection: {
+  eyebrow: 'Common Tooth Pain Concerns',
+
+  heading:
+    'Signs You Should Schedule a Tooth Pain Evaluation',
+
+  body:
+    'Tooth pain can range from mild sensitivity to severe discomfort that interferes with eating, sleeping, or daily activities. While some symptoms appear suddenly, others develop gradually as decay, infection, cracks, gum problems, or bite issues progress. A dental evaluation helps identify the source of the pain and determine the most appropriate treatment.',
+
+  symptoms: [
+    {
+      title: 'Persistent Toothache',
+
+      body:
+        'Pain that continues for more than a short period may indicate decay, infection, nerve irritation, or structural damage inside the tooth.',
+    },
+
+    {
+      title: 'Sensitivity to Hot, Cold, or Sweets',
+
+      body:
+        'Lingering sensitivity may be caused by cavities, exposed roots, worn enamel, cracks, or inflammation inside the tooth.',
+    },
+
+    {
+      title: 'Pain When Biting or Chewing',
+
+      body:
+        'Discomfort during chewing can be associated with cracked teeth, infection, damaged restorations, or bite-related problems.',
+    },
+
+    {
+      title: 'Swelling Around a Tooth or Gums',
+
+      body:
+        'Swelling may indicate infection, inflammation, or an abscess that should be evaluated promptly.',
+    },
+
+    {
+      title: 'Pain Around an Old Filling or Crown',
+
+      body:
+        'A loose, worn, or damaged restoration may expose the tooth to sensitivity, bacteria, or additional structural damage.',
+    },
+
+    {
+      title: 'Throbbing Pain or Pain That Wakes You Up',
+
+      body:
+        'More intense pain patterns may suggest deeper decay, infection, or irritation involving the tooth nerve.',
+    },
+  ],
+},
+whyItMatters: {
+eyebrow: 'Tooth Pain Evaluation',
+
+heading:
+'Tooth Pain Evaluation for Deep Decay, Infection, Sensitivity, Cracks, and Gum Inflammation',
+
+description:
+'Different types of tooth pain can point to different problems. Pain when chewing may suggest a crack, bite issue, infection, or damaged restoration. Lingering sensitivity may suggest deeper nerve irritation. Swelling may indicate infection. A sharp edge or broken tooth may need urgent repair.\n\nDr. Shriya evaluates your symptoms, tooth structure, gums, bite, dental history, existing restorations, and X-rays when needed to identify the cause of the pain.',
+
+items: [
+{
+title: 'Pain Pattern and Triggers',
+
+  body:
+    'Cold, heat, sweets, chewing, pressure, or spontaneous pain can help identify what may be causing the toothache.',
+
+  paths: [
+    'M24 12 C18 18 14 24 24 38',
+    'M24 12 C30 18 34 24 24 38',
+  ],
+},
+
+{
+  title: 'Tooth and Restoration Condition',
+
+  body:
+    'Cavities, cracks, old fillings, loose crowns, and broken restorations can expose the tooth to sensitivity or infection.',
+
+  paths: [
+    'M12 12 h20 v20 h-20 z',
+    'M18 18 h8 M18 24 h8',
+  ],
+},
+
+{
+  title: 'Gum and Infection Signs',
+
+  body:
+    'Swelling, gum bumps, pus, tenderness, or fever may suggest infection that needs prompt evaluation.',
+
+  paths: [
+    'M12 20 h24',
+    'M16 28 h16',
+  ],
+},
+
+],
+
+cta: {
+label: 'Find the Cause of Your Tooth Pain',
+href: '/contact-us',
+},
+},
+warningSection: {
+eyebrow: 'Toothache Warning Signs',
+
+heading:
+'Toothache Warning Signs That Should Be Evaluated Promptly',
+
+body:
+'Some toothaches should not be ignored. Pain that is severe, worsening, or combined with swelling may indicate infection or tooth damage that needs urgent dental evaluation.',
+
+cta: {
+subtext: 'Need Prompt Tooth Pain Relief?',
+phoneNumber: '(480) 802-8188',
+phoneLink: 'tel:+14808028188',
+buttonText: 'Call for a Tooth Pain Evaluation',
+},
+
+gridHeading:
+'Common Reasons Patients Seek Care for Tooth Pain and Dental Discomfort',
+
+warnings: [
+'Severe or throbbing tooth pain',
+'Swelling in the gums, jaw, or face',
+'Pain that wakes you up at night',
+'Pain when biting or chewing',
+'A gum bump, pus, or bad taste',
+'Fever with dental pain',
+'A broken tooth with pain',
+'A loose crown or filling with sensitivity',
+'Lingering sensitivity to hot or cold',
+'Pressure or tenderness around a tooth',
+'Sudden worsening of tooth discomfort',
+'Tooth pain that interferes with daily activities',
+],
+},
+maintenance: {
+  eyebrow: 'Preventing Future Tooth Pain',
+
+  heading:
+    'Daily Habits That Help Reduce Toothaches and Dental Problems',
+
+  body:
+    'Many causes of tooth pain develop gradually over time. Regular dental care, healthy oral hygiene habits, and early treatment of small problems can help reduce the risk of cavities, infection, cracked teeth, and other conditions that lead to dental discomfort.',
+
+  cards: [
+    {
+      title: 'Brush and Floss Consistently',
+
+      body:
+        'Daily plaque removal helps lower the risk of cavities, gum disease, and other conditions that commonly cause tooth pain.',
+    },
+
+    {
+      title: 'Schedule Routine Dental Exams',
+
+      body:
+        'Regular checkups help identify decay, worn restorations, cracks, and gum concerns before they become painful.',
+    },
+
+    {
+      title: 'Address Sensitivity Early',
+
+      body:
+        'Mild sensitivity or occasional discomfort may be an early sign of a problem that is easier to treat before it worsens.',
+    },
+
+    {
+      title: 'Protect Teeth From Grinding and Damage',
+
+      body:
+        'Managing grinding, clenching, and habits such as chewing ice can help reduce unnecessary stress on teeth and restorations.',
+    },
+  ],
+},
+process: {
+eyebrow: 'Tooth Pain Visit Process',
+
+heading:
+'Tooth Pain Visit Process for Diagnosis and Treatment',
+
+subtitle:
+'A tooth pain visit is designed to find the cause of the pain and determine the next step. Some problems can be treated during the visit depending on diagnosis and scheduling. Others may require stabilization, follow-up treatment, or additional restorative planning.',
+
+steps: [
+{
+title: 'Symptom Review',
+
+  body:
+    'The dental team reviews where the pain is, how long it has been present, what triggers it, and whether swelling or injury is involved.',
+},
+
+{
+  title: 'Tooth Exam and X-Rays When Needed',
+
+  body:
+    'Dr. Shriya evaluates the tooth, gums, bite, existing restorations, cracks, and imaging when needed.',
+},
+
+{
+  title: 'Diagnosis and Treatment Options',
+
+  body:
+    'You receive a clear explanation of what may be causing the pain and what treatment options may be appropriate.',
+},
+
+{
+  title: 'Same-Day Care or Follow-Up Plan',
+
+  body:
+    'When possible, treatment may begin during the visit. If additional care is needed, a follow-up plan is created.',
+},
+
+],
+
+cta: {
+label: 'Request a Tooth Pain Visit',
+href: '#contact',
+},
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Compassionate Toothache Care Focused on Relief and Diagnosis',
+
+  description:
+    'Tooth pain can be stressful, especially when the cause is unclear. Promenade Dental focuses on helping patients feel comfortable, understand what is causing the pain, and receive treatment recommendations based on diagnosis rather than assumptions.',
+
+  items: [
+    {
+      title: 'Comprehensive Evaluation by Dr. Shriya',
+
+      body:
+        'Dr. Shriya evaluates symptoms, teeth, gums, bite, restorations, and X-rays when needed to identify the source of discomfort before recommending treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Gentle and Comfort-Focused Care',
+
+      body:
+        'Patients experiencing dental pain are treated with patience, clear communication, and a focus on comfort throughout the visit.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Honest Treatment Recommendations',
+
+      body:
+        'Treatment is based on the actual cause of the toothache. Patients receive clear explanations about available options and what is most appropriate for their situation.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Tooth-Saving Solutions Considered First',
+
+      body:
+        'When possible, treatment focuses on preserving the natural tooth through restorative care before extraction is considered.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Emergency Appointments Available',
+
+      body:
+        'Prompt evaluation helps patients address tooth pain sooner and understand the next steps for relief and treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect toothache treatment with fillings, crowns, root canals, gum care, emergency dentistry, and long-term preventive care when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Local Toothache Relief',
+
+  heading:
+    'Toothache Relief Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are experiencing tooth pain, sensitivity, swelling, chewing discomfort, possible infection, or a dental emergency near Chandler 85248, Promenade Dental provides tooth pain evaluations focused on diagnosis, relief, and long-term oral health.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+eyebrow: 'Related Emergency and Restorative Services',
+
+heading:
+'Related Services for Tooth Pain and Dental Emergencies',
+
+intro:
+'Toothache treatment often connects with restorative and emergency dentistry. The right next page depends on what is causing the pain and whether the tooth needs repair, infection treatment, protection, or removal.',
+
+services: [
+{
+title: 'Emergency Dentist',
+
+  description:
+    'Emergency dental care for severe tooth pain, swelling, broken teeth, knocked-out teeth, and urgent dental problems.',
+
+  href: '/services/emergency-dentistry',
+},
+
+{
+  title: 'Root Canal Therapy',
+
+  description:
+    'Root canal therapy may be needed when tooth pain is caused by infection or inflammation inside the tooth.',
+
+  href: '/services/restorative-dentistry/root-canals',
+},
+
+{
+  title: 'Tooth-Colored Fillings',
+
+  description:
+    'Fillings may treat smaller cavities or minor areas of decay that cause sensitivity or discomfort.',
+
+  href: '/services/restorative-dentistry/tooth-colored-fillings',
+},
+
+{
+  title: 'Dental Crowns',
+
+  description:
+    'Crowns may protect cracked, weak, broken, or heavily filled teeth that cause pain when chewing.',
+
+  href: '/services/restorative-dentistry/dental-crowns',
+},
+
+],
+},
+testimonialsSection: {
+  eyebrow: 'Patient Stories',
+
+  heading:
+    'Trusted by Chandler Patients for Tooth Pain Evaluation and Relief',
+
+  testimonials: [
+    {
+      quote:
+        'I had severe tooth pain that kept getting worse. Dr. Shriya identified the cause quickly and explained all of my treatment options clearly.',
+      name: 'Michael T.',
+      context: 'Tooth Pain Patient',
+    },
+
+    {
+      quote:
+        'Everyone was professional, reassuring, and focused on finding the source of my pain instead of rushing into treatment.',
+      name: 'Jennifer R.',
+      context: 'Emergency Dental Patient',
+    },
+
+    {
+      quote:
+        'I thought I would lose the tooth, but after a thorough evaluation I was able to get the treatment needed to save it.',
+      name: 'David L.',
+      context: 'Restorative Dentistry Patient',
+    },
+
+    {
+      quote:
+        'The office got me in quickly when my toothache became severe. The entire process was organized and comfortable.',
+      name: 'Amanda P.',
+      context: 'Chandler Resident',
+    },
+
+    {
+      quote:
+        'Dr. Shriya took the time to explain why my tooth was hurting and what the next steps would be. I felt informed throughout the visit.',
+      name: 'Robert K.',
+      context: 'Dental Pain Evaluation Patient',
+    },
+
+    {
+      quote:
+        'From the initial phone call through treatment, the team was helpful, professional, and genuinely concerned about relieving my discomfort.',
+      name: 'Karen S.',
+      context: 'Fulton Ranch Patient',
+    },
+  ],
+},
+faq: {
+eyebrow: 'Frequently Asked Questions',
+
+heading:
+'Toothache Questions About Pain, Infection, and Treatment',
+
+items: [
+{
+q: 'What causes a toothache?',
+a: 'A toothache may be caused by cavities, deep decay, infection, cracks, gum inflammation, bite pressure, grinding, loose dental work, or dental trauma.',
+},
+
+{
+  q: 'When should I see a dentist for tooth pain?',
+  a: 'You should schedule an evaluation if tooth pain is severe, lasts more than a short time, worsens, wakes you up, causes pain when chewing, or comes with swelling.',
+},
+
+{
+  q: 'Is tooth pain always a sign of infection?',
+  a: 'No. Tooth pain can come from cavities, cracks, sensitivity, gum problems, or bite pressure. Infection is one possible cause and needs dental evaluation.',
+},
+
+{
+  q: 'Do I need a root canal for tooth pain?',
+  a: 'Not always. Root canal therapy may be needed when the inside of the tooth is infected or inflamed. Smaller cavities or cracks may need different treatment.',
+},
+
+{
+  q: 'Can a cavity cause severe tooth pain?',
+  a: 'Yes. A cavity can cause severe pain if it becomes deep enough to irritate or infect the inside of the tooth.',
+},
+
+{
+  q: 'Why does my tooth hurt when I chew?',
+  a: 'Pain when chewing may be caused by a cracked tooth, deep cavity, infection, high filling, loose crown, gum problem, or bite pressure.',
+},
+
+{
+  q: 'Is swelling with tooth pain serious?',
+  a: 'Swelling may indicate infection and should be evaluated promptly, especially if it involves the face, jaw, fever, pus, or worsening discomfort.',
+},
+
+{
+  q: 'Can tooth pain go away on its own?',
+  a: 'Tooth pain may come and go, but the underlying cause can remain. A dental evaluation helps determine whether treatment is needed.',
+},
+
+{
+  q: 'What treatment gives toothache relief?',
+  a: 'Treatment depends on the cause. Options may include a filling, crown, root canal therapy, extraction, gum treatment, bite adjustment, or repair of damaged dental work.',
+},
+
+{
+  q: 'Where is Promenade Dental located?',
+  a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+},
+
+],
+},
+cta: {
+title: 'Call Promenade Dental',
+highlight: 'for Tooth Pain Evaluation and Relief',
+
+subtitle:
+'Promenade Dental helps patients evaluate tooth pain with emergency and restorative care focused on diagnosis, comfort, tooth repair, infection treatment, and the right step.',
+
+buttonText: 'Request a Tooth Pain Visit',
+
+buttonHref: '/contact-us',
+
+secondaryButtonText: 'Call (480) 802-8188',
+
+secondaryButtonHref: 'tel:+14808028188',
+
+image: '/assets/dental-lobby.jpg',
+},
+
+},
+
+{
+  serviceSlug: 'emergency-dentistry',
+
+  slug: 'broken-chipped-tooth',
+
+  name: 'Broken or Chipped Tooth',
+
+  metaTitle:
+    'Broken or Chipped Tooth Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Broken or chipped tooth care in Chandler AZ for cracked, fractured, painful, or sharp teeth. Visit Promenade Dental near Fulton Ranch for urgent tooth repair.',
+
+  hero: {
+    eyebrow: 'Urgent Tooth Repair in Fulton Ranch',
+
+    title: 'Broken or Chipped Tooth Care for',
+
+    highlight:
+      'Cracked, Fractured, Sharp, or Painful Teeth in Chandler',
+
+    description:
+      'Promenade Dental helps patients evaluate broken, chipped, cracked, or fractured teeth with care planned around diagnosis, pain relief, tooth repair, bite comfort, and whether the tooth can be restored.',
+
+    image: '/assets/h-broken-chipped-tooth.webp',
+
+    trustPoints: [
+      'Care for chipped, broken, and cracked teeth',
+      'Treatment for sharp edges and tooth pain',
+      'Bonding, fillings, crowns, or root canals when needed',
+      'Emergency and restorative care in one office',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Request a Broken Tooth Visit',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  overview: {
+eyebrow: 'Broken or Chipped Tooth Treatment',
+
+heading:
+'Broken or Chipped Tooth Treatment for Pain and Tooth Damage',
+
+body:
+'A chipped or broken tooth may seem minor at first, but the damage can expose sensitive tooth layers, create sharp edges, affect chewing, or allow cracks to spread deeper. Some chips are cosmetic. Others involve tooth structure, old fillings, dental crowns, or the nerve inside the tooth.\n\nAt Promenade Dental, Dr. Shriya evaluates the depth of the damage, symptoms, bite pressure, tooth stability, and X-rays when needed before recommending the right repair option.',
+
+features: [
+'Evaluation of chipped, broken, and cracked teeth',
+'Assessment of tooth structure and damage depth',
+'Diagnosis based on symptoms, bite, and X-rays',
+'Treatment planning focused on tooth preservation',
+],
+
+image: '/assets/service-broken-chipped-tooth.jpg',
+
+cta: {
+label: 'Schedule a Broken Tooth Evaluation',
+href: '/contact-us',
+},
+},
+symptomsSection: {
+  eyebrow: 'Signs of Tooth Damage',
+
+  heading:
+    'Symptoms That May Indicate a Broken, Chipped, or Cracked Tooth',
+
+  body:
+    'Not every broken tooth looks severe. Some cracks are difficult to see but can still cause pain, sensitivity, or chewing discomfort. Even a small chip can expose vulnerable tooth structure or create conditions that allow damage to worsen over time. A dental evaluation helps determine the extent of the injury and the most appropriate repair option.',
+
+  symptoms: [
+    {
+      title: 'Visible Chip or Missing Tooth Structure',
+
+      body:
+        'A piece of the tooth may break away due to trauma, biting pressure, decay, or weakening around an old restoration.',
+    },
+
+    {
+      title: 'Pain When Biting or Chewing',
+
+      body:
+        'Pain during chewing may indicate a crack, fracture, bite imbalance, or deeper damage affecting the tooth structure.',
+    },
+
+    {
+      title: 'Sensitivity to Hot, Cold, or Sweets',
+
+      body:
+        'A broken area can expose inner tooth layers that react more strongly to temperature changes and certain foods.',
+    },
+
+    {
+      title: 'Sharp or Rough Tooth Edges',
+
+      body:
+        'Damaged tooth surfaces may irritate the tongue, cheeks, or lips and often indicate structural loss that should be evaluated.',
+    },
+
+    {
+      title: 'Crack Lines or Tooth Discoloration',
+
+      body:
+        'Visible crack lines or darkening around a damaged tooth may suggest deeper structural changes or underlying injury.',
+    },
+
+    {
+      title: 'Pain That Develops After an Injury',
+
+      body:
+        'Some teeth become symptomatic hours or days after a fall, sports injury, or impact to the mouth.',
+    },
+  ],
+},
+whyItMatters: {
+eyebrow: 'Broken Tooth Evaluation',
+
+heading:
+'Broken Tooth Evaluation for Enamel Chips, Cracks, Fractures, Sensitivity, and Bite Pain',
+
+description:
+'Not every broken tooth needs the same treatment. A small chip may be repaired with bonding or smoothing. A larger broken area may need a filling, crown, or onlay. If the crack reaches the inside of the tooth, root canal therapy may be needed. If the tooth is too damaged to restore predictably, extraction may be recommended.\n\nDr. Shriya checks the tooth structure, pain level, crack depth, gum line, existing dental work, bite contact, and whether the tooth can still be protected.',
+
+items: [
+{
+title: 'Size and Depth of the Break',
+
+  body:
+    'The depth of the chip, crack, or fracture helps determine whether cosmetic bonding, a filling, crown, root canal, or extraction may be needed.',
+
+  paths: [
+    'M12 12 h20 v20 h-20 z',
+    'M18 18 h8 M18 24 h8',
+  ],
+},
+
+{
+  title: 'Pain and Sensitivity',
+
+  body:
+    'Pain, cold sensitivity, chewing discomfort, or throbbing can suggest deeper damage or nerve involvement.',
+
+  paths: [
+    'M24 12 C18 18 14 24 24 38',
+    'M24 12 C30 18 34 24 24 38',
+  ],
+},
+
+{
+  title: 'Bite Pressure and Tooth Stability',
+
+  body:
+    'A damaged tooth may continue to break if bite pressure, grinding, or weak tooth structure is not addressed.',
+
+  paths: [
+    'M12 20 h24',
+    'M16 28 h16',
+  ],
+},
+
+],
+
+cta: {
+label: 'Find Out How the Tooth Can Be Repaired',
+href: '/contact-us',
+},
+},
+process: {
+eyebrow: 'Broken Tooth Visit Process',
+
+heading:
+'Broken Tooth Visit Process for Diagnosis and Repair',
+
+subtitle:
+'A broken tooth visit is designed to determine how deep the damage goes and what treatment can protect the tooth. Some repairs may be completed during the visit depending on diagnosis and scheduling. Other cases may require staged treatment or follow-up.',
+
+steps: [
+{
+title: 'Damage and Symptom Review',
+
+  body:
+    'The dental team reviews how the tooth broke, whether there is pain, and whether the tooth is sharp, loose, sensitive, or bleeding.',
+},
+
+{
+  title: 'Tooth Exam and X-Rays When Needed',
+
+  body:
+    'Dr. Shriya evaluates the damaged tooth, gums, bite, cracks, existing restorations, and imaging when needed.',
+},
+
+{
+  title: 'Repair Option Recommendation',
+
+  body:
+    'You receive a clear explanation of whether bonding, filling, crown, root canal therapy, extraction, or another option may be needed.',
+},
+
+{
+  title: 'Treatment and Bite Comfort Check',
+
+  body:
+    'When treatment is completed or started, the repaired tooth is checked for comfort, bite contact, and follow-up needs.',
+},
+
+],
+
+cta: {
+label: 'Request a Broken Tooth Visit',
+href: 'contact',
+},
+},
+maintenance: {
+  eyebrow: 'Protecting Repaired Teeth',
+
+  heading:
+    'How to Reduce the Risk of Future Chips, Cracks, and Tooth Fractures',
+
+  body:
+    'While accidents cannot always be prevented, many broken teeth are associated with grinding, untreated decay, weakened restorations, and excessive bite pressure. Ongoing dental care and protective habits can help reduce the likelihood of future damage.',
+
+  cards: [
+    {
+      title: 'Treat Small Problems Before They Grow',
+
+      body:
+        'Small cavities, worn fillings, and minor cracks may become larger fractures if left untreated for long periods.',
+    },
+
+    {
+      title: 'Protect Teeth From Grinding and Clenching',
+
+      body:
+        'Excessive grinding and clenching can weaken teeth and increase the risk of cracks, fractures, and restoration failure.',
+    },
+
+    {
+      title: 'Avoid Using Teeth as Tools',
+
+      body:
+        'Opening packages, chewing ice, or biting hard objects can place unnecessary stress on teeth and existing dental work.',
+    },
+
+    {
+      title: 'Attend Regular Dental Checkups',
+
+      body:
+        'Routine examinations help identify weakened teeth, damaged restorations, and developing cracks before larger repairs become necessary.',
+    },
+  ],
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Compassionate Broken Tooth Care Focused on Repair and Long-Term Protection',
+
+  description:
+    'A broken tooth can be painful, stressful, and difficult to evaluate on your own. Promenade Dental focuses on identifying the extent of the damage, explaining treatment options clearly, and helping patients protect their long-term oral health.',
+
+  items: [
+    {
+      title: 'Comprehensive Evaluation by Dr. Shriya',
+
+      body:
+        'Dr. Shriya evaluates tooth structure, cracks, symptoms, bite pressure, restorations, gums, and X-rays when needed before recommending treatment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Gentle and Comfort-Focused Care',
+
+      body:
+        'Patients with dental injuries receive compassionate care, clear communication, and treatment focused on comfort throughout the visit.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Honest Treatment Recommendations',
+
+      body:
+        'Patients receive straightforward guidance about whether the tooth may benefit from bonding, a filling, a crown, root canal therapy, or another treatment option.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Tooth-Saving Solutions Considered First',
+
+      body:
+        'When possible, treatment focuses on repairing and protecting the natural tooth before extraction is considered.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Prompt Emergency Appointments Available',
+
+      body:
+        'Broken teeth can worsen if treatment is delayed. Prompt evaluation helps patients understand their options and reduce the risk of further damage.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12 M12 34 h12',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect broken tooth treatment with restorative, cosmetic, emergency, implant, and preventive services when needed.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+eyebrow: 'Broken Tooth Care Near Fulton Ranch',
+
+heading:
+'Broken or Chipped Tooth Dentist Near Fulton Ranch and Chandler 85248',
+
+body:
+'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for broken tooth repair, chipped tooth repair, cracked tooth evaluation, emergency dental care, dental bonding, dental crowns, or urgent tooth repair near Chandler 85248, Promenade Dental offers broken tooth evaluations based on diagnosis, comfort, tooth strength, and the right repair option.',
+
+address: {
+practice: 'Promenade Dental',
+street: '4905 S. Alma School Rd, Suite 1',
+cityStateZip: 'Chandler, AZ 85248',
+phone: '(480) 802-8188',
+},
+
+cta: {
+label: 'Get Directions',
+href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+},
+},
+relatedServices: {
+eyebrow: 'Related Emergency and Restorative Services',
+
+heading:
+'Related Services for Chipped, Cracked, and Painful Teeth',
+
+intro:
+'A broken or chipped tooth may need cosmetic, restorative, or emergency treatment depending on the damage. These related services help patients understand the possible next step.',
+
+services: [
+{
+title: 'Emergency Dentist',
+
+  description:
+    'Emergency dental care for tooth pain, swelling, broken teeth, chipped teeth, knocked-out teeth, and urgent dental problems.',
+
+  href: '/services/emergency-dentistry',
+},
+
+{
+  title: 'Cosmetic Dental Bonding',
+
+  description:
+    'Bonding may repair small chips, rough edges, and minor cosmetic tooth damage.',
+
+  href: '/services/cosmetic-dentistry/dental-bonding',
+},
+
+{
+  title: 'Dental Crowns',
+
+  description:
+    'Crowns may protect broken, cracked, weak, or heavily damaged teeth that need stronger coverage.',
+
+  href: '/services/restorative-dentistry/dental-crowns',
+},
+
+{
+  title: 'Toothache & Dental Pain Relief',
+
+  description:
+    'Pain after a tooth breaks should be evaluated to identify cracks, infection, nerve irritation, or bite-related damage.',
+
+  href: '/services/emergency-dentistry/toothache-relief',
+},
+
+],
+},
+testimonialsSection: {
+  eyebrow: 'Patient Stories',
+
+  heading:
+    'Trusted by Chandler Patients for Broken and Chipped Tooth Care',
+
+  testimonials: [
+    {
+      quote:
+        'I chipped a front tooth unexpectedly and was worried about how it looked. Dr. Shriya explained my options clearly and restored it beautifully.',
+      name: 'Jennifer R.',
+      context: 'Chipped Tooth Patient',
+    },
+
+    {
+      quote:
+        'After breaking a tooth while eating, I was able to get an evaluation quickly. The team made the entire process straightforward and comfortable.',
+      name: 'Michael T.',
+      context: 'Broken Tooth Patient',
+    },
+
+    {
+      quote:
+        'I thought my cracked tooth would need to be removed, but Dr. Shriya carefully reviewed my options and helped save the tooth.',
+      name: 'David K.',
+      context: 'Restorative Dentistry Patient',
+    },
+
+    {
+      quote:
+        'Everyone was professional, reassuring, and focused on finding the right solution instead of rushing treatment.',
+      name: 'Amanda P.',
+      context: 'Emergency Dental Patient',
+    },
+
+    {
+      quote:
+        'The office explained exactly why the tooth broke and what could be done to protect it long term. I felt informed throughout the process.',
+      name: 'Robert L.',
+      context: 'Crown Treatment Patient',
+    },
+
+    {
+      quote:
+        'From scheduling to treatment, the experience was smooth and organized. My broken tooth feels comfortable again.',
+      name: 'Karen S.',
+      context: 'Fulton Ranch Patient',
+    },
+  ],
+},
+faq: {
+eyebrow: 'Frequently Asked Questions',
+
+heading:
+'Broken or Chipped Tooth Questions About Repair and Pain',
+
+items: [
+{
+q: 'Is a chipped tooth a dental emergency?',
+a: 'A small chip without pain may not be urgent, but a chipped tooth should be evaluated if it is painful, sharp, sensitive, bleeding, loose, or caused by injury.',
+},
+
+{
+  q: 'What should I do if my tooth breaks?',
+  a: 'Call the dental office, avoid chewing on the broken tooth, and keep the area clean. If there is pain, swelling, bleeding, or a large break, request urgent evaluation.',
+},
+
+{
+  q: 'Can a broken tooth be repaired?',
+  a: 'Many broken teeth can be repaired with bonding, fillings, crowns, inlays, onlays, or root canal therapy depending on the damage. Some teeth may need extraction if they cannot be restored.',
+},
+
+{
+  q: 'Why does my broken tooth hurt?',
+  a: 'Pain may come from exposed dentin, a deep crack, decay, infection, nerve irritation, or bite pressure on the damaged tooth.',
+},
+
+{
+  q: 'Do I need a crown for a broken tooth?',
+  a: 'A crown may be needed when the tooth has lost too much structure for bonding or a filling, or when the tooth is cracked or weakened.',
+},
+
+{
+  q: 'Do I need a root canal for a broken tooth?',
+  a: 'Not always. Root canal therapy may be needed if the crack, fracture, or decay reaches the inner tooth tissue or causes infection or nerve inflammation.',
+},
+
+{
+  q: 'Can bonding fix a chipped tooth?',
+  a: 'Bonding may repair small chips, rough edges, or minor cosmetic damage when the tooth is otherwise stable.',
+},
+
+{
+  q: 'What if the broken tooth has a sharp edge?',
+  a: 'A sharp edge can irritate the tongue, cheek, or lip. The tooth should be evaluated and may need smoothing, bonding, filling, or another repair.',
+},
+
+{
+  q: 'Can a broken tooth get worse if I wait?',
+  a: 'Yes. A broken tooth can become more sensitive, crack further, collect bacteria, or develop deeper damage if left untreated.',
+},
+
+{
+  q: 'Where is Promenade Dental located?',
+  a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+},
+
+],
+},
+cta: {
+ title: 'Call Promenade Dental',
+
+highlight: 'for a Broken or Chipped Tooth',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate and repair broken or chipped teeth with emergency and restorative care focused on diagnosis, comfort, tooth protection, and the right next treatment.',
+
+  buttonText: 'Request a Broken Tooth Visit',
+
+  buttonHref: '/contact-us',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
+
+},
+
+{
+  serviceSlug: 'emergency-dentistry',
+
+  slug: 'knocked-out-tooth',
+
+  name: 'Knocked-Out Tooth',
+
+  metaTitle:
+    'Knocked-Out Tooth Dentist in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Knocked-out tooth emergency care in Chandler AZ for adult tooth injuries, dental trauma, and urgent tooth loss. Call Promenade Dental near Fulton Ranch.',
+
+  hero: {
+    eyebrow: 'Dental Trauma Care in Fulton Ranch',
+
+    title: 'Knocked-Out Tooth Emergency Care for',
+
+    highlight:
+      'Adult Tooth Injuries and Dental Trauma in Chandler',
+
+    description:
+      'A knocked-out adult tooth needs urgent dental guidance. Promenade Dental helps patients evaluate dental trauma, tooth loss, injury-related pain, bleeding, and replacement needs with emergency care planned around diagnosis, comfort, and the right next step.',
+
+    image: '/assets/h-knocked-out.jpg',
+
+    trustPoints: [
+      'Urgent evaluation for knocked-out teeth',
+      'Dental trauma and tooth injury care',
+      'Guidance for adult tooth loss',
+      'Replacement options discussed when needed',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Request an Emergency Visit',
+      href: '#contact',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+  immediateGuidance: {
+  eyebrow: 'Dental Trauma Emergency',
+
+  heading:
+    'Call a Dentist Immediately if an Adult Tooth Is Knocked Out',
+
+  bodyMain:
+    'A knocked-out adult tooth is time-sensitive. Call Promenade Dental as soon as possible for instructions. Do not wait to see if the area improves on its own.',
+
+  handlingInstructions:
+    'If the tooth is available, handle it carefully by the crown portion, not the root. Keep it moist and bring it with you if you are coming to the dental office. The dental team can guide you based on the injury, tooth condition, bleeding, pain, and appointment availability.',
+
+  cta: {
+    label: 'Call Now',
+    phoneDisplay: '(480) 802-8188',
+    phoneLink: 'tel:+14808028188',
+  },
+
+  medicalWarning:
+    'If the injury involves heavy bleeding, facial trauma, loss of consciousness, difficulty breathing, or a suspected jaw fracture, seek emergency medical care immediately.',
+},
+  overview: {
+  eyebrow: 'Knocked-Out Tooth Emergency Care',
+
+  heading:
+    'Call a Dentist Immediately if an Adult Tooth Is Knocked Out',
+
+  body:
+    'A knocked-out adult tooth is time-sensitive. Call Promenade Dental as soon as possible for guidance. Do not wait to see if the area improves on its own.\n\nIf the tooth is available, handle it carefully by the crown portion rather than the root. Keep it moist and bring it with you to your appointment. The dental team will guide you based on the injury, tooth condition, bleeding, pain, and appointment availability.',
+
+  features: [
+    'Immediate guidance for knocked-out adult teeth',
+    'Instructions for handling and transporting the tooth',
+    'Evaluation of dental trauma and tooth condition',
+    'Treatment planning based on the injury and diagnosis',
+  ],
+
+  image: '/assets/service-knocked-out-tooth.jpg',
+
+  cta: {
+    label: 'Call (480) 802-8188',
+    href: 'tel:+14808028188',
+  },
+
+  note:
+    'If the injury involves heavy bleeding, facial trauma, loss of consciousness, difficulty breathing, or a suspected jaw fracture, seek emergency medical care immediately.',
+},
+symptomsSection: {
+  eyebrow: 'Signs of Dental Trauma',
+
+  heading:
+    'Symptoms That May Accompany a Knocked-Out Tooth Injury',
+
+  body:
+    'A knocked-out tooth often occurs alongside other dental injuries. Even when the missing tooth is the primary concern, nearby teeth, gums, bone, and bite alignment may also be affected. A dental evaluation helps identify damage that may not be immediately visible after the injury.',
+
+  symptoms: [
+    {
+      title: 'Missing Adult Tooth',
+
+      body:
+        'A tooth that has been completely displaced from its socket requires immediate dental guidance and evaluation.',
+    },
+
+    {
+      title: 'Bleeding From the Tooth Socket',
+
+      body:
+        'Bleeding is common after a tooth is knocked out and may indicate injury to the surrounding tissues and socket.',
+    },
+
+    {
+      title: 'Pain or Throbbing in the Injury Area',
+
+      body:
+        'Discomfort may come from damage to the tooth socket, gums, surrounding teeth, or supporting structures.',
+    },
+
+    {
+      title: 'Loose or Shifted Nearby Teeth',
+
+      body:
+        'Dental trauma can affect neighboring teeth even when they appear intact at first glance.',
+    },
+
+    {
+      title: 'Swelling of the Gums or Face',
+
+      body:
+        'Soft tissue injury and inflammation may develop following impact or trauma to the mouth.',
+    },
+
+    {
+      title: 'Difficulty Biting or Closing the Teeth Together',
+
+      body:
+        'Changes in bite alignment may indicate injury involving surrounding teeth, bone, or jaw structures.',
+    },
+  ],
+},
+whyItMatters: {
+  eyebrow: 'Knocked-Out Tooth Evaluation',
+
+  heading:
+    'Knocked-Out Tooth Evaluation for Tooth Loss, Gum Injury, Bone Trauma, and Nearby Tooth Damage',
+
+  description:
+    'A knocked-out tooth can affect more than one tooth. Nearby teeth may be loose, cracked, shifted, or injured even if they look normal. The gums and bone around the missing tooth may also need evaluation.\n\nDr. Shriya checks the injured area, bleeding, tooth socket, gum tissue, neighboring teeth, bite alignment, and imaging when needed. The treatment plan depends on the type of tooth, how long it has been out, how it was stored, the condition of the root, the condition of the socket, and whether other injuries are present.',
+
+  items: [
+    {
+      title: 'Tooth Type and Injury Timing',
+
+      body:
+        'An adult tooth injury is handled differently from a baby tooth injury. Timing and how the tooth has been handled can influence the available treatment options.',
+
+      paths: [
+        'M12 12 h20 v20 h-20 z',
+        'M18 18 h8 M18 24 h8',
+      ],
+    },
+
+    {
+      title: 'Tooth Socket and Gum Condition',
+
+      body:
+        'The tooth socket and surrounding gum tissue are examined for bleeding, debris, tissue damage, and healing needs before treatment is planned.',
+
+      paths: [
+        'M24 12 C18 18 14 24 24 38',
+        'M24 12 C30 18 34 24 24 38',
+      ],
+    },
+
+    {
+      title: 'Nearby Teeth and Bite Alignment',
+
+      body:
+        'Dental trauma can loosen, crack, or shift neighboring teeth, so the bite and the entire injury area are evaluated for additional damage.',
+
+      paths: [
+        'M12 20 h24',
+        'M16 28 h16',
+      ],
+    },
+  ],
+
+  cta: {
+    label: 'Schedule an Emergency Tooth Injury Evaluation',
+    href: '/contact-us',
+  },
+},
+maintenance: {
+  eyebrow: 'Protecting Teeth From Future Injuries',
+
+  heading:
+    'Ways to Reduce the Risk of Dental Trauma and Tooth Loss',
+
+  body:
+    'While accidents cannot always be prevented, certain habits and protective measures may help reduce the risk of dental injuries that lead to knocked-out teeth, fractures, and trauma-related complications.',
+
+  cards: [
+    {
+      title: 'Wear a Sports Mouthguard',
+
+      body:
+        'Custom or properly fitted mouthguards can help reduce the risk of tooth injuries during contact sports and recreational activities.',
+    },
+
+    {
+      title: 'Address Bite and Grinding Issues',
+
+      body:
+        'Heavy bite pressure and teeth grinding can weaken teeth and make them more vulnerable to injury or fracture.',
+    },
+
+    {
+      title: 'Treat Existing Dental Problems Early',
+
+      body:
+        'Teeth weakened by decay, large fillings, or untreated cracks may be more susceptible to trauma-related damage.',
+    },
+
+    {
+      title: 'Attend Regular Dental Examinations',
+
+      body:
+        'Routine evaluations help identify conditions that may increase the risk of tooth loss or injury over time.',
+    },
+  ],
+},
+process: {
+  eyebrow: 'Knocked-Out Tooth Visit Process',
+
+  heading: 'Knocked-Out Tooth Emergency Visit Process',
+
+  subtitle:
+    'A knocked-out tooth visit is designed to evaluate the injury quickly and determine the safest next step. The visit may include tooth evaluation, socket assessment, X-rays when needed, stabilization, medication discussion, referral if complex, or replacement planning if the tooth cannot be saved.',
+
+  steps: [
+    {
+      title: 'Injury and Timing Review',
+
+      body:
+        'The dental team reviews when the tooth was knocked out, how the injury happened, and how the tooth was handled or stored.',
+    },
+
+    {
+      title: 'Tooth, Gum, and Socket Evaluation',
+
+      body:
+        'Dr. Shriya evaluates the missing tooth area, bleeding, gum tissue, socket condition, and the tooth if it is available.',
+    },
+
+    {
+      title: 'Nearby Teeth and Bite Check',
+
+      body:
+        'The surrounding teeth are checked for looseness, cracks, shifting, bite changes, and trauma-related damage.',
+    },
+
+    {
+      title: 'Treatment or Replacement Plan',
+
+      body:
+        'You receive a clear explanation of whether the tooth can be treated, whether stabilization is needed, or whether replacement planning should begin.',
+    },
+  ],
+
+  cta: {
+    label: 'Request a Knocked-Out Tooth Visit',
+    href: '#contact',
+  },
+},
+benefits: {
+  eyebrow: 'Why Choose Promenade Dental',
+
+  heading:
+    'Compassionate Emergency Care for Knocked-Out Teeth and Dental Trauma',
+
+  description:
+    'A knocked-out tooth can be overwhelming and time-sensitive. Promenade Dental focuses on helping patients receive prompt guidance, clear answers, and personalized treatment recommendations during dental emergencies.',
+
+  items: [
+    {
+      title: 'Urgent Evaluation by Dr. Shriya',
+
+      body:
+        'Dr. Shriya evaluates the injured area, tooth socket, gums, nearby teeth, bite, symptoms, and imaging when needed to determine the most appropriate next step.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+      ],
+    },
+
+    {
+      title: 'Clear Guidance During a Stressful Situation',
+
+      body:
+        'Patients receive straightforward instructions, honest explanations, and support in understanding their treatment and replacement options.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 L24 30 M14 22 L34 22',
+      ],
+    },
+
+    {
+      title: 'Tooth-Saving Solutions Considered First',
+
+      body:
+        'When circumstances allow, treatment planning focuses on preserving the natural tooth before replacement options are considered.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M12 22 q12 -10 24 0 M18 28 h12 M24 16 v20',
+      ],
+    },
+
+    {
+      title: 'Comfort-Focused Emergency Care',
+
+      body:
+        'Dental injuries can be painful and unexpected. Our team works to provide compassionate care in a calm and welcoming environment.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M24 12 q-8 8 -8 16 q0 10 8 16 q8-6 8-16 q0-8-8-16',
+      ],
+    },
+
+    {
+      title: 'Replacement Options Explained Clearly',
+
+      body:
+        'If the tooth cannot be saved, patients receive guidance about dental implants, bridges, partial dentures, and other restorative solutions.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M14 24 h20 M18 18 h12 M18 30 h12 M24 14 v20',
+      ],
+    },
+
+    {
+      title: 'Comprehensive Dental Care in One Office',
+
+      body:
+        'Promenade Dental can connect emergency treatment with restorative, implant, cosmetic, and preventive care to support long-term oral health.',
+
+      paths: [
+        'M6 38 A18 18 0 0 1 42 38',
+        'M15 18 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M25 22 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M12 32 q7-6 14 0 M23 32 q5-5 10 0',
+      ],
+    },
+  ],
+},
+localArea: {
+  eyebrow: 'Knocked-Out Tooth Care Near Fulton Ranch',
+
+  heading:
+    'Knocked-Out Tooth Dentist Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf you are looking for a knocked-out tooth dentist, dental trauma care, emergency dentist, adult tooth injury care, or urgent dental care near Chandler 85248, Promenade Dental offers emergency evaluations based on diagnosis, comfort, injury assessment, and tooth replacement needs when appropriate.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+relatedServices: {
+  eyebrow: 'Related Emergency and Restorative Services',
+
+  heading:
+  'Related Services for Dental Trauma and Tooth Loss',
+
+  intro:
+    'A knocked-out tooth may connect with emergency dentistry, tooth replacement, root canal evaluation, or restorative care depending on the injury.',
+
+  services: [
+    {
+      title: 'Emergency Dentist',
+
+      description:
+        'Emergency dental care for tooth pain, swelling, broken teeth, chipped teeth, knocked-out teeth, and urgent dental problems.',
+
+      href: '/services/emergency-dentistry',
+    },
+
+    {
+      title: 'Broken or Chipped Tooth',
+
+      description:
+        'Dental trauma may also cause cracked, chipped, fractured, or painful teeth that need repair.',
+
+      href: '/services/emergency-dentistry/broken-chipped-tooth',
+    },
+
+    {
+      title: 'Dental Implants',
+
+      description:
+        'Dental implants may replace a missing tooth when the knocked-out tooth cannot be saved and the patient is suitable.',
+
+      href: '/services/dental-implants',
+    },
+
+    {
+      title: 'Dental Bridges',
+
+      description:
+        'A dental bridge may replace a missing tooth with a fixed restoration supported by nearby teeth or implants.',
+
+      href: '/services/restorative-dentistry/dental-bridges',
+    },
+  ],
+},
+testimonialsSection: {
+  eyebrow: 'Patient Stories',
+
+  heading:
+    'Trusted by Chandler Patients for Dental Trauma and Emergency Care',
+
+  testimonials: [
+    {
+      quote:
+        'When my tooth was knocked out during a sports injury, the team provided immediate guidance and helped me understand exactly what to do before arriving.',
+      name: 'Michael R.',
+      context: 'Dental Trauma Patient',
+    },
+
+    {
+      quote:
+        'Everyone stayed calm, explained the situation clearly, and focused on evaluating the entire injury instead of just the missing tooth.',
+      name: 'Jennifer T.',
+      context: 'Emergency Dental Patient',
+    },
+
+    {
+      quote:
+        'Dr. Shriya carefully checked the surrounding teeth and explained my treatment options in a way that was easy to understand.',
+      name: 'David K.',
+      context: 'Tooth Injury Patient',
+    },
+
+    {
+      quote:
+        'The office was professional, reassuring, and responsive during a stressful dental emergency.',
+      name: 'Amanda P.',
+      context: 'Chandler Resident',
+    },
+
+    {
+      quote:
+        'I appreciated how thoroughly the injury was evaluated and how clearly the next steps were explained.',
+      name: 'Robert L.',
+      context: 'Emergency Dentistry Patient',
+    },
+
+    {
+      quote:
+        'From the initial phone call through treatment planning, the entire team was helpful and organized.',
+      name: 'Karen S.',
+      context: 'Fulton Ranch Patient',
+    },
+  ],
+},
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+ heading:
+  'Knocked-Out Tooth Questions and Answers',
+
+  items: [
+    {
+      q: 'Is a knocked-out tooth a dental emergency?',
+      a: 'Yes. A knocked-out adult tooth is a dental emergency and should be handled with urgent dental guidance.',
+    },
+
+    {
+      q: 'What should I do first if an adult tooth is knocked out?',
+      a: 'Call the dental office immediately. If you have the tooth, handle it by the crown, avoid touching the root, keep it moist, and bring it with you.',
+    },
+
+    {
+      q: 'Can a knocked-out tooth be saved?',
+      a: 'Sometimes, depending on the type of tooth, how long it has been out, how it was stored, the condition of the root and socket, and whether other injuries are present.',
+    },
+
+    {
+      q: 'Should I put a knocked-out baby tooth back in?',
+      a: 'A knocked-out baby tooth is handled differently from an adult tooth. Do not assume it should be placed back. Call the dental office for guidance.',
+    },
+
+    {
+      q: 'What if I cannot find the knocked-out tooth?',
+      a: 'Still call for an emergency evaluation. The dentist can check the socket, nearby teeth, gums, bite, and discuss replacement options if needed.',
+    },
+
+    {
+      q: 'What if nearby teeth feel loose after the injury?',
+      a: 'Nearby teeth should be evaluated because trauma can loosen, crack, or shift teeth even if they were not knocked out.',
+    },
+
+    {
+      q: 'Will I need a root canal after a knocked-out tooth?',
+      a: 'A severely injured adult tooth may need root canal evaluation depending on the case. Dr. Shriya will explain follow-up needs after diagnosis.',
+    },
+
+    {
+      q: 'What replacement options are available if the tooth cannot be saved?',
+      a: 'Replacement options may include a dental implant, dental bridge, or partial denture depending on tooth location, bone support, gum health, bite, and treatment goals.',
+    },
+
+    {
+      q: 'When should I go to the emergency room instead of the dentist?',
+      a: 'Seek emergency medical care for heavy bleeding, facial trauma, head injury symptoms, difficulty breathing, suspected jaw fracture, or loss of consciousness.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248.',
+    },
+  ],
+},
+cta: {
+  title: 'Call Promenade Dental',
+
+highlight: 'for a Knocked-Out Tooth Emergency',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate knocked-out teeth, tooth injuries, nearby tooth trauma, gum damage, pain, bleeding, and replacement needs with emergency dental care focused on diagnosis, comfort, and the right next step.',
+
+  buttonText: 'Request an Emergency Visit',
 
   buttonHref: '/contact-us',
 

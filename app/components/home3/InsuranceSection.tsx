@@ -1,21 +1,45 @@
-import { ShieldCheck } from 'lucide-react'
+'use client';
 
-const carriers = ['Delta Dental', 'Cigna', 'MetLife', 'Aetna']
+import { ShieldCheck } from 'lucide-react';
+import { useScrollReveal } from '@/app/lib/useScrollReveal';
+
+const CARRIERS = [
+  'Aetna',
+  'Blue Cross Blue Shield',
+  'Cigna',
+  'Delta Dental',
+  'Guardian',
+  'Humana',
+  'MetLife',
+  'Premier Access',
+  'Principal',
+  'UFCW',
+  'United Concordia',
+  'UnitedHealthcare',
+];
 
 export default function InsuranceSection() {
+  const [textRef, textIn] = useScrollReveal();
+
   return (
     <section id="insurance" className="py-16 md:py-24 lg:py-[clamp(60px,7vw,100px)] px-4 md:px-8">
       <div className="mx-auto max-w-[1240px]">
         {/* Main Vibrant Coral Card */}
         <div className="relative overflow-hidden rounded-[2.5rem] bg-coral/60 p-8 md:p-14 lg:p-20 shadow-xl shadow-coral/60">
-          
+
           {/* Subtle overlay gradient to give the coral some depth */}
           <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,white_0%,transparent_40%,rgba(0,0,0,0.1)_100%)] opacity-30 pointer-events-none" />
 
-          <div className="relative z-10 grid items-center grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-12 lg:gap-20">
-            
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-12 lg:gap-16 items-start">
+
             {/* Left Side: The Pitch */}
-            <div className="text-left">
+            <div
+              ref={textRef as React.RefObject<HTMLDivElement>}
+              className={[
+                'text-left lg:sticky lg:top-32 transition-all duration-1000 ease-out',
+                textIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
+              ].join(' ')}
+            >
               {/* Pill badge */}
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/75 px-4 py-2 backdrop-blur-sm border border-white/30 shadow-sm">
                 <ShieldCheck className="h-4 w-4 text-coral" strokeWidth={2.5} />
@@ -30,34 +54,52 @@ export default function InsuranceSection() {
               </h2>
 
               <p className="mt-6 max-w-[42ch] text-base md:text-lg leading-relaxed font-medium text-slate-800">
-                We&apos;re in-network with most major plans and we&apos;ll maximize your benefits for you — zero surprises, just great care.
+                We&apos;re in-network with {CARRIERS.length} major carriers and we&apos;ll maximize your
+                benefits for you — zero surprises, just great care.
               </p>
+
+              <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white/90">
+                <span className="flex h-2 w-2 rounded-full bg-white animate-pulse" />
+                Don&apos;t see your plan? Ask us — we&apos;re likely still in-network.
+              </div>
             </div>
 
             {/* Right Side: Carrier Cards */}
-            <div className="grid grid-cols-2 gap-4 md:gap-5">
-              {carriers.map(c => (
-                <div
-                  key={c}
-                  className="group flex items-center justify-center rounded-2xl bg-white px-4 py-8 text-center shadow-lg shadow-orange-900/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-900/20"
-                >
-                  <span className="font-serif text-lg md:text-xl font-medium text-slate-800 transition-colors duration-300 group-hover:text-[#e89a72]">
-                    {c}
-                  </span>
-                </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
+              {CARRIERS.map((carrier, i) => (
+                <CarrierCard key={carrier} name={carrier} index={i} />
               ))}
-              
-              {/* Reassurance text below the grid */}
-              <div className="col-span-2 mt-2 text-center">
-                <p className="text-sm font-semibold text-slate-900/70 tracking-wide">
-                  + Many other plans accepted
-                </p>
-              </div>
             </div>
 
           </div>
         </div>
       </div>
     </section>
-  )
+  );
+}
+
+/* ── Individual Carrier Card ───────────────────────────── */
+
+function CarrierCard({ name, index }: { name: string; index: number }) {
+  const [ref, inView] = useScrollReveal();
+
+  return (
+    <div
+      ref={ref as React.RefObject<HTMLDivElement>}
+      className={[
+        'group flex items-center justify-center rounded-2xl bg-white px-3 py-6 md:py-7 text-center',
+        'shadow-lg shadow-orange-900/10 transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
+        'hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-900/20',
+      ].join(' ')}
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'none' : 'translateY(16px)',
+        transitionDelay: `${index * 0.05}s`,
+      }}
+    >
+      <span className="font-serif text-[15px] md:text-lg font-medium leading-snug text-slate-800 transition-colors duration-300 group-hover:text-[#e89a72]">
+        {name}
+      </span>
+    </div>
+  );
 }

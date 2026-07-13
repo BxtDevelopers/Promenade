@@ -50,7 +50,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
         </div>
 
         {/* ── 2x2 Grid (or 1x4 on mobile) ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
           {data.items.map((item, index) => (
             <TrustCard key={index} item={item} />
           ))}

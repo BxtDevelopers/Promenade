@@ -39,6 +39,7 @@
 import Footer from "@/app/components/home3/Footer";
 import InsuranceSection from "@/app/components/home3/InsuranceSection";
 import Navbar from "@/app/components/home3/Navbar";
+import ImmediateGuidanceAlert from "@/app/components/services/subServices/ImmediateGuidance";
 import LocalAreaSection from "@/app/components/services/subServices/LocalAreaSection";
 import MaintenanceGridSection from "@/app/components/services/subServices/MaintenanceGridSection";
 import RelatedServicesSection from "@/app/components/services/subServices/RelatedServicesSection";
@@ -313,6 +314,7 @@ export default async function ServicePage({
   <Navbar />
 
   <ServiceHero {...page.hero} /> 
+  {page.immediateGuidance && (<ImmediateGuidanceAlert data={page.immediateGuidance}/>)}
   <ServiceOverview {...page.overview}/> 
   {page.symptomsSection && (
        <SymptomsSection data={page.symptomsSection} />
