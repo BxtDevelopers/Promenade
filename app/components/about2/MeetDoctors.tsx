@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Reveal from '../common/Reveal'
 
-const eduList = (items: string[]) => (
-  <ul className="max-w-[54ch]">
+const eduList = (items: string[], noOfCols: number) => (
+  <ul className={` grid grid-cols-1 gap-[6px] lg:grid-cols-${noOfCols}`}>
     {items.map((item,i) => (
       <li
         key={i}
@@ -17,7 +17,7 @@ const eduList = (items: string[]) => (
 export default function MeetDoctors() {
   return (
     <section className="bg-bg-2 py-section">
-      <div className="mx-auto max-w-[1240px] px-site">
+      <div className="mx-auto lg:max-w-[90%] px-site">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-[30px]">
             <div>
@@ -49,72 +49,120 @@ export default function MeetDoctors() {
             <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
               Dentist &amp; Owner
             </div>
+
             <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
               Dr. Shriya <span className="italic text-coral">Sarin</span>, DMD
             </h3>
 
-            <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Why dentistry?
-            </h4>
-            <p className="max-w-[54ch] text-[15px] font-light leading-[1.7] text-muted">
-              I love that dentistry lets me build real relationships and help people feel at ease
-              in a chair they may have spent years dreading. My focus is calm, unhurried care
-              &mdash; explaining every option clearly so you can decide with confidence. Some of
-              my favorite patients arrived nervous; earning their trust is the best part of the
-              job.
+            <p className="mt-3 text-[14px] font-medium uppercase tracking-[0.08em] text-coral">
+              Doctor of Dental Medicine — Arizona School of Dentistry and Oral Health
             </p>
+              <div className="mt-6 grid gap-8 lg:grid-cols-2">
+  <div>
+    <h4 className="mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
+      Dental Sleep Medicine &amp; Patient Care
+    </h4>
 
+    <p className="text-[15px] font-light leading-[1.7] text-muted">
+      Dr. Shriya Sarin is passionate about helping patients achieve better oral
+      health, improved sleep, and a higher quality of life. In addition to
+      providing comprehensive dental care, she has advanced training in Dental
+      Sleep Medicine through the American Academy of Dental Sleep Medicine,
+      allowing her to help patients explore non-surgical oral appliance therapy
+      for snoring and obstructive sleep apnea.
+    </p>
+  </div>
+
+  <div>
+    <h4 className="mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
+      Focus Areas
+    </h4>
+
+    {eduList(
+      [
+        'Sleep apnea and snoring solutions using custom oral appliance therapy',
+        'Preventive and family dentistry for patients of all ages',
+        'Patient education and conservative treatment planning',
+        'Long-term oral health and wellness-focused care',
+      ],
+      1
+    )}
+  </div>
+</div>
+          
             <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Education &amp; training
+              Education &amp; Advanced Training
             </h4>
+
             {eduList([
-              'D.M.D. — A.T. Still University, 2022',
-              '[Undergraduate degree & additional training — to add]',
-            ])}
+              'Doctor of Dental Medicine (DMD) — Arizona School of Dentistry and Oral Health',
+              'Dental Sleep Medicine Training — American Academy of Dental Sleep Medicine',
+              'Certificate in Dental Public Health — Arizona School of Dentistry and Oral Health',
+              'Master of Health Administration — University of North Texas Health Science Center, Fort Worth, Texas',
+              'Bachelor of Dental Surgery (BDS) — Ghaziabad, India',
+            ],2)}
+                  </div>
 
-            <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Outside the office
-            </h4>
-            {eduList(['[Personal interest — to add]', '[Personal interest — to add]'])}
-          </div>
+            
         </Reveal>
 
         {/* Dr. James M. Wei */}
         <Reveal className="mt-[clamp(40px,5vw,72px)] grid grid-cols-1 items-center gap-[clamp(36px,5vw,80px)] lg:grid-cols-[1.18fr_0.82fr]">
           <div className="order-2 lg:order-1">
             <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
-              Family &amp; Cosmetic Dentist &middot; Founding, since 2008
-            </div>
-            <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
-              Dr. James M. <span className="italic text-coral">Wei</span>, DDS
-            </h3>
+  Family &amp; Cosmetic Dentist &middot; Founding, since 2008
+</div>
 
-            <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Why dentistry?
-            </h4>
-            <p className="max-w-[54ch] text-[15px] font-light leading-[1.7] text-muted">
-              Dr. Wei brings an artist&apos;s eye to dentistry. He studied both Biology (with
-              honors) and Design at UCLA, then earned his D.D.S. from the UCLA School of Dentistry
-              in 2000 &mdash; moving to Chandler that same year and caring for families here ever
-              since. He&apos;s known for a conservative, do-only-what&apos;s-needed approach,
-              pairing meticulous attention to detail with his design background to create
-              natural-looking, long-lasting restorations.
-            </p>
+<h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
+  Dr. James M. <span className="italic text-coral">Wei</span>, DDS
+</h3>
 
-            <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Education &amp; training
-            </h4>
-            {eduList([
-              'B.S. in Biology, with honors — UCLA',
-              'Design, UCLA School of Fine Arts',
-              'D.D.S. — UCLA School of Dentistry, 2000',
-              'Thousands of hours of continuing education, well beyond state requirements',
-            ])}
+<div className="mt-6 grid gap-8 lg:grid-cols-2">
+  <div>
+    <h4 className="mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
+      Why Dentistry?
+    </h4>
 
-            <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
-              Outside the office
-            </h4>
-            {eduList(['Family time with his wife and son', 'Traveling', 'Cooking', 'Reading & self-improvement'])}
+    <p className="text-[15px] font-light leading-[1.7] text-muted">
+      Dr. Wei brings an artist&apos;s eye to dentistry. He studied both Biology
+      (with honors) and Design at UCLA before earning his D.D.S. from the UCLA
+      School of Dentistry in 2000. Since moving to Chandler, he has built a
+      reputation for conservative, detail-oriented care that prioritizes
+      natural-looking, long-lasting results.
+    </p>
+  </div>
+
+  <div>
+    <h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
+  Outside the Office
+</h4>
+
+{eduList(
+  [
+    'Family time with his wife and son',
+    'Traveling',
+    'Cooking',
+    'Reading & self-improvement',
+  ],
+  1
+)}
+  </div>
+</div>
+
+<h4 className="mt-[22px] mb-2 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral">
+  Education &amp; Training
+</h4>
+
+{eduList(
+  [
+    'B.S. in Biology, with honors — UCLA',
+    'Design — UCLA School of Fine Arts',
+    'D.D.S. — UCLA School of Dentistry, 2000',
+    'Thousands of hours of continuing education beyond state requirements',
+  ],
+  2
+)}
+
           </div>
 
           <div className="order-1 relative aspect-[0.9] w-full lg:order-2">

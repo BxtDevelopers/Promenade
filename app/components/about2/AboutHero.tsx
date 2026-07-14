@@ -11,7 +11,7 @@ export default function AboutHero() {
             'radial-gradient(60% 70% at 74% 16%, rgba(232,154,114,.13), transparent 60%)',
         }}
       />
-      <div className="relative mx-auto max-w-[1240px] px-site">
+      <div className="relative mx-auto lg:max-w-[90%] px-site">
         <Reveal>
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             About us
@@ -27,7 +27,7 @@ export default function AboutHero() {
         </Reveal>
 
         <Reveal delay={140}>
-          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory">
+          <p className="mt-[22px] lg:max-w-[60%] text-story-body font-light leading-[1.6] text-ivory">
             For 18 years, Chandler families have trusted Promenade Dental for calm, unhurried
             care &mdash; the kind where you&apos;re treated like a person, never rushed, and never
             sold something you don&apos;t need. That hasn&apos;t changed; it&apos;s simply in

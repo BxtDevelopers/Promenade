@@ -36,8 +36,8 @@ export default function Navbar({
 
   return (
     <>
-      <nav className="absolute top-6 lg:top-11 left-0 right-0 z-20">
-        <div className="flex items-center mx-auto h-[90px] px-4 md:px-[clamp(20px,3vw,44px)]">
+      <nav className="absolute lg:max-w-[90%] mx-auto px-6 top-6 lg:top-11 left-0 right-0 z-20">
+        <div className="flex items-center mx-auto h-[90px] lg:px-4 md:px-[clamp(20px,3vw,44px)]">
           {/* Logo */}
           <Link href="/home03" className="flex items-center no-underline">
           <Image
@@ -186,12 +186,6 @@ export default function Navbar({
 
           {/* Mobile Menu Toggle (Hidden on XL) */}
           <div className="xl:hidden ml-auto flex items-center gap-4">
-            <Link
-              href={`/contact-us`}
-              className="inline-block rounded-full text-bg bg-coral font-sans text-[12px] tracking-[0.06em] uppercase font-medium px-4 py-[9px] no-underline whitespace-nowrap border border-coral"
-            >
-              Book
-            </Link>
             <button 
               className={`${textColor} ${hoverColor} p-1`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
