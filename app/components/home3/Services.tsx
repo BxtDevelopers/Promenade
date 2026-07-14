@@ -30,20 +30,21 @@ const services = [
     ),
   },
   {
-      href: `/services/dental-implants`,
-      num: '03',
-      title: 'Dental Implants',
-      desc: 'Permanent tooth replacement solutions that restore function and appearance.',
-      iconPath: (
-        <>
-          <path pathLength="1" d="M6 38 A18 18 0 0 1 42 38" />
-          <path pathLength="1" d="M24 10 V28" />
-          <path pathLength="1" d="M18 10 H30" />
-          <path pathLength="1" d="M18 28 H30" />
-          <path pathLength="1" d="M20 34 H28" />
-        </>
-      ),
-    },
+    href:    `/services/sleep-apnea`,
+    num:     '03',
+    title:   'Sleep Apnea',
+    desc:    'Custom oral appliances to treat snoring and improve your restful sleep.',
+    iconPath: (
+      <>
+        {/* Base smile curve */}
+        <path pathLength="1" d="M6 38 A18 18 0 0 1 42 38" />
+        {/* Large 'Z' */}
+        <path pathLength="1" d="M16 22 H24 L16 30 H24" />
+        {/* Small 'Z' */}
+        <path pathLength="1" d="M28 12 H34 L28 18 H34" />
+      </>
+    ),
+  },
   {
     href:    `/services/emergency-dentistry`,
     num:     '04',

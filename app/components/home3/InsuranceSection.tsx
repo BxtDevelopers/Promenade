@@ -1,21 +1,24 @@
 'use client';
+'use client';
 
+import Image from 'next/image';
 import { ShieldCheck } from 'lucide-react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
+// Add a scale property to control individual logo sizes
 const CARRIERS = [
-  'Aetna',
-  'Blue Cross Blue Shield',
-  'Cigna',
-  'Delta Dental',
-  'Guardian',
-  'Humana',
-  'MetLife',
-  'Premier Access',
-  'Principal',
-  'UFCW',
-  'United Concordia',
-  'UnitedHealthcare',
+  { name: 'Aetna', file: 'aetna-logo.png', scale: 1.7 },
+  { name: 'Blue Cross Blue Shield', file: 'bluecross-logo.png', scale: 2.7 },
+  { name: 'Cigna', file: 'cigna-logo.png', scale: 2.6 }, 
+  { name: 'Delta Dental', file: 'deltadental-logo.webp', scale: 1.5 },
+  { name: 'Guardian', file: 'guardian-logo.webp', scale: 1.1 }, // Example of scaling down
+  { name: 'Humana', file: 'humana-logo.png', scale: 1.1 },
+  { name: 'MetLife', file: 'metlife-logo.webp', scale: 2.5 },
+  { name: 'Premier Access', file: 'premieraccess-logo.png', scale: 1.4 },
+  { name: 'Principal', file: 'principal-logo.png', scale: 1.2 },
+  { name: 'UFCW', file: 'ufcw-logo.webp', scale: 1.2 },
+  { name: 'United Concordia', file: 'unitedconcordia-logo.png', scale: 1.2 },
+  { name: 'UnitedHealthcare', file: 'unitedhealthcare-logo.webp', scale: 1.2 },
 ];
 
 export default function InsuranceSection() {
@@ -59,15 +62,22 @@ export default function InsuranceSection() {
               </p>
 
               <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white/90">
-                <span className="flex h-2 w-2 rounded-full bg-white animate-pulse" />
-                Don&apos;t see your plan? Ask us — we&apos;re likely still in-network.
+                 <span className="flex h-2 w-2 rounded-full bg-white animate-pulse" />
+                  Don&apos;t see your plan? Call us
+                   <a href="tel:+14808028188" className="underline underline-offset-2 hover:text-white"> (480) 802-8188</a> 
               </div>
             </div>
 
             {/* Right Side: Carrier Cards */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
               {CARRIERS.map((carrier, i) => (
-                <CarrierCard key={carrier} name={carrier} index={i} />
+                <CarrierCard 
+                  key={carrier.name} 
+                  name={carrier.name} 
+                  file={carrier.file} 
+                  scale={carrier.scale}
+                  index={i} 
+                />
               ))}
             </div>
 
@@ -80,14 +90,24 @@ export default function InsuranceSection() {
 
 /* ── Individual Carrier Card ───────────────────────────── */
 
-function CarrierCard({ name, index }: { name: string; index: number }) {
+function CarrierCard({ 
+  name, 
+  file, 
+  scale = 1,
+  index 
+}: { 
+  name: string; 
+  file: string; 
+  scale?: number;
+  index: number;
+}) {
   const [ref, inView] = useScrollReveal();
 
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
       className={[
-        'group flex items-center justify-center rounded-2xl bg-white px-3 py-6 md:py-7 text-center',
+        'group flex h-24 items-center justify-center rounded-2xl bg-white px-4 py-6 text-center',
         'shadow-lg shadow-orange-900/10 transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
         'hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-900/20',
       ].join(' ')}
@@ -97,9 +117,19 @@ function CarrierCard({ name, index }: { name: string; index: number }) {
         transitionDelay: `${index * 0.05}s`,
       }}
     >
-      <span className="font-serif text-[15px] md:text-lg font-medium leading-snug text-slate-800 transition-colors duration-300 group-hover:text-[#e89a72]">
-        {name}
-      </span>
+      {/* We apply the scale to this inner wrapper so it doesn't affect the card container itself */}
+      <div 
+        className="relative h-full w-full transition-transform duration-300"
+        style={{ transform: `scale(${scale})` }}
+      >
+        <Image
+          src={`/assets/insurance-carriers/${file}`}
+          alt={`${name} insurance accepted`}
+          fill
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="object-contain p-2 transition-all duration-300"
+        />
+      </div>
     </div>
   );
 }

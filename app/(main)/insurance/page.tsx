@@ -1,4 +1,5 @@
 import Footer from "@/app/components/home3/Footer";
+import InsuranceSection from "@/app/components/home3/InsuranceSection";
 import Navbar from "@/app/components/home3/Navbar";
 import InsuranceCarriers from "@/app/components/insurance/InsuranceCarriers";
 import InsuranceFaqs from "@/app/components/insurance/InsuranceFaqs";
@@ -14,7 +15,8 @@ export default function InsurancePage() {
     <main className="bg-bg font-sans text-ivory">
       <InsuranceHero />
       <InsuranceHowItWorks />
-      <InsuranceCarriers />
+      <InsuranceSection/>
+      {/* <InsuranceCarriers /> */}
       <InsuranceFaqs />
       <InsuranceNoCoverageCta />
     </main>

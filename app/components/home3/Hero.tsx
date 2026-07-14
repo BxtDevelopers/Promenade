@@ -87,7 +87,7 @@ export default function Hero() {
           className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral opacity-0"
           style={{ animation: 'fade 1s ease 0.3s forwards' }}
         >
-          Family &amp; Cosmetic Dentistry · Fulton Ranch, Chandler AZ
+          Comprehensive Family Dentistry with Sleep Solutions
         </div>
 
         {/* Headline */}

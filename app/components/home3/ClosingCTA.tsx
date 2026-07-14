@@ -73,9 +73,9 @@ export default function ClosingCTA() {
         </span>
 
         <h2 className="rv font-serif font-light tracking-[-0.03em] leading-none text-white text-[clamp(40px,7vw,90px)]">
-          Your best smile
+          Your best smile starts
           <br />
-          <em className="italic text-coral">starts here.</em>
+          <em className="italic text-coral"> at Promenade Dental.</em>
         </h2>
 
         <div className="rv flex items-center justify-center gap-[18px] mt-[42px] flex-wrap">

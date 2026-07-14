@@ -25,10 +25,10 @@ const problems: Problem[] = [
     desc: 'Cracks, breaks, worn edges',
   },
   {
-    href: `/services/dental-implants`,
-    icon: <LiaToothSolid  className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    href: `/services/restorative-dentistry/dental-bridges`,
+    icon: <LiaToothSolid className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Missing tooth',
-    desc: 'Gaps or a failing tooth',
+    desc: 'Dental bridges, dentures & partials',
   },
   {
     href: `/services/family-dentistry/gum-disease-treatment`,
@@ -49,11 +49,11 @@ const problems: Problem[] = [
     desc: 'Whitening & cosmetic work',
   },
   {
-  href: `/services/dental-implants`,
-  icon: <Smile className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
-  title: 'Missing teeth',
-  desc: 'Dental implants & tooth replacement',
-},
+    href: `/services/sleep-apnea`,
+    icon: <Moon className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    title: 'Snoring or poor sleep',
+    desc: 'Sleep apnea & snoring solutions',
+  },
 ]
 
 export default function ProblemsSection() {

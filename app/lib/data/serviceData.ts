@@ -509,6 +509,44 @@ symptomsSection?: {
           },
         ],
       },
+      maintenance: {
+  eyebrow: 'Protecting Long-Term Oral Health',
+
+  heading: 'How to Maintain a Healthy Smile Between Dental Visits',
+
+  body:
+    'Family dentistry works best when professional dental care is combined with healthy daily habits. Consistent oral hygiene, regular checkups, and early attention to small concerns can help reduce the risk of cavities, gum disease, tooth wear, and unexpected dental problems.',
+
+  cards: [
+    {
+      title: 'Brush and Floss Every Day',
+
+      body:
+        'Brushing twice daily and flossing regularly helps remove plaque, reduce cavity risk, and support healthy gums between dental appointments.',
+    },
+
+    {
+      title: 'Keep Up With Routine Checkups',
+
+      body:
+        'Regular dental exams and cleanings allow your dentist to monitor changes, remove tartar buildup, and identify potential problems before they become more serious.',
+    },
+
+    {
+      title: 'Pay Attention to Early Warning Signs',
+
+      body:
+        'Bleeding gums, tooth sensitivity, persistent bad breath, jaw soreness, or changes in your teeth should be evaluated early to help prevent larger dental concerns.',
+    },
+
+    {
+      title: 'Protect Your Teeth From Wear and Damage',
+
+      body:
+        'If you grind your teeth, play contact sports, or have a history of chipped teeth, protective appliances such as custom night guards or mouthguards can help preserve your smile.',
+    },
+  ],
+},
       benefits: {
   eyebrow: 'Why Choose Promenade Dental',
 

@@ -1,5 +1,7 @@
 'use client'
 
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const steps = [
@@ -48,6 +50,16 @@ export default function FirstVisitFlow() {
             <p className="font-light text-[15.5px] leading-[1.75] mt-[20px] text-muted-2 max-w-[40ch]">
               We’ve engineered our onboarding to be entirely stress-free. From the moment you walk through the doors of Promenade Dental, your comfort is our priority.
             </p>
+
+            <div className="mt-10">
+                <Link
+                  href="tel:+14808028188"
+                  className="group inline-flex items-center gap-3 rounded-full bg-[#e89a72] px-7 py-3.5 text-sm font-semibold uppercase tracking-widest text-slate-900 transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95"
+                >
+                  Book your first visit now
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </div>
           </div>
 
           {/* Right Column: Editorial Step List */}
