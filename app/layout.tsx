@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
+import { BookingModalProvider } from "./components/common/BookingModalProvider";
 
 export const metadata: Metadata = {
   title: "Promenade Dental",
@@ -18,7 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased">{children}  <ScrollToTop /></body>
+      <body className="antialiased">
+        <BookingModalProvider>
+          {children}
+          </BookingModalProvider>
+        <ScrollToTop />
+        </body>
     </html>
   );
 }

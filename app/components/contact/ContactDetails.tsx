@@ -21,9 +21,10 @@ const DETAILS = [
     href: 'mailto:hello@promenadedental.com',
     icon: 'M3 6h18v12H3V6zm0 0 9 7 9-7',
   },
+  //\u00b7 Fri\u2013Mon Closed
   {
     label: 'Office Hours',
-    value: 'Mon\u2013Fri 8am\u20137pm \u00b7 Sat 9am\u20135pm',
+    value: 'Tue\u2013Thur 8am\u20137pm',
     href: undefined,
     icon: 'M12 8v4l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z',
   },

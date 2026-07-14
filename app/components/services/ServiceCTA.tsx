@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
+import { useBookingModal } from '../common/BookingModalProvider';
 
 const ADDRESS = '4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248';
 const PHONE = '(480) 802-8188';
@@ -146,6 +147,7 @@ export default function ServiceCTA() {
 }
 
 function CallButton() {
+  
   return (
     <a
       href="tel:+14808028188"
@@ -172,9 +174,10 @@ function CallButton() {
 }
 
 function GhostButton() {
+    const { openBookingModal } = useBookingModal();
   return (
-    <a
-      href="/contact-us"
+    <button
+      onClick={openBookingModal}
       className="
         bg-coral
         hover:bg-ivory
@@ -194,6 +197,6 @@ function GhostButton() {
       "
     >
       Book an Appointment
-    </a>
+    </button>
   );
 }

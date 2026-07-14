@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
+import Link from 'next/link';
 
 export default function ClosingCTA() {
   const [h1Ref, h1Vis] = useScrollReveal();
@@ -124,9 +125,9 @@ export default function ClosingCTA() {
           }}
         >
           {/* Primary */}
-          <button className="bg-coral hover:bg-coral/90 text-bg border-none px-[30px] py-[17px] rounded-full font-sans text-[14px] tracking-[0.05em] uppercase font-semibold transition-all duration-300 cursor-pointer">
+          <Link href='/contact-us#contact' className="bg-coral hover:bg-coral/90 text-bg border-none px-[30px] py-[17px] rounded-full font-sans text-[14px] tracking-[0.05em] uppercase font-semibold transition-all duration-300 cursor-pointer">
             Book an Appointment
-          </button>
+          </Link>
 
           {/* Secondary */}
           <a

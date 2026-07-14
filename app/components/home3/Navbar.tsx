@@ -10,7 +10,7 @@ import {
   Menu, 
   X 
 } from 'lucide-react'
-import { SERVICES } from '@/app/lib/serviceData'
+import { SERVICES } from '@/app/lib/data/serviceData'
 import { SUB_SERVICES } from '@/app/lib/subServiceData'
 import Image from 'next/image'
 
@@ -37,7 +37,7 @@ export default function Navbar({
   return (
     <>
       <nav className="absolute top-6 lg:top-11 left-0 right-0 z-20">
-        <div className="flex items-center mx-auto h-[90px] max-w-[1340px] px-4 md:px-[clamp(20px,3vw,44px)]">
+        <div className="flex items-center mx-auto h-[90px] px-4 md:px-[clamp(20px,3vw,44px)]">
           {/* Logo */}
           <Link href="/home03" className="flex items-center no-underline">
           <Image
@@ -52,7 +52,15 @@ export default function Navbar({
 
           {/* Desktop Nav links — hidden below 1180px (xl) */}
           <ul className="hidden xl:flex gap-[30px] list-none text-[14px] tracking-[0.08em] uppercase font-medium ml-auto mr-[34px]">
-
+              <li 
+              className="relative group"
+              onMouseEnter={() => setAboutOpen(true)}
+              onMouseLeave={() => setAboutOpen(false)}
+            >
+              <Link href='/home03' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
+                Home
+              </Link>
+            </li>
             {/* About */}
             <li 
               className="relative group"

@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useBookingModal } from '../../common/BookingModalProvider';
 
 const ARC_COUNT = 15;
 
@@ -92,6 +93,7 @@ export default function ServiceHero({
       hero.removeEventListener('mouseleave', onLeave);
     };
   }, []);
+  const { openBookingModal } = useBookingModal();
 
   return (
     <header
@@ -144,7 +146,7 @@ export default function ServiceHero({
             </motion.div>
 
             {/* Headline */}
-            <h1 className="font-serif font-light text-4xl lg:text-7xl leading-[1.1em] text-white">
+            <h1 className="font-serif font-light text-4xl md:text-7xl leading-[1.1em] text-white">
               <span className="block">
                 <motion.span
                   className="inline-block"
@@ -162,7 +164,7 @@ export default function ServiceHero({
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.9, duration: 1 }}
-  className="lg:max-w-[80%] text-white/80  lg:text-xl font-light leading-[1.7] mt-6"
+  className="lg:max-w-[80%] text-white/80  md:text-xl font-light leading-[1.7] mt-6"
 >
   {description}
 </motion.p>
@@ -195,8 +197,8 @@ export default function ServiceHero({
     className="flex flex-wrap gap-4 mt-8"
   >
     {primaryCTA && (
-      <Link
-        href={primaryCTA.href}
+      <button
+        onClick={openBookingModal}
         className="
           inline-flex items-center justify-center
           px-8 py-4
@@ -211,7 +213,7 @@ export default function ServiceHero({
         "
       >
         {primaryCTA.label}
-      </Link>
+      </button>
     )}
 
     {secondaryCTA && (

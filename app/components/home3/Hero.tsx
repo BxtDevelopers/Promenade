@@ -1,12 +1,13 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { Check } from 'lucide-react'
+import { useBookingModal } from '../common/BookingModalProvider'
 
 const BASE = 'https://promenade-dental.vercel.app'
 
 export default function Hero() {
+  const { openBookingModal } = useBookingModal();
   const archRef = useRef<SVGGElement>(null)
 
   useEffect(() => {
@@ -143,16 +144,16 @@ export default function Hero() {
           >
             Comprehensive, gentle dental care for families across Chandler — Ocotillo, Fulton Ranch, and Sun Lakes.
           </p>
-          <Link
-            href={`/contact-us`}
-            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-[var(--bg)] bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-[var(--ivory)] hover:-translate-y-0.5"
+          <button
+            onClick={openBookingModal}
+            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5"
             style={{
               padding: '17px 30px',
               boxShadow: '0 20px 44px -18px rgba(232,154,114,0.7)',
             }}
           >
             Schedule my first visit →
-          </Link>
+          </button>
         </div>
       </div>
     </header>

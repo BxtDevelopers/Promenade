@@ -2198,7 +2198,552 @@ highlight: 'and Prompt Evaluation',
 
   image: '/assets/dental-lobby.jpg',
 },
+},
+
+{
+  slug: 'sleep-apnea-snoring-solutions',
+  name: 'Sleep Apnea & Snoring',
+
+  metaTitle:
+    'Sleep Apnea & Snoring Solutions in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Sleep apnea and snoring solutions in Chandler AZ. Promenade Dental provides sleep and airway screenings, oral appliance therapy, and collaborative care for patients with obstructive sleep apnea and sleep-related breathing concerns.',
+
+  hero: {
+    eyebrow: 'Sleep & Airway Care in Fulton Ranch',
+
+    title: 'Sleep Apnea and Snoring Solutions for',
+    highlight: 'Better Sleep and Better Breathing in Chandler',
+
+    description:
+      'Promenade Dental helps identify signs of obstructive sleep apnea and sleep-related breathing concerns through screening, airway evaluation, and oral appliance therapy for appropriate patients. Our goal is to help patients sleep more comfortably, breathe more effectively, and improve overall quality of life.',
+
+    image: '/assets/h-sleep-apnea.webp',
+
+    trustPoints: [
+      'Sleep & Airway Screenings',
+      'Oral Appliance Therapy',
+      'Snoring Evaluations',
+      'Collaboration With Medical Providers',
+      'Located in Fulton Ranch',
+      'New Patients Welcome',
+    ],
+
+    primaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+
+    secondaryCTA: {
+      label: 'Schedule a Sleep Screening',
+      href: '#contact',
+    },
+  },
+
+  overview: {
+    eyebrow: 'Sleep Apnea & Snoring Solutions',
+
+    heading:
+      'Sleep Apnea and Snoring Solutions for Better Sleep, Energy, and Overall Health',
+
+    body:
+      'Sleep-related breathing disorders can affect far more than your nightly rest. Snoring, interrupted breathing, poor sleep quality, and daytime fatigue may be signs of obstructive sleep apnea. Promenade Dental helps screen patients for sleep-related breathing concerns through oral and airway evaluations and works collaboratively with qualified medical providers when additional testing is needed. For appropriate patients, oral appliance therapy may provide a comfortable treatment option that supports a more open airway during sleep.',
+
+    features: [
+      'Sleep and airway screenings',
+      'Evaluation of snoring and fatigue concerns',
+      'Collaboration with medical providers',
+      'Custom oral appliance therapy',
+    ],
+
+    image: '/assets/service-sleep-apnea.jpg',
+
+    cta: {
+      label: 'Schedule a Sleep Screening',
+      href: '/contact',
+    },
+  },
+
+  symptomsSection: {
+    eyebrow: 'Signs of Sleep-Related Breathing Problems',
+
+    heading:
+      'Common Symptoms Associated With Sleep Apnea and Snoring',
+
+    body:
+      'Many people live with sleep-related breathing problems for years without realizing that their symptoms may be connected. Persistent fatigue, loud snoring, poor-quality sleep, and difficulty concentrating can all indicate the need for further evaluation.',
+
+    symptoms: [
+      {
+        title: 'Loud or Frequent Snoring',
+
+        body:
+          'Persistent snoring may occur when airflow is partially restricted during sleep and can be associated with sleep-related breathing disorders.',
+      },
+
+      {
+        title: 'Daytime Fatigue',
+
+        body:
+          'Interrupted sleep may prevent the body from achieving restorative rest, leading to ongoing tiredness during the day.',
+      },
+
+      {
+        title: 'Morning Headaches',
+
+        body:
+          'Some individuals with sleep-related breathing concerns report waking with headaches or feeling unrested despite a full night of sleep.',
+      },
+
+      {
+        title: 'Dry Mouth Upon Waking',
+
+        body:
+          'Mouth breathing during sleep may contribute to dryness, discomfort, and waking with a dry mouth.',
+      },
+
+      {
+        title: 'Difficulty Concentrating',
+
+        body:
+          'Poor sleep quality can affect focus, memory, concentration, and overall daily performance.',
+      },
+
+      {
+        title: 'Interrupted or Restless Sleep',
+
+        body:
+          'Frequent awakenings, restless sleep, or waking up feeling unrefreshed may indicate an underlying sleep-related breathing concern.',
+      },
+    ],
+  },
+
+  whyItMatters: {
+    eyebrow: 'Why Sleep Health Matters',
+
+    heading:
+      'Sleep Apnea Screening Helps Identify Problems That Affect More Than Sleep',
+
+    description:
+      'Sleep is essential for physical health, mental well-being, and daily performance. Obstructive sleep apnea has been associated with concerns involving cardiovascular health, blood pressure, mood, concentration, and daytime alertness. Early screening helps patients understand whether additional evaluation may be beneficial.',
+
+    items: [
+      {
+        title: 'Restorative Sleep and Energy',
+
+        body:
+          'Healthy breathing during sleep helps support deeper, more restorative sleep that promotes daily energy and overall wellness.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M16 20 q8 -10 16 0 q-8 10 -16 0',
+        ],
+      },
+
+      {
+        title: 'Focus, Mood, and Productivity',
+
+        body:
+          'Sleep quality can influence concentration, memory, emotional well-being, and performance throughout the day.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M24 14 v16 M16 22 h16',
+        ],
+      },
+
+      {
+        title: 'Overall Health Considerations',
+
+        body:
+          'Sleep-related breathing disorders may be associated with broader health concerns, making appropriate evaluation important for long-term wellness.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M24 12 q-8 8 -8 16 q0 8 8 16 q8-8 8-16 q0-8-8-16',
+        ],
+      },
+    ],
+
+    cta: {
+      label: 'Learn About Sleep Screenings',
+      href: '/contact',
+    },
+  },
+
+  process: {
+    eyebrow: 'Sleep & Airway Evaluation Process',
+
+    heading:
+      'Sleep Apnea Screening, Evaluation, and Oral Appliance Therapy',
+
+    subtitle:
+      'Our process focuses on identifying possible sleep-related breathing concerns, collaborating with medical providers when appropriate, and providing oral appliance therapy for suitable patients.',
+
+    steps: [
+      {
+        title: 'Symptom and Health Review',
+
+        body:
+          'We discuss symptoms such as snoring, fatigue, poor sleep quality, and other factors that may indicate a sleep-related breathing concern.',
+      },
+
+      {
+        title: 'Oral and Airway Evaluation',
+
+        body:
+          'Dr. Shriya evaluates the teeth, jaws, tongue, soft tissues, and airway-related structures to identify findings that may warrant further assessment.',
+      },
+
+      {
+        title: 'Medical Collaboration and Testing',
+
+        body:
+          'When sleep apnea is suspected, patients may be referred to a qualified medical provider for appropriate testing and diagnosis.',
+      },
+
+      {
+        title: 'Oral Appliance Therapy',
+
+        body:
+          'For appropriate patients, a custom oral appliance may be provided to help support a more open airway during sleep.',
+      },
+
+      {
+        title: 'Follow-Up and Adjustments',
+
+        body:
+          'Regular follow-up appointments help monitor comfort, appliance fit, and treatment effectiveness over time.',
+      },
+    ],
+
+    cta: {
+      label: 'Schedule a Sleep Consultation',
+      href: '#contact',
+    },
+  },
+
+  maintenance: {
+    eyebrow: 'Supporting Long-Term Sleep Health',
+
+    heading:
+      'Healthy Habits and Ongoing Care for Better Sleep',
+
+    body:
+      'Successful sleep apnea management often involves ongoing monitoring, regular follow-up, and consistent use of recommended treatment. Small adjustments can make a meaningful difference in comfort and long-term results.',
+
+    cards: [
+      {
+        title: 'Attend Follow-Up Visits',
+
+        body:
+          'Regular evaluations allow appliance fit, comfort, and treatment progress to be reviewed over time.',
+      },
+
+      {
+        title: 'Wear the Appliance Consistently',
+
+        body:
+          'Consistent use of an oral appliance helps support treatment effectiveness and long-term comfort.',
+      },
+
+      {
+        title: 'Monitor Changes in Symptoms',
+
+        body:
+          'Changes in snoring, sleep quality, fatigue, or comfort should be discussed during follow-up visits.',
+      },
+
+      {
+        title: 'Maintain Collaborative Care',
+
+        body:
+          'Ongoing communication between dental and medical providers helps support comprehensive patient care.',
+      },
+    ],
+  },
+
+  benefits: {
+    eyebrow: 'Why Choose Promenade Dental',
+
+    heading:
+      'Dentist-Led Sleep Apnea Screening and Oral Appliance Therapy',
+
+    description:
+      'Promenade Dental helps patients better understand sleep-related breathing concerns through airway-focused evaluations, medical collaboration, and personalized oral appliance therapy when appropriate.',
+
+    items: [
+      {
+        title: 'Comprehensive Airway Evaluations',
+
+        body:
+          'Dr. Shriya evaluates oral and airway-related structures that may contribute to sleep-related breathing concerns.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M18 14 h12 v20 h-12 z',
+        ],
+      },
+
+      {
+        title: 'Collaboration With Medical Providers',
+
+        body:
+          'Sleep apnea diagnosis requires medical evaluation, and our office works closely with qualified providers when testing is needed.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M14 22 h20 M24 14 v16',
+        ],
+      },
+
+      {
+        title: 'Custom Oral Appliance Therapy',
+
+        body:
+          'Each appliance is designed specifically for the patient to support comfort and treatment effectiveness.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M16 18 h16 v12 h-16 z',
+        ],
+      },
+
+      {
+        title: 'Comfortable Alternative for Appropriate Patients',
+
+        body:
+          'Oral appliance therapy may provide a quiet, travel-friendly treatment option for suitable candidates.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M24 12 q-8 8 -8 16 q0 8 8 16 q8-8 8-16 q0-8-8-16',
+        ],
+      },
+
+      {
+        title: 'Ongoing Monitoring and Adjustments',
+
+        body:
+          'Treatment success is supported through follow-up care and personalized appliance adjustments.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M18 14 a8 8 0 1 1 0.1 0',
+        ],
+      },
+
+      {
+        title: 'Convenient Care Near Fulton Ranch',
+
+        body:
+          'Located in Chandler 85248, Promenade Dental serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.',
+
+        paths: [
+          'M6 38 A18 18 0 0 1 42 38',
+          'M18 14 a8 8 0 1 1 0.1 0 M18 22 v12',
+        ],
+      },
+    ],
+  },
+  localArea: {
+  eyebrow: 'Local Sleep & Airway Care',
+
+  heading:
+    'Sleep Apnea and Snoring Solutions Near Fulton Ranch and Chandler 85248',
+
+  body:
+    'Promenade Dental is located in Fulton Ranch at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248. Our office serves patients from Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and nearby communities.\n\nIf snoring, daytime fatigue, poor sleep quality, or suspected sleep apnea is affecting your daily life, Promenade Dental provides sleep and airway screenings, oral appliance therapy, and collaborative care focused on helping patients achieve better sleep and overall wellness.',
+
+  address: {
+    practice: 'Promenade Dental',
+    street: '4905 S. Alma School Rd, Suite 1',
+    cityStateZip: 'Chandler, AZ 85248',
+    phone: '(480) 802-8188',
+  },
+
+  cta: {
+    label: 'Get Directions',
+    href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+  },
+},
+
+relatedServices: {
+  eyebrow: 'Explore Related Services',
+
+  heading:
+    'Related Services for Oral Health, Airway Evaluations, and Long-Term Wellness',
+
+  intro:
+    'Sleep-related breathing concerns often connect with overall oral health, airway function, and preventive care. Depending on your needs, additional dental services may support your long-term health and comfort.',
+
+  services: [
+    {
+      title: 'Family Dentistry',
+
+      description:
+        'Routine dental exams and preventive care that support long-term oral health and early identification of potential concerns.',
+
+      href: '/services/family-dentistry',
+    },
+
+    {
+      title: 'Preventive Dentistry',
+
+      description:
+        'Professional cleanings, exams, and preventive services designed to help maintain healthy teeth and gums.',
+
+      href: '/services/preventive-dentistry',
+    },
+
+    {
+      title: 'TMJ & Jaw Pain Treatment',
+
+      description:
+        'Evaluation of jaw discomfort, bite concerns, muscle tension, and other conditions that may affect oral function and comfort.',
+
+      href: '/services/tmj-treatment',
+    },
+
+    {
+      title: 'Comprehensive Dental Exams',
+
+      description:
+        'Detailed evaluations of the teeth, gums, bite, and oral structures to support overall dental health.',
+
+      href: '/services/family-dentistry/dental-exams',
+    },
+  ],
+},
+
+testimonialsSection: {
+  eyebrow: 'Patient Stories',
+
+  heading:
+    'Trusted by Chandler Patients for Sleep & Airway Care',
+
+  testimonials: [
+    {
+      quote:
+        'I had struggled with loud snoring and poor sleep for years. The screening process was thorough, and I appreciated how clearly everything was explained.',
+      name: 'Robert M.',
+      context: 'Sleep Screening Patient',
+    },
+
+    {
+      quote:
+        'Dr. Shriya took the time to discuss my symptoms and explain the next steps. I felt informed and comfortable throughout the process.',
+      name: 'Melissa T.',
+      context: 'Airway Evaluation Patient',
+    },
+
+    {
+      quote:
+        'The oral appliance was much easier to travel with than I expected. The team made sure it fit comfortably and answered all my questions.',
+      name: 'David K.',
+      context: 'Oral Appliance Therapy Patient',
+    },
+
+    {
+      quote:
+        'I originally came in because of fatigue and snoring. The office helped me understand the connection between sleep and overall health.',
+      name: 'Jennifer P.',
+      context: 'Sleep Health Patient',
+    },
+
+    {
+      quote:
+        'Everyone was professional, welcoming, and focused on finding the right solution for my situation.',
+      name: 'Michael R.',
+      context: 'Chandler Resident',
+    },
+
+    {
+      quote:
+        'The follow-up appointments were helpful, and the team made adjustments to improve comfort and effectiveness.',
+      name: 'Sarah L.',
+      context: 'Follow-Up Care Patient',
+    },
+  ],
+},
+
+faq: {
+  eyebrow: 'Frequently Asked Questions',
+
+  heading:
+    'Sleep Apnea and Snoring FAQs',
+
+  items: [
+    {
+      q: 'What is obstructive sleep apnea?',
+      a: 'Obstructive sleep apnea is a sleep-related breathing disorder in which the airway repeatedly narrows or becomes blocked during sleep, leading to interruptions in normal breathing.',
+    },
+
+    {
+      q: 'Is snoring always a sign of sleep apnea?',
+      a: 'Not always. While snoring can occur without sleep apnea, persistent or loud snoring may be associated with sleep-related breathing disorders and should be evaluated when accompanied by other symptoms.',
+    },
+
+    {
+      q: 'How can a dentist help with sleep apnea?',
+      a: 'Dentists can screen for signs of sleep-related breathing disorders, evaluate oral and airway structures, collaborate with medical providers, and provide oral appliance therapy for appropriate patients.',
+    },
+
+    {
+      q: 'Can a dentist diagnose sleep apnea?',
+      a: 'No. Sleep apnea requires diagnosis by a qualified medical provider through appropriate testing. Dentists help identify possible signs and coordinate care when further evaluation is needed.',
+    },
+
+    {
+      q: 'What is oral appliance therapy?',
+      a: 'Oral appliance therapy uses a custom-made device worn during sleep to help support the jaw and maintain a more open airway for appropriate patients.',
+    },
+
+    {
+      q: 'Is oral appliance therapy comfortable?',
+      a: 'Many patients find oral appliances comfortable and easy to use. Appliances are custom-made and adjusted to support both comfort and effectiveness.',
+    },
+
+    {
+      q: 'Can oral appliances help reduce snoring?',
+      a: 'For some patients, oral appliance therapy may help reduce snoring by supporting a more open airway during sleep.',
+    },
+
+    {
+      q: 'Do I need a sleep study before treatment?',
+      a: 'If sleep apnea is suspected, patients are typically referred to a qualified medical provider for testing and diagnosis before treatment recommendations are finalized.',
+    },
+
+    {
+      q: 'How often will my appliance need adjustments?',
+      a: 'Adjustment schedules vary by patient. Follow-up visits allow the appliance to be evaluated and modified as needed for comfort and effectiveness.',
+    },
+
+    {
+      q: 'Where is Promenade Dental located?',
+      a: 'Promenade Dental is located at 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248, serving Fulton Ranch, Ocotillo, Sun Lakes, South Chandler, and surrounding communities.',
+    },
+  ],
+},
+
+cta: {
+  title: 'Schedule a Sleep & Airway Screening',
+  highlight: 'for Snoring, Fatigue, or Sleep Concerns',
+
+  subtitle:
+    'Promenade Dental helps patients evaluate sleep-related breathing concerns through airway-focused screenings, oral appliance therapy, and collaboration with qualified medical providers. If poor sleep, snoring, or daytime fatigue is affecting your quality of life, our team is here to help you take the next step.',
+
+  buttonText: 'Request a Sleep Screening',
+  buttonHref: '/contact',
+
+  secondaryButtonText: 'Call (480) 802-8188',
+  secondaryButtonHref: 'tel:+14808028188',
+
+  image: '/assets/dental-lobby.jpg',
+},
 }
+  
   ];
   
   

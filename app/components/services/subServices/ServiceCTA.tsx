@@ -135,7 +135,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
               </p>
               
               <Link
-                href={data.buttonHref}
+                href="tel:+14808028188"
                 className="inline-flex items-center justify-center py-[16px] px-10 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-1 shadow-[0_12px_24px_-8px_rgba(232,154,114,0.4)]"
               >
                 {data.buttonText} →

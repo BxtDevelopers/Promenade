@@ -36,7 +36,6 @@ export default function Footer() {
                 [`/services/family-dentistry`,      'Family & Preventive'],
                 [`/services/cosmetic-dentistry`,    'Cosmetic Dentistry'],
                 [`/services/restorative-dentistry`, 'Restorative Dentistry'],
-                [`/services/dental-implants`,           'Dental Implants'],
                 [`/services/emergency-dentistry`,   'Emergency Care'],
               ].map(([href, label]) => (
                 <li key={label}>
@@ -57,7 +56,6 @@ export default function Footer() {
             <ul className="list-none space-y-[10px]">
               {[
                 [`/about-us02`,    'About Us'],
-                [`/about-us02`,    'Meet Dr. Shriya'],
                 [`/contact-us`,  'New Patients'],
                 ['/insurance',     'Insurance'],
                 [`/contact-us`,  'Contact'],

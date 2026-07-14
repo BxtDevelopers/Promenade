@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useBookingModal } from '../common/BookingModalProvider';
 
 const ARC_COUNT = 15;
 
@@ -192,7 +192,7 @@ export default function ServiceHero() {
     href="tel:+14808028188"
     className="
       inline-flex items-center gap-3
-      border border-line
+      border border-ivory
       text-ivory
       px-[26px] md:px-[30px]
       py-[15px] md:py-[17px]
@@ -215,6 +215,7 @@ export default function ServiceHero() {
 function HeroButton() {
   const ref = useRef<HTMLButtonElement>(null);
   const [hov, setHov] = useState(false);
+  const { openBookingModal } = useBookingModal();
 
   const onMove = (e: React.MouseEvent) => {
     const r = ref.current!.getBoundingClientRect();
@@ -226,20 +227,20 @@ function HeroButton() {
   };
 
   return (
-    <Link href="/contact-us"
+    <button onClick={openBookingModal}
     //@ts-ignore  
     ref={ref}
       onMouseMove={onMove}
       onMouseEnter={() => setHov(true)}
       onMouseLeave={onLeave}
       className={[
-        'inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
+        'inline-flex items-center gap-3 border-ivory font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
         'px-[26px] md:px-[30px] py-[15px] md:py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300',
         'shadow-btn text-bg',
         hov ? 'bg-ivory -translate-y-0.5' : 'bg-coral',
       ].join(' ')}
     >
       Book an Appointment →
-    </Link >
+    </button >
   );
 }

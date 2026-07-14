@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
+import { useBookingModal } from '../../common/BookingModalProvider';
 
 interface ProcessData {
   eyebrow: string;
@@ -13,6 +14,7 @@ interface ProcessData {
 
 export default function ServiceProcess({ data }: { data: ProcessData }) {
   const [headRef, headIn] = useScrollReveal();
+  const { openBookingModal } = useBookingModal();
 
   return (
     <section className="py-section bg-bg-2  border-t border-line">
@@ -39,11 +41,11 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
 
             {/* Optional CTA pinned to the bottom of the sticky section */}
             {data.cta && (
-              <Link
-                href={data.cta.href}
-                className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase transition-all duration-300 hover:text-ivory"
+              <button
+                onClick={openBookingModal}
+                className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase transition-all duration-300 hover:text-white"
               >
-                <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-ivory/60 transition-colors">
+                <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-white/60 transition-colors">
                   {data.cta.label}
                 </span>
                 <svg
@@ -57,7 +59,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7 7 7-7 7" />
                 </svg>
-              </Link>
+              </button>
             )}
           </div>
 

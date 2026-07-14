@@ -70,23 +70,6 @@ export default function LocationMap() {
       near Ocotillo, or emergency dental care near Chandler
       85248, we're here to help you take the next step.
     </p>
-
-    <div className="flex flex-wrap gap-2 mt-6">
-      {[
-        'Fulton Ranch',
-        'Ocotillo',
-        'Sun Lakes',
-        'South Chandler',
-        'Chandler 85248',
-      ].map((area) => (
-        <span
-          key={area}
-          className="px-3 py-1.5 rounded-full border border-coral text-[12px] text-white"
-        >
-          {area}
-        </span>
-      ))}
-    </div>
   </div>
 
   <a

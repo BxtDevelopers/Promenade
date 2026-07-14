@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
+import { useBookingModal } from '../../common/BookingModalProvider';
 
 // 1. Data Interface
 interface BenefitItem {
@@ -19,9 +20,11 @@ interface WhyChooseData {
 
 export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
   const [headRef, headIn] = useScrollReveal();
+  const [btnRef, btnIn] = useScrollReveal(); 
+  const { openBookingModal } = useBookingModal();
 
   return (
-    <section className="py-section bg-bg-2  border-t border-line relative">
+    <section className="py-section bg-bg-2 border-t border-line relative">
       {/* Subtle background glow to contrast with previous section */}
       <div className="absolute top-0 inset-x-0 flex justify-center pointer-events-none opacity-50">
         <div className="w-[800px] h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(232,154,114,0.08),transparent_70%)]" />
@@ -54,6 +57,50 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
           {data.items.map((item, index) => (
             <TrustCard key={index} item={item} />
           ))}
+        </div>
+
+        {/* ── Action Buttons (Bottom CTA) ── */}
+        <div 
+          ref={btnRef as React.RefObject<HTMLDivElement>}
+          className={[
+            'mt-16 md:mt-24 flex flex-col sm:flex-row items-center justify-center gap-4',
+            'transition-all duration-1000 ease-out delay-200',
+            btnIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
+          ].join(' ')}
+        >
+          {/* Booking Modal Trigger */}
+          <button
+            type="button"
+            onClick={openBookingModal}
+            className={[
+              'w-full sm:w-auto inline-flex items-center justify-center gap-2',
+              'rounded-xl bg-coral text-white font-medium text-base sm:text-[15px]',
+              'px-8 py-3.5 shadow-lg shadow-coral/20',
+              'transition-all duration-300 ease-out',
+              'hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/30 active:translate-y-0',
+            ].join(' ')}
+          >
+            Book an Appointment
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M1 6H15M15 6L10 1M15 6L10 11" />
+            </svg>
+          </button>
+
+          {/* Call Button */}
+          <a
+            href="tel:+14808028188"
+            className={[
+              'w-full sm:w-auto inline-flex items-center justify-center gap-2',
+              'rounded-xl border border-coral/90 bg-white text-coral font-medium text-base sm:text-[15px]',
+              'px-8 py-3.5',
+              'transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white/90 hover:border-coral/40 active:translate-y-0',
+            ].join(' ')}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            (480) 802-8188
+          </a>
         </div>
 
       </div>
@@ -96,7 +143,7 @@ function TrustCard({ item }: { item: BenefitItem }) {
         'coral-underline', 
         isHovered
           ? 'border-coral/40 bg-coral/5 -translate-y-[5px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]'
-          : 'border-line bg-ivory', // Slightly different card background to stand out
+          : 'border-line bg-ivory', 
       ].join(' ')}
     >
       {/* Animated SVG Icon */}

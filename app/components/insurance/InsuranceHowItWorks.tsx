@@ -1,21 +1,26 @@
-import { CreditCard, ListChecks, ShieldCheck } from 'lucide-react'
+import { Calendar, ShieldCheck, CreditCard, CheckCircle } from 'lucide-react'
 import Reveal from '../common/Reveal'
 
 const STEPS = [
   {
-    icon: ShieldCheck,
-    title: "We're in your network",
-    body: 'In-network with most major PPO plans, which keeps your out-of-pocket cost as low as your plan allows.',
+    icon: Calendar,
+    title: 'Step 1',
+    body: 'Schedule your appointment',
   },
   {
-    icon: ListChecks,
-    title: 'We bill them directly',
-    body: 'No forms, no waiting on reimbursement. We file your claim and handle the back-and-forth with your insurer.',
+    icon: ShieldCheck,
+    title: 'Step 2',
+    body: 'We verify your insurance benefits',
   },
   {
     icon: CreditCard,
-    title: 'You see your cost up front',
-    body: "We verify your benefits before treatment and tell you exactly what's covered \u2014 before anything begins.",
+    title: 'Step 3',
+    body: 'We explain your estimated coverage and out-of-pocket costs',
+  },
+  {
+    icon: CheckCircle,
+    title: 'Step 4',
+    body: 'Receive treatment with confidence',
   },
 ]
 
@@ -34,7 +39,8 @@ export default function InsuranceHowItWorks() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-3">
+        {/* Updated lg:grid-cols-3 to lg:grid-cols-4 to fit the 4 steps evenly */}
+        <div className="grid grid-cols-1 gap-[20px] sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <Reveal key={title} className="border-t border-line pt-[22px]" delay={i * 0.1}>
               <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">

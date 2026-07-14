@@ -22,7 +22,7 @@ const PROVIDERS = [
       'Longer reduced-APR plans for larger treatment \u2014 and reuse it for future visits',
     ],
     cta: 'Apply with CareCredit',
-    href: 'https://go.carecredit.com/consumer/home?sitecode=CCCALDS2X',
+    href: 'https://www.carecredit.com/go/HCC298/',
   },
 ]
 
