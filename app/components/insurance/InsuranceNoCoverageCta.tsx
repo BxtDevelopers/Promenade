@@ -3,8 +3,10 @@
 import Link from 'next/link'
 import Reveal from '../common/Reveal'
 import { useEffect, useRef } from 'react'
+import { useBookingModal } from '../common/BookingModalProvider';
 
 export default function InsuranceNoCoverageCta() {
+   const { openBookingModal } = useBookingModal();
 
   const archRef = useRef<SVGGElement>(null)
 
@@ -97,12 +99,12 @@ export default function InsuranceNoCoverageCta() {
         </Reveal>
 
         <Reveal className="mt-[30px] flex flex-wrap items-center justify-center gap-[18px]" delay={0.15}>
-          <Link
-            href="/contact-us"
+          <button
+            onClick={openBookingModal}
             className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ivory"
           >
             Book your first visit
-          </Link>
+          </button>
           <a
             href="/payments"
             className="whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-white transition hover:border-coral"

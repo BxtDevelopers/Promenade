@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function OurStory() {
   return (
     <section className="py-[clamp(40px,5vw,64px)]">
-      <div className="mx-auto grid lg:max-w-[1240px] grid-cols-1 items-center gap-[clamp(30px,4vw,60px)] px-site lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto grid lg:max-w-[1340px] grid-cols-1 items-center gap-[clamp(30px,4vw,60px)] px-site lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal>
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Our story

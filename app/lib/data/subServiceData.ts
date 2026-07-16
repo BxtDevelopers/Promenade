@@ -244,7 +244,7 @@ export const SUB_SERVICES = [
 
   overview: {
     eyebrow: 'Preventive Dental Care',
-    heading: 'Dental Exams and Cleanings for Plaque Buildup, Cavities, Gum Inflammation, and Oral Health Changes',
+    heading: "Most Dental Problems Don't Hurt — Until They Do",
     body:
       'Many dental problems begin quietly. Cavities, gum inflammation, enamel wear, cracked teeth, and old filling problems may not cause pain in the early stages. Routine dental exams and cleanings help identify these concerns before they become more serious or expensive to treat.\n\nProfessional cleanings remove plaque and tartar that brushing and flossing may miss. Dental exams help Dr. Shriya check the teeth, gums, bite, existing dental work, and signs of oral health changes over time.',
     features: [
@@ -2891,14 +2891,11 @@ relatedServices: {
 
       href: '/services/cosmetic-dentistry/dental-bonding',
     },
-
-    {
-      title: 'Smile Makeover',
-
+{
+      title: 'Sleep Apnea Treatment',
       description:
-        'A smile makeover may combine whitening, veneers, bonding, crowns, or other treatments into one planned result.',
-
-      href: '#contact',
+        'Custom oral appliances can reposition your jaw to keep airways open, offering a comfortable alternative to CPAP for mild to moderate sleep apnea.',
+      href: '/services/sleep-apnea-snoring-solutions',
     },
   ],
 },
@@ -3439,12 +3436,10 @@ relatedServices: {
     },
 
     {
-      title: 'Smile Makeover',
-
+      title: 'Sleep Apnea Treatment',
       description:
-        'A smile makeover may combine veneers, whitening, bonding, crowns, gum care, or other treatments into one complete plan.',
-
-      href: '#contact',
+        'Custom oral appliances can reposition your jaw to keep airways open, offering a comfortable alternative to CPAP for mild to moderate sleep apnea.',
+      href: '/services/sleep-apnea-snoring-solutions',
     },
   ],
 },

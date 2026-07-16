@@ -80,7 +80,7 @@ export default function FAQSection() {
                   className="overflow-hidden transition-all duration-400 ease-out"
                   style={{ maxHeight: isOpen ? '240px' : '0px' }}
                 >
-                  <p className="text-muted text-[14.5px] font-light leading-[1.7] pb-6 max-w-[60ch]">
+                  <p className="text-ivory text-[14.5px] font-light leading-[1.7] pb-6 max-w-[60ch]">
                     {item.a}
                   </p>
                 </div>

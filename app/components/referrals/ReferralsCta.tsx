@@ -100,7 +100,7 @@ export default function ReferralsCta() {
           </a>
         </Reveal>
 
-        <Reveal
+        {/* <Reveal
           className="mx-auto mt-[48px] max-w-[760px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-left text-[13px] font-light leading-[1.55] text-ivory-2"
           delay={0.15}
         >
@@ -108,7 +108,7 @@ export default function ReferralsCta() {
           reward amounts are a placeholder &mdash; set the figures you&rsquo;re comfortable with
           and confirm any AZ rules on patient referral incentives. Final terms &amp; conditions
           wording also needs to be added.
-        </Reveal>
+        </Reveal> */}
       </div>
     </section>
   )

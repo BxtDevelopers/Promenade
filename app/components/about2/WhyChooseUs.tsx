@@ -15,7 +15,7 @@ const cards = [
       <>
         If something we placed doesn&apos;t hold up under normal use, we&apos;ll make it right.{' '}
         <Link href="/warranty" className="text-coral no-underline">
-          See our warranty &rarr;
+          See our warranty 
         </Link>
       </>
     ),

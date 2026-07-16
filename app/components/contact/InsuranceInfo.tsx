@@ -1,21 +1,25 @@
 'use client';
 
+import Image from 'next/image';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
 const PLANS = [
-  'Delta Dental',
-  'Cigna',
-  'MetLife',
-  'Aetna',
-  'Guardian',
-  'United Concordia',
-  'Humana',
-  'Ameritas',
-] as const;
+   { name: 'Aetna', file: 'aetna-logo.png', scale: 1.7 },
+  { name: 'Blue Cross Blue Shield', file: 'bluecross-logo.png', scale: 2.7 },
+  { name: 'Cigna', file: 'cigna-logo.png', scale: 2.6 }, 
+  { name: 'Delta Dental', file: 'deltadental-logo.webp', scale: 1.5 },
+  { name: 'Guardian', file: 'guardian-logo.webp', scale: 1.1 }, // Example of scaling down
+  { name: 'Humana', file: 'humana-logo.png', scale: 1.1 },
+  { name: 'MetLife', file: 'metlife-logo.webp', scale: 2.5 },
+  { name: 'Premier Access', file: 'premieraccess-logo.png', scale: 1.4 },
+  { name: 'Principal', file: 'principal-logo.png', scale: 1.2 },
+  { name: 'UFCW', file: 'ufcw-logo.webp', scale: 1.2 },
+  { name: 'United Concordia', file: 'unitedconcordia-logo.png', scale: 1.2 },
+  { name: 'UnitedHealthcare', file: 'unitedhealthcare-logo.webp', scale: 1.2 },
+];
 
 export default function InsuranceInfo() {
   const [leadRef, leadIn] = useScrollReveal();
-  const [gridRef, gridIn] = useScrollReveal();
 
   return (
     <section className="py-section bg-bg-2">
@@ -46,28 +50,65 @@ export default function InsuranceInfo() {
           </div>
 
           {/* Plan grid */}
-          <div
-            ref={gridRef as React.RefObject<HTMLDivElement>}
-            className={[
-              'grid grid-cols-2 sm:grid-cols-4 gap-[14px] mt-auto',
-              'transition-all duration-1000 ease-out delay-150',
-              gridIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
-            ].join(' ')}
-          >
-            {PLANS.map((plan) => (
-              <div
-                key={plan}
-                className="rounded-2xl border border-line bg-ivory/[0.02] px-4 py-6 flex items-center justify-center text-center"
-              >
-                <span className="font-serif font-normal text-[15px] text-ivory-2">
-                  {plan}
-                </span>
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-[14px] mt-auto">
+            {PLANS.map((plan, i) => (
+              <PlanCard 
+                key={plan.name} 
+                name={plan.name} 
+                file={plan.file} 
+                scale={plan.scale} 
+                index={i} 
+              />
             ))}
           </div>
 
         </div>
       </div>
     </section>
+  );
+}
+
+/* ── Individual Plan Card ───────────────────────────── */
+
+function PlanCard({ 
+  name, 
+  file, 
+  scale = 1,
+  index 
+}: { 
+  name: string; 
+  file: string; 
+  scale?: number;
+  index: number;
+}) {
+  const [ref, inView] = useScrollReveal();
+
+  return (
+    <div
+      ref={ref as React.RefObject<HTMLDivElement>}
+      className={[
+        'group flex h-24 items-center justify-center rounded-2xl border border-line bg-bg px-4 py-6 text-center',
+        'transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
+        'hover:-translate-y-1 hover:bg-bg/90',
+      ].join(' ')}
+      style={{
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'none' : 'translateY(16px)',
+        transitionDelay: `${index * 0.05}s`,
+      }}
+    >
+      <div 
+        className="relative h-full w-full transition-transform duration-300"
+        style={{ transform: `scale(${scale})` }}
+      >
+        <Image
+          src={`/assets/insurance-carriers/${file}`}
+          alt={`${name} insurance accepted`}
+          fill
+          sizes="(max-width: 768px) 50vw, 25vw"
+          className="object-contain p-2 transition-all duration-300 opacity-80 group-hover:opacity-100"
+        />
+      </div>
+    </div>
   );
 }

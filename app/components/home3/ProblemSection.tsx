@@ -70,7 +70,7 @@ export default function ProblemsSection() {
             What brought you{' '}
             <em className="italic text-coral">here?</em>
           </h2>
-          <p className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted max-w-[42ch]">
+          <p className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted">
             Tell us what&apos;s going on — we&apos;ll point you to the right care.
           </p>
         </div>

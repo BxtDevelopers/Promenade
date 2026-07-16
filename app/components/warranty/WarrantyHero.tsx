@@ -1,10 +1,14 @@
+'use client'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import Reveal from '../common/Reveal'
+import { useBookingModal } from '../common/BookingModalProvider';
 
 const badges = ['No cost to you*', 'Backed in writing', 'Honored visit after visit']
 
 export default function WarrantyHero() {
+   const { openBookingModal } = useBookingModal();
+  
   return (
     <section className="relative pt-[clamp(120px,15vw,184px)] pb-[clamp(36px,4vw,56px)]">
       <div
@@ -50,12 +54,12 @@ export default function WarrantyHero() {
         </div>
 
         <Reveal delay={200} className="mt-[30px] flex flex-wrap items-center gap-[14px]">
-          <Link
-            href="/contact-us"
+          <button
+            onClick={openBookingModal}
             className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-ivory"
           >
             Book a visit
-          </Link>
+          </button>
           <Link
             href="tel:+14808028188"
             className="rounded-full border border-coral px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"

@@ -11,7 +11,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { to: 25,  suffix: '+',  label: 'Years in Chandler' },
+  { to: 18,  suffix: '+',  label: 'Years in Chandler' },
   { to: 4.9, dec: 1,       label: '★ Average rating' },
   { to: 150, suffix: '+',  label: 'Google reviews' },
   { text: 'PPO',           label: 'Most plans accepted' },
@@ -57,7 +57,7 @@ function CountUp({ to, dec = 0, suffix = '', text }: Omit<Stat, 'label'>) {
   if (text) {
     return (
       <span
-        className="block font-serif font-light text-coral leading-none tracking-[-0.01em] text-[clamp(30px,3.8vw,46px)]"
+        className="block font-serif font-light text-coral leading-none tracking-[-0.01em] text-[clamp(30px,3.8vw,46px)] mt-3"
       >
         {text}
       </span>

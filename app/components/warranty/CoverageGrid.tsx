@@ -35,22 +35,22 @@ const coverage: CoverageItem[] = [
     promise: 'Re-treat, or credit the fee toward next steps*',
     yourPart: 'Keep your 6-month cleanings & exams',
   },
-  {
-    icon: Sparkles,
-    title: 'Veneers & bonding',
-    period: 'Warranty period: [confirm]',
-    fails: 'Debonding or chipping under normal use',
-    promise: 'Repair or replace at no cost to you*',
-    yourPart: 'Keep your 6-month cleanings & exams',
-  },
-  {
-    icon: Smile,
-    title: 'Dentures & partials',
-    period: 'Warranty period: [confirm]',
-    fails: 'Breakage or misfit under normal use',
-    promise: 'Repair or replace at no cost to you*',
-    yourPart: 'Keep your 6-month cleanings & exams',
-  },
+  // {
+  //   icon: Sparkles,
+  //   title: 'Veneers & bonding',
+  //   period: 'Warranty period: [confirm]',
+  //   fails: 'Debonding or chipping under normal use',
+  //   promise: 'Repair or replace at no cost to you*',
+  //   yourPart: 'Keep your 6-month cleanings & exams',
+  // },
+  // {
+  //   icon: Smile,
+  //   title: 'Dentures & partials',
+  //   period: 'Warranty period: [confirm]',
+  //   fails: 'Breakage or misfit under normal use',
+  //   promise: 'Repair or replace at no cost to you*',
+  //   yourPart: 'Keep your 6-month cleanings & exams',
+  // },
 ]
 
 export default function CoverageGrid() {

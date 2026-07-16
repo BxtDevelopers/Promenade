@@ -1,10 +1,13 @@
+'use client'
 import { Check } from 'lucide-react'
 import Link from 'next/link'
 import Reveal from '../common/Reveal'
+import { useBookingModal } from '../common/BookingModalProvider';
 
 const BADGES = ['In-network with most PPOs', 'We bill insurance for you', 'HSA & FSA welcome']
 
 export default function InsuranceHero() {
+   const { openBookingModal } = useBookingModal();
   return (
     <section className="relative overflow-hidden pb-[clamp(36px,4vw,56px)] pt-[clamp(120px,15vw,184px)]">
       <div
@@ -47,12 +50,12 @@ export default function InsuranceHero() {
         </Reveal>
 
         <Reveal className="mt-[30px] flex flex-wrap items-center gap-3.5" delay={0.2}>
-          <Link
-            href="/contact-us"
+          <button
+            onClick={openBookingModal}
             className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ivory"
           >
             Check my coverage
-          </Link>
+          </button>
           <a
             href="tel:+14808028188"
             className="whitespace-nowrap rounded-full border border-ivory/30 px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory/70"
