@@ -35,7 +35,7 @@ export default function HomePage() {
       <AnnouncementBar onOpenModal={() => setModalOpen(true)} />
 
       {/* Navigation */}
-      <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
+      <Navbar  textColor = 'text-white' hoverColor = 'hover:text-white/80'  />
 
       {/* ── Sections in page order ── */}
       <Hero />
