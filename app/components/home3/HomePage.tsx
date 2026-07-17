@@ -20,6 +20,7 @@ import MobileBar from './MobileBar'
 import OfferModal from './OfferModal'
 import TestimonialsMarquee from './Testimonials'
 import FirstVisitTimeline from './FirstVisitTimeline'
+import Gallery from './Gallery'
 
 
 export default function HomePage() {
@@ -42,6 +43,7 @@ export default function HomePage() {
       <StatsBand />
       <TestimonialsMarquee />
       <WhyUs />
+      <Gallery/>
       <DoctorsSection />
       <WarrantySection />
       <ProblemsSection />
