@@ -89,7 +89,8 @@ export default function Gallery() {
       {/* Full-width video */}
       <div className="rv relative mt-[clamp(40px,5vw,60px)] px-[clamp(22px,4vw,60px)]">
         <div
-          className="relative overflow-hidden rounded-[28px] border border-[rgba(11,28,44,0.08)] h-[400px] mx-auto md:aspect-[16/8]"
+          className="relative overflow-hidden rounded-[28px] border border-[rgba(11,28,44,0.08)] lg:aspect-[16/8]"
+          style={{ aspectRatio: '16 / 8' }}
         >
           <video
             ref={videoRef}
