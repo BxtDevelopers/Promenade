@@ -12,7 +12,7 @@ const DOCTORS = [
       { value: '10+ yrs', label: 'Cosmetic dentistry' },
       { value: '1,000+', label: 'Smiles restored' },
     ],
-    img: '/assets/dr-shriya.jpeg',
+    img: '/assets/dr-shriya-2.jpeg',
   },
 ] as const;
 

@@ -165,6 +165,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Check, Pause, Play } from 'lucide-react'
 import { useBookingModal } from '../common/BookingModalProvider'
+import Link from 'next/link'
 
 const BASE = 'https://promenade-dental.vercel.app'
 
@@ -323,8 +324,8 @@ export default function Hero() {
           >
             Comprehensive, gentle dental care for families across Chandler — Ocotillo, Fulton Ranch, and Sun Lakes.
           </p>
-          <button
-            onClick={openBookingModal}
+          <Link
+            href='tel:+14808028188'
             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5"
             style={{
               padding: '17px 30px',
@@ -332,7 +333,7 @@ export default function Hero() {
             }}
           >
             Schedule my first visit →
-          </button>
+          </Link>
         </div>
       </div>
 

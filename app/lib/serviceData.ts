@@ -935,7 +935,7 @@ export const SERVICES = [
           supportingText:
           'A beautiful cosmetic result should look like it belongs to you. The goal is not to make every smile look the same. The goal is to improve what bothers you while keeping your smile balanced and comfortable.',
           image:
-          '/assets/dr-shriya.jpeg',
+          '/assets/dr-shriya-2.jpeg',
           imageAlt:
           'Patient discussing cosmetic dentistry goals with Dr. Shriya during a smile consultation',
           cta: {

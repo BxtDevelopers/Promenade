@@ -1,0 +1,103 @@
+'use client'
+import { ShieldCheck, CreditCard, ClipboardCheck, HeartHandshake, Sparkles, Check } from 'lucide-react'
+import Reveal from '../common/Reveal'
+import { useBookingModal } from '../common/BookingModalProvider'
+
+const NEW_PATIENT_PERKS = [
+  { icon: ShieldCheck, label: 'Insurance verification' },
+  { icon: CreditCard, label: 'Flexible financing' },
+  { icon: ClipboardCheck, label: 'Comprehensive consultation' },
+]
+
+const SIMPLE_OFFERS = [
+  {
+    icon: HeartHandshake,
+    title: 'Senior Discount',
+    body: 'A courtesy discount on care for our senior patients — ask our team for current details at your visit.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Professional Whitening Offer',
+    body: 'Save on in-office or take-home whitening when paired with a routine cleaning and exam.',
+  },
+]
+
+export default function OffersGrid() {
+  const { openBookingModal } = useBookingModal()
+
+  return (
+    <section className="bg-bg-2 py-[clamp(74px,8vw,120px)]">
+      <div className="mx-auto max-w-[1240px] px-site">
+        <Reveal className="mb-[34px]" delay={0}>
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+            Patient Offers
+          </div>
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
+            Current <em className="italic font-normal text-coral">savings</em>.
+          </h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-[20px] lg:grid-cols-3">
+          {/* Featured: New Patient Welcome */}
+          <Reveal delay={0.05} className="lg:col-span-2">
+            <div className="flex h-full flex-col justify-between rounded-2xl border border-coral/40 bg-ivory/[0.03] p-[34px] md:p-[42px]">
+              <div>
+                <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
+                  <ClipboardCheck className="h-5 w-5 text-coral" strokeWidth={2.2} />
+                </span>
+                <b className="block font-serif text-[26px] font-normal leading-[1.15] text-white">
+                  New Patient Welcome
+                </b>
+                <p className="mt-[10px] max-w-[46ch] text-[14.5px] font-light leading-[1.65] text-muted">
+                  Everything you need for a smooth, no-surprises first visit.
+                </p>
+
+                <ul className="mt-[22px] grid grid-cols-1 gap-[12px] sm:grid-cols-3">
+                  {NEW_PATIENT_PERKS.map(({ icon: Icon, label }) => (
+                    <li
+                      key={label}
+                      className="flex items-center gap-2.5 rounded-full border border-line px-4 py-[10px] text-[13px] text-white"
+                    >
+                      <Icon className="h-4 w-4 shrink-0 text-coral" strokeWidth={2.2} />
+                      {label}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <button
+                onClick={openBookingModal}
+                className="mt-[28px] inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full bg-coral px-[26px] py-[15px] font-sans text-[13px] font-semibold uppercase tracking-[0.05em] text-bg transition hover:-translate-y-0.5 hover:bg-ivory"
+              >
+                Book your first visit
+              </button>
+            </div>
+          </Reveal>
+
+          {/* Senior Discount + Whitening */}
+          <div className="grid grid-cols-1 gap-[20px]">
+            {SIMPLE_OFFERS.map(({ icon: Icon, title, body }, i) => (
+              <Reveal key={title} delay={0.1 + i * 0.05}>
+                <div className="flex h-full flex-col rounded-2xl border border-line bg-ivory/[0.03] p-[28px]">
+                  <span className="mb-[16px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
+                    <Icon className="h-5 w-5 text-coral" strokeWidth={2.2} />
+                  </span>
+                  <b className="block font-serif text-[19px] font-normal leading-[1.15] text-white">
+                    {title}
+                  </b>
+                  <p className="mt-[10px] text-[14px] font-light leading-[1.6] text-muted">
+                    {body}
+                  </p>
+                  <span className="mt-auto pt-[16px] inline-flex items-center gap-1.5 text-[12.5px] font-medium uppercase tracking-[0.03em] text-coral">
+                    <Check className="h-3.5 w-3.5 stroke-[2.4]" />
+                    Ask at checkout
+                  </span>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

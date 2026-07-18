@@ -117,19 +117,11 @@ export default function Gallery() {
           </div>
 
           {/* Controls, bottom-right */}
-          <div className="absolute right-[18px] top-[18px] lg:right-[26px] lg:bottom-[26px] flex items-center gap-[10px]">
-            <button
-              onClick={toggleMute}
-              aria-label={muted ? 'Unmute video' : 'Mute video'}
-              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-ivory-2 transition-colors duration-300 hover:border-coral hover:text-coral"
-              style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
-            >
-              {muted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-            </button>
+          <div className="absolute right-[18px] top-[18px] lg:right-[26px] lg:bottom-[1px] flex items-center gap-[10px]">
             <button
               onClick={togglePlay}
               aria-label={playing ? 'Pause video' : 'Play video'}
-              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-ivory-2 transition-colors duration-300 hover:border-coral hover:text-coral"
+              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-ivory-2 transition-colors duration-300 hover:border-coral hover:text-coral lg:mt-auto lg:mb-6"
               style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
             >
               {playing ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 translate-x-[1px]" />}

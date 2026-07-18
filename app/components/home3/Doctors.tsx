@@ -96,7 +96,7 @@ export default function DoctorsSection() {
               className="relative flex flex-col items-center justify-center gap-[10px] rounded-[200px_200px_22px_22px] mb-[22px] aspect-[1.12] bg-[linear-gradient(160deg,var(--panel),var(--bg-2))] border border-dashed border-[rgba(244,236,221,0.14)] overflow-hidden"
             >
               <Image 
-                src="/assets/dr-shriya.jpeg" 
+                src="/assets/dr-shriya-2.jpeg" 
                 alt="Portrait of Dr. Shriya Sarin" 
                 fill
                 className="object-cover object-center"

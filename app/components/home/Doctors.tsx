@@ -14,7 +14,7 @@ const DOCTORS = [
       { value: 'Cosmetic', label: 'Smile design' },
       { value: 'Gentle', label: 'Anxiety-friendly' },
     ],
-    img: '/assets/dr-shriya.jpeg',
+    img: '/assets/dr-shriya-2.jpeg',
     alt: 'Dr. Shriya Sarin',
   },
 ] as const;

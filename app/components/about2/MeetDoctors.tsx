@@ -36,7 +36,7 @@ export default function MeetDoctors() {
           <div className="relative aspect-[0.9] w-full">
             <div className="relative h-full w-full overflow-hidden rounded-arch-sm shadow-[0_50px_90px_-40px_rgba(0,0,0,.7)]">
               <Image
-                src="/assets/dr-shriya.jpeg"
+                src="/assets/dr-shriya-2.jpeg"
                 alt="Dr. Shriya Sarin, DMD"
                 fill
                 className="object-cover"

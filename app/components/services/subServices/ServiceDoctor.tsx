@@ -111,7 +111,7 @@ export default function ServiceDoctor() {
           >
             <div className="absolute inset-0 rounded-arch-sm overflow-hidden">
               <img
-                src="/assets/dr-shriya.jpeg"
+                src="/assets/dr-shriya-2.jpeg"
                 alt="Dr. Shriya Sarin, D.D.S. — Promenade Dental, Chandler AZ"
                 className="w-full h-full object-cover object-top"
               />

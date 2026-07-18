@@ -2257,7 +2257,7 @@ highlight: 'and Prompt Evaluation',
     description:
       'Promenade Dental helps identify signs of obstructive sleep apnea and sleep-related breathing concerns through screening, airway evaluation, and oral appliance therapy for appropriate patients. Our goal is to help patients sleep more comfortably, breathe more effectively, and improve overall quality of life.',
 
-    image: '/assets/h-sleep-apnea.webp',
+    image: '/assets/h-sleep-apnea.jpg',
 
     trustPoints: [
       'Sleep & Airway Screenings',
