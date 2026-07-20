@@ -55,7 +55,7 @@ export default function Footer() {
             <h5 className="footer-col-heading">Practice</h5>
             <ul className="list-none space-y-[10px]">
               {[
-                [`/about-us02`,    'About Us'],
+                [`/about-us`,    'About Us'],
                 [`/contact-us`,  'New Patients'],
                 ['/insurance',     'Insurance'],
                 [`/contact-us`,  'Contact'],
@@ -93,7 +93,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="text-[13px] font-light text-[color:var(--muted-2)]">
-                Mon–Fri: 8am–7pm · Sat: 9am–5pm
+                Tue–Thur: 8am–7pm
               </li>
             </ul>
           </div>
