@@ -8,6 +8,7 @@ import Nav from '@/app/components/home/Navbar'
 import Footer from '@/app/components/home3/Footer'
 import Navbar from '@/app/components/home3/Navbar'
 import type { Metadata } from 'next'
+import TeamSection from '@/app/components/about2/TeamSection'
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function AboutPage() {
       <AboutHero />
       <OurStory />
       <MeetDoctors />
+      <TeamSection/>
       <WhyChooseUs />
       <VisitUs />
       <AboutClosingCTA />

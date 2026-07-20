@@ -57,7 +57,7 @@ export default function Navbar({
               onMouseEnter={() => setAboutOpen(true)}
               onMouseLeave={() => setAboutOpen(false)}
             >
-              <Link href='/home03' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
+              <Link href='/' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
                 Home
               </Link>
             </li>
@@ -67,7 +67,7 @@ export default function Navbar({
               onMouseEnter={() => setAboutOpen(true)}
               onMouseLeave={() => setAboutOpen(false)}
             >
-              <Link href='/about-us02' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
+              <Link href='/about-us' className={`flex items-center gap-[6px] bg-transparent border-none cursor-pointer ${textColor} ${hoverColor} transition-colors duration-[250ms] font-medium text-[14px] tracking-[0.08em] uppercase font-sans py-2`}>
                 About
               </Link>
             </li>
@@ -135,7 +135,7 @@ export default function Navbar({
             </li>
 
             <li className="flex items-center">
-              <Link href="/home03#reviews" className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
+              <Link href="/#reviews" className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
                 Reviews
               </Link>
             </li>
@@ -155,7 +155,7 @@ export default function Navbar({
               {patientsOpen && (
                 <div className="absolute top-[calc(100%+1px)] right-0 min-w-[236px] rounded-2xl p-[13px] z-50 bg-[#173552] border border-[rgba(244,236,221,0.22)] shadow-[0_30px_64px_-24px_rgba(0,0,0,0.9),0_0_0_1px_rgba(0,0,0,0.25)]">
                   {[
-                    ['/home03#new-patients', 'Your First Visit'],
+                    ['/#new-patients', 'Your First Visit'],
                     ['/insurance', 'Insurance '],
                     ['/payments', 'Payment Plans'],
                     ['/referrals','Refer a Friend'],
@@ -180,7 +180,7 @@ export default function Navbar({
               href={`/contact-us`}
               className="inline-block rounded-full text-bg bg-coral font-sans text-[13px] tracking-[0.06em] uppercase font-medium px-[22px] py-[11px] no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:border-ivory hover:-translate-y-px border border-coral shadow-[0_14px_30px_-16px_rgba(232,154,114,0.7)]"
             >
-              Book a Visit
+              Get In Touch
             </Link>
           </div>
 
@@ -199,13 +199,13 @@ export default function Navbar({
           <div className="xl:hidden absolute top-[80px] left-0 right-0 max-h-[calc(100vh-90px)] overflow-y-auto bg-[#0B1C2C] border-b border-[rgba(244,236,221,0.14)] px-6 py-4 shadow-2xl z-40 flex flex-col gap-2">
             
             {/* Home */}
-            <Link href="/home03" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">
               Home
             </Link>
 
             {/* Mobile About Dropdown */}
             <div>
-              <Link href='/about-us02'
+              <Link href='/about-us'
                 onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
                 className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
@@ -246,7 +246,7 @@ export default function Navbar({
             </div>
 
             <Link href={`/warranty`} onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Warranty</Link>
-            <Link href="/home03#reviews" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Reviews</Link>
+            <Link href="/#reviews" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Reviews</Link>
 
             {/* Mobile New Patients Dropdown */}
             <div>
@@ -260,7 +260,7 @@ export default function Navbar({
               {mobilePatientsOpen && (
                 <div className="flex flex-col gap-3 pl-4 pt-3 pb-2">
                   {[
-                    ['/home03#new-patients', 'Your First Visit'],
+                    ['/#new-patients', 'Your First Visit'],
                     ['/insurance', 'Insurance '],
                     ['/payments', 'Payment Plans'],
                     ['/referrals','Refer a Friend'],

@@ -21,6 +21,7 @@ import OfferModal from './OfferModal'
 import TestimonialsMarquee from './Testimonials'
 import FirstVisitTimeline from './FirstVisitTimeline'
 import Gallery from './Gallery'
+import TeamSection from './TeamSection'
 
 
 export default function HomePage() {
@@ -45,6 +46,7 @@ export default function HomePage() {
       <WhyUs />
       <Gallery/>
       <DoctorsSection />
+      <TeamSection/>
       <WarrantySection />
       <ProblemsSection />
       <ServicesGrid />
