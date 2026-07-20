@@ -39,7 +39,7 @@ export default function Navbar({
       <nav className="absolute lg:max-w-[90%] mx-auto px-6 top-6 lg:top-11 left-0 right-0 z-20">
         <div className="flex items-center mx-auto h-[90px] lg:px-4 md:px-[clamp(20px,3vw,44px)]">
           {/* Logo */}
-          <Link href="/home03" className="flex items-center no-underline">
+          <Link href="/" className="flex items-center no-underline">
           <Image
             src="/assets/PDlogo_red3.webp"
             alt="Promenade Dental"

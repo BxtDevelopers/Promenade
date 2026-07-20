@@ -13,7 +13,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
-            <Link href="/home03" className="flex items-center no-underline">
+            <Link href="/" className="flex items-center no-underline">
               <Image
                 src="/assets/PDlogo_red3.webp"
                 alt="Promenade Dental"
