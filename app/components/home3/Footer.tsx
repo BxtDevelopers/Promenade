@@ -37,11 +37,12 @@ export default function Footer() {
                 [`/services/cosmetic-dentistry`,    'Cosmetic Dentistry'],
                 [`/services/restorative-dentistry`, 'Restorative Dentistry'],
                 [`/services/emergency-dentistry`,   'Emergency Care'],
+                [`/services/sleep-apnea-snoring-solutions`,   'Sleep Apnea'],
               ].map(([href, label]) => (
                 <li key={label}>
                   <Link 
                     href={href} 
-                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-ivory text-[color:var(--muted)]"
+                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
                   >
                     {label}
                   </Link>
@@ -58,12 +59,13 @@ export default function Footer() {
                 [`/about-us`,    'About Us'],
                 [`/contact-us`,  'New Patients'],
                 ['/insurance',     'Insurance'],
+                ['/offers',     'Offers'],
                 [`/contact-us`,  'Contact'],
               ].map(([href, label]) => (
                 <li key={label}>
                   <Link 
                     href={href} 
-                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-ivory text-[color:var(--muted)]"
+                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
                   >
                     {label}
                   </Link>
@@ -79,7 +81,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
-                  className="no-underline text-[14px] leading-[1.55] transition-colors duration-[250ms] hover:text-ivory text-[color:var(--muted)]"
+                  className="no-underline text-[14px] leading-[1.55] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
                 >
                   4905 S. Alma School Rd, Suite 1<br />Chandler, AZ 85248
                 </Link>
@@ -87,7 +89,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="tel:+14808028188" 
-                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-ivory text-[color:var(--muted)]"
+                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
                 >
                   (480) 802-8188
                 </Link>
@@ -102,7 +104,21 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-[rgba(244,236,221,0.14)] pt-6 flex items-center justify-between gap-[18px] flex-wrap text-[12.5px] tracking-[0.04em] text-[color:var(--muted-2)]">
           <span>© 2026 Promenade Dental · Chandler, AZ</span>
-          <span>Privacy · Terms · Accessibility</span>
+          <div className="flex items-center gap-[6px]">
+            <Link
+              href="/privacy-policy"
+              className="no-underline transition-colors duration-[250ms] hover:text-coral"
+            >
+              Privacy
+            </Link>
+            <span aria-hidden="true">·</span>
+            <Link
+              href="/terms-and-conditions"
+              className="no-underline transition-colors duration-[250ms] hover:text-coral"
+            >
+              Terms
+            </Link>
+          </div>
         </div>
         
       </div>

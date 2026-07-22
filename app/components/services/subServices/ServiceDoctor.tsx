@@ -13,7 +13,7 @@ const CREDENTIALS = [
 ];
 
 const FACTS = [
-  { value: '12+', label: 'Years in Chandler' },
+  { value: '23+', label: 'Years in Chandler' },
   { value: '8k+', label: 'Patients treated' },
   { value: 'UCLA', label: 'Dental school' },
 ];

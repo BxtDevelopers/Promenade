@@ -93,24 +93,44 @@ export default function Navbar({
                     const categorySubServices = SUB_SERVICES.filter(
                       (sub) => sub.serviceSlug === category.slug
                     );
+                    const isSleepApnea =
+                    category.slug === 'sleep-apnea-snoring-solutions'
 
                     return (
                       <div key={category.slug} className="flex flex-col h-full">
-                        <Link href={`/services/${category.slug}`} className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-coral hover:text-coral/70 px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)]">
-                          {category.name}
-                        </Link>
+                        {isSleepApnea ? (
+                            <span className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-coral px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)] block">
+                              More Treatments
+                            </span>
+                          ) : (
+                            <Link
+                              href={`/services/${category.slug}`}
+                              className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-coral hover:text-coral/70 px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)]"
+                            >
+                              {category.name}
+                            </Link>
+                          )}
                         
                         <div className="flex-1">
-                          {categorySubServices.map((sub) => (
-                            <Link 
-                              key={sub.slug} 
-                              href={`/services/${category.slug}/${sub.slug}`} 
-                              className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]"
-                            >
-                              {sub.name}
-                            </Link>
-                          ))}
-                        </div>
+                            {isSleepApnea ? (
+                              <Link
+                                href={`/services/${category.slug}`}
+                                className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]"
+                              >
+                                Sleep Apnea & Snoring
+                              </Link>
+                            ) : (
+                              categorySubServices.map((sub) => (
+                                <Link
+                                  key={sub.slug}
+                                  href={`/services/${category.slug}/${sub.slug}`}
+                                  className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]"
+                                >
+                                  {sub.name}
+                                </Link>
+                              ))
+                            )}
+                          </div>
                         
                         {/* Render "View all services" ONLY in the last column */}
                         {index === SERVICES.length - 1 && (
@@ -135,8 +155,8 @@ export default function Navbar({
             </li>
 
             <li className="flex items-center">
-              <Link href="/#reviews" className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
-                Reviews
+              <Link href="/offers" className={`${textColor} ${hoverColor} no-underline transition-colors duration-[250ms]`}>
+                Offers
               </Link>
             </li>
 
@@ -246,7 +266,7 @@ export default function Navbar({
             </div>
 
             <Link href={`/warranty`} onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Warranty</Link>
-            <Link href="/#reviews" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Reviews</Link>
+            <Link href="/offers" onClick={() => setMobileMenuOpen(false)} className="text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)]">Offers</Link>
 
             {/* Mobile New Patients Dropdown */}
             <div>

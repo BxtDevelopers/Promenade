@@ -86,7 +86,7 @@ export default function AboutHero() {
 
         <Reveal delay={140}>
           <p className="mt-[22px] lg:max-w-[60%] mx-auto text-story-body font-light leading-[1.6] text-ivory">
-            For 18 years, Chandler families have trusted Promenade Dental for calm, unhurried
+            For 23+ years, Chandler families have trusted Promenade Dental for calm, unhurried
             care &mdash; the kind where you&apos;re treated like a person, never rushed, and never
             sold something you don&apos;t need. That hasn&apos;t changed; it&apos;s simply in
             caring new hands.

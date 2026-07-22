@@ -14,7 +14,7 @@ import TeamSection from '@/app/components/about2/TeamSection'
 export const metadata: Metadata = {
   title: 'About Us | Promenade Dental — Chandler, AZ',
   description:
-    'For 18 years, Chandler families have trusted Promenade Dental for calm, unhurried care. Meet Dr. Shriya Sarin and founding dentist Dr. James Wei.',
+    'For 23+ years, Chandler families have trusted Promenade Dental for calm, unhurried care. Meet Dr. Shriya Sarin and founding dentist Dr. James Wei.',
 }
 
 export default function AboutPage() {

@@ -10,7 +10,7 @@ const marqueeItems = [
   "✦",
   "5,000+ Smiles",
   "✦",
-  "15 Years Strong",
+  "23+ Years Strong",
   "✦",
   "Invisalign Diamond",
   "✦",

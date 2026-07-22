@@ -104,7 +104,7 @@ export default function AboutSection() {
             <div className="absolute -bottom-6 right-4 md:-right-4 bg-white rounded-2xl shadow-2xl px-7 py-5 border border-gray-100">
               <div className="flex items-center gap-4">
                 <div className="relative w-14 h-14 rounded-full bg-[#1A365D] flex items-center justify-center text-white font-bold text-xl font-['Poppins']">
-                  15
+                  23+
                   {/* Pulse ring */}
                   <span className="absolute inset-0 rounded-full border-2 border-[#ffa07a] animate-ping opacity-70" />
                 </div>

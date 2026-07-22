@@ -22,7 +22,7 @@ export default function DoctorsSection() {
           <p
             className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted lg:max-w-[80%]"
           >
-            After 18 years looking after Chandler families, Dr. James Wei is handing Promenade Dental
+            After 23+ years looking after Chandler families, Dr. James Wei is handing Promenade Dental
             to Dr. Shriya Sarin — the same gentle, unhurried care and the same familiar office, now
             led by Dr. Shriya.
           </p>
@@ -85,7 +85,7 @@ export default function DoctorsSection() {
             <p
               className="text-[16px] font-light leading-[1.7] mt-[14px] text-muted max-w-[40ch]"
             >
-              Built Promenade Dental over 18 years with a conservative, do-only-what&apos;s-needed
+              Built Promenade Dental over 23+ years with a conservative, do-only-what&apos;s-needed
               approach — and is personally entrusting his patients to Dr. Shriya.
             </p>
           </article>

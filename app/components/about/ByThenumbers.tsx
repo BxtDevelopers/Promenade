@@ -3,7 +3,7 @@
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 
 const STATS = [
-  { value: '15+', label: 'Years serving Chandler families' },
+  { value: '23+', label: 'Years serving Chandler families' },
   { value: '8,000+', label: 'Patients cared for' },
   { value: '1,000+', label: 'Smile transformations' },
   { value: '4.9\u2605', label: 'Average patient rating' },

@@ -53,10 +53,10 @@ export default function TeamSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-[clamp(30px,4vw,64px)] items-stretch">
           {/* Intro video — portrait */}
           <Reveal delay={0.05}>
-            <div className="relative mx-auto w-full max-w-[380px] rounded-[24px] overflow-hidden  aspect-[3/4] shadow-[0_40px_80px_-40px_rgba(0,0,0,0.3)]">
+            <div className="relative mx-auto w-full max-w-[380px] rounded-[24px] overflow-hidden  w-[600px] h-[600px] ">
               <video
                 ref={videoRef}
-                src="/assets/dr-shriya-intro.mov"
+                src="/assets/dr-shriya-intro.mp4"
                 autoPlay
                 muted
                 loop
@@ -67,14 +67,14 @@ export default function TeamSection() {
               <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,rgba(0,0,0,0.15)_0%,transparent_30%,transparent_60%,rgba(0,0,0,0.55)_100%)]" />
 
               {/* Caption, bottom-left */}
-              <div className="absolute left-[20px] right-[20px] bottom-[20px]">
+              {/* <div className="absolute left-[20px] right-[20px] bottom-[20px]">
                 <span className="text-[10.5px] tracking-[0.26em] uppercase font-medium text-coral">
                   A message from
                 </span>
                 <p className="font-serif font-light text-white leading-[1.2] mt-[4px] text-[22px]">
                   Dr. Shriya Sarin
                 </p>
-              </div>
+              </div> */}
 
               {/* Controls, top-right */}
               <div className="absolute right-[14px] top-[14px] flex items-center gap-[8px]">

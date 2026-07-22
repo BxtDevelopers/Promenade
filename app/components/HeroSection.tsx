@@ -101,7 +101,7 @@ export default function HeroSection() {
           {/* Floating Dimensional Card */}
           <div className="absolute -bottom-6 -left-4 lg:-left-12 z-20 bg-white p-5 lg:p-6 rounded-3xl shadow-[0_20px_50px_rgba(26,54,93,0.12)] border border-white/50 flex items-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-14 h-14 rounded-2xl bg-[#FDE8D8] text-[#ffa07a] flex items-center justify-center shrink-0">
-               <span className="text-[#1A365D] font-black text-2xl font-['Poppins']">15</span>
+               <span className="text-[#1A365D] font-black text-2xl font-['Poppins']">23+</span>
             </div>
             <div className="flex flex-col">
               <span className="text-[#1A365D] font-bold font-['Poppins'] text-lg leading-none mb-1">Years of</span>
