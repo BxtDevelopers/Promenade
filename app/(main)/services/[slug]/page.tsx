@@ -26,6 +26,8 @@
 import Footer from "@/app/components/home3/Footer";
 import InsuranceSection from "@/app/components/home3/InsuranceSection";
 import Navbar from "@/app/components/home3/Navbar";
+import TeamSection from "@/app/components/home3/TeamSection";
+import TestimonialsMarquee from "@/app/components/home3/Testimonials";
 import LocalAreaSection from "@/app/components/services/subServices/LocalAreaSection";
 import MaintenanceGridSection from "@/app/components/services/subServices/MaintenanceGridSection";
 import RelatedServicesSection from "@/app/components/services/subServices/RelatedServicesSection";
@@ -237,12 +239,7 @@ export default async function ServicePage({ params }: Props) {
   {service.relatedServices && (
          <RelatedServicesSection data={service.relatedServices} />
        )}
-       {service.testimonialsSection && (
-   <ServiceTestimonials 
-  eyebrow={service.testimonialsSection.eyebrow}
-  heading={service.testimonialsSection.heading}
-  testimonials={service.testimonialsSection.testimonials}
-/> )}
+      <TestimonialsMarquee />
        {service.faq && (
          <ServiceFAQSection data={service.faq} />
        )}

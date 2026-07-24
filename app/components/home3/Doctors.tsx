@@ -22,9 +22,7 @@ export default function DoctorsSection() {
           <p
             className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted lg:max-w-[80%]"
           >
-            After 23+ years looking after Chandler families, Dr. James Wei is handing Promenade Dental
-            to Dr. Shriya Sarin — the same gentle, unhurried care and the same familiar office, now
-            led by Dr. Shriya.
+            After 23 years of caring for Chandler families, Dr. James Wei has transferred ownership of Promenade Dental to Dr. Shriya Sarin who will maintain the same comfortable and friendly environment you all are familiar with.
           </p>
         </div>
 
@@ -67,14 +65,14 @@ export default function DoctorsSection() {
               className="relative flex flex-col items-center justify-center gap-[10px] rounded-[200px_200px_22px_22px] mb-[22px] aspect-[1.12] bg-[linear-gradient(160deg,var(--panel),var(--bg-2))] border border-dashed border-[rgba(244,236,221,0.14)] overflow-hidden"
             >
               <Image 
-                src="/assets/dr-james.webp" 
+                src="/assets/dr-wei-james.jpeg" 
                 alt="Portrait of Dr. James Wei" 
                 fill
-                className="object-cover object-center"
+                className="object-cover object-top"
               />
             </div>
             <div className="text-[12px] tracking-[0.16em] uppercase font-medium text-coral">
-              Founding Dentist · since 2000
+              Founding Dentist • since 2003
             </div>
             <h3
               className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-white text-[clamp(26px,3.2vw,38px)]"
@@ -85,8 +83,7 @@ export default function DoctorsSection() {
             <p
               className="text-[16px] font-light leading-[1.7] mt-[14px] text-muted max-w-[40ch]"
             >
-              Built Promenade Dental over 23+ years with a conservative, do-only-what&apos;s-needed
-              approach — and is personally entrusting his patients to Dr. Shriya.
+              Built Promenade Dental for over 23 years with conservative, high-quality dental care and personalized attention — and is entrusting his patients to Dr. Shriya.
             </p>
           </article>
 

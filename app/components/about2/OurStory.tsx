@@ -14,12 +14,10 @@ export default function OurStory() {
             A neighborhood practice, <em className="italic font-normal text-coral">not a chain</em>.
           </h2>
           <p className="mt-[18px] text-body-lg font-light leading-[1.6] text-ivory">
-            At Promenade Dental, we believe dentistry is far more than teeth- it is about building confidence by creating beautiful smiles, and it is about enhancing wellness and comfort.
-          With a modern approach , we have upgraded the practice with a vision to redefine the dental experience through personalized, comprehensive care in a calm and elevated experience. Out of million options to go to, if you chose us we are there for you! We focus in providing best patient experience with no rush and taking time to truly understand each patient, becuase no two smiles- and no two lives - are the same.
-
+            At Promenade Dental, we believe dentistry is far more than teeth — it is about building confidence by creating beautiful smiles, and it is about enhancing wellness and comfort. With a modern approach, we have upgraded the practice with a vision to redefine the dental experience through personalized, comprehensive care in a calm and elevated environment. Among countless options available, if you choose us, we are there for you! We are committed to providing the best patient experience, taking time to truly understand each patient. After all, no two smiles &mdash; and no two lives &mdash; are the same.
           </p>
           <p className="mt-[14px] text-body-lg font-light leading-[1.6] text-ivory">
-            We believe exceptional care begins with listening. Whether patient is seeking preventative care, smile enhancement, restorative treatment or solutions for better sleep, every treatment is thoughtfully tailored to support long term health and confidence.
+          We believe exceptional care begins with listening. Whether you are seeking preventative care, smile enhancement, restorative treatment or solutions for better sleep, every treatment is thoughtfully tailored to support long-term health and confidence.
           </p>
         </Reveal>
 

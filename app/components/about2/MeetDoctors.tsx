@@ -51,7 +51,7 @@ export default function MeetDoctors() {
             </div>
 
             <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
-              Dr. Shriya <span className="italic text-coral">Sarin</span>, DMD
+              Shriya <span className="italic text-coral">Sarin</span>, DMD
             </h3>
 
             <p className="mt-3 text-[14px] font-medium uppercase tracking-[0.08em] text-coral">
@@ -110,12 +110,16 @@ export default function MeetDoctors() {
         <Reveal className="mt-[clamp(40px,5vw,72px)] grid grid-cols-1 items-center gap-[clamp(36px,5vw,80px)] lg:grid-cols-[1.18fr_0.82fr]">
           <div className="order-2 lg:order-1">
             <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
-  Family &amp; Cosmetic Dentist &middot; Founding, since 2008
+  Family &amp; Cosmetic Dentist &middot; Founder, since 2003
 </div>
 
 <h3 className="mt-4 font-serif text-[clamp(38px,5vw,64px)] font-light leading-[0.92] tracking-[-0.03em] text-white">
-  Dr. James M. <span className="italic text-coral">Wei</span>, DDS
+  James M. <span className="italic text-coral">Wei</span>, DDS
 </h3>
+
+<p className="mt-3 text-[14px] font-medium uppercase tracking-[0.08em] text-coral">
+              Doctor of Dental Surgery – University of California, Los Angeles (UCLA) School of Dentistry
+            </p>
 
 <div className="mt-6 grid gap-8 lg:grid-cols-2">
   <div>
@@ -125,9 +129,9 @@ export default function MeetDoctors() {
 
     <p className="text-[15px] font-light leading-[1.7] text-muted">
       Dr. Wei brings an artist&apos;s eye to dentistry. He studied both Biology
-      (with honors) and Design at UCLA before earning his D.D.S. from the UCLA
+      (with honors) and Design at UCLA before earning his D.D.S. degree from the UCLA
       School of Dentistry in 2000. Since moving to Chandler, he has built a
-      reputation for conservative, detail-oriented care that prioritizes
+      reputation for conservative, detail-oriented dental care that prioritizes
       natural-looking, long-lasting results.
     </p>
   </div>
@@ -168,7 +172,7 @@ export default function MeetDoctors() {
           <div className="order-1 relative aspect-[0.9] w-full lg:order-2">
             <div className="relative h-full w-full overflow-hidden rounded-arch-sm shadow-[0_50px_90px_-40px_rgba(0,0,0,.7)]">
               <Image
-                src="/assets/dr-james.webp"
+                src="/assets/dr-wei-james.jpeg"
                 alt="Dr. James M. Wei, DDS"
                 fill
                 className="object-cover"

@@ -123,7 +123,7 @@ export default function FAQSection() {
               <div className="w-full h-px bg-[#1A365D]/10 my-4" />
               <p className="text-[14px] text-[#1A365D]/70 font-['DM_Sans'] font-medium flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500" />
-                Mon–Fri 8am–7pm · Sat 9am–5pm
+                Tue–Thu 8am–7pm
               </p>
             </div>
           </div>

@@ -92,7 +92,7 @@ export default function InsuranceNoCoverageCta() {
         <Reveal className="mt-[30px]" delay={0.1}>
           <p className="mx-auto max-w-[60ch] text-sm font-light leading-relaxed text-muted md:text-[15px]">
             You don&rsquo;t need insurance to get gentle, honest dentistry. Start with our{' '}
-            <b className="font-medium text-white">$109 new-patient cleaning, exam &amp; X-rays</b>,
+            <b className="font-medium text-white">$125 new-patient cleaning, exam &amp; X-rays</b>,
             use your <b className="font-medium text-white">HSA / FSA</b> funds, or spread larger
             treatment over time.
           </p>

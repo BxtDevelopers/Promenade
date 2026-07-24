@@ -66,7 +66,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           className="font-serif font-light leading-[1.12] text-white mt-3"
           style={{ fontSize: '31px' }}
         >
-          $109{' '}
+          $125{' '}
           <em className="italic text-coral">new-patient special</em>
         </h3>
 

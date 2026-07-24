@@ -106,7 +106,7 @@ export default function AboutClosingCTA() {
           Promenade Dental &mdash; Fulton Ranch &middot; 4905 S. Alma School Road, Suite 1 &middot;
           Chandler, AZ 85248
           <br />
-          (480) 802-8188 &middot; Mon&ndash;Fri 8am&ndash;7pm &middot; Sat 9am&ndash;5pm
+          (480) 802-8188 &middot; Tue&mdash;Thu 8am&mdash;7pm
         </Reveal>
       </div>
     </section>

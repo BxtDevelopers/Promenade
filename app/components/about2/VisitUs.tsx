@@ -17,7 +17,7 @@ export default function VisitUs() {
         <div className="mt-9 grid grid-cols-1 items-center gap-[clamp(28px,4vw,52px)] lg:grid-cols-2">
           <Reveal>
             <p className="text-body-lg font-light leading-[1.6] text-ivory-2">
-              Conveniently located near Fulton Ranch and Ocotillo, we care for families throughout
+              Conveniently located in Fulton Ranch and Ocotillo, we care for families throughout
               South Chandler and Sun Lakes &mdash; and we are easy to reach from Intel and
               Chandler Fashion Center.
             </p>
@@ -33,7 +33,7 @@ export default function VisitUs() {
                 (480) 802-8188
               </Link>
               <br />
-              Mon&ndash;Fri 8am&ndash;7pm &middot; Sat 9am&ndash;5pm
+              Tue&mdash;Thu 8am&mdash;7pm
             </div>
 
             <p className="mt-3 text-[13.5px] text-muted">

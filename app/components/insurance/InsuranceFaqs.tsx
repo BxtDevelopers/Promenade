@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: "What if I don't have dental insurance?",
-    a: "You're still very welcome. New patients can start with our $109 cleaning, exam & X-rays, and we accept HSA and FSA funds. For larger treatment, we offer payment plans so cost never has to delay your care.",
+    a: "You're still very welcome. New patients can start with our $125 cleaning, exam & X-rays, and we accept HSA and FSA funds. For larger treatment, we offer payment plans so cost never has to delay your care.",
   },
   {
     q: 'How often does my plan cover cleanings?',

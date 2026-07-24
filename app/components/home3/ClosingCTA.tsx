@@ -98,7 +98,7 @@ export default function ClosingCTA() {
           <br />
           Promenade Dental — Fulton Ranch · 4905 S. Alma School Road, Suite 1 · Chandler, AZ 85248
           <br />
-          (480) 802-8188 · Mon–Fri 8am–7pm · Sat 9am–5pm
+          (480) 802-8188 · Tue–Thu 8am–7pm
         </div>
       </div>
       
