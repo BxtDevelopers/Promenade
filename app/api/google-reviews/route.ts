@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 
-const REVALIDATE_TIME = 60 * 60 * 24 * 4; // 4 days
-
-export const revalidate = REVALIDATE_TIME;
+export const revalidate = 345600; // 4 days
 
 export async function GET() {
   try {
@@ -13,9 +11,6 @@ export async function GET() {
           "X-Goog-Api-Key": process.env.GOOGLE_MAPS_API_KEY!,
           "X-Goog-FieldMask":
             "displayName,rating,userRatingCount,reviews",
-        },
-        next: {
-          revalidate: REVALIDATE_TIME,
         },
       }
     );
