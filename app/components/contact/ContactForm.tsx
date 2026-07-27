@@ -8,9 +8,11 @@ export default function ContactForm() {
   const [leadRef, leadIn] = useScrollReveal();
   const [formRef, formIn] = useScrollReveal();
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true); // Set submitting to true when request starts
     
     // Extract data from the native form element
     const formData = new FormData(e.currentTarget);
@@ -30,8 +32,11 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false); // Reset submitting state regardless of success/fail
     }
   };
+
   return (
     <section id="contact" className="py-section bg-bg-2">
       <div className="px-site max-w-[1240px] mx-auto">
@@ -127,9 +132,10 @@ export default function ContactForm() {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep w-full sm:w-auto"
+                  disabled={isSubmitting} // Disables button while sending
+                  className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Submit &rarr;
+                  {isSubmitting ? 'Submitting...' : 'Submit \u2192'} 
                 </button>
               </form>
             )}

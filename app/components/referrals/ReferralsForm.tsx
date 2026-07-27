@@ -5,9 +5,11 @@ import Reveal from '../common/Reveal'
 
 export default function ReferralsForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false) // Added submitting state
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setIsSubmitting(true); // Set submitting to true when request starts
     
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
@@ -24,6 +26,8 @@ export default function ReferralsForm() {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false); // Reset submitting state regardless of success/fail
     }
   }
 
@@ -91,9 +95,10 @@ export default function ReferralsForm() {
 
               <button
                 type="submit"
-                className="mt-1 w-full justify-center rounded-full border-none bg-coral px-[30px] py-[17px] text-center font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:bg-ivory"
+                disabled={isSubmitting} // Disables button while sending
+                className="mt-1 w-full justify-center rounded-full border-none bg-coral px-[30px] py-[17px] text-center font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:bg-ivory disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Send referral
+                {isSubmitting ? 'Sending...' : 'Send referral'}
               </button>
 
               <p className="mt-3 text-[12px] font-light text-white">

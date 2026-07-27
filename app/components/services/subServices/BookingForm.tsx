@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function BookingForm({ service }: { service: string }) {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
   const [fields, setFields] = useState({
     name: '',
     phone: '',
@@ -15,8 +16,11 @@ export default function BookingForm({ service }: { service: string }) {
     setFields((f) => ({ ...f, [k]: e.target.value }));
 
   const handleSubmit = async () => {
+    // Validate required fields before attempting to submit
     if (!fields.name || !fields.phone || !fields.email) return;
     
+    setIsSubmitting(true); // Set submitting to true when request starts
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
@@ -29,6 +33,8 @@ export default function BookingForm({ service }: { service: string }) {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false); // Reset submitting state regardless of success/fail
     }
   };
 
@@ -131,9 +137,10 @@ export default function BookingForm({ service }: { service: string }) {
         {/* Submit */}
         <button
           onClick={handleSubmit}
-          className="w-full mt-1 py-[15px] rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none cursor-pointer transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-0.5 shadow-btn"
+          disabled={isSubmitting} // Disables button while sending
+          className="w-full mt-1 py-[15px] rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none cursor-pointer transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-0.5 shadow-btn disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-coral disabled:hover:translate-y-0"
         >
-          Request Appointment →
+          {isSubmitting ? 'Requesting...' : 'Request Appointment →'}
         </button>
 
         <p className="text-center text-sm text-ivory/60 font-light -mt-1">
