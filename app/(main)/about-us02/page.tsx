@@ -27,7 +27,7 @@ export default function AboutPage() {
       <TeamSection/>
       <WhyChooseUs />
       <VisitUs />
-      <AboutClosingCTA />
+      {/* <AboutClosingCTA /> */}
       <Footer/>
     </main>
   )
