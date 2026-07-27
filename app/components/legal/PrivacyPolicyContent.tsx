@@ -11,14 +11,14 @@ type Section = {
   body: ReactNode
 }
 
-function Callout({ children }: { children: ReactNode }) {
-  return (
-    <div className="mt-6 rounded-2xl border border-coral/30 bg-coral/5 px-5 py-4 text-[13px] leading-[1.7] text-ivory/80">
-      <span className="font-semibold text-coral">Before this goes live: </span>
-      {children}
-    </div>
-  )
-}
+// function Callout({ children }: { children: ReactNode }) {
+//   return (
+//     <div className="mt-6 rounded-2xl border border-coral/30 bg-coral/5 px-5 py-4 text-[13px] leading-[1.7] text-ivory/80">
+//       <span className="font-semibold text-coral">Before this goes live: </span>
+//       {children}
+//     </div>
+//   )
+// }
 
 function P({ children }: { children: ReactNode }) {
   return <p className="mt-4 text-[18px] leading-[1.75] text-ivory/80">{children}</p>
@@ -141,6 +141,9 @@ const sections: Section[] = [
           person.
         </P>
         <P>
+          <strong className="font-medium text-ivory">Mobile Opt-In Consent:</strong> No mobile opt-in message consent will be shared with third parties or affiliates for marketing purposes.
+        </P>
+        <P>
           Our site may use cookies or similar technologies for basic functionality and analytics.
           You can control cookies through your browser settings. This website is not directed at
           children under 13, and we do not knowingly collect information from children through the
@@ -205,11 +208,11 @@ const sections: Section[] = [
             <>Attn: Privacy Officer</>,
           ]}
         />
-        <Callout>
+        {/* <Callout>
           confirm the name/direct email of the designated Privacy Officer, and add the current
           U.S. Department of Health and Human Services, Office for Civil Rights complaint link,
           before publishing.
-        </Callout>
+        </Callout> */}
       </>
     ),
   },
@@ -272,11 +275,11 @@ export default function PrivacyPolicyContent() {
             ))}
           </div>
 
-          <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ivory/50">
+          {/* <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ivory/50">
             This page is provided for general informational purposes and does not constitute
             legal advice. Please have this content reviewed by qualified legal counsel before
             publishing.
-          </p>
+          </p> */}
         </div>
       </section>
     </>
