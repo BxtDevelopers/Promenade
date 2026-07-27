@@ -24,7 +24,7 @@ const DETAILS = [
   //\u00b7 Fri\u2013Mon Closed
   {
     label: 'Office Hours',
-    value: 'Tue\u2013Thur 8am\u20137pm',
+    value: 'Mon 8am\u20131pm (appointment only) \u00b7 Tue\u2013Thu 8am\u20137pm',
     href: undefined,
     icon: 'M12 8v4l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z',
   },

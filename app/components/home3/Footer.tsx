@@ -103,7 +103,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="text-[13px] font-light text-[color:var(--muted-2)]">
-                Tue–Thur: 8am–7pm
+               Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
               </li>
             </ul>
           </div>

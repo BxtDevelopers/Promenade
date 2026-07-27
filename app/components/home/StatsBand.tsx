@@ -13,7 +13,7 @@ interface Stat {
 const stats: Stat[] = [
   { to: 23,  suffix: '+',  label: 'Years in Chandler' },
   { to: 4.9, dec: 1,       label: '★ Average rating' },
-  { to: 150, suffix: '+',  label: 'Google reviews' },
+  { to: 138, suffix: '+',  label: 'Google reviews' },
   { text: 'PPO',           label: 'Most plans accepted' },
 ]
 

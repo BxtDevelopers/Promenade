@@ -54,9 +54,7 @@ export default function LocationMap() {
               <div className="h-px bg-line my-6" />
 
               <p className="text-muted text-[14.5px] font-light leading-[1.8]">
-                Tue&ndash;Thur: 8am&ndash;7pm
-                <br />
-                Fri&ndash;Mon: Closed
+                Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
               </p>
 
               <div className="h-px bg-line my-6" />

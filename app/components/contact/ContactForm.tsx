@@ -9,11 +9,29 @@ export default function ContactForm() {
   const [formRef, formIn] = useScrollReveal();
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-  };
+    
+    // Extract data from the native form element
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
 
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'contact', ...data }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error("Submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
   return (
     <section id="contact" className="py-section bg-bg-2">
       <div className="px-site max-w-[1240px] mx-auto">
@@ -28,7 +46,7 @@ export default function ContactForm() {
             ].join(' ')}
           >
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
-              Send a Message
+              Contact Us 
             </span>
             <h2 className="font-serif font-light text-3xl
               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-white max-w-[16ch]">
@@ -74,12 +92,11 @@ export default function ContactForm() {
           >
             {submitted ? (
               <div className="flex flex-col items-center justify-center text-center py-16">
-                <h3 className="font-serif font-normal text-2xl text-ivory mb-3">
+                <h3 className="font-serif font-normal text-2xl text-white mb-3">
                   Message sent.
                 </h3>
-                <p className="text-muted text-[14.5px] font-light leading-[1.7] max-w-[36ch]">
-                  Thanks for reaching out — our team will get back to you
-                  within one business day.
+                <p className="text-muted text-lg font-light leading-[1.7] max-w-[36ch]">
+                  Thanks for reaching out — our team will get back to you.
                 </p>
               </div>
             ) : (
@@ -112,7 +129,7 @@ export default function ContactForm() {
                   type="submit"
                   className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep w-full sm:w-auto"
                 >
-                  Send Message &rarr;
+                  Submit &rarr;
                 </button>
               </form>
             )}

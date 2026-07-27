@@ -101,13 +101,13 @@ export default function AboutClosingCTA() {
         </Reveal>
 
         <Reveal className="mt-12 text-[14px] font-light leading-[1.9] text-muted">
-          <b className="font-medium text-white">Most major PPO plans accepted &middot; New patients welcome</b>
-          <br />
-          Promenade Dental &mdash; Fulton Ranch &middot; 4905 S. Alma School Road, Suite 1 &middot;
-          Chandler, AZ 85248
-          <br />
-          (480) 802-8188 &middot; Tue&mdash;Thu 8am&mdash;7pm
-        </Reveal>
+            <b className="font-medium text-white">Most major PPO plans accepted &middot; New patients welcome</b>
+            <br />
+            Promenade Dental &mdash; Fulton Ranch &middot; 4905 S. Alma School Road, Suite 1 &middot;
+            Chandler, AZ 85248
+            <br />
+            (480) 802-8188 &middot; Mon 8am&mdash;1pm (by appointment only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
+          </Reveal>
       </div>
     </section>
   )

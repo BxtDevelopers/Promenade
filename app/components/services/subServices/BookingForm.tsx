@@ -14,9 +14,22 @@ export default function BookingForm({ service }: { service: string }) {
   const set = (k: keyof typeof fields) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
     setFields((f) => ({ ...f, [k]: e.target.value }));
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!fields.name || !fields.phone || !fields.email) return;
-    setSubmitted(true);
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'booking', ...fields }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   const inputClass =
@@ -33,7 +46,7 @@ export default function BookingForm({ service }: { service: string }) {
         <span className="w-12 h-12 rounded-full border border-coral/40 flex items-center justify-center text-coral text-xl">✓</span>
         <p className="font-serif font-light text-ivory text-2xl">We'll be in touch</p>
         <p className="text-muted text-[14px] font-light leading-relaxed max-w-[30ch]">
-          Thanks, {fields.name.split(' ')[0]}. A member of our team will reach out within one business day to confirm your visit.
+          Thanks, {fields.name.split(' ')[0]}. A member of our team will reach out to confirm your visit.
         </p>
       </div>
     );
@@ -86,14 +99,20 @@ export default function BookingForm({ service }: { service: string }) {
         </div>
 
         {/* Preferred date */}
-        <div>
+       <div>
           <label className={labelClass}>Preferred date</label>
           <input
             type="date"
-            className={inputClass}
+            className={`${inputClass} cursor-pointer [&::-webkit-calendar-picker-indicator]:cursor-pointer`}
             value={fields.date}
             onChange={set('date')}
-            style={{ colorScheme: 'dark' }}
+            onClick={(e) => {
+              if ('showPicker' in HTMLInputElement.prototype) {
+                e.currentTarget.showPicker();
+              }
+            }}
+            // This disables all past dates
+            min={new Date().toISOString().split('T')[0]} 
           />
         </div>
 

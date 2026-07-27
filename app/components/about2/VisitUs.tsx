@@ -33,7 +33,7 @@ export default function VisitUs() {
                 (480) 802-8188
               </Link>
               <br />
-              Tue&mdash;Thu 8am&mdash;7pm
+              Mon 8am&mdash;1pm (by appointment only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
             </div>
 
             <p className="mt-3 text-[13.5px] text-muted">
