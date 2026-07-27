@@ -17,8 +17,8 @@ const DETAILS = [
   },
   {
     label: 'Email Us',
-    value: 'hello@promenadedental.com',
-    href: 'mailto:hello@promenadedental.com',
+    value: 'info@promenadedds.com',
+    href: 'mailto:info@promenadedds.com',
     icon: 'M3 6h18v12H3V6zm0 0 9 7 9-7',
   },
   //\u00b7 Fri\u2013Mon Closed

@@ -76,7 +76,7 @@ export default function ContactSection() {
             <div className="space-y-4">
               {[
                 { icon: Phone, label: "Call Us Today", value: "(555) 123-4567", href: "tel:+15551234567" },
-                { icon: Mail, label: "Send an Email", value: "hello@promenadedental.ca", href: "mailto:hello@promenadedental.ca" },
+                { icon: Mail, label: "Send an Email", value: "info@promenadedds.com", href: "mailto:info@promenadedds.com" },
               ].map((item) => (
                 <a
                   key={item.label}

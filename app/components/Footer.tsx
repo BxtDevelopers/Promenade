@@ -91,9 +91,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@promenadedental.ca" className="flex items-center gap-3 text-white/70 hover:text-[#ffa07a] transition-colors group">
+                <a href="mailto:info@promenadedds.com" className="flex items-center gap-3 text-white/70 hover:text-[#ffa07a] transition-colors group">
                   <Mail className="w-5 h-5 shrink-0 text-white/40 group-hover:text-[#ffa07a] transition-colors" />
-                  <span className="font-['DM_Sans'] text-[15px]">hello@promenade.ca</span>
+                  <span className="font-['DM_Sans'] text-[15px]">info@promenadedds.com</span>
                 </a>
               </li>
             </ul>

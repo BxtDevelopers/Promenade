@@ -94,6 +94,14 @@ export default function Footer() {
                   (480) 802-8188
                 </Link>
               </li>
+              <li>
+                <Link 
+                  href="mailto:info@promenadedds.com" 
+                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                >
+                  info@promenadedds.com
+                </Link>
+              </li>
               <li className="text-[13px] font-light text-[color:var(--muted-2)]">
                 Tue–Thur: 8am–7pm
               </li>
