@@ -229,7 +229,7 @@ export default function Hero() {
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
-          src="/assets/hero-bg.mp4"
+          src="/assets/hero-bg-compressed.mp4"
           autoPlay={!reduceMotion}
           muted
           loop
