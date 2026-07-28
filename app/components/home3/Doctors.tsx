@@ -30,18 +30,25 @@ export default function DoctorsSection() {
         <figure
           className="rv relative rounded-[20px] overflow-hidden my-[clamp(34px,4vw,52px)] shadow-[0_50px_90px_-50px_rgba(0,0,0,0.7)]"
         >
-          <div
-            className="w-full relative flex items-center justify-center bg-panel h-[clamp(280px,42vw,520px)]"
-          >
-            <Image 
-              src="/assets/pd-office.jpeg" 
-              alt="Promenade Dental exterior" 
+          {/* The subject of this photo — Dr. Wei and Dr. Shriya — sits low in
+              the frame. A fixed 520px height cropped their legs, and the
+              caption's gradient darkened what was left, so the handshake this
+              section is about was effectively invisible. Using the image's own
+              aspect ratio shows it whole, and the caption now sits below
+              rather than over it. */}
+          <div className="relative w-full aspect-[1500/844] bg-panel">
+            <Image
+              src="/assets/pd-office.jpeg"
+              alt="Dr. James Wei and Dr. Shriya Sarin outside Promenade Dental in Chandler"
               fill
+              // Without sizes, next/image assumes 100vw and requested w=3840
+              // for a 1500px-wide source.
+              sizes="(max-width: 1024px) 100vw, 1125px"
               className="object-cover object-center"
             />
           </div>
           <figcaption
-            className="absolute left-0 right-0 bottom-0 flex flex-col gap-[7px] p-[64px_30px_26px] bg-[linear-gradient(transparent,rgba(11,28,44,0.88))]"
+            className="flex flex-col gap-[7px] bg-panel p-[22px_30px_26px]"
           >
             <span
               className="font-serif font-light leading-[1.12] text-white text-[clamp(20px,2.4vw,30px)]"
