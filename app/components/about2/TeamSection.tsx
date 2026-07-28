@@ -64,7 +64,7 @@ export default function TeamSection() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
-              <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,rgba(0,0,0,0.15)_0%,transparent_30%,transparent_60%,rgba(0,0,0,0.55)_100%)]" />
+              <div className="absolute inset-0 pointer-events-none rounded-[24px] bg-[linear-gradient(180deg,rgba(0,0,0,0.15)_0%,transparent_30%,transparent_60%,rgba(0,0,0,0.55)_100%)]" />
 
               {/* Caption, bottom-left */}
               {/* <div className="absolute left-[20px] right-[20px] bottom-[20px]">
