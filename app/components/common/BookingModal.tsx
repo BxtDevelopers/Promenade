@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+
 export interface BookingModalProps {
   open: boolean;
   onClose: () => void;
@@ -76,13 +77,34 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
       setForm((f) => ({ ...f, [key]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.reason) return;
 
     setStatus('submitting');
-    // TODO: replace with real submit
-    setTimeout(() => setStatus('done'), 900);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        // We map form.reason to 'service' to match your backend API expectation
+        body: JSON.stringify({ 
+          formType: 'booking', 
+          ...form, 
+          service: form.reason 
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('done');
+      } else {
+        console.error("Submission failed");
+        setStatus('form'); // Revert so user can try again
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus('form'); // Revert so user can try again
+    }
   };
 
   return (
@@ -179,7 +201,6 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                   <Field label="Reason for visit">
-                    {/* Assuming CustomReasonDropdown is imported above */}
                     <CustomReasonDropdown
                       value={form.reason}
                       onChange={(val) => setForm((f) => ({ ...f, reason: val }))}
@@ -192,7 +213,6 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                         value={form.date}
                         onChange={update('date')}
                         onClick={(e) => {
-                          // This forces the native calendar dropdown to open on click
                           if (typeof e.currentTarget.showPicker === 'function') {
                             e.currentTarget.showPicker();
                           }
@@ -268,7 +288,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
               </h2>
               <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-[42ch] mb-6 md:mb-8">
                 Thanks{form.name ? `, ${form.name.split(' ')[0]}` : ''} — our team will reach out
-                within one business day to confirm your visit. For anything urgent, call us directly.
+                 to confirm your visit. For anything urgent, call us directly.
               </p>
               <a
                 href="tel:+14808028188"
