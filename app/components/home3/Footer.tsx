@@ -102,9 +102,11 @@ export default function Footer() {
                   info@promenadedds.com
                 </Link>
               </li>
-              <li className="text-[13px] font-light text-[color:var(--muted-2)]">
-               Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
-              </li>
+              <li className="text-[13px] font-light text-[color:var(--muted-2)] leading-[1.7]">
+              <div>Mon : 8am&ndash;1pm (by appt only)</div>
+              <div>Tue&ndash;Thu : 8am&ndash;7pm</div>
+              <div>Fri&ndash;Sun : Closed</div>
+            </li>
             </ul>
           </div>
         </div>
