@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "What isn't covered?",
-    a: "The guarantee covers our workmanship under normal use. It generally doesn't cover damage from accidents or trauma, neglect, grinding without a recommended night guard, or conditions outside our control. We'll always explain what applies to your specific treatment up front.",
+    a: "The guarantee applies to treatment performed on or after August 1, 2026 — work completed before that date isn't covered. Beyond that, it covers our workmanship under normal use, and generally doesn't cover damage from accidents or trauma, neglect, grinding without a recommended night guard, or conditions outside our control. We'll always explain what applies to your specific treatment up front.",
   },
   {
     q: 'Does it really cost me nothing?',

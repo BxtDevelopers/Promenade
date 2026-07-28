@@ -113,12 +113,16 @@ export default function CoverageGrid() {
             id="warranty-terms"
             className="mt-[28px] max-w-[78ch] text-[12.5px] font-light leading-[1.6] text-muted"
           >
-            <span aria-hidden="true">*</span> Applies to our workmanship on covered
-            treatment that fails under normal use, within the period shown, while your
-            routine six-month cleanings and exams are current. It does not cover damage
-            from accidents or trauma, neglect, grinding without a recommended night
-            guard, or conditions outside our control. We confirm the exact terms for
-            your treatment before we begin.
+            <span aria-hidden="true">*</span>{' '}
+            <strong className="font-medium text-cream">
+              The guarantee applies to treatment performed on or after August 1, 2026.
+            </strong>{' '}
+            Work completed before that date is not covered. Within that scope, it applies
+            to our workmanship on covered treatment that fails under normal use, within
+            the period shown, while your routine six-month cleanings and exams are
+            current. It does not cover damage from accidents or trauma, neglect, grinding
+            without a recommended night guard, or conditions outside our control. We
+            confirm the exact terms for your treatment before we begin.
           </p>
         </Reveal>
 
