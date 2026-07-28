@@ -82,8 +82,10 @@ export default function AboutPage() {
       <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
       <AboutHero />
       <OurStory />
-      <MeetDoctors />
+      {/* The intro video leads the doctor detail — it was previously buried
+          below the (very long) MeetDoctors block, ~11,900px down the page. */}
       <TeamSection/>
+      <MeetDoctors />
       <WhyChooseUs />
       <VisitUs />
       <AboutClosingCTA />
