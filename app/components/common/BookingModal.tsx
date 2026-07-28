@@ -269,7 +269,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     disabled={status === 'submitting'}
                     className={[
                       'w-full sm:w-auto inline-flex items-center justify-center gap-2',
-                      'rounded-xl bg-coral text-white font-medium text-base sm:text-[15px]',
+                      'rounded-xl bg-coral text-ink font-medium text-base sm:text-[15px]',
                       'px-8 py-3.5 sm:py-3 shadow-lg shadow-coral/20',
                       'transition-all duration-300 ease-out',
                       'hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/30 active:translate-y-0 disabled:opacity-70 disabled:translate-y-0',
@@ -346,7 +346,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-coral/40 via-neutral-900/20 to-neutral-900/90 pointer-events-none" />
 
-          <div className="absolute top-7 -right-12 rotate-[38deg] bg-coral text-white text-[10px] font-bold tracking-widest uppercase px-14 py-2 shadow-lg z-10">
+          <div className="absolute top-7 -right-12 rotate-[38deg] bg-coral text-ink text-[10px] font-bold tracking-widest uppercase px-14 py-2 shadow-lg z-10">
             Same-day appts
           </div>
 

@@ -88,20 +88,20 @@ export default function ReferralsCta() {
         <Reveal className="mt-[42px] flex flex-wrap items-center justify-center gap-[18px]" delay={0.1}>
           <a
             href="#refer"
-            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ivory"
+            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ink"
           >
             Refer a friend
           </a>
           <a
             href="tel:+14808028188"
-            className="whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-white transition hover:border-ivory"
+            className="whitespace-nowrap rounded-full border border-line px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-white transition hover:border-ink"
           >
             Call (480) 802-8188
           </a>
         </Reveal>
 
         {/* <Reveal
-          className="mx-auto mt-[48px] max-w-[760px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-left text-[13px] font-light leading-[1.55] text-ivory-2"
+          className="mx-auto mt-[48px] max-w-[760px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-left text-[13px] font-light leading-[1.55] text-cream"
           delay={0.15}
         >
           <b className="font-semibold text-coral">To confirm before launch:</b> the $50 / $50

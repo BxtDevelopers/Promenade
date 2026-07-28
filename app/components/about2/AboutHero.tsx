@@ -77,7 +77,7 @@ export default function AboutHero() {
         </Reveal>
 
         <Reveal delay={80}>
-          <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[0.025em] text-ivory">
+          <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[0.025em] text-ink">
             Gentle dentistry,
             <br />
             <em className="italic font-normal text-coral">built on trust.</em>
@@ -85,7 +85,7 @@ export default function AboutHero() {
         </Reveal>
 
         <Reveal delay={140}>
-          <p className="mt-[22px] lg:max-w-[60%] mx-auto text-story-body font-light leading-[1.6] text-ivory">
+          <p className="mt-[22px] lg:max-w-[60%] mx-auto text-story-body font-light leading-[1.6] text-ink">
             For 23 years, Chandler families have trusted Promenade Dental for gentle and unhurried care &mdash; the kind that ensures you receive the highest quality dental care and personalized attention.
           </p>
         </Reveal>
@@ -93,13 +93,13 @@ export default function AboutHero() {
         <Reveal delay={200} className="mt-[30px] flex flex-wrap items-center justify-center gap-[14px]">
           <button
             onClick={openBookingModal}
-            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-ivory"
+            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink"
           >
             Book a visit
           </button>
           <Link
             href="tel:+14808028188"
-            className="rounded-full border border-coral/60 px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
+            className="rounded-full border border-coral/60 px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ink transition-all duration-300 hover:border-ink"
           >
             Call (480) 802-8188
           </Link>

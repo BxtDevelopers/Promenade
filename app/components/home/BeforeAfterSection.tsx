@@ -51,7 +51,7 @@ export default function BeforeAfterSection() {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
               Smile Gallery
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+            <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               Real results from{' '}
               <em className="not-italic text-coral">real patients</em>.
             </h2>
@@ -151,13 +151,13 @@ function BeforeAfterCard({
         />
 
         {/* Labels */}
-        <span className="absolute top-3 left-3 text-[10.5px] tracking-[0.12em] uppercase text-ivory/60 bg-bg/50 backdrop-blur-sm px-2 py-1 rounded-full pointer-events-none z-10">Before</span>
-        <span className="absolute top-3 right-3 text-[10.5px] tracking-[0.12em] uppercase text-ivory/60 bg-bg/50 backdrop-blur-sm px-2 py-1 rounded-full pointer-events-none z-10">After</span>
+        <span className="absolute top-3 left-3 text-[10.5px] tracking-[0.12em] uppercase text-ink/60 bg-bg/50 backdrop-blur-sm px-2 py-1 rounded-full pointer-events-none z-10">Before</span>
+        <span className="absolute top-3 right-3 text-[10.5px] tracking-[0.12em] uppercase text-ink/60 bg-bg/50 backdrop-blur-sm px-2 py-1 rounded-full pointer-events-none z-10">After</span>
       </div>
 
       {/* Caption */}
       <div className="mt-4 px-1">
-        <p className="font-serif text-[17px] text-ivory">{cas.label}</p>
+        <p className="font-serif text-[17px] text-ink">{cas.label}</p>
         <p className="text-muted text-[13px] font-light mt-0.5">{cas.note}</p>
       </div>
     </div>

@@ -49,7 +49,7 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
             <span className="h-[1px] w-6 bg-coral block" aria-hidden="true" />
           </div>
 
-          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-ivory mb-8">
+          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.15] tracking-[-0.02em] text-ink mb-8">
             {data.heading}
           </h2>
 
@@ -81,7 +81,7 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4h.002m0 0v-.001" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-coral transition-colors">
+              <h3 className="font-serif text-2xl text-ink mb-4 group-hover:text-coral transition-colors">
                 {data.adultTooth.title}
               </h3>
               <p className="text-muted text-[15px] font-light leading-[1.7]">
@@ -101,7 +101,7 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-ivory mb-4 group-hover:text-coral transition-colors">
+              <h3 className="font-serif text-2xl text-ink mb-4 group-hover:text-coral transition-colors">
                 {data.babyTooth.title}
               </h3>
               <p className="text-muted text-[15px] font-light leading-[1.7]">
@@ -115,7 +115,7 @@ export default function ComparisonSection({ data }: { data: ComparisonData }) {
         <div className="mt-14 text-center">
           <a 
             href={data.cta.href}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-coral hover:bg-amber-500 text-white font-medium text-[15px] rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-coral hover:bg-amber-500 text-ink font-medium text-[15px] rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] hover:scale-105"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

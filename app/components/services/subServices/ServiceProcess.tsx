@@ -128,7 +128,7 @@ function ProcessStep({
       <div 
         className={[
           'flex-1 rounded-[22px] p-7 md:p-9',
-          'border border-coral bg-ivory',
+          'border border-coral bg-ink',
           'transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
           'hover:-translate-y-1 hover:border-coral/40 hover:bg-coral/5 hover:shadow-[0_16px_32px_-16px_rgba(0,0,0,0.5)]',
           'coral-underline'

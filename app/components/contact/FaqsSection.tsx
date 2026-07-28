@@ -47,7 +47,7 @@ export default function FAQSection() {
             Good to Know
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Questions, <em className="not-italic text-coral">answered</em>.
           </h2>
         </div>
@@ -62,7 +62,7 @@ export default function FAQSection() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-6 py-6 text-left group"
                 >
-                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ivory group-hover:text-coral transition-colors">
+                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover:text-coral transition-colors">
                     {item.q}
                   </span>
                   <span
@@ -80,7 +80,7 @@ export default function FAQSection() {
                   className="overflow-hidden transition-all duration-400 ease-out"
                   style={{ maxHeight: isOpen ? '240px' : '0px' }}
                 >
-                  <p className="text-ivory text-[14.5px] font-light leading-[1.7] pb-6 max-w-[60ch]">
+                  <p className="text-ink text-[14.5px] font-light leading-[1.7] pb-6 max-w-[60ch]">
                     {item.a}
                   </p>
                 </div>

@@ -10,13 +10,13 @@ export default function OurStory() {
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Our story
           </span>
-          <h2 className="mt-[14px] font-serif text-[clamp(28px,3.6vw,46px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(28px,3.6vw,46px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
             A neighborhood practice, <em className="italic font-normal text-coral">not a chain</em>.
           </h2>
-          <p className="mt-[18px] text-body-lg font-light leading-[1.6] text-ivory">
+          <p className="mt-[18px] text-body-lg font-light leading-[1.6] text-ink">
             At Promenade Dental, we believe dentistry is far more than teeth — it is about building confidence by creating beautiful smiles, and it is about enhancing wellness and comfort. With a modern approach, we have upgraded the practice with a vision to redefine the dental experience through personalized, comprehensive care in a calm and elevated environment. Among countless options available, if you choose us, we are there for you! We are committed to providing the best patient experience, taking time to truly understand each patient. After all, no two smiles &mdash; and no two lives &mdash; are the same.
           </p>
-          <p className="mt-[14px] text-body-lg font-light leading-[1.6] text-ivory">
+          <p className="mt-[14px] text-body-lg font-light leading-[1.6] text-ink">
           We believe exceptional care begins with listening. Whether you are seeking preventative care, smile enhancement, restorative treatment or solutions for better sleep, every treatment is thoughtfully tailored to support long-term health and confidence.
           </p>
         </Reveal>

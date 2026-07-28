@@ -50,7 +50,7 @@ export default function MaintenanceGridSection({ data }: { data: MaintenanceGrid
               </div>
             )}
             
-            <h2 className="font-serif font-light text-3xl lg:text-7xl md:text-[clamp(40px,4vw,56px)] leading-[1.08] tracking-[-0.02em] text-ivory mb-6 ]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl md:text-[clamp(40px,4vw,56px)] leading-[1.08] tracking-[-0.02em] text-ink mb-6 ]">
               {data.heading}
             </h2>
             
@@ -105,7 +105,7 @@ function MaintenanceCard({
         'rounded-[24px]',
         'p-8 md:p-9',
         'min-h-[300px]',
-        'bg-ivory',
+        'bg-ink',
         'border border-coral',
         'overflow-hidden',
         'transition-all duration-500',

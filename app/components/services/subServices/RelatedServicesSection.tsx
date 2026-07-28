@@ -37,12 +37,12 @@ export default function RelatedServicesSection({ data }: { data: RelatedServices
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory max-w-[22ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink max-w-[22ch]">
               {data.heading}
             </h2>
           </div>
           <div className="flex-1 lg:max-w-[500px]">
-            <p className="text-ivory/80 text-body-lg md:text-[16px] font-light leading-[1.7]">
+            <p className="text-ink/80 text-body-lg md:text-[16px] font-light leading-[1.7]">
               {data.intro}
             </p>
           </div>

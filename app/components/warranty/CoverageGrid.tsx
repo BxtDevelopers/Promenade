@@ -71,7 +71,7 @@ export default function CoverageGrid() {
             <Reveal
               key={title}
               delay={i * 50}
-              className="rounded-[20px] border border-line bg-gradient-to-b from-ivory/[0.02] to-transparent p-7"
+              className="rounded-[20px] border border-line bg-gradient-to-b from-ink/[0.02] to-transparent p-7"
             >
               <div className="mb-4 flex h-[38px] w-[38px] items-center justify-center rounded-full border border-coral/50">
                 <Icon className="h-[18px] w-[18px] text-coral" strokeWidth={1.8} />
@@ -81,19 +81,19 @@ export default function CoverageGrid() {
                 {period}
               </div>
               <dl>
-                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-ivory-2">
+                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   If it fails
                 </dt>
                 <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">
                   {fails}
                 </dd>
-                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-ivory-2">
+                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   Our promise
                 </dt>
                 <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">
                   {promise}
                 </dd>
-                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-ivory-2">
+                <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   Your part
                 </dt>
                 <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">

@@ -58,7 +58,7 @@ export default function ScrollToTop({ threshold = 480 }: { threshold?: number })
             style={{ transition: 'stroke-dashoffset 120ms linear' }}
           />
         </svg> */}
-      <ArrowUp className="w-5 h-5 text-ivory relative" />
+      <ArrowUp className="w-5 h-5 text-ink relative" />
     </button>
   );
 }

@@ -50,7 +50,7 @@ export default function PracticeGallery() {
             Inside Promenade
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-4 text-ivory">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-4 text-ink">
             A space designed to put you{' '}
             <em className="not-italic text-coral">at ease</em>.
           </h2>
@@ -91,11 +91,11 @@ export default function PracticeGallery() {
                     : 'opacity-0 translate-y-4',
                 ].join(' ')}
               >
-                <h3 className="font-serif text-[26px] text-ivory mb-3">
+                <h3 className="font-serif text-[26px] text-ink mb-3">
                   {panel.label}
                 </h3>
 
-                <p className="text-[15px] leading-relaxed text-ivory/80 max-w-[34ch]">
+                <p className="text-[15px] leading-relaxed text-ink/80 max-w-[34ch]">
                   {panel.desc}
                 </p>
               </div>
@@ -118,11 +118,11 @@ export default function PracticeGallery() {
         <div className="absolute inset-0 bg-gradient-to-t from-bg/[0.9] via-bg/[0.15] to-transparent" />
 
         <div className="absolute z-[2] left-5 right-5 bottom-5">
-          <h3 className="font-serif text-[22px] text-ivory mb-2">
+          <h3 className="font-serif text-[22px] text-ink mb-2">
             {panel.label}
           </h3>
 
-          <p className="text-[13px] leading-relaxed text-ivory/80">
+          <p className="text-[13px] leading-relaxed text-ink/80">
             {panel.desc}
           </p>
         </div>

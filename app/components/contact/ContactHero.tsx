@@ -326,7 +326,7 @@ export default function ContactHero() {
           Contact Promenade Dental
         </motion.div>
 
-        <h1 className="font-serif font-light text-5xl lg:text-[clamp(44px,5.6vw,92px)] leading-[1.05] tracking-[-0.02em] mt-4 md:mt-6 text-ivory">
+        <h1 className="font-serif font-light text-5xl lg:text-[clamp(44px,5.6vw,92px)] leading-[1.05] tracking-[-0.02em] mt-4 md:mt-6 text-ink">
           {HEADLINE_LINES.map((line, i) => (
             <span key={i} className="block overflow-hidden">
               <motion.span
@@ -363,13 +363,13 @@ export default function ContactHero() {
         >
           <a
             href="/contact-us#contact"
-            className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep"
+            className="inline-flex items-center justify-center bg-coral text-ink font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep"
           >
             Book an Appointment &rarr;
           </a>
           <a
             href="tel:+14808028188"
-            className="inline-flex items-center justify-center text-ivory border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
+            className="inline-flex items-center justify-center text-ink border border-line font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:border-coral"
           >
             (480) 802-8188
           </a>

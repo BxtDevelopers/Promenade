@@ -43,7 +43,7 @@
 //   return (
 //     <>
 //     <Navbar/>
-//     <main className="bg-bg text-ivory">
+//     <main className="bg-bg text-ink">
 //       <AboutHero />
 //       <OurStory />
 //       <OurValues />
@@ -78,8 +78,8 @@ export const metadata = buildPageMetadata({
 
 export default function AboutPage() {
   return (
-    <main className="bg-bg text-ivory ">
-      <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
+    <main className="bg-bg text-ink ">
+      <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
       <AboutHero />
       <OurStory />
       <MeetDoctors />

@@ -217,7 +217,7 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
       className={[
         'group relative flex flex-col rounded-[20px] border p-6 lg:p-7 transition-colors duration-500',
         isAlternate 
-          ? 'border-ivory/30 bg-ivory hover:border-coral hover:bg-ivory/90' 
+          ? 'border-ink/30 bg-ink hover:border-coral hover:bg-ink/90' 
           : 'border-coral bg-white hover:border-coral/25 hover:bg-white/90'
       ].join(' ')}
       style={{
@@ -231,14 +231,14 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
 
       <h4 className={[
         'font-serif font-normal text-[17px] lg:text-[18px] mb-3 leading-snug',
-        isAlternate ? 'text-white' : 'text-ivory'
+        isAlternate ? 'text-white' : 'text-ink'
       ].join(' ')}>
         {card.title}
       </h4>
 
       <p className={[
         'text-[13.5px] lg:text-[14px] font-light leading-[1.85] flex-1 mb-6',
-        isAlternate ? 'text-white/90' : 'text-ivory/60'
+        isAlternate ? 'text-white/90' : 'text-ink/60'
       ].join(' ')}>
         {card.description}
       </p>
@@ -250,7 +250,7 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
         </span>
         <p className={[
           'text-[12px] font-light leading-[1.7]',
-          isAlternate ? 'text-white' : 'text-ivory'
+          isAlternate ? 'text-white' : 'text-ink'
         ].join(' ')}>
           {card.bestFor}
         </p>
@@ -296,13 +296,13 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
             </div>
 
             <h2
-              className={`font-serif font-light leading-[1.08] tracking-[-0.02em] ${isAlternate ? 'text-ivory' : 'text-white'}`}
+              className={`font-serif font-light leading-[1.08] tracking-[-0.02em] ${isAlternate ? 'text-ink' : 'text-white'}`}
               style={{ fontSize: 'clamp(26px, 3.2vw, 32px)' }}
             >
               {group.heading}
             </h2>
 
-            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[80%] ${isAlternate ? 'text-ivory/80' : 'text-muted'}`}>
+            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[80%] ${isAlternate ? 'text-ink/80' : 'text-muted'}`}>
               {group.body}
             </p>
 
@@ -312,7 +312,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
                 className={[
                   'inline-flex items-center gap-2.5 text-[13px] font-medium tracking-[0.02em] rounded-full border px-5 py-2.5 transition-all duration-300',
                   isAlternate 
-                    ? 'text-ivory border-ivory/20 hover:border-ivory/50 hover:bg-ivory/5' 
+                    ? 'text-ink border-ink/20 hover:border-ink/50 hover:bg-ink/5' 
                     : 'text-white border-white/15 hover:border-white/50 hover:bg-white/[0.04]'
                 ].join(' ')}
               >
@@ -358,7 +358,7 @@ function SectionHeader() {
 
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-20">
         <h2
-          className="font-serif font-light leading-[1.05] tracking-[-0.02em] text-ivory max-w-[16ch]"
+          className="font-serif font-light leading-[1.05] tracking-[-0.02em] text-ink max-w-[16ch]"
           style={{ fontSize: 'clamp(36px, 4.8vw, 72px)' }}
         >
           Complete care, under{' '}

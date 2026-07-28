@@ -34,7 +34,7 @@ export default function FamilyDentalServices({
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {eyebrow}
           </span>
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6 max-w-5xl">
+          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink mb-6 max-w-5xl">
             {heading}
           </h2>
           <p className="text-muted text-lg font-light leading-relaxed max-w-3xl">
@@ -59,33 +59,33 @@ function ServiceCard({ service, Icon }: { service: Service; Icon: any }) {
   return (
     <Link 
       href={service.href}
-      className="group relative flex flex-col rounded-[24px] p-8 lg:p-10 border border-coral bg-ivory hover:bg-coral/[0.1] transition-colors duration-500 overflow-hidden"
+      className="group relative flex flex-col rounded-[24px] p-8 lg:p-10 border border-coral bg-ink hover:bg-coral/[0.1] transition-colors duration-500 overflow-hidden"
     >
       {/* Icon & Title Row */}
       <div className="flex items-center gap-5 mb-6">
         <div className="flex items-center justify-center w-14 h-14 rounded-full bg-coral/10 text-coral group-hover:scale-110 transition-transform duration-500 ease-out">
           <Icon strokeWidth={1.5} className="w-7 h-7" />
         </div>
-        <h3 className="font-serif text-2xl text-white group-hover:text-ivory tracking-tight">
+        <h3 className="font-serif text-2xl text-white group-hover:text-ink tracking-tight">
           {service.title}
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-white/80 group-hover:text-ivory font-light leading-[1.65] mb-8 flex-grow">
+      <p className="text-white/80 group-hover:text-ink font-light leading-[1.65] mb-8 flex-grow">
         {service.description}
       </p>
 
       {/* "Best For" Pills */}
       <div className="mb-10">
-        <div className="text-[11px] uppercase tracking-widest text-ivory mb-3 font-medium">
+        <div className="text-[11px] uppercase tracking-widest text-ink mb-3 font-medium">
           Best For
         </div>
         <div className="flex flex-wrap gap-2">
           {service.bestFor.map((item, i) => (
             <span 
               key={i} 
-              className="px-3 py-1.5 rounded-full text-[13px] border border-coral/60 text-white bg-ivory"
+              className="px-3 py-1.5 rounded-full text-[13px] border border-coral/60 text-white bg-ink"
             >
               {item}
             </span>

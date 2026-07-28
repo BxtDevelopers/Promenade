@@ -39,7 +39,7 @@ export default function EducationSection2({
             Tablet: Wider, cinematic crop (md:aspect-[4/3])
             Desktop: Taller, portrait-leaning crop to match text height (lg:aspect-[4/5])
           */}
-          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:h-[700px] rounded-[24px] overflow-hidden border border-line bg-ivory/5 group">
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:h-[700px] rounded-[24px] overflow-hidden border border-line bg-ink/5 group">
             {/* 
               Using standard <img> for drop-in readiness. 
               If using Next.js <Image>, replace this with:
@@ -86,7 +86,7 @@ export default function EducationSection2({
           <div>
             <Link 
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-coral/50 bg-coral/5 text-white font-medium text-[15px] hover:bg-coral hover:text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_20px_rgba(232,154,114,0.3)]"
+              className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-coral/50 bg-coral/5 text-ink font-medium text-[15px] hover:bg-coral hover:text-ink hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_20px_rgba(232,154,114,0.3)]"
             >
               {data.cta.label}
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />

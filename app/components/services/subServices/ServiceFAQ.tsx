@@ -35,7 +35,7 @@
 //           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
 //             {data.eyebrow}
 //           </span>
-//           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ivory">
+//           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ink">
 //             {data.heading}
 //           </h2>
 //         </div>
@@ -52,7 +52,7 @@
 //                   className="w-full flex items-center justify-between gap-6 py-6 md:py-8 text-left cursor-pointer"
 //                   aria-expanded={isOpen}
 //                 >
-//                   <span className="font-serif font-normal text-[18px] md:text-[20px] text-ivory group-hover/faq:text-coral transition-colors duration-300">
+//                   <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-coral transition-colors duration-300">
 //                     {item.q}
 //                   </span>
 //                   <span
@@ -141,7 +141,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
               className="w-full flex items-center justify-between gap-6 py-6 md:py-8 text-left cursor-pointer"
               aria-expanded={isOpen}
             >
-              <span className="font-serif font-normal text-[18px] md:text-[20px] text-ivory group-hover/faq:text-coral transition-colors duration-300 pr-4">
+              <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-coral transition-colors duration-300 pr-4">
                 {item.q}
               </span>
               <span
@@ -197,7 +197,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
             {data.eyebrow}
           </span>
-          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ink">
             {data.heading}
           </h2>
         </div>

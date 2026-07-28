@@ -37,7 +37,7 @@ export default function ServiceComparison({
             {eyebrow}
           </span>
 
-          <h2 className="font-serif font-light text-[38px] sm:text-5xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-[38px] sm:text-5xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink">
             {heading}
           </h2>
 
@@ -135,7 +135,7 @@ export default function ServiceComparison({
                   </span>
                 </div>
 
-                <p className="text-ivory text-[15px] leading-7 font-light">
+                <p className="text-ink text-[15px] leading-7 font-light">
                   {withUs.points[i]}
                 </p>
               </div>
@@ -175,7 +175,7 @@ function ComparisonCell({
           <span
             className={[
               'text-base lg:text-lg leading-[1.8] font-light',
-              isCoral ? 'text-ivory-2' : 'text-muted',
+              isCoral ? 'text-cream' : 'text-muted',
             ].join(' ')}
           >
             {text}

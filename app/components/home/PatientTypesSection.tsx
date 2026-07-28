@@ -40,7 +40,7 @@ const PATIENT_TYPES = [
 //         <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px]">
 //           <div>
 //             <h2 className="font-serif font-light text-3xl
-//               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+//               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
 //               A Chandler Dental Office for{' '}
 //               <em className="not-italic text-coral">Families, Adults, and Smile-Focused Patients</em>.
 //             </h2>
@@ -54,7 +54,7 @@ const PATIENT_TYPES = [
 //         </div>
 
 //         {/* Intro line */}
-//         <p className="font-serif text-[18px] md:text-[20px] text-ivory font-light mt-12 mb-[18px]">
+//         <p className="font-serif text-[18px] md:text-[20px] text-ink font-light mt-12 mb-[18px]">
 //           We commonly help patients who are looking for:
 //         </p>
 
@@ -94,7 +94,7 @@ const PATIENT_TYPES = [
 //       </span>
 
 //       {/* Label */}
-//       <span className="font-serif font-normal text-[clamp(16px,1.6vw,20px)] text-ivory shrink-0
+//       <span className="font-serif font-normal text-[clamp(16px,1.6vw,20px)] text-ink shrink-0
 //         w-[150px] md:w-[190px] leading-[1.3]">
 //         {item.label}
 //       </span>
@@ -126,7 +126,7 @@ export default function PatientTypesSection() {
         <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px] text-center">
           <div>
             <h2 className="font-serif font-light text-3xl
-              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               A Chandler Dental Office for{' '}
               <em className="not-italic text-coral">Families, Adults, and Smile-Focused Patients</em>.
             </h2>
@@ -140,7 +140,7 @@ export default function PatientTypesSection() {
         </div>
 
         {/* Intro line */}
-        <p className="font-serif text-[18px] md:text-[20px] text-ivory font-light mt-12 mb-[18px] text-center">
+        <p className="font-serif text-[18px] md:text-[20px] text-ink font-light mt-12 mb-[18px] text-center">
           We commonly help patients who are looking for:
         </p>
 
@@ -183,7 +183,7 @@ function PatientCard({
         </div>
 
         {/* Label */}
-        <h3 className="font-serif font-normal text-[clamp(18px,1.8vw,22px)] text-ivory leading-[1.3]">
+        <h3 className="font-serif font-normal text-[clamp(18px,1.8vw,22px)] text-ink leading-[1.3]">
           {item.label}
         </h3>
 

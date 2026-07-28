@@ -3,6 +3,7 @@ import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import { BookingModalProvider } from "./components/common/BookingModalProvider";
 import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
+import { getGoogleReviews } from "./lib/googleReviews";
 import { organizationJsonLd, siteConfig } from "./lib/seo";
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const googleReviews = await getGoogleReviews();
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -37,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             ),
           }}
         />
-        <GoogleReviewsProvider>
+        <GoogleReviewsProvider value={googleReviews}>
         <BookingModalProvider>
           {children}
           </BookingModalProvider>

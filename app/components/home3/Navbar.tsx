@@ -192,13 +192,13 @@ export default function Navbar({
           <div className="hidden xl:flex items-center gap-[18px] ml-auto xl:ml-0">
             <Link
               href="tel:+14808028188"
-              className={`${textColor} ${hoverColor} inline-block  no-underline text-[13px] tracking-[0.03em] whitespace-nowrap rounded-full px-[18px] py-[10px] transition-all duration-300 hover:border-ivory/70 border border-[rgba(244,236,221,0.32)]`}
+              className={`${textColor} ${hoverColor} inline-block  no-underline text-[13px] tracking-[0.03em] whitespace-nowrap rounded-full px-[18px] py-[10px] transition-all duration-300 hover:border-ink/70 border border-[rgba(244,236,221,0.32)]`}
             >
               (480) 802-8188
             </Link>
             <Link
               href={`/contact-us`}
-              className="inline-block rounded-full text-bg bg-coral font-sans text-[13px] tracking-[0.06em] uppercase font-medium px-[22px] py-[11px] no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:border-ivory hover:-translate-y-px border border-coral shadow-[0_14px_30px_-16px_rgba(232,154,114,0.7)]"
+              className="inline-block rounded-full text-ink hover:text-bg bg-coral font-sans text-[13px] tracking-[0.06em] uppercase font-medium px-[22px] py-[11px] no-underline whitespace-nowrap transition-all duration-300 hover:bg-ink hover:border-ink hover:-translate-y-px border border-coral shadow-[0_14px_30px_-16px_rgba(232,154,114,0.7)]"
             >
               Get In Touch
             </Link>
@@ -309,7 +309,7 @@ export default function Navbar({
         </Link>
         <Link 
           href={`/contact-us`}
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-bg bg-coral text-[10.5px] tracking-[0.1em] uppercase font-semibold"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ink bg-coral text-[10.5px] tracking-[0.1em] uppercase font-semibold"
         >
           <Calendar className="w-[19px] h-[19px] stroke-[1.7]" />
           Book

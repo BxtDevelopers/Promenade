@@ -38,21 +38,21 @@ export default function ReferralsForm() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Send a referral
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
             Introduce a friend in <em className="italic font-normal text-coral">under a minute</em>.
           </h2>
-          <p className="mt-[18px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
+          <p className="mt-[18px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ink">
             Tell us who to expect and we&rsquo;ll reach out to get them booked. Your credit lands
             on your account the moment their first visit is complete.
           </p>
         </Reveal>
 
         <Reveal
-          className="rounded-[24px] border border-line bg-ivory/90 px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
+          className="rounded-[24px] border border-line bg-ink/90 px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
           delay={0.1}
         >
           {submitted ? (
-            <p className="text-[15px] font-light leading-[1.7] text-ivory-2">
+            <p className="text-[15px] font-light leading-[1.7] text-cream">
               Thanks &mdash; we&rsquo;ve got it. We&rsquo;ll reach out to your friend to get them
               booked, and your credit will land on your account once their first visit is
               complete.
@@ -80,7 +80,7 @@ export default function ReferralsForm() {
               <div className="mb-[15px]">
                 <label
                   htmlFor="notes"
-                  className="mb-[7px] block text-[11.5px] font-medium uppercase tracking-[0.04em] text-ivory-2"
+                  className="mb-[7px] block text-[11.5px] font-medium uppercase tracking-[0.04em] text-cream"
                 >
                   Anything we should know? (optional)
                 </label>
@@ -89,14 +89,14 @@ export default function ReferralsForm() {
                   name="notes"
                   rows={3}
                   placeholder="They're a little nervous about dental visits&hellip;"
-                  className="w-full rounded-[14px] border border-white bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
+                  className="w-full rounded-[14px] border border-white bg-ink/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSubmitting} // Disables button while sending
-                className="mt-1 w-full justify-center rounded-full border-none bg-coral px-[30px] py-[17px] text-center font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:bg-ivory disabled:opacity-70 disabled:cursor-not-allowed"
+                className="mt-1 w-full justify-center rounded-full border-none bg-coral px-[30px] py-[17px] text-center font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:bg-ink disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Send referral'}
               </button>
@@ -137,7 +137,7 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-[14px] border border-white bg-ivory/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
+        className="w-full rounded-[14px] border border-white bg-ink/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
       />
     </div>
   )

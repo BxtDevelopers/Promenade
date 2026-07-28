@@ -17,8 +17,8 @@ export const metadata = buildPageMetadata({
 export default function ReferralsPage() {
   return (
     <>
-    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
-    <main className="bg-bg font-sans text-ivory">
+    <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
+    <main className="bg-bg font-sans text-ink">
       <ReferralsHero />
       <ReferralsHowItWorks />
       <ReferralsForm />

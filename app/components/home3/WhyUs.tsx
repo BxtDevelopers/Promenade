@@ -30,7 +30,7 @@ export default function WhyUs() {
             Why patients choose us
           </span>
           <h2
-            className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ivory mt-2 text-[clamp(30px,4vw,52px)]"
+            className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]"
           >
             Care that feels{' '}
             <em className="italic text-coral">different</em> — on purpose.
@@ -51,7 +51,7 @@ export default function WhyUs() {
               >
                 <Check className="w-4 h-4 text-coral" />
               </span>
-              <b className="block font-serif font-normal text-[19px] leading-[1.15] mb-[10px] text-ivory">
+              <b className="block font-serif font-normal text-[19px] leading-[1.15] mb-[10px] text-ink">
                 {r.title}
               </b>
               <p className="text-[14.5px] font-light leading-[1.65] text-muted">

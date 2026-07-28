@@ -18,7 +18,7 @@ export default function ReferralsHero() {
         </Reveal>
 
         <Reveal delay={0.05}>
-          <h1 className="mt-[18px] font-serif text-[clamp(40px,6.6vw,82px)] font-light leading-[1] tracking-[-0.025em] text-ivory">
+          <h1 className="mt-[18px] font-serif text-[clamp(40px,6.6vw,82px)] font-light leading-[1] tracking-[-0.025em] text-ink">
             Send a friend our way.
             <br />
             <em className="font-normal italic text-coral">We&rsquo;ll thank you both.</em>
@@ -26,7 +26,7 @@ export default function ReferralsHero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
+          <p className="mt-[22px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ink">
             If someone you know has been putting off the dentist &mdash; or just hasn&rsquo;t
             found one they trust &mdash; introduce them to Dr.&nbsp;Shriya. They&rsquo;ll be
             welcomed like family, and you&rsquo;ll both get a little something for it.
@@ -37,7 +37,7 @@ export default function ReferralsHero() {
           {BADGES.map((badge) => (
             <span
               key={badge}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream"
             >
               <Check className="h-3.5 w-3.5 stroke-[2.4] text-coral" />
               {badge}
@@ -48,20 +48,20 @@ export default function ReferralsHero() {
         <Reveal className="mt-[30px] flex flex-wrap items-center gap-3.5" delay={0.2}>
           <a
             href="#refer"
-            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ivory"
+            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ink"
           >
             Refer a friend
           </a>
           <a
             href="tel:+14808028188"
-            className="whitespace-nowrap rounded-full border border-ivory/30 px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory/70"
+            className="whitespace-nowrap rounded-full border border-ink/30 px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ink transition hover:border-ink/70"
           >
             Call (480) 802-8188
           </a>
         </Reveal>
 
         <Reveal
-          className="relative mt-[30px] grid grid-cols-1 items-center gap-5 overflow-hidden rounded-[26px] border border-ivory/20 px-[clamp(30px,4vw,46px)] py-[clamp(30px,4vw,46px)] sm:grid-cols-[1fr_auto_1fr]"
+          className="relative mt-[30px] grid grid-cols-1 items-center gap-5 overflow-hidden rounded-[26px] border border-ink/20 px-[clamp(30px,4vw,46px)] py-[clamp(30px,4vw,46px)] sm:grid-cols-[1fr_auto_1fr]"
           delay={0.25}
         >
           <div
@@ -78,7 +78,7 @@ export default function ReferralsHero() {
               off your friend&rsquo;s first visit
             </span>
           </div>
-          <div className="rotate-90 text-center font-serif text-[34px] text-ivory sm:rotate-0">+</div>
+          <div className="rotate-90 text-center font-serif text-[34px] text-ink sm:rotate-0">+</div>
           <div className="text-center">
             <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-coral">
               $50

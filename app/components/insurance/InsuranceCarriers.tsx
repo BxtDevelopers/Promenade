@@ -23,7 +23,7 @@ export default function InsuranceCarriers() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Plans we work with
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
             Chances are, <em className="italic font-normal text-coral">you&rsquo;re covered</em>.
           </h2>
         </Reveal>
@@ -35,7 +35,7 @@ export default function InsuranceCarriers() {
           {CARRIERS.map((carrier) => (
             <div
               key={carrier}
-              className="rounded-xl border border-line bg-ivory px-3 py-[14px] text-center font-serif text-[16px] text-white"
+              className="rounded-xl border border-line bg-ink px-3 py-[14px] text-center font-serif text-[16px] text-white"
             >
               {carrier}
             </div>
@@ -43,7 +43,7 @@ export default function InsuranceCarriers() {
         </Reveal>
 
         {/* <Reveal
-          className="mt-[26px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-[13px] font-light leading-[1.55] text-ivory-2"
+          className="mt-[26px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-[13px] font-light leading-[1.55] text-cream"
           delay={0.2}
         >
           <b className="font-semibold text-coral">Confirm before launch:</b> being

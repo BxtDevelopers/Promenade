@@ -120,7 +120,7 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-3 md:mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink">
               {data.heading}
             </h2>
           </div>
@@ -186,7 +186,7 @@ function PatientTypeCard({
       {/* Step dot + number (External to card) */}
       <div className="flex items-center gap-3 mb-5 md:mb-6">
         <div className="w-4 h-4 rounded-full bg-coral ring-4 ring-coral/50 shrink-0 transition-transform duration-300 group-hover:scale-125" />
-        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ivory/50 tracking-tight">
+        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ink/50 tracking-tight">
           {step}
         </span>
       </div>
@@ -213,7 +213,7 @@ function PatientTypeCard({
       </div>
 
       {/* Hover Step Badge */}
-      <div className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-coral flex items-center justify-center text-bg text-[11px] font-semibold font-sans shadow-btn opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-coral flex items-center justify-center text-ink text-[11px] font-semibold font-sans shadow-btn opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         {step}
       </div>
       

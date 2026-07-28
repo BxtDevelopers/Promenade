@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
         <p
          ref={leadRef as React.RefObject<HTMLParagraphElement>}
         className={[
-            'font-serif font-light text-3xl text-center lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-ivory-2',
+            'font-serif font-light text-3xl text-center lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-cream',
             '',
             'transition-all duration-1000 ease-out',
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
@@ -88,7 +88,7 @@ function MetaCard({
     <span className="absolute top-1 lg:top-6 right-6 text-coral/40 font-serif text-3xl">
   0{index + 1}
 </span>
-      <h4 className="font-serif text-[24px] lg:text-[28px] text-ivory mb-4">
+      <h4 className="font-serif text-[24px] lg:text-[28px] text-ink mb-4">
   {item.title}
 </h4>
 

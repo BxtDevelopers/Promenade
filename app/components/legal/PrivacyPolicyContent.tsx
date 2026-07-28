@@ -13,7 +13,7 @@ type Section = {
 
 // function Callout({ children }: { children: ReactNode }) {
 //   return (
-//     <div className="mt-6 rounded-2xl border border-coral/30 bg-coral/5 px-5 py-4 text-[13px] leading-[1.7] text-ivory/80">
+//     <div className="mt-6 rounded-2xl border border-coral/30 bg-coral/5 px-5 py-4 text-[13px] leading-[1.7] text-ink/80">
 //       <span className="font-semibold text-coral">Before this goes live: </span>
 //       {children}
 //     </div>
@@ -21,12 +21,12 @@ type Section = {
 // }
 
 function P({ children }: { children: ReactNode }) {
-  return <p className="mt-4 text-[18px] leading-[1.75] text-ivory/80">{children}</p>
+  return <p className="mt-4 text-[18px] leading-[1.75] text-ink/80">{children}</p>
 }
 
 function List({ items }: { items: ReactNode[] }) {
   return (
-    <ul className="mt-4 space-y-2.5 pl-5 text-[18px] leading-[1.7] text-ivory/80">
+    <ul className="mt-4 space-y-2.5 pl-5 text-[18px] leading-[1.7] text-ink/80">
       {items.map((item, i) => (
         <li key={i} className="list-disc marker:text-coral pl-1.5">
           {item}
@@ -70,17 +70,17 @@ const sections: Section[] = [
         <List
           items={[
             <>
-              <span className="font-medium text-ivory">Treatment</span> &mdash; sharing
+              <span className="font-medium text-ink">Treatment</span> &mdash; sharing
               information among our dentists, hygienists, and staff, and with other providers
               involved in your care (e.g., specialists we refer you to).
             </>,
             <>
-              <span className="font-medium text-ivory">Payment</span> &mdash; submitting claims to
+              <span className="font-medium text-ink">Payment</span> &mdash; submitting claims to
               your dental insurance, verifying benefits, and billing you directly for services
               rendered.
             </>,
             <>
-              <span className="font-medium text-ivory">Healthcare Operations</span> &mdash;
+              <span className="font-medium text-ink">Healthcare Operations</span> &mdash;
               quality improvement, staff training, appointment reminders, and normal practice
               administration.
             </>,
@@ -141,7 +141,7 @@ const sections: Section[] = [
           person.
         </P>
         <P>
-          <strong className="font-medium text-ivory">Mobile Opt-In Consent:</strong> No mobile opt-in message consent will be shared with third parties or affiliates for marketing purposes.
+          <strong className="font-medium text-ink">Mobile Opt-In Consent:</strong> No mobile opt-in message consent will be shared with third parties or affiliates for marketing purposes.
         </P>
         <P>
           Our site may use cookies or similar technologies for basic functionality and analytics.
@@ -201,7 +201,7 @@ const sections: Section[] = [
             <>Promenade Dental &mdash; 4905 S. Alma School Road, Suite 1, Chandler, AZ 85248</>,
             <>
               Phone:{' '}
-              <Link href="tel:+14808028188" className="text-coral hover:text-ivory">
+              <Link href="tel:+14808028188" className="text-coral hover:text-ink">
                 (480) 802-8188
               </Link>
             </>,
@@ -227,16 +227,16 @@ export default function PrivacyPolicyContent() {
             Your privacy
           </span>
 
-          <h1 className="mt-[18px] font-serif text-[clamp(34px,5.5vw,52px)] font-light leading-[1.05] tracking-[-0.025em] text-ivory">
+          <h1 className="mt-[18px] font-serif text-[clamp(34px,5.5vw,52px)] font-light leading-[1.05] tracking-[-0.025em] text-ink">
             Privacy <em className="italic font-normal text-coral">Policy.</em>
           </h1>
 
-          <p className="mt-[20px] max-w-[58ch] text-[20px] font-light leading-[1.7] text-ivory/80">
+          <p className="mt-[20px] max-w-[58ch] text-[20px] font-light leading-[1.7] text-ink/80">
             How Promenade Dental protects and uses your personal and health information — both in
             our office and on this website.
           </p>
 
-          <span className="mt-[22px] inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2">
+          <span className="mt-[22px] inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream">
             Last updated: {LAST_UPDATED}
           </span>
         </div>
@@ -254,7 +254,7 @@ export default function PrivacyPolicyContent() {
                 <li key={s.id}>
                   <a
                     href={`#${s.id}`}
-                    className="text-[15.5px] text-ivory/70 transition-colors hover:text-coral"
+                    className="text-[15.5px] text-ink/70 transition-colors hover:text-coral"
                   >
                     {s.title}
                   </a>
@@ -267,7 +267,7 @@ export default function PrivacyPolicyContent() {
           <div className="mt-[clamp(36px,5vw,56px)] space-y-[clamp(36px,5vw,52px)]">
             {sections.map((s) => (
               <div key={s.id} id={s.id} className="scroll-mt-28 border-t border-line/60 pt-8">
-                <h2 className="font-serif text-[22px] font-normal leading-[1.2] tracking-[-0.01em] text-ivory sm:text-[30px]">
+                <h2 className="font-serif text-[22px] font-normal leading-[1.2] tracking-[-0.01em] text-ink sm:text-[30px]">
                   {s.title}
                 </h2>
                 {s.body}
@@ -275,7 +275,7 @@ export default function PrivacyPolicyContent() {
             ))}
           </div>
 
-          {/* <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ivory/50">
+          {/* <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ink/50">
             This page is provided for general informational purposes and does not constitute
             legal advice. Please have this content reviewed by qualified legal counsel before
             publishing.

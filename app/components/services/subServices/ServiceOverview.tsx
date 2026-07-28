@@ -55,10 +55,10 @@ export default function ServiceOverview({
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {eyebrow}
           </span>
-          <h2 className="font-serif font-light text-3xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ivory mb-8">
+          <h2 className="font-serif font-light text-3xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ink mb-8">
             {heading}
           </h2>
-          <p className="text-ivory/70 lg:text-xl font-light leading-[1.5]  mb-10">
+          <p className="text-ink/70 lg:text-xl font-light leading-[1.5]  mb-10">
             {body}
           </p>
 

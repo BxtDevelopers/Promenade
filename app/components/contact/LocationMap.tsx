@@ -19,7 +19,7 @@ export default function LocationMap() {
             Find Us
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[18ch]">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[18ch]">
             Right in the heart of{' '}
             <em className="not-italic text-coral">Fulton Ranch</em>.
           </h2>
@@ -40,7 +40,7 @@ export default function LocationMap() {
           </div>
 
           {/* Address card */}
-          <div className="rounded-[22px] border border-line bg-ivory p-7 md:p-9 flex flex-col justify-between">
+          <div className="rounded-[22px] border border-line bg-ink p-7 md:p-9 flex flex-col justify-between">
             <div>
               <h3 className="font-serif font-normal text-[22px] text-white mb-4">
                 Promenade Dental

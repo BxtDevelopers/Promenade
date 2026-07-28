@@ -17,18 +17,18 @@ export default function PaymentsBenefitsPanel() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Pairs with your benefits
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
             Works <em className="italic font-normal text-coral">with</em> your insurance, not
             instead of it.
           </h2>
-          <p className="mt-4 max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ivory">
+          <p className="mt-4 max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ink">
             Already have a plan? A payment plan simply covers the portion your insurance
             doesn&rsquo;t &mdash; so larger treatment never has to wait.
           </p>
           <div className="mt-[18px]">
             <Link
               href="/insurance"
-              className="inline-flex whitespace-nowrap rounded-full border border-coral px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory"
+              className="inline-flex whitespace-nowrap rounded-full border border-coral px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ink transition hover:border-ink"
             >
               See insurance we accept
             </Link>
@@ -36,17 +36,17 @@ export default function PaymentsBenefitsPanel() {
         </Reveal>
 
         <Reveal
-          className="rounded-[22px] border border-line bg-ivory/[0.03] px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
+          className="rounded-[22px] border border-line bg-ink/[0.03] px-[clamp(26px,3vw,34px)] py-[clamp(26px,3vw,34px)]"
           delay={0.1}
         >
-          <h3 className="mb-[14px] font-serif text-[20px] font-normal text-ivory">
+          <h3 className="mb-[14px] font-serif text-[20px] font-normal text-ink">
             Also good to know
           </h3>
           <ul className="space-y-1.5">
             {KNOWNS.map((item) => (
               <li
                 key={item}
-                className="relative pl-6 text-[14.5px] font-light leading-[1.55] text-ivory/80"
+                className="relative pl-6 text-[14.5px] font-light leading-[1.55] text-ink/80"
               >
                 <Check className="absolute left-0 top-2 h-3.5 w-3.5 stroke-[2.5] text-coral" />
                 {item}

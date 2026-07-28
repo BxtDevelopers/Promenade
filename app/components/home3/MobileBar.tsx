@@ -21,7 +21,7 @@ export default function MobileBar() {
 
         <Link
           href={`/contact-us`}
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-bg bg-coral font-semibold text-[10.5px] tracking-[0.1em] uppercase"
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ink bg-coral font-semibold text-[10.5px] tracking-[0.1em] uppercase"
         >
           <Calendar className="w-[19px] h-[19px]" strokeWidth={1.7} />
           Book

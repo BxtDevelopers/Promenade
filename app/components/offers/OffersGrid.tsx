@@ -40,7 +40,7 @@ export default function OffersGrid() {
         <div className="grid grid-cols-1 gap-[20px] lg:grid-cols-3">
           {/* Featured: New Patient Welcome */}
           <Reveal delay={0.05} className="lg:col-span-2">
-            <div className="flex h-full flex-col justify-between rounded-2xl border border-coral/40 bg-ivory/[0.03] p-[34px] md:p-[42px]">
+            <div className="flex h-full flex-col justify-between rounded-2xl border border-coral/40 bg-ink/[0.03] p-[34px] md:p-[42px]">
               <div>
                 <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
                   <ClipboardCheck className="h-5 w-5 text-coral" strokeWidth={2.2} />
@@ -67,7 +67,7 @@ export default function OffersGrid() {
 
               <button
                 onClick={openBookingModal}
-                className="mt-[28px] inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full bg-coral px-[26px] py-[15px] font-sans text-[13px] font-semibold uppercase tracking-[0.05em] text-bg transition hover:-translate-y-0.5 hover:bg-ivory"
+                className="mt-[28px] inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full bg-coral px-[26px] py-[15px] font-sans text-[13px] font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg transition hover:-translate-y-0.5 hover:bg-ink"
               >
                 Book your first visit
               </button>
@@ -78,7 +78,7 @@ export default function OffersGrid() {
           <div className="grid grid-cols-1 gap-[20px]">
             {SIMPLE_OFFERS.map(({ icon: Icon, title, body }, i) => (
               <Reveal key={title} delay={0.1 + i * 0.05}>
-                <div className="flex h-full flex-col rounded-2xl border border-line bg-ivory/[0.03] p-[28px]">
+                <div className="flex h-full flex-col rounded-2xl border border-line bg-ink/[0.03] p-[28px]">
                   <span className="mb-[16px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
                     <Icon className="h-5 w-5 text-coral" strokeWidth={2.2} />
                   </span>

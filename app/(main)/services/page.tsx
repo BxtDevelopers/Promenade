@@ -19,7 +19,7 @@ export const metadata = buildPageMetadata({
 export default function ServicePage (){
     return (
         <>
-        <Navbar textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'/>
+        <Navbar textColor = 'text-ink' hoverColor = 'hover:text-ink/80'/>
         <ServiceHero/>
         <ServiceIntro/>
         <ServicesHub/>

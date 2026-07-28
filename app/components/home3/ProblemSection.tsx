@@ -66,7 +66,7 @@ export default function ProblemsSection() {
           <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
             In your words
           </span>
-          <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ivory mt-2 text-[clamp(30px,4vw,52px)]">
+          <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]">
             What brought you{' '}
             <em className="italic text-coral">here?</em>
           </h2>
@@ -81,14 +81,14 @@ export default function ProblemsSection() {
             <Link
               key={p.title}
               href={p.href}
-              className="rv flex items-center gap-4 no-underline rounded-[18px] transition-all duration-[350ms] hover:-translate-y-1 group flex-[1_1_260px] p-[20px_24px] border border-ivory/30 bg-[linear-gradient(180deg,rgba(244,236,221,0.02),transparent)] hover:border-[rgba(232,154,114,0.45)] hover:bg-[linear-gradient(180deg,rgba(232,154,114,0.06),transparent)]"
+              className="rv flex items-center gap-4 no-underline rounded-[18px] transition-all duration-[350ms] hover:-translate-y-1 group flex-[1_1_260px] p-[20px_24px] border border-ink/30 bg-[linear-gradient(180deg,rgba(244,236,221,0.02),transparent)] hover:border-[rgba(232,154,114,0.45)] hover:bg-[linear-gradient(180deg,rgba(232,154,114,0.06),transparent)]"
               style={{
                 transitionDelay: `${(i % 3) * 0.08}s`,
               }}
             >
               {p.icon}
               <div>
-                <div className="font-serif text-[19px] text-ivory leading-[1.1]">
+                <div className="font-serif text-[19px] text-ink leading-[1.1]">
                   {p.title}
                 </div>
                 <div className="text-[12.5px] mt-1 tracking-[0.02em] text-muted-2">

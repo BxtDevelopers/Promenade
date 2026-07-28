@@ -58,7 +58,7 @@ export default function Testimonials() {
             lg:text-[clamp(40px,4.6vw,80px)]
             leading-[1.04]
             tracking-[-0.02em]
-            text-ivory
+            text-ink
           "
         >
           Patients don&apos;t usually rave about the dentist 
@@ -137,7 +137,7 @@ function MarqueeRow({
                 font-light
                 text-[18px]
                 leading-[1.45]
-                text-ivory-2
+                text-cream
               "
             >
               &ldquo;{c.quote}&rdquo;

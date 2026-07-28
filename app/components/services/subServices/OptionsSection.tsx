@@ -40,7 +40,7 @@ export default function WhiteningOptionsSection({ data }: { data: WhiteningOptio
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {data.eyebrow}
           </span>
-          <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+          <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ink mb-6">
             {data.heading}
           </h2>
           <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-3xl mx-auto">
@@ -94,13 +94,13 @@ function TreatmentCard({
       
       {/* Optional Highlight Tag */}
       {card.highlight && (
-        <span className="absolute -top-3 left-8 bg-coral text-bg text-[10px] uppercase font-bold tracking-[0.14em] px-3 py-1.5 rounded-full shadow-md">
+        <span className="absolute -top-3 left-8 bg-coral text-ink text-[10px] uppercase font-bold tracking-[0.14em] px-3 py-1.5 rounded-full shadow-md">
           Advanced Option
         </span>
       )}
 
       {/* Header Area */}
-      <h3 className="font-serif font-normal text-[22px] md:text-[24px] text-ivory leading-[1.2] mb-4 transition-colors group-hover:text-white mt-2">
+      <h3 className="font-serif font-normal text-[22px] md:text-[24px] text-ink leading-[1.2] mb-4 transition-colors group-hover:text-white mt-2">
         {card.title}
       </h3>
       
@@ -114,7 +114,7 @@ function TreatmentCard({
         <span className="text-coral font-medium uppercase tracking-[0.14em] text-[10px] block mb-2">
           Best for
         </span>
-        <p className="text-ivory-2/90 text-[13px] font-light leading-[1.6]">
+        <p className="text-cream/90 text-[13px] font-light leading-[1.6]">
           {card.bestFor}
         </p>
       </div>
@@ -124,7 +124,7 @@ function TreatmentCard({
         href={card.ctaHref}
         className={[
           'inline-flex items-center gap-2 mt-auto text-[13.5px] font-medium tracking-[0.02em] transition-colors duration-300',
-          card.highlight ? 'text-coral' : 'text-ivory group-hover:text-coral'
+          card.highlight ? 'text-coral' : 'text-ink group-hover:text-coral'
         ].join(' ')}
       >
         <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-coral transition-colors">

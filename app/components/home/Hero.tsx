@@ -110,7 +110,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Headline — shorter, punchier */}
-        <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ivory">
+        <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ink">
           {[
             { text: 'Gentle, Personal', delay: 0.45 },
             { text: 'Care for Your', delay: 0.58 },
@@ -168,7 +168,7 @@ export default function Hero() {
             { icon: '✓', text: 'Same-Day Emergency Appointments' },
             { icon: '★', text: '200+ Happy Patients' },
           ].map((item) => (
-            <span key={item.text} className="flex items-center gap-2 text-[13px] text-ivory/70 tracking-[0.02em]">
+            <span key={item.text} className="flex items-center gap-2 text-[13px] text-ink/70 tracking-[0.02em]">
               <span className="text-coral text-[11px]">{item.icon}</span>
               {item.text}
             </span>
@@ -225,10 +225,10 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 1.4 }}
-        className="absolute left-1/2 bottom-[clamp(140px,20vw,180px)] -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ivory/60"
+        className="absolute left-1/2 bottom-[clamp(140px,20vw,180px)] -translate-x-1/2 z-[3] hidden md:flex flex-col items-center gap-[9px] text-[10.5px] tracking-[0.3em] uppercase text-ink/60"
       >
         <span>Scroll</span>
-        <span className="block w-px h-8 bg-gradient-to-b from-ivory/60 to-transparent animate-cue" />
+        <span className="block w-px h-8 bg-gradient-to-b from-ink/60 to-transparent animate-cue" />
       </motion.div> */}
     </header>
   );
@@ -253,8 +253,8 @@ function QuickAction({
         primary
           ? 'bg-coral border-coral hover:bg-coral/90 text-bg'
           : urgent
-          ? 'bg-ivory/[0.03] border-line hover:border-coral/50 hover:bg-coral/5 text-ivory'
-          : 'bg-ivory/[0.03] border-line hover:border-ivory/30 hover:bg-ivory/5 text-ivory',
+          ? 'bg-ink/[0.03] border-line hover:border-coral/50 hover:bg-coral/5 text-ink'
+          : 'bg-ink/[0.03] border-line hover:border-ink/30 hover:bg-ink/5 text-ink',
       ].join(' ')}
     >
       <span className={primary ? 'text-bg' : 'text-coral'}>{icon}</span>
@@ -291,7 +291,7 @@ function HeroButton() {
         'inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
         'px-[26px] md:px-[30px] py-[15px] md:py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300',
         'shadow-btn text-bg',
-        hov ? 'bg-ivory -translate-y-0.5' : 'bg-coral',
+        hov ? 'bg-ink -translate-y-0.5' : 'bg-coral',
       ].join(' ')}
     >
       Book an Appointment →

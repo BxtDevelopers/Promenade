@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
           <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             Why patients choose us
           </span>
-          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ink">
             Why families choose <em className="italic font-normal text-coral">Promenade Dental</em> in
             Chandler.
           </h2>
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
               <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
                 <Icon className="h-6 w-6 text-coral" strokeWidth={2.2} />
               </span>
-              <b className="mb-[10px] block font-serif text-2xl font-normal leading-[1.15] text-ivory">
+              <b className="mb-[10px] block font-serif text-2xl font-normal leading-[1.15] text-ink">
                 {title}
               </b>
               <p className="text-lg font-light leading-[1.65] text-muted">{body}</p>

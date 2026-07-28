@@ -76,7 +76,7 @@ export default function Gallery() {
         Explore Our Office
         </span>
 
-        <h2 className="font-serif font-light leading-[1.04] mt-4 text-ivory max-w-[24ch] mx-auto text-[clamp(30px,4.6vw,58px)]">
+        <h2 className="font-serif font-light leading-[1.04] mt-4 text-ink max-w-[24ch] mx-auto text-[clamp(30px,4.6vw,58px)]">
         A Dental Office Designed Around
         <em className="italic text-coral"> Comfort, Technology & Care</em>
         </h2>
@@ -111,7 +111,7 @@ export default function Gallery() {
             Office Tour
             </span>
 
-            <p className="font-serif font-light text-ivory-2 mt-[6px] text-[clamp(19px,2.2vw,26px)]">
+            <p className="font-serif font-light text-cream mt-[6px] text-[clamp(19px,2.2vw,26px)]">
             Experience Promenade Dental Before Your Visit
             </p>
           </div>
@@ -121,7 +121,7 @@ export default function Gallery() {
             <button
               onClick={togglePlay}
               aria-label={playing ? 'Pause video' : 'Play video'}
-              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-ivory-2 transition-colors duration-300 hover:border-coral hover:text-coral lg:mt-auto lg:mb-6"
+              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-cream transition-colors duration-300 hover:border-coral hover:text-coral lg:mt-auto lg:mb-6"
               style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
             >
               {playing ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 translate-x-[1px]" />}
@@ -166,7 +166,7 @@ export default function Gallery() {
                 <span className="text-[10px] tracking-[0.24em] uppercase font-medium text-coral">
                   {img.tag}
                 </span>
-                <p className="font-serif font-light text-ivory-2 leading-[1.2] mt-[4px] text-[clamp(15px,1.6vw,18px)]">
+                <p className="font-serif font-light text-cream leading-[1.2] mt-[4px] text-[clamp(15px,1.6vw,18px)]">
                   {img.title}
                 </p>
               </figcaption>

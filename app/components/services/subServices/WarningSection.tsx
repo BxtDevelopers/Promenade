@@ -62,7 +62,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
             </p>
 
             {/* Premium Phone CTA Block */}
-            <div className="group relative p-8 rounded-[24px] bg-gradient-to-br from-coral/10 via-ivory to-ivory border border-coral/30 overflow-hidden hover:border-coral transition-colors duration-500 shadow-[0_0_40px_rgba(250,114,104,0.08)]">
+            <div className="group relative p-8 rounded-[24px] bg-gradient-to-br from-coral/10 via-ink to-ink border border-coral/30 overflow-hidden hover:border-coral transition-colors duration-500 shadow-[0_0_40px_rgba(250,114,104,0.08)]">
               <div className="absolute -right-12 -top-12 w-40 h-40 bg-coral/20 blur-[40px] rounded-full group-hover:bg-coral/30 transition-colors duration-500" />
               
               <div className="relative z-10">
@@ -78,7 +78,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
                 
                 <a 
                   href={data.cta.phoneLink} 
-                  className="inline-flex items-center justify-center w-full px-8 py-4 bg-coral text-white text-[16px] font-medium rounded-full hover:bg-coral-deep hover:scale-[1.02] transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center justify-center w-full px-8 py-4 bg-coral text-ink text-[16px] font-medium rounded-full hover:bg-coral-deep hover:scale-[1.02] transition-all duration-300 shadow-lg"
                 >
                   <Phone className='w-4 h-4 mr-2'/>
                   {data.cta.buttonText}

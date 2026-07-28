@@ -59,7 +59,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
               <div className="shrink-0">
                 <a 
                   href={data.cta.phoneLink}
-                  className="group relative inline-flex flex-col items-center justify-center px-8 py-5 rounded-2xl bg-coral hover:bg-amber-500 text-white transition-all duration-300 shadow-[0_0_30px_rgba(232,154,114,0.3)] hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)]"
+                  className="group relative inline-flex flex-col items-center justify-center px-8 py-5 rounded-2xl bg-coral hover:bg-amber-500 text-ink transition-all duration-300 shadow-[0_0_30px_rgba(232,154,114,0.3)] hover:scale-105 hover:shadow-[0_0_40px_rgba(245,158,11,0.4)]"
                 >
                   <span className="text-[12px] font-bold uppercase tracking-widest opacity-90 mb-1">
                     {data.cta.label}

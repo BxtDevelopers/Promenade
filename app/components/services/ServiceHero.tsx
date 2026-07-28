@@ -131,7 +131,7 @@ export default function ServiceHero() {
         </motion.div>
 
         {/* Headline */}
-        <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ivory">
+        <h1 className="font-serif font-light text-hero leading-tight mt-4 md:mt-6 text-ink">
           {HEADLINE_LINES.map((line, i) => (
             <span key={i} className="block overflow-hidden">
               <motion.span
@@ -157,7 +157,7 @@ export default function ServiceHero() {
           transition={{ delay: 1.1, duration: 1.2 }}
           className="flex flex-col  md:justify-between gap-6 md:gap-[30px] mt-8 md:mt-10 max-w-5xl"
         >
-          <p className="text-ivory text-body-lg font-light leading-[1.7]">
+          <p className="text-ink text-body-lg font-light leading-[1.7]">
             Promenade Dental provides comprehensive dental services in Chandler, AZ
             for patients who need preventive care, cosmetic smile improvement,
             tooth repair, tooth replacement, or urgent dental treatment.
@@ -179,7 +179,7 @@ export default function ServiceHero() {
           ].map((item) => (
             <span
               key={item}
-              className="px-4 py-2 rounded-full bg-white backdrop-blur-sm border border-coral/60 md:text-body-lg text-ivory/80 tracking-[0.02em]"
+              className="px-4 py-2 rounded-full bg-white backdrop-blur-sm border border-coral/60 md:text-body-lg text-ink/80 tracking-[0.02em]"
             >
               {item}
             </span>
@@ -192,8 +192,8 @@ export default function ServiceHero() {
     href="tel:+14808028188"
     className="
       inline-flex items-center gap-3
-      border border-ivory
-      text-ivory
+      border border-ink
+      text-ink
       px-[26px] md:px-[30px]
       py-[15px] md:py-[17px]
       rounded-full
@@ -234,10 +234,10 @@ function HeroButton() {
       onMouseEnter={() => setHov(true)}
       onMouseLeave={onLeave}
       className={[
-        'inline-flex items-center gap-3 border-ivory font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
+        'inline-flex items-center gap-3 border-ink font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
         'px-[26px] md:px-[30px] py-[15px] md:py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300',
         'shadow-btn text-bg',
-        hov ? 'bg-ivory -translate-y-0.5' : 'bg-coral',
+        hov ? 'bg-ink -translate-y-0.5' : 'bg-coral',
       ].join(' ')}
     >
       Book an Appointment →

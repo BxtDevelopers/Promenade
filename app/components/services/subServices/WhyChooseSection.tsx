@@ -74,7 +74,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
             onClick={openBookingModal}
             className={[
               'w-full sm:w-auto inline-flex items-center justify-center gap-2',
-              'rounded-xl bg-coral text-white font-medium text-base sm:text-[15px]',
+              'rounded-xl bg-coral text-ink font-medium text-base sm:text-[15px]',
               'px-8 py-3.5 shadow-lg shadow-coral/20',
               'transition-all duration-300 ease-out',
               'hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/30 active:translate-y-0',
@@ -143,7 +143,7 @@ function TrustCard({ item }: { item: BenefitItem }) {
         'coral-underline', 
         isHovered
           ? 'border-coral/40 bg-coral/5 -translate-y-[5px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]'
-          : 'border-line bg-ivory', 
+          : 'border-line bg-ink', 
       ].join(' ')}
     >
       {/* Animated SVG Icon */}

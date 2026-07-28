@@ -38,7 +38,7 @@ export default function ConnectedCareSection() {
 
         {/* Heading + intro */}
         <div className="text-center">
-          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Dentistry That{' '}
             <em className="not-italic text-coral">Connects</em>.
           </h2>
@@ -71,7 +71,7 @@ export default function ConnectedCareSection() {
                       <Icon className="w-5 h-5 text-coral" strokeWidth={1.5} />
                     </div>
                     <div>
-                      <h3 className="font-serif font-light text-ivory text-[17px] lg:text-lg">
+                      <h3 className="font-serif font-light text-ink text-[17px] lg:text-lg">
                         {item.label}
                       </h3>
                       <p className="text-muted text-[13.5px] font-light leading-[1.6] mt-1 max-w-[200px] lg:mx-auto">
@@ -104,7 +104,7 @@ export default function ConnectedCareSection() {
                 One Connected Goal
               </span>
               <ArrowRight className="w-4 h-4 text-coral shrink-0" strokeWidth={1.5} />
-              <span className="text-ivory text-[13.5px] md:text-[14px] font-light">
+              <span className="text-ink text-[13.5px] md:text-[14px] font-light">
                 A healthy, functional, confident smile
               </span>
             </div>

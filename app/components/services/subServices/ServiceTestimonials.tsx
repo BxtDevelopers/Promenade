@@ -56,7 +56,7 @@ export default function ServiceTestimonials({
               key={i}
               className={[
                 'flex-none w-[min(390px,82vw)] group relative rounded-[22px] px-7 pt-8 pb-7 flex flex-col',
-                'border border-line bg-ivory coral-underline',
+                'border border-line bg-ink coral-underline',
                 'hover:border-coral/40 hover:bg-coral/5 transition-colors duration-300',
               ].join(' ')}
             >
@@ -70,7 +70,7 @@ export default function ServiceTestimonials({
                 <path d="M0 26V15.6C0 6.9 5.2 1.3 13 0l1.7 3.5C9.9 4.8 6.9 7.9 6.9 13H13v13H0zm17.3 0V15.6c0-8.7 5.2-14.3 13-15.6L32 3.5c-4.8 1.3-7.8 4.4-7.8 9.5h6.1v13H17.3z" />
               </svg>
 
-              <p className="text-ivory-2 text-[15px] font-light leading-[1.7] flex-grow">
+              <p className="text-cream text-[15px] font-light leading-[1.7] flex-grow">
                 {t.quote}
               </p>
 

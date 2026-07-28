@@ -40,7 +40,7 @@ export default function OurValues() {
             Our Philosophy
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[15ch]">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[15ch]">
             The values behind{' '}
             <em className="not-italic text-coral">every visit</em>.
           </h2>
@@ -76,7 +76,7 @@ function ValueCard({
         transitionDelay: `${delay}s`,
       }}
     >
-      <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ivory">
+      <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ink">
         {item.title}
       </h4>
       <p className="text-muted text-[15px] font-light leading-[1.7]">{item.body}</p>

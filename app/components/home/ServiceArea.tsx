@@ -23,7 +23,7 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
 
         {/* Content */}
         <div>
-          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[14ch]">
+          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[14ch]">
             Caring for patients across{' '}
             <em className="not-italic text-coral">Chandler.</em>
           </h2>
@@ -65,7 +65,7 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
 
         {/* Contact Card */}
         <div className="rounded-[28px] border border-line bg-white/[0.02] p-8 lg:p-10">
-          <h3 className="font-serif text-[24px] text-ivory mb-6">
+          <h3 className="font-serif text-[24px] text-ink mb-6">
             Promenade Dental
           </h3>
 
@@ -91,7 +91,7 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
 
               <a
                 href="tel:+14808028188"
-                className="text-ivory hover:text-coral transition-colors"
+                className="text-ink hover:text-coral transition-colors"
               >
                 (480) 802-8188
               </a>

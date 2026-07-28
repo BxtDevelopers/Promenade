@@ -13,8 +13,8 @@ export const metadata = buildPageMetadata({
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <Navbar textColor="text-ivory" hoverColor="hover:text-ivory/80" />
-      <main className="bg-bg text-ivory">
+      <Navbar textColor="text-ink" hoverColor="hover:text-ink/80" />
+      <main className="bg-bg text-ink">
         <PrivacyPolicyContent />
       </main>
       <Footer />
