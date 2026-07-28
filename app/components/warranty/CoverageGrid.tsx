@@ -22,7 +22,7 @@ const coverage: CoverageItem[] = [
   {
     icon: Crown,
     title: 'Crowns & bridges',
-    period: 'Warranty period: 5 years',
+    period: 'Warranty period: 3 years',
     fails: 'Breakage, misfit, or leakage under normal use',
     promise: 'Repair or replace at no cost to you*',
     yourPart: 'Keep your 6-month cleanings & exams',
@@ -30,7 +30,7 @@ const coverage: CoverageItem[] = [
   {
     icon: Activity,
     title: 'Root canals',
-    period: 'Warranty period: 5 years',
+    period: 'Warranty period: 3 years',
     fails: 'The treated tooth develops a covered problem',
     promise: 'Re-treat, or credit the fee toward next steps*',
     yourPart: 'Keep your 6-month cleanings & exams',
