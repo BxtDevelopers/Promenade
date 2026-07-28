@@ -224,7 +224,6 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                   <Field label="Reason for visit">
-                    {/* Assuming CustomReasonDropdown is imported above */}
                     <CustomReasonDropdown
                       value={form.reason}
                       onChange={(val) => setForm((f) => ({ ...f, reason: val }))}
@@ -237,7 +236,6 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                         value={form.date}
                         onChange={update('date')}
                         onClick={(e) => {
-                          // This forces the native calendar dropdown to open on click
                           if (typeof e.currentTarget.showPicker === 'function') {
                             e.currentTarget.showPicker();
                           }
@@ -328,7 +326,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
               </h2>
               <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-[42ch] mb-6 md:mb-8">
                 Thanks{form.name ? `, ${form.name.split(' ')[0]}` : ''} — our team will reach out
-                within one business day to confirm your visit. For anything urgent, call us directly.
+                 to confirm your visit. For anything urgent, call us directly.
               </p>
               <a
                 href="tel:+14808028188"

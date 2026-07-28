@@ -49,7 +49,7 @@ const problems: Problem[] = [
     desc: 'Whitening & cosmetic work',
   },
   {
-    href: `/services/sleep-apnea`,
+    href: `/services/sleep-apnea-snoring-solutions`,
     icon: <Moon className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
     title: 'Snoring or poor sleep',
     desc: 'Sleep apnea & snoring solutions',
