@@ -112,7 +112,10 @@ export function CherryFloatingButton() {
                 ctaFontFamily: 'Poppins',
                 bodyFontFamily: 'Poppins',
                 ctaColor: '#e89a72',
-                ctaTextColor: '#FFFFFF'
+                // Navy rather than the generator's #FFFFFF: white on this
+                // coral is 2.26:1 and fails WCAG AA, navy is 7.1:1. The coral
+                // fill is unchanged, so it still matches the site.
+                ctaTextColor: '#0E2335'
             }
         }
     }, ['floatingEstimator']);`}
