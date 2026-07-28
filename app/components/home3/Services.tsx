@@ -30,7 +30,7 @@ const services = [
     ),
   },
   {
-    href:    `/services/sleep-apnea`,
+    href:    `/services/sleep-apnea-snoring-solutions`,
     num:     '03',
     title:   'Sleep Apnea',
     desc:    'Custom oral appliances to treat snoring and improve your restful sleep.',

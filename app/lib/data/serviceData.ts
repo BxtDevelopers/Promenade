@@ -306,7 +306,7 @@ symptomsSection?: {
 
   cta: {
     label: 'View New Patient Information',
-    href: '/home03#new-patients',
+    href: '/#new-patients',
   },
 },
     whyItMatters: {

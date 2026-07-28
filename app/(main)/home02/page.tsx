@@ -22,7 +22,7 @@ import Services from "@/app/components/home/Services";
 import StickyMobileFooter from "@/app/components/home/StickyMobileFooter";
 import Testimonials from "@/app/components/home/Testimonials";
 import WhyChooseUs from "@/app/components/home/WhyChooseUs";
-import StatsBand from "@/app/components/home/StatsBand";
+import StatsBand from "@/app/components/home3/StatsBand";
 import ScrollReveal from "@/app/components/home3/ScrollReveal";
 import QuickActions from "@/app/components/home3/Quickactions";
 
