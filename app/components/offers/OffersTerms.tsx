@@ -4,7 +4,7 @@ import Reveal from '../common/Reveal'
 const TERMS = [
   'New Patient Welcome pricing applies to patients who haven\u2019t visited in the last 12 months.',
   'Offers cannot be combined with insurance benefits or other promotions.',
-  'Senior Discount applies to patients 65+ \u2014 valid ID may be requested.',
+  'Senior Discount applies to patients 55+ \u2014 valid ID may be requested.',
   'Whitening offer requires a current cleaning and exam within the last 6 months.',
   'Pricing and availability may change \u2014 ask our team to confirm current details.',
 ]
