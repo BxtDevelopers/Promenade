@@ -8,7 +8,13 @@ import ServicesHub from "@/app/components/services/ServiceHub"
 import ServiceIntro from "@/app/components/services/ServiceIntro"
 import LocationMap from "@/app/components/services/ServiceLocation"
 import WhyChooseUs from "@/app/components/services/ServicesWhyChooseUs"
+import { buildPageMetadata } from "@/app/lib/seo"
 
+export const metadata = buildPageMetadata({
+    title: 'Dental Services in Chandler, AZ | Promenade Dental',
+    description: 'Explore family, cosmetic, restorative, implant, emergency, and sleep dentistry at Promenade Dental in Fulton Ranch, Chandler.',
+    path: '/services',
+})
 
 export default function ServicePage (){
     return (

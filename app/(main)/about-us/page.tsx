@@ -65,15 +65,16 @@ import VisitUs from '@/app/components/about2/VisitUs'
 import WhyChooseUs from '@/app/components/about2/WhyChooseUs'
 import Footer from '@/app/components/home3/Footer'
 import Navbar from '@/app/components/home3/Navbar'
-import type { Metadata } from 'next'
 import TeamSection from '@/app/components/about2/TeamSection'
+import { buildPageMetadata } from '@/app/lib/seo'
 
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'About Us | Promenade Dental — Chandler, AZ',
   description:
     'For 23+ years, Chandler families have trusted Promenade Dental for calm, unhurried care. Meet Dr. Shriya Sarin and founding dentist Dr. James Wei.',
-}
+  path: '/about-us',
+})
 
 export default function AboutPage() {
   return (

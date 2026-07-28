@@ -6,12 +6,14 @@ import OffersGrid from "@/app/components/offers/OffersGrid"
 import OffersHero from "@/app/components/offers/OffersHero"
 import OffersHowToClaim from "@/app/components/offers/OffersHowToClaim"
 import OffersTerms from "@/app/components/offers/OffersTerms"
+import { buildPageMetadata } from "@/app/lib/seo"
 
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: 'Offers & Specials | Promenade Dental',
   description: 'New patient specials, senior discounts, and whitening offers at Promenade Dental in Chandler, AZ.',
-}
+  path: '/offers',
+})
 
 export default function OffersPage() {
   return (

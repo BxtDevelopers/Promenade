@@ -3,12 +3,19 @@ import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import { BookingModalProvider } from "./components/common/BookingModalProvider";
 import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
+import { organizationJsonLd, siteConfig } from "./lib/seo";
 
 export const metadata: Metadata = {
-  title: "Promenade Dental",
-  description:
-    "Promenade Dental offers general, cosmetic, and orthodontic dentistry in a warm, modern environment. Book your free consultation today.",
-  keywords: "dentist chandler, cosmetic dentistry, Invisalign, dental implants, teeth whitening",
+  metadataBase: new URL(siteConfig.url),
+  title: siteConfig.name,
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  category: "healthcare",
+  formatDetection: {
+    address: false,
+    email: false,
+    telephone: false,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -21,6 +28,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(
+              /</g,
+              "\\u003c",
+            ),
+          }}
+        />
         <GoogleReviewsProvider>
         <BookingModalProvider>
           {children}
