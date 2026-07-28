@@ -194,7 +194,7 @@ const sections: Section[] = [
         <P>Questions about these Terms &amp; Conditions can be directed to:</P>
         <List
           items={[
-            <>Promenade Dental &mdash; 4905 S. Alma School Road, Suite 1, Chandler, AZ 85248</>,
+            <>Promenade Dental &mdash; 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248</>,
             <>
               Phone:{' '}
               <Link href="tel:+14808028188" className="text-coral hover:text-ink">

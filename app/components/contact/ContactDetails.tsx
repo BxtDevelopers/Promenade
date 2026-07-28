@@ -21,10 +21,9 @@ const DETAILS = [
     href: 'mailto:info@promenadedds.com',
     icon: 'M3 6h18v12H3V6zm0 0 9 7 9-7',
   },
-  //\u00b7 Fri\u2013Mon Closed
   {
     label: 'Office Hours',
-    value: 'Mon 8am\u20131pm (appointment only) \u00b7 Tue\u2013Thu 8am\u20137pm',
+    value: 'Mon 8am\u20131pm (by appt only) \u00b7 Tue\u2013Thu 8am\u20137pm \u00b7 Fri\u2013Sun Closed',
     href: undefined,
     icon: 'M12 8v4l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z',
   },

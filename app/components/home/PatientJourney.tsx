@@ -26,7 +26,7 @@ const MILESTONES = [
     step: '02',
     tag: 'Arrive',
     title: 'A Warm Welcome',
-    body: 'No clipboards in the waiting room. You`re greeted by name, offered a seat in a calm space, and given time — not a number.',
+    body: 'No clipboards in the waiting room. You’re greeted by name, offered a seat in a calm space, and given time — not a number.',
     icon: ClipboardList,
   },
   {
@@ -40,14 +40,14 @@ const MILESTONES = [
     step: '04',
     tag: 'Treat',
     title: 'Gentle, Precise Care',
-    body: 'Modern technology, steady hands, and a pace set by you. Every step explained as we go — you`re always in control.',
+    body: 'Modern technology, steady hands, and a pace set by you. Every step explained as we go — you’re always in control.',
     icon: Sparkles,
   },
   {
     step: '05',
     tag: 'Follow Up',
     title: 'Your Plan, Not Ours',
-    body: 'After treatment you leave with a clear picture of what`s next — honest recommendations, realistic timelines, and zero upselling.',
+    body: 'After treatment you leave with a clear picture of what’s next — honest recommendations, realistic timelines, and zero upselling.',
     icon: ShieldCheck,
   },
   {

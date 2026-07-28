@@ -104,6 +104,24 @@ export default function CoverageGrid() {
           ))}
         </div>
 
+        {/* Resolves the "*" carried by the coverage promises above, the hero
+            badge, and the guarantee wording in HowItWorks/WarrantyFAQ. States
+            only conditions already set out on this page — do not add or
+            broaden terms here without the practice confirming them. */}
+        <Reveal>
+          <p
+            id="warranty-terms"
+            className="mt-[28px] max-w-[78ch] text-[12.5px] font-light leading-[1.6] text-muted"
+          >
+            <span aria-hidden="true">*</span> Applies to our workmanship on covered
+            treatment that fails under normal use, within the period shown, while your
+            routine six-month cleanings and exams are current. It does not cover damage
+            from accidents or trauma, neglect, grinding without a recommended night
+            guard, or conditions outside our control. We confirm the exact terms for
+            your treatment before we begin.
+          </p>
+        </Reveal>
+
       </div>
     </section>
   )

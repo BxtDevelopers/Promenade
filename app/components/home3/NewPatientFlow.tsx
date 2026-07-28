@@ -137,12 +137,12 @@ const steps = [
   {
     num:   '02',
     title: 'We listen & review',
-    desc:  'We go over your history and what`s bothering you, then examine carefully — no rushing, no judgment.',
+    desc:  'We go over your history and what’s bothering you, then examine carefully — no rushing, no judgment.',
   },
   {
     num:   '03',
     title: 'Leave with a clear plan',
-    desc:  'You`ll know exactly what`s urgent, what can wait, and what it costs — before anything is decided.',
+    desc:  'You’ll know exactly what’s urgent, what can wait, and what it costs — before anything is decided.',
   },
 ]
 

@@ -46,7 +46,7 @@ export default function LocationMap() {
                 Promenade Dental
               </h3>
               <p className="text-muted text-[14.5px] font-light leading-[1.8]">
-                4905 S. Alma School Road, Suite 1
+                4905 S. Alma School Rd, Suite 1
                 <br />
                 Chandler, AZ 85248
               </p>
@@ -54,7 +54,7 @@ export default function LocationMap() {
               <div className="h-px bg-line my-6" />
 
               <p className="text-muted text-[14.5px] font-light leading-[1.8]">
-                Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
+                Mon 8am&ndash;1pm (by appt only) &middot; Tue&ndash;Thu 8am&ndash;7pm &middot; Fri&ndash;Sun Closed
               </p>
 
               <div className="h-px bg-line my-6" />

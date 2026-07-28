@@ -25,7 +25,7 @@ export default function VisitUs() {
             <div className="mt-[14px] text-[15px] leading-[1.8] text-cream">
               <b className="font-medium text-ink">Promenade Dental</b>
               <br />
-              4905 S. Alma School Road, Suite 1
+              4905 S. Alma School Rd, Suite 1
               <br />
               Chandler, AZ 85248
               <br />
@@ -33,7 +33,7 @@ export default function VisitUs() {
                 (480) 802-8188
               </Link>
               <br />
-              Mon 8am&mdash;1pm (by appointment only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
+              Mon 8am&ndash;1pm (by appt only) &middot; Tue&ndash;Thu 8am&ndash;7pm &middot; Fri&ndash;Sun Closed
             </div>
 
             <p className="mt-3 text-[13.5px] text-muted">

@@ -6702,7 +6702,7 @@ testimonialsSection: {
 
     {
       quote:
-        'I wasn`t sure whether I needed dentures or implants. The consultation helped me understand which option fit my needs and budget.',
+        'I wasn’t sure whether I needed dentures or implants. The consultation helped me understand which option fit my needs and budget.',
       name: 'Jennifer M.',
       context: 'Tooth Replacement Consultation',
     },

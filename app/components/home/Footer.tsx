@@ -129,7 +129,7 @@ export default function Footer() {
                   className="text-coral mt-1 shrink-0"
                 />
                 <span className='hover:text-white'>
-                  4905 S. Alma School Road
+                  4905 S. Alma School Rd
                   <br />
                   Suite 1
                   <br />

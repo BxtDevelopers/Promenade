@@ -47,7 +47,7 @@ export default function AboutCTA() {
           </div>
 
           <p className="text-muted-2 text-[13px] font-light leading-[1.7] mt-10">
-            4905 S. Alma School Road, Suite 1 &middot; Chandler, AZ 85248
+            4905 S. Alma School Rd, Suite 1 &middot; Chandler, AZ 85248
             <br />
             Mon&ndash;Fri 8am&ndash;7pm &middot; Sat 9am&ndash;5pm
           </p>

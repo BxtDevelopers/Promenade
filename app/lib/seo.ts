@@ -12,7 +12,7 @@ export const siteConfig = {
   description:
     "Gentle family, cosmetic, restorative, implant, emergency, and sleep dentistry in Fulton Ranch, Chandler, Arizona.",
   address: {
-    streetAddress: "4905 S. Alma School Road, Suite 1",
+    streetAddress: "4905 S. Alma School Rd, Suite 1",
     addressLocality: "Chandler",
     addressRegion: "AZ",
     postalCode: "85248",

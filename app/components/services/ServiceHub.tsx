@@ -54,7 +54,7 @@ const SERVICE_GROUPS: ServiceGroup[] = [
   },
   {
     eyebrow: 'Cosmetic Dentistry',
-    heading: 'The smile you`ve imagined, made real.',
+    heading: 'The smile you’ve imagined, made real.',
     body: 'Cosmetic dentistry improves your smile while considering tooth health, gum balance, and natural-looking results. Dr. Shriya plans every treatment around your goals, facial features, and oral health.',
     ctaLabel: 'Explore Cosmetic Dentistry',
     ctaHref: '/services/cosmetic-dentistry',
@@ -86,7 +86,7 @@ const SERVICE_GROUPS: ServiceGroup[] = [
   },
   {
     eyebrow: 'Restorative Dentistry',
-    heading: 'Rebuild strength. Protect what`s left.',
+    heading: 'Rebuild strength. Protect what’s left.',
     body: 'Restorative dentistry repairs teeth that are damaged, decayed, infected, or missing. The goal is to rebuild strength, protect natural teeth, restore chewing comfort, and prevent future complications.',
     ctaLabel: 'Explore Restorative Dentistry',
     ctaHref: '/services/restorative-dentistry',
