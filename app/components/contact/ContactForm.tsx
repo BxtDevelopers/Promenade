@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 import CustomReasonDropdown from '../common/CustomDropDown';
+import SmsConsent from '../common/SmsConsent';
 
 export default function ContactForm() {
   const [leadRef, leadIn] = useScrollReveal();
   const [formRef, formIn] = useScrollReveal();
+  const [smsConsent, setSmsConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
 
@@ -22,7 +24,9 @@ export default function ContactForm() {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'contact', ...data }),
+        // smsConsent is sent explicitly as a boolean; FormData would otherwise
+        // yield the string "on", or omit the key entirely when unchecked.
+        body: JSON.stringify({ formType: 'contact', ...data, smsConsent }),
       });
 
       if (response.ok) {
@@ -129,6 +133,13 @@ export default function ContactForm() {
                     className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted focus:outline-none focus:border-coral transition-colors resize-none"
                   />
                 </div>
+
+                <SmsConsent
+                  id="contact-form-sms-consent"
+                  checked={smsConsent}
+                  onChange={setSmsConsent}
+                  tone="dark"
+                />
 
                 <button
                   type="submit"

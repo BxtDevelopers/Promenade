@@ -106,8 +106,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Promenade Dental Studio. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="text-white/40 hover:text-white font-['DM_Sans'] text-[13px] transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

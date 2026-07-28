@@ -153,8 +153,46 @@ const sections: Section[] = [
     ),
   },
   {
+    id: 'sms-terms',
+    title: '5. Text Message (SMS) Terms and Conditions',
+    body: (
+      <>
+        <P>
+          If you consent to receive SMS from Promenade Dental, you agree to receive
+          informational and conversational SMS from us. That means appointment reminders,
+          confirmations and reschedule notices, post-visit follow-up, and replies to
+          messages you send us. We do not send marketing or promotional text messages.
+        </P>
+        <P>
+          Reply STOP to unsubscribe; reply HELP for help. Msg &amp; data rates may apply.
+          Messaging frequency may vary. Visit our{' '}
+          <Link href="/privacy-policy" className="text-coral hover:text-ink">
+            Privacy Policy
+          </Link>{' '}
+          and{' '}
+          <Link href="/terms-and-conditions" className="text-coral hover:text-ink">
+            Terms and Conditions
+          </Link>
+          .
+        </P>
+        <P>
+          <strong className="font-medium text-ink">How we obtain your consent:</strong> you
+          opt in by ticking the SMS box on a form on this website, by giving written consent
+          at our office, or by texting us first. Consent is never pre-selected, and agreeing
+          to receive text messages is not a condition of receiving treatment. You can
+          withdraw consent at any time by replying STOP or by telling us at your next visit.
+        </P>
+        <P>
+          <strong className="font-medium text-ink">Mobile Opt-In Consent:</strong> No mobile
+          opt-in message consent will be shared with third parties or affiliates for
+          marketing purposes.
+        </P>
+      </>
+    ),
+  },
+  {
     id: 'security',
-    title: '5. How We Protect Your Information',
+    title: '6. How We Protect Your Information',
     body: (
       <P>
         We maintain administrative, technical, and physical safeguards designed to protect your
@@ -166,7 +204,7 @@ const sections: Section[] = [
   },
   {
     id: 'retention',
-    title: '6. Record Retention',
+    title: '7. Record Retention',
     body: (
       <P>
         We retain dental and health records in accordance with Arizona state requirements and our
@@ -177,7 +215,7 @@ const sections: Section[] = [
   },
   {
     id: 'changes',
-    title: '7. Changes to This Notice',
+    title: '8. Changes to This Notice',
     body: (
       <P>
         We may update this policy from time to time to reflect changes in our practices or the
@@ -189,7 +227,7 @@ const sections: Section[] = [
   },
   {
     id: 'contact',
-    title: '8. Contact Us',
+    title: '9. Contact Us',
     body: (
       <>
         <P>

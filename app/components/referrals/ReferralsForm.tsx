@@ -2,8 +2,10 @@
 
 import { useState } from 'react'
 import Reveal from '../common/Reveal'
+import SmsConsent from '../common/SmsConsent'
 
 export default function ReferralsForm() {
+  const [smsConsent, setSmsConsent] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false) // Added submitting state
 
@@ -18,7 +20,8 @@ export default function ReferralsForm() {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'referral', ...data }),
+        // Consent covers the referrer's own number, not the friend's.
+        body: JSON.stringify({ formType: 'referral', ...data, smsConsent }),
       });
 
       if (response.ok) {
@@ -92,6 +95,13 @@ export default function ReferralsForm() {
                   className="w-full rounded-[14px] border border-white bg-ink/[0.06] px-4 py-[13px] font-sans text-[14.5px] text-white outline-none focus:border-coral"
                 />
               </div>
+
+              <SmsConsent
+                id="referrals-form-sms-consent"
+                checked={smsConsent}
+                onChange={setSmsConsent}
+                tone="dark"
+              />
 
               <button
                 type="submit"

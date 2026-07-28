@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import SmsConsent from './SmsConsent';
 export interface BookingModalProps {
   open: boolean;
   onClose: () => void;
@@ -35,6 +36,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
   const [status, setStatus] = useState<'form' | 'submitting' | 'done'>('form');
   const [form, setForm] = useState<BookingFormState>(EMPTY_FORM);
   const [error, setError] = useState<string | null>(null);
+  const [smsConsent, setSmsConsent] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const firstFieldRef = useRef<HTMLInputElement>(null);
@@ -44,6 +46,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     setStatus('form');
     setForm(EMPTY_FORM);
     setError(null);
+    setSmsConsent(false);
 
     const raf = requestAnimationFrame(() => setMounted(true));
     const focusTimer = setTimeout(() => firstFieldRef.current?.focus(), 300);
@@ -106,6 +109,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
           service: form.reason,
           date: form.date,
           message: form.message,
+          smsConsent,
         }),
       });
 
@@ -252,6 +256,12 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     className={[INPUT_CLASS, 'resize-none'].join(' ')}
                   />
                 </Field>
+
+                <SmsConsent
+                  id="booking-modal-sms-consent"
+                  checked={smsConsent}
+                  onChange={setSmsConsent}
+                />
 
                 {error && (
                   <div

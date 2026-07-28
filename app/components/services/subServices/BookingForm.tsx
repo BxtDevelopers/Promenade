@@ -1,6 +1,8 @@
 import { useState } from "react";
+import SmsConsent from "../../common/SmsConsent";
 
 export default function BookingForm({ service }: { service: string }) {
+  const [smsConsent, setSmsConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
   const [fields, setFields] = useState({
@@ -25,7 +27,7 @@ export default function BookingForm({ service }: { service: string }) {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'booking', ...fields }),
+        body: JSON.stringify({ formType: 'booking', ...fields, smsConsent }),
       });
 
       if (response.ok) {
@@ -133,6 +135,12 @@ export default function BookingForm({ service }: { service: string }) {
             onChange={set('message')}
           />
         </div>
+
+        <SmsConsent
+          id="service-booking-form-sms-consent"
+          checked={smsConsent}
+          onChange={setSmsConsent}
+        />
 
         {/* Submit */}
         <button

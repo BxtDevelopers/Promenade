@@ -171,14 +171,14 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy-policy"
               className="hover:text-coral transition-colors"
             >
               Privacy Policy
             </a>
 
             <a
-              href="#"
+              href="/terms-and-conditions"
               className="hover:text-coral transition-colors"
             >
               Terms of Service

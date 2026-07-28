@@ -164,6 +164,23 @@ export async function POST(req: Request) {
     const e = (key: string, fallback = 'N/A') =>
       f[key] ? escapeHtml(f[key]) : fallback;
 
+    // Record of SMS opt-in. Carriers require the practice to be able to
+    // evidence consent, so stamp every submission with the answer and the
+    // time it was given. A checkbox arrives as true, or "on" via FormData.
+    const smsConsent =
+      data.smsConsent === true ||
+      data.smsConsent === 'on' ||
+      data.smsConsent === 'true';
+    const consentBlock = `
+          <hr />
+          <p><strong>SMS consent:</strong> ${
+            smsConsent
+              ? 'YES — agreed to receive informational &amp; conversational SMS'
+              : 'No — did not opt in'
+          }</p>
+          <p><strong>Consent recorded:</strong> ${escapeHtml(new Date().toISOString())}</p>
+        `;
+
     let subject = '';
     let html = '';
 
@@ -175,7 +192,7 @@ export async function POST(req: Request) {
           <p><strong>Name:</strong> ${e('name')}</p>
           <p><strong>Phone:</strong> ${e('phone')}</p>
           <p><strong>Email:</strong> ${e('email')}</p>
-          <p><strong>Message:</strong><br/>${e('message')}</p>
+          <p><strong>Message:</strong><br/>${e('message')}</p>${consentBlock}
         `;
         break;
 
@@ -190,7 +207,7 @@ export async function POST(req: Request) {
           <h3>Friend Details</h3>
           <p><strong>Name:</strong> ${e('friendName')}</p>
           <p><strong>Contact:</strong> ${e('friendContact')}</p>
-          <p><strong>Notes:</strong><br/>${e('notes', 'None provided')}</p>
+          <p><strong>Notes:</strong><br/>${e('notes', 'None provided')}</p>${consentBlock}
         `;
         break;
 
@@ -203,7 +220,7 @@ export async function POST(req: Request) {
           <p><strong>Email:</strong> ${e('email')}</p>
           <p><strong>Service:</strong> ${e('service')}</p>
           <p><strong>Preferred Date:</strong> ${e('date')}</p>
-          <p><strong>Additional Notes:</strong><br/>${e('message', 'None provided')}</p>
+          <p><strong>Additional Notes:</strong><br/>${e('message', 'None provided')}</p>${consentBlock}
         `;
         break;
     }
