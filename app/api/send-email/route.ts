@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     // Send the email
     await transporter.sendMail({
       from: process.env.MAILER_USER, // The authenticated Hostinger email
-      to: "info@promenadedds.com",   // The destination email
+      to: "zee@bixeltek.com",   // The destination email
       replyTo: formData.email,       // Allows you to hit "Reply" directly to the user
       subject: subject,
       html: html,
