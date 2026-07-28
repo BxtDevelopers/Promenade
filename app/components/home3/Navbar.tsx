@@ -11,7 +11,7 @@ import {
   X 
 } from 'lucide-react'
 import { SERVICES } from '@/app/lib/data/serviceData'
-import { SUB_SERVICES } from '@/app/lib/subServiceData'
+import { SUB_SERVICES } from '@/app/lib/data/subServiceData'
 import Image from 'next/image'
 
 

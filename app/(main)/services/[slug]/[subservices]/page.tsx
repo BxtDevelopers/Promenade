@@ -254,7 +254,7 @@ import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return SUB_SERVICES.map((service) => ({
-    service: service.serviceSlug,
+    slug: service.serviceSlug,
     subservices: service.slug,
   }));
 }

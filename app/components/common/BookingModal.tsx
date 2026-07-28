@@ -34,6 +34,7 @@ const EMPTY_FORM: BookingFormState = {
 export default function BookingModal({ open, onClose }: BookingModalProps) {
   const [status, setStatus] = useState<'form' | 'submitting' | 'done'>('form');
   const [form, setForm] = useState<BookingFormState>(EMPTY_FORM);
+  const [error, setError] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
 
   const firstFieldRef = useRef<HTMLInputElement>(null);
@@ -42,6 +43,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     if (!open) return;
     setStatus('form');
     setForm(EMPTY_FORM);
+    setError(null);
 
     const raf = requestAnimationFrame(() => setMounted(true));
     const focusTimer = setTimeout(() => firstFieldRef.current?.focus(), 300);
@@ -76,13 +78,52 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
       setForm((f) => ({ ...f, [key]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.reason) return;
 
+    if (!form.name || !form.phone) {
+      setError('Please give us your name and a phone number so we can reach you.');
+      return;
+    }
+    if (!form.reason) {
+      setError('Please pick a reason for your visit.');
+      return;
+    }
+
+    setError(null);
     setStatus('submitting');
-    // TODO: replace with real submit
-    setTimeout(() => setStatus('done'), 900);
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'booking',
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          // The API's booking handler labels this field "Service".
+          service: form.reason,
+          date: form.date,
+          message: form.message,
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => null);
+        throw new Error(body?.error ?? 'Request failed');
+      }
+
+      setStatus('done');
+    } catch (err) {
+      // Never report success we did not get — the patient needs to know
+      // the request did not reach the practice so they can call instead.
+      console.error('Booking request failed:', err);
+      setError(
+        'Sorry — we could not send your request just now. Please call us at (480) 802-8188 and we will get you booked.',
+      );
+      setStatus('form');
+    }
   };
 
   return (
@@ -211,6 +252,15 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     className={[INPUT_CLASS, 'resize-none'].join(' ')}
                   />
                 </Field>
+
+                {error && (
+                  <div
+                    role="alert"
+                    className="rounded-xl border border-red-500/30 bg-red-500/5 px-4 py-3 text-sm text-red-600"
+                  >
+                    {error}
+                  </div>
+                )}
 
                 {/* ── Action Buttons Container ── */}
                 <div className="mt-2 flex flex-col sm:flex-row items-center gap-3">
