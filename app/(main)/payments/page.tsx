@@ -7,6 +7,7 @@ import PaymentsHero from "@/app/components/payments/PaymentsHero";
 import PaymentsHowItWorks from "@/app/components/payments/PaymentsHowItWorks";
 import PaymentsProviders from "@/app/components/payments/PaymentsProviders";
 import PaymentsUses from "@/app/components/payments/PaymentsUses";
+import { CherryFullPageWidget } from "@/app/components/common/CherryWidget";
 import { buildPageMetadata } from "@/app/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -23,6 +24,9 @@ export default function PaymentsPage() {
       <PaymentsHero />
       <PaymentsHowItWorks />
       <PaymentsProviders />
+      {/* Cherry's interactive estimator, directly below the provider cards
+          that link out to it. */}
+      <CherryFullPageWidget />
       <PaymentsUses />
       <PaymentsBenefitsPanel />
       <PaymentsFaqs />

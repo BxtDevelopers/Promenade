@@ -3,6 +3,7 @@ import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import { BookingModalProvider } from "./components/common/BookingModalProvider";
 import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
+import { CherryFloatingButton } from "./components/common/CherryWidget";
 import { getGoogleReviews } from "./lib/googleReviews";
 import { organizationJsonLd, siteConfig } from "./lib/seo";
 
@@ -46,6 +47,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </BookingModalProvider>
           </GoogleReviewsProvider>
         <ScrollToTop />
+        <CherryFloatingButton />
         </body>
     </html>
   );
