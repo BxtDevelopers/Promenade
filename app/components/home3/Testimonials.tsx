@@ -1,5 +1,7 @@
 "use client";
 
+import { useGoogleReviews } from "@/app/context/GoogleReviewsContext";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 interface GoogleReview {
@@ -16,24 +18,17 @@ interface GoogleReview {
 const MAX_CHARS = 180;
 
 export default function TestimonialsMarquee() {
-  const [reviews, setReviews] = useState<GoogleReview[]>([]);
-  const [rating, setRating] = useState(0);
-  const [totalReviews, setTotalReviews] = useState(0);
-
+  
   const [expandedReviews, setExpandedReviews] = useState<
     Record<number, boolean>
   >({});
 
-  useEffect(() => {
-    fetch("/api/google-reviews")
-      .then((res) => res.json())
-      .then((data) => {
-        setReviews(data.reviews || []);
-        setRating(data.rating || 0);
-        setTotalReviews(data.totalReviews || 0);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+ const {
+  reviews,
+  rating,
+  totalReviews,
+  loading,
+} = useGoogleReviews();
 
   const marqueeReviews = useMemo(() => [...reviews, ...reviews], [reviews]);
 
@@ -124,11 +119,13 @@ export default function TestimonialsMarquee() {
 
                 <div className="flex items-center gap-3 mt-6 pt-5 border-t border-ivory/80">
                   {review.authorAttribution?.photoUri ? (
-                    <img
-                      src={review.authorAttribution.photoUri}
-                      alt={review.authorAttribution.displayName}
-                      className="w-10 h-10 rounded-full object-cover"
-                    />
+                    <Image
+                        src={review.authorAttribution.photoUri}
+                        alt={review.authorAttribution.displayName}
+                        width={40}
+                        height={40}
+                        className="rounded-full object-cover"
+                      />
                   ) : (
                     <div className="w-10 h-10 rounded-full bg-coral/20 flex items-center justify-center text-coral text-sm font-semibold">
                       {review.authorAttribution?.displayName?.charAt(0) || "G"}

@@ -56,7 +56,7 @@ export default function InsuranceSection() {
               </h2>
 
               <p className="mt-6 max-w-[42ch] text-base md:text-lg leading-relaxed font-medium text-slate-800">
-                We&apos;re in-network with {CARRIERS.length} major carriers and we&apos;ll maximize your
+                We&apos;re in-network with {CARRIERS.length} + major carriers and we&apos;ll maximize your
                 benefits for you — zero surprises, just great care.
               </p>
 

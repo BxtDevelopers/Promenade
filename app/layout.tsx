@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import { BookingModalProvider } from "./components/common/BookingModalProvider";
+import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
 
 export const metadata: Metadata = {
   title: "Promenade Dental",
   description:
     "Promenade Dental offers general, cosmetic, and orthodontic dentistry in a warm, modern environment. Book your free consultation today.",
-  keywords: "dentist Toronto, cosmetic dentistry, Invisalign, dental implants, teeth whitening",
+  keywords: "dentist chandler, cosmetic dentistry, Invisalign, dental implants, teeth whitening",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,9 +21,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
+        <GoogleReviewsProvider>
         <BookingModalProvider>
           {children}
           </BookingModalProvider>
+          </GoogleReviewsProvider>
         <ScrollToTop />
         </body>
     </html>
