@@ -103,9 +103,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="text-[13px] font-light text-[color:var(--muted-2)] leading-[1.7]">
-              <div>Mon : 8am&ndash;1pm (by appt only)</div>
-              <div>Tue&ndash;Thu : 8am&ndash;7pm</div>
-              <div>Fri&ndash;Sun : Closed</div>
+              <div><span className='font-semibold'>Mon</span> : 8am&ndash;1pm (by appt only)</div>
+              <div><span className='font-semibold'>Tue&ndash;Thu</span> : 8am&ndash;7pm</div>
+              <div><span className='font-semibold'>Fri&ndash;Sun</span> : Closed</div>
             </li>
             </ul>
           </div>
