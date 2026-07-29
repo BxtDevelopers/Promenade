@@ -3,15 +3,26 @@ import "./globals.css";
 import ScrollToTop from "./components/common/ScrollToTop";
 import { BookingModalProvider } from "./components/common/BookingModalProvider";
 import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
+import { CherryFloatingButton } from "./components/common/CherryWidget";
+import { getGoogleReviews } from "./lib/googleReviews";
+import { organizationJsonLd, siteConfig } from "./lib/seo";
 
 export const metadata: Metadata = {
-  title: "Promenade Dental",
-  description:
-    "Promenade Dental offers general, cosmetic, and orthodontic dentistry in a warm, modern environment. Book your free consultation today.",
-  keywords: "dentist chandler, cosmetic dentistry, Invisalign, dental implants, teeth whitening",
+  metadataBase: new URL(siteConfig.url),
+  title: siteConfig.name,
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  category: "healthcare",
+  formatDetection: {
+    address: false,
+    email: false,
+    telephone: false,
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const googleReviews = await getGoogleReviews();
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
@@ -21,12 +32,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
-        <GoogleReviewsProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(
+              /</g,
+              "\\u003c",
+            ),
+          }}
+        />
+        <GoogleReviewsProvider value={googleReviews}>
         <BookingModalProvider>
           {children}
           </BookingModalProvider>
           </GoogleReviewsProvider>
         <ScrollToTop />
+        <CherryFloatingButton />
         </body>
     </html>
   );

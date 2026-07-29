@@ -54,13 +54,13 @@
 //       <div className="absolute inset-0 z-[1] bg-[radial-gradient(60%_60%_at_50%_100%,rgba(232,154,114,0.1),transparent_70%)]" />
 
 //       <div className="relative z-[2] px-site max-w-[1240px] mx-auto py-section flex flex-col items-center text-center">
-//         <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.1] tracking-[-0.02em] text-ivory max-w-[20ch]">
+//         <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.1] tracking-[-0.02em] text-ink max-w-[20ch]">
 //           {title} <em className="not-italic text-coral">{highlight}</em>
 //         </h2>
 //         <p className="text-muted text-body-lg font-light leading-[1.7] max-w-[48ch] mt-6 mb-10">{subtitle}</p>
 //         <Link
 //           href={buttonHref}
-//           className="inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase px-[30px] py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300 shadow-btn text-bg bg-coral hover:bg-ivory hover:-translate-y-0.5"
+//           className="inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase px-[30px] py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300 shadow-btn text-bg bg-coral hover:bg-ink hover:-translate-y-0.5"
 //         >
 //           {buttonText} →
 //         </Link>
@@ -130,13 +130,13 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
                 <em className="not-italic text-coral">{data.highlight}</em>
               </h2>
               
-              <p className="text-ivory-2 font-light text-[16px] md:text-[18px] leading-[1.7] mb-10">
+              <p className="text-cream font-light text-[16px] md:text-[18px] leading-[1.7] mb-10">
                 {data.subtitle}
               </p>
               
               <Link
                 href="tel:+14808028188"
-                className="inline-flex items-center justify-center py-[16px] px-10 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-1 shadow-[0_12px_24px_-8px_rgba(232,154,114,0.4)]"
+                className="inline-flex items-center justify-center py-[16px] px-10 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-ink border-none transition-all duration-300 hover:bg-ink hover:text-bg hover:-translate-y-1 shadow-[0_12px_24px_-8px_rgba(232,154,114,0.4)]"
               >
                 {data.buttonText} →
               </Link>

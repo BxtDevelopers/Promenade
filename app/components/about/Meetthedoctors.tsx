@@ -35,7 +35,7 @@ export default function MeetTheDoctors() {
             Meet the Team
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-[18ch]">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[18ch]">
             The dentists you&apos;ll{' '}
             <em className="not-italic text-coral">actually</em> get to know.
           </h2>
@@ -65,7 +65,7 @@ function DoctorCard({
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="rounded-[22px] border border-line bg-ivory/[0.02] overflow-hidden transition-all duration-1000 ease-out"
+      className="rounded-[22px] border border-line bg-ink/[0.02] overflow-hidden transition-all duration-1000 ease-out"
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? 'none' : 'translateY(34px)',
@@ -81,7 +81,7 @@ function DoctorCard({
           {doctor.role}
         </span>
 
-        <h3 className="font-serif font-normal text-[clamp(22px,2.4vw,30px)] text-ivory mb-3">
+        <h3 className="font-serif font-normal text-[clamp(22px,2.4vw,30px)] text-ink mb-3">
           {doctor.name}
         </h3>
 

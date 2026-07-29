@@ -28,7 +28,7 @@ export default function ServiceGallery({
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
             {eyebrow}
           </span>
-          <h2 className="font-serif font-light text-3xl lg:text-[clamp(34px,4vw,58px)] leading-[1.08] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-[clamp(34px,4vw,58px)] leading-[1.08] tracking-[-0.02em] text-ink">
             {heading}
           </h2>
         </div>

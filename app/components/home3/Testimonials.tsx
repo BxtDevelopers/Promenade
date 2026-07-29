@@ -27,10 +27,15 @@ export default function TestimonialsMarquee() {
   reviews,
   rating,
   totalReviews,
-  loading,
+  available,
 } = useGoogleReviews();
 
   const marqueeReviews = useMemo(() => [...reviews, ...reviews], [reviews]);
+
+  // A section headed "Real Google Reviews" showing 0.0 stars and an empty
+  // carousel is worse than no section at all, so drop it when the Places
+  // lookup gave us nothing to show.
+  if (!available || reviews.length === 0) return null;
 
   const getReviewText = (text: string, expanded: boolean) => {
     if (expanded) return text;
@@ -66,7 +71,7 @@ export default function TestimonialsMarquee() {
               ★★★★★
             </div>
 
-            <div className="text-[12.5px] tracking-[0.05em] uppercase mt-[5px] font-medium text-ivory-2">
+            <div className="text-[12.5px] tracking-[0.05em] uppercase mt-[5px] font-medium text-cream">
               <b className="text-white font-semibold">{totalReviews}+</b>{" "}
               Google Reviews
             </div>
@@ -96,7 +101,7 @@ export default function TestimonialsMarquee() {
                 </div>
 
                 <div className="flex-1">
-                  <p className="font-serif font-light text-[18px] leading-[1.45] text-ivory">
+                  <p className="font-serif font-light text-[18px] leading-[1.45] text-ink">
                     &ldquo;
                     {getReviewText(reviewText, !!expanded)}
                     &rdquo;
@@ -117,7 +122,7 @@ export default function TestimonialsMarquee() {
                   )}
                 </div>
 
-                <div className="flex items-center gap-3 mt-6 pt-5 border-t border-ivory/80">
+                <div className="flex items-center gap-3 mt-6 pt-5 border-t border-ink/80">
                   {review.authorAttribution?.photoUri ? (
                     <Image
                         src={review.authorAttribution.photoUri}
@@ -132,7 +137,7 @@ export default function TestimonialsMarquee() {
                     </div>
                   )}
 
-                  <cite className="not-italic text-[12px] tracking-[0.08em] uppercase text-ivory/90">
+                  <cite className="not-italic text-[12px] tracking-[0.08em] uppercase text-ink/90">
                     {review.authorAttribution?.displayName || "Google User"}
                   </cite>
                 </div>

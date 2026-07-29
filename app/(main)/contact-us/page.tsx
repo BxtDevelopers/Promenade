@@ -9,7 +9,13 @@ import LocationMap from "@/app/components/contact/LocationMap";
 import ClosingCTA from "@/app/components/home/ClosingCTA";
 import Footer from "@/app/components/home3/Footer";
 import Navbar from "@/app/components/home3/Navbar";
+import { buildPageMetadata } from "@/app/lib/seo";
 
+export const metadata = buildPageMetadata({
+  title: 'Contact Promenade Dental | Chandler, AZ Dentist',
+  description: 'Contact Promenade Dental in Fulton Ranch, Chandler to request an appointment, ask about insurance, or get help with an urgent dental concern.',
+  path: '/contact-us',
+});
 
 // import ContactFAQSection from "@/app/components/contact/ContactFAQSection";
 // import ContactFormSection from "@/app/components/contact/ContactFormSection";
@@ -41,8 +47,8 @@ import Navbar from "@/app/components/home3/Navbar";
 export default function ContactPage() {
   return (
     <>
-    <Navbar textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80' />
-    <main className="bg-bg text-ivory">
+    <Navbar textColor = 'text-ink' hoverColor = 'hover:text-ink/80' />
+    <main className="bg-bg text-ink">
       <ContactHero />
       <ContactDetails />
       <ContactForm />

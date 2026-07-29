@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         <p
   ref={leadRef as React.RefObject<HTMLParagraphElement>}
   className={[
-    'font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-ivory-2 text-center max-w-5xl mx-auto',
+    'font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-cream text-center max-w-5xl mx-auto',
     'transition-all duration-1000 ease-out',
     leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
   ].join(' ')}

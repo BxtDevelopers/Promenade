@@ -36,7 +36,7 @@ export default function EducationSection({
             {data.eyebrow}
           </span>
           
-          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.2em] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-6xl leading-[1.2em] tracking-[-0.02em] text-ink">
             {data.heading}
           </h2>
           
@@ -46,7 +46,7 @@ export default function EducationSection({
 
           {/* Highlighted Callout for Supporting Text */}
           <div className="pl-6 border-l border-coral/40 py-2 mb-10">
-            <p className="text-ivory/90 text-[17px] font-light leading-[1.65]">
+            <p className="text-ink/90 text-[17px] font-light leading-[1.65]">
               {data.supportingText}
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function EducationSection({
           <div>
             <Link 
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-coral text-white font-medium text-[15px] hover:bg-coral/90 transition-all duration-300 ease-out"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-coral text-ink font-medium text-[15px] hover:bg-coral/90 transition-all duration-300 ease-out"
             >
               {data.cta.label}
               <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
@@ -70,7 +70,7 @@ export default function EducationSection({
             Tablet: Wider, cinematic crop (md:aspect-[4/3])
             Desktop: Taller, portrait-leaning crop to match text height (lg:aspect-[4/5])
           */}
-          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:h-[700px] rounded-[24px] overflow-hidden border border-line bg-ivory/5 group">
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] lg:h-[700px] rounded-[24px] overflow-hidden border border-line bg-ink/5 group">
             {/* 
               Using standard <img> for drop-in readiness. 
               If using Next.js <Image>, replace this with:

@@ -28,7 +28,7 @@ export default function ByTheNumbers() {
             Promenade by the Numbers
           </span>
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory max-w-2xl">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-2xl">
             A track record{' '}
             <em className="not-italic text-coral">built on trust</em>.
           </h2>
@@ -58,7 +58,7 @@ function StatCard({
   return (
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
-      className="rounded-[22px] border border-line bg-ivory/[0.02] px-6 py-8 text-center transition-all duration-1000 ease-out"
+      className="rounded-[22px] border border-line bg-ink/[0.02] px-6 py-8 text-center transition-all duration-1000 ease-out"
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? 'none' : 'translateY(34px)',

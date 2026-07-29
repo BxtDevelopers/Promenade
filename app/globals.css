@@ -12,8 +12,10 @@
   --color-bg-2:       #0E2335;
   --color-panel:      #13293C;
   --color-line:       rgba(244, 236, 221, 0.14);
-  --color-ivory:      #0E2335;
-  --color-ivory-2:    #EFE6D4;
+  /* Dark navy used for text/ink on light surfaces. Was misnamed "ivory". */
+  --color-ink:        #0E2335;
+  /* The actual ivory/cream. Was "ivory-2". */
+  --color-cream:      #EFE6D4;
   --color-muted:      #94A6B6;
   --color-muted-2:    #6F8294;
   --color-coral:      #E89A72;
@@ -43,7 +45,7 @@
   }
 
   body {
-    @apply font-sans bg-bg text-ivory overflow-x-hidden;
+    @apply font-sans bg-bg text-ink overflow-x-hidden;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
   }
@@ -140,7 +142,7 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--color-ivory);
+    color: var(--color-ink);
     margin-bottom: 14px;
   }
 

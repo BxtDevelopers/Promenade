@@ -33,7 +33,7 @@ export default function OffersFinancingBanner() {
           <Reveal delay={0.1} className="flex shrink-0 flex-wrap items-center gap-3.5">
             <button
               onClick={openBookingModal}
-              className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[28px] py-[16px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ivory"
+              className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[28px] py-[16px] font-sans text-sm font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition hover:-translate-y-0.5 hover:bg-ink"
             >
               Ask about financing
             </button>

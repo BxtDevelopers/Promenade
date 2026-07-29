@@ -48,7 +48,7 @@ export default function ContactSection() {
             {[
               { icon: Phone, label: "Call Us", value: " (480) 802-8188", href:"tel:+14808028188"},
               { icon: Mail, label: "Email Us", value: "info@promenadedds.com", href: "mailto:info@promenadedds.com" },
-              { icon: MapPin, label: "Visit Us", value: "4905 S. Alma School Road, Suite 1 Chandler, AZ 85248 ", href: "https://www.google.com/maps?sll=33.235985,-111.859246&q=4905+S.+Alma+School+Road,+Suite+1+Chandler,+AZ+85248,+United+States&z=16" },
+              { icon: MapPin, label: "Visit Us", value: "4905 S. Alma School Rd, Suite 1 Chandler, AZ 85248 ", href: "https://www.google.com/maps?sll=33.235985,-111.859246&q=4905+S.+Alma+School+Road,+Suite+1+Chandler,+AZ+85248,+United+States&z=16" },
             ].map((item) => (
               <a
                 key={item.label}

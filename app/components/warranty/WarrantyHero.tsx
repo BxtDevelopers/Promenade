@@ -26,7 +26,7 @@ export default function WarrantyHero() {
         </Reveal>
 
         <Reveal delay={80}>
-          <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[-0.025em] text-ivory">
+          <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[-0.025em] text-ink">
             If it breaks,
             <br />
             <em className="italic font-normal text-coral">we&apos;ll make it right.</em>
@@ -34,7 +34,7 @@ export default function WarrantyHero() {
         </Reveal>
 
         <Reveal delay={140}>
-          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ivory">
+          <p className="mt-[22px] max-w-[54ch] text-story-body font-light leading-[1.6] text-ink">
             We believe in the quality of our work &mdash; and we want you to feel that confidence
             too. If something we placed doesn&apos;t hold up under normal use, we&apos;ll repair
             or replace it. Because it&apos;s the right thing to do.
@@ -45,7 +45,7 @@ export default function WarrantyHero() {
           {badges.map((badge) => (
             <span
               key={badge}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-ivory px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-ivory-2"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream"
             >
               <Check className="h-[14px] w-[14px] text-coral" strokeWidth={2.4} />
               {badge}
@@ -56,13 +56,13 @@ export default function WarrantyHero() {
         <Reveal delay={200} className="mt-[30px] flex flex-wrap items-center gap-[14px]">
           <button
             onClick={openBookingModal}
-            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-ivory"
+            className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-coral px-[30px] py-[17px] font-sans text-[14px] font-semibold uppercase tracking-[0.05em] text-ink hover:text-bg shadow-[0_20px_44px_-18px_rgba(232,154,114,.7)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink"
           >
             Book a visit
           </button>
           <Link
             href="tel:+14808028188"
-            className="rounded-full border border-coral px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ivory transition-all duration-300 hover:border-ivory"
+            className="rounded-full border border-coral px-[30px] py-[17px] font-sans text-[14px] font-medium uppercase tracking-[0.05em] text-ink transition-all duration-300 hover:border-ink"
           >
             Call (480) 802-8188
           </Link>

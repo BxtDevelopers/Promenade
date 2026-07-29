@@ -97,18 +97,29 @@ function CountUp({
 }
 
 export default function StatsBand() {
-  const { rating, totalReviews } = useGoogleReviews();
+  const { rating, totalReviews, available } = useGoogleReviews();
+  // Only claim a rating when we actually have one. Without this guard a failed
+  // Places lookup advertises "0.0 average rating" and "0+ Google reviews".
   const stats = [
     { to: 23, suffix: "+", label: "Years in Chandler" },
-    { to: rating, dec: 1, label: "★ Average rating" },
-    { to: totalReviews, suffix: "+", label: "Google reviews" },
+    ...(available
+      ? [
+          { to: rating, dec: 1, label: "★ Average rating" },
+          { to: totalReviews, suffix: "+", label: "Google reviews" },
+        ]
+      : []),
     { text: "PPO", label: "Most plans accepted" },
   ];
   return (
     <section
     >
       <div
-        className="grid mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)] py-[clamp(40px,5vw,60px)] gap-[24px] grid-cols-2 sm:grid-cols-2 lg:grid-cols-4"
+        className={
+          // Static class strings — Tailwind cannot see interpolated names.
+          available
+            ? "grid mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)] py-[clamp(40px,5vw,60px)] gap-[24px] grid-cols-2 sm:grid-cols-2 lg:grid-cols-4"
+            : "grid mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)] py-[clamp(40px,5vw,60px)] gap-[24px] grid-cols-2 sm:grid-cols-2 lg:grid-cols-2"
+        }
       >
         {stats.map((s, i) => (
           <div
@@ -124,7 +135,7 @@ export default function StatsBand() {
             )}
             <CountUp to={s.to} dec={s.dec} suffix={s.suffix} text={s.text} />
             <span
-              className="block mt-3 text-[11.5px] tracking-[0.15em] uppercase font-medium text-ivory"
+              className="block mt-3 text-[11.5px] tracking-[0.15em] uppercase font-medium text-ink"
             >
               {s.label}
             </span>

@@ -26,7 +26,7 @@ const MILESTONES = [
     step: '02',
     tag: 'Arrive',
     title: 'A Warm Welcome',
-    body: 'No clipboards in the waiting room. You`re greeted by name, offered a seat in a calm space, and given time — not a number.',
+    body: 'No clipboards in the waiting room. You’re greeted by name, offered a seat in a calm space, and given time — not a number.',
     icon: ClipboardList,
   },
   {
@@ -40,14 +40,14 @@ const MILESTONES = [
     step: '04',
     tag: 'Treat',
     title: 'Gentle, Precise Care',
-    body: 'Modern technology, steady hands, and a pace set by you. Every step explained as we go — you`re always in control.',
+    body: 'Modern technology, steady hands, and a pace set by you. Every step explained as we go — you’re always in control.',
     icon: Sparkles,
   },
   {
     step: '05',
     tag: 'Follow Up',
     title: 'Your Plan, Not Ours',
-    body: 'After treatment you leave with a clear picture of what`s next — honest recommendations, realistic timelines, and zero upselling.',
+    body: 'After treatment you leave with a clear picture of what’s next — honest recommendations, realistic timelines, and zero upselling.',
     icon: ShieldCheck,
   },
   {
@@ -150,7 +150,7 @@ export default function PatientJourney() {
               Your Experience
             </span>
             <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.04] tracking-[-0.025em] text-ivory">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.04] tracking-[-0.025em] text-ink">
               From first call<br />
               to <em className="not-italic text-coral">lasting smile</em>.
             </h2>
@@ -224,7 +224,7 @@ function JourneyCard({
       {/* Step dot + number */}
       <div className="flex items-center gap-3 mb-5 md:mb-6">
         <div className="w-4 h-4 rounded-full bg-coral ring-4 ring-coral/20 shrink-0 transition-transform duration-300 group-hover:scale-125" />
-        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ivory/25 tracking-tight">
+        <span className="font-serif font-light text-[42px] md:text-[48px] leading-none text-ink/25 tracking-tight">
           {m.step}
         </span>
       </div>
@@ -253,7 +253,7 @@ function JourneyCard({
         </div>
 
         <div>
-          <h3 className="font-serif font-normal text-[18px] md:text-[20px] text-ivory leading-snug mb-2 md:mb-3">
+          <h3 className="font-serif font-normal text-[18px] md:text-[20px] text-ink leading-snug mb-2 md:mb-3">
             {m.title}
           </h3>
           <p className="text-muted font-sans font-light text-[13.5px] md:text-[14px] leading-[1.7]">

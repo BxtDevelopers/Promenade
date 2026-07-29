@@ -245,12 +245,12 @@ export default function OurStory() {
           </span>
 
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Started by two dentists who wanted{' '}
             <em className="not-italic text-coral">something different</em>.
           </h2>
 
-          <div className="mt-8 space-y-5 text-ivory-2 text-[15px] md:text-[16px] font-light leading-[1.7]">
+          <div className="mt-8 space-y-5 text-cream text-[15px] md:text-[16px] font-light leading-[1.7]">
             <p>
               Dr. Vishal and Dr. Shriya Sarin opened Promenade Dental in
               Fulton Ranch because they kept hearing the same thing from

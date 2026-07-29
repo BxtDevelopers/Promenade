@@ -110,7 +110,7 @@ export default function ServiceHero({
           className="object-cover object-center"
         />
         {/* ── Added Solid Dark Overlay for Text Legibility ── */}
-        <div className="absolute inset-0 bg-ivory/60" />
+        <div className="absolute inset-0 bg-ink/60" />
       </div>
 
       {/* Your custom gradient overlay */}

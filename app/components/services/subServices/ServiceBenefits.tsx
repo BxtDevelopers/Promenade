@@ -26,7 +26,7 @@ export default function ServiceBenefits({
     {eyebrow}
   </span>
 
-  <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory mb-6">
+  <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink mb-6">
     {heading}
   </h2>
 
@@ -71,7 +71,7 @@ function BenefitCard({ benefit }: { benefit: { title: string; body: string; path
       className={[
         'relative rounded-[22px] px-7 pt-[30px] pb-8 overflow-hidden cursor-pointer',
         'border transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] coral-underline',
-        hov ? 'border-coral/40 bg-coral/5 -translate-y-[5px]' : 'border-ivory/60 bg-ivory/[0.02]',
+        hov ? 'border-coral/40 bg-coral/5 -translate-y-[5px]' : 'border-ink/60 bg-ink/[0.02]',
       ].join(' ')}
     >
       <svg viewBox="0 0 48 46" aria-hidden="true" className="w-[52px] h-auto mb-[22px] block">
@@ -92,7 +92,7 @@ function BenefitCard({ benefit }: { benefit: { title: string; body: string; path
           />
         ))}
       </svg>
-      <h3 className="font-serif font-normal text-[19px] mb-3 text-ivory">{benefit.title}</h3>
+      <h3 className="font-serif font-normal text-[19px] mb-3 text-ink">{benefit.title}</h3>
       <p className="text-muted text-[14.5px] font-light leading-[1.65]">{benefit.body}</p>
     </div>
   );

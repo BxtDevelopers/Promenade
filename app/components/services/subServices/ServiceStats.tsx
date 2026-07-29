@@ -31,7 +31,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ivory max-w-[20ch]">
+            <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ink max-w-[20ch]">
               {data.heading}
             </h2>
           </div>
@@ -60,9 +60,9 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             <Link 
               href={data.cta.href}
               className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase
-                transition-all duration-300 hover:text-ivory"
+                transition-all duration-300 hover:text-ink"
             >
-              <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-ivory/60 transition-colors">
+              <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-ink/60 transition-colors">
                 {data.cta.label}
               </span>
               <svg 
@@ -114,7 +114,7 @@ function ProcessStep({
       </div>
       
       {/* Content */}
-      <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ivory mb-3">
+      <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ink mb-3">
         {step.title}
       </h3>
       <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">

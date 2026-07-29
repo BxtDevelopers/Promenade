@@ -39,7 +39,11 @@ export default function ScrollToTop({ threshold = 480 }: { threshold?: number })
         'fixed z-40 flex items-center justify-center w-11 h-11 rounded-full cursor-pointer',
         'bg-bg/90 backdrop-blur-sm border border-coral',
         'transition-all duration-300 ease-out hover:-translate-y-0.5',
-        'bottom-[70px] right-[22px] md:bottom-[30px] md:right-[30px]',
+        // Moved to the left edge: the bottom-right corner is now occupied by
+        // Cherry's floating payment button, which renders at z-index 9999 and
+        // would sit on top of this control.
+        // bottom-[70px] left a 5px overlap with the 63px sticky mobile bar.
+        'bottom-[80px] left-[22px] md:bottom-[30px] md:left-[30px]',
         visible ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-3 pointer-events-none',
       ].join(' ')}
     >
@@ -58,7 +62,7 @@ export default function ScrollToTop({ threshold = 480 }: { threshold?: number })
             style={{ transition: 'stroke-dashoffset 120ms linear' }}
           />
         </svg> */}
-      <ArrowUp className="w-5 h-5 text-ivory relative" />
+      <ArrowUp className="w-5 h-5 text-ink relative" />
     </button>
   );
 }

@@ -81,7 +81,7 @@ export default function ClosingCTA() {
         <div className="rv flex items-center justify-center gap-[18px] mt-[42px] flex-wrap">
           <Link
             href={`/contact-us`}
-            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-bg bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5 px-[30px] py-[17px] shadow-[0_20px_44px_-18px_rgba(232,154,114,0.7)]"
+            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-ink hover:text-bg bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ink hover:-translate-y-0.5 px-[30px] py-[17px] shadow-[0_20px_44px_-18px_rgba(232,154,114,0.7)]"
           >
             Schedule my first visit →
           </Link>
@@ -96,9 +96,9 @@ export default function ClosingCTA() {
         <div className="rv mt-12 text-[14px] font-light leading-[1.9] text-muted">
           <b className="text-white font-medium">Most major PPO plans accepted · New patients welcome</b>
           <br />
-          Promenade Dental — Fulton Ranch · 4905 S. Alma School Road, Suite 1 · Chandler, AZ 85248
+          Promenade Dental — Fulton Ranch · 4905 S. Alma School Rd, Suite 1 · Chandler, AZ 85248
           <br />
-          (480) 802-8188 · Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
+          (480) 802-8188 · Mon 8am&ndash;1pm (by appt only) &middot; Tue&ndash;Thu 8am&ndash;7pm &middot; Fri&ndash;Sun Closed
         </div>
       </div>
       

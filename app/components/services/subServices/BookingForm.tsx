@@ -1,6 +1,8 @@
 import { useState } from "react";
+import SmsConsent from "../../common/SmsConsent";
 
 export default function BookingForm({ service }: { service: string }) {
+  const [smsConsent, setSmsConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
   const [fields, setFields] = useState({
@@ -25,7 +27,7 @@ export default function BookingForm({ service }: { service: string }) {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'booking', ...fields }),
+        body: JSON.stringify({ formType: 'booking', ...fields, smsConsent }),
       });
 
       if (response.ok) {
@@ -39,18 +41,18 @@ export default function BookingForm({ service }: { service: string }) {
   };
 
   const inputClass =
-    'w-full bg-white border border-ivory/50 rounded-[10px] px-4 py-[13px] text-ivory text-[14px] font-light placeholder:text-ivory focus:outline-none focus:border-coral/60 transition-colors duration-200';
+    'w-full bg-white border border-ink/50 rounded-[10px] px-4 py-[13px] text-ink text-[14px] font-light placeholder:text-ink/55 focus:outline-none focus:border-coral/60 transition-colors duration-200';
 
-  const labelClass = 'block text-[11px] tracking-eyebrow uppercase font-medium text-ivory mb-[7px]';
+  const labelClass = 'block text-[11px] tracking-eyebrow uppercase font-medium text-ink mb-[7px]';
 
   if (submitted) {
     return (
       <div
-        className="rounded-[20px] border border-ivory/10 flex flex-col items-center justify-center text-center gap-4 py-16 px-8"
+        className="rounded-[20px] border border-ink/10 flex flex-col items-center justify-center text-center gap-4 py-16 px-8"
         style={{ background: 'rgba(244,236,221,0.04)', backdropFilter: 'blur(12px)' }}
       >
         <span className="w-12 h-12 rounded-full border border-coral/40 flex items-center justify-center text-coral text-xl">✓</span>
-        <p className="font-serif font-light text-ivory text-2xl">We'll be in touch</p>
+        <p className="font-serif font-light text-ink text-2xl">We'll be in touch</p>
         <p className="text-muted text-[14px] font-light leading-relaxed max-w-[30ch]">
           Thanks, {fields.name.split(' ')[0]}. A member of our team will reach out to confirm your visit.
         </p>
@@ -65,7 +67,7 @@ export default function BookingForm({ service }: { service: string }) {
     >
       {/* Form header */}
       <p className="text-[11px] tracking-eyebrow uppercase font-medium text-coral mb-1">Request an Appointment</p>
-      <p className="font-serif font-light text-ivory text-xl leading-snug mb-6">
+      <p className="font-serif font-light text-ink text-xl leading-snug mb-6">
         Book your visit in&nbsp;<em className="not-italic text-coral">60 seconds</em>
       </p>
 
@@ -124,7 +126,7 @@ export default function BookingForm({ service }: { service: string }) {
 
         {/* Message */}
         <div>
-          <label className={labelClass}>Anything we should know? <span className="normal-case text-ivory/25">(optional)</span></label>
+          <label className={labelClass}>Anything we should know? <span className="normal-case text-ink/25">(optional)</span></label>
           <textarea
             rows={2}
             className={inputClass + ' resize-none'}
@@ -134,16 +136,22 @@ export default function BookingForm({ service }: { service: string }) {
           />
         </div>
 
+        <SmsConsent
+          id="service-booking-form-sms-consent"
+          checked={smsConsent}
+          onChange={setSmsConsent}
+        />
+
         {/* Submit */}
         <button
           onClick={handleSubmit}
           disabled={isSubmitting} // Disables button while sending
-          className="w-full mt-1 py-[15px] rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-bg border-none cursor-pointer transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-0.5 shadow-btn disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-coral disabled:hover:translate-y-0"
+          className="w-full mt-1 py-[15px] rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-ink border-none cursor-pointer transition-all duration-300 hover:bg-ink hover:text-bg hover:-translate-y-0.5 shadow-btn disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-coral disabled:hover:translate-y-0"
         >
           {isSubmitting ? 'Requesting...' : 'Request Appointment →'}
         </button>
 
-        <p className="text-center text-sm text-ivory/60 font-light -mt-1">
+        <p className="text-center text-sm text-ink/60 font-light -mt-1">
           No commitment — we'll confirm availability with you first.
         </p>
       </div>

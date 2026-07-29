@@ -46,13 +46,13 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
             </span>
           )}
           
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink">
               {data.heading}
             </h2>
             
             <div className="space-y-4 pt-2">
               {data.body.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} className="text-ivory/80 text-[15px] md:text-[16px] font-light leading-[1.7] lg:max-w-[80%] mx-auto">
+                <p key={idx} className="text-ink/80 text-[15px] md:text-[16px] font-light leading-[1.7] lg:max-w-[80%] mx-auto">
                   {paragraph}
                 </p>
               ))}
@@ -121,7 +121,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
               {data.alternative.items.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
                   <span className="text-muted-2 mt-1.5 shrink-0">—</span>
-                  <p className="text-ivory/70 text-lg font-light leading-[1.65]">
+                  <p className="text-ink/70 text-lg font-light leading-[1.65]">
                     {item}
                   </p>
                 </li>
@@ -136,7 +136,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
           <div className="mt-14 md:mt-20 flex justify-center">
             <Link
               href={data.cta.href}
-              className="group inline-flex items-center justify-center py-[16px] px-9 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-white border-none transition-all duration-300 hover:bg-ivory hover:text-bg hover:-translate-y-0.5 shadow-btn"
+              className="group inline-flex items-center justify-center py-[16px] px-9 rounded-full font-sans font-semibold text-[13px] tracking-wide2 uppercase bg-coral text-ink border-none transition-all duration-300 hover:bg-ink hover:text-bg hover:-translate-y-0.5 shadow-btn"
             >
               {data.cta.label} →
             </Link>

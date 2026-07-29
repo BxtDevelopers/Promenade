@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import SmsConsent from './SmsConsent';
 export interface BookingModalProps {
   open: boolean;
   onClose: () => void;
@@ -35,6 +35,8 @@ const EMPTY_FORM: BookingFormState = {
 export default function BookingModal({ open, onClose }: BookingModalProps) {
   const [status, setStatus] = useState<'form' | 'submitting' | 'done'>('form');
   const [form, setForm] = useState<BookingFormState>(EMPTY_FORM);
+  const [error, setError] = useState<string | null>(null);
+  const [smsConsent, setSmsConsent] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const firstFieldRef = useRef<HTMLInputElement>(null);
@@ -43,6 +45,8 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     if (!open) return;
     setStatus('form');
     setForm(EMPTY_FORM);
+    setError(null);
+    setSmsConsent(false);
 
     const raf = requestAnimationFrame(() => setMounted(true));
     const focusTimer = setTimeout(() => firstFieldRef.current?.focus(), 300);
@@ -79,31 +83,50 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.reason) return;
 
+    if (!form.name || !form.phone) {
+      setError('Please give us your name and a phone number so we can reach you.');
+      return;
+    }
+    if (!form.reason) {
+      setError('Please pick a reason for your visit.');
+      return;
+    }
+
+    setError(null);
     setStatus('submitting');
 
     try {
-      const response = await fetch('/api/send-email', {
+      const res = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        // We map form.reason to 'service' to match your backend API expectation
-        body: JSON.stringify({ 
-          formType: 'booking', 
-          ...form, 
-          service: form.reason 
+        body: JSON.stringify({
+          formType: 'booking',
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          // The API's booking handler labels this field "Service".
+          service: form.reason,
+          date: form.date,
+          message: form.message,
+          smsConsent,
         }),
       });
 
-      if (response.ok) {
-        setStatus('done');
-      } else {
-        console.error("Submission failed");
-        setStatus('form'); // Revert so user can try again
+      if (!res.ok) {
+        const body = await res.json().catch(() => null);
+        throw new Error(body?.error ?? 'Request failed');
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setStatus('form'); // Revert so user can try again
+
+      setStatus('done');
+    } catch (err) {
+      // Never report success we did not get — the patient needs to know
+      // the request did not reach the practice so they can call instead.
+      console.error('Booking request failed:', err);
+      setError(
+        'Sorry — we could not send your request just now. Please call us at (480) 802-8188 and we will get you booked.',
+      );
+      setStatus('form');
     }
   };
 
@@ -232,6 +255,21 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                   />
                 </Field>
 
+                <SmsConsent
+                  id="booking-modal-sms-consent"
+                  checked={smsConsent}
+                  onChange={setSmsConsent}
+                />
+
+                {error && (
+                  <div
+                    role="alert"
+                    className="rounded-xl border border-red-500/30 bg-red-500/5 px-4 py-3 text-sm text-red-600"
+                  >
+                    {error}
+                  </div>
+                )}
+
                 {/* ── Action Buttons Container ── */}
                 <div className="mt-2 flex flex-col sm:flex-row items-center gap-3">
                   <button
@@ -239,7 +277,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                     disabled={status === 'submitting'}
                     className={[
                       'w-full sm:w-auto inline-flex items-center justify-center gap-2',
-                      'rounded-xl bg-coral text-white font-medium text-base sm:text-[15px]',
+                      'rounded-xl bg-coral text-ink font-medium text-base sm:text-[15px]',
                       'px-8 py-3.5 sm:py-3 shadow-lg shadow-coral/20',
                       'transition-all duration-300 ease-out',
                       'hover:-translate-y-0.5 hover:bg-coral/90 hover:shadow-coral/30 active:translate-y-0 disabled:opacity-70 disabled:translate-y-0',
@@ -316,7 +354,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-coral/40 via-neutral-900/20 to-neutral-900/90 pointer-events-none" />
 
-          <div className="absolute top-7 -right-12 rotate-[38deg] bg-coral text-white text-[10px] font-bold tracking-widest uppercase px-14 py-2 shadow-lg z-10">
+          <div className="absolute top-7 -right-12 rotate-[38deg] bg-coral text-ink text-[10px] font-bold tracking-widest uppercase px-14 py-2 shadow-lg z-10">
             Same-day appts
           </div>
 

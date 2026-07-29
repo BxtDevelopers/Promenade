@@ -21,10 +21,9 @@ const DETAILS = [
     href: 'mailto:info@promenadedds.com',
     icon: 'M3 6h18v12H3V6zm0 0 9 7 9-7',
   },
-  //\u00b7 Fri\u2013Mon Closed
   {
     label: 'Office Hours',
-    value: 'Mon 8am\u20131pm (appointment only) \u00b7 Tue\u2013Thu 8am\u20137pm',
+    value: 'Mon 8am\u20131pm (by appt only) \u00b7 Tue\u2013Thu 8am\u20137pm \u00b7 Fri\u2013Sun Closed',
     href: undefined,
     icon: 'M12 8v4l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z',
   },
@@ -58,7 +57,7 @@ function DetailCard({
       ref={ref as React.RefObject<HTMLDivElement>}
       className={[
         'relative rounded-[22px] px-7 py-8 h-full overflow-hidden',
-        'border border-ivory/40 bg-ivory/5 coral-underline',
+        'border border-ink/40 bg-ink/5 coral-underline',
         'transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
         'hover:border-coral/40 hover:bg-coral/5 hover:-translate-y-[5px]',
       ].join(' ')}
@@ -80,7 +79,7 @@ function DetailCard({
         />
       </svg>
 
-      <h3 className="font-serif font-normal text-[19px] text-ivory mb-2">
+      <h3 className="font-serif font-normal text-[19px] text-ink mb-2">
         {item.label}
       </h3>
       <p className="text-muted text-[14.5px] font-light leading-[1.65]">

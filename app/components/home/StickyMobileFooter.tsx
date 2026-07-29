@@ -33,7 +33,7 @@ export default function StickyMobileFooter() {
           href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center gap-1 py-3 px-2 text-ivory hover:text-coral transition-colors active:bg-white/5"
+          className="flex flex-col items-center gap-1 py-3 px-2 text-ink hover:text-coral transition-colors active:bg-white/5"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path

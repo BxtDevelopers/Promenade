@@ -13,7 +13,7 @@ export default function TrustStrip() {
       <div className="px-site max-w-[1240px] mx-auto flex items-center justify-center gap-6 flex-wrap py-[22px]">
         {ITEMS.map((item, i) => (
           <span key={item} className="flex items-center gap-6">
-            <span className="text-[12px] tracking-wide3 uppercase text-ivory-2 font-medium">
+            <span className="text-[12px] tracking-wide3 uppercase text-cream font-medium">
               {item}
             </span>
             {i < ITEMS.length - 1 && (

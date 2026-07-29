@@ -6,13 +6,19 @@ import ReferralsHero from "@/app/components/referrals/ReferralsHero";
 import ReferralsHowItWorks from "@/app/components/referrals/ReferralsHowItWorks";
 import ReferralsTestimonials from "@/app/components/referrals/ReferralsTestimonials";
 import ReferralsWhyRefer from "@/app/components/referrals/ReferralsWhyRefer";
+import { buildPageMetadata } from "@/app/lib/seo";
 
+export const metadata = buildPageMetadata({
+  title: 'Patient Referrals | Promenade Dental Chandler',
+  description: 'Refer a friend or family member to Promenade Dental for gentle, personalized dental care in Fulton Ranch, Chandler.',
+  path: '/referrals',
+});
 
 export default function ReferralsPage() {
   return (
     <>
-    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
-    <main className="bg-bg font-sans text-ivory">
+    <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
+    <main className="bg-bg font-sans text-ink">
       <ReferralsHero />
       <ReferralsHowItWorks />
       <ReferralsForm />

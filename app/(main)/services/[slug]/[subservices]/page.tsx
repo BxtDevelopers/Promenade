@@ -55,6 +55,7 @@ import ServiceTestimonials from "@/app/components/services/subServices/ServiceTe
 import SymptomsSection from "@/app/components/services/subServices/SymptomsSection";
 import WhyChooseSection from "@/app/components/services/subServices/WhyChooseSection";
 import { SUB_SERVICES } from "@/app/lib/data/subServiceData";
+import { buildPageMetadata } from "@/app/lib/seo";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -254,7 +255,7 @@ import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return SUB_SERVICES.map((service) => ({
-    service: service.serviceSlug,
+    slug: service.serviceSlug,
     subservices: service.slug,
   }));
 }
@@ -290,13 +291,18 @@ export async function generateMetadata({
   if (!page) {
     return {
       title: 'Service Not Found | Promenade Dental',
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
-  return {
+  return buildPageMetadata({
     title: page.metaTitle,
     description: page.metaDescription,
-  };
+    path: `/services/${page.serviceSlug}/${page.slug}`,
+  });
 }
 
 export default async function ServicePage({
@@ -354,4 +360,4 @@ export default async function ServicePage({
        <Footer />
   </main>
   );
-} 
+}

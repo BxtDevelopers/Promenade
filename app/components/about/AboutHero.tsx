@@ -619,7 +619,7 @@ export default function AboutHero() {
       About Promenade Dental
     </motion.div>
 
-    <h1 className="font-serif font-light text-5xl lg:text-[clamp(44px,5.6vw,92px)] leading-[1.05] tracking-[-0.02em] mt-4 md:mt-6 text-ivory">
+    <h1 className="font-serif font-light text-5xl lg:text-[clamp(44px,5.6vw,92px)] leading-[1.05] tracking-[-0.02em] mt-4 md:mt-6 text-ink">
       {HEADLINE_LINES.map((line, i) => (
         <span key={i} className="block overflow-hidden">
           <motion.span
@@ -648,7 +648,7 @@ export default function AboutHero() {
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.05, duration: 1 }}
-      className="text-ivory text-body-lg font-light leading-[1.7] mt-6 max-w-[46ch] "
+      className="text-ink text-body-lg font-light leading-[1.7] mt-6 max-w-[46ch] "
     >
       Promenade Dental started with a simple idea: dental care should
       feel calm, honest, and personal. No rushed appointments, no

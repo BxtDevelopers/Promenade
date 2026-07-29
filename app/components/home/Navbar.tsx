@@ -52,7 +52,7 @@ export default function Nav() {
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="text-ivory/[0.78] transition-colors duration-300 hover:text-ivory"
+                className="text-ink/[0.78] transition-colors duration-300 hover:text-ink"
               >
                 {item.label}
               </Link>
@@ -61,7 +61,7 @@ export default function Nav() {
 
           {/* Services Dropdown */}
           <li className="relative group">
-            <button className="flex items-center gap-1 text-ivory/[0.78] hover:text-ivory transition-colors">
+            <button className="flex items-center gap-1 text-ink/[0.78] hover:text-ink transition-colors">
               Services
               <ChevronDown size={14} />
             </button>
@@ -89,7 +89,7 @@ export default function Nav() {
                 return (
                   // Each service row is itself a hover group for the sub-flyout
                   <div key={service.slug} className="relative group/sub">
-                    <div className="flex items-center justify-between px-4 py-3 rounded-lg text-ivory/80 hover:text-ivory hover:bg-bg-2 transition-colors cursor-pointer">
+                    <div className="flex items-center justify-between px-4 py-3 rounded-lg text-ink/80 hover:text-ink hover:bg-bg-2 transition-colors cursor-pointer">
                       <Link
                         href={`/services/${service.slug}`}
                         className="flex-1"
@@ -120,7 +120,7 @@ export default function Nav() {
                           <Link
                             key={sub.slug}
                             href={`/services/${service.slug}/${sub.slug}`}
-                            className="block px-4 py-2.5 rounded-lg text-ivory/75 hover:text-ivory hover:bg-bg-2 transition-colors text-[13px]"
+                            className="block px-4 py-2.5 rounded-lg text-ink/75 hover:text-ink hover:bg-bg-2 transition-colors text-[13px]"
                           >
                             {sub.name}
                           </Link>
@@ -146,7 +146,7 @@ export default function Nav() {
           <li>
             <Link
               href="/contact-us"
-              className="text-ivory/[0.78] transition-colors duration-300 hover:text-ivory"
+              className="text-ink/[0.78] transition-colors duration-300 hover:text-ink"
             >
               Contact
             </Link>
@@ -157,7 +157,7 @@ export default function Nav() {
         <div className="flex items-center gap-[22px]">
           <a
             href="tel:+14808028188"
-            className="hidden md:block text-ivory text-[13.5px] tracking-nav opacity-85 no-underline"
+            className="hidden md:block text-ink text-[13.5px] tracking-nav opacity-85 no-underline"
           >
             (480) 802-8188
           </a>
@@ -171,9 +171,9 @@ export default function Nav() {
             aria-label="Toggle menu"
             className="md:hidden flex flex-col justify-center items-center gap-[5px] w-10 h-10 cursor-pointer"
           >
-            <span className={['block w-6 h-px bg-ivory transition-all duration-300 origin-center', menuOpen ? 'rotate-45 translate-y-[6px]' : ''].join(' ')} />
-            <span className={['block w-6 h-px bg-ivory transition-all duration-300', menuOpen ? 'opacity-0 scale-x-0' : ''].join(' ')} />
-            <span className={['block w-6 h-px bg-ivory transition-all duration-300 origin-center', menuOpen ? '-rotate-45 -translate-y-[6px]' : ''].join(' ')} />
+            <span className={['block w-6 h-px bg-ink transition-all duration-300 origin-center', menuOpen ? 'rotate-45 translate-y-[6px]' : ''].join(' ')} />
+            <span className={['block w-6 h-px bg-ink transition-all duration-300', menuOpen ? 'opacity-0 scale-x-0' : ''].join(' ')} />
+            <span className={['block w-6 h-px bg-ink transition-all duration-300 origin-center', menuOpen ? '-rotate-45 -translate-y-[6px]' : ''].join(' ')} />
           </button>
         </div>
       </div>
@@ -190,12 +190,12 @@ export default function Nav() {
     >
       <ul className="flex flex-col gap-5 list-none mb-7">
         <li>
-          <Link href="/home02" onClick={() => setMenuOpen(false)} className="text-ivory/80 text-[16px]">
+          <Link href="/home02" onClick={() => setMenuOpen(false)} className="text-ink/80 text-[16px]">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about-us" onClick={() => setMenuOpen(false)} className="text-ivory/80 text-[16px]">
+          <Link href="/about-us" onClick={() => setMenuOpen(false)} className="text-ink/80 text-[16px]">
             About Us
           </Link>
         </li>
@@ -207,7 +207,7 @@ export default function Nav() {
             <Link
               href="/services"
               onClick={() => setMenuOpen(false)}
-              className="text-ivory font-medium text-[16px] hover:text-coral transition-colors"
+              className="text-ink font-medium text-[16px] hover:text-coral transition-colors"
             >
               Services
             </Link>
@@ -236,7 +236,7 @@ export default function Nav() {
                     <Link
                       href={`/services/${service.slug}`}
                       onClick={() => setMenuOpen(false)}
-                      className="text-muted hover:text-ivory transition-colors text-[15px] flex-1"
+                      className="text-muted hover:text-ink transition-colors text-[15px] flex-1"
                     >
                       {service.name}
                     </Link>
@@ -275,7 +275,7 @@ export default function Nav() {
                               key={sub.slug}
                               href={`/services/${service.slug}/${sub.slug}`}
                               onClick={() => setMenuOpen(false)}
-                              className="text-muted/60 hover:text-ivory text-[13.5px] transition-colors py-2"
+                              className="text-muted/60 hover:text-ink text-[13.5px] transition-colors py-2"
                             >
                               {sub.name}
                             </Link>
@@ -292,7 +292,7 @@ export default function Nav() {
         </li>
 
         <li>
-          <Link href="/contact-us" onClick={() => setMenuOpen(false)} className="text-ivory/80 text-[16px]">
+          <Link href="/contact-us" onClick={() => setMenuOpen(false)} className="text-ink/80 text-[16px]">
             Contact
           </Link>
         </li>
@@ -318,8 +318,8 @@ function NavBookButton() {
       className={[
         'rounded-full px-[22px] py-[11px] font-sans text-[13px] tracking-wide2 uppercase font-medium cursor-pointer transition-all duration-300',
         hovered
-          ? 'bg-ivory text-bg border border-ivory'
-          : 'bg-transparent text-ivory border border-ivory/40',
+          ? 'bg-ink text-bg border border-ink'
+          : 'bg-transparent text-ink border border-ink/40',
       ].join(' ')}
     >
       Book a Visit

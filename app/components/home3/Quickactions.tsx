@@ -33,7 +33,7 @@ export default function QuickActions() {
   const { openBookingModal } = useBookingModal()
 
   const itemClass =
-    'group flex md:items-center justify-start gap-[14px] no-underline text-ivory transition-colors duration-300 hover:bg-[rgba(232,154,114,0.08)] p-[24px_18px] w-full text-left'
+    'group flex md:items-center justify-start gap-[14px] no-underline text-ink transition-colors duration-300 hover:bg-[rgba(232,154,114,0.08)] p-[24px_18px] w-full text-left'
   return (
     <section className="border-y border-coral/20 hidden lg:block">
       <div className="grid mx-auto max-w-[1240px] grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[rgba(244,236,221,0.14)]">

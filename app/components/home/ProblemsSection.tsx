@@ -72,7 +72,7 @@ export default function ProblemsSection() {
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
             Problems We Treat
           </span>
-          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Does something{' '}
             <em className="not-italic text-coral">feel off</em>?
           </h2>
@@ -106,7 +106,7 @@ function ProblemCard({
     <a
       ref={ref as React.RefObject<HTMLAnchorElement>}
       href={problem.href}
-      className="group relative flex flex-col gap-3 rounded-[18px] border border-line bg-ivory/[0.02] px-5 pt-5 pb-6 transition-all duration-[400ms] ease-out hover:border-coral/40 hover:bg-coral/5 hover:-translate-y-[3px]"
+      className="group relative flex flex-col gap-3 rounded-[18px] border border-line bg-ink/[0.02] px-5 pt-5 pb-6 transition-all duration-[400ms] ease-out hover:border-coral/40 hover:bg-coral/5 hover:-translate-y-[3px]"
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? undefined : 'translateY(24px)',
@@ -120,7 +120,7 @@ function ProblemCard({
         </span>
       )}
 
-      <h3 className="font-serif text-[18px] lg:text-[20px] text-ivory group-hover:text-coral transition-colors pr-10">
+      <h3 className="font-serif text-[18px] lg:text-[20px] text-ink group-hover:text-coral transition-colors pr-10">
         {problem.symptom}
       </h3>
       <p className="text-muted text-[13.5px] font-light leading-[1.65] flex-1">

@@ -1,87 +1,46 @@
 "use client";
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  ReactNode,
-  useRef,
-} from "react";
+import { createContext, useContext, ReactNode } from "react";
 
-interface GoogleReview {
-  text?: {
-    text: string;
-  };
-  rating: number;
-  authorAttribution?: {
-    displayName: string;
-    photoUri?: string;
-  };
-}
+import type { GoogleReview, GoogleReviewsData } from "@/app/lib/googleReviews";
+
+export type { GoogleReview };
 
 interface GoogleReviewsContextType {
   reviews: GoogleReview[];
   rating: number;
   totalReviews: number;
-  loading: boolean;
-  error: boolean;
+  /**
+   * False when the Places lookup failed. Consumers must check this before
+   * rendering a rating — otherwise a failed lookup advertises "0.0 stars"
+   * and "0+ Google reviews" on a page headed "Real Google Reviews".
+   */
+  available: boolean;
 }
 
 const GoogleReviewsContext = createContext<
   GoogleReviewsContextType | undefined
 >(undefined);
 
+/**
+ * Reviews are fetched on the server (see app/lib/googleReviews.ts) and passed
+ * in here, so the real rating and review text are present in the initial HTML
+ * for crawlers and there is no flash of "0.0" on first paint.
+ */
 export function GoogleReviewsProvider({
+  value,
   children,
 }: {
+  value: GoogleReviewsData;
   children: ReactNode;
 }) {
-  const [reviews, setReviews] = useState<GoogleReview[]>([]);
-  const [rating, setRating] = useState(0);
-  const [totalReviews, setTotalReviews] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  // Prevent duplicate fetches in React Strict Mode (development)
-  const fetched = useRef(false);
-
-  useEffect(() => {
-    if (fetched.current) return;
-    fetched.current = true;
-
-    async function fetchReviews() {
-      try {
-        const res = await fetch("/api/google-reviews");
-
-        if (!res.ok) {
-          throw new Error("Failed to fetch reviews");
-        }
-
-        const data = await res.json();
-
-        setReviews(data.reviews ?? []);
-        setRating(data.rating ?? 0);
-        setTotalReviews(data.totalReviews ?? 0);
-      } catch (err) {
-        console.error(err);
-        setError(true);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchReviews();
-  }, []);
-
   return (
     <GoogleReviewsContext.Provider
       value={{
-        reviews,
-        rating,
-        totalReviews,
-        loading,
-        error,
+        reviews: value.reviews,
+        rating: value.rating,
+        totalReviews: value.totalReviews,
+        available: value.available,
       }}
     >
       {children}

@@ -180,7 +180,7 @@ function GhostButton() {
       onClick={openBookingModal}
       className="
         bg-coral
-        hover:bg-ivory
+        hover:bg-ink
         text-bg
         px-[30px]
         py-[17px]

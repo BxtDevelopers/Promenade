@@ -44,12 +44,12 @@ export default function SolutionsGridSection({ data }: { data: SolutionsGridData
             <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
               {data.eyebrow}
             </span>
-            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ivory max-w-[20ch]">
+            <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink max-w-[20ch]">
               {data.heading}
             </h2>
           </div>
           <div className="flex-1 lg:max-w-[500px]">
-            <p className="text-ivory/80 text-[15px] md:text-[16px] font-light leading-[1.7]">
+            <p className="text-ink/80 text-[15px] md:text-[16px] font-light leading-[1.7]">
               {data.body}
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function SolutionsGridSection({ data }: { data: SolutionsGridData
           <div className="mt-14 md:mt-20 flex justify-center">
             <Link
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 text-[13px] text-ivory font-medium tracking-[0.04em] uppercase rounded-full border border-ivory/20 px-8 py-[15px] hover:border-coral hover:bg-coral/5 transition-all duration-300"
+              className="group inline-flex items-center gap-3 text-[13px] text-ink font-medium tracking-[0.04em] uppercase rounded-full border border-ink/20 px-8 py-[15px] hover:border-coral hover:bg-coral/5 transition-all duration-300"
             >
               {data.cta.label}
               <svg
@@ -126,7 +126,7 @@ function SolutionCard({
           className="object-cover object-center filter brightness-90 transition-transform duration-[1200ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:scale-105 group-hover:brightness-100"
         />
         {/* Gradient overlay so text is always readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-ivory via-ivory/80 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/80 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80" />
       </div>
 
       {/* Card Content */}
@@ -137,7 +137,7 @@ function SolutionCard({
         <h3 className="font-serif font-normal text-[22px] md:text-[26px] text-white leading-[1.1] mb-4">
           {card.title}
         </h3>
-        <p className="text-ivory-2/80 font-sans font-light text-[14.5px] leading-[1.7]">
+        <p className="text-cream/80 font-sans font-light text-[14.5px] leading-[1.7]">
           {card.body}
         </p>
       </div>

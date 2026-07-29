@@ -145,7 +145,7 @@ export default function ScrollStory() {
             ${
               i === idx
                 ? 'text-coral'
-                : 'text-ivory/45'
+                : 'text-ink/45'
             }
           `}
         >
@@ -163,7 +163,7 @@ export default function ScrollStory() {
                 ${
                   i < idx
                     ? 'bg-coral'
-                    : 'bg-ivory/20'
+                    : 'bg-ink/20'
                 }
               `}
             />
@@ -202,7 +202,7 @@ export default function ScrollStory() {
                 <p className="text-[11.5px] tracking-eyebrow uppercase font-medium text-coral mt-[34px]">
                   Dental Treatments We Provide
                 </p>
-                <h2 className="font-serif font-light text-4xl lg:text-7xl lg:leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ivory mt-[14px] mb-5 max-w-[80%] md:max-w-full">
+                <h2 className="font-serif font-light text-4xl lg:text-7xl lg:leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ink mt-[14px] mb-5 max-w-[80%] md:max-w-full">
                   {s.title}
                 </h2>
 
@@ -223,7 +223,7 @@ export default function ScrollStory() {
                 <div className="mt-8 md:mt-10">
                   <a
                     href={s.ctaHref || '#'} // Assumes you add ctaHref to your STEPS data
-                    className="group inline-flex items-center gap-3 text-[13px] text-ivory font-medium tracking-[0.04em] uppercase rounded-full border border-ivory/20 px-7 py-[14px] hover:border-coral hover:bg-coral/5 transition-all duration-300"
+                    className="group inline-flex items-center gap-3 text-[13px] text-ink font-medium tracking-[0.04em] uppercase rounded-full border border-ink/20 px-7 py-[14px] hover:border-coral hover:bg-coral/5 transition-all duration-300"
                   >
                     {s.ctaLabel || 'Explore Services'} {/* Assumes you add ctaLabel to your STEPS data */}
                     <svg
@@ -251,7 +251,7 @@ export default function ScrollStory() {
             {STEPS.map((_, i) => (
               <div
                 key={i}
-                className="flex-1 h-[2px] bg-ivory/[0.16] overflow-hidden rounded-sm"
+                className="flex-1 h-[2px] bg-ink/[0.16] overflow-hidden rounded-sm"
               >
                 <div
                   className="h-full bg-coral transition-[width] duration-500 ease-in-out"

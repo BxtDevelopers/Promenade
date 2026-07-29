@@ -54,7 +54,7 @@ function CustomReasonDropdown() {
             py-3
             text-left
             text-[14.5px]
-            text-ivory
+            text-ink
             font-light
             hover:border-coral
             focus:border-coral
@@ -116,7 +116,7 @@ function CustomReasonDropdown() {
                   text-[14.5px]
                   text-white/80
                   hover:bg-bg
-                  hover:text-ivory
+                  hover:text-ink
                   transition-colors
                 "
               >

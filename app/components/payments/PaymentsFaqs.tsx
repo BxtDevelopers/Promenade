@@ -41,7 +41,7 @@ export default function PaymentsFaqs() {
             <Reveal key={faq.q} delay={i * 0.05}>
               <details
                 open={i === 0}
-                className="group rounded-2xl border border-line bg-ivory/[0.03] px-[22px]"
+                className="group rounded-2xl border border-line bg-ink/[0.03] px-[22px]"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[17px] font-normal text-white marker:content-none sm:text-[19px]">
                   {faq.q}

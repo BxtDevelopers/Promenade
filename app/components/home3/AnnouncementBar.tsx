@@ -22,7 +22,7 @@ export default function AnnouncementBar({ onOpenModal }: AnnouncementBarProps) {
       <button
         type="button"
         onClick={onOpenModal}
-        className="flex items-center gap-[9px] bg-transparent border-none cursor-pointer font-sans text-[13px] tracking-[0.04em] text-ivory"
+        className="flex items-center gap-[9px] bg-transparent border-none cursor-pointer font-sans text-[13px] tracking-[0.04em] text-ink"
       >
         <span className="text-coral">✦</span>
         New patient special: $125 cleaning, exam &amp; X-rays
@@ -37,7 +37,7 @@ export default function AnnouncementBar({ onOpenModal }: AnnouncementBarProps) {
         type="button"
         aria-label="Dismiss"
         onClick={() => setVisible(false)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-transparent border-none text-muted text-[17px] leading-none cursor-pointer px-1 hover:text-ivory transition-colors duration-200"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-transparent border-none text-muted text-[17px] leading-none cursor-pointer px-1 hover:text-ink transition-colors duration-200"
       >
         ×
       </button>

@@ -108,7 +108,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
         <div className="mt-16 text-center">
           <a 
             href={data.cta.href}
-            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-coral/50 bg-coral/5  font-medium text-[15px] hover:bg-coral text-white hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_25px_rgba(232,154,114,0.3)]"
+            className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-coral/50 bg-coral/5  font-medium text-[15px] hover:bg-coral text-ink hover:border-coral transition-all duration-300 shadow-[0_0_20px_rgba(232,154,114,0.0)] hover:shadow-[0_0_25px_rgba(232,154,114,0.3)]"
           >
             {data.cta.label}
             <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">

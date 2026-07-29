@@ -6,13 +6,19 @@ import InsuranceFaqs from "@/app/components/insurance/InsuranceFaqs";
 import InsuranceHero from "@/app/components/insurance/InsuranceHero";
 import InsuranceHowItWorks from "@/app/components/insurance/InsuranceHowItWorks";
 import InsuranceNoCoverageCta from "@/app/components/insurance/InsuranceNoCoverageCta";
+import { buildPageMetadata } from "@/app/lib/seo";
 
+export const metadata = buildPageMetadata({
+  title: 'Dental Insurance in Chandler, AZ | Promenade Dental',
+  description: 'Learn how Promenade Dental works with PPO dental insurance plans and helps Chandler patients understand coverage and out-of-pocket costs.',
+  path: '/insurance',
+});
 
 export default function InsurancePage() {
   return (
     <>
-    <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
-    <main className="bg-bg font-sans text-ivory">
+    <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
+    <main className="bg-bg font-sans text-ink">
       <InsuranceHero />
       <InsuranceHowItWorks />
       <InsuranceSection/>

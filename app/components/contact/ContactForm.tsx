@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 import CustomReasonDropdown from '../common/CustomDropDown';
+import SmsConsent from '../common/SmsConsent';
 
 export default function ContactForm() {
   const [leadRef, leadIn] = useScrollReveal();
   const [formRef, formIn] = useScrollReveal();
+  const [smsConsent, setSmsConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // Added submitting state
 
@@ -22,7 +24,9 @@ export default function ContactForm() {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'contact', ...data }),
+        // smsConsent is sent explicitly as a boolean; FormData would otherwise
+        // yield the string "on", or omit the key entirely when unchecked.
+        body: JSON.stringify({ formType: 'contact', ...data, smsConsent }),
       });
 
       if (response.ok) {
@@ -68,7 +72,7 @@ export default function ContactForm() {
             <div className="mt-10 space-y-5 max-w-[44ch]">
               <div className="flex items-start gap-4">
                 <span className="w-2 h-2 rounded-full bg-coral mt-2 shrink-0" />
-                <p className="text-ivory-2 text-[14.5px] font-light leading-[1.7]">
+                <p className="text-cream text-[14.5px] font-light leading-[1.7]">
                   Prefer to talk? Call{' '}
                   <a href="tel:+14808028188" className="text-coral hover:underline">
                     (480) 802-8188
@@ -78,7 +82,7 @@ export default function ContactForm() {
               </div>
               <div className="flex items-start gap-4">
                 <span className="w-2 h-2 rounded-full bg-coral mt-2 shrink-0" />
-                <p className="text-ivory-2 text-[14.5px] font-light leading-[1.7]">
+                <p className="text-cream text-[14.5px] font-light leading-[1.7]">
                   Dental emergency? Mention it in your message and we&apos;ll
                   prioritize a same-day response.
                 </p>
@@ -90,7 +94,7 @@ export default function ContactForm() {
           <div
             ref={formRef as React.RefObject<HTMLDivElement>}
             className={[
-              'rounded-[22px] border border-white/80 bg-ivory/[0.02] p-7 md:p-9',
+              'rounded-[22px] border border-white/80 bg-ink/[0.02] p-7 md:p-9',
               'transition-all duration-1000 ease-out delay-150',
               formIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
@@ -130,10 +134,17 @@ export default function ContactForm() {
                   />
                 </div>
 
+                <SmsConsent
+                  id="contact-form-sms-consent"
+                  checked={smsConsent}
+                  onChange={setSmsConsent}
+                  tone="dark"
+                />
+
                 <button
                   type="submit"
                   disabled={isSubmitting} // Disables button while sending
-                  className="inline-flex items-center justify-center bg-coral text-bg font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="inline-flex items-center justify-center bg-coral text-ink font-sans font-medium text-[14.5px] px-8 py-4 rounded-full transition-colors duration-300 hover:bg-coral-deep w-full sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit \u2192'} 
                 </button>

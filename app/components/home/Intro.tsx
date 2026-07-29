@@ -32,7 +32,7 @@
 // //         <p
 // //           ref={leadRef as React.RefObject<HTMLParagraphElement>}
 // //           className={[
-// //             'font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-ivory-2',
+// //             'font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.3] tracking-[-0.01em] text-cream',
 // //             'max-w-[20ch]',
 // //             'transition-all duration-1000 ease-out',
 // //             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
@@ -72,7 +72,7 @@
 // //         transitionDelay: `${delay}s`,
 // //       }}
 // //     >
-// //       <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ivory">
+// //       <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ink">
 // //         {item.title}
 // //       </h4>
 // //       <p className="text-muted text-[15px] font-light leading-[1.7]">{item.body}</p>
@@ -132,7 +132,7 @@
 //               <p className="text-coral text-[11px] tracking-wide3 uppercase font-medium mb-1">
 //                 One dentist. Always.
 //               </p>
-//               <p className="text-ivory text-[13px] font-light leading-snug max-w-[22ch]">
+//               <p className="text-ink text-[13px] font-light leading-snug max-w-[22ch]">
 //                 Every visit, Dr. Shriya — no rotating associates.
 //               </p>
 //             </motion.div>
@@ -151,7 +151,7 @@
 //             {/* Heading */}
 //             <h2
 //               className="font-serif font-light text-3xl
-//               lg:text-[clamp(40px,4.6vw,80px)]  leading-[1.05] tracking-[-0.02em] text-ivory"
+//               lg:text-[clamp(40px,4.6vw,80px)]  leading-[1.05] tracking-[-0.02em] text-ink"
 //             >
 //               Dental care built around{' '}
 //               <em className="not-italic text-coral">one dentist,</em>
@@ -191,10 +191,10 @@
 //                 href="/about"
 //                 className={[
 //                   'inline-flex items-center gap-3',
-//                   'rounded-full border border-ivory/20',
+//                   'rounded-full border border-ink/20',
 //                   'px-6 py-3',
-//                   'text-ivory text-[13px] font-medium tracking-nav',
-//                   'hover:border-ivory/60 hover:bg-ivory/5',
+//                   'text-ink text-[13px] font-medium tracking-nav',
+//                   'hover:border-ink/60 hover:bg-ink/5',
 //                   'transition-all duration-300',
 //                 ].join(' ')}
 //               >
@@ -256,7 +256,7 @@ export default function ServiceIntro() {
       inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
     ].join(' ')}
   >
-    <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+    <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
       Same trusted location.<br />
       <em className="not-italic text-coral">A more personal <br className='hidden md:block'/> approach to dentistry.</em>
     </h2>

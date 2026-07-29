@@ -30,7 +30,7 @@ export default function DoctorsSection() {
         {/* Section header */}
         <div className="mb-10 md:mb-12">
           <h2 className="font-serif font-light text-3xl
-            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+            lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Meet the dentists you&apos;ll{' '}
             <em className="not-italic text-coral">actually</em> get to know.
           </h2>
@@ -84,7 +84,7 @@ export default function DoctorsSection() {
 
                   {/* Name */}
                   <h3
-                    className="font-serif font-light leading-tight mt-3 md:mt-4 text-ivory"
+                    className="font-serif font-light leading-tight mt-3 md:mt-4 text-ink"
                     style={{ fontSize: 'clamp(36px, 5.4vw, 72px)' }}
                   >
                     {doc.firstName}
@@ -101,7 +101,7 @@ export default function DoctorsSection() {
                   <ul className="flex gap-8 md:gap-11 mt-6 md:mt-7 list-none p-0">
                     {doc.facts.map((f) => (
                       <li key={f.label}>
-                        <b className="font-serif text-[22px] md:text-[24px] font-normal text-ivory block leading-none">
+                        <b className="font-serif text-[22px] md:text-[24px] font-normal text-ink block leading-none">
                           {f.value}
                         </b>
                         <span className="text-muted text-[12px] md:text-[13px] mt-1.5 block">
@@ -148,8 +148,8 @@ function DrTab({
         'rounded-full px-[16px] md:px-[18px] py-[10px] md:py-[11px] font-sans text-[13px] tracking-nav cursor-pointer',
         'transition-all duration-300 border',
         active
-          ? 'bg-ivory text-bg border-ivory'
-          : 'bg-transparent text-muted border-line hover:text-ivory',
+          ? 'bg-ink text-bg border-ink'
+          : 'bg-transparent text-muted border-line hover:text-ink',
       ].join(' ')}
     >
       {label}

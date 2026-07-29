@@ -78,7 +78,7 @@ export default function ServicesSection() {
         <div className="flex items-end justify-between gap-[30px] flex-wrap mb-[30px] text-center">
           <div>
             <h2 className="font-serif font-light text-3xl 
-              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               Complete Dental Services{' '}
               <em className="not-italic text-coral">in Chandler, AZ</em>.
             </h2>
@@ -137,7 +137,7 @@ function ServiceCard({
         'coral-underline',
         hov
           ? 'border-coral/40 bg-coral/5 -translate-y-[5px]'
-          : 'border-line bg-ivory/[0.02]',
+          : 'border-line bg-ink/[0.02]',
       ].join(' ')}
     >
       {/* SVG icon */}
@@ -170,7 +170,7 @@ function ServiceCard({
       </span>
 
       {/* Title */}
-      <h3 className="font-serif font-normal text-[clamp(20px,2.2vw,26px)] mt-[5px] mb-3 text-ivory">
+      <h3 className="font-serif font-normal text-[clamp(20px,2.2vw,26px)] mt-[5px] mb-3 text-ink">
         {service.title}
       </h3>
 

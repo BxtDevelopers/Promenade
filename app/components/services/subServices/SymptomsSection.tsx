@@ -101,7 +101,7 @@ function SymptomCard({
       <h3 className="font-serif font-normal text-[19px] md:text-[21px] text-coral leading-snug mb-2 md:mb-3">
         {symptom.title}
       </h3>
-      <p className="text-ivory group-hover:text-muted font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
+      <p className="text-ink group-hover:text-muted font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
         {symptom.body}
       </p>
     </div>

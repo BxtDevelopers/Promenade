@@ -11,7 +11,7 @@ export default function NewPatientsSection() {
               New Patients
             </span>
             <h2 className="font-serif font-light text-3xl
-              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+              lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               You'll know exactly{' '}
               <em className="not-italic text-coral">what to expect</em>.
             </h2>
@@ -47,8 +47,8 @@ export default function NewPatientsSection() {
               />
             </div>
             {/* Social proof pull-quote under image */}
-            <div className="rounded-[14px] border border-line bg-ivory/[0.02] px-5 py-4">
-              <p className="text-ivory text-[14px] font-serif font-light leading-[1.6]">
+            <div className="rounded-[14px] border border-line bg-ink/[0.02] px-5 py-4">
+              <p className="text-ink text-[14px] font-serif font-light leading-[1.6]">
                 "I was nervous about finding a new dentist after moving. Dr. Shriya took her time explaining everything — I left feeling really good about the plan."
               </p>
               <p className="text-muted text-[12px] mt-2 tracking-[0.03em]">— Chandler patient · Google Review</p>

@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Treatments */}
           <div>
-            <h3 className="text-ivory text-sm uppercase tracking-[0.16em] mb-5">
+            <h3 className="text-ink text-sm uppercase tracking-[0.16em] mb-5">
               Treatments
             </h3>
 
@@ -83,7 +83,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-ivory text-sm uppercase tracking-[0.16em] mb-5">
+            <h3 className="text-ink text-sm uppercase tracking-[0.16em] mb-5">
               Company
             </h3>
 
@@ -118,7 +118,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-ivory text-sm uppercase tracking-[0.16em] mb-5">
+            <h3 className="text-ink text-sm uppercase tracking-[0.16em] mb-5">
               Visit Us
             </h3>
 
@@ -129,7 +129,7 @@ export default function Footer() {
                   className="text-coral mt-1 shrink-0"
                 />
                 <span className='hover:text-white'>
-                  4905 S. Alma School Road
+                  4905 S. Alma School Rd
                   <br />
                   Suite 1
                   <br />
@@ -171,14 +171,14 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy-policy"
               className="hover:text-coral transition-colors"
             >
               Privacy Policy
             </a>
 
             <a
-              href="#"
+              href="/terms-and-conditions"
               className="hover:text-coral transition-colors"
             >
               Terms of Service

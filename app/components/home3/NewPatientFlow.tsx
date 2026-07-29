@@ -44,7 +44,7 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 //           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
 //             Your First Visit
 //           </span>
-//           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+//           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
 //             Starting at Promenade is{' '}
 //             <em className="not-italic text-coral">simple</em>.
 //           </h2>
@@ -108,7 +108,7 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 //         )}
 //       </div>
 
-//       <h3 className="font-serif font-normal text-[clamp(20px,2vw,24px)] text-ivory mb-3">
+//       <h3 className="font-serif font-normal text-[clamp(20px,2vw,24px)] text-ink mb-3">
 //         {step.title}
 //       </h3>
 
@@ -137,12 +137,12 @@ const steps = [
   {
     num:   '02',
     title: 'We listen & review',
-    desc:  'We go over your history and what`s bothering you, then examine carefully — no rushing, no judgment.',
+    desc:  'We go over your history and what’s bothering you, then examine carefully — no rushing, no judgment.',
   },
   {
     num:   '03',
     title: 'Leave with a clear plan',
-    desc:  'You`ll know exactly what`s urgent, what can wait, and what it costs — before anything is decided.',
+    desc:  'You’ll know exactly what’s urgent, what can wait, and what it costs — before anything is decided.',
   },
 ]
 
@@ -156,7 +156,7 @@ export default function NewPatientFlow() {
           <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
             Your first visit
           </span>
-          <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ivory mt-2 text-[clamp(30px,4vw,52px)]">
+          <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]">
             Simple from{' '}
             <em className="italic text-coral">the start</em>.
           </h2>
@@ -183,7 +183,7 @@ export default function NewPatientFlow() {
           </span>
           
           {/* Step Title */}
-          <h3 className="font-serif font-normal text-ivory mt-[14px] mb-[14px] text-[clamp(22px,2.5vw,30px)]">
+          <h3 className="font-serif font-normal text-ink mt-[14px] mb-[14px] text-[clamp(22px,2.5vw,30px)]">
             {s.title}
           </h3>
           

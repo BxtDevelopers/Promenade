@@ -92,7 +92,7 @@
 
 //         {/* Headline */}
 //         <h1
-//           className="font-serif font-light leading-[0.98] tracking-[-0.025em] mt-[22px] text-ivory"
+//           className="font-serif font-light leading-[0.98] tracking-[-0.025em] mt-[22px] text-ink"
 //           style={{ fontSize: 'clamp(44px,7.6vw,98px)' }}
 //         >
 //           <span className="block overflow-hidden">
@@ -122,7 +122,7 @@
 //           {['Accepting new patients', 'Flexible scheduling'].map(text => (
 //             <span
 //               key={text}
-//               className="inline-flex items-center gap-2 text-[12.5px] tracking-[0.03em] text-ivory rounded-full px-4 py-[9px] border border-coral"
+//               className="inline-flex items-center gap-2 text-[12.5px] tracking-[0.03em] text-ink rounded-full px-4 py-[9px] border border-coral"
 //               style={{
 //                 background: 'rgba(244,236,221,0.04)',
 //               }}
@@ -139,14 +139,14 @@
 //           style={{ animation: 'fade 1.2s ease 1.1s forwards' }}
 //         >
 //           <p
-//             className="text-ivory font-light leading-[1.55]"
+//             className="text-ink font-light leading-[1.55]"
 //             style={{ maxWidth: '42ch', fontSize: 'clamp(16px,1.3vw,19px)' }}
 //           >
 //             Comprehensive, gentle dental care for families across Chandler — Ocotillo, Fulton Ranch, and Sun Lakes.
 //           </p>
 //           <button
 //             onClick={openBookingModal}
-//             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5"
+//             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ink hover:-translate-y-0.5"
 //             style={{
 //               padding: '17px 30px',
 //               boxShadow: '0 20px 44px -18px rgba(232,154,114,0.7)',
@@ -338,8 +338,8 @@ export default function Hero() {
           </p>
 
           <Link
-            href="tel:+14808028188"
-            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5"
+            href='tel:+14808028188'
+            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-ink hover:text-bg bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ink hover:-translate-y-0.5"
             style={{
               padding: '17px 30px',
               boxShadow:
@@ -350,6 +350,16 @@ export default function Hero() {
           </Link>
         </div>
       </div>
+
+      {/* Video pause control — small, unobtrusive, respects motion-sensitive users */}
+      {/* <button
+        onClick={toggleVideo}
+        aria-label={playing ? 'Pause background video' : 'Play background video'}
+        className="absolute z-[3] right-[18px] top-[18px] sm:right-[26px] sm:top-[26px] inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-[rgba(244,236,221,0.3)] text-ink transition-colors duration-300 hover:border-coral hover:text-coral"
+        style={{ background: 'rgba(11,28,44,0.45)', backdropFilter: 'blur(6px)' }}
+      >
+        {playing ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 translate-x-[1px]" />}
+      </button> */}
     </header>
   )
 }

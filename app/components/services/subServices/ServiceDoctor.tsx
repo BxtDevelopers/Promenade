@@ -60,7 +60,7 @@ export default function ServiceDoctor() {
 
             {/* Name */}
             <h2
-              className="font-serif font-light leading-tight text-ivory"
+              className="font-serif font-light leading-tight text-ink"
               style={{ fontSize: 'clamp(34px, 4.8vw, 64px)' }}
             >
               Dr. Shriya
@@ -94,7 +94,7 @@ export default function ServiceDoctor() {
                 &ldquo;My goal is for every patient to leave feeling informed,
                 comfortable, and genuinely cared for — not just treated.&rdquo;
               </p>
-              <p className="text-ivory text-[13px] mt-3 font-medium tracking-wide">
+              <p className="text-ink text-[13px] mt-3 font-medium tracking-wide">
                 — Dr. Shriya Sarin
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function ServiceDoctor() {
             >
               {FACTS.map((f) => (
                 <div key={f.label} className="text-center">
-                  <b className="font-serif text-[20px] font-normal text-ivory block leading-none">
+                  <b className="font-serif text-[20px] font-normal text-ink block leading-none">
                     {f.value}
                   </b>
                   <span className="text-muted text-[11px] mt-1 block whitespace-nowrap">

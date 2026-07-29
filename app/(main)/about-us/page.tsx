@@ -43,7 +43,7 @@
 //   return (
 //     <>
 //     <Navbar/>
-//     <main className="bg-bg text-ivory">
+//     <main className="bg-bg text-ink">
 //       <AboutHero />
 //       <OurStory />
 //       <OurValues />
@@ -65,24 +65,27 @@ import VisitUs from '@/app/components/about2/VisitUs'
 import WhyChooseUs from '@/app/components/about2/WhyChooseUs'
 import Footer from '@/app/components/home3/Footer'
 import Navbar from '@/app/components/home3/Navbar'
-import type { Metadata } from 'next'
 import TeamSection from '@/app/components/about2/TeamSection'
+import { buildPageMetadata } from '@/app/lib/seo'
 
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: 'About Us | Promenade Dental — Chandler, AZ',
   description:
     'For 23+ years, Chandler families have trusted Promenade Dental for calm, unhurried care. Meet Dr. Shriya Sarin and founding dentist Dr. James Wei.',
-}
+  path: '/about-us',
+})
 
 export default function AboutPage() {
   return (
-    <main className="bg-bg text-ivory ">
-      <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
+    <main className="bg-bg text-ink ">
+      <Navbar  textColor = 'text-ink' hoverColor = 'hover:text-ink/80'  />
       <AboutHero />
       <OurStory />
-      <MeetDoctors />
+      {/* The intro video leads the doctor detail — it was previously buried
+          below the (very long) MeetDoctors block, ~11,900px down the page. */}
       <TeamSection/>
+      <MeetDoctors />
       <WhyChooseUs />
       <VisitUs />
       <AboutClosingCTA />

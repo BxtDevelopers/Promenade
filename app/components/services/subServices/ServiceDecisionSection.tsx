@@ -166,7 +166,7 @@ export default function ServiceDecisionSection({ data }: { data: ServiceDecision
                 transition={{ duration: 0.4, ease: [0.16, 0.84, 0.34, 1] }}
                 className="relative z-10 p-14 lg:p-16 flex flex-col justify-center h-full w-full"
               >
-                <div className="absolute top-8 right-8 font-serif font-light text-[180px] leading-none text-ivory/30 select-none pointer-events-none">
+                <div className="absolute top-8 right-8 font-serif font-light text-[180px] leading-none text-ink/30 select-none pointer-events-none">
                   0{activeIdx + 1}
                 </div>
 
@@ -177,7 +177,7 @@ export default function ServiceDecisionSection({ data }: { data: ServiceDecision
                     </svg>
                   </div>
 
-                  <h4 className="font-serif font-normal text-[24px] md:text-[28px] text-ivory mb-5 leading-snug">
+                  <h4 className="font-serif font-normal text-[24px] md:text-[28px] text-ink mb-5 leading-snug">
                     {data.matches[activeIdx].title}
                   </h4>
                   <p className="text-muted text-[15.5px] md:text-[16.5px] font-light leading-[1.8]">

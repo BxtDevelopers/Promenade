@@ -24,13 +24,13 @@ const TESTIMONIALS = [
 
 function Chip({ quote, name }: { quote: string; name: string }) {
   return (
-    <div className="w-[min(390px,82vw)] shrink-0 rounded-[20px] border border-line bg-ivory px-[26px] py-6">
+    <div className="w-[min(390px,82vw)] shrink-0 rounded-[20px] border border-line bg-ink px-[26px] py-6">
       <div className="mb-3 flex gap-[3px] text-coral">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} className="h-3.5 w-3.5 fill-coral text-coral" />
         ))}
       </div>
-      <p className="font-serif text-[18px] font-light leading-[1.45] text-ivory-2">{quote}</p>
+      <p className="font-serif text-[18px] font-light leading-[1.45] text-cream">{quote}</p>
       <cite className="mt-[14px] block text-[12px] not-italic uppercase tracking-[0.08em] text-muted">
         {name}
       </cite>
@@ -48,7 +48,7 @@ export default function ReferralsTestimonials() {
           <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
             In their words
           </div>
-          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
             Real reviews from <em className="italic font-normal text-coral">real patients</em>.
           </h2>
         </Reveal>

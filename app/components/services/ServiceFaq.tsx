@@ -54,7 +54,7 @@ export default function ServiceFAQSection() {
           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
   Frequently Asked Questions
 </span> 
-          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ivory">
+          <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
   Questions about our
   <br />
   <em className="not-italic text-coral">dental services</em>.
@@ -71,7 +71,7 @@ export default function ServiceFAQSection() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-6 py-6 text-left group"
                 >
-                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ivory group-hover:text-coral transition-colors">
+                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover:text-coral transition-colors">
                     {item.q}
                   </span>
                   <span
