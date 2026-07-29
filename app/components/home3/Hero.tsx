@@ -163,189 +163,193 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Check, Pause, Play } from 'lucide-react'
-import { useBookingModal } from '../common/BookingModalProvider'
+import { Check } from 'lucide-react'
 import Link from 'next/link'
-
-const BASE = 'https://promenade-dental.vercel.app'
+import { useBookingModal } from '../common/BookingModalProvider'
 
 export default function Hero() {
-  const { openBookingModal } = useBookingModal();
-  const archRef = useRef<SVGGElement>(null)
+  const { openBookingModal } = useBookingModal()
+
   const videoRef = useRef<HTMLVideoElement>(null)
+  const heroRef = useRef<HTMLElement>(null)
+
   const [reduceMotion, setReduceMotion] = useState(false)
-  const [playing, setPlaying] = useState(true)
+  const [loadVideo, setLoadVideo] = useState(false)
+  const [videoReady, setVideoReady] = useState(false)
 
   useEffect(() => {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const reduce = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches
+
     setReduceMotion(reduce)
 
-    // Background video: respect reduced-motion by holding on the poster frame
-    if (reduce && videoRef.current) {
-      videoRef.current.pause()
-      setPlaying(false)
-    }
+    if (reduce) return
 
-    const group = archRef.current
-    if (!group) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true)
+          observer.disconnect()
+        }
+      },
+      {
+        threshold: 0.2,
+      }
+    )
 
-    const CX = 500, CY = 560, AN = 15
-    const arcs: SVGPathElement[] = []
+    if (heroRef.current) observer.observe(heroRef.current)
 
-    for (let a = 0; a < AN; a++) {
-      const r = 82 + a * 33
-      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path')
-      p.setAttribute('d', `M${CX - r} ${CY} A${r} ${r} 0 0 1 ${CX + r} ${CY}`)
-      p.setAttribute('fill', 'none')
-      p.setAttribute('stroke', (a === 4 || a === 9 || a === 13) ? 'rgba(232,154,114,.35)' : 'rgba(244,236,221,.28)')
-      p.setAttribute('stroke-width', '1')
-      p.setAttribute('stroke-linecap', 'round')
-      p.style.strokeDasharray = '1'
-      p.style.strokeDashoffset = reduce ? '0' : '1'
-      group.appendChild(p)
-      arcs.push(p)
-    }
-
-    if (!reduce) {
-      arcs.forEach((p, i) => {
-        p.style.transition = `stroke-dashoffset 1.7s ease ${i * 0.055}s`
-      })
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          arcs.forEach(p => { p.style.strokeDashoffset = '0' })
-        })
-      })
-    }
-
-    return () => { while (group.firstChild) group.removeChild(group.firstChild) }
+    return () => observer.disconnect()
   }, [])
 
   return (
     <header
+      ref={heroRef}
       className="relative flex items-end overflow-hidden min-h-[90vh] lg:min-h-[86vh]"
     >
-      {/* Background video */}
-      <div className="absolute inset-0 z-0 bg-[#0B1C2C]">
+      {/* Poster */}
+      <div
+        className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: 'url("/assets/hero-poster.webp")',
+        }}
+      />
+
+      {/* Video */}
+      {loadVideo && !reduceMotion && (
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            videoReady ? 'opacity-100' : 'opacity-0'
+          }`}
           src="/assets/hero-bg.mp4"
-          autoPlay={!reduceMotion}
+          autoPlay
           muted
           loop
           playsInline
+          preload="metadata"
+          poster="/assets/hero-poster.png"
+          onCanPlay={() => setVideoReady(true)}
         />
-      </div>
+      )}
 
-      {/* Arch SVG — kept as a light texture layer over the video */}
-      {/* <div className="absolute inset-0 z-[1]">
-        <svg
-          viewBox="0 0 1000 560"
-          preserveAspectRatio="xMidYMax slice"
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full"
-        >
-          <g ref={archRef} />
-        </svg>
-      </div> */}
-
-      {/* Gradient overlay — needed now for text legibility over live footage */}
-      <div
-        className="absolute inset-0 z-[2] bg-black/50"
-      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 z-[2]" />
 
       {/* Content */}
       <div
         className="relative z-[3] w-full mx-auto"
         style={{
           maxWidth: '1340px',
-          padding: '120px clamp(22px,4vw,60px) clamp(48px,6vw,80px)',
+          padding:
+            '120px clamp(22px,4vw,60px) clamp(48px,6vw,80px)',
         }}
       >
-        {/* Eyebrow */}
         <div
           className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral opacity-0"
-          style={{ animation: 'fade 1s ease 0.3s forwards' }}
+          style={{
+            animation: 'fade 1s ease 0.3s forwards',
+          }}
         >
           Comprehensive Family Dentistry with Sleep Solutions
         </div>
 
-        {/* Headline */}
         <h1
           className="font-serif font-light leading-[0.98] tracking-[-0.025em] mt-[22px] text-white"
-          style={{ fontSize: 'clamp(44px,7.6vw,98px)' }}
+          style={{
+            fontSize: 'clamp(44px,7.6vw,98px)',
+          }}
         >
           <span className="block overflow-hidden">
             <span
               className="inline-block"
-              style={{ transform: 'translateY(110%)', animation: 'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.45s forwards' }}
+              style={{
+                transform: 'translateY(110%)',
+                animation:
+                  'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.45s forwards',
+              }}
             >
-              Family Dentist 
+              Family Dentist
             </span>
           </span>
+
           <span className="block overflow-hidden">
             <span
               className="inline-block"
-              style={{ transform: 'translateY(110%)', animation: 'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.58s forwards' }}
+              style={{
+                transform: 'translateY(110%)',
+                animation:
+                  'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.58s forwards',
+              }}
             >
               in{' '}
-              <em className="not-italic font-normal text-coral">Chandler, AZ.</em>
+              <em className="not-italic font-normal text-coral">
+                Chandler, AZ.
+              </em>
             </span>
           </span>
         </h1>
 
-        {/* Badges */}
         <div
           className="flex flex-wrap gap-[10px] mt-[26px] opacity-0"
-          style={{ animation: 'fade 1.2s ease 0.95s forwards' }}
+          style={{
+            animation:
+              'fade 1.2s ease 0.95s forwards',
+          }}
         >
-          {['Accepting new patients', 'Flexible scheduling'].map(text => (
+          {[
+            'Accepting new patients',
+            'Flexible scheduling',
+          ].map((text) => (
             <span
               key={text}
               className="inline-flex items-center gap-2 text-[12.5px] tracking-[0.03em] text-white rounded-full px-4 py-[9px] border border-coral"
               style={{
-                background: 'rgba(244,236,221,0.04)',
+                background:
+                  'rgba(244,236,221,0.04)',
               }}
             >
-              <Check className='w-4 h-4 text-coral'/>
+              <Check className="w-4 h-4 text-coral" />
               {text}
             </span>
           ))}
         </div>
 
-        {/* Footer row */}
         <div
           className="flex items-center justify-between gap-[30px] mt-[30px] flex-wrap opacity-0"
-          style={{ animation: 'fade 1.2s ease 1.1s forwards' }}
+          style={{
+            animation:
+              'fade 1.2s ease 1.1s forwards',
+          }}
         >
           <p
             className="text-white font-light leading-[1.55]"
-            style={{ maxWidth: '42ch', fontSize: 'clamp(16px,1.3vw,19px)' }}
+            style={{
+              maxWidth: '42ch',
+              fontSize:
+                'clamp(16px,1.3vw,19px)',
+            }}
           >
-            Comprehensive, gentle dental care for families across Chandler — Ocotillo, Fulton Ranch, and Sun Lakes.
+            Comprehensive, gentle dental care
+            for families across Chandler —
+            Ocotillo, Fulton Ranch, and Sun
+            Lakes.
           </p>
+
           <Link
-            href='tel:+14808028188'
+            href="tel:+14808028188"
             className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-white bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ivory hover:-translate-y-0.5"
             style={{
               padding: '17px 30px',
-              boxShadow: '0 20px 44px -18px rgba(232,154,114,0.7)',
+              boxShadow:
+                '0 20px 44px -18px rgba(232,154,114,0.7)',
             }}
           >
             Schedule my first visit →
           </Link>
         </div>
       </div>
-
-      {/* Video pause control — small, unobtrusive, respects motion-sensitive users */}
-      {/* <button
-        onClick={toggleVideo}
-        aria-label={playing ? 'Pause background video' : 'Play background video'}
-        className="absolute z-[3] right-[18px] top-[18px] sm:right-[26px] sm:top-[26px] inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-[rgba(244,236,221,0.3)] text-ivory transition-colors duration-300 hover:border-coral hover:text-coral"
-        style={{ background: 'rgba(11,28,44,0.45)', backdropFilter: 'blur(6px)' }}
-      >
-        {playing ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 translate-x-[1px]" />}
-      </button> */}
     </header>
   )
 }
