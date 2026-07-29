@@ -13,7 +13,7 @@ const SIMPLE_OFFERS = [
   {
     icon: HeartHandshake,
     title: 'Senior Discount',
-    body: 'A courtesy discount on care for our senior patients — ask our team for current details at your visit.',
+    body: 'A 10% courtesy discount on your care if you’re 55 or over — just mention it when you book.',
   },
   {
     icon: Sparkles,
