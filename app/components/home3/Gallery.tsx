@@ -95,7 +95,7 @@ export default function Gallery() {
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
-            src="/assets/gallery/office-tour.mov"
+            src="/assets/gallery/office-tour.mp4"
             autoPlay
             muted
             loop
