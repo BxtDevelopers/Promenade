@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { SERVICES } from '@/app/lib/data/serviceData'
 import { SUB_SERVICES } from '@/app/lib/subServiceData'
+import MakeAPaymentButton, { PAY_BILL_URL } from '@/app/components/common/MakeAPaymentButton'
 import Image from 'next/image'
 
 
@@ -183,6 +184,12 @@ export default function Navbar({
                   ].map(([href, label]) => (
                     <Link key={label} href={href} className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-white/80 normal-case font-[450] no-underline hover:bg-[rgba(232,154,114,0.18)] hover:text-white hover:shadow-[inset_3px_0_0_theme(colors.coral)] transition-all duration-[160ms]">{label}</Link>
                   ))}
+                  <MakeAPaymentButton
+                    variant="pill"
+                    className="mt-[5px] block border-t border-[rgba(244,236,221,0.13)] px-[14px] pb-[10px] pt-[13px] text-[13px] font-[450] normal-case text-coral no-underline transition-all duration-[160ms] hover:bg-[rgba(232,154,114,0.18)]"
+                  >
+                    Make a Payment →
+                  </MakeAPaymentButton>
                 </div>
               )}
             </li>
@@ -290,6 +297,15 @@ export default function Navbar({
                       {label}
                     </Link>
                   ))}
+                  <a
+                    href={PAY_BILL_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-coral text-[13px] no-underline"
+                  >
+                    Make a Payment →
+                  </a>
                 </div>
               )}
             </div>

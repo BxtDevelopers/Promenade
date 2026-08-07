@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react'
 import Reveal from '../common/Reveal'
+import MakeAPaymentButton from '../common/MakeAPaymentButton'
 
 const BADGES = [
   'Apply online in minutes',
@@ -56,6 +57,12 @@ export default function PaymentsHero() {
           >
             See if you prequalify
           </a>
+          <MakeAPaymentButton
+            variant="pill"
+            className="whitespace-nowrap rounded-full border border-ivory/30 px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory/70"
+          >
+            Pay a bill
+          </MakeAPaymentButton>
           <a
             href="tel:+14808028188"
             className="whitespace-nowrap rounded-full border border-ivory/30 px-[22px] py-[15px] text-[13px] tracking-[0.03em] text-ivory transition hover:border-ivory/70"

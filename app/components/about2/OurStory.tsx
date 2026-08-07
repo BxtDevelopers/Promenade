@@ -21,13 +21,15 @@ export default function OurStory() {
           </p>
         </Reveal>
 
-        <Reveal className="relative min-h-[clamp(240px,32vw,400px)] overflow-hidden rounded-[20px] border border-line">
+        {/* Aspect ratio matches the source photo (1500x844) so object-cover has
+            nothing to crop — a fixed height cut the "P" off the storefront sign. */}
+        <Reveal className="relative aspect-[1500/844] overflow-hidden rounded-[20px] border border-line">
         <Image
             src="/assets/pd-office.jpeg"
-            alt="Promenade Dental Office"
+            alt="The Promenade Dental storefront in Chandler, Arizona"
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 1024px) 100vw, 50vw"
         />
 
         <div className="absolute inset-0 bg-black/10" />

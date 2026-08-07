@@ -7,6 +7,7 @@ import PaymentsHero from "@/app/components/payments/PaymentsHero";
 import PaymentsHowItWorks from "@/app/components/payments/PaymentsHowItWorks";
 import PaymentsProviders from "@/app/components/payments/PaymentsProviders";
 import PaymentsUses from "@/app/components/payments/PaymentsUses";
+import PayYourBill from "@/app/components/payments/PayYourBill";
 
 
 export default function PaymentsPage() {
@@ -15,6 +16,7 @@ export default function PaymentsPage() {
     <Navbar  textColor = 'text-ivory' hoverColor = 'hover:text-ivory/80'  />
     <main className="bg-bg font-sans text-ivory">
       <PaymentsHero />
+      <PayYourBill />
       <PaymentsHowItWorks />
       <PaymentsProviders />
       <PaymentsUses />

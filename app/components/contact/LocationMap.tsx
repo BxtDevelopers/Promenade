@@ -45,17 +45,31 @@ export default function LocationMap() {
               <h3 className="font-serif font-normal text-[22px] text-white mb-4">
                 Promenade Dental
               </h3>
-              <p className="text-muted text-[14.5px] font-light leading-[1.8]">
+              <address className="not-italic text-ivory-2 text-[15px] font-light leading-[1.8]">
                 4905 S. Alma School Road, Suite 1
                 <br />
                 Chandler, AZ 85248
-              </p>
+              </address>
 
               <div className="h-px bg-line my-6" />
 
-              <p className="text-muted text-[14.5px] font-light leading-[1.8]">
-                Mon 8am&mdash;1pm (by appt only) &middot; Tue&mdash;Thu 8am&mdash;7pm &middot; Fri&mdash;Sun Closed
-              </p>
+              <span className="block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-3">
+                Office Hours
+              </span>
+              {/* One row per day range — a single '·'-joined line wrapped
+                  unpredictably and was hard to scan. */}
+              <dl className="text-[15px] font-light leading-[1.8]">
+                {[
+                  ['Mon', '8am–1pm (by appt only)'],
+                  ['Tue–Thu', '8am–7pm'],
+                  ['Fri–Sun', 'Closed'],
+                ].map(([day, hours]) => (
+                  <div key={day} className="flex flex-wrap gap-x-2">
+                    <dt className="min-w-[74px] font-medium text-ivory-2">{day}</dt>
+                    <dd className="text-muted">{hours}</dd>
+                  </div>
+                ))}
+              </dl>
 
               <div className="h-px bg-line my-6" />
 
