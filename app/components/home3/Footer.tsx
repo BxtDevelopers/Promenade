@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import MakeAPaymentButton from '@/app/components/common/MakeAPaymentButton'
 
 const BASE = 'https://promenade-dental.vercel.app'
 
@@ -71,6 +72,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <MakeAPaymentButton
+                  variant="pill"
+                  className="no-underline text-[14px] text-coral transition-colors duration-[250ms] hover:text-coral/70"
+                >
+                  Make a Payment
+                </MakeAPaymentButton>
+              </li>
             </ul>
           </div>
 
