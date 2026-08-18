@@ -60,7 +60,7 @@ const STEPS = [
     ],
     img: '/assets/dentalimplants.jpg',
     ctaLabel: 'Explore Dental Implants',
-    ctaHref: '/services/dental-implants',
+    ctaHref: '/services/restorative-dentistry',
   },
   {
     n: '05',

@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 interface OfferModalProps {
   isOpen:   boolean

@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MakeAPaymentButton from '@/app/components/common/MakeAPaymentButton'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 export default function Footer() {
   return (
@@ -36,6 +35,7 @@ export default function Footer() {
               {[
                 [`/services/family-dentistry`,      'Family & Preventive'],
                 [`/services/cosmetic-dentistry`,    'Cosmetic Dentistry'],
+                [`/services/cosmetic-dentistry/invisalign`, 'Invisalign & Aligners'],
                 [`/services/restorative-dentistry`, 'Restorative Dentistry'],
                 [`/services/emergency-dentistry`,   'Emergency Care'],
                 [`/services/sleep-apnea-snoring-solutions`,   'Sleep Apnea'],
@@ -61,6 +61,11 @@ export default function Footer() {
                 [`/contact-us`,  'New Patients'],
                 ['/insurance',     'Insurance'],
                 ['/offers',     'Offers'],
+                ['/referrals',  'Referrals'],
+                ['/areas', 'Areas We Serve'],
+                ['/areas/fulton-ranch', 'Fulton Ranch'],
+                ['/areas/sun-lakes', 'Sun Lakes'],
+                ['/areas/ocotillo', 'Ocotillo'],
                 [`/contact-us`,  'Contact'],
               ].map(([href, label]) => (
                 <li key={label}>

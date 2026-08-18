@@ -5,7 +5,8 @@ import { BookingModalProvider } from "./components/common/BookingModalProvider";
 import { GoogleReviewsProvider } from "./context/GoogleReviewsContext";
 import { CherryFloatingButton } from "./components/common/CherryWidget";
 import { getGoogleReviews } from "./lib/googleReviews";
-import { organizationJsonLd, siteConfig } from "./lib/seo";
+import { buildOrganizationJsonLd, siteConfig } from "./lib/seo";
+import JsonLd from "./components/common/JsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -32,15 +33,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body className="antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationJsonLd).replace(
-              /</g,
-              "\\u003c",
-            ),
-          }}
-        />
+        <JsonLd data={buildOrganizationJsonLd(googleReviews)} />
         <GoogleReviewsProvider value={googleReviews}>
         <BookingModalProvider>
           {children}

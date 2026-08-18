@@ -3,7 +3,6 @@
 import { useRef, useEffect } from 'react'
 import Link from 'next/link'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 export default function ClosingCTA() {
   const archRef = useRef<SVGGElement>(null)

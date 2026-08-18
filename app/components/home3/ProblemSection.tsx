@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { Activity, Zap, Droplet, Crown, Sparkles, Moon, Smile } from 'lucide-react'
 import { LiaToothSolid } from 'react-icons/lia'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 interface Problem {
   href: string

@@ -670,7 +670,7 @@ symptomsSection?: {
             title: 'Dental Implants',
             description:
               'Replace missing teeth with implant-supported options designed to restore chewing comfort, smile appearance, and long-term function.',
-            href: '/services/dental-implants',
+            href: '/services/restorative-dentistry',
           },
           {
             title: 'Emergency Dentistry',
@@ -1113,7 +1113,7 @@ maintenance: {
         title: 'Dental Implants',
         description:
         'Dental implants may help replace missing teeth and improve the appearance, function, and balance of the smile.',
-        href: '/services/dental-implants',
+        href: '/services/restorative-dentistry',
         },
         {
         title: 'Emergency Dentistry',
@@ -1594,7 +1594,7 @@ maintenance: {
             title: 'Dental Implants',
             description:
               'Dental implants may help replace missing teeth with stable restorations when oral health and bone support are suitable.',
-            href: '/services/dental-implants',
+            href: '/services/restorative-dentistry',
           },
 
           {
@@ -2632,7 +2632,7 @@ relatedServices: {
       description:
         'Professional cleanings, exams, and preventive services designed to help maintain healthy teeth and gums.',
 
-      href: '/services/preventive-dentistry',
+      href: '/services/family-dentistry',
     },
 
     {
@@ -2641,7 +2641,7 @@ relatedServices: {
       description:
         'Evaluation of jaw discomfort, bite concerns, muscle tension, and other conditions that may affect oral function and comfort.',
 
-      href: '/services/tmj-treatment',
+      href: '/services/family-dentistry/night-guards-teeth-grinding',
     },
 
     {
@@ -2650,7 +2650,7 @@ relatedServices: {
       description:
         'Detailed evaluations of the teeth, gums, bite, and oral structures to support overall dental health.',
 
-      href: '/services/family-dentistry/dental-exams',
+      href: '/services/family-dentistry/dental-exams-cleanings',
     },
   ],
 },

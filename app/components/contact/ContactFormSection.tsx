@@ -382,7 +382,7 @@ export default function ContactFormSection() {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1A365D]/70 to-transparent p-4 pointer-events-none">
                 <p className="text-white font-['Poppins'] font-bold text-sm flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-[#ffa07a]" />
-                  4905 S Alma School Rd, Chandler, AZ 85248, USA
+                  4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248
                 </p>
               </div>
             </div>

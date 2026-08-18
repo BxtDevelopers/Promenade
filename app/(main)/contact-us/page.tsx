@@ -9,7 +9,9 @@ import LocationMap from "@/app/components/contact/LocationMap";
 import ClosingCTA from "@/app/components/home/ClosingCTA";
 import Footer from "@/app/components/home3/Footer";
 import Navbar from "@/app/components/home3/Navbar";
-import { buildPageMetadata } from "@/app/lib/seo";
+import { buildFaqJsonLd, buildPageMetadata } from "@/app/lib/seo";
+import JsonLd from "@/app/components/common/JsonLd";
+import { FAQS } from "@/app/lib/data/contactFaqs";
 
 export const metadata = buildPageMetadata({
   title: 'Contact Promenade Dental | Chandler, AZ Dentist',
@@ -47,6 +49,7 @@ export const metadata = buildPageMetadata({
 export default function ContactPage() {
   return (
     <>
+    <JsonLd data={buildFaqJsonLd(FAQS, "/contact-us")} />
     <Navbar textColor = 'text-ink' hoverColor = 'hover:text-ink/80' />
     <main className="bg-bg text-ink">
       <ContactHero />

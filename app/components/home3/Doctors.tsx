@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 export default function DoctorsSection() {
   return (

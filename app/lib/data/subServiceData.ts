@@ -1706,7 +1706,7 @@ relatedServices: {
       description:
         'Healthy gums are important for implant planning, implant maintenance, and long-term tooth replacement stability.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
 
     {
@@ -2405,6 +2405,15 @@ relatedServices: {
 
       href: '/services/emergency-dentistry/broken-chipped-tooth',
     },
+
+    {
+      title: 'Sleep Apnea & Snoring Solutions',
+
+      description:
+        'Night-time grinding often accompanies disrupted breathing during sleep. Where snoring or daytime tiredness is also present, an oral appliance may address both.',
+
+      href: '/services/sleep-apnea-snoring-solutions',
+    },
   ],
 },
 testimonialsSection: {
@@ -2889,7 +2898,7 @@ relatedServices: {
       description:
         'Bonding may help repair small chips, minor gaps, or uneven tooth edges with tooth-colored material.',
 
-      href: '/services/cosmetic-dentistry/dental-bonding',
+      href: '/services/cosmetic-dentistry',
     },
 {
       title: 'Sleep Apnea Treatment',
@@ -3432,7 +3441,7 @@ relatedServices: {
       description:
         'Bonding may be suitable for smaller chips, minor gaps, or limited tooth reshaping.',
 
-      href: '/services/cosmetic-dentistry/dental-bonding',
+      href: '/services/cosmetic-dentistry',
     },
 
     {
@@ -5027,7 +5036,7 @@ relatedServices: {
       description:
         'Dental implants may replace missing teeth or support a bridge when oral health and bone support are suitable.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
   ],
 },
@@ -6129,7 +6138,7 @@ relatedServices: {
       description:
         'A dental implant may be considered after extraction when oral health, bone support, and healing are suitable.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
   ],
 },
@@ -6652,7 +6661,7 @@ relatedServices: {
       description:
         'Implants may replace teeth or support dentures when oral health and bone support are suitable.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
 
     {
@@ -6661,7 +6670,7 @@ relatedServices: {
       description:
         'Implant-supported dentures may improve stability for patients who want more support than traditional removable dentures.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
   ],
 },
@@ -8287,7 +8296,7 @@ title: 'Emergency Dentist',
   description:
     'Bonding may repair small chips, rough edges, and minor cosmetic tooth damage.',
 
-  href: '/services/cosmetic-dentistry/dental-bonding',
+  href: '/services/cosmetic-dentistry',
 },
 
 {
@@ -8857,7 +8866,7 @@ relatedServices: {
       description:
         'Dental implants may replace a missing tooth when the knocked-out tooth cannot be saved and the patient is suitable.',
 
-      href: '/services/dental-implants',
+      href: '/services/restorative-dentistry',
     },
 
     {
@@ -8997,6 +9006,340 @@ highlight: 'for a Knocked-Out Tooth Emergency',
   image: '/assets/dental-lobby.jpg',
 },
 },
+
+{
+  serviceSlug: 'cosmetic-dentistry',
+  slug: 'invisalign',
+
+  name: 'Invisalign & Clear Aligners',
+
+  metaTitle: 'Invisalign & Clear Aligners in Chandler, AZ | Promenade Dental',
+
+  metaDescription:
+    'Clear aligner treatment in Fulton Ranch, Chandler AZ. Straighten crowded, gapped, or shifted teeth with removable aligners planned around your bite and daily routine.',
+
+  hero: {
+    eyebrow: 'Clear Aligners in Fulton Ranch',
+
+    title: 'Straighten your teeth without',
+
+    highlight: 'announcing it to everyone.',
+
+    description:
+      'Clear aligners move teeth using a series of custom-made removable trays instead of fixed brackets and wires. They come out for meals and for brushing, and most people around you will not notice you are wearing them.',
+
+    image: '/assets/smile-makeover.jpg',
+
+    trustPoints: [
+      'Removable — eat and clean normally throughout treatment',
+      'Planned digitally so you can see the intended result first',
+      'Reviewed by the same dentist at every check',
+    ],
+
+    primaryCTA: {
+      label: 'Book an Aligner Consultation',
+      href: '/contact-us',
+    },
+
+    secondaryCTA: {
+      label: 'Call (480) 802-8188',
+      href: 'tel:+14808028188',
+    },
+  },
+
+  overview: {
+    eyebrow: 'How Clear Aligners Work',
+
+    heading: 'A sequence of small, planned movements',
+
+    body:
+      'Treatment begins with a digital scan of your teeth. From that scan, the full path from where your teeth are now to where they should end up is planned in software, then split into a series of trays. Each tray is slightly different from the last and moves specific teeth a fraction of a millimetre. You wear each one for one to two weeks, around 20 to 22 hours a day, taking them out to eat and to brush.',
+
+    features: [
+      'Removable for meals, brushing, and flossing',
+      'No brackets, wires, or emergency bracket repairs',
+      'Digital plan shows the intended outcome before you start',
+      'Typically fewer and shorter chair-side visits than fixed braces',
+      'Easier to keep teeth and gums clean during treatment',
+    ],
+
+    image: '/assets/cosmetic.jpg',
+
+    cta: {
+      label: 'See Whether Aligners Suit Your Case',
+      href: '/contact-us',
+    },
+  },
+
+  whyItMatters: {
+    eyebrow: 'Why It Matters',
+
+    heading: 'Crooked teeth are a health issue, not only a cosmetic one',
+
+    description:
+      'Straightening is often framed as appearance alone. In practice, alignment changes how easily teeth stay clean and how evenly the bite loads.',
+
+    items: [
+      {
+        title: 'Crowded teeth are harder to clean',
+        body:
+          'Overlapping surfaces trap plaque where a brush and floss cannot reach reliably, which shows up over years as decay between teeth and inflamed gums.',
+        paths: ['/services/family-dentistry/gum-disease-treatment'],
+      },
+      {
+        title: 'An uneven bite wears teeth unevenly',
+        body:
+          'When some teeth contact before others they absorb more force than they were built for, producing flattened edges, chips, and sensitivity.',
+        paths: ['/services/restorative-dentistry'],
+      },
+      {
+        title: 'Teeth keep moving with age',
+        body:
+          'Lower front crowding tends to increase gradually through adulthood. Treating it earlier generally means less movement is needed.',
+        paths: ['/services/family-dentistry/dental-exams-cleanings'],
+      },
+      {
+        title: 'Alignment affects cosmetic work',
+        body:
+          'Where teeth are significantly out of position, moving them first often means more conservative veneers or bonding afterwards — or none at all.',
+        paths: ['/services/cosmetic-dentistry/veneers'],
+      },
+    ],
+  },
+
+  process: {
+    eyebrow: 'The Process',
+
+    heading: 'What clear aligner treatment involves',
+
+    subtitle:
+      'Most of the work happens between appointments. Here is the shape of a typical case from first visit to retainer.',
+
+    steps: [
+      {
+        title: '1. Consultation and assessment',
+        body:
+          'We look at crowding, spacing, and how your bite comes together, and confirm your gums and teeth are healthy enough to begin. Some cases are better served by fixed braces or an orthodontic referral, and we will say so.',
+      },
+      {
+        title: '2. Digital scan and treatment plan',
+        body:
+          'A scan replaces the older impression trays. From it, the sequence of movements is planned and you can see the projected end result before committing.',
+      },
+      {
+        title: '3. Your aligners are made',
+        body:
+          'The full series is manufactured to your plan. Small tooth-coloured attachments are sometimes bonded to certain teeth to give the trays something to grip.',
+      },
+      {
+        title: '4. Wearing the series',
+        body:
+          'Each tray is worn 20 to 22 hours a day for one to two weeks before moving to the next. Wear time is the single largest factor in whether treatment finishes on schedule.',
+      },
+      {
+        title: '5. Periodic checks',
+        body:
+          'We review progress against the plan at intervals and adjust if teeth are tracking differently than projected. Additional refinement trays at the end are common and normal.',
+      },
+      {
+        title: '6. Retainers',
+        body:
+          'Teeth drift back toward their old positions without retention. A retainer worn as directed is what makes the result last — this part is not optional.',
+      },
+    ],
+
+    cta: {
+      label: 'Book a Consultation',
+      href: '/contact-us',
+    },
+  },
+
+  maintenance: {
+    eyebrow: 'Living With Aligners',
+
+    heading: 'What day-to-day treatment actually looks like',
+
+    body:
+      'Aligners fit around normal life, but they do ask something of you. These are the habits that separate cases that finish on time from those that stall.',
+
+    cards: [
+      {
+        title: 'Wear them 20 to 22 hours a day',
+        body:
+          'Aligners only move teeth while they are in. Consistent wear is the difference between finishing on schedule and adding months to treatment.',
+      },
+      {
+        title: 'Take them out to eat and drink',
+        body:
+          'Anything other than water comes out first. Eating in aligners can crack them, and drinks with sugar or colour get trapped against the teeth.',
+      },
+      {
+        title: 'Clean the trays daily',
+        body:
+          'Rinse and brush them gently with a soft brush. Hot water warps the plastic, so keep it cool.',
+      },
+      {
+        title: 'Keep up your normal cleanings',
+        body:
+          'Aligner treatment does not pause routine care. Regular exams and cleanings during treatment catch problems while teeth are moving.',
+      },
+    ],
+  },
+
+  benefits: {
+    eyebrow: 'Why Promenade Dental',
+
+    heading: 'Aligner treatment with the whole mouth in view',
+
+    description:
+      'Moving teeth changes how the bite loads. That is a dental question as much as a cosmetic one, and it is why we plan aligners alongside everything else in your mouth.',
+
+    items: [
+      {
+        title: 'Bite assessed, not just appearance',
+        body:
+          'We look at how your teeth meet and how you clench before planning movement, so treatment does not solve a cosmetic problem while creating a functional one.',
+        paths: ['/services/family-dentistry/night-guards-teeth-grinding'],
+      },
+      {
+        title: 'Honest about complex cases',
+        body:
+          'Clear aligners handle mild to moderate crowding and spacing well. Where a case genuinely needs fixed braces or a specialist, we will refer rather than stretch the technique.',
+        paths: ['/about-us'],
+      },
+      {
+        title: 'Coordinated with cosmetic work',
+        body:
+          'Where whitening or veneers are also planned, sequencing them correctly around alignment produces a better and often more conservative result.',
+        paths: ['/services/cosmetic-dentistry'],
+      },
+      {
+        title: 'Clear pricing and payment options',
+        body:
+          'You get the full cost of the case in writing before starting, including retainers, along with the payment options available.',
+        paths: ['/payments'],
+      },
+    ],
+  },
+
+  localArea: {
+    eyebrow: 'Visit Us',
+
+    heading: 'Clear Aligner Treatment in Fulton Ranch, Chandler',
+
+    body:
+      'Promenade Dental is located at Alma School Road and Chandler Heights in the Fulton Ranch area, convenient to Ocotillo, Sun Lakes, and south Chandler.',
+
+    address: {
+      practice: 'Promenade Dental',
+      street: '4905 S. Alma School Rd, Suite 1',
+      cityStateZip: 'Chandler, AZ 85248',
+      phone: '(480) 802-8188',
+    },
+
+    cta: {
+      label: 'Get Directions',
+      href: 'https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9',
+    },
+  },
+
+  relatedServices: {
+    eyebrow: 'Related Services',
+
+    heading: 'Often planned alongside aligners',
+
+    intro:
+      'Alignment is frequently one part of a wider cosmetic plan. These are the treatments most often sequenced with it.',
+
+    services: [
+      {
+        title: 'Teeth Whitening',
+        description:
+          'Usually done after alignment, when every surface is in its final position and shading evenly is straightforward.',
+        href: '/services/cosmetic-dentistry/teeth-whitening',
+      },
+      {
+        title: 'Porcelain Veneers',
+        description:
+          'Moving teeth into position first often means thinner, more conservative veneers afterwards.',
+        href: '/services/cosmetic-dentistry/veneers',
+      },
+      {
+        title: 'Night Guards',
+        description:
+          'For patients who clench, protecting the result after treatment matters as much as achieving it.',
+        href: '/services/family-dentistry/night-guards-teeth-grinding',
+      },
+      {
+        title: 'Exams & Cleanings',
+        description:
+          'Healthy gums are a prerequisite for moving teeth, and routine care continues throughout treatment.',
+        href: '/services/family-dentistry/dental-exams-cleanings',
+      },
+    ],
+  },
+
+  faq: {
+    eyebrow: 'Frequently Asked Questions',
+
+    heading: 'Clear Aligner FAQs',
+
+    items: [
+      {
+        q: 'How long does clear aligner treatment take?',
+        a: 'Most cases run between six and eighteen months depending on how much movement is needed. Mild crowding can finish faster; cases involving bite correction take longer. Your projected timeline is part of the treatment plan you see before starting.',
+      },
+      {
+        q: 'How many hours a day do I need to wear them?',
+        a: 'Twenty to twenty-two hours. In practice that means they are in except when you are eating, drinking anything other than water, or cleaning your teeth. Wear time is the main reason cases finish on schedule or do not.',
+      },
+      {
+        q: 'Are clear aligners painful?',
+        a: 'Not painful, but each new tray usually brings a day or two of pressure and tenderness as the teeth begin to move. Most patients find it settles quickly and describe it as noticeable rather than uncomfortable.',
+      },
+      {
+        q: 'Can everyone use clear aligners?',
+        a: 'No. Aligners handle mild to moderate crowding, spacing, and many bite issues well, but severe cases, significant skeletal discrepancies, and some rotations are better treated with fixed braces or by an orthodontic specialist. We will tell you honestly which category your case falls into.',
+      },
+      {
+        q: 'Will anyone be able to tell I am wearing them?',
+        a: 'The trays are thin and clear, and in normal conversation most people do not notice. Small tooth-coloured attachments are sometimes bonded to a few teeth to help the aligners grip, and these are also designed to be discreet.',
+      },
+      {
+        q: 'Do I have to wear a retainer afterwards?',
+        a: 'Yes, and this genuinely matters. Teeth have a natural tendency to drift back toward their previous positions. A retainer worn as directed is what preserves the result — without one, relapse over the following years is likely.',
+      },
+      {
+        q: 'Can I whiten my teeth during aligner treatment?',
+        a: 'Usually it is better to wait. Whitening after alignment lets every surface shade evenly once the teeth are in their final positions. We will advise on sequencing when both are part of your plan.',
+      },
+      {
+        q: 'Does insurance cover clear aligners?',
+        a: 'Some plans include an orthodontic benefit that applies to aligners, often as a lifetime maximum rather than an annual one. We will check what your specific plan covers and set out the remaining cost before you commit.',
+      },
+    ],
+  },
+
+  cta: {
+    title: 'See what straightening your teeth',
+
+    highlight: 'would actually involve.',
+
+    subtitle:
+      'A consultation at Promenade Dental covers whether clear aligners suit your case, roughly how long treatment would take, and what it would cost — before you commit to anything.',
+
+    buttonText: 'Book an Aligner Consultation',
+
+    buttonHref: '/contact-us',
+
+    secondaryButtonText: 'Call (480) 802-8188',
+
+    secondaryButtonHref: 'tel:+14808028188',
+
+    image: '/assets/dental-lobby.jpg',
+  },
+},
+
 ]
 
 
