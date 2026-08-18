@@ -61,7 +61,7 @@ export const siteConfig = {
   sameAs: [
     "https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9",
     "https://www.yelp.com/biz/promenade-dental-chandler",
-    "https://www.carecredit.com/doctor-locator/chandler-az/promenade-dental-rgh726/",
+    "https://www.carecredit.com/doctor-locator/chandler-az/promenade-dental-hcc298/",
     "https://www.practo.com/chandler-az/clinic/promenade-dental-pllc-chandler",
     "https://reviews.birdeye.com/promenade-dental-155335382580658",
   ],
