@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Phone, Calendar, MapPin } from 'lucide-react'
 
-const BASE = 'https://promenade-dental.vercel.app'
 
 export default function MobileBar() {
   return (

@@ -18,7 +18,7 @@ const PROBLEMS = [
   {
     symptom: 'Missing tooth',
     description: 'Missing teeth affect your bite, bone health, and confidence. Implants, bridges, and dentures are all options worth understanding.',
-    href: '/services/dental-implants',
+    href: '/services/restorative-dentistry',
     urgent: false,
   },
   {

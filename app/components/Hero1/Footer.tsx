@@ -78,7 +78,7 @@ export default function Footer() {
               {[
                 { icon: Phone, text: "(480) 802-8188", href: "tel:+14808028188" },
                 { icon: Mail, text: "info@.promenadedds.com", href: "mailto:info@.promenadedds.com" },
-                { icon: MapPin, text: "4905 S Alma School Rd, Chandler, AZ 85248, USA", href: "https://maps.app.goo.gl/13ePYvxzcpXJqD4e7" },
+                { icon: MapPin, text: "4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248", href: "https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9" },
               ].map((item) => (
                 <a
                   key={item.text}

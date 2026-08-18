@@ -55,7 +55,14 @@ import ServiceTestimonials from "@/app/components/services/subServices/ServiceTe
 import SymptomsSection from "@/app/components/services/subServices/SymptomsSection";
 import WhyChooseSection from "@/app/components/services/subServices/WhyChooseSection";
 import { SUB_SERVICES } from "@/app/lib/data/subServiceData";
-import { buildPageMetadata } from "@/app/lib/seo";
+import {
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+  buildPageMetadata,
+  buildServiceJsonLd,
+} from "@/app/lib/seo";
+import JsonLd from "@/app/components/common/JsonLd";
+import { getServiceBySlug } from "@/app/lib/data/serviceData";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -317,8 +324,29 @@ export default async function ServicePage({
     notFound();
   }
 
+  const parent = getServiceBySlug(page.serviceSlug!);
+  const path = `/services/${page.serviceSlug}/${page.slug}`;
+
   return (
    <main>
+  <JsonLd
+    data={buildServiceJsonLd({
+      name: page.name,
+      description: page.metaDescription,
+      path,
+    })}
+  />
+  <JsonLd
+    data={buildBreadcrumbJsonLd([
+      { name: "Home", path: "/" },
+      { name: "Services", path: "/services" },
+      ...(parent
+        ? [{ name: parent.name, path: `/services/${parent.slug}` }]
+        : []),
+      { name: page.name, path },
+    ])}
+  />
+  {page.faq && <JsonLd data={buildFaqJsonLd(page.faq.items, path)} />}
   <Navbar />
 
   <ServiceHero {...page.hero} /> 

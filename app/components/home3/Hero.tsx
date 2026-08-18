@@ -4,7 +4,6 @@
 // import { Check } from 'lucide-react'
 // import { useBookingModal } from '../common/BookingModalProvider'
 
-// const BASE = 'https://promenade-dental.vercel.app'
 
 // export default function Hero() {
 //   const { openBookingModal } = useBookingModal();
