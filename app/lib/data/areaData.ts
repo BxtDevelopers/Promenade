@@ -118,25 +118,37 @@ export const AREAS: AreaData[] = [
           title: 'Routine care stops getting postponed',
           body:
             'Six-month cleanings are the appointments people skip when they are inconvenient. When the practice is minutes away, they get kept — and most of what we treat is cheaper and simpler when it is caught at a cleaning.',
-          paths: ['/services/family-dentistry/dental-exams-cleanings'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+          ],
         },
         {
           title: 'Emergencies are handled the same day',
           body:
             'A broken tooth or sudden swelling is a different experience when help is in your own neighbourhood. We keep same-day slots for exactly this.',
-          paths: ['/services/emergency-dentistry'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M24 12 L24 30 M14 22 L34 22',
+          ],
         },
         {
           title: 'The whole family goes to one place',
           body:
             'Children, parents, and grandparents can be seen at the same practice, which makes scheduling around school and work considerably easier.',
-          paths: ['/services/family-dentistry/childrens-dentistry'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M17 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M25 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M16 28 q8 6 16 0',
+          ],
         },
         {
           title: 'You see the same dentist each time',
           body:
             'Continuity matters most for treatment planned across several visits — crowns, bridges, aligners. You are not re-explaining your history to someone new.',
-          paths: ['/about-us'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M14 24 q10 -10 20 0 q-2 10 -10 14 q-8 -4 -10 -14',
+          ],
         },
       ],
     },
@@ -253,25 +265,37 @@ export const AREAS: AreaData[] = [
           title: 'Keeping natural teeth as long as possible',
           body:
             'Crowns, root canals, and gum treatment are usually preferable to extraction. We plan around preservation first and replacement second.',
-          paths: ['/services/restorative-dentistry/root-canals'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+          ],
         },
         {
           title: 'Replacing missing teeth properly',
           body:
             'Bridges and full or partial dentures each suit different cases. We will explain honestly which fits your bite, your remaining teeth, and your budget.',
-          paths: ['/services/restorative-dentistry/dentures'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M24 12 L24 30 M14 22 L34 22',
+          ],
         },
         {
           title: 'Comfort during treatment',
           body:
             'Sensitivity, dry mouth, and jaw fatigue all change what a comfortable appointment looks like. Longer appointments and a gentler pace are the default here, not an upgrade.',
-          paths: ['/services/family-dentistry/dental-exams-cleanings'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M17 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M25 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M16 28 q8 6 16 0',
+          ],
         },
         {
           title: 'Straight answers about cost',
           body:
             'Larger treatment is staged, and so are the costs. You get the full sequence and the numbers in writing before anything starts.',
-          paths: ['/payments'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M14 24 q10 -10 20 0 q-2 10 -10 14 q-8 -4 -10 -14',
+          ],
         },
       ],
     },
@@ -388,25 +412,37 @@ export const AREAS: AreaData[] = [
           title: 'A rotating cast of dentists',
           body:
             'Larger group practices often cannot guarantee who you will see. Here you see the same dentist, which is what makes long-term planning possible.',
-          paths: ['/about-us'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M16 14 h16 v20 h-16 z M19 19 h10 M19 24 h10 M19 29 h6',
+          ],
         },
         {
           title: 'Treatment plans that felt rushed',
           body:
             'Appointments here are scheduled with enough time to explain what is happening and why, including when the right answer is to wait and monitor.',
-          paths: ['/services/family-dentistry/dental-exams-cleanings'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M24 12 L24 30 M14 22 L34 22',
+          ],
         },
         {
           title: 'Surprises on the bill',
           body:
             'We check coverage and set out costs before treatment rather than after, including where a plan will not cover something.',
-          paths: ['/insurance'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M17 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M25 20 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 M16 28 q8 6 16 0',
+          ],
         },
         {
           title: 'Nowhere to go in an emergency',
           body:
             'Same-day slots are held for genuine emergencies — a cracked tooth or sudden swelling should not mean waiting a week.',
-          paths: ['/services/emergency-dentistry'],
+          paths: [
+            'M6 38 A18 18 0 0 1 42 38',
+            'M14 24 q10 -10 20 0 q-2 10 -10 14 q-8 -4 -10 -14',
+          ],
         },
       ],
     },
