@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SmsConsent from "../../common/SmsConsent";
+import { trackLead } from "@/app/lib/analytics";
 
 export default function BookingForm({ service }: { service: string }) {
   const [smsConsent, setSmsConsent] = useState(false);
@@ -31,6 +32,7 @@ export default function BookingForm({ service }: { service: string }) {
       });
 
       if (response.ok) {
+        trackLead('booking_request', { reason: service });
         setSubmitted(true);
       }
     } catch (error) {

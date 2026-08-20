@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Reveal from '../common/Reveal'
 import SmsConsent from '../common/SmsConsent'
+import { trackLead } from '@/app/lib/analytics'
 
 export default function ReferralsForm() {
   const [smsConsent, setSmsConsent] = useState(false)
@@ -25,6 +26,7 @@ export default function ReferralsForm() {
       });
 
       if (response.ok) {
+        trackLead('referral');
         setSubmitted(true);
       }
     } catch (error) {

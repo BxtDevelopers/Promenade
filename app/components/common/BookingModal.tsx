@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SmsConsent from './SmsConsent';
+import { trackLead } from '@/app/lib/analytics';
 export interface BookingModalProps {
   open: boolean;
   onClose: () => void;
@@ -18,7 +19,7 @@ const REASONS = [
   'General Checkup & Cleaning',
   'Cosmetic Consultation',
   'Dental Emergency',
-  'Resorative Dentistry',
+  'Restorative Dentistry',
 ] as const;
 
 const EMPTY_FORM: BookingFormState = {
@@ -118,6 +119,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
         throw new Error(body?.error ?? 'Request failed');
       }
 
+      trackLead('booking_request', { reason: form.reason });
       setStatus('done');
     } catch (err) {
       // Never report success we did not get — the patient needs to know
