@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 import CustomReasonDropdown from '../common/CustomDropDown';
 import SmsConsent from '../common/SmsConsent';
+import { trackLead } from '@/app/lib/analytics';
 
 export default function ContactForm() {
   const [leadRef, leadIn] = useScrollReveal();
@@ -30,6 +31,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
+        trackLead('contact_request');
         setSubmitted(true);
       } else {
         console.error("Submission failed");

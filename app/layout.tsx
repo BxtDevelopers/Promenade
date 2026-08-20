@@ -7,6 +7,7 @@ import { CherryFloatingButton } from "./components/common/CherryWidget";
 import { getGoogleReviews } from "./lib/googleReviews";
 import { buildOrganizationJsonLd, siteConfig } from "./lib/seo";
 import JsonLd from "./components/common/JsonLd";
+import GoogleTag from "./components/common/GoogleTag";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -41,6 +42,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </GoogleReviewsProvider>
         <ScrollToTop />
         <CherryFloatingButton />
+        <GoogleTag />
         </body>
     </html>
   );
