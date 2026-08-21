@@ -24,6 +24,12 @@ The site loads one Google tag (`gtag.js`) that serves both GA4 and Google Ads.
 Nothing loads unless the IDs in `.env.example` are set, and preview deployments
 never load it, so QA traffic cannot skew the production property.
 
+The IDs are read on the server and passed to the tag component as props, so
+they are not `NEXT_PUBLIC_`. This is deployment hygiene, not secrecy — a
+measurement ID is visible in DevTools on every site running Google Analytics,
+because the browser has to request `gtag/js?id=<the ID>` to load the tag at
+all.
+
 To turn it on:
 
 1. Create the GA4 property and the Google Ads conversion actions — **two**
@@ -31,8 +37,8 @@ To turn it on:
 2. Put the measurement ID, conversion ID and both labels into Vercel's
    environment variables for the Production environment (names in
    `.env.example`).
-3. Redeploy. `NEXT_PUBLIC_*` values are inlined at build time, so saving them
-   in Vercel is not enough on its own.
+3. Redeploy. Most routes are statically prerendered, so saving the values in
+   Vercel is not enough on its own.
 4. Verify with Google Tag Assistant: submit a form and tap a phone number, then
    confirm a `generate_lead` event in GA4 DebugView and a `conversion` hit in
    the Ads tag diagnostics.

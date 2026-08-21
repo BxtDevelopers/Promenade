@@ -8,6 +8,7 @@ import { getGoogleReviews } from "./lib/googleReviews";
 import { buildOrganizationJsonLd, siteConfig } from "./lib/seo";
 import JsonLd from "./components/common/JsonLd";
 import GoogleTag from "./components/common/GoogleTag";
+import { getAnalyticsConfig } from "./lib/analyticsConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const googleReviews = await getGoogleReviews();
+  const analyticsConfig = getAnalyticsConfig();
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -42,7 +44,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </GoogleReviewsProvider>
         <ScrollToTop />
         <CherryFloatingButton />
-        <GoogleTag />
+        {analyticsConfig && <GoogleTag config={analyticsConfig} />}
         </body>
     </html>
   );
