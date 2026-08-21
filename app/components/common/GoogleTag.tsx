@@ -3,10 +3,9 @@
 import Script from 'next/script';
 import { useEffect } from 'react';
 import {
-  GA_MEASUREMENT_ID,
-  GOOGLE_ADS_ID,
-  analyticsEnabled,
+  setAnalyticsConfig,
   trackLead,
+  type AnalyticsConfig,
 } from '@/app/lib/analytics';
 
 /**
@@ -21,11 +20,17 @@ import {
  * ("page changes based on browser history events", on by default). Sending
  * them manually as well is the usual cause of doubled session counts, so the
  * tag is configured plainly and nothing extra is fired on route change.
+ *
+ * The root layout renders this only when the tag is configured, so `config` is
+ * always present here.
  */
-export default function GoogleTag() {
-  useEffect(() => {
-    if (!analyticsEnabled) return;
+export default function GoogleTag({ config }: { config: AnalyticsConfig }) {
+  // Registered during render rather than in an effect: a visitor cannot
+  // interact before hydration, but a form's success handler must never race
+  // an effect that has not run yet.
+  setAnalyticsConfig(config);
 
+  useEffect(() => {
     /*
      * One delegated listener rather than an onClick on each of the ~66 tel:
      * links across the site — it covers links rendered later, and it cannot
@@ -50,11 +55,9 @@ export default function GoogleTag() {
     return () => document.removeEventListener('click', onClick);
   }, []);
 
-  if (!analyticsEnabled) return null;
-
   // Either ID can load gtag.js; GA4 is preferred as the primary because it is
   // the property that also receives the page views.
-  const primaryId = GA_MEASUREMENT_ID || GOOGLE_ADS_ID;
+  const primaryId = config.gaMeasurementId || config.googleAdsId;
 
   return (
     <>
@@ -69,8 +72,8 @@ export default function GoogleTag() {
           'function gtag(){dataLayer.push(arguments);}',
           'window.gtag = gtag;',
           "gtag('js', new Date());",
-          GA_MEASUREMENT_ID && `gtag('config', '${GA_MEASUREMENT_ID}');`,
-          GOOGLE_ADS_ID && `gtag('config', '${GOOGLE_ADS_ID}');`,
+          config.gaMeasurementId && `gtag('config', '${config.gaMeasurementId}');`,
+          config.googleAdsId && `gtag('config', '${config.googleAdsId}');`,
         ]
           .filter(Boolean)
           .join('\n')}
