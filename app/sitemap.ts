@@ -9,6 +9,7 @@ const staticRoutes = [
   { path: "/services", changeFrequency: "monthly", priority: 0.9 },
   { path: "/areas", changeFrequency: "monthly", priority: 0.7 },
   { path: "/about-us", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/dr-shriya-sarin", changeFrequency: "monthly", priority: 0.8 },
   { path: "/contact-us", changeFrequency: "monthly", priority: 0.8 },
   { path: "/insurance", changeFrequency: "monthly", priority: 0.7 },
   { path: "/payments", changeFrequency: "monthly", priority: 0.6 },

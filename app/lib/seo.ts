@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import type { GoogleReviewsData } from "@/app/lib/googleReviews";
+import type { DoctorProfile } from "@/app/lib/data/doctorData";
 
 // The one production origin. Canonicals, robots, sitemap, OG tags and JSON-LD all
 // derive from this. It is intentionally hardcoded: an env-var fallback previously
@@ -79,7 +80,11 @@ const DOCTORS = {
     id: "#dr-sarin",
     name: "Dr. Shriya Sarin",
     honorific: "DMD",
-    jobTitle: "Dentist",
+    jobTitle: "Dentist & Owner",
+    // The dedicated profile page. Giving the Person node a `url` is what lets
+    // Google resolve the entity to a page it can crawl, rather than to a
+    // fragment that only ever appears inside another page's graph.
+    profilePath: "/dr-shriya-sarin",
     // National Provider Identifier — a stable, government-issued identifier that
     // survives directory churn.
     npi: "1326770538",
@@ -93,6 +98,7 @@ const DOCTORS = {
     name: "Dr. James Wei",
     honorific: "DDS",
     jobTitle: "Founding Dentist",
+    profilePath: null,
     sameAs: [
       "https://www.healthgrades.com/dentist/dr-james-wei-x5fgt",
       "https://doctor.webmd.com/doctor/james-wei-ae74a645-cdbc-4c5f-bf18-d1dccbc3ed0a-overview",
@@ -179,6 +185,7 @@ function personJsonLd(doctor: (typeof DOCTORS)[keyof typeof DOCTORS]) {
     honorificSuffix: doctor.honorific,
     jobTitle: doctor.jobTitle,
     worksFor: { "@id": `${siteConfig.url}/#dentist` },
+    ...(doctor.profilePath ? { url: absoluteUrl(doctor.profilePath) } : {}),
     sameAs: [...doctor.sameAs],
     ...("npi" in doctor
       ? {
@@ -335,5 +342,108 @@ export function buildServiceJsonLd({
     procedureType: "https://schema.org/NoninvasiveProcedure",
     provider: { "@id": `${siteConfig.url}/#dentist` },
     availableAtOrFrom: { "@id": `${siteConfig.url}/#dentist` },
+  };
+}
+
+/**
+ * ProfilePage + Person for the dentist's own page.
+ *
+ * Two things make this different from the abbreviated Person node already in
+ * the site-wide graph. It reuses the *same* `@id` (`#dr-sarin`), so the two are
+ * one entity rather than two competing ones — this is the whole point of the
+ * exercise, and getting it wrong would actively dilute the record. And it is
+ * wrapped in `ProfilePage`, which is how schema.org expresses "this page is
+ * about this person" as opposed to merely mentioning them.
+ *
+ * `alumniOf`, `knowsAbout` and `sameAs` are the corroboration surface: they
+ * name the institutions, the subject matter and the third-party profiles that
+ * a crawler can independently check. Everything here is also visible on the
+ * page, which is the condition for it counting for anything.
+ */
+export function buildDoctorProfileJsonLd(doctor: DoctorProfile) {
+  const personId = `${siteConfig.url}/#dr-sarin`;
+  const pageUrl = absoluteUrl(doctor.path);
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": `${pageUrl}#profile`,
+        url: pageUrl,
+        name: `${doctor.displayName} — ${doctor.jobTitle}, ${siteConfig.name}`,
+        isPartOf: { "@id": `${siteConfig.url}/#website` },
+        about: { "@id": personId },
+        mainEntity: { "@id": personId },
+        primaryImageOfPage: absoluteUrl(doctor.portrait.src),
+      },
+      {
+        "@type": "Person",
+        "@id": personId,
+        name: doctor.name,
+        honorificPrefix: doctor.honorificPrefix,
+        honorificSuffix: doctor.honorificSuffix,
+        jobTitle: doctor.jobTitle,
+        description: doctor.summary,
+        url: pageUrl,
+        mainEntityOfPage: { "@id": `${pageUrl}#profile` },
+        image: absoluteUrl(doctor.portrait.src),
+        // Both directions are stated. `worksFor` alone leaves the practice
+        // silent about her; the Dentist node's `employee` reference (see
+        // buildOrganizationJsonLd) closes the loop.
+        worksFor: { "@id": `${siteConfig.url}/#dentist` },
+        workLocation: { "@id": `${siteConfig.url}/#dentist` },
+        telephone: siteConfig.phone,
+        address: {
+          "@type": "PostalAddress",
+          ...siteConfig.address,
+        },
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "NPI",
+          value: doctor.npi,
+        },
+        // De-duplicated: the two Arizona qualifications share an institution,
+        // and repeating it would assert two separate affiliations.
+        alumniOf: [...new Set(doctor.education.map((e) => e.institution))].map(
+          (institution) => ({
+            "@type": "EducationalOrganization",
+            name: institution,
+          }),
+        ),
+        hasCredential: [
+          ...doctor.education.map((entry) => ({
+            "@type": "EducationalOccupationalCredential",
+            credentialCategory: "degree",
+            name: entry.qualification,
+            recognizedBy: {
+              "@type": "EducationalOrganization",
+              name: entry.institution,
+            },
+          })),
+          ...doctor.training.map((entry) => ({
+            "@type": "EducationalOccupationalCredential",
+            credentialCategory: "training",
+            name: entry.title,
+            recognizedBy: {
+              "@type": "Organization",
+              name: entry.organization,
+            },
+          })),
+        ],
+        knowsAbout: doctor.focusAreas.map((area) => area.title),
+        knowsLanguage: [...doctor.languages],
+        ...(doctor.memberships.length
+          ? {
+              memberOf: doctor.memberships.map((m) => ({
+                "@type": "Organization",
+                name: m.name,
+                ...(m.url ? { url: m.url } : {}),
+              })),
+            }
+          : {}),
+        sameAs: [...doctor.sameAs],
+      },
+    ],
   };
 }
