@@ -8,6 +8,7 @@ import { getGoogleReviews } from "./lib/googleReviews";
 import { buildOrganizationJsonLd, siteConfig } from "./lib/seo";
 import JsonLd from "./components/common/JsonLd";
 import GoogleTag from "./components/common/GoogleTag";
+import AttributionCapture from "./components/common/AttributionCapture";
 import { getAnalyticsConfig } from "./lib/analyticsConfig";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </GoogleReviewsProvider>
         <ScrollToTop />
         <CherryFloatingButton />
+        <AttributionCapture />
         {analyticsConfig && <GoogleTag config={analyticsConfig} />}
         </body>
     </html>

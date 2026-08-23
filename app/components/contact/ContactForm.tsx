@@ -5,6 +5,7 @@ import { useScrollReveal } from '@/app/lib/useScrollReveal';
 import CustomReasonDropdown from '../common/CustomDropDown';
 import SmsConsent from '../common/SmsConsent';
 import { trackLead } from '@/app/lib/analytics';
+import { attributionLine } from '@/app/lib/attribution';
 
 export default function ContactForm() {
   const [leadRef, leadIn] = useScrollReveal();
@@ -27,7 +28,14 @@ export default function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         // smsConsent is sent explicitly as a boolean; FormData would otherwise
         // yield the string "on", or omit the key entirely when unchecked.
-        body: JSON.stringify({ formType: 'contact', ...data, smsConsent }),
+        // `source` reaches the practice inbox so the campaign survives the
+        // hand-off into Dentrix, which is where cost per booked patient is won.
+        body: JSON.stringify({
+          formType: 'contact',
+          ...data,
+          smsConsent,
+          source: attributionLine(),
+        }),
       });
 
       if (response.ok) {
