@@ -49,6 +49,39 @@ export default function Gallery() {
     track.innerHTML += track.innerHTML
   }, [])
 
+  /*
+   * The tour video sits ~2,800px down the page. With `autoPlay` it downloaded
+   * in full on every homepage visit, including the majority of visitors who
+   * never scroll this far — the single largest transfer on the page. It now
+   * loads and starts only once the section is actually approached.
+   */
+  useEffect(() => {
+    const v = videoRef.current
+    if (!v) return
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setPlaying(false)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        v.preload = 'auto'
+        // Autoplay can still be refused (e.g. iOS Low Power Mode); reflect
+        // reality in the control rather than showing a Pause button for a
+        // video that is not running.
+        v.play().then(() => setPlaying(true)).catch(() => setPlaying(false))
+        observer.disconnect()
+      },
+      // Start fetching just before it scrolls into view.
+      { rootMargin: '300px' },
+    )
+
+    observer.observe(v)
+    return () => observer.disconnect()
+  }, [])
+
   const togglePlay = () => {
     const v = videoRef.current
     if (!v) return
@@ -96,10 +129,10 @@ export default function Gallery() {
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
             src="/assets/gallery/office-tour.mp4"
-            autoPlay
             muted
             loop
             playsInline
+            preload="none"
           />
 
           {/* Scrim for legibility — kept dark since it sits over video footage, not the page bg */}

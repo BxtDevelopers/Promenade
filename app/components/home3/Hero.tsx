@@ -174,16 +174,43 @@ export default function Hero() {
 
   const [reduceMotion, setReduceMotion] = useState(false)
   const [loadVideo, setLoadVideo] = useState(false)
+  const [allowVideo, setAllowVideo] = useState(false)
   const [videoReady, setVideoReady] = useState(false)
 
   useEffect(() => {
-    const reduce = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-    setReduceMotion(reduce)
+    /*
+     * Phones and tablets get the poster only. The background video is
+     * decorative, and it was the largest single transfer on the site — on a
+     * cellular connection it competes for bandwidth with the content a
+     * visitor actually came for, and this is where paid traffic lands. The
+     * poster is a still from the same footage, so nothing is lost but motion.
+     *
+     * Lower or remove VIDEO_MIN_WIDTH to bring the video back to small
+     * screens.
+     */
+    const VIDEO_MIN_WIDTH = 1024
+    const wideQuery = window.matchMedia(`(min-width: ${VIDEO_MIN_WIDTH}px)`)
 
-    if (reduce) return
+    // Honour Data Saver where the browser reports it.
+    const connection = (
+      navigator as Navigator & { connection?: { saveData?: boolean } }
+    ).connection
+
+    // Both queries are watched rather than read once: a window that opens
+    // narrow and is then widened, or a tablet rotated into landscape, should
+    // pick the video up rather than being stuck on the poster for the session.
+    const sync = () => {
+      setReduceMotion(motionQuery.matches)
+      setAllowVideo(
+        !motionQuery.matches && wideQuery.matches && !connection?.saveData,
+      )
+    }
+
+    sync()
+    motionQuery.addEventListener('change', sync)
+    wideQuery.addEventListener('change', sync)
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -199,7 +226,11 @@ export default function Hero() {
 
     if (heroRef.current) observer.observe(heroRef.current)
 
-    return () => observer.disconnect()
+    return () => {
+      observer.disconnect()
+      motionQuery.removeEventListener('change', sync)
+      wideQuery.removeEventListener('change', sync)
+    }
   }, [])
 
   return (
@@ -216,7 +247,7 @@ export default function Hero() {
       />
 
       {/* Video */}
-      {loadVideo && !reduceMotion && (
+      {loadVideo && allowVideo && !reduceMotion && (
         <video
           ref={videoRef}
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
@@ -228,7 +259,7 @@ export default function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster="/assets/hero-poster.png"
+          poster="/assets/hero-poster.webp"
           onCanPlay={() => setVideoReady(true)}
         />
       )}
