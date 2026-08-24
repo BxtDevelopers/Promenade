@@ -188,6 +188,20 @@ const legacySectionRedirects = [
   ["/:path*/DentalVideos.aspx", "/"],
 ] as const;
 
+/**
+ * Name variants for the dentist's profile page.
+ *
+ * Third-party directories, review sites and social profiles will link to this
+ * page by hand, and the form of her name they use is not under our control. A
+ * variant that 404s costs the link entirely; one that redirects consolidates
+ * to the canonical URL. Cheap insurance on the corroboration work.
+ */
+const doctorAliasRedirects = [
+  ["/dr-shriya", "/dr-shriya-sarin"],
+  ["/dr-sarin", "/dr-shriya-sarin"],
+  ["/shriya-sarin", "/dr-shriya-sarin"],
+] as const;
+
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
@@ -200,7 +214,11 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [...legacyRedirects, ...legacySectionRedirects].map(
+    return [
+      ...legacyRedirects,
+      ...doctorAliasRedirects,
+      ...legacySectionRedirects,
+    ].map(
       ([source, destination]) => ({ source, destination, permanent: true }),
     );
   },

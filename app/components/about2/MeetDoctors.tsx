@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Reveal from '../common/Reveal'
 
 // Column classes must be written out in full — Tailwind cannot see a class
@@ -109,6 +110,17 @@ export default function MeetDoctors() {
               allowing her to help patients explore non-surgical oral appliance therapy
               for snoring and obstructive sleep apnea.
             </p>
+
+            {/* Internal link to the full profile. A dedicated entity page is
+                only as strong as the paths into it, and this is the most
+                relevant one on the site. */}
+            <Link
+              href="/dr-shriya-sarin"
+              className="mt-6 inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.14em] text-coral transition-colors hover:text-white"
+            >
+              Full profile &amp; credentials
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
 
             <Credentials summary="Focus areas & credentials">
               <div>
