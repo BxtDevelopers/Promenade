@@ -33,6 +33,13 @@ export type Attribution = {
    */
   gbraid: string;
   wbraid: string;
+  /**
+   * ChatGPT Ads click reference. The oaiq pixel reads this itself for its own
+   * reporting; it is captured here as well so the reference reaches the
+   * practice inbox alongside the lead, which is the only path from a ChatGPT
+   * click to a patient who actually attended.
+   */
+  oppref: string;
   /** Path the visitor arrived on — a fallback split when the tags are absent. */
   landingPage: string;
   referrer: string;
@@ -67,7 +74,7 @@ function sanitize(value: string | null): string {
  * overwrite a stored record — see `capture()`.
  */
 function isPaid(a: Attribution): boolean {
-  return Boolean(a.gclid || a.gbraid || a.wbraid || a.source);
+  return Boolean(a.gclid || a.gbraid || a.wbraid || a.oppref || a.source);
 }
 
 function read(): Attribution | null {
@@ -113,6 +120,7 @@ export function capture(): void {
     gclid: sanitize(params.get('gclid')),
     gbraid: sanitize(params.get('gbraid')),
     wbraid: sanitize(params.get('wbraid')),
+    oppref: sanitize(params.get('oppref')),
     landingPage: window.location.pathname.slice(0, 120),
     referrer: sanitize(document.referrer.replace(/^https?:\/\//, '').split('/')[0]),
     timestamp: Date.now(),
@@ -151,6 +159,7 @@ export function attributionParams(): Record<string, string> {
   if (a.gclid) params.lead_gclid = a.gclid;
   if (a.gbraid) params.lead_gbraid = a.gbraid;
   if (a.wbraid) params.lead_wbraid = a.wbraid;
+  if (a.oppref) params.lead_oppref = a.oppref;
   if (a.landingPage) params.lead_landing_page = a.landingPage;
   return params;
 }
@@ -168,10 +177,15 @@ export function attributionLine(): string {
   const a = typeof window === 'undefined' ? null : read();
   if (!a) return '';
 
-  const clickId = a.gclid || a.gbraid || a.wbraid;
-  const channel = clickId && !a.source
-    ? 'google / cpc'
-    : [a.source, a.medium].filter(Boolean).join(' / ');
+  const clickId = a.gclid || a.gbraid || a.wbraid || a.oppref;
+  const googleClickId = a.gclid || a.gbraid || a.wbraid;
+  const channel = a.source
+    ? [a.source, a.medium].filter(Boolean).join(' / ')
+    : googleClickId
+      ? 'google / cpc'
+      : a.oppref
+        ? 'chatgpt / cpc'
+        : '';
 
   const parts = [
     channel || `referrer: ${a.referrer || 'direct'}`,
