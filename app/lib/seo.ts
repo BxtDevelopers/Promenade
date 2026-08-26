@@ -65,6 +65,7 @@ export const siteConfig = {
     "https://www.carecredit.com/doctor-locator/chandler-az/promenade-dental-hcc298/",
     "https://www.practo.com/chandler-az/clinic/promenade-dental-pllc-chandler",
     "https://reviews.birdeye.com/promenade-dental-155335382580658",
+    "https://business.chandlerchamber.com/list/member/promenade-dental-34600",
   ],
 } as const;
 
