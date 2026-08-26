@@ -11,7 +11,7 @@ import { buildPageMetadata } from "@/app/lib/seo"
 
 export const metadata = buildPageMetadata({
   title: 'Offers & Specials | Promenade Dental',
-  description: 'New patient specials, senior discounts, and whitening offers at Promenade Dental in Chandler, AZ.',
+  description: 'New Patient Welcome: $125 for a comprehensive exam, cleaning and X-rays. Plus senior discounts and whitening offers at Promenade Dental in Chandler, AZ.',
   path: '/offers',
 })
 
