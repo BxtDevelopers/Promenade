@@ -2,7 +2,9 @@ import { Info } from 'lucide-react'
 import Reveal from '../common/Reveal'
 
 const TERMS = [
+  'New Patient Welcome is $125 and covers a comprehensive exam, a routine cleaning and X-rays.',
   'New Patient Welcome pricing applies to patients who haven\u2019t visited in the last 12 months.',
+  'The $125 price assumes a routine cleaning. If gum disease treatment is needed, we will explain the difference in cost before starting.',
   'Offers cannot be combined with insurance benefits or other promotions.',
   'Senior Discount is 10% and applies to patients 55+ \u2014 valid ID may be requested.',
   'Whitening offer requires a current cleaning and exam within the last 6 months.',

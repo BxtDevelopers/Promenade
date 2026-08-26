@@ -3,6 +3,20 @@ import { ShieldCheck, CreditCard, ClipboardCheck, HeartHandshake, Sparkles, Chec
 import Reveal from '../common/Reveal'
 import { useBookingModal } from '../common/BookingModalProvider'
 
+/**
+ * The New Patient Welcome price.
+ *
+ * Stated here because it is claimed in paid search and social ads, and an ad
+ * that promises a price the landing page never mentions is the most reliable
+ * way to lose a click that has already been paid for. If this changes, it must
+ * change in the ad creative at the same time.
+ *
+ * Includes the exam, cleaning and X-rays — the three items named in the ads.
+ */
+const NEW_PATIENT_PRICE = '$125'
+
+const NEW_PATIENT_INCLUDES = 'Exam, cleaning & X-rays'
+
 const NEW_PATIENT_PERKS = [
   { icon: ShieldCheck, label: 'Insurance verification' },
   { icon: CreditCard, label: 'Flexible financing' },
@@ -48,7 +62,19 @@ export default function OffersGrid() {
                 <b className="block font-serif text-[26px] font-normal leading-[1.15] text-white">
                   New Patient Welcome
                 </b>
-                <p className="mt-[10px] max-w-[46ch] text-[14.5px] font-light leading-[1.65] text-muted">
+
+                {/* The price leads. Someone arriving from an ad that named it
+                    should see it without scrolling or hunting. */}
+                <div className="mt-[14px] flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span className="font-serif text-[clamp(38px,5vw,52px)] font-light leading-[1] tracking-[-0.02em] text-coral">
+                    {NEW_PATIENT_PRICE}
+                  </span>
+                  <span className="text-[15px] font-light leading-[1.4] text-white">
+                    {NEW_PATIENT_INCLUDES}
+                  </span>
+                </div>
+
+                <p className="mt-[12px] max-w-[46ch] text-[14.5px] font-light leading-[1.65] text-muted">
                   Everything you need for a smooth, no-surprises first visit.
                 </p>
 
