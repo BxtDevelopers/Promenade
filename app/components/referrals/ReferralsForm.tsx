@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Reveal from '../common/Reveal'
 import SmsConsent from '../common/SmsConsent'
 import { trackLead } from '@/app/lib/analytics'
+import { attributionLine } from '@/app/lib/attribution'
 
 export default function ReferralsForm() {
   const [smsConsent, setSmsConsent] = useState(false)
@@ -22,7 +23,12 @@ export default function ReferralsForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         // Consent covers the referrer's own number, not the friend's.
-        body: JSON.stringify({ formType: 'referral', ...data, smsConsent }),
+        body: JSON.stringify({
+          formType: 'referral',
+          ...data,
+          smsConsent,
+          source: attributionLine(),
+        }),
       });
 
       if (response.ok) {

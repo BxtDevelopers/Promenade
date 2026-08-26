@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SmsConsent from './SmsConsent';
 import { trackLead } from '@/app/lib/analytics';
+import { attributionLine } from '@/app/lib/attribution';
 export interface BookingModalProps {
   open: boolean;
   onClose: () => void;
@@ -111,6 +112,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
           date: form.date,
           message: form.message,
           smsConsent,
+          source: attributionLine(),
         }),
       });
 

@@ -38,3 +38,40 @@ export function getAnalyticsConfig(): AnalyticsConfig | null {
     callLabel: process.env.GOOGLE_ADS_CALL_LABEL ?? "",
   };
 }
+
+export type OpenAiPixelConfig = {
+  pixelId: string;
+  /**
+   * The setup snippet OpenAI hands out has `debug: true` in it. That is right
+   * for the person pasting it into a console and wrong for a production site —
+   * it logs to the browser console on every page view of a healthcare
+   * practice's site. Debug follows the environment instead.
+   */
+  debug: boolean;
+};
+
+/**
+ * Server-side resolution of the ChatGPT Ads pixel.
+ *
+ * Same shape and same reasoning as getAnalyticsConfig() above: read on the
+ * server, handed to the component as props, gated off preview deployments so a
+ * handful of QA sessions cannot distort conversion rate at this traffic volume.
+ *
+ * The pixel ID is not a secret — it ships to the browser inside the init call,
+ * exactly like a GA4 measurement ID. It lives in an env var for consistency
+ * with the other tag IDs and so it can be turned off without a code change.
+ */
+export function getOpenAiPixelConfig(): OpenAiPixelConfig | null {
+  const isPreviewDeployment =
+    process.env.VERCEL_ENV !== undefined && process.env.VERCEL_ENV !== "production";
+
+  if (isPreviewDeployment) return null;
+
+  const pixelId = process.env.OPENAI_PIXEL_ID ?? "";
+  if (!pixelId) return null;
+
+  return {
+    pixelId,
+    debug: process.env.NODE_ENV !== "production",
+  };
+}

@@ -80,6 +80,10 @@ const MAX_LENGTHS: Record<string, number> = {
   date: 40,
   message: 2000,
   notes: 2000,
+  // Campaign attribution, preformatted by lib/attribution.ts. It is derived
+  // from the query string, so a visitor controls it — it is length-capped
+  // here and escaped like every other field on the way into the body.
+  source: 300,
 };
 
 // Trim, cap length, and strip control characters (which are only
@@ -164,6 +168,15 @@ export async function POST(req: Request) {
     const e = (key: string, fallback = 'N/A') =>
       f[key] ? escapeHtml(f[key]) : fallback;
 
+    // Where this lead came from. Rendered on every form because the whole
+    // point is that whoever books the appointment into Dentrix can stamp the
+    // channel on the patient record — the tag only ever sees the click.
+    const sourceBlock = `
+          <p style="background:#f6f6f6;padding:8px 10px;border-left:3px solid #999">
+            <strong>Source:</strong> ${e('source', 'Not tracked (direct or untagged)')}
+          </p>
+        `;
+
     // Record of SMS opt-in. Carriers require the practice to be able to
     // evidence consent, so stamp every submission with the answer and the
     // time it was given. A checkbox arrives as true, or "on" via FormData.
@@ -188,7 +201,7 @@ export async function POST(req: Request) {
       case 'contact':
         subject = `New Contact Form Submission from ${f.name}`;
         html = `
-          <h2>New Contact Form Submission</h2>
+          <h2>New Contact Form Submission</h2>${sourceBlock}
           <p><strong>Name:</strong> ${e('name')}</p>
           <p><strong>Phone:</strong> ${e('phone')}</p>
           <p><strong>Email:</strong> ${e('email')}</p>
@@ -199,7 +212,7 @@ export async function POST(req: Request) {
       case 'referral':
         subject = `New Referral from ${f.yourName}`;
         html = `
-          <h2>New Referral Submission</h2>
+          <h2>New Referral Submission</h2>${sourceBlock}
           <h3>Referrer Details</h3>
           <p><strong>Name:</strong> ${e('yourName')}</p>
           <p><strong>Phone:</strong> ${e('yourPhone')}</p>
@@ -214,7 +227,7 @@ export async function POST(req: Request) {
       case 'booking':
         subject = `New Booking Request from ${f.name}`;
         html = `
-          <h2>New Booking Request</h2>
+          <h2>New Booking Request</h2>${sourceBlock}
           <p><strong>Name:</strong> ${e('name')}</p>
           <p><strong>Phone:</strong> ${e('phone')}</p>
           <p><strong>Email:</strong> ${e('email')}</p>

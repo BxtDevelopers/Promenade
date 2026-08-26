@@ -8,7 +8,9 @@ import { getGoogleReviews } from "./lib/googleReviews";
 import { buildOrganizationJsonLd, siteConfig } from "./lib/seo";
 import JsonLd from "./components/common/JsonLd";
 import GoogleTag from "./components/common/GoogleTag";
-import { getAnalyticsConfig } from "./lib/analyticsConfig";
+import AttributionCapture from "./components/common/AttributionCapture";
+import OpenAiPixel from "./components/common/OpenAiPixel";
+import { getAnalyticsConfig, getOpenAiPixelConfig } from "./lib/analyticsConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const googleReviews = await getGoogleReviews();
   const analyticsConfig = getAnalyticsConfig();
+  const openAiPixelConfig = getOpenAiPixelConfig();
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -44,7 +47,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </GoogleReviewsProvider>
         <ScrollToTop />
         <CherryFloatingButton />
+        <AttributionCapture />
         {analyticsConfig && <GoogleTag config={analyticsConfig} />}
+        {openAiPixelConfig && <OpenAiPixel config={openAiPixelConfig} />}
         </body>
     </html>
   );

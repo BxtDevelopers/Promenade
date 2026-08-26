@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SmsConsent from "../../common/SmsConsent";
 import { trackLead } from "@/app/lib/analytics";
+import { attributionLine } from "@/app/lib/attribution";
 
 export default function BookingForm({ service }: { service: string }) {
   const [smsConsent, setSmsConsent] = useState(false);
@@ -28,7 +29,12 @@ export default function BookingForm({ service }: { service: string }) {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType: 'booking', ...fields, smsConsent }),
+        body: JSON.stringify({
+          formType: 'booking',
+          ...fields,
+          smsConsent,
+          source: attributionLine(),
+        }),
       });
 
       if (response.ok) {
