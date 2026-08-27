@@ -29,11 +29,11 @@ export default function WarrantyFAQ() {
     <section className="py-section">
       <div className="mx-auto max-w-[1240px] px-site text-center">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Common questions
           </span>
           <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ink">
-            The warranty, <em className="italic font-normal text-coral">explained</em>.
+            The warranty, <em className="italic font-normal text-accent">explained</em>.
           </h2>
         </Reveal>
 
@@ -46,9 +46,9 @@ export default function WarrantyFAQ() {
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[19px] font-normal text-ink marker:content-none [&::-webkit-details-marker]:hidden">
                 {q}
-                <Plus className="h-[18px] w-[18px] shrink-0 text-coral transition-transform duration-200 group-open:rotate-45" />
+                <Plus className="h-[18px] w-[18px] shrink-0 text-accent transition-transform duration-200 group-open:rotate-45" />
               </summary>
-              <div className="-mt-1 pb-5 text-[14.5px] font-light leading-[1.7] text-muted">
+              <div className="-mt-1 pb-5 text-[14.5px] font-light leading-[1.7] text-body">
                 {a}
               </div>
             </details>

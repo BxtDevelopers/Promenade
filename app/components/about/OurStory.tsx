@@ -240,14 +240,14 @@ export default function OurStory() {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Our Story
           </span>
 
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Started by two dentists who wanted{' '}
-            <em className="not-italic text-coral">something different</em>.
+            <em className="not-italic text-accent">something different</em>.
           </h2>
 
           <div className="mt-8 space-y-5 text-cream text-[15px] md:text-[16px] font-light leading-[1.7]">

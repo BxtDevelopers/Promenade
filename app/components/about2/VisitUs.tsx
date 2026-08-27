@@ -6,11 +6,11 @@ export default function VisitUs() {
     <section id="visit" className="py-section bg-bg-2">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Visit us
           </span>
           <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Right here in <em className="italic font-normal text-coral">Fulton Ranch</em>.
+            Right here in <em className="italic font-normal text-accent">Fulton Ranch</em>.
           </h2>
         </Reveal>
 
@@ -29,14 +29,14 @@ export default function VisitUs() {
               <br />
               Chandler, AZ 85248
               <br />
-              <Link href="tel:+14808028188" className="text-coral no-underline">
+              <Link href="tel:+14808028188" className="text-accent no-underline">
                 (480) 802-8188
               </Link>
               <br />
               Mon 8am&ndash;1pm (by appt only) &middot; Tue&ndash;Thu 8am&ndash;7pm &middot; Fri&ndash;Sun Closed
             </div>
 
-            <p className="mt-3 text-[13.5px] text-muted">
+            <p className="mt-3 text-[13.5px] text-body">
               Free parking at the door &middot; Wheelchair accessible &middot; Serving Chandler,
               Ocotillo, Fulton Ranch &amp; Sun Lakes.
             </p>

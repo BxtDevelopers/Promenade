@@ -36,13 +36,13 @@ export default function OurValues() {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Our Philosophy
           </span>
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[15ch]">
             The values behind{' '}
-            <em className="not-italic text-coral">every visit</em>.
+            <em className="not-italic text-accent">every visit</em>.
           </h2>
         </div>
 
@@ -79,7 +79,7 @@ function ValueCard({
       <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ink">
         {item.title}
       </h4>
-      <p className="text-muted text-[15px] font-light leading-[1.7]">{item.body}</p>
+      <p className="text-body text-[15px] font-light leading-[1.7]">{item.body}</p>
     </div>
   );
 }

@@ -63,7 +63,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
               contentIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
           >
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6">
@@ -72,7 +72,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
 
             <div className="mb-8 space-y-4">
               {data.body.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
+                <p key={idx} className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
                   {paragraph}
                 </p>
               ))}
@@ -84,7 +84,7 @@ export default function LocalAreaSection({ data }: { data: LocalAreaData }) {
                 href={`tel:+1${data.address.phone.replace(/[^\d+]/g, '')}`}
                 className={[
                   'inline-flex items-center justify-center gap-3',
-                  'rounded-xl border border-coral/30 bg-coral/5 text-coral font-medium text-base sm:text-[15px]',
+                  'rounded-xl border border-coral/30 bg-coral/5 text-accent font-medium text-base sm:text-[15px]',
                   'px-8 py-3.5',
                   'transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-coral/10 hover:border-coral/40 active:translate-y-0',
                 ].join(' ')}

@@ -43,11 +43,11 @@ export default function OffersGrid() {
     <section className="bg-bg-2 py-[clamp(74px,8vw,120px)]">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal className="mb-[34px]" delay={0}>
-          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Patient Offers
           </div>
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Current <em className="italic font-normal text-coral">savings</em>.
+            Current <em className="italic font-normal text-accent">savings</em>.
           </h2>
         </Reveal>
 
@@ -57,7 +57,7 @@ export default function OffersGrid() {
             <div className="flex h-full flex-col justify-between rounded-2xl border border-coral/40 bg-ink/[0.03] p-[34px] md:p-[42px]">
               <div>
                 <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
-                  <ClipboardCheck className="h-5 w-5 text-coral" strokeWidth={2.2} />
+                  <ClipboardCheck className="h-5 w-5 text-accent" strokeWidth={2.2} />
                 </span>
                 <b className="block font-serif text-[26px] font-normal leading-[1.15] text-white">
                   New Patient Welcome
@@ -66,7 +66,7 @@ export default function OffersGrid() {
                 {/* The price leads. Someone arriving from an ad that named it
                     should see it without scrolling or hunting. */}
                 <div className="mt-[14px] flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <span className="font-serif text-[clamp(38px,5vw,52px)] font-light leading-[1] tracking-[-0.02em] text-coral">
+                  <span className="font-serif text-[clamp(38px,5vw,52px)] font-light leading-[1] tracking-[-0.02em] text-accent">
                     {NEW_PATIENT_PRICE}
                   </span>
                   <span className="text-[15px] font-light leading-[1.4] text-white">
@@ -74,7 +74,7 @@ export default function OffersGrid() {
                   </span>
                 </div>
 
-                <p className="mt-[12px] max-w-[46ch] text-[14.5px] font-light leading-[1.65] text-muted">
+                <p className="mt-[12px] max-w-[46ch] text-[14.5px] font-light leading-[1.65] text-body">
                   Everything you need for a smooth, no-surprises first visit.
                 </p>
 
@@ -84,7 +84,7 @@ export default function OffersGrid() {
                       key={label}
                       className="flex items-center gap-2.5 rounded-full border border-line px-4 py-[10px] text-[13px] text-white"
                     >
-                      <Icon className="h-4 w-4 shrink-0 text-coral" strokeWidth={2.2} />
+                      <Icon className="h-4 w-4 shrink-0 text-accent" strokeWidth={2.2} />
                       {label}
                     </li>
                   ))}
@@ -106,15 +106,15 @@ export default function OffersGrid() {
               <Reveal key={title} delay={0.1 + i * 0.05}>
                 <div className="flex h-full flex-col rounded-2xl border border-line bg-ink/[0.03] p-[28px]">
                   <span className="mb-[16px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
-                    <Icon className="h-5 w-5 text-coral" strokeWidth={2.2} />
+                    <Icon className="h-5 w-5 text-accent" strokeWidth={2.2} />
                   </span>
                   <b className="block font-serif text-[19px] font-normal leading-[1.15] text-white">
                     {title}
                   </b>
-                  <p className="mt-[10px] text-[14px] font-light leading-[1.6] text-muted">
+                  <p className="mt-[10px] text-[14px] font-light leading-[1.6] text-body">
                     {body}
                   </p>
-                  <span className="mt-auto pt-[16px] inline-flex items-center gap-1.5 text-[12.5px] font-medium uppercase tracking-[0.03em] text-coral">
+                  <span className="mt-auto pt-[16px] inline-flex items-center gap-1.5 text-[12.5px] font-medium uppercase tracking-[0.03em] text-accent">
                     <Check className="h-3.5 w-3.5 stroke-[2.4]" />
                     Ask at checkout
                   </span>

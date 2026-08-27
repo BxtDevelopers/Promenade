@@ -30,7 +30,7 @@ export default function Footer() {
 
           {/* Treatments */}
           <div>
-            <h5 className="footer-col-heading">Treatments</h5>
+            <h2 className="footer-col-heading">Treatments</h2>
             <ul className="list-none space-y-[10px]">
               {[
                 [`/services/family-dentistry`,      'Family & Preventive'],
@@ -43,7 +43,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link 
                     href={href} 
-                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-accent text-[color:var(--muted)]"
                   >
                     {label}
                   </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Practice */}
           <div>
-            <h5 className="footer-col-heading">Practice</h5>
+            <h2 className="footer-col-heading">Practice</h2>
             <ul className="list-none space-y-[10px]">
               {[
                 [`/about-us`,    'About Us'],
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link 
                     href={href} 
-                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                    className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-accent text-[color:var(--muted)]"
                   >
                     {label}
                   </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <MakeAPaymentButton
                   variant="pill"
-                  className="no-underline text-[14px] text-coral transition-colors duration-[250ms] hover:text-coral/70"
+                  className="no-underline text-[14px] text-accent transition-colors duration-[250ms] hover:text-accent/70"
                 >
                   Make a Payment
                 </MakeAPaymentButton>
@@ -90,12 +90,12 @@ export default function Footer() {
 
           {/* Visit */}
           <div>
-            <h5 className="footer-col-heading">Visit Us</h5>
+            <h2 className="footer-col-heading">Visit Us</h2>
             <ul className="list-none space-y-[10px]">
               <li>
                 <Link
                   href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
-                  className="no-underline text-[14px] leading-[1.55] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                  className="no-underline text-[14px] leading-[1.55] transition-colors duration-[250ms] hover:text-accent text-[color:var(--muted)]"
                 >
                   4905 S. Alma School Rd, Suite 1<br />Chandler, AZ 85248
                 </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="tel:+14808028188" 
-                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-accent text-[color:var(--muted)]"
                 >
                   (480) 802-8188
                 </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="mailto:info@promenadedds.com" 
-                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-coral text-[color:var(--muted)]"
+                  className="no-underline text-[14px] transition-colors duration-[250ms] hover:text-accent text-[color:var(--muted)]"
                 >
                   info@promenadedds.com
                 </Link>
@@ -131,16 +131,26 @@ export default function Footer() {
           <div className="flex items-center gap-[6px]">
             <Link
               href="/privacy-policy"
-              className="no-underline transition-colors duration-[250ms] hover:text-coral"
+              className="no-underline transition-colors duration-[250ms] hover:text-accent"
             >
               Privacy
             </Link>
             <span aria-hidden="true">·</span>
             <Link
               href="/terms-and-conditions"
-              className="no-underline transition-colors duration-[250ms] hover:text-coral"
+              className="no-underline transition-colors duration-[250ms] hover:text-accent"
             >
               Terms
+            </Link>
+            <span aria-hidden="true">·</span>
+            {/* Worded exactly as CCPA compliance scanners look for. The section
+                it lands on states plainly that we do not sell — see the note in
+                legal/PrivacyPolicyContent.tsx. */}
+            <Link
+              href="/privacy-policy#do-not-sell"
+              className="no-underline transition-colors duration-[250ms] hover:text-accent"
+            >
+              Do Not Sell My Personal Information
             </Link>
           </div>
         </div>

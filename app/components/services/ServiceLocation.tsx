@@ -15,13 +15,13 @@ export default function LocationMap() {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
   Serving Chandler & Surrounding Communities
 </span>
           <h2 className="font-serif font-light text-3xl
   lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink ">
   Dental care near{' '}
-  <em className="not-italic text-coral">
+  <em className="not-italic text-accent">
     Fulton Ranch & Ocotillo
   </em>.
 </h2>

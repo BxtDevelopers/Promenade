@@ -7,7 +7,7 @@ export default function StickyMobileFooter() {
 
         <a
           href="tel:+14808028188"
-          className="flex flex-col items-center gap-1 py-3 px-2 text-white hover:text-coral transition-colors active:bg-white/5"
+          className="flex flex-col items-center gap-1 py-3 px-2 text-white hover:text-accent transition-colors active:bg-white/5"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path
@@ -20,7 +20,7 @@ export default function StickyMobileFooter() {
 
         <a
           href="#book"
-          className="flex flex-col items-center gap-1 py-3 px-2 bg-coral text-bg hover:bg-coral/90 transition-colors active:bg-coral/80"
+          className="flex flex-col items-center gap-1 py-3 px-2 bg-coral text-ink hover:bg-coral/90 transition-colors active:bg-coral/80"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" strokeWidth="1.4"/>
@@ -33,7 +33,7 @@ export default function StickyMobileFooter() {
           href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center gap-1 py-3 px-2 text-ink hover:text-coral transition-colors active:bg-white/5"
+          className="flex flex-col items-center gap-1 py-3 px-2 text-ink hover:text-accent transition-colors active:bg-white/5"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path

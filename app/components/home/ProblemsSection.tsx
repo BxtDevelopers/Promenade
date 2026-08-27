@@ -69,14 +69,14 @@ export default function ProblemsSection() {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Problems We Treat
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Does something{' '}
-            <em className="not-italic text-coral">feel off</em>?
+            <em className="not-italic text-accent">feel off</em>?
           </h2>
-          <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5">
+          <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-5">
             Patients don't always know the name for what they're experiencing. Here are the most common concerns we see — and what can be done about them.
           </p>
         </div>
@@ -115,18 +115,18 @@ function ProblemCard({
     >
       {/* Urgent badge */}
       {problem.urgent && (
-        <span className="absolute top-4 right-4 text-[10px] tracking-[0.1em] uppercase text-coral border border-coral/30 rounded-full px-2 py-0.5">
+        <span className="absolute top-4 right-4 text-[10px] tracking-[0.1em] uppercase text-accent border border-coral/30 rounded-full px-2 py-0.5">
           Urgent
         </span>
       )}
 
-      <h3 className="font-serif text-[18px] lg:text-[20px] text-ink group-hover:text-coral transition-colors pr-10">
+      <h3 className="font-serif text-[18px] lg:text-[20px] text-ink group-hover:text-accent transition-colors pr-10">
         {problem.symptom}
       </h3>
-      <p className="text-muted text-[13.5px] font-light leading-[1.65] flex-1">
+      <p className="text-body text-[13.5px] font-light leading-[1.65] flex-1">
         {problem.description}
       </p>
-      <span className="text-coral text-[13px] font-light tracking-[0.02em] underline underline-offset-4 decoration-coral/40 group-hover:decoration-coral transition-colors">
+      <span className="text-accent text-[13px] font-light tracking-[0.02em] underline underline-offset-4 decoration-coral/40 group-hover:decoration-coral transition-colors">
         See how we help →
       </span>
     </a>

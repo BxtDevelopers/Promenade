@@ -55,9 +55,9 @@
 
 //       <div className="relative z-[2] px-site max-w-[1240px] mx-auto py-section flex flex-col items-center text-center">
 //         <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.1] tracking-[-0.02em] text-ink max-w-[20ch]">
-//           {title} <em className="not-italic text-coral">{highlight}</em>
+//           {title} <em className="not-italic text-accent">{highlight}</em>
 //         </h2>
-//         <p className="text-muted text-body-lg font-light leading-[1.7] max-w-[48ch] mt-6 mb-10">{subtitle}</p>
+//         <p className="text-body text-body-lg font-light leading-[1.7] max-w-[48ch] mt-6 mb-10">{subtitle}</p>
 //         <Link
 //           href={buttonHref}
 //           className="inline-flex items-center gap-3 border-none font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase px-[30px] py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300 shadow-btn text-bg bg-coral hover:bg-ink hover:-translate-y-0.5"
@@ -127,7 +127,7 @@ export default function FinalCTASection({ data }: { data: CTAData }) {
               
               <h2 className="font-serif font-light text-[clamp(40px,5vw,72px)] leading-[1.05] tracking-[-0.02em] text-white mb-6">
                 {data.title} {" "}
-                <em className="not-italic text-coral">{data.highlight}</em>
+                <em className="not-italic text-accent">{data.highlight}</em>
               </h2>
               
               <p className="text-cream font-light text-[16px] md:text-[18px] leading-[1.7] mb-10">

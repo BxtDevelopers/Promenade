@@ -51,13 +51,13 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute right-[15px] top-[13px] bg-transparent border-none text-[24px] leading-none cursor-pointer transition-colors duration-200 text-muted hover:text-white"
+          className="absolute right-[15px] top-[13px] bg-transparent border-none text-[24px] leading-none cursor-pointer transition-colors duration-200 text-body hover:text-white"
 
         >
           ×
         </button>
 
-        <div className="text-[11px] tracking-[0.2em] uppercase font-semibold text-coral">
+        <div className="text-[11px] tracking-[0.2em] uppercase font-semibold text-accent">
           Save &amp; Smile
         </div>
 
@@ -66,7 +66,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           style={{ fontSize: '31px' }}
         >
           $125{' '}
-          <em className="italic text-coral">new-patient special</em>
+          <em className="italic text-accent">new-patient special</em>
         </h3>
 
         <p
@@ -98,7 +98,7 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
                   className="relative pl-[26px] py-[6px] text-[13.5px] leading-[1.45] text-white"
                 >
                   <span
-                    className="absolute left-0 top-[6px] text-coral font-bold"
+                    className="absolute left-0 top-[6px] text-accent font-bold"
                   >
                     ✓
                   </span>
@@ -117,9 +117,9 @@ export default function OfferModal({ isOpen, onClose }: OfferModalProps) {
           </>
         )}
 
-        <p className="mt-4 text-[13px] text-muted">
+        <p className="mt-4 text-[13px] text-body">
           or call{' '}
-          <Link href="tel:+14808028188" className="text-coral no-underline hover:underline">
+          <Link href="tel:+14808028188" className="text-accent no-underline hover:underline">
             (480) 802-8188
           </Link>
         </p>

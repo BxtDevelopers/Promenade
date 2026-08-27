@@ -44,8 +44,8 @@ export default function InsuranceSection() {
             >
               {/* Pill badge */}
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/75 px-4 py-2 backdrop-blur-sm border border-white/30 shadow-sm">
-                <ShieldCheck className="h-4 w-4 text-coral" strokeWidth={2.5} />
-                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-coral">
+                <ShieldCheck className="h-4 w-4 text-accent" strokeWidth={2.5} />
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
                   Insurance
                 </span>
               </div>

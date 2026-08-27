@@ -20,11 +20,11 @@ export default function HowItWorks() {
     <section className="py-section">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             How it works
           </span>
           <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ink">
-            Simple, and <em className="italic font-normal text-coral">on your side</em>.
+            Simple, and <em className="italic font-normal text-accent">on your side</em>.
           </h2>
         </Reveal>
 
@@ -34,7 +34,7 @@ export default function HowItWorks() {
               <b className="mb-2 block font-serif text-2xl font-normal text-ink">
                 {point.title}
               </b>
-              <p className="text-[14px] font-light leading-[1.6] text-muted">{point.body}</p>
+              <p className="text-[14px] font-light leading-[1.6] text-body">{point.body}</p>
             </Reveal>
           ))}
         </div>

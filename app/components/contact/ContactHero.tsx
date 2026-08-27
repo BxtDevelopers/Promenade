@@ -321,7 +321,7 @@ export default function ContactHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
+          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-accent"
         >
           Contact Promenade Dental
         </motion.div>
@@ -338,7 +338,7 @@ export default function ContactHero() {
                 {line.text ? (
                   line.text
                 ) : (
-                  <em className="not-italic font-normal text-coral">{line.italic}</em>
+                  <em className="not-italic font-normal text-accent">{line.italic}</em>
                 )}
               </motion.span>
             </span>
@@ -349,7 +349,7 @@ export default function ContactHero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.85, duration: 1 }}
-          className="text-muted text-body-lg font-light leading-[1.7] mt-6 max-w-[52ch] mx-auto"
+          className="text-body text-body-lg font-light leading-[1.7] mt-6 max-w-[52ch] mx-auto"
         >
           Questions about treatment, insurance, or scheduling? Call, email, or
           send us a message below — we usually reply the same business day.

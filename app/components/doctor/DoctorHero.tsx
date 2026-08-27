@@ -31,15 +31,15 @@ export default function DoctorHero() {
         </Reveal>
 
         <Reveal delay={80}>
-          <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
+          <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-accent">
             {DOCTOR.jobTitle} &middot; Promenade Dental, Chandler AZ
           </div>
 
           <h1 className="mt-4 font-serif text-[clamp(34px,4.4vw,60px)] font-light leading-[1] tracking-[-0.02em] text-white">
-            Dr. Shriya <span className="italic text-coral">Sarin</span>, DMD
+            Dr. Shriya <span className="italic text-accent">Sarin</span>, DMD
           </h1>
 
-          <p className="mt-6 max-w-[62ch] text-[16px] font-light leading-[1.7] text-muted">
+          <p className="mt-6 max-w-[62ch] text-[16px] font-light leading-[1.7] text-body">
             {DOCTOR.summary}
           </p>
 
@@ -49,7 +49,7 @@ export default function DoctorHero() {
             </BookButton>
             <a
               href="tel:+14808028188"
-              className="rounded-full border border-line px-7 py-[14px] text-[14px] font-medium text-white transition-colors duration-200 hover:border-coral hover:text-coral"
+              className="rounded-full border border-line px-7 py-[14px] text-[14px] font-medium text-white transition-colors duration-200 hover:border-coral hover:text-accent"
             >
               Call (480) 802-8188
             </a>

@@ -28,11 +28,11 @@ export default function InsuranceFaqs() {
     <section className="bg-bg-2 py-[clamp(60px,7vw,104px)]">
       <div className="mx-auto max-w-[1240px] px-site text-center">
         <Reveal delay={0}>
-          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Common questions
           </div>
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Insurance, <em className="italic font-normal text-coral">answered</em>.
+            Insurance, <em className="italic font-normal text-accent">answered</em>.
           </h2>
         </Reveal>
 
@@ -45,14 +45,14 @@ export default function InsuranceFaqs() {
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-serif text-[19px] font-normal text-white marker:content-none">
                   {faq.q}
-                  <span className="shrink-0 text-[22px] leading-none text-coral group-open:hidden">
+                  <span className="shrink-0 text-[22px] leading-none text-accent group-open:hidden">
                     +
                   </span>
-                  <span className="hidden shrink-0 text-[22px] leading-none text-coral group-open:inline">
+                  <span className="hidden shrink-0 text-[22px] leading-none text-accent group-open:inline">
                     &ndash;
                   </span>
                 </summary>
-                <div className="-mt-1 pb-5 text-[14.5px] text-left font-light leading-[1.7] text-muted">
+                <div className="-mt-1 pb-5 text-[14.5px] text-left font-light leading-[1.7] text-body">
                   {faq.a}
                 </div>
               </details>

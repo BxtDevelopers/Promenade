@@ -76,7 +76,7 @@ export default function ClosingCTA() {
       />
 
       <div className="relative max-w-[1240px] mx-auto px-[clamp(22px,4vw,60px)]">
-        <span className="block mb-[22px] text-[11.5px] tracking-eyebrow uppercase font-medium text-coral">
+        <span className="block mb-[22px] text-[11.5px] tracking-eyebrow uppercase font-medium text-accent">
           Always Welcoming New Patients
         </span>
 
@@ -91,12 +91,12 @@ export default function ClosingCTA() {
         >
           Ready to find a dentist{' '}
           <br />
-          <em className="italic text-coral">you actually like?</em>
+          <em className="italic text-accent">you actually like?</em>
         </h2>
 
         <div
           ref={textRef as React.RefObject<HTMLDivElement>}
-          className="max-w-[600px] mx-auto mt-[26px] text-muted text-[15px] md:text-[16px] font-light leading-[1.8]"
+          className="max-w-[600px] mx-auto mt-[26px] text-body text-[15px] md:text-[16px] font-light leading-[1.8]"
           style={{
             opacity: textVis ? 1 : 0,
             transform: textVis ? 'none' : 'translateY(34px)',
@@ -108,7 +108,7 @@ export default function ClosingCTA() {
           </p>
           <p className="mt-4">
             Book online or call us at{' '}
-            <a href="tel:+14808028188" className="text-white hover:text-coral transition-colors">
+            <a href="tel:+14808028188" className="text-white hover:text-accent transition-colors">
               (480) 802-8188
             </a>
             . Same-day appointments are often available.
@@ -125,7 +125,7 @@ export default function ClosingCTA() {
           }}
         >
           {/* Primary */}
-          <Link href='/contact-us#contact' className="bg-coral hover:bg-coral/90 text-bg border-none px-[30px] py-[17px] rounded-full font-sans text-[14px] tracking-[0.05em] uppercase font-semibold transition-all duration-300 cursor-pointer">
+          <Link href='/contact-us#contact' className="bg-coral hover:bg-coral/90 text-ink border-none px-[30px] py-[17px] rounded-full font-sans text-[14px] tracking-[0.05em] uppercase font-semibold transition-all duration-300 cursor-pointer">
             Book an Appointment
           </Link>
 

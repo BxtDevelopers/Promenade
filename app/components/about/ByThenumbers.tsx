@@ -24,13 +24,13 @@ export default function ByTheNumbers() {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Promenade by the Numbers
           </span>
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-2xl">
             A track record{' '}
-            <em className="not-italic text-coral">built on trust</em>.
+            <em className="not-italic text-accent">built on trust</em>.
           </h2>
         </div>
 
@@ -65,10 +65,10 @@ function StatCard({
         transitionDelay: `${delay}s`,
       }}
     >
-      <p className="font-serif font-light text-[clamp(32px,3.6vw,52px)] leading-none text-coral">
+      <p className="font-serif font-light text-[clamp(32px,3.6vw,52px)] leading-none text-accent">
         {stat.value}
       </p>
-      <p className="text-muted text-[14px] font-light leading-[1.6] mt-3">
+      <p className="text-body text-[14px] font-light leading-[1.6] mt-3">
         {stat.label}
       </p>
     </div>

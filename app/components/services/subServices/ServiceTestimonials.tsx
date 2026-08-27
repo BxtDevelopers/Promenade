@@ -33,7 +33,7 @@ export default function ServiceTestimonials({
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white">
@@ -63,7 +63,7 @@ export default function ServiceTestimonials({
               {/* Quote mark */}
               <svg 
                 viewBox="0 0 32 26" 
-                className="w-8 h-auto text-coral mb-5 flex-shrink-0" 
+                className="w-8 h-auto text-accent mb-5 flex-shrink-0" 
                 fill="currentColor" 
                 aria-hidden="true"
               >
@@ -75,14 +75,14 @@ export default function ServiceTestimonials({
               </p>
 
               <div className="flex items-center gap-3 mt-6 pt-6 border-t border-line">
-                <span className="w-9 h-9 rounded-full bg-coral/10 border border-coral/30 flex items-center justify-center font-serif text-coral text-[14px] flex-shrink-0">
+                <span className="w-9 h-9 rounded-full bg-coral/10 border border-coral/30 flex items-center justify-center font-serif text-accent text-[14px] flex-shrink-0">
                   {t.name.charAt(0)}
                 </span>
                 <div>
                   <p className="text-white text-[14px] font-medium font-sans">
                     {t.name}
                   </p>
-                  <p className="text-muted-2 group-hover:text-coral text-[12.5px] font-light font-sans">
+                  <p className="text-body-2 group-hover:text-accent text-[12.5px] font-light font-sans">
                     {t.context}
                   </p>
                 </div>

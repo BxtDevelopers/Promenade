@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
   ].join(' ')}
 >
   Why choose{' '}
-  <em className="not-italic text-coral">Promenade Dental</em>{' '}
+  <em className="not-italic text-accent">Promenade Dental</em>{' '}
   for dental treatment?
 </p> 
 
@@ -86,14 +86,14 @@ function MetaCard({
     transitionDelay: `${delay}s`,
   }}
 >
-    <span className="absolute top-6 right-6 text-coral/40 font-serif text-3xl">
+    <span className="absolute top-6 right-6 text-accent/40 font-serif text-3xl">
   0{index + 1}
 </span>
       <h4 className="font-serif text-[24px] lg:text-[28px] text-white mb-4">
   {item.title}
 </h4>
 
-<p className="text-muted text-[15px] lg:text-[16px] leading-[1.9] lg:max-w-[80%]">
+<p className="text-body text-[15px] lg:text-[16px] leading-[1.9] lg:max-w-[80%]">
   {item.body}
 </p>
     </div>

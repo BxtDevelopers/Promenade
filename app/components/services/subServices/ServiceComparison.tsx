@@ -33,7 +33,7 @@ export default function ServiceComparison({
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11px] md:text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11px] md:text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {eyebrow}
           </span>
 
@@ -42,7 +42,7 @@ export default function ServiceComparison({
           </h2>
 
           {subtitle && (
-            <p className="text-muted text-base sm:text-lg lg:text-xl font-light leading-[1.7] mt-5 max-w-[48ch]">
+            <p className="text-body text-base sm:text-lg lg:text-xl font-light leading-[1.7] mt-5 max-w-[48ch]">
               {subtitle}
             </p>
           )}
@@ -62,14 +62,14 @@ export default function ServiceComparison({
           {/* Header */}
           <div className="grid grid-cols-2">
             <div className="px-7 lg:px-9 py-6 border-r border-line">
-              <span className="inline-flex items-center gap-2 text-base lg:text-lg tracking-wide uppercase font-medium text-muted-2">
+              <span className="inline-flex items-center gap-2 text-base lg:text-lg tracking-wide uppercase font-medium text-body-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-muted-2" />
                 {without.title}
               </span>
             </div>
 
             <div className="px-7 lg:px-9 py-6 bg-coral/[0.05]">
-              <span className="inline-flex items-center gap-2 text-base lg:text-lg tracking-wide uppercase font-medium text-coral">
+              <span className="inline-flex items-center gap-2 text-base lg:text-lg tracking-wide uppercase font-medium text-accent">
                 <span className="w-1.5 h-1.5 rounded-full bg-coral" />
                 {withUs.title}
               </span>
@@ -113,14 +113,14 @@ export default function ServiceComparison({
               {/* Typical */}
               <div className="p-5 border-b border-line">
                 <div className="flex items-center gap-2 mb-3">
-                  <HiOutlineXMark className="w-5 h-5 text-muted-2 flex-shrink-0" />
+                  <HiOutlineXMark className="w-5 h-5 text-body-2 flex-shrink-0" />
 
-                  <span className="text-[11px] tracking-eyebrow uppercase text-muted-2 font-medium">
+                  <span className="text-[11px] tracking-eyebrow uppercase text-body-2 font-medium">
                     {without.title}
                   </span>
                 </div>
 
-                <p className="text-muted text-[15px] leading-7 font-light">
+                <p className="text-body text-[15px] leading-7 font-light">
                   {without.points[i]}
                 </p>
               </div>
@@ -128,9 +128,9 @@ export default function ServiceComparison({
               {/* With Us */}
               <div className="p-5 bg-coral/[0.04]">
                 <div className="flex items-center gap-2 mb-3">
-                  <HiOutlineCheck className="w-5 h-5 text-coral flex-shrink-0" />
+                  <HiOutlineCheck className="w-5 h-5 text-accent flex-shrink-0" />
 
-                  <span className="text-[11px] tracking-eyebrow uppercase text-coral font-medium">
+                  <span className="text-[11px] tracking-eyebrow uppercase text-accent font-medium">
                     {withUs.title}
                   </span>
                 </div>
@@ -167,22 +167,22 @@ function ComparisonCell({
       {text ? (
         <>
           {isCoral ? (
-            <HiOutlineCheck className="w-5 h-5 mt-0.5 flex-shrink-0 text-coral" />
+            <HiOutlineCheck className="w-5 h-5 mt-0.5 flex-shrink-0 text-accent" />
           ) : (
-            <HiOutlineXMark className="w-5 h-5 mt-0.5 flex-shrink-0 text-muted-2" />
+            <HiOutlineXMark className="w-5 h-5 mt-0.5 flex-shrink-0 text-body-2" />
           )}
 
           <span
             className={[
               'text-base lg:text-lg leading-[1.8] font-light',
-              isCoral ? 'text-cream' : 'text-muted',
+              isCoral ? 'text-cream' : 'text-body',
             ].join(' ')}
           >
             {text}
           </span>
         </>
       ) : (
-        <span className="text-muted-2/40">—</span>
+        <span className="text-body-2/40">—</span>
       )}
     </div>
   );

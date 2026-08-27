@@ -32,7 +32,7 @@ export default function DoctorsSection() {
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
             Meet the dentists you&apos;ll{' '}
-            <em className="not-italic text-coral">actually</em> get to know.
+            <em className="not-italic text-accent">actually</em> get to know.
           </h2>
         </div>
 
@@ -78,7 +78,7 @@ export default function DoctorsSection() {
                   className="absolute inset-0"
                 >
                   {/* Role */}
-                  <p className="text-coral text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium">
+                  <p className="text-accent text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium">
                     {doc.role}
                   </p>
 
@@ -89,11 +89,11 @@ export default function DoctorsSection() {
                   >
                     {doc.firstName}
                     <br />
-                    <span className="text-coral italic">{doc.lastName}</span>
+                    <span className="text-accent italic">{doc.lastName}</span>
                   </h3>
 
                   {/* Bio */}
-                  <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] mt-5 md:mt-[22px] max-w-[42ch]">
+                  <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] mt-5 md:mt-[22px] max-w-[42ch]">
                     {doc.bio}
                   </p>
 
@@ -104,7 +104,7 @@ export default function DoctorsSection() {
                         <b className="font-serif text-[22px] md:text-[24px] font-normal text-ink block leading-none">
                           {f.value}
                         </b>
-                        <span className="text-muted text-[12px] md:text-[13px] mt-1.5 block">
+                        <span className="text-body text-[12px] md:text-[13px] mt-1.5 block">
                           {f.label}
                         </span>
                       </li>
@@ -149,7 +149,7 @@ function DrTab({
         'transition-all duration-300 border',
         active
           ? 'bg-ink text-bg border-ink'
-          : 'bg-transparent text-muted border-line hover:text-ink',
+          : 'bg-transparent text-body border-line hover:text-ink',
       ].join(' ')}
     >
       {label}

@@ -42,9 +42,9 @@ const PATIENT_TYPES = [
 //             <h2 className="font-serif font-light text-3xl
 //               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
 //               A Chandler Dental Office for{' '}
-//               <em className="not-italic text-coral">Families, Adults, and Smile-Focused Patients</em>.
+//               <em className="not-italic text-accent">Families, Adults, and Smile-Focused Patients</em>.
 //             </h2>
-//             <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 max-w-[80%]">
+//             <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 max-w-[80%]">
 //               Promenade Dental serves patients with different needs, ages, and
 //               treatment goals. The common thread is that every patient
 //               deserves careful diagnosis, honest explanation, and dentistry
@@ -66,7 +66,7 @@ const PATIENT_TYPES = [
 //         </div>
 
 //         {/* Closing line */}
-//         <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-10 max-w-[80%]">
+//         <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-10 max-w-[80%]">
 //           Whether your visit is simple, urgent, cosmetic, or complex, the
 //           first step is understanding your condition clearly.
 //         </p>
@@ -89,7 +89,7 @@ const PATIENT_TYPES = [
 //         hover:bg-coral/5 cursor-pointer"
 //     >
 //       {/* Number */}
-//       <span className="font-serif text-[18px] text-muted-2 tracking-[0.1em] shrink-0 w-[28px]">
+//       <span className="font-serif text-[18px] text-body-2 tracking-[0.1em] shrink-0 w-[28px]">
 //         {item.no}
 //       </span>
 
@@ -100,14 +100,14 @@ const PATIENT_TYPES = [
 //       </span>
 
 //       {/* Text */}
-//       <span className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.65] flex-1">
+//       <span className="text-body text-[14.5px] md:text-[15px] font-light leading-[1.65] flex-1">
 //         {item.text}
 //       </span>
 
 //       {/* Arrow indicator */}
 //       <span
 //         aria-hidden="true"
-//         className="font-serif text-coral text-[20px] shrink-0 opacity-0 -translate-x-2
+//         className="font-serif text-accent text-[20px] shrink-0 opacity-0 -translate-x-2
 //           transition-all duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]
 //           group-hover:opacity-100 group-hover:translate-x-0"
 //       >
@@ -128,9 +128,9 @@ export default function PatientTypesSection() {
             <h2 className="font-serif font-light text-3xl
               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               A Chandler Dental Office for{' '}
-              <em className="not-italic text-coral">Families, Adults, and Smile-Focused Patients</em>.
+              <em className="not-italic text-accent">Families, Adults, and Smile-Focused Patients</em>.
             </h2>
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 lg:max-w-[80%] mx-auto">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 lg:max-w-[80%] mx-auto">
               Promenade Dental serves patients with different needs, ages, and
               treatment goals. The common thread is that every patient
               deserves careful diagnosis, honest explanation, and dentistry
@@ -152,7 +152,7 @@ export default function PatientTypesSection() {
         </div>
 
         {/* Closing line */}
-        <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-10 text-center lg:max-w-[80%] mx-auto">
+        <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-10 text-center lg:max-w-[80%] mx-auto">
           Whether your visit is simple, urgent, cosmetic, or complex, the
           first step is understanding your condition clearly.
         </p>
@@ -177,7 +177,7 @@ function PatientCard({
       <div className="flex flex-col gap-4">
         {/* Top Header: Number and Arrow */}
         <div className="flex items-center justify-between">
-          <span className="font-serif text-[18px] text-muted-2 tracking-[0.1em]">
+          <span className="font-serif text-[18px] text-body-2 tracking-[0.1em]">
             {item.no}
           </span>
         </div>
@@ -188,7 +188,7 @@ function PatientCard({
         </h3>
 
         {/* Text */}
-        <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.65]">
+        <p className="text-body text-[14.5px] md:text-[15px] font-light leading-[1.65]">
           {item.text}
         </p>
       </div>

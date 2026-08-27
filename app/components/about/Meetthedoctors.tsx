@@ -31,13 +31,13 @@ export default function MeetTheDoctors() {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Meet the Team
           </span>
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[18ch]">
             The dentists you&apos;ll{' '}
-            <em className="not-italic text-coral">actually</em> get to know.
+            <em className="not-italic text-accent">actually</em> get to know.
           </h2>
         </div>
 
@@ -77,7 +77,7 @@ function DoctorCard({
       </div>
 
       <div className="p-7 md:p-8">
-        <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-2">
+        <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-2">
           {doctor.role}
         </span>
 
@@ -85,15 +85,15 @@ function DoctorCard({
           {doctor.name}
         </h3>
 
-        <p className="text-muted text-[14.5px] font-light leading-[1.65] mb-6">
+        <p className="text-body text-[14.5px] font-light leading-[1.65] mb-6">
           {doctor.bio}
         </p>
 
         <div className="flex gap-8 border-t border-line pt-5">
           {doctor.stats.map((s) => (
             <div key={s.label}>
-              <p className="font-serif font-normal text-[20px] text-coral">{s.value}</p>
-              <p className="text-muted-2 text-[12px] mt-1">{s.label}</p>
+              <p className="font-serif font-normal text-[20px] text-accent">{s.value}</p>
+              <p className="text-body-2 text-[12px] mt-1">{s.label}</p>
             </div>
           ))}
         </div>

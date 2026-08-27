@@ -7,11 +7,11 @@ export default function OurStory() {
     <section className="py-[clamp(40px,5vw,64px)]">
       <div className="mx-auto grid lg:max-w-[1340px] grid-cols-1 items-center gap-[clamp(30px,4vw,60px)] px-site lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Our story
           </span>
           <h2 className="mt-[14px] font-serif text-[clamp(28px,3.6vw,46px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
-            A neighborhood practice, <em className="italic font-normal text-coral">not a chain</em>.
+            A neighborhood practice, <em className="italic font-normal text-accent">not a chain</em>.
           </h2>
           <p className="mt-[18px] text-body-lg font-light leading-[1.6] text-ink">
             At Promenade Dental, we believe dentistry is far more than teeth — it is about building confidence by creating beautiful smiles, and it is about enhancing wellness and comfort. With a modern approach, we have upgraded the practice with a vision to redefine the dental experience through personalized, comprehensive care in a calm and elevated environment. Among countless options available, if you choose us, we are there for you! We are committed to providing the best patient experience, taking time to truly understand each patient. After all, no two smiles &mdash; and no two lives &mdash; are the same.

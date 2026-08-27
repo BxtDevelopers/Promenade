@@ -72,7 +72,7 @@ export default function ReferralsCta() {
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
-          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Refer a friend
           </span>
         </Reveal>
@@ -81,7 +81,7 @@ export default function ReferralsCta() {
           <h2 className="font-serif text-[clamp(40px,7vw,70px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Know someone who&rsquo;d love it here?
             <br />
-            <em className="italic font-normal text-coral">Send them our way.</em>
+            <em className="italic font-normal text-accent">Send them our way.</em>
           </h2>
         </Reveal>
 
@@ -104,7 +104,7 @@ export default function ReferralsCta() {
           className="mx-auto mt-[48px] max-w-[760px] rounded-2xl border border-dashed border-coral/50 bg-coral/[0.07] px-[18px] py-[15px] text-left text-[13px] font-light leading-[1.55] text-cream"
           delay={0.15}
         >
-          <b className="font-semibold text-coral">To confirm before launch:</b> the $50 / $50
+          <b className="font-semibold text-accent">To confirm before launch:</b> the $50 / $50
           reward amounts are a placeholder &mdash; set the figures you&rsquo;re comfortable with
           and confirm any AZ rules on patient referral incentives. Final terms &amp; conditions
           wording also needs to be added.

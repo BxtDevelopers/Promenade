@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SmsConsent from './SmsConsent';
+import FormPurpose from './FormPurpose';
 import { trackLead } from '@/app/lib/analytics';
 import { attributionLine } from '@/app/lib/attribution';
 export interface BookingModalProps {
@@ -181,11 +182,11 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
         <div className="px-5 py-8 sm:px-8 sm:py-10 md:px-12 md:py-14 overflow-y-auto custom-scrollbar flex-1">
           {status !== 'done' ? (
             <>
-              <span className="inline-block text-xs font-semibold tracking-wider uppercase text-coral mb-2 md:mb-3">
+              <span className="inline-block text-xs font-semibold tracking-wider uppercase text-accent mb-2 md:mb-3">
                 Quick Booking
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl leading-tight text-neutral-900 mb-2 md:mb-3 pr-8">
-                Let’s get you seen <span className="text-coral italic">soon.</span>
+                Let’s get you seen <span className="text-accent italic">soon.</span>
               </h2>
               <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-[42ch] mb-6 md:mb-8">
                 Tell us a bit about what you need — we usually reply the same business day. Dental emergency? Let us know below.
@@ -265,6 +266,8 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
                   onChange={setSmsConsent}
                 />
 
+                <FormPurpose />
+
                 {error && (
                   <div
                     role="alert"
@@ -320,13 +323,13 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
             </>
           ) : (
             <div className="py-10 md:pt-10 h-full flex flex-col justify-center min-h-[50vh]">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-coral/10 border border-coral/20 flex items-center justify-center mb-6 text-coral">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-coral/10 border border-coral/20 flex items-center justify-center mb-6 text-accent">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4.5 4.5L19 8" />
                 </svg>
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-neutral-900 mb-3 md:mb-4">
-                You’re on <span className="text-coral italic">our list.</span>
+                You’re on <span className="text-accent italic">our list.</span>
               </h2>
               <p className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-[42ch] mb-6 md:mb-8">
                 Thanks{form.name ? `, ${form.name.split(' ')[0]}` : ''} — our team will reach out
@@ -334,7 +337,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
               </p>
               <a
                 href="tel:+14808028188"
-                className="font-serif text-xl sm:text-2xl text-coral hover:text-coral/80 transition-colors"
+                className="font-serif text-xl sm:text-2xl text-accent hover:text-accent/80 transition-colors"
               >
                 (480) 802-8188
               </a>
@@ -372,7 +375,7 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
 
             <div>
               <h3 className="font-serif text-2xl mb-1 text-white">
-                Your best smile <span className="text-coral/90 italic">starts here.</span>
+                Your best smile <span className="text-accent/90 italic">starts here.</span>
               </h3>
               <p className="text-sm text-white/70">Fulton Ranch · Chandler, AZ</p>
             </div>
@@ -473,7 +476,7 @@ function CustomReasonDropdown({
                 onChange(option);
                 setOpen(false);
               }}
-              className="w-full text-left px-4 py-3 text-base md:text-[15px] text-neutral-600 hover:bg-neutral-50 hover:text-coral transition-colors"
+              className="w-full text-left px-4 py-3 text-base md:text-[15px] text-neutral-600 hover:bg-neutral-50 hover:text-accent transition-colors"
             >
               {option}
             </button>

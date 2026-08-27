@@ -80,9 +80,9 @@ export default function ServicesSection() {
             <h2 className="font-serif font-light text-3xl 
               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               Complete Dental Services{' '}
-              <em className="not-italic text-coral">in Chandler, AZ</em>.
+              <em className="not-italic text-accent">in Chandler, AZ</em>.
             </h2>
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 lg:max-w-[80%] mx-auto">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 lg:max-w-[80%] mx-auto">
               Promenade Dental provides care across the main areas patients
               commonly need from a trusted local dentist: prevention,
               cosmetic improvement, tooth repair, tooth replacement, and
@@ -165,7 +165,7 @@ function ServiceCard({
       </svg>
 
       {/* Number */}
-      <span className="font-serif text-[13px] text-muted-2 tracking-[0.1em]">
+      <span className="font-serif text-[13px] text-body-2 tracking-[0.1em]">
         {service.no}
       </span>
 
@@ -175,19 +175,19 @@ function ServiceCard({
       </h3>
 
       {/* Body */}
-      <p className="text-muted text-[14.5px] font-light leading-[1.65]">
+      <p className="text-body text-[14.5px] font-light leading-[1.65]">
         {service.body}
       </p>
 
       {/* Second paragraph */}
-      <p className="text-muted text-[14.5px] font-light leading-[1.65] mt-3">
+      <p className="text-body text-[14.5px] font-light leading-[1.65] mt-3">
         {service.body2}
       </p>
 
       {/* CTA */}
       <a
         href={service.ctaHref}
-        className="inline-flex items-center gap-2 mt-5 text-[14px] text-coral font-light tracking-[0.02em]
+        className="inline-flex items-center gap-2 mt-5 text-[14px] text-accent font-light tracking-[0.02em]
           underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors"
       >
         {service.ctaLabel}

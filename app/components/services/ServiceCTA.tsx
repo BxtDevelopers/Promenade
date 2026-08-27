@@ -85,7 +85,7 @@ export default function ServiceCTA() {
       />
 
       <div className="relative max-w-[1240px] mx-auto px-[clamp(22px,4vw,60px)]">
-        <span className="block mb-[22px] text-[11.5px] tracking-eyebrow uppercase font-medium text-coral">
+        <span className="block mb-[22px] text-[11.5px] tracking-eyebrow uppercase font-medium text-accent">
   Comprehensive Dental Care in Chandler, AZ
 </span>
 
@@ -101,12 +101,12 @@ export default function ServiceCTA() {
 >
   Find the right
   <br />
-  <em className="italic text-coral">dental treatment.</em>
+  <em className="italic text-accent">dental treatment.</em>
 </h2>
 
 <div
   ref={textRef as React.RefObject<HTMLDivElement>}
-  className="max-w-[720px] mx-auto mt-[26px] text-muted text-[15px] md:text-[16px] font-light leading-[1.8]"
+  className="max-w-[720px] mx-auto mt-[26px] text-body text-[15px] md:text-[16px] font-light leading-[1.8]"
   style={{
     opacity: textVis ? 1 : 0,
     transform: textVis ? 'none' : 'translateY(34px)',
@@ -181,7 +181,8 @@ function GhostButton() {
       className="
         bg-coral
         hover:bg-ink
-        text-bg
+        text-ink
+        hover:text-bg
         px-[30px]
         py-[17px]
         rounded-full

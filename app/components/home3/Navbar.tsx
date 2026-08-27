@@ -100,13 +100,13 @@ export default function Navbar({
                     return (
                       <div key={category.slug} className="flex flex-col h-full">
                         {isSleepApnea ? (
-                            <span className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-coral px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)] block">
+                            <span className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-accent px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)] block">
                               More Treatments
                             </span>
                           ) : (
                             <Link
                               href={`/services/${category.slug}`}
-                              className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-coral hover:text-coral/70 px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)]"
+                              className="font-serif text-[11.5px] tracking-[0.12em] uppercase text-accent hover:text-accent/70 px-[14px] pt-1 pb-[9px] mx-[6px] mb-[5px] border-b border-[rgba(244,236,221,0.13)]"
                             >
                               {category.name}
                             </Link>
@@ -137,7 +137,7 @@ export default function Navbar({
                         {index === SERVICES.length - 1 && (
                           <Link
                             href={`/services`}
-                            className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-coral normal-case font-[450] no-underline mt-2 border-t border-[rgba(244,236,221,0.14)] pt-3 hover:bg-[rgba(232,154,114,0.18)] transition-all duration-[160ms]"
+                            className="block px-[14px] py-[10px] rounded-[10px] text-[13px] text-accent normal-case font-[450] no-underline mt-2 border-t border-[rgba(244,236,221,0.14)] pt-3 hover:bg-[rgba(232,154,114,0.18)] transition-all duration-[160ms]"
                           >
                             View all services →
                           </Link>
@@ -186,7 +186,7 @@ export default function Navbar({
                   ))}
                   <MakeAPaymentButton
                     variant="pill"
-                    className="mt-[5px] block border-t border-[rgba(244,236,221,0.13)] px-[14px] pb-[10px] pt-[13px] text-[13px] font-[450] normal-case text-coral no-underline transition-all duration-[160ms] hover:bg-[rgba(232,154,114,0.18)]"
+                    className="mt-[5px] block border-t border-[rgba(244,236,221,0.13)] px-[14px] pb-[10px] pt-[13px] text-[13px] font-[450] normal-case text-accent no-underline transition-all duration-[160ms] hover:bg-[rgba(232,154,114,0.18)]"
                   >
                     Make a Payment →
                   </MakeAPaymentButton>
@@ -213,11 +213,17 @@ export default function Navbar({
 
           {/* Mobile Menu Toggle (Hidden on XL) */}
           <div className="xl:hidden ml-auto flex items-center gap-4">
-            <button 
+            {/* Icon-only, so the name has to be stated: the two lucide glyphs
+                render as <svg> with no text, leaving the control announced as
+                just "button". */}
+            <button
+              type="button"
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileMenuOpen}
               className={`${textColor} ${hoverColor} p-1`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {mobileMenuOpen ? <X size={28} aria-hidden="true" /> : <Menu size={28} aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -247,13 +253,13 @@ export default function Navbar({
                 className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
                 Services
-                <ChevronDown className={`w-4 h-4 text-coral transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-4 h-4 text-accent transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
               </button>
               {mobileServicesOpen && (
                 <div className="flex flex-col gap-5 pl-4 pt-4 pb-2 border-b border-[rgba(244,236,221,0.05)]">
                   {SERVICES.map((category) => (
                     <div key={category.slug} className="flex flex-col gap-2">
-                      <Link href={`/services/${category.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-coral text-[12px] uppercase font-serif tracking-widest no-underline">
+                      <Link href={`/services/${category.slug}`} onClick={() => setMobileMenuOpen(false)} className="text-accent text-[12px] uppercase font-serif tracking-widest no-underline">
                         {category.name}
                       </Link>
                       <div className="flex flex-col gap-3 pl-3 mt-1">
@@ -265,7 +271,7 @@ export default function Navbar({
                       </div>
                     </div>
                   ))}
-                  <Link href={`/services`} onClick={() => setMobileMenuOpen(false)} className="text-coral text-[13px] no-underline mt-2 pt-2 border-t border-[rgba(244,236,221,0.05)]">
+                  <Link href={`/services`} onClick={() => setMobileMenuOpen(false)} className="text-accent text-[13px] no-underline mt-2 pt-2 border-t border-[rgba(244,236,221,0.05)]">
                     View all services →
                   </Link>
                 </div>
@@ -282,7 +288,7 @@ export default function Navbar({
                 className="flex w-full items-center justify-between text-white uppercase tracking-wider text-[14px] py-3 border-b border-[rgba(244,236,221,0.05)] text-left"
               >
                 New Patients
-                <ChevronDown className={`w-4 h-4 text-coral transition-transform ${mobilePatientsOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-4 h-4 text-accent transition-transform ${mobilePatientsOpen ? 'rotate-180' : ''}`} />
               </button>
               {mobilePatientsOpen && (
                 <div className="flex flex-col gap-3 pl-4 pt-3 pb-2">
@@ -302,7 +308,7 @@ export default function Navbar({
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-coral text-[13px] no-underline"
+                    className="text-accent text-[13px] no-underline"
                   >
                     Make a Payment →
                   </a>

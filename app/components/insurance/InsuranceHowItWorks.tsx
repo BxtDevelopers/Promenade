@@ -30,11 +30,11 @@ export default function InsuranceHowItWorks() {
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal className="mb-[34px] flex flex-wrap items-end justify-between gap-[30px]" delay={0}>
           <div>
-            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
               How it works
             </div>
             <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-              Coverage made <em className="italic font-normal text-coral">simple</em>.
+              Coverage made <em className="italic font-normal text-accent">simple</em>.
             </h2>
           </div>
         </Reveal>
@@ -44,12 +44,12 @@ export default function InsuranceHowItWorks() {
           {STEPS.map(({ icon: Icon, title, body }, i) => (
             <Reveal key={title} className="border-t border-line pt-[22px]" delay={i * 0.1}>
               <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-6 w-6 text-coral" strokeWidth={2.2} />
+                <Icon className="h-6 w-6 text-accent" strokeWidth={2.2} />
               </span>
               <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-white">
                 {title}
               </b>
-              <p className="text-[14.5px] font-light leading-[1.65] text-muted">{body}</p>
+              <p className="text-[14.5px] font-light leading-[1.65] text-body">{body}</p>
             </Reveal>
           ))}
         </div>

@@ -38,11 +38,11 @@ export default function TeamSection() {
     <section id="team" className="bg-white py-[clamp(70px,8vw,118px)]">
       <div className="mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)]">
         <Reveal className="mb-[clamp(34px,4vw,52px)]" delay={0}>
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             Come say hello
           </span>
           <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-neutral-900 mt-2 text-[clamp(30px,4vw,52px)]">
-            Meet the <em className="italic text-coral">team</em>.
+            Meet the <em className="italic text-accent">team</em>.
           </h2>
           {/* <p className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-neutral-500 max-w-[62ch]">
             A quick hello from Dr. Shriya, and the friendly faces who&rsquo;ll
@@ -68,7 +68,7 @@ export default function TeamSection() {
 
               {/* Caption, bottom-left */}
               {/* <div className="absolute left-[20px] right-[20px] bottom-[20px]">
-                <span className="text-[10.5px] tracking-[0.26em] uppercase font-medium text-coral">
+                <span className="text-[10.5px] tracking-[0.26em] uppercase font-medium text-accent">
                   A message from
                 </span>
                 <p className="font-serif font-light text-white leading-[1.2] mt-[4px] text-[22px]">
@@ -81,7 +81,7 @@ export default function TeamSection() {
                 <button
                   onClick={toggleMute}
                   aria-label={muted ? 'Unmute video' : 'Mute video'}
-                  className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-white/30 text-white transition-colors duration-300 hover:border-coral hover:text-coral"
+                  className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-white/30 text-white transition-colors duration-300 hover:border-coral hover:text-accent"
                   style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
                 >
                   {muted ? <VolumeX className="w-[15px] h-[15px]" /> : <Volume2 className="w-[15px] h-[15px]" />}
@@ -89,7 +89,7 @@ export default function TeamSection() {
                 <button
                   onClick={togglePlay}
                   aria-label={playing ? 'Pause video' : 'Play video'}
-                  className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-white/30 text-white transition-colors duration-300 hover:border-coral hover:text-coral"
+                  className="inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-white/30 text-white transition-colors duration-300 hover:border-coral hover:text-accent"
                   style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
                 >
                   {playing ? <Pause className="w-[15px] h-[15px]" /> : <Play className="w-[15px] h-[15px] translate-x-[1px]" />}
@@ -104,7 +104,7 @@ export default function TeamSection() {
               <Reveal key={name} delay={0.1 + i * 0.06}>
                 <div className="group relative flex items-center gap-[22px] py-[26px] md:py-[30px] overflow-hidden">
                   {/* Ghost index number */}
-                  <span className="font-serif font-light leading-none text-[clamp(52px,6vw,76px)] text-coral/60 transition-colors duration-500 group-hover:text-coral/90 select-none">
+                  <span className="font-serif font-light leading-none text-[clamp(52px,6vw,76px)] text-accent/60 transition-colors duration-500 group-hover:text-accent/90 select-none">
                     {String(i + 1).padStart(2, '0')}
                   </span>
 
@@ -112,7 +112,7 @@ export default function TeamSection() {
                     <b className="font-serif font-light text-neutral-900 text-[clamp(22px,2.4vw,30px)] leading-[1.1] tracking-[-0.01em]">
                       {name}
                     </b>
-                    <span className="text-[11.5px] tracking-[0.2em] uppercase font-medium text-coral shrink-0">
+                    <span className="text-[11.5px] tracking-[0.2em] uppercase font-medium text-accent shrink-0">
                       {role}
                     </span>
                   </div>

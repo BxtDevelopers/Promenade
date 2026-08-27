@@ -40,14 +40,14 @@ export default function FirstVisitFlow() {
           
           {/* Left Column: Sticky Header */}
           <div className="rv lg:sticky lg:top-[140px] lg:w-[40%] flex-shrink-0">
-            <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral flex items-center gap-4">
+            <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent flex items-center gap-4">
               Your Journey Begins
             </span>
             <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-white mt-6 text-[clamp(36px,4.5vw,58px)]">
               What to expect on your{' '}
-              <em className="italic text-coral tracking-wider">first visit.</em>
+              <em className="italic text-accent tracking-wider">first visit.</em>
             </h2>
-            <p className="font-light text-[15.5px] leading-[1.75] mt-[20px] text-muted-2 max-w-[40ch]">
+            <p className="font-light text-[15.5px] leading-[1.75] mt-[20px] text-body-2 max-w-[40ch]">
               We’ve engineered our onboarding to be entirely stress-free. From the moment you walk through the doors of Promenade Dental, your comfort is our priority.
             </p>
 
@@ -71,7 +71,7 @@ export default function FirstVisitFlow() {
                 style={{ transitionDelay: `${i * 0.1}s` }}
               >
                 {/* Large Editorial Number */}
-                <div className="flex-shrink-0 font-serif text-3xl lg:text-6xl leading-[0.8] text-white/40 transition-colors duration-500 ease-out group-hover:text-coral select-none">
+                <div className="flex-shrink-0 font-serif text-3xl lg:text-6xl leading-[0.8] text-white/40 transition-colors duration-500 ease-out group-hover:text-accent select-none">
                   {step.num}
                 </div>
 
@@ -80,7 +80,7 @@ export default function FirstVisitFlow() {
                   <h3 className="font-serif text-[24px] md:text-[28px] text-white leading-[1.2] mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-[14.5px] leading-[1.7] text-muted max-w-[46ch]">
+                  <p className="text-[14.5px] leading-[1.7] text-body max-w-[46ch]">
                     {step.desc}
                   </p>
                 </div>

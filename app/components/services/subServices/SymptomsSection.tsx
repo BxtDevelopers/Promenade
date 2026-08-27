@@ -31,13 +31,13 @@ export default function SymptomsSection({ data }: { data: SymptomsData }) {
               textIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
           >
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6 max-w-[18ch]">
               {data.heading}
             </h2>
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] max-w-[80%]">
               {data.body}
             </p>
           </div>
@@ -92,16 +92,16 @@ function SymptomCard({
           fill="none" 
           stroke="currentColor" 
           strokeWidth="2" 
-          className="text-coral"
+          className="text-accent"
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
         </svg>
       </div>
 
-      <h3 className="font-serif font-normal text-[19px] md:text-[21px] text-coral leading-snug mb-2 md:mb-3">
+      <h3 className="font-serif font-normal text-[19px] md:text-[21px] text-accent leading-snug mb-2 md:mb-3">
         {symptom.title}
       </h3>
-      <p className="text-ink group-hover:text-muted font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
+      <p className="text-ink group-hover:text-body font-sans font-light text-[14px] md:text-[14.5px] leading-[1.65]">
         {symptom.body}
       </p>
     </div>

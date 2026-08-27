@@ -89,9 +89,9 @@ export default function ServicesGrid() {
             className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-white text-[clamp(30px,4vw,52px)]"
           >
             Care for{' '}
-            <em className="italic text-coral">every need</em>.
+            <em className="italic text-accent">every need</em>.
           </h2>
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             Services
           </span>
         </div>
@@ -119,17 +119,17 @@ export default function ServicesGrid() {
                 {s.iconPath}
               </svg>
 
-              <span className="font-serif text-[13px] tracking-[0.1em] text-muted-2">
+              <span className="font-serif text-[13px] tracking-[0.1em] text-body-2">
                 {s.num}
               </span>
               <h3 className="font-serif font-normal text-white mt-[5px] mb-3 text-[clamp(20px,2.2vw,26px)]">
                 {s.title}
               </h3>
-              <p className="text-[14.5px] font-light leading-[1.65] text-muted">
+              <p className="text-[14.5px] font-light leading-[1.65] text-body">
                 {s.desc}
               </p>
               <span
-                className="inline-flex items-center gap-2 mt-[18px] text-[13px] tracking-[0.04em] text-coral"
+                className="inline-flex items-center gap-2 mt-[18px] text-[13px] tracking-[0.04em] text-accent"
               >
                 Explore →
               </span>
@@ -142,7 +142,7 @@ export default function ServicesGrid() {
           href={`/services`}
           className="inline-flex items-center gap-[10px] mt-[34px] no-underline text-[13px] tracking-[0.08em] uppercase font-medium text-white transition-[gap] duration-300 hover:gap-[18px] border-b border-coral pb-[6px]"
         >
-          See all services <span className="text-coral">→</span>
+          See all services <span className="text-accent">→</span>
         </Link>
       </div>
     </section>

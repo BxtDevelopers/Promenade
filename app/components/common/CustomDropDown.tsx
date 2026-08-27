@@ -63,7 +63,7 @@ function CustomReasonDropdown() {
         >
           <span
             className={
-              selected ? 'text-white' : 'text-muted-2'
+              selected ? 'text-white' : 'text-body-2'
             }
           >
             {selected || 'Select an option'}

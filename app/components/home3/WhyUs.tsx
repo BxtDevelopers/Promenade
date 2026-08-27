@@ -26,14 +26,14 @@ export default function WhyUs() {
 
         {/* Section head */}
         <div className="rv mb-[46px]">
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             Why patients choose us
           </span>
           <h2
             className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]"
           >
             Care that feels{' '}
-            <em className="italic text-coral">different</em> — on purpose.
+            <em className="italic text-accent">different</em> — on purpose.
           </h2>
         </div>
 
@@ -49,12 +49,12 @@ export default function WhyUs() {
               <span
                 className="inline-flex w-[30px] h-[30px] rounded-full items-center justify-center mb-[18px] border border-[rgba(232,154,114,0.5)]"
               >
-                <Check className="w-4 h-4 text-coral" />
+                <Check className="w-4 h-4 text-accent" />
               </span>
               <b className="block font-serif font-normal text-[19px] leading-[1.15] mb-[10px] text-ink">
                 {r.title}
               </b>
-              <p className="text-[14.5px] font-light leading-[1.65] text-muted">
+              <p className="text-[14.5px] font-light leading-[1.65] text-body">
                 {r.desc}
               </p>
             </div>

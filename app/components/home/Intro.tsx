@@ -39,7 +39,7 @@
 // //           ].join(' ')}
 // //         >
 // //           Care that feels less like a clinic, and more like being{' '}
-// //           <em className="not-italic text-coral">looked after</em>.
+// //           <em className="not-italic text-accent">looked after</em>.
 // //         </p>
 
 // //         {/* 2-col meta grid — stacked on mobile, 2-col on md+ */}
@@ -75,7 +75,7 @@
 // //       <h4 className="font-serif font-normal text-[19px] mb-[10px] text-ink">
 // //         {item.title}
 // //       </h4>
-// //       <p className="text-muted text-[15px] font-light leading-[1.7]">{item.body}</p>
+// //       <p className="text-body text-[15px] font-light leading-[1.7]">{item.body}</p>
 // //     </div>
 // //   );
 // // }
@@ -129,7 +129,7 @@
 //                 'px-5 py-4',
 //               ].join(' ')}
 //             >
-//               <p className="text-coral text-[11px] tracking-wide3 uppercase font-medium mb-1">
+//               <p className="text-accent text-[11px] tracking-wide3 uppercase font-medium mb-1">
 //                 One dentist. Always.
 //               </p>
 //               <p className="text-ink text-[13px] font-light leading-snug max-w-[22ch]">
@@ -144,7 +144,7 @@
 //             className="order-2 lg:order-2"
 //           >
 //             {/* Eyebrow */}
-//             <p className="text-coral text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-4">
+//             <p className="text-accent text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-4">
 //               Our Approach
 //             </p>
 
@@ -154,7 +154,7 @@
 //               lg:text-[clamp(40px,4.6vw,80px)]  leading-[1.05] tracking-[-0.02em] text-ink"
 //             >
 //               Dental care built around{' '}
-//               <em className="not-italic text-coral">one dentist,</em>
+//               <em className="not-italic text-accent">one dentist,</em>
 //               <br />
 //               one patient, one smile
 //               <br />
@@ -163,7 +163,7 @@
 
 //             {/* Body copy — three paragraphs from the brief */}
 //             <div className="mt-6 md:mt-7 space-y-4">
-//               <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+//               <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
 //                 At Promenade Dental, dentistry begins with understanding the
 //                 person behind the smile. Some patients visit us for routine exams
 //                 and cleanings. Others come in because of tooth pain, a broken
@@ -171,13 +171,13 @@
 //                 are simply looking for a dentist in Chandler who can care for the
 //                 whole family with patience and consistency.
 //               </p>
-//               <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+//               <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
 //                 Dr. Shriya takes time to examine your teeth, gums, bite, smile,
 //                 and dental history before recommending care — identifying what is
 //                 urgent, what can be prevented, what can be improved, and what
 //                 needs long-term planning.
 //               </p>
-//               <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+//               <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
 //                 Our goal is simple: help you keep your natural teeth healthy,
 //                 restore what has been damaged, improve the appearance of your
 //                 smile when desired, and make every visit feel clear, comfortable,
@@ -205,7 +205,7 @@
 //                   height="14"
 //                   viewBox="0 0 14 14"
 //                   fill="none"
-//                   className="text-coral"
+//                   className="text-accent"
 //                   aria-hidden="true"
 //                 >
 //                   <path
@@ -258,7 +258,7 @@ export default function ServiceIntro() {
   >
     <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
       Same trusted location.<br />
-      <em className="not-italic text-coral">A more personal <br className='hidden md:block'/> approach to dentistry.</em>
+      <em className="not-italic text-accent">A more personal <br className='hidden md:block'/> approach to dentistry.</em>
     </h2>
   </div>
 </div>

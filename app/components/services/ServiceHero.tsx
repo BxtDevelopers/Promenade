@@ -125,7 +125,7 @@ export default function ServiceHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
+          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-accent"
         >
           Promenade Dental Services in Chandler, AZ
         </motion.div>
@@ -143,7 +143,7 @@ export default function ServiceHero() {
                 {line.text ? (
                   line.text
                 ) : (
-                  <em className="not-italic font-normal text-coral">{line.italic}</em>
+                  <em className="not-italic font-normal text-accent">{line.italic}</em>
                 )}
               </motion.span>
             </span>
@@ -236,8 +236,10 @@ function HeroButton() {
       className={[
         'inline-flex items-center gap-3 border-ink font-sans font-semibold text-[13px] md:text-[14px] tracking-wide2 uppercase',
         'px-[26px] md:px-[30px] py-[15px] md:py-[17px] rounded-full cursor-pointer whitespace-nowrap transition-all duration-300',
-        'shadow-btn text-bg',
-        hov ? 'bg-ink -translate-y-0.5' : 'bg-coral',
+        'shadow-btn',
+        // Navy on coral, not white: white on #E89A72 is 2.26:1 and fails AA.
+        // On hover the fill becomes ink, so the label flips to white there.
+        hov ? 'bg-ink text-bg -translate-y-0.5' : 'bg-coral text-ink',
       ].join(' ')}
     >
       Book an Appointment →

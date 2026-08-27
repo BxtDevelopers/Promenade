@@ -13,7 +13,7 @@ const eduList = (items: string[], noOfCols: 1 | 2) => (
     {items.map((item, i) => (
       <li
         key={i}
-        className="relative py-[5px] pl-[20px] text-[14px] font-light leading-[1.5] text-muted before:absolute before:left-0 before:top-[12px] before:h-[6px] before:w-[6px] before:rounded-full before:bg-coral before:opacity-70"
+        className="relative py-[5px] pl-[20px] text-[14px] font-light leading-[1.5] text-body before:absolute before:left-0 before:top-[12px] before:h-[6px] before:w-[6px] before:rounded-full before:bg-coral before:opacity-70"
       >
         {item}
       </li>
@@ -22,7 +22,7 @@ const eduList = (items: string[], noOfCols: 1 | 2) => (
 )
 
 const LABEL =
-  'mb-1.5 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-coral'
+  'mb-1.5 font-serif text-[13px] font-medium uppercase tracking-[0.08em] text-accent'
 
 /**
  * Credentials sit behind a native <details>. Seventeen bullets across the two
@@ -39,7 +39,7 @@ function Credentials({
 }) {
   return (
     <details className="group mt-6 border-t border-line pt-4">
-      <summary className="flex cursor-pointer list-none items-center gap-2 text-[12px] font-medium uppercase tracking-[0.14em] text-coral transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
+      <summary className="flex cursor-pointer list-none items-center gap-2 text-[12px] font-medium uppercase tracking-[0.14em] text-accent transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
         {summary}
         <span
           aria-hidden="true"
@@ -62,12 +62,12 @@ export default function MeetDoctors() {
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-[30px]">
             <div>
-              <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+              <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
                 Meet the Doctors
               </span>
               <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
                 The same trusted practice,{' '}
-                <em className="italic font-normal text-coral">in caring new hands</em>.
+                <em className="italic font-normal text-accent">in caring new hands</em>.
               </h2>
             </div>
           </div>
@@ -88,12 +88,12 @@ export default function MeetDoctors() {
           </div>
 
           <div>
-            <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
+            <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-accent">
               Dentist &amp; Owner
             </div>
 
             <h3 className="mt-4 font-serif text-[clamp(30px,3.2vw,44px)] font-light leading-[0.98] tracking-[-0.02em] text-white">
-              Shriya <span className="italic text-coral">Sarin</span>, DMD
+              Shriya <span className="italic text-accent">Sarin</span>, DMD
             </h3>
 
             {/* The standalone credential line was dropped — it repeated the
@@ -102,7 +102,7 @@ export default function MeetDoctors() {
 
             {/* Full width. This previously ran in a 295px column — roughly 40
                 characters a line, well under a comfortable measure. */}
-            <p className="max-w-[68ch] text-[15px] font-light leading-[1.65] text-muted">
+            <p className="max-w-[68ch] text-[15px] font-light leading-[1.65] text-body">
               Dr. Shriya Sarin is passionate about helping patients achieve better oral
               health, improved sleep, and a higher quality of life. In addition to
               providing comprehensive dental care, she has advanced training in Dental
@@ -116,7 +116,7 @@ export default function MeetDoctors() {
                 relevant one on the site. */}
             <Link
               href="/dr-shriya-sarin"
-              className="mt-6 inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.14em] text-coral transition-colors hover:text-white"
+              className="mt-6 inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.14em] text-accent transition-colors hover:text-white"
             >
               Full profile &amp; credentials
               <span aria-hidden="true">&rarr;</span>
@@ -156,17 +156,17 @@ export default function MeetDoctors() {
         {/* Dr. James M. Wei */}
         <Reveal className="mt-[clamp(40px,5vw,72px)] grid grid-cols-1 items-center gap-[clamp(36px,5vw,80px)] lg:grid-cols-[1.18fr_0.82fr]">
           <div className="order-2 lg:order-1">
-            <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-coral">
+            <div className="text-[12px] font-medium uppercase tracking-[0.16em] text-accent">
               Family &amp; Cosmetic Dentist &middot; Founder, since 2003
             </div>
 
             <h3 className="mt-4 font-serif text-[clamp(30px,3.2vw,44px)] font-light leading-[0.98] tracking-[-0.02em] text-white">
-              James M. <span className="italic text-coral">Wei</span>, DDS
+              James M. <span className="italic text-accent">Wei</span>, DDS
             </h3>
 
             <h4 className={`mt-5 ${LABEL}`}>Why Dentistry?</h4>
 
-            <p className="max-w-[68ch] text-[15px] font-light leading-[1.65] text-muted">
+            <p className="max-w-[68ch] text-[15px] font-light leading-[1.65] text-body">
               Dr. Wei brings an artist&apos;s eye to dentistry. He studied both Biology
               (with honors) and Design at UCLA before earning his D.D.S. degree from the
               UCLA School of Dentistry in 2000. Since moving to Chandler, he has built a

@@ -15,7 +15,7 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
       ].join(' ')}
     >
-      <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+      <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
         Located in Fulton Ranch, Serving Chandler AZ
       </span>
 
@@ -25,18 +25,18 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
         <div>
           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[14ch]">
             Caring for patients across{' '}
-            <em className="not-italic text-coral">Chandler.</em>
+            <em className="not-italic text-accent">Chandler.</em>
           </h2>
 
           <div className="mt-8 space-y-5 max-w-[65ch]">
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.85]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.85]">
               Promenade Dental is located in the Fulton Ranch area of
               Chandler, making our office convenient for patients in
               Chandler 85248, Ocotillo, Sun Lakes, and nearby South
               Chandler neighborhoods.
             </p>
 
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.85]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.85]">
               Whether you're searching for a dentist near Fulton Ranch,
               a family dentist near Ocotillo, a cosmetic dentist in
               Chandler, or an emergency dentist near Chandler 85248,
@@ -55,7 +55,7 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
             ].map((area) => (
               <span
                 key={area}
-                className="px-4 py-2 rounded-full border border-line bg-white/[0.02] text-muted text-[13px]"
+                className="px-4 py-2 rounded-full border border-line bg-white/[0.02] text-body text-[13px]"
               >
                 {area}
               </span>
@@ -71,11 +71,11 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
 
           <div className="space-y-6">
             <div>
-              <p className="text-coral text-[12px] uppercase tracking-[0.15em] mb-2">
+              <p className="text-accent text-[12px] uppercase tracking-[0.15em] mb-2">
                 Address
               </p>
 
-              <p className="text-muted leading-[1.8]">
+              <p className="text-body leading-[1.8]">
                 4905 S. Alma School Rd, Suite 1
                 <br />
                 Chandler, AZ 85248
@@ -85,13 +85,13 @@ return ( <section className="py-section"> <div className="px-site max-w-[90%] mx
             <div className="h-px bg-line" />
 
             <div>
-              <p className="text-coral text-[12px] uppercase tracking-[0.15em] mb-2">
+              <p className="text-accent text-[12px] uppercase tracking-[0.15em] mb-2">
                 Phone
               </p>
 
               <a
                 href="tel:+14808028188"
-                className="text-ink hover:text-coral transition-colors"
+                className="text-ink hover:text-accent transition-colors"
               >
                 (480) 802-8188
               </a>

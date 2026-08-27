@@ -30,9 +30,14 @@ export default function ServiceIntro() {
           >
             {/* Main image */}
             <div className="absolute inset-0 rounded-arch-sm overflow-hidden">
+              {/* Lazy so React does not hoist a high-priority
+                  <link rel="preload"> for it — this sits below the hero and was
+                  pulling 158KB ahead of the page's own LCP image. */}
               <img
                 src="/assets/pd-office.jpeg"
                 alt="Dr. Shriya Sarin examining a patient at Promenade Dental, Chandler AZ"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -62,7 +67,7 @@ export default function ServiceIntro() {
             className="order-2 lg:order-2"
           >
             {/* Eyebrow */}
-            <p className="text-coral text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-4">
+            <p className="text-accent text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-4">
               Our Approach to Care
             </p>
 
@@ -73,26 +78,26 @@ export default function ServiceIntro() {
             leading-[1.05] tracking-[-0.02em] text-white"
             >
             Dental treatment starts with the{' '}
-            <em className="not-italic text-coral">right diagnosis.</em>
+            <em className="not-italic text-accent">right diagnosis.</em>
             </h2>
 
             {/* Body copy — three paragraphs from the brief */}
                 <div className="mt-6 md:mt-7 space-y-4">
-                <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+                <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
                     A dental service is not just a procedure. It is a response to a
                     specific condition, goal, symptom, or risk. Understanding the cause
                     of a problem is often just as important as choosing the treatment
                     itself.
                 </p>
 
-                <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+                <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
                     A toothache may come from decay, infection, gum inflammation, a
                     cracked tooth, or bite pressure. A cosmetic concern may involve tooth
                     color, shape, spacing, wear, or alignment. A missing tooth can affect
                     chewing, surrounding teeth, jaw balance, and smile confidence.
                 </p>
 
-                <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+                <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
                     That is why Dr. Shriya evaluates your teeth, gums, bite, smile,
                     medical history, and treatment goals before recommending the next
                     step. This helps patients understand whether their care is
@@ -100,7 +105,7 @@ export default function ServiceIntro() {
                     long-term plan.
                 </p>
 
-                <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75]">
+                <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75]">
                     Our goal is to provide treatment that is clear, comfortable, and
                     connected to your overall oral health — helping you make confident
                     decisions about your smile.

@@ -105,16 +105,16 @@ export default function Gallery() {
     <section className="py-[clamp(74px,8vw,120px)] bg-white" id="gallery">
       {/* Header */}
       <div className="text-center px-[clamp(22px,4vw,60px)]">
-        <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+        <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
         Explore Our Office
         </span>
 
         <h2 className="font-serif font-light leading-[1.04] mt-4 text-ink max-w-[24ch] mx-auto text-[clamp(30px,4.6vw,58px)]">
         A Dental Office Designed Around
-        <em className="italic text-coral"> Comfort, Technology & Care</em>
+        <em className="italic text-accent"> Comfort, Technology & Care</em>
         </h2>
 
-        <p className="text-[15px] font-light leading-[1.65] text-muted mt-[18px] max-w-[80ch] mx-auto">
+        <p className="text-[15px] font-light leading-[1.65] text-body mt-[18px] max-w-[80ch] mx-auto">
         Take a look inside Promenade Dental in Chandler, AZ. From our welcoming reception area to our modern treatment rooms, every space is designed to help patients feel comfortable, informed, and confident in their dental care.
         </p>
       </div>
@@ -140,7 +140,7 @@ export default function Gallery() {
 
           {/* Caption, bottom-left */}
           <div className="absolute left-[22px] bottom-[22px] sm:left-[30px] sm:bottom-[26px]">
-            <span className="text-[11px] tracking-[0.28em] uppercase font-medium text-coral">
+            <span className="text-[11px] tracking-[0.28em] uppercase font-medium text-accent">
             Office Tour
             </span>
 
@@ -154,7 +154,7 @@ export default function Gallery() {
             <button
               onClick={togglePlay}
               aria-label={playing ? 'Pause video' : 'Play video'}
-              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-cream transition-colors duration-300 hover:border-coral hover:text-coral lg:mt-auto lg:mb-6"
+              className="inline-flex items-center justify-center w-[42px] h-[42px] rounded-full border border-[rgba(244,236,221,0.3)] text-cream transition-colors duration-300 hover:border-coral hover:text-accent lg:mt-auto lg:mb-6"
               style={{ background: 'rgba(11,28,44,0.55)', backdropFilter: 'blur(6px)' }}
             >
               {playing ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 translate-x-[1px]" />}
@@ -183,10 +183,19 @@ export default function Gallery() {
               className="group flex-none relative overflow-hidden rounded-[20px] border border-[rgba(11,28,44,0.08)] w-[min(260px,62vw)]"
               style={{ aspectRatio: '3 / 4' }}
             >
+              {/*
+                loading="lazy" is load-bearing, not a nicety. React hoists a
+                <link rel="preload" as="image"> into the head for every eager
+                <img> it renders on the server — all six of these, 868KB, at
+                high priority, ahead of the hero. They sit far below the fold
+                in a marquee. Marking them lazy suppresses the preload.
+              */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={img.src}
                 alt={img.title}
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
               />
               <div
@@ -196,7 +205,7 @@ export default function Gallery() {
                 }}
               />
               <figcaption className="absolute left-[16px] right-[16px] bottom-[14px]">
-                <span className="text-[10px] tracking-[0.24em] uppercase font-medium text-coral">
+                <span className="text-[10px] tracking-[0.24em] uppercase font-medium text-accent">
                   {img.tag}
                 </span>
                 <p className="font-serif font-light text-cream leading-[1.2] mt-[4px] text-[clamp(15px,1.6vw,18px)]">

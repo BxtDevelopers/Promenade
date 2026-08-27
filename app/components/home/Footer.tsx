@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </a>
 
-            <p className="text-muted max-w-[32ch] leading-relaxed text-[15px]">
+            <p className="text-body max-w-[32ch] leading-relaxed text-[15px]">
               Modern family dentistry designed around comfort,
               transparency, and long-term oral health for every stage
               of life.
@@ -32,14 +32,14 @@ export default function Footer() {
             <div className="flex items-center gap-4 mt-8">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-muted hover:text-coral hover:border-coral transition-all"
+                className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-body hover:text-accent hover:border-coral transition-all"
               >
                 <FaInstagram size={18} />
               </a>
 
               <a
                 href="#"
-                className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-muted hover:text-coral hover:border-coral transition-all"
+                className="w-10 h-10 rounded-full border border-line flex items-center justify-center text-body hover:text-accent hover:border-coral transition-all"
               >
                 <FaFacebook size={18} />
               </a>
@@ -52,29 +52,29 @@ export default function Footer() {
               Treatments
             </h3>
 
-            <ul className="space-y-3 text-muted">
+            <ul className="space-y-3 text-body">
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   General Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Cosmetic Dentistry
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Dental Implants
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Invisalign
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Emergency Care
                 </a>
               </li>
@@ -87,29 +87,29 @@ export default function Footer() {
               Company
             </h3>
 
-            <ul className="space-y-3 text-muted">
+            <ul className="space-y-3 text-body">
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Meet the Team
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   New Patients
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Insurance
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-coral transition-colors">
+                <a href="#" className="hover:text-accent transition-colors">
                   Contact
                 </a>
               </li>
@@ -122,11 +122,11 @@ export default function Footer() {
               Visit Us
             </h3>
 
-            <div className="space-y-5 text-muted text-[15px]">
+            <div className="space-y-5 text-body text-[15px]">
               <Link href='https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9' target='_blank' className="flex gap-3">
                 <MapPin
                   size={18}
-                  className="text-coral mt-1 shrink-0"
+                  className="text-accent mt-1 shrink-0"
                 />
                 <span className='hover:text-white'>
                   4905 S. Alma School Rd
@@ -140,7 +140,7 @@ export default function Footer() {
               <Link href='tel:+14808028188' target='_blank' className="flex gap-3">
                 <Phone
                   size={18}
-                  className="text-coral shrink-0"
+                  className="text-accent shrink-0"
                 />
                 <span className='hover:text-white'>(480) 802-8188</span>
               </Link>
@@ -148,7 +148,7 @@ export default function Footer() {
               <div className="flex gap-3">
                 <Clock3
                   size={18}
-                  className="text-coral mt-1 shrink-0"
+                  className="text-accent mt-1 shrink-0"
                 />
                 <span>
                   Mon–Fri: 8am–7pm
@@ -164,7 +164,7 @@ export default function Footer() {
         <div className="h-px bg-line my-10" />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-muted-2 text-[13px]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-body-2 text-[13px]">
           <p>
             © 2026 Promenade Dental. All rights reserved.
           </p>
@@ -172,21 +172,21 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <a
               href="/privacy-policy"
-              className="hover:text-coral transition-colors"
+              className="hover:text-accent transition-colors"
             >
               Privacy Policy
             </a>
 
             <a
               href="/terms-and-conditions"
-              className="hover:text-coral transition-colors"
+              className="hover:text-accent transition-colors"
             >
               Terms of Service
             </a>
 
             <a
               href="#"
-              className="hover:text-coral transition-colors"
+              className="hover:text-accent transition-colors"
             >
               Accessibility
             </a>

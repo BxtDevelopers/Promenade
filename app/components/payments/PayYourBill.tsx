@@ -17,11 +17,11 @@ export default function PayYourBill() {
           delay={0}
         >
           <div>
-            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
               Already have a balance?
             </div>
             <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-ivory">
-              Pay your bill <em className="font-normal italic text-coral">online</em>.
+              Pay your bill <em className="font-normal italic text-accent">online</em>.
             </h2>
             <p className="mt-3 max-w-[56ch] text-[15.5px] font-light leading-relaxed text-ivory">
               Settle an outstanding statement in a couple of minutes from your phone or
@@ -34,7 +34,7 @@ export default function PayYourBill() {
                   key={text}
                   className="relative pl-[26px] text-[14.5px] font-light leading-[1.55] text-ivory"
                 >
-                  <Icon className="absolute left-0 top-[5px] h-3.5 w-3.5 stroke-[2.4] text-coral" />
+                  <Icon className="absolute left-0 top-[5px] h-3.5 w-3.5 stroke-[2.4] text-accent" />
                   {text}
                 </li>
               ))}
@@ -43,10 +43,10 @@ export default function PayYourBill() {
 
           <div className="flex flex-col items-start gap-4 lg:items-center">
             <MakeAPaymentButton />
-            <p className="max-w-[36ch] text-[13px] font-light leading-[1.55] text-muted-2 lg:text-center">
+            <p className="max-w-[36ch] text-[13px] font-light leading-[1.55] text-body-2 lg:text-center">
               Opens our secure Vyne Trellis payment page in a new tab. Questions about a
               statement? Call{' '}
-              <a href="tel:+14808028188" className="text-coral no-underline">
+              <a href="tel:+14808028188" className="text-accent no-underline">
                 (480) 802-8188
               </a>
               .

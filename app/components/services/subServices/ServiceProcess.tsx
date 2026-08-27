@@ -29,7 +29,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
               headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
           >
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6 max-w-[18ch]">
@@ -43,7 +43,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             {data.cta && (
               <button
                 onClick={openBookingModal}
-                className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase transition-all duration-300 hover:text-white"
+                className="group inline-flex items-center gap-3 text-[14px] text-accent font-light tracking-[0.02em] uppercase transition-all duration-300 hover:text-white"
               >
                 <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-white/60 transition-colors">
                   {data.cta.label}
@@ -112,8 +112,8 @@ function ProcessStep({
             'w-[52px] h-[52px] rounded-full flex items-center justify-center font-serif text-[17px] transition-all duration-[600ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]',
             'border bg-bg-2',
             inView 
-              ? 'border-coral/50 text-coral shadow-[0_0_20px_rgba(232,154,114,0.15)]' 
-              : 'border-line text-muted-2',
+              ? 'border-coral/50 text-accent shadow-[0_0_20px_rgba(232,154,114,0.15)]' 
+              : 'border-line text-body-2',
             'group-hover:bg-coral/20 group-hover:border-coral group-hover:scale-110'
           ].join(' ')}
         >
@@ -134,10 +134,10 @@ function ProcessStep({
           'coral-underline'
         ].join(' ')}
       >
-        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white/90 mb-3 transition-colors group-hover:text-coral">
+        <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white/90 mb-3 transition-colors group-hover:text-accent">
           {step.title}
         </h3>
-        <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">
+        <p className="text-body text-[14.5px] md:text-[15px] font-light leading-[1.7]">
           {step.body}
         </p>
       </div>

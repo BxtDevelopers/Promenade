@@ -18,8 +18,8 @@ export default function OffersTerms() {
         <Reveal delay={0}>
           <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-[30px] md:p-[38px]">
             <div className="flex items-center gap-2.5">
-              <Info className="h-4 w-4 text-coral" strokeWidth={2.2} />
-              <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+              <Info className="h-4 w-4 text-accent" strokeWidth={2.2} />
+              <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
                 Good to know
               </span>
             </div>

@@ -46,16 +46,16 @@ export default function PracticeGallery() {
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral">
+          <span className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-accent">
             Inside Promenade
           </span>
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] mt-4 mb-4 text-ink">
             A space designed to put you{' '}
-            <em className="not-italic text-coral">at ease</em>.
+            <em className="not-italic text-accent">at ease</em>.
           </h2>
           {/* Hint changes based on device capability */}
-          <p className="text-muted font-light text-[15px] md:text-[16px]">
+          <p className="text-body font-light text-[15px] md:text-[16px]">
             Explore our thoughtfully designed practice, created for comfort, care, and peace of mind.
           </p>
         </div>

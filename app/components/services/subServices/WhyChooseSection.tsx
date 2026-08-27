@@ -41,13 +41,13 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {data.eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-white mb-6">
             {data.heading}
           </h2>
-          <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-2xl mx-auto">
+          <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] max-w-2xl mx-auto">
             {data.description}
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function WhyChooseSection({ data }: { data: WhyChooseData }) {
             href="tel:+14808028188"
             className={[
               'w-full sm:w-auto inline-flex items-center justify-center gap-2',
-              'rounded-xl border border-coral/90 bg-white text-coral font-medium text-base sm:text-[15px]',
+              'rounded-xl border border-coral/90 bg-white text-accent font-medium text-base sm:text-[15px]',
               'px-8 py-3.5',
               'transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white/90 hover:border-coral/40 active:translate-y-0',
             ].join(' ')}
@@ -171,10 +171,10 @@ function TrustCard({ item }: { item: BenefitItem }) {
       </svg>
 
       <div className="flex-1">
-        <h3 className="font-serif font-normal text-[22px] lg:text-[24px] mb-3 text-white group-hover:text-coral transition-colors ">
+        <h3 className="font-serif font-normal text-[22px] lg:text-[24px] mb-3 text-white group-hover:text-accent transition-colors ">
           {item.title}
         </h3>
-        <p className="text-muted text-[15px] font-light leading-[1.7]">
+        <p className="text-body text-[15px] font-light leading-[1.7]">
           {item.body}
         </p>
       </div>

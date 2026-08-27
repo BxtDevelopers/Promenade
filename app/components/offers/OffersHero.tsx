@@ -14,7 +14,7 @@ export default function OffersHero() {
         }}
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
-        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral" delay={0}>
+        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent" delay={0}>
           Offers &amp; Specials
         </Reveal>
 
@@ -22,7 +22,7 @@ export default function OffersHero() {
           <h1 className="mt-[18px] font-serif text-[clamp(40px,6.6vw,82px)] font-light leading-[1.2] text-ink">
             Great dentistry,
             <br />
-            <em className="font-normal italic text-coral">made more affordable.</em>
+            <em className="font-normal italic text-accent">made more affordable.</em>
           </h1>
         </Reveal>
 

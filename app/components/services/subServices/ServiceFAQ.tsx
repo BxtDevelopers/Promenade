@@ -32,7 +32,7 @@
 //             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
 //           ].join(' ')}
 //         >
-//           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+//           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
 //             {data.eyebrow}
 //           </span>
 //           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ink">
@@ -52,7 +52,7 @@
 //                   className="w-full flex items-center justify-between gap-6 py-6 md:py-8 text-left cursor-pointer"
 //                   aria-expanded={isOpen}
 //                 >
-//                   <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-coral transition-colors duration-300">
+//                   <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-accent transition-colors duration-300">
 //                     {item.q}
 //                   </span>
 //                   <span
@@ -67,7 +67,7 @@
 //                       <path 
 //                         d="M6 1v10M1 6h10" 
 //                         stroke="currentColor" 
-//                         className="text-coral" 
+//                         className="text-accent" 
 //                         strokeWidth="1.4" 
 //                         strokeLinecap="round" 
 //                       />
@@ -84,7 +84,7 @@
 //                   style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
 //                 >
 //                   <div className="overflow-hidden">
-//                     <p className="text-muted text-[15px] font-light leading-[1.7] pb-6 md:pb-8 max-w-[60ch]">
+//                     <p className="text-body text-[15px] font-light leading-[1.7] pb-6 md:pb-8 max-w-[60ch]">
 //                       {item.a}
 //                     </p>
 //                   </div>
@@ -141,7 +141,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
               className="w-full flex items-center justify-between gap-6 py-6 md:py-8 text-left cursor-pointer"
               aria-expanded={isOpen}
             >
-              <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-coral transition-colors duration-300 pr-4">
+              <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover/faq:text-accent transition-colors duration-300 pr-4">
                 {item.q}
               </span>
               <span
@@ -156,7 +156,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
                   <path
                     d="M6 1v10M1 6h10"
                     stroke="currentColor"
-                    className="text-coral"
+                    className="text-accent"
                     strokeWidth="1.4"
                     strokeLinecap="round"
                   />
@@ -170,7 +170,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
               style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
             >
               <div className="overflow-hidden">
-                <p className="text-muted text-[15px] font-light leading-[1.7] pb-6 md:pb-8 max-w-[50ch]">
+                <p className="text-body text-[15px] font-light leading-[1.7] pb-6 md:pb-8 max-w-[50ch]">
                   {item.a}
                 </p>
               </div>
@@ -194,7 +194,7 @@ export default function ServiceFAQSection({ data }: { data: FAQData }) {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             {data.eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.05] tracking-[-0.02em] text-ink">

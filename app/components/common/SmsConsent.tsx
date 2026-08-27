@@ -29,8 +29,8 @@ export default function SmsConsent({
   const textClass = tone === 'dark' ? 'text-white/70' : 'text-ink/70'
   const linkClass =
     tone === 'dark'
-      ? 'text-coral underline underline-offset-2 hover:text-white'
-      : 'text-coral underline underline-offset-2 hover:text-ink'
+      ? 'text-accent underline underline-offset-2 hover:text-white'
+      : 'text-accent underline underline-offset-2 hover:text-ink'
 
   return (
     <div className="flex items-start gap-3">

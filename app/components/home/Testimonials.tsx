@@ -46,7 +46,7 @@ export default function Testimonials() {
       `}</style> */}
 
       <div className="max-w-[1240px] mx-auto px-[clamp(22px,4vw,60px)]">
-        <span className="block mb-[50px] text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+        <span className="block mb-[50px] text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
           Straight from the chair
         </span>
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
           "
         >
           Patients don&apos;t usually rave about the dentist 
-          <em className="italic text-coral"> Ours do.</em>
+          <em className="italic text-accent"> Ours do.</em>
         </h2>
       </div>
 
@@ -148,7 +148,7 @@ function MarqueeRow({
                 block
                 mt-[14px]
                 not-italic
-                text-muted
+                text-body
                 text-[12px]
                 uppercase
               "

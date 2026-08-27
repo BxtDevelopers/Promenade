@@ -71,7 +71,7 @@ export default function PaymentsCta() {
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
-          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Ready when you are
           </span>
         </Reveal>
@@ -80,7 +80,7 @@ export default function PaymentsCta() {
           <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Get started today.
             <br />
-            <em className="italic font-normal text-coral">See your options.</em>
+            <em className="italic font-normal text-accent">See your options.</em>
           </h2>
         </Reveal>
 
@@ -99,7 +99,7 @@ export default function PaymentsCta() {
           </a>
         </Reveal>
 
-        <Reveal className="mx-auto mt-5 max-w-[89ch] text-[13.5px] font-light leading-[1.55] text-muted-2" delay={0.2}>
+        <Reveal className="mx-auto mt-5 max-w-[89ch] text-[13.5px] font-light leading-[1.55] text-body-2" delay={0.2}>
           *Financing is provided by third-party lenders &mdash; Cherry and CareCredit (a Synchrony
           product) &mdash; not by Promenade Dental. Approval, payment amounts, terms, interest
           rates, and any credit impact are determined by the provider and subject to their

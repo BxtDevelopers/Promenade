@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Reveal from '../common/Reveal'
 import SmsConsent from '../common/SmsConsent'
+import FormPurpose from '../common/FormPurpose'
 import { trackLead } from '@/app/lib/analytics'
 import { attributionLine } from '@/app/lib/attribution'
 
@@ -46,11 +47,11 @@ export default function ReferralsForm() {
     <section className="py-[clamp(60px,7vw,104px)]" id="refer">
       <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-center gap-[clamp(30px,4vw,60px)] px-site lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal delay={0}>
-          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Send a referral
           </div>
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,50px)] font-light leading-[1.05] tracking-[-0.02em] text-ink">
-            Introduce a friend in <em className="italic font-normal text-coral">under a minute</em>.
+            Introduce a friend in <em className="italic font-normal text-accent">under a minute</em>.
           </h2>
           <p className="mt-[18px] max-w-[54ch] text-[clamp(16px,1.4vw,19px)] font-light leading-[1.6] text-ink">
             Tell us who to expect and we&rsquo;ll reach out to get them booked. Your credit lands
@@ -110,6 +111,8 @@ export default function ReferralsForm() {
                 onChange={setSmsConsent}
                 tone="dark"
               />
+
+              <FormPurpose tone="dark" />
 
               <button
                 type="submit"
