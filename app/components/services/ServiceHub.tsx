@@ -229,12 +229,12 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
       {/* Coral dot */}
       <span className="w-[6px] h-[6px] rounded-full bg-coral/60 mb-5 group-hover:bg-coral transition-colors duration-300 shrink-0" />
 
-      <h4 className={[
+      <h3 className={[
         'font-serif font-normal text-[17px] lg:text-[18px] mb-3 leading-snug',
         isAlternate ? 'text-white' : 'text-ink'
       ].join(' ')}>
         {card.title}
-      </h4>
+      </h3>
 
       <p className={[
         'text-[13.5px] lg:text-[14px] font-light leading-[1.85] flex-1 mb-6',
@@ -245,7 +245,7 @@ function ServiceCard({ card, delay, isAlternate }: { card: ServiceCard; delay: n
 
       {/* Best for — pinned to bottom */}
       <div className={`mt-auto pt-4 border-t ${isAlternate ? 'border-white/10' : 'border-coral/50'}`}>
-        <span className="text-coral font-medium uppercase tracking-[0.14em] text-[9.5px] block mb-1">
+        <span className="text-accent font-medium uppercase tracking-[0.14em] text-[9.5px] block mb-1">
           Best for
         </span>
         <p className={[
@@ -286,11 +286,11 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
           >
             {/* Index + eyebrow row */}
             <div className="flex items-center gap-3 mb-5 text-2xl lg:text-4xl font-serif">
-              <span className={`font-serif tabular-nums text-coral`}>
+              <span className={`font-serif tabular-nums text-accent`}>
                 0{index + 1}
               </span>
               <span className={`w-5 h-px ${isAlternate ? 'bg-coral/50' : 'bg-coral/30'}`} />
-              <p className="text-coral tracking-eyebrow uppercase font-medium">
+              <p className="text-accent tracking-eyebrow uppercase font-medium">
                 {group.eyebrow}
               </p>
             </div>
@@ -302,7 +302,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
               {group.heading}
             </h2>
 
-            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[80%] ${isAlternate ? 'text-ink/80' : 'text-muted'}`}>
+            <p className={`text-body-lg font-light leading-[1.85] mt-5 max-w-[80%] ${isAlternate ? 'text-ink/80' : 'text-body'}`}>
               {group.body}
             </p>
 
@@ -317,7 +317,7 @@ function ServiceGroupSection({ group, index }: { group: ServiceGroup; index: num
                 ].join(' ')}
               >
                 {group.ctaLabel}
-                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" className="text-coral" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" className="text-accent" aria-hidden="true">
                   <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
@@ -352,7 +352,7 @@ function SectionHeader() {
         transition: 'opacity 0.8s ease, transform 0.8s cubic-bezier(0.16,0.84,0.34,1)',
       }}
     >
-      <p className="text-coral text-[11px] tracking-eyebrow uppercase font-medium mb-5">
+      <p className="text-accent text-[11px] tracking-eyebrow uppercase font-medium mb-5">
         Our Dental Services
       </p>
 
@@ -362,10 +362,10 @@ function SectionHeader() {
           style={{ fontSize: 'clamp(36px, 4.8vw, 72px)' }}
         >
           Complete care, under{' '}
-          <em className="not-italic text-coral">one roof.</em>
+          <em className="not-italic text-accent">one roof.</em>
         </h2>
 
-        <p className="text-muted text-[15px] font-light leading-[1.8] max-w-[42ch] lg:text-right lg:pb-1.5">
+        <p className="text-body text-[15px] font-light leading-[1.8] max-w-[42ch] lg:text-right lg:pb-1.5">
           From routine cleanings to full smile makeovers — every service at
           Promenade Dental is provided by Dr. Shriya in one calm, consistent
           environment.

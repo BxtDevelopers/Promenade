@@ -79,16 +79,18 @@ function DetailCard({
           d={item.icon}
           fill="none"
           stroke="currentColor"
-          className="text-coral"
+          className="text-accent"
           strokeWidth="1.6"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
       </svg>
 
-      <h3 className="font-serif font-normal text-[19px] text-ink mb-2">
+      {/* h2, not h3: these cards are the first headings after the hero h1,
+          with no intervening section heading, so h3 was a skipped level. */}
+      <h2 className="font-serif font-normal text-[19px] text-ink mb-2">
         {item.label}
-      </h3>
+      </h2>
       {Array.isArray(item.value) ? (
         <dl className="text-ivory/75 text-[14.5px] font-light leading-[1.65]">
           {item.value.map(([day, hours]) => (
@@ -108,8 +110,21 @@ function DetailCard({
 
   if (!item.href) return Inner;
 
+  // The card's only content is the reveal wrapper, which starts at opacity 0.
+  // Crawlers reading visible text found nothing and reported the link as having
+  // no text, so the accessible name is stated on the anchor itself.
   return (
-    <a href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="block h-full">
+    <a
+      href={item.href}
+      target={item.href.startsWith('http') ? '_blank' : undefined}
+      rel="noreferrer"
+      aria-label={
+        Array.isArray(item.value)
+          ? item.label
+          : `${item.label}: ${item.value}`
+      }
+      className="block h-full"
+    >
       {Inner}
     </a>
   );
