@@ -83,7 +83,7 @@
 //       >
 //         {/* Eyebrow */}
 //         <div
-//           className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral opacity-0"
+//           className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent opacity-0"
 //           style={{ animation: 'fade 1s ease 0.3s forwards' }}
 //         >
 //           Comprehensive Family Dentistry with Sleep Solutions
@@ -108,7 +108,7 @@
 //               style={{ transform: 'translateY(110%)', animation: 'lnrise 1.1s cubic-bezier(.16,.84,.34,1) 0.58s forwards' }}
 //             >
 //               in{' '}
-//               <em className="not-italic font-normal text-coral">Chandler, AZ.</em>
+//               <em className="not-italic font-normal text-accent">Chandler, AZ.</em>
 //             </span>
 //           </span>
 //         </h1>
@@ -126,7 +126,7 @@
 //                 background: 'rgba(244,236,221,0.04)',
 //               }}
 //             >
-//               <Check className='w-4 h-4 text-coral'/>
+//               <Check className='w-4 h-4 text-accent'/>
 //               {text}
 //             </span>
 //           ))}
@@ -163,6 +163,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { Check } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useBookingModal } from '../common/BookingModalProvider'
 
@@ -238,12 +239,24 @@ export default function Hero() {
       ref={heroRef}
       className="relative flex items-end overflow-hidden min-h-[90vh] lg:min-h-[86vh]"
     >
-      {/* Poster */}
-      <div
-        className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: 'url("/assets/hero-poster.webp")',
-        }}
+      {/*
+        Poster — this is the LCP element, so it is a real <Image priority>
+        rather than the CSS background-image it used to be. A background-image
+        is invisible to the preload scanner: the browser cannot even know the
+        URL until it has downloaded and parsed the stylesheet and laid the
+        element out, which put the site's largest paint at the back of the
+        queue. `priority` emits a <link rel="preload" fetchpriority="high"> in
+        the head instead, and routes the file through the image optimizer so
+        phones get a phone-sized AVIF rather than the full-width webp.
+      */}
+      <Image
+        src="/assets/hero-poster.webp"
+        alt=""
+        aria-hidden="true"
+        fill
+        priority
+        sizes="100vw"
+        className="absolute inset-0 object-cover object-center"
       />
 
       {/* Video */}
@@ -277,7 +290,7 @@ export default function Hero() {
         }}
       >
         <div
-          className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral opacity-0"
+          className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent opacity-0"
           style={{
             animation: 'fade 1s ease 0.3s forwards',
           }}
@@ -314,7 +327,7 @@ export default function Hero() {
               }}
             >
               in{' '}
-              <em className="not-italic font-normal text-coral">
+              <em className="not-italic font-normal text-accent">
                 Chandler, AZ.
               </em>
             </span>
@@ -340,7 +353,7 @@ export default function Hero() {
                   'rgba(244,236,221,0.04)',
               }}
             >
-              <Check className="w-4 h-4 text-coral" />
+              <Check className="w-4 h-4 text-accent" />
               {text}
             </span>
           ))}
@@ -385,7 +398,7 @@ export default function Hero() {
       {/* <button
         onClick={toggleVideo}
         aria-label={playing ? 'Pause background video' : 'Play background video'}
-        className="absolute z-[3] right-[18px] top-[18px] sm:right-[26px] sm:top-[26px] inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-[rgba(244,236,221,0.3)] text-ink transition-colors duration-300 hover:border-coral hover:text-coral"
+        className="absolute z-[3] right-[18px] top-[18px] sm:right-[26px] sm:top-[26px] inline-flex items-center justify-center w-[38px] h-[38px] rounded-full border border-[rgba(244,236,221,0.3)] text-ink transition-colors duration-300 hover:border-coral hover:text-accent"
         style={{ background: 'rgba(11,28,44,0.45)', backdropFilter: 'blur(6px)' }}
       >
         {playing ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 translate-x-[1px]" />}
