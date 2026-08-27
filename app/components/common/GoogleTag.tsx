@@ -66,6 +66,13 @@ export default function GoogleTag({ config }: { config: AnalyticsConfig }) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${primaryId}`}
       />
+      {/* The dataLayer/gtag bootstrap below looks redundant with
+          ConsentDefaults, which runs first in <head>. It is not safe to
+          delete: this script must still work if that one is ever moved, and
+          both use `dataLayer || []` so neither discards what the other queued.
+          Do not change either to a bare `= []` — that would drop the consent
+          defaults on the floor and the first page view would be recorded in an
+          undeclared consent state. */}
       <Script id="gtag-init" strategy="afterInteractive">
         {[
           'window.dataLayer = window.dataLayer || [];',
