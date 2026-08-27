@@ -35,8 +35,10 @@ import HomePage from '@/app/components/home3/HomePage'
 import { buildPageMetadata } from '@/app/lib/seo'
 
 export const metadata = buildPageMetadata({
-  title: 'Promenade Dental | Gentle Family & Cosmetic Dentistry in Chandler, AZ',
-  description: 'Gentle family and cosmetic dentistry in Fulton Ranch, Chandler AZ. See the same dentist every visit. Most PPO plans accepted, same-day emergencies, new patients welcome.',
+  // 57 chars. The previous title ran to 69, past the ~60 Google renders.
+  title: 'Promenade Dental | Family & Cosmetic Dentist, Chandler AZ',
+  // 155 chars, inside the 158 Google truncates at; was 169.
+  description: 'Gentle family and cosmetic dentistry in Fulton Ranch, Chandler AZ. See the same dentist every visit. Most PPO plans accepted, same-day emergencies welcome.',
   path: '/',
   keywords: [
     'dentist Chandler AZ',

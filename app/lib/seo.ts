@@ -260,6 +260,39 @@ export function buildOrganizationJsonLd(reviews?: GoogleReviewsData) {
         sameAs: [...siteConfig.sameAs],
         hasMap: siteConfig.mapUrl,
         medicalSpecialty: "Dentistry",
+        /*
+         * Makes the appointment request machine-readable.
+         *
+         * The practice has no real-time scheduler — requests arrive by email
+         * and are keyed into Dentrix by hand — so there is no booking widget to
+         * embed and this is not pretending otherwise. What it does is tell
+         * Google, Gemini and ChatGPT that a booking entry point exists and
+         * where it is, which is what they look for when deciding whether a
+         * business can be booked. The site audit found no booking path at all;
+         * this is the part of that gap fixable without a vendor.
+         *
+         * If the practice ever turns on Dentrix Online Booking or a third-party
+         * scheduler, point urlTemplate at it and embed the widget on
+         * /contact-us — and add the same URL as the Google Business Profile
+         * booking link, which is currently empty.
+         */
+        potentialAction: {
+          "@type": "ReserveAction",
+          name: "Request an appointment",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: absoluteUrl("/contact-us#contact"),
+            inLanguage: "en-US",
+            actionPlatform: [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform",
+            ],
+          },
+          result: {
+            "@type": "Reservation",
+            name: "Dental appointment request",
+          },
+        },
         founder: { "@id": `${siteConfig.url}/${DOCTORS.founder.id}` },
         employee: { "@id": `${siteConfig.url}/${DOCTORS.current.id}` },
         ...(hasRating
