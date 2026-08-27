@@ -240,12 +240,12 @@ export default function Hero() {
       className="relative flex items-end overflow-hidden min-h-[90vh] lg:min-h-[86vh]"
     >
       {/*
-        Poster — this is the LCP element, so it is a real <Image priority>
+        Poster — this is the LCP element, so it is a real <Image preload>
         rather than the CSS background-image it used to be. A background-image
         is invisible to the preload scanner: the browser cannot even know the
         URL until it has downloaded and parsed the stylesheet and laid the
         element out, which put the site's largest paint at the back of the
-        queue. `priority` emits a <link rel="preload" fetchpriority="high"> in
+        queue. `preload` emits a <link rel="preload" fetchpriority="high"> in
         the head instead, and routes the file through the image optimizer so
         phones get a phone-sized AVIF rather than the full-width webp.
       */}
@@ -254,7 +254,7 @@ export default function Hero() {
         alt=""
         aria-hidden="true"
         fill
-        priority
+        preload
         sizes="100vw"
         className="absolute inset-0 object-cover object-center"
       />

@@ -1,14 +1,10 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import Image from 'next/image'
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react'
 import Reveal from '../common/Reveal'
-
-const TEAM = [
-  { name: 'Stephanie Crow', role: 'Patient Coordinator' },
-  { name: 'Theresa Kelly', role: 'Dental Assistant' },
-  { name: 'Jolyn Uhrinyak', role: 'Dental Hygienist' },
-]
+import { TEAM, TEAM_PHOTO, TEAM_PHOTO_ALT } from '@/app/lib/data/teamData'
 
 export default function TeamSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -124,6 +120,35 @@ export default function TeamSection() {
             ))}
           </div>
         </div>
+
+        {/*
+          The team, in the room patients actually walk into. The roster above
+          is a text index and the video is one person; neither shows the group
+          a visitor will meet at the front desk.
+
+          Not `priority`: this sits well below the fold, and marking it eager
+          would make React hoist a high-priority <link rel="preload"> for it in
+          the head, ahead of the page's own LCP image. next/image is lazy by
+          default, which is what we want here.
+        */}
+        <Reveal className="mt-[clamp(34px,4vw,56px)]" delay={0.1}>
+          <figure className="m-0">
+            {/* Crop geometry is derived from the source file; the reasoning
+                is recorded alongside TEAM_PHOTO in lib/data/teamData.ts. */}
+            <div className="relative overflow-hidden rounded-[24px] border border-neutral-200 aspect-[4/5] sm:aspect-[4/3]">
+              <Image
+                src={TEAM_PHOTO}
+                alt={TEAM_PHOTO_ALT}
+                fill
+                sizes="(max-width: 1240px) 100vw, 1240px"
+                className="object-cover object-bottom"
+              />
+            </div>
+            <figcaption className="mt-[14px] text-[13px] font-light leading-[1.6] text-neutral-500">
+              The Promenade Dental team at our Fulton Ranch office.
+            </figcaption>
+          </figure>
+        </Reveal>
       </div>
     </section>
   )
