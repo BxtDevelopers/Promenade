@@ -20,6 +20,29 @@
   --color-muted-2:    #6F8294;
   --color-coral:      #E89A72;
   --color-coral-deep: #D98155;
+  /* ── Surface-aware text tokens ──────────────────────────────────────────
+     --color-coral and --color-muted above are the brand fills, and they are
+     tuned for the dark navy panels: on #0E2335 they measure 7.1:1 and 6.4:1.
+     On white they collapse to 2.3:1 and 2.5:1 and fail WCAG AA (1.4.3).
+
+     Text therefore uses --color-accent / --color-body rather than the fill
+     tokens. These default to the values that pass on white and are re-raised
+     to the brand values inside dark panels by the @layer base rules further
+     down, so `text-accent` is correct on either surface without the component
+     having to know which one it is on. Fills (bg-coral, border-coral) are
+     unchanged — the CTA colour is exactly as it was.
+
+     Contrast, measured:
+       accent  #BB531E  4.8:1 on white   |  #E89A72  7.1:1 on navy
+       body    #5D7589  4.8:1 on white   |  #94A6B6  6.4:1 on navy       */
+  --color-accent: #BB531E;
+  --color-body:   #5D7589;
+  /* The tertiary pair. --color-muted-2 was the odd one out: at 3.96:1 on white
+     and 4.04:1 on navy it failed AA on BOTH surfaces, so both sides move.
+       body-2       #637485  4.8:1 on white  |  #7D8F9F  4.8:1 on navy
+       accent-deep  #B55729  4.8:1 on white  |  #D98155  5.5:1 on navy       */
+  --color-body-2:      #637485;
+  --color-accent-deep: #B55729;
   --color-sand:       #EDE2CF;
 
   /* Fonts */
@@ -51,7 +74,42 @@
   }
 
   ::selection {
-    @apply bg-coral text-bg;
+    /* Navy, not white — white on coral is 2.26:1. */
+    @apply bg-coral text-ink;
+  }
+
+  /* Surface rules for --color-accent / --color-body (declared in @theme).
+
+     Each rule targets the element that *declares* its own background, so the
+     pairing works in both directions: a bg-white card nested in a dark section
+     flips back to the light values, and a bg-ink card on a light page flips to
+     the dark ones. Descendants inherit, since these are custom properties.
+
+     The arbitrary-value entries are the live dark surfaces that predate the
+     bg-ink / bg-bg-2 / bg-panel tokens — the navbar dropdown, the mobile bar,
+     and the team/doctor gradient panels. The other dark hexes in the tree all
+     live under components/Hero1, which nothing routes to. If you add a dark
+     section with a raw colour, add its class here or text on it will stay in
+     the light-surface values and go dark-on-dark. */
+  .bg-ink,
+  .bg-bg-2,
+  .bg-panel,
+  .bg-\[\#0B1C2C\],
+  .bg-\[\#173552\],
+  .bg-\[rgba\(11\,28\,44\,0\.97\)\],
+  .bg-\[linear-gradient\(160deg\,var\(--panel\)\,var\(--bg-2\)\)\] {
+    --color-accent:      #E89A72;
+    --color-body:        #94A6B6;
+    --color-body-2:      #7D8F9F;
+    --color-accent-deep: #D98155;
+  }
+
+  .bg-bg,
+  .bg-white {
+    --color-accent:      #BB531E;
+    --color-body:        #5D7589;
+    --color-body-2:      #637485;
+    --color-accent-deep: #B55729;
   }
 }
 
