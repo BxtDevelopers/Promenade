@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useScrollReveal } from '@/app/lib/useScrollReveal';
 import CustomReasonDropdown from '../common/CustomDropDown';
 import SmsConsent from '../common/SmsConsent';
+import FormPurpose from '../common/FormPurpose';
 import { trackLead } from '@/app/lib/analytics';
 import { attributionLine } from '@/app/lib/attribution';
 
@@ -64,16 +65,16 @@ export default function ContactForm() {
               leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
           >
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
               Contact Us 
             </span>
             <h2 className="font-serif font-light text-3xl
               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-white max-w-[16ch]">
               Tell us how we can{' '}
-              <em className="not-italic text-coral">help</em>.
+              <em className="not-italic text-accent">help</em>.
             </h2>
 
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] mt-6 max-w-[44ch]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] mt-6 max-w-[44ch]">
               Whether it&apos;s a question about treatment, insurance, or
               booking your first visit — fill out the form and our team will
               get back to you within one business day.
@@ -84,7 +85,7 @@ export default function ContactForm() {
                 <span className="w-2 h-2 rounded-full bg-coral mt-2 shrink-0" />
                 <p className="text-cream text-[14.5px] font-light leading-[1.7]">
                   Prefer to talk? Call{' '}
-                  <a href="tel:+14808028188" className="text-coral hover:underline">
+                  <a href="tel:+14808028188" className="text-accent hover:underline">
                     (480) 802-8188
                   </a>{' '}
                   during office hours.
@@ -114,7 +115,7 @@ export default function ContactForm() {
                 <h3 className="font-serif font-normal text-2xl text-white mb-3">
                   Message sent.
                 </h3>
-                <p className="text-muted text-lg font-light leading-[1.7] max-w-[36ch]">
+                <p className="text-body text-lg font-light leading-[1.7] max-w-[36ch]">
                   Thanks for reaching out — our team will get back to you.
                 </p>
               </div>
@@ -140,7 +141,7 @@ export default function ContactForm() {
                     rows={5}
                     required
                     placeholder="How can we help?"
-                    className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted focus:outline-none focus:border-coral transition-colors resize-none"
+                    className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-body focus:outline-none focus:border-coral transition-colors resize-none"
                   />
                 </div>
 
@@ -150,6 +151,8 @@ export default function ContactForm() {
                   onChange={setSmsConsent}
                   tone="dark"
                 />
+
+                <FormPurpose tone="dark" />
 
                 <button
                   type="submit"
@@ -191,7 +194,7 @@ function Field({
         name={name}
         placeholder={placeholder}
         required={required}
-        className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-muted focus:outline-none focus:border-coral transition-colors"
+        className="w-full bg-transparent border border-white/70 rounded-xl px-4 py-3 text-[14.5px] text-white font-light placeholder:text-body focus:outline-none focus:border-coral transition-colors"
       />
     </div>
   );
