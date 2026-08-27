@@ -14,6 +14,14 @@ const configuredUrl = PRODUCTION_URL;
 export const isPreviewDeployment =
   process.env.VERCEL_ENV !== undefined && process.env.VERCEL_ENV !== "production";
 
+/**
+ * The practice's Instagram profile. Exported because two places need it and
+ * they must not drift: `sameAs` below (which is what tells Google this profile
+ * and this business are the same entity) and the footer link (which is what
+ * lets a human or a crawler actually find it).
+ */
+export const INSTAGRAM_URL = "https://www.instagram.com/promenadedental_chandler/";
+
 export const siteConfig = {
   name: "Promenade Dental",
   url: configuredUrl.replace(/\/$/, ""),
@@ -66,6 +74,7 @@ export const siteConfig = {
     "https://www.practo.com/chandler-az/clinic/promenade-dental-pllc-chandler",
     "https://reviews.birdeye.com/promenade-dental-155335382580658",
     "https://business.chandlerchamber.com/list/member/promenade-dental-34600",
+    INSTAGRAM_URL,
   ],
 } as const;
 
