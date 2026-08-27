@@ -104,7 +104,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
+          className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-accent"
         >
           Promenade Dental · Fulton Ranch, Chandler AZ
         </motion.div>
@@ -126,7 +126,7 @@ export default function Hero() {
                 {line.text ? (
                   line.text
                 ) : (
-                  <em className="not-italic font-normal text-coral">{line.italic}</em>
+                  <em className="not-italic font-normal text-accent">{line.italic}</em>
                 )}
               </motion.span>
             </span>
@@ -138,7 +138,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9, duration: 1 }}
-          className="text-muted text-body-lg font-light leading-[1.7] mt-6 max-w-[52ch]"
+          className="text-body text-body-lg font-light leading-[1.7] mt-6 max-w-[52ch]"
         >
           Family, cosmetic, restorative, and emergency dentistry — all with the same dentist, every visit.
         </motion.p>
@@ -169,7 +169,7 @@ export default function Hero() {
             { icon: '★', text: '200+ Happy Patients' },
           ].map((item) => (
             <span key={item.text} className="flex items-center gap-2 text-[13px] text-ink/70 tracking-[0.02em]">
-              <span className="text-coral text-[11px]">{item.icon}</span>
+              <span className="text-accent text-[11px]">{item.icon}</span>
               {item.text}
             </span>
           ))}
@@ -257,10 +257,10 @@ function QuickAction({
           : 'bg-ink/[0.03] border-line hover:border-ink/30 hover:bg-ink/5 text-ink',
       ].join(' ')}
     >
-      <span className={primary ? 'text-bg' : 'text-coral'}>{icon}</span>
+      <span className={primary ? 'text-bg' : 'text-accent'}>{icon}</span>
       <span className="min-w-0">
         <span className="block text-[13.5px] font-medium tracking-[0.01em]">{label}</span>
-        <span className={`block text-[11.5px] mt-0.5 ${primary ? 'text-bg/70' : 'text-muted'}`}>{sub}</span>
+        <span className={`block text-[11.5px] mt-0.5 ${primary ? 'text-bg/70' : 'text-body'}`}>{sub}</span>
       </span>
       <ArrowRight size={20}/>
     </a>

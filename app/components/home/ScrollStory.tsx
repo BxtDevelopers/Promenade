@@ -144,7 +144,7 @@ export default function ScrollStory() {
             duration-500
             ${
               i === idx
-                ? 'text-coral'
+                ? 'text-accent'
                 : 'text-ink/45'
             }
           `}
@@ -196,10 +196,10 @@ export default function ScrollStory() {
                 }}
               >
                 
-                <span className="font-serif text-[20px] lg:text-[40px] text-coral tracking-[0.12em]">
+                <span className="font-serif text-[20px] lg:text-[40px] text-accent tracking-[0.12em]">
                   {s.n}
                 </span>
-                <p className="text-[11.5px] tracking-eyebrow uppercase font-medium text-coral mt-[34px]">
+                <p className="text-[11.5px] tracking-eyebrow uppercase font-medium text-accent mt-[34px]">
                   Dental Treatments We Provide
                 </p>
                 <h2 className="font-serif font-light text-4xl lg:text-7xl lg:leading-tight2 tracking-[-0.03em] my-[14px_0_20px] text-ink mt-[14px] mb-5 max-w-[80%] md:max-w-full">
@@ -211,9 +211,9 @@ export default function ScrollStory() {
                   {s.items.map((item, j) => (
                     <li
                       key={j}
-                      className="text-muted text-story-body font-light leading-[1.5] flex items-start gap-[10px]"
+                      className="text-body text-story-body font-light leading-[1.5] flex items-start gap-[10px]"
                     >
-                      <span className="text-coral mt-[2px] shrink-0">—</span>
+                      <span className="text-accent mt-[2px] shrink-0">—</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -233,7 +233,7 @@ export default function ScrollStory() {
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"
-                      className="text-coral transition-transform duration-[400ms] ease-out group-hover:translate-x-1"
+                      className="text-accent transition-transform duration-[400ms] ease-out group-hover:translate-x-1"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M2 7h10M8 3l4 4-4 4" />
                     </svg>

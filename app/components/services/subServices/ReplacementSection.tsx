@@ -53,7 +53,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
         >
           <div className="inline-flex items-center justify-center gap-3 mb-6">
             <span className="h-[1px] w-6 bg-coral block" aria-hidden="true" />
-            <span className="text-[12px] font-bold tracking-[0.2em] uppercase text-coral">
+            <span className="text-[12px] font-bold tracking-[0.2em] uppercase text-accent">
               {data.eyebrow}
             </span>
             <span className="h-[1px] w-6 bg-coral block" aria-hidden="true" />
@@ -63,7 +63,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
             {data.heading}
           </h2>
 
-          <p className="text-muted text-lg font-light leading-[1.75]">
+          <p className="text-body text-lg font-light leading-[1.75]">
             {data.body}
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
               <div className="relative z-10 flex flex-col h-full">
                 {/* Icon Circle */}
                 <div className="w-14 h-14 rounded-2xl bg-panel border border-white/10 flex items-center justify-center mb-6 group-hover:border-coral/50 group-hover:bg-coral/5 group-hover:scale-110 transition-all duration-500 shadow-inner">
-                  <svg className="w-6 h-6 text-coral/80 group-hover:text-coral transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <svg className="w-6 h-6 text-accent/80 group-hover:text-accent transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     {icons[index % icons.length]}
                   </svg>
                 </div>
@@ -96,7 +96,7 @@ export default function ReplacementSection({ data }: { data: ReplacementGridData
                   {card.title}
                 </h3>
                 
-                <p className="text-muted text-[15px] font-light leading-[1.7] flex-grow">
+                <p className="text-body text-[15px] font-light leading-[1.7] flex-grow">
                   {card.body}
                 </p>
               </div>

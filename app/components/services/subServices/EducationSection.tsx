@@ -32,7 +32,7 @@ export default function EducationSection({
         
         {/* Left Column: Content */}
         <div className="flex flex-col mx-auto lg:mx-0 order-2 lg:order-1">
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-5">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-5">
             {data.eyebrow}
           </span>
           
@@ -40,7 +40,7 @@ export default function EducationSection({
             {data.heading}
           </h2>
           
-          <p className="text-muted text-lg font-light leading-[1.7] mb-8">
+          <p className="text-body text-lg font-light leading-[1.7] mb-8">
             {data.body}
           </p>
 

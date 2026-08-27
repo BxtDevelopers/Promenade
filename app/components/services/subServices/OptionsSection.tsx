@@ -37,13 +37,13 @@ export default function WhiteningOptionsSection({ data }: { data: WhiteningOptio
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {data.eyebrow}
           </span>
           <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ink mb-6">
             {data.heading}
           </h2>
-          <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] max-w-3xl mx-auto">
+          <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] max-w-3xl mx-auto">
             {data.intro}
           </p>
         </div>
@@ -105,13 +105,13 @@ function TreatmentCard({
       </h3>
       
       {/* Body Text */}
-      <p className="text-muted text-[14.5px] font-light leading-[1.7] flex-1 mb-8">
+      <p className="text-body text-[14.5px] font-light leading-[1.7] flex-1 mb-8">
         {card.body}
       </p>
 
       {/* Best For Meta Section */}
       <div className="pt-6 border-t border-line/60 mb-6">
-        <span className="text-coral font-medium uppercase tracking-[0.14em] text-[10px] block mb-2">
+        <span className="text-accent font-medium uppercase tracking-[0.14em] text-[10px] block mb-2">
           Best for
         </span>
         <p className="text-cream/90 text-[13px] font-light leading-[1.6]">
@@ -124,7 +124,7 @@ function TreatmentCard({
         href={card.ctaHref}
         className={[
           'inline-flex items-center gap-2 mt-auto text-[13.5px] font-medium tracking-[0.02em] transition-colors duration-300',
-          card.highlight ? 'text-coral' : 'text-ink group-hover:text-coral'
+          card.highlight ? 'text-accent' : 'text-ink group-hover:text-accent'
         ].join(' ')}
       >
         <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-coral transition-colors">

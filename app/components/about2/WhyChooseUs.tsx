@@ -14,7 +14,7 @@ const cards = [
     body: (
       <>
         If something we placed doesn&apos;t hold up under normal use, we&apos;ll make it right.{' '}
-        <Link href="/warranty" className="text-coral no-underline">
+        <Link href="/warranty" className="text-accent no-underline">
           See our warranty 
         </Link>
       </>
@@ -37,11 +37,11 @@ export default function WhyChooseUs() {
     <section className="py-section">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Why patients choose us
           </span>
           <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ink">
-            Why families choose <em className="italic font-normal text-coral">Promenade Dental</em> in
+            Why families choose <em className="italic font-normal text-accent">Promenade Dental</em> in
             Chandler.
           </h2>
         </Reveal>
@@ -50,12 +50,12 @@ export default function WhyChooseUs() {
           {cards.map(({ icon: Icon, title, body }, i) => (
             <Reveal key={title} delay={i * 60} className="border-t border-coral/50 pt-[22px]">
               <span className="mb-[18px] inline-flex h-10 w-10 items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-6 w-6 text-coral" strokeWidth={2.2} />
+                <Icon className="h-6 w-6 text-accent" strokeWidth={2.2} />
               </span>
               <b className="mb-[10px] block font-serif text-2xl font-normal leading-[1.15] text-ink">
                 {title}
               </b>
-              <p className="text-lg font-light leading-[1.65] text-muted">{body}</p>
+              <p className="text-lg font-light leading-[1.65] text-body">{body}</p>
             </Reveal>
           ))}
         </div>

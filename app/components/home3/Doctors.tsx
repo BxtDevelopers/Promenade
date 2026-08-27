@@ -9,17 +9,17 @@ export default function DoctorsSection() {
 
         {/* Section head */}
         <div className="rv mb-0">
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             A new chapter
           </span>
           <h2
             className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-white mt-2 text-[clamp(30px,4vw,52px)]"
           >
             The same trusted practice,{' '}
-            <em className="italic text-coral">in caring new hands</em>.
+            <em className="italic text-accent">in caring new hands</em>.
           </h2>
           <p
-            className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted lg:max-w-[80%]"
+            className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-body lg:max-w-[80%]"
           >
             After 23 years of caring for Chandler families, Dr. James Wei has transferred ownership of Promenade Dental to Dr. Shriya Sarin who will maintain the same comfortable and friendly environment you all are familiar with.
           </p>
@@ -55,7 +55,7 @@ export default function DoctorsSection() {
               Passing the torch — Dr. Wei welcomes Dr. Shriya.
             </span>
             <span
-              className="text-[11px] tracking-[0.18em] uppercase font-medium text-coral"
+              className="text-[11px] tracking-[0.18em] uppercase font-medium text-accent"
             >
               Promenade Dental · Fulton Ranch, Chandler AZ
             </span>
@@ -77,17 +77,17 @@ export default function DoctorsSection() {
                 className="object-cover object-top"
               />
             </div>
-            <div className="text-[12px] tracking-[0.16em] uppercase font-medium text-coral">
+            <div className="text-[12px] tracking-[0.16em] uppercase font-medium text-accent">
               Founding Dentist • since 2003
             </div>
             <h3
               className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-white text-[clamp(26px,3.2vw,38px)]"
             >
               Dr. James{' '}
-              <span className="italic text-coral">Wei</span>
+              <span className="italic text-accent">Wei</span>
             </h3>
             <p
-              className="text-[16px] font-light leading-[1.7] mt-[14px] text-muted max-w-[40ch]"
+              className="text-[16px] font-light leading-[1.7] mt-[14px] text-body max-w-[40ch]"
             >
               Built Promenade Dental for over 23 years with conservative, high-quality dental care and personalized attention — and is entrusting his patients to Dr. Shriya.
             </p>
@@ -105,17 +105,17 @@ export default function DoctorsSection() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="text-[12px] tracking-[0.16em] uppercase font-medium text-coral">
+            <div className="text-[12px] tracking-[0.16em] uppercase font-medium text-accent">
               Dentist &amp; Owner
             </div>
             <h3
               className="font-serif font-light tracking-[-0.03em] leading-[0.92] mt-[16px] mb-0 text-white text-[clamp(26px,3.2vw,38px)]"
             >
               Dr. Shriya{' '}
-              <span className="italic text-coral">Sarin</span>
+              <span className="italic text-accent">Sarin</span>
             </h3>
             <p
-              className="text-[16px] font-light leading-[1.7] mt-[14px] text-muted max-w-[40ch]"
+              className="text-[16px] font-light leading-[1.7] mt-[14px] text-body max-w-[40ch]"
             >
               Carrying forward the same calm, unhurried care Chandler families have trusted for
               years — with a gentle touch for anxious and first-time patients.

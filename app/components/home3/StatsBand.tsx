@@ -80,7 +80,7 @@ function CountUp({
 
   if (text) {
     return (
-      <span className="block font-serif font-light text-coral leading-none tracking-[-0.01em] text-[clamp(30px,3.8vw,46px)] mt-3">
+      <span className="block font-serif font-light text-accent leading-none tracking-[-0.01em] text-[clamp(30px,3.8vw,46px)] mt-3">
         {text}
       </span>
     );
@@ -89,7 +89,7 @@ function CountUp({
   return (
     <span
       ref={ref}
-      className="block font-serif font-light text-coral leading-none tracking-[-0.01em] text-[clamp(38px,4.8vw,58px)]"
+      className="block font-serif font-light text-accent leading-none tracking-[-0.01em] text-[clamp(38px,4.8vw,58px)]"
     >
       0
     </span>

@@ -34,7 +34,7 @@ export default function RelatedServicesSection({ data }: { data: RelatedServices
           ].join(' ')}
         >
           <div className="flex-1">
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink max-w-[22ch]">
@@ -88,10 +88,10 @@ function RelatedServiceCard({
       }}
     >
       <div>
-        <h3 className="font-serif font-normal text-[20px] md:text-[22px] eading-snug mb-3 transition-colors text-white group-hover:text-coral">
+        <h3 className="font-serif font-normal text-[20px] md:text-[22px] eading-snug mb-3 transition-colors text-white group-hover:text-accent">
           {item.title}
         </h3>
-        <p className="text-muted font-sans font-light text-[14.5px] leading-[1.65]">
+        <p className="text-body font-sans font-light text-[14.5px] leading-[1.65]">
           {item.description}
         </p>
       </div>

@@ -15,13 +15,13 @@ export default function LocationMap() {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
             Find Us
           </span>
           <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink max-w-[18ch]">
             Right in the heart of{' '}
-            <em className="not-italic text-coral">Fulton Ranch</em>.
+            <em className="not-italic text-accent">Fulton Ranch</em>.
           </h2>
         </div>
 
@@ -53,7 +53,7 @@ export default function LocationMap() {
 
               <div className="h-px bg-line my-6" />
 
-              <span className="block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-3">
+              <span className="block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-3">
                 Office Hours
               </span>
               {/* One row per day range — a single '·'-joined line wrapped
@@ -66,14 +66,14 @@ export default function LocationMap() {
                 ].map(([day, hours]) => (
                   <div key={day} className="flex flex-wrap gap-x-2">
                     <dt className="min-w-[74px] font-medium text-ivory-2">{day}</dt>
-                    <dd className="text-muted">{hours}</dd>
+                    <dd className="text-body">{hours}</dd>
                   </div>
                 ))}
               </dl>
 
               <div className="h-px bg-line my-6" />
 
-              <p className="text-muted text-[14.5px] font-light leading-[1.8]">
+              <p className="text-body text-[14.5px] font-light leading-[1.8]">
                 Free parking available right outside the suite — no garage,
                 no hassle.
               </p>

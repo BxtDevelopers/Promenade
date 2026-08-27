@@ -67,14 +67,14 @@ export default function ClosingCTA() {
 
       {/* Content wrapper with z-10 so it sits above the arches */}
       <div className="relative z-10 mx-auto max-w-[1240px] px-[clamp(22px,4vw,60px)]">
-        <span className="block text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral mb-[22px]">
+        <span className="block text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent mb-[22px]">
           New patients welcome
         </span>
 
         <h2 className="rv font-serif font-light tracking-[-0.03em] leading-none text-white text-[clamp(40px,7vw,90px)]">
           Your best smile starts
           <br />
-          <em className="italic text-coral"> at Promenade Dental.</em>
+          <em className="italic text-accent"> at Promenade Dental.</em>
         </h2>
 
         <div className="rv flex items-center justify-center gap-[18px] mt-[42px] flex-wrap">
@@ -92,7 +92,7 @@ export default function ClosingCTA() {
           </Link>
         </div>
 
-        <div className="rv mt-12 text-[14px] font-light leading-[1.9] text-muted">
+        <div className="rv mt-12 text-[14px] font-light leading-[1.9] text-body">
           <b className="text-white font-medium">Most major PPO plans accepted · New patients welcome</b>
           <br />
           Promenade Dental — Fulton Ranch · 4905 S. Alma School Rd, Suite 1 · Chandler, AZ 85248

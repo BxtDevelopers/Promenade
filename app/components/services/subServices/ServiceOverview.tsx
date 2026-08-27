@@ -52,7 +52,7 @@ export default function ServiceOverview({
             textIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl md:text-7xl leading-[1.1] tracking-[-0.02em] text-ink mb-8">
@@ -64,8 +64,8 @@ export default function ServiceOverview({
 
           <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {features.map((f, i) => (
-              <li key={i} className="flex items-start gap-4 text-coral text-lg md:text-xl font-light leading-relaxed">
-                <svg viewBox="0 0 24 24" className="w-6 h-6 mt-1 flex-shrink-0 text-coral" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <li key={i} className="flex items-start gap-4 text-accent text-lg md:text-xl font-light leading-relaxed">
+                <svg viewBox="0 0 24 24" className="w-6 h-6 mt-1 flex-shrink-0 text-accent" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 13l4 4L19 7" />
                 </svg>
                 <span>{f}</span>

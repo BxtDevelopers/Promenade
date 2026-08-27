@@ -41,7 +41,7 @@ export default function SolutionsGridSection({ data }: { data: SolutionsGridData
           ].join(' ')}
         >
           <div className="flex-1">
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink max-w-[20ch]">
@@ -77,7 +77,7 @@ export default function SolutionsGridSection({ data }: { data: SolutionsGridData
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"
-                className="text-coral transition-transform duration-[400ms] ease-out group-hover:translate-x-1"
+                className="text-accent transition-transform duration-[400ms] ease-out group-hover:translate-x-1"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2 7h10M8 3l4 4-4 4" />
               </svg>
@@ -131,7 +131,7 @@ function SolutionCard({
 
       {/* Card Content */}
       <div className="relative z-10 p-7 lg:p-9 transition-transform duration-[450ms] ease-[cubic-bezier(0.2,0.8,0.2,1)] group-hover:translate-y-[-4px]">
-        <span className="block text-coral font-sans text-[10.5px] tracking-eyebrow uppercase font-medium mb-3">
+        <span className="block text-accent font-sans text-[10.5px] tracking-eyebrow uppercase font-medium mb-3">
           {card.subtitle}
         </span>
         <h3 className="font-serif font-normal text-[22px] md:text-[26px] text-white leading-[1.1] mb-4">

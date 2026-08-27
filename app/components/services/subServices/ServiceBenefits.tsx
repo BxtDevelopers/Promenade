@@ -22,7 +22,7 @@ export default function ServiceBenefits({
     <section className="py-section">
       <div className="lg:px-site max-w-[90%] mx-auto">
         <div className="mb-12 text-center">
-  <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+  <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
     {eyebrow}
   </span>
 
@@ -31,7 +31,7 @@ export default function ServiceBenefits({
   </h2>
 
   {description && (
-    <p className="text-muted lg:text-lg font-light leading-relaxed lg:max-w-[80%] mx-auto">
+    <p className="text-body lg:text-lg font-light leading-relaxed lg:max-w-[80%] mx-auto">
       {description}
     </p>
   )}
@@ -93,7 +93,7 @@ function BenefitCard({ benefit }: { benefit: { title: string; body: string; path
         ))}
       </svg>
       <h3 className="font-serif font-normal text-[19px] mb-3 text-ink">{benefit.title}</h3>
-      <p className="text-muted text-[14.5px] font-light leading-[1.65]">{benefit.body}</p>
+      <p className="text-body text-[14.5px] font-light leading-[1.65]">{benefit.body}</p>
     </div>
   );
 }

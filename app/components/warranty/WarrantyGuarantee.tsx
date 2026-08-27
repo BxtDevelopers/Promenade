@@ -16,15 +16,15 @@ export default function WarrantyGuarantee() {
             }}
           />
           <div className="relative mx-auto mb-[22px] flex h-[58px] w-[58px] items-center justify-center rounded-full border border-coral/50">
-            <ShieldCheck className="h-[30px] w-[30px] text-coral" strokeWidth={1.5} />
+            <ShieldCheck className="h-[30px] w-[30px] text-accent" strokeWidth={1.5} />
           </div>
-          <div className="relative text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="relative text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             We stand behind our work
           </div>
           <h2 className="relative mt-[10px] font-serif text-[clamp(30px,4.2vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-            A guarantee, <em className="italic font-normal text-coral">not just a promise</em>.
+            A guarantee, <em className="italic font-normal text-accent">not just a promise</em>.
           </h2>
-          <p className="relative mx-auto mt-5 max-w-[56ch] text-[16px] font-light leading-[1.7] text-muted">
+          <p className="relative mx-auto mt-5 max-w-[56ch] text-[16px] font-light leading-[1.7] text-body">
             The same dentists who do your work stand behind it &mdash; so you can invest in your
             smile with confidence. Keep your routine visits with us, and if covered dental work
             fails under normal use, we&apos;ll take care of it.

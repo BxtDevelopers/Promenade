@@ -76,7 +76,7 @@ export default function InsuranceNoCoverageCta() {
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
-          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             No insurance? No problem.
           </span>
         </Reveal>
@@ -85,12 +85,12 @@ export default function InsuranceNoCoverageCta() {
           <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Great care,
             <br />
-            <em className="italic font-normal text-coral">without the runaround.</em>
+            <em className="italic font-normal text-accent">without the runaround.</em>
           </h2>
         </Reveal>
 
         <Reveal className="mt-[30px]" delay={0.1}>
-          <p className="mx-auto max-w-[60ch] text-sm font-light leading-relaxed text-muted md:text-[15px]">
+          <p className="mx-auto max-w-[60ch] text-sm font-light leading-relaxed text-body md:text-[15px]">
             You don&rsquo;t need insurance to get gentle, honest dentistry. Start with our{' '}
             <b className="font-medium text-white">$125 new-patient cleaning, exam &amp; X-rays</b>,
             use your <b className="font-medium text-white">HSA / FSA</b> funds, or spread larger

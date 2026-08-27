@@ -34,15 +34,15 @@ export default function InsuranceInfo() {
               leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
             ].join(' ')}
           >
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
               Insurance &amp; New Patients
             </span>
             <h2 className="font-serif font-light text-3xl
               lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-white max-w-[16ch]">
               Most major PPO plans{' '}
-              <em className="not-italic text-coral">accepted</em>.
+              <em className="not-italic text-accent">accepted</em>.
             </h2>
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] mt-6 max-w-[42ch]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] mt-6 max-w-[42ch]">
               Not sure if you&apos;re covered? Send us your insurance details
               before your visit and we&apos;ll confirm your benefits ahead of
               time — no surprises at checkout.

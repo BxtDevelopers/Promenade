@@ -31,13 +31,13 @@ export default function FamilyDentalServices({
         
         {/* Header - Slightly adjusted to a centered layout to break the visual rhythm from the previous section */}
         <div className="mb-16 text-center flex flex-col items-center">
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink mb-6 max-w-5xl">
             {heading}
           </h2>
-          <p className="text-muted text-lg font-light leading-relaxed max-w-3xl">
+          <p className="text-body text-lg font-light leading-relaxed max-w-3xl">
             {intro}
           </p>
         </div>
@@ -63,7 +63,7 @@ function ServiceCard({ service, Icon }: { service: Service; Icon: any }) {
     >
       {/* Icon & Title Row */}
       <div className="flex items-center gap-5 mb-6">
-        <div className="flex items-center justify-center w-14 h-14 rounded-full bg-coral/10 text-coral group-hover:scale-110 transition-transform duration-500 ease-out">
+        <div className="flex items-center justify-center w-14 h-14 rounded-full bg-coral/10 text-accent group-hover:scale-110 transition-transform duration-500 ease-out">
           <Icon strokeWidth={1.5} className="w-7 h-7" />
         </div>
         <h3 className="font-serif text-2xl text-white group-hover:text-ink tracking-tight">
@@ -94,7 +94,7 @@ function ServiceCard({ service, Icon }: { service: Service; Icon: any }) {
       </div>
 
       {/* CTA Bottom Bar */}
-      <div className="mt-auto pt-6 border-t border-line/50 group-hover:border-coral/50 flex items-center justify-between text-coral font-medium">
+      <div className="mt-auto pt-6 border-t border-line/50 group-hover:border-coral/50 flex items-center justify-between text-accent font-medium">
         <span className="text-[15px]">{service.cta}</span>
         <ArrowRight 
           className="w-5 h-5 transform group-hover:translate-x-1.5 transition-transform duration-300" 

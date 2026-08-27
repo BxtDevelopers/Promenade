@@ -18,7 +18,7 @@ export default function PaymentsHero() {
         }}
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
-        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral" delay={0}>
+        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent" delay={0}>
           Payment plans
         </Reveal>
 
@@ -26,7 +26,7 @@ export default function PaymentsHero() {
           <h1 className="mt-[18px] font-serif text-[clamp(40px,6.6vw,82px)] font-light leading-[1] tracking-[-0.025em] text-ink">
             Care now.
             <br />
-            <em className="font-normal italic text-coral">Pay over time.</em>
+            <em className="font-normal italic text-accent">Pay over time.</em>
           </h1>
         </Reveal>
 
@@ -44,7 +44,7 @@ export default function PaymentsHero() {
               key={badge}
               className="inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream"
             >
-              <Check className="h-3.5 w-3.5 shrink-0 stroke-[2.4] text-coral" />
+              <Check className="h-3.5 w-3.5 shrink-0 stroke-[2.4] text-accent" />
               {badge}
             </span>
           ))}

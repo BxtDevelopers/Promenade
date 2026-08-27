@@ -13,43 +13,43 @@ interface Problem {
 const problems: Problem[] = [
   {
     href: `/services/emergency-dentistry/toothache-relief`,
-    icon: <Activity className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Activity className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Tooth pain',
     desc: 'Ache, throbbing, or sensitivity',
   },
   {
     href: `/services/emergency-dentistry/broken-chipped-tooth`,
-    icon: <Zap className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Zap className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Chipped or broken tooth',
     desc: 'Cracks, breaks, worn edges',
   },
   {
     href: `/services/restorative-dentistry/dental-bridges`,
-    icon: <LiaToothSolid className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <LiaToothSolid className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Missing tooth',
     desc: 'Dental bridges, dentures & partials',
   },
   {
     href: `/services/family-dentistry/gum-disease-treatment`,
-    icon: <Droplet className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Droplet className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Bleeding gums',
     desc: 'Tenderness or swelling',
   },
   {
     href: `/services/restorative-dentistry/dental-crowns`,
-    icon: <Crown className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Crown className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Lost filling or crown',
     desc: 'Something came loose',
   },
   {
     href: `/services/cosmetic-dentistry/teeth-whitening`,
-    icon: <Sparkles className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Sparkles className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Stained or dull smile',
     desc: 'Whitening & cosmetic work',
   },
   {
     href: `/services/sleep-apnea-snoring-solutions`,
-    icon: <Moon className="w-[26px] h-[26px] flex-none text-coral" strokeWidth={1.5} />,
+    icon: <Moon className="w-[26px] h-[26px] flex-none text-accent" strokeWidth={1.5} />,
     title: 'Snoring or poor sleep',
     desc: 'Sleep apnea & snoring solutions',
   },
@@ -62,14 +62,14 @@ export default function ProblemsSection() {
 
         {/* Head */}
         <div className="rv mb-[34px]">
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             In your words
           </span>
           <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]">
             What brought you{' '}
-            <em className="italic text-coral">here?</em>
+            <em className="italic text-accent">here?</em>
           </h2>
-          <p className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-muted">
+          <p className="font-light text-[15.5px] leading-[1.75] mt-[14px] text-body">
             Tell us what&apos;s going on — we&apos;ll point you to the right care.
           </p>
         </div>
@@ -90,11 +90,11 @@ export default function ProblemsSection() {
                 <div className="font-serif text-[19px] text-ink leading-[1.1]">
                   {p.title}
                 </div>
-                <div className="text-[12.5px] mt-1 tracking-[0.02em] text-muted-2">
+                <div className="text-[12.5px] mt-1 tracking-[0.02em] text-body-2">
                   {p.desc}
                 </div>
               </div>
-              <span className="ml-auto text-[18px] text-coral opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1">
+              <span className="ml-auto text-[18px] text-accent opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1">
                 →
               </span>
             </Link>

@@ -27,7 +27,7 @@ function CredentialPill({ label }: { label: string }) {
         'inline-flex items-center gap-2',
         'rounded-full border border-line',
         'px-4 py-2',
-        'text-muted text-[12px] md:text-[13px] font-light tracking-wide',
+        'text-body text-[12px] md:text-[13px] font-light tracking-wide',
       ].join(' ')}
     >
       <span className="w-[5px] h-[5px] rounded-full bg-coral shrink-0" />
@@ -54,7 +54,7 @@ export default function ServiceDoctor() {
             className="order-2 lg:order-1"
           >
             {/* Eyebrow */}
-            <p className="text-coral text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-3 md:mb-4">
+            <p className="text-accent text-[11px] md:text-[12px] tracking-wide3 uppercase font-medium mb-3 md:mb-4">
               Meet Your Dentist
             </p>
 
@@ -65,12 +65,12 @@ export default function ServiceDoctor() {
             >
               Dr. Shriya
               <br />
-              <em className="not-italic text-coral">Sarin</em>
-              <span className="text-muted" style={{ fontSize: '0.55em' }}> D.D.S.</span>
+              <em className="not-italic text-accent">Sarin</em>
+              <span className="text-body" style={{ fontSize: '0.55em' }}> D.D.S.</span>
             </h2>
 
             {/* Bio */}
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 md:mt-6 max-w-[50ch]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.75] mt-5 md:mt-6 max-w-[50ch]">
               Dr. Shriya Sarin is dedicated to providing patient-centered dental
               care at Promenade Dental. A UCLA School of Dentistry graduate, she
               combines advanced training, modern techniques, and a meticulous
@@ -90,7 +90,7 @@ export default function ServiceDoctor() {
 
             {/* Quote */}
             <div className="mt-8 md:mt-10 pt-7 md:pt-8 border-t border-line">
-              <p className="text-muted text-[14px] md:text-[15px] font-light leading-[1.7] italic max-w-[44ch]">
+              <p className="text-body text-[14px] md:text-[15px] font-light leading-[1.7] italic max-w-[44ch]">
                 &ldquo;My goal is for every patient to leave feeling informed,
                 comfortable, and genuinely cared for — not just treated.&rdquo;
               </p>
@@ -136,7 +136,7 @@ export default function ServiceDoctor() {
                   <b className="font-serif text-[20px] font-normal text-ink block leading-none">
                     {f.value}
                   </b>
-                  <span className="text-muted text-[11px] mt-1 block whitespace-nowrap">
+                  <span className="text-body text-[11px] mt-1 block whitespace-nowrap">
                     {f.label}
                   </span>
                 </div>

@@ -65,7 +65,7 @@ export default function EducationSection2({
           ].join(' ')}
         >
           <div className="inline-flex items-center gap-3 mb-6">
-            <span className="text-[11.5px] font-bold tracking-[0.2em] uppercase text-coral">
+            <span className="text-[11.5px] font-bold tracking-[0.2em] uppercase text-accent">
               {data.eyebrow}
             </span>
             <span className="h-[1px] w-12 bg-coral/40 block" aria-hidden="true" />
@@ -77,7 +77,7 @@ export default function EducationSection2({
           
           <div className="flex flex-col gap-5 mb-10">
             {data.bodyParagraphs.map((paragraph, index) => (
-              <p key={index} className="text-muted text-lg font-light leading-[1.75]">
+              <p key={index} className="text-body text-lg font-light leading-[1.75]">
                 {paragraph}
               </p>
             ))}

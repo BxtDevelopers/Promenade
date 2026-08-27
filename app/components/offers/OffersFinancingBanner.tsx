@@ -16,15 +16,15 @@ export default function OffersFinancingBanner() {
       <div className="relative mx-auto max-w-[1240px] px-site">
         <div className="flex flex-col items-start gap-[30px] md:flex-row md:items-end md:justify-between">
           <Reveal delay={0} className="max-w-[54ch]">
-            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+            <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
               Bigger treatment plan?
             </div>
             <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
               Offers cover the visit &mdash;
               <br />
-              <em className="italic font-normal text-coral">financing covers the rest.</em>
+              <em className="italic font-normal text-accent">financing covers the rest.</em>
             </h2>
-            <p className="mt-[18px] text-[14.5px] font-light leading-[1.65] text-muted">
+            <p className="mt-[18px] text-[14.5px] font-light leading-[1.65] text-body">
               For work beyond a cleaning, we&rsquo;ll walk you through insurance
               benefits and flexible payment plans so cost never delays care.
             </p>

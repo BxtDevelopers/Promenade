@@ -20,7 +20,7 @@ export default function WarrantyHero() {
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Our warranty
           </span>
         </Reveal>
@@ -29,7 +29,7 @@ export default function WarrantyHero() {
           <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[-0.025em] text-ink">
             If it breaks,
             <br />
-            <em className="italic font-normal text-coral">we&apos;ll make it right.</em>
+            <em className="italic font-normal text-accent">we&apos;ll make it right.</em>
           </h1>
         </Reveal>
 
@@ -47,7 +47,7 @@ export default function WarrantyHero() {
               key={badge}
               className="inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream"
             >
-              <Check className="h-[14px] w-[14px] text-coral" strokeWidth={2.4} />
+              <Check className="h-[14px] w-[14px] text-accent" strokeWidth={2.4} />
               {badge}
             </span>
           ))}

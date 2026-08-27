@@ -37,7 +37,7 @@ export default function ServiceFeatures({ data }: { data: ServiceFeature }) {
             ].join(' ')}
           >
             <div className="inline-flex items-center gap-3 mb-6">
-              <span className="text-[11.5px] font-medium tracking-eyebrow uppercase text-coral">
+              <span className="text-[11.5px] font-medium tracking-eyebrow uppercase text-accent">
                 {data.eyebrow}
               </span>
             </div>
@@ -46,7 +46,7 @@ export default function ServiceFeatures({ data }: { data: ServiceFeature }) {
               {data.heading}
             </h2>
             
-            <p className="text-muted text-[15.5px] md:text-[16.5px] font-light leading-[1.8] lg:max-w-[80%]">
+            <p className="text-body text-[15.5px] md:text-[16.5px] font-light leading-[1.8] lg:max-w-[80%]">
               {data.body}
             </p>
           </div>
@@ -103,11 +103,11 @@ function FeatureStrip({
     >
       {/* Left Icon/Number Area */}
       <div className="flex items-center gap-5 shrink-0">
-        <span className="font-serif text-[20px] text-muted-2 group-hover:text-coral transition-colors duration-300">
+        <span className="font-serif text-[20px] text-body-2 group-hover:text-accent transition-colors duration-300">
           {num}
         </span>
         <div className="w-12 h-12 rounded-full bg-coral border border-line flex items-center justify-center transition-colors duration-300 group-hover:border-coral/40 group-hover:bg-coral/10">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white group-hover:text-coral transition-colors duration-300">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white group-hover:text-accent transition-colors duration-300">
             {icons[index % icons.length]}
           </svg>
         </div>
@@ -118,7 +118,7 @@ function FeatureStrip({
         <h3 className="font-serif font-normal text-[20px] text-white mb-2 leading-snug">
           {feature.title}
         </h3>
-        <p className="text-muted text-[14.5px] font-light leading-[1.65]">
+        <p className="text-body text-[14.5px] font-light leading-[1.65]">
           {feature.body}
         </p>
       </div>

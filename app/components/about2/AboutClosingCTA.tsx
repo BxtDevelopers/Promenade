@@ -73,7 +73,7 @@ export default function AboutClosingCTA() {
         }}
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
-        <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+        <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
           Come say hello
         </span>
 
@@ -81,7 +81,7 @@ export default function AboutClosingCTA() {
           <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Meet the team
             <br />
-            <em className="italic font-normal text-coral">in person.</em>
+            <em className="italic font-normal text-accent">in person.</em>
           </h2>
         </Reveal>
 
@@ -100,7 +100,7 @@ export default function AboutClosingCTA() {
           </Link>
         </Reveal>
 
-        <Reveal className="mt-12 text-[14px] font-light leading-[1.9] text-muted">
+        <Reveal className="mt-12 text-[14px] font-light leading-[1.9] text-body">
             <b className="font-medium text-white">Most major PPO plans accepted &middot; New patients welcome</b>
             <br />
             Promenade Dental &mdash; Fulton Ranch &middot; 4905 S. Alma School Rd, Suite 1 &middot;

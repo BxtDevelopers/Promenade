@@ -13,7 +13,7 @@ export default function ReferralsHero() {
         }}
       />
       <div className="relative mx-auto max-w-[1240px] px-site">
-        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral" delay={0}>
+        <Reveal className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent" delay={0}>
           Refer a friend
         </Reveal>
 
@@ -21,7 +21,7 @@ export default function ReferralsHero() {
           <h1 className="mt-[18px] font-serif text-[clamp(40px,6.6vw,82px)] font-light leading-[1] tracking-[-0.025em] text-ink">
             Send a friend our way.
             <br />
-            <em className="font-normal italic text-coral">We&rsquo;ll thank you both.</em>
+            <em className="font-normal italic text-accent">We&rsquo;ll thank you both.</em>
           </h1>
         </Reveal>
 
@@ -39,7 +39,7 @@ export default function ReferralsHero() {
               key={badge}
               className="inline-flex items-center gap-2 rounded-full border border-line bg-ink px-4 py-[9px] text-[12.5px] tracking-[0.03em] text-cream"
             >
-              <Check className="h-3.5 w-3.5 stroke-[2.4] text-coral" />
+              <Check className="h-3.5 w-3.5 stroke-[2.4] text-accent" />
               {badge}
             </span>
           ))}
@@ -71,19 +71,19 @@ export default function ReferralsHero() {
             }}
           />
           <div className="text-center">
-            <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-coral">
+            <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-accent">
               $50
             </b>
-            <span className="mt-2.5 block text-sm text-coral">
+            <span className="mt-2.5 block text-sm text-accent">
               off your friend&rsquo;s first visit
             </span>
           </div>
           <div className="rotate-90 text-center font-serif text-[34px] text-ink sm:rotate-0">+</div>
           <div className="text-center">
-            <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-coral">
+            <b className="block font-serif text-[clamp(46px,8vw,72px)] font-light leading-[0.9] text-accent">
               $50
             </b>
-            <span className="mt-2.5 block text-sm text-coral">
+            <span className="mt-2.5 block text-sm text-accent">
               credit toward your next visit
             </span>
           </div>

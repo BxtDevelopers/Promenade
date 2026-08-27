@@ -99,7 +99,7 @@ export default function Nav() {
                         {service.name}
                       </Link>
                       {hasSubServices && (
-                        <ChevronRight size={13} className="text-muted shrink-0" />
+                        <ChevronRight size={13} className="text-body shrink-0" />
                       )}
                     </div>
 
@@ -136,7 +136,7 @@ export default function Nav() {
 
               <Link
                 href="/services"
-                className="block px-4 py-3 rounded-lg text-coral hover:bg-bg-2 transition-colors"
+                className="block px-4 py-3 rounded-lg text-accent hover:bg-bg-2 transition-colors"
               >
                 View All Services
               </Link>
@@ -207,14 +207,14 @@ export default function Nav() {
             <Link
               href="/services"
               onClick={() => setMenuOpen(false)}
-              className="text-ink font-medium text-[16px] hover:text-coral transition-colors"
+              className="text-ink font-medium text-[16px] hover:text-accent transition-colors"
             >
               Services
             </Link>
             <Link
               href="/services"
               onClick={() => setMenuOpen(false)}
-              className="text-[11px] tracking-eyebrow uppercase text-coral/80 hover:text-coral transition-colors"
+              className="text-[11px] tracking-eyebrow uppercase text-accent/80 hover:text-accent transition-colors"
             >
               View All →
             </Link>
@@ -236,7 +236,7 @@ export default function Nav() {
                     <Link
                       href={`/services/${service.slug}`}
                       onClick={() => setMenuOpen(false)}
-                      className="text-muted hover:text-ink transition-colors text-[15px] flex-1"
+                      className="text-body hover:text-ink transition-colors text-[15px] flex-1"
                     >
                       {service.name}
                     </Link>
@@ -248,12 +248,12 @@ export default function Nav() {
                           e.preventDefault();
                           setOpenServiceSlug(isOpen ? null : service.slug);
                         }}
-                        className="p-2 -mr-2 text-muted hover:text-coral transition-colors"
+                        className="p-2 -mr-2 text-body hover:text-accent transition-colors"
                         aria-label={isOpen ? 'Collapse sub-services' : 'Expand sub-services'}
                       >
                         <ChevronDown
                           size={14}
-                          className={`transition-transform duration-300 ${isOpen ? 'rotate-180 text-coral' : ''}`}
+                          className={`transition-transform duration-300 ${isOpen ? 'rotate-180 text-accent' : ''}`}
                         />
                       </button>
                     )}
@@ -275,7 +275,7 @@ export default function Nav() {
                               key={sub.slug}
                               href={`/services/${service.slug}/${sub.slug}`}
                               onClick={() => setMenuOpen(false)}
-                              className="text-muted/60 hover:text-ink text-[13.5px] transition-colors py-2"
+                              className="text-body/60 hover:text-ink text-[13.5px] transition-colors py-2"
                             >
                               {sub.name}
                             </Link>
@@ -298,7 +298,7 @@ export default function Nav() {
         </li>
       </ul>
 
-      <a href="tel:+14808028188" className="block text-muted text-[14px] tracking-nav mb-5 no-underline">
+      <a href="tel:+14808028188" className="block text-body text-[14px] tracking-nav mb-5 no-underline">
         (480) 802-8188
       </a>
       <NavBookButton />

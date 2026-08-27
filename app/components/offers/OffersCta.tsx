@@ -67,7 +67,7 @@ export default function OffersCta() {
 
       <div className="relative mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
-          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="mb-[22px] block text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Ready when you are
           </span>
         </Reveal>
@@ -76,7 +76,7 @@ export default function OffersCta() {
           <h2 className="font-serif text-[clamp(40px,7vw,90px)] font-light leading-[1] tracking-[-0.03em] text-white">
             Don&rsquo;t leave savings
             <br />
-            <em className="italic font-normal text-coral">on the table.</em>
+            <em className="italic font-normal text-accent">on the table.</em>
           </h2>
         </Reveal>
 

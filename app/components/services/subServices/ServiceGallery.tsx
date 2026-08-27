@@ -25,7 +25,7 @@ export default function ServiceGallery({
             headIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
             {eyebrow}
           </span>
           <h2 className="font-serif font-light text-3xl lg:text-[clamp(34px,4vw,58px)] leading-[1.08] tracking-[-0.02em] text-ink">

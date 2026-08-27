@@ -28,7 +28,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
           ].join(' ')}
         >
           <div className="flex-1">
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-section leading-[1.08] tracking-[-0.02em] text-ink max-w-[20ch]">
@@ -36,7 +36,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
             </h2>
           </div>
           <div className="flex-1 lg:max-w-[500px]">
-            <p className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7]">
+            <p className="text-body text-[15px] md:text-[16px] font-light leading-[1.7]">
               {data.subtitle}
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function ServiceProcess({ data }: { data: ProcessData }) {
           <div className="mt-16 md:mt-24 flex justify-center lg:justify-start">
             <Link 
               href={data.cta.href}
-              className="group inline-flex items-center gap-3 text-[14px] text-coral font-light tracking-[0.02em] uppercase
+              className="group inline-flex items-center gap-3 text-[14px] text-accent font-light tracking-[0.02em] uppercase
                 transition-all duration-300 hover:text-ink"
             >
               <span className="underline underline-offset-4 decoration-coral/40 group-hover:decoration-ink/60 transition-colors">
@@ -109,7 +109,7 @@ function ProcessStep({
       }}
     >
       {/* Number Node */}
-      <div className="relative z-10 w-[52px] h-[52px] rounded-full bg-bg-2 border border-coral/40 flex items-center justify-center font-serif text-coral text-[17px] mb-6 transition-colors duration-500 group-hover:bg-coral/10">
+      <div className="relative z-10 w-[52px] h-[52px] rounded-full bg-bg-2 border border-coral/40 flex items-center justify-center font-serif text-accent text-[17px] mb-6 transition-colors duration-500 group-hover:bg-coral/10">
         {String(index + 1).padStart(2, '0')}
       </div>
       
@@ -117,7 +117,7 @@ function ProcessStep({
       <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-ink mb-3">
         {step.title}
       </h3>
-      <p className="text-muted text-[14.5px] md:text-[15px] font-light leading-[1.7]">
+      <p className="text-body text-[14.5px] md:text-[15px] font-light leading-[1.7]">
         {step.body}
       </p>
     </div>

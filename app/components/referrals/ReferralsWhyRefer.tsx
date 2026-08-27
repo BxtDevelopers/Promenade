@@ -29,11 +29,11 @@ export default function ReferralsWhyRefer() {
     <section className="bg-bg-2 py-[clamp(74px,8vw,120px)]">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal className="mb-[34px]" delay={0}>
-          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Why patients refer us
           </div>
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Care worth <em className="italic font-normal text-coral">passing along</em>.
+            Care worth <em className="italic font-normal text-accent">passing along</em>.
           </h2>
         </Reveal>
 
@@ -41,12 +41,12 @@ export default function ReferralsWhyRefer() {
           {REASONS.map(({ icon: Icon, title, body }, i) => (
             <Reveal key={title} className="border-t border-line pt-[22px]" delay={i * 0.08}>
               <span className="mb-[18px] inline-flex h-[30px] w-[30px] items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-[15px] w-[15px] text-coral" strokeWidth={2.2} />
+                <Icon className="h-[15px] w-[15px] text-accent" strokeWidth={2.2} />
               </span>
               <b className="mb-[10px] block font-serif text-[19px] font-normal leading-[1.15] text-white">
                 {title}
               </b>
-              <p className="text-[14.5px] font-light leading-[1.65] text-muted">{body}</p>
+              <p className="text-[14.5px] font-light leading-[1.65] text-body">{body}</p>
             </Reveal>
           ))}
         </div>

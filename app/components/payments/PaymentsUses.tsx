@@ -12,11 +12,11 @@ export default function PaymentsUses() {
     <section className="bg-bg-2 py-[clamp(60px,7vw,104px)]">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal delay={0}>
-          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <div className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             What it covers
           </div>
           <h2 className="mt-[14px] font-serif text-[clamp(30px,4vw,52px)] font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Use it for the care that <em className="italic font-normal text-coral">matters most</em>.
+            Use it for the care that <em className="italic font-normal text-accent">matters most</em>.
           </h2>
         </Reveal>
 
@@ -26,7 +26,7 @@ export default function PaymentsUses() {
               <b className="mb-1.5 block font-serif text-[18px] font-normal text-white">
                 {use.title}
               </b>
-              <span className="block text-[13.5px] font-light leading-[1.55] text-muted">
+              <span className="block text-[13.5px] font-light leading-[1.55] text-body">
                 {use.body}
               </span>
             </Reveal>

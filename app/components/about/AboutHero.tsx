@@ -614,7 +614,7 @@ export default function AboutHero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3, duration: 1 }}
-      className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-coral"
+      className="text-[11px] md:text-[11.5px] tracking-eyebrow uppercase font-medium text-accent"
     >
       About Promenade Dental
     </motion.div>
@@ -635,7 +635,7 @@ export default function AboutHero() {
             {line.text ? (
               line.text
             ) : (
-              <em className="not-italic font-normal text-coral">
+              <em className="not-italic font-normal text-accent">
                 {line.italic}
               </em>
             )}

@@ -41,12 +41,12 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 //             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
 //           ].join(' ')}
 //         >
-//           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+//           <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
 //             Your First Visit
 //           </span>
 //           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
 //             Starting at Promenade is{' '}
-//             <em className="not-italic text-coral">simple</em>.
+//             <em className="not-italic text-accent">simple</em>.
 //           </h2>
 //         </div>
 
@@ -98,7 +98,7 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 
 //       {/* Step number bubble */}
 //       <div className="flex items-center gap-4 mb-5">
-//         <span className="w-11 h-11 rounded-full border border-coral/30 bg-panel flex items-center justify-center font-serif text-[14px] text-coral shrink-0 relative z-10">
+//         <span className="w-11 h-11 rounded-full border border-coral/30 bg-panel flex items-center justify-center font-serif text-[14px] text-accent shrink-0 relative z-10">
 //           {step.n}
 //         </span>
         
@@ -112,14 +112,14 @@ import { ChevronDown, ChevronRight } from "lucide-react"
 //         {step.title}
 //       </h3>
 
-//       <p className="text-muted text-[14.5px] font-light leading-[1.75]">
+//       <p className="text-body text-[14.5px] font-light leading-[1.75]">
 //         {step.body}
 //       </p>
 
 //       {step.cta && (
 //         <a
 //           href={step.cta.href}
-//           className="inline-flex items-center gap-2 mt-5 text-[13.5px] text-coral font-light tracking-[0.02em] underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors"
+//           className="inline-flex items-center gap-2 mt-5 text-[13.5px] text-accent font-light tracking-[0.02em] underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors"
 //         >
 //           {step.cta.label} →
 //         </a>
@@ -153,12 +153,12 @@ export default function NewPatientFlow() {
 
         {/* Head */}
         <div className="rv mb-0">
-          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-coral">
+          <span className="text-[11.5px] tracking-[0.32em] uppercase font-medium text-accent">
             Your first visit
           </span>
           <h2 className="font-serif font-light tracking-[-0.02em] leading-[1.05] text-ink mt-2 text-[clamp(30px,4vw,52px)]">
             Simple from{' '}
-            <em className="italic text-coral">the start</em>.
+            <em className="italic text-accent">the start</em>.
           </h2>
         </div>
 
@@ -173,12 +173,12 @@ export default function NewPatientFlow() {
           {/* DESKTOP: Arrow connector pointing right (Centered perfectly in the fluid gap) */}
           {i < steps.length - 1 && (
             <div className="hidden md:flex absolute top-[50%] -right-[calc(clamp(28px,4vw,6px)/2)] translate-x-1/2 items-center justify-center">
-              <ChevronRight className="w-10 h-10 text-coral/80" strokeWidth={1.5} />
+              <ChevronRight className="w-10 h-10 text-accent/80" strokeWidth={1.5} />
             </div>
           )}
 
           {/* Step Number */}
-          <span className="font-serif text-xl tracking-[0.14em] text-coral">
+          <span className="font-serif text-xl tracking-[0.14em] text-accent">
             {s.num}
           </span>
           
@@ -188,14 +188,14 @@ export default function NewPatientFlow() {
           </h3>
           
           {/* Step Description */}
-          <p className="text-[15px] font-light leading-[1.72] text-muted max-w-[32ch]">
+          <p className="text-[15px] font-light leading-[1.72] text-body max-w-[32ch]">
             {s.desc}
           </p>
 
           {/* MOBILE: Arrow connector pointing down (Only shows on mobile between stacked steps) */}
           {i < steps.length - 1 && (
             <div className="md:hidden flex mt-8 mb-[-16px] w-full items-center">
-              <ChevronDown className="w-8 h-8 text-coral/80" strokeWidth={1.5} />
+              <ChevronDown className="w-8 h-8 text-accent/80" strokeWidth={1.5} />
             </div>
           )}
         </div>

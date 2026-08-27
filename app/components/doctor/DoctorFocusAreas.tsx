@@ -14,12 +14,12 @@ export default function DoctorFocusAreas() {
     <section className="bg-bg py-section">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Clinical interests
           </span>
           <h2 className="mt-[6px] max-w-[22ch] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-ink">
             What Dr. Sarin{' '}
-            <em className="italic font-normal text-coral">treats</em>.
+            <em className="italic font-normal text-accent">treats</em>.
           </h2>
         </Reveal>
 
@@ -35,11 +35,11 @@ export default function DoctorFocusAreas() {
                     {area.title}
                   </h3>
                   <ArrowUpRight
-                    className="mt-1 h-[18px] w-[18px] shrink-0 text-coral transition-transform duration-200 group-hover:-translate-y-[2px] group-hover:translate-x-[2px]"
+                    className="mt-1 h-[18px] w-[18px] shrink-0 text-accent transition-transform duration-200 group-hover:-translate-y-[2px] group-hover:translate-x-[2px]"
                     aria-hidden="true"
                   />
                 </div>
-                <p className="mt-3 text-[14.5px] font-light leading-[1.65] text-muted-2">
+                <p className="mt-3 text-[14.5px] font-light leading-[1.65] text-body-2">
                   {area.description}
                 </p>
               </Link>

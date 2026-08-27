@@ -48,7 +48,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-coral"></span>
               </span>
-              <span className="inline-block text-[12px] font-bold tracking-[0.2em] uppercase text-coral font-sans">
+              <span className="inline-block text-[12px] font-bold tracking-[0.2em] uppercase text-accent font-sans">
                 {data.eyebrow}
               </span>
             </div>
@@ -57,7 +57,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
               {data.heading}
             </h2>
 
-            <p className="text-muted text-body-lg font-light leading-[1.75] mb-10 lg:max-w-[80%]">
+            <p className="text-body text-body-lg font-light leading-[1.75] mb-10 lg:max-w-[80%]">
               {data.body}
             </p>
 
@@ -71,7 +71,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
                 </p>
                 <a 
                   href={data.cta.phoneLink} 
-                  className="block font-serif text-4xl lg:text-5xl text-white group-hover:text-coral transition-colors duration-300 mb-6"
+                  className="block font-serif text-4xl lg:text-5xl text-white group-hover:text-accent transition-colors duration-300 mb-6"
                 >
                   {data.cta.phoneNumber}
                 </a>
@@ -108,7 +108,7 @@ export default function WarningSection({ data }: { data: WarningData }) {
                   >
                     {/* Warning Icon */}
                     <div className="w-10 h-10 rounded-full bg-coral/10 border border-coral/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-coral group-hover:border-coral transition-all duration-300">
-                      <IoWarningOutline className='w-5 h-5 text-coral group-hover:text-white' />
+                      <IoWarningOutline className='w-5 h-5 text-accent group-hover:text-white' />
                     </div>
                     {/* Text */}
                     <p className="text-white text-[15px] leading-[1.6] group-hover:text-white/90 transition-colors duration-300 my-auto">

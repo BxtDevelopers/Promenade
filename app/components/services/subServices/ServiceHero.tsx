@@ -140,9 +140,9 @@ export default function ServiceHero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 1 }}
-              className="flex items-center gap-3 text-[11px] tracking-eyebrow uppercase font-medium text-coral mb-5"
+              className="flex items-center gap-3 text-[11px] tracking-eyebrow uppercase font-medium text-accent mb-5"
             >
-              <span className="text-coral">{eyebrow}</span>
+              <span className="text-accent">{eyebrow}</span>
             </motion.div>
 
             {/* Headline */}
@@ -154,7 +154,7 @@ export default function ServiceHero({
                   animate={{ y: 0 }}
                   transition={{ delay: 0.35, duration: 1.1, ease: [0.16, 0.84, 0.34, 1] }}
                 >
-                  {title} <em className="not-italic text-coral">{highlight}</em>
+                  {title} <em className="not-italic text-accent">{highlight}</em>
                 </motion.span>
               </span>
             </h1>

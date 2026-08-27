@@ -45,7 +45,7 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-coral"></span>
                   </span>
-                  <span className="text-[13px] font-bold tracking-[0.2em] uppercase text-coral">
+                  <span className="text-[13px] font-bold tracking-[0.2em] uppercase text-accent">
                     {data.eyebrow}
                   </span>
                 </div>
@@ -83,13 +83,13 @@ export default function ImmediateGuidanceAlert({ data }: { data: ImmediateGuidan
                 {/* Highlighted Handling Instructions Box */}
                 <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-sm mt-2">
                   <div className="w-10 h-10 rounded-full bg-coral/10 border border-coral/20 flex items-center justify-center shrink-0">
-                    <svg className="w-5 h-5 text-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="text-white font-serif text-lg mb-1">If you have the tooth:</h4>
-                    <p className="text-muted text-[15px] font-light leading-[1.6]">
+                    <p className="text-body text-[15px] font-light leading-[1.6]">
                       {data.handlingInstructions}
                     </p>
                   </div>

@@ -58,11 +58,11 @@ export default function CoverageGrid() {
     <section className="bg-bg-2 py-section">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             What&apos;s covered
           </span>
           <h2 className="mt-[6px] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
-            Coverage by <em className="italic font-normal text-coral">treatment</em>.
+            Coverage by <em className="italic font-normal text-accent">treatment</em>.
           </h2>
         </Reveal>
 
@@ -74,29 +74,29 @@ export default function CoverageGrid() {
               className="rounded-[20px] border border-line bg-gradient-to-b from-ink/[0.02] to-transparent p-7"
             >
               <div className="mb-4 flex h-[38px] w-[38px] items-center justify-center rounded-full border border-coral/50">
-                <Icon className="h-[18px] w-[18px] text-coral" strokeWidth={1.8} />
+                <Icon className="h-[18px] w-[18px] text-accent" strokeWidth={1.8} />
               </div>
               <h3 className="mb-1 font-serif text-[21px] font-normal text-white">{title}</h3>
-              <div className="mb-2 text-[12px] font-medium uppercase tracking-[0.06em] text-coral">
+              <div className="mb-2 text-[12px] font-medium uppercase tracking-[0.06em] text-accent">
                 {period}
               </div>
               <dl>
                 <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   If it fails
                 </dt>
-                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">
+                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-body">
                   {fails}
                 </dd>
                 <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   Our promise
                 </dt>
-                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">
+                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-body">
                   {promise}
                 </dd>
                 <dt className="mt-[13px] text-[11px] font-semibold uppercase tracking-[0.06em] text-cream">
                   Your part
                 </dt>
-                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-muted">
+                <dd className="mt-[3px] text-[13.5px] font-light leading-[1.5] text-body">
                   {yourPart}
                 </dd>
               </dl>
@@ -111,7 +111,7 @@ export default function CoverageGrid() {
         <Reveal>
           <p
             id="warranty-terms"
-            className="mt-[28px] max-w-[78ch] text-[12.5px] font-light leading-[1.6] text-muted"
+            className="mt-[28px] max-w-[78ch] text-[12.5px] font-light leading-[1.6] text-body"
           >
             <span aria-hidden="true">*</span>{' '}
             <strong className="font-medium text-cream">

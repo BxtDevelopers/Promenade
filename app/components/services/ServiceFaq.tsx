@@ -51,13 +51,13 @@ export default function ServiceFAQSection() {
             leadIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
           ].join(' ')}
         >
-          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+          <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
   Frequently Asked Questions
 </span> 
           <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
   Questions about our
   <br />
-  <em className="not-italic text-coral">dental services</em>.
+  <em className="not-italic text-accent">dental services</em>.
 </h2>
         </div>
 
@@ -71,7 +71,7 @@ export default function ServiceFAQSection() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-6 py-6 text-left group"
                 >
-                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover:text-coral transition-colors">
+                  <span className="font-serif font-normal text-[18px] md:text-[20px] text-ink group-hover:text-accent transition-colors">
                     {item.q}
                   </span>
                   <span
@@ -81,7 +81,7 @@ export default function ServiceFAQSection() {
                     ].join(' ')}
                   >
                     <svg viewBox="0 0 12 12" className="w-3 h-3" aria-hidden="true">
-                      <path d="M6 1v10M1 6h10" stroke="currentColor" className="text-coral" strokeWidth="1.4" strokeLinecap="round" />
+                      <path d="M6 1v10M1 6h10" stroke="currentColor" className="text-accent" strokeWidth="1.4" strokeLinecap="round" />
                     </svg>
                   </span>
                 </button>
@@ -89,7 +89,7 @@ export default function ServiceFAQSection() {
                   className="overflow-hidden transition-all duration-400 ease-out"
                   style={{ maxHeight: isOpen ? '240px' : '0px' }}
                 >
-                  <p className="text-muted text-[14.5px] font-light leading-[1.7] pb-6 lg:max-w-[80%]">
+                  <p className="text-body text-[14.5px] font-light leading-[1.7] pb-6 lg:max-w-[80%]">
                     {item.a}
                   </p>
                 </div>

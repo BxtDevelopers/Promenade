@@ -117,14 +117,14 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
       <div className="px-site max-w-[90%] mx-auto relative z-10 mb-8 md:mb-12">
         <div className="patient-header flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-12 mb-10 md:mb-14">
           <div>
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-3 md:mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-3 md:mb-4">
               {data.eyebrow}
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-7xl leading-[1.08] tracking-[-0.02em] text-ink">
               {data.heading}
             </h2>
           </div>
-          <p className="text-muted font-sans font-light text-[15px] md:text-[16px] lg:max-w-[50%] leading-[1.7]">
+          <p className="text-body font-sans font-light text-[15px] md:text-[16px] lg:max-w-[50%] leading-[1.7]">
             {data.intro}
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function PatientTypesSection({ data }: PatientTypesProps) {
         {/* End cap */}
         {/* <div className="flex-shrink-0 w-24 flex items-center justify-center">
           <div className="w-12 h-12 rounded-full bg-coral/10 border border-coral/40 flex items-center justify-center">
-            <svg className="w-5 h-5 text-coral" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="w-5 h-5 text-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 10h12M12 6l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
@@ -206,7 +206,7 @@ function PatientTypeCard({
           <h3 className="font-serif font-normal text-[20px] md:text-[22px] text-white leading-snug mb-3">
             {item.title}
           </h3>
-          <p className="text-muted font-sans font-light text-[14.5px] md:text-[15px] leading-[1.7]">
+          <p className="text-body font-sans font-light text-[14.5px] md:text-[15px] leading-[1.7]">
             {item.description}
           </p>
         </div>

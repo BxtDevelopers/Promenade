@@ -6,12 +6,12 @@ export default function DoctorPhilosophy() {
     <section className="bg-bg-2 py-section">
       <div className="mx-auto max-w-[1240px] px-site">
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             How she practises
           </span>
           <h2 className="mt-[6px] max-w-[20ch] font-serif text-section font-light leading-[1.05] tracking-[-0.02em] text-white">
             Care that explains{' '}
-            <em className="italic font-normal text-coral">itself</em>.
+            <em className="italic font-normal text-accent">itself</em>.
           </h2>
         </Reveal>
 
@@ -22,7 +22,7 @@ export default function DoctorPhilosophy() {
                 <h3 className="font-serif text-[20px] font-light leading-[1.3] text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 max-w-[52ch] text-[15px] font-light leading-[1.7] text-muted">
+                <p className="mt-3 max-w-[52ch] text-[15px] font-light leading-[1.7] text-body">
                   {item.body}
                 </p>
               </div>

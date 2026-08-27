@@ -48,15 +48,15 @@ export default function BeforeAfterSection() {
           ].join(' ')}
         >
           <div>
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-4">
               Smile Gallery
             </span>
             <h2 className="font-serif font-light text-3xl lg:text-[clamp(40px,4.6vw,80px)] leading-[1.05] tracking-[-0.02em] text-ink">
               Real results from{' '}
-              <em className="not-italic text-coral">real patients</em>.
+              <em className="not-italic text-accent">real patients</em>.
             </h2>
           </div>
-          <p className="text-muted text-[14px] font-light leading-[1.7] max-w-[36ch] md:text-right">
+          <p className="text-body text-[14px] font-light leading-[1.7] max-w-[36ch] md:text-right">
             Patient results shared with permission. Individual outcomes vary.
           </p>
         </div>
@@ -70,9 +70,9 @@ export default function BeforeAfterSection() {
 
         {/* Gallery coming soon notice */}
         <div className="mt-8 rounded-[16px] border border-dashed border-line px-6 py-5 text-center">
-          <p className="text-muted text-[13.5px] font-light">
+          <p className="text-body text-[13.5px] font-light">
             Full smile gallery coming soon. In the meantime,{' '}
-            <a href="/contact-us" className="text-coral underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors">
+            <a href="/contact-us" className="text-accent underline underline-offset-4 decoration-coral/40 hover:decoration-coral transition-colors">
               ask Dr. Shriya about smile makeover options
             </a>{' '}
             at your consultation.
@@ -158,7 +158,7 @@ function BeforeAfterCard({
       {/* Caption */}
       <div className="mt-4 px-1">
         <p className="font-serif text-[17px] text-ink">{cas.label}</p>
-        <p className="text-muted text-[13px] font-light mt-0.5">{cas.note}</p>
+        <p className="text-body text-[13px] font-light mt-0.5">{cas.note}</p>
       </div>
     </div>
   );

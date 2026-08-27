@@ -44,7 +44,7 @@ export default function MaintenanceGridSection({ data }: { data: MaintenanceGrid
           >
             {data.eyebrow && (
               <div className="inline-flex items-center gap-3 mb-6">
-                <span className="text-[11.5px] font-medium tracking-eyebrow uppercase text-coral">
+                <span className="text-[11.5px] font-medium tracking-eyebrow uppercase text-accent">
                   {data.eyebrow}
                 </span>
               </div>
@@ -56,7 +56,7 @@ export default function MaintenanceGridSection({ data }: { data: MaintenanceGrid
             
             <div className="space-y-4 pt-2">
               {data.body.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} className="text-muted text-[15px] md:text-[16px] font-light leading-[1.7] lg:max-w-[80%] ">
+                <p key={idx} className="text-body text-[15px] md:text-[16px] font-light leading-[1.7] lg:max-w-[80%] ">
                   {paragraph}
                 </p>
               ))}
@@ -127,14 +127,14 @@ function MaintenanceCard({
 
       {/* Number */}
       <div className="flex items-center justify-between mb-8">
-        <span className="font-serif text-[18px] text-coral font-medium">
+        <span className="font-serif text-[18px] text-accent font-medium">
           {num}
         </span>
 
         <div className="w-12 h-12 rounded-full bg-coral/10 border border-coral/20 flex items-center justify-center">
           <Icon
             size={22}
-            className="text-coral"
+            className="text-accent"
             strokeWidth={1.75}
           />
         </div>
@@ -145,7 +145,7 @@ function MaintenanceCard({
           {card.title}
         </h3>
 
-        <p className="text-muted text-[15px] leading-[1.75]">
+        <p className="text-body text-[15px] leading-[1.75]">
           {card.body}
         </p>
       </div>

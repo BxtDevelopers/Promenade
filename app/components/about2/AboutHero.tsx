@@ -71,7 +71,7 @@ export default function AboutHero() {
         className="relative z-[2] w-full max-w-[1340px] mx-auto px-site text-center pb-10"
       >
         <Reveal>
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             About us
           </span>
         </Reveal>
@@ -80,7 +80,7 @@ export default function AboutHero() {
           <h1 className="mt-[18px] font-serif text-story-head font-light leading-[1] tracking-[0.025em] text-ink">
             Gentle dentistry,
             <br />
-            <em className="italic font-normal text-coral">built on trust.</em>
+            <em className="italic font-normal text-accent">built on trust.</em>
           </h1>
         </Reveal>
 

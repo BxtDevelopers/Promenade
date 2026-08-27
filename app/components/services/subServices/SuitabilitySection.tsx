@@ -41,7 +41,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
           ].join(' ')}
         >
           {data.eyebrow && (
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent mb-4">
               {data.eyebrow}
             </span>
           )}
@@ -74,7 +74,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 rounded-full bg-coral/20 border border-coral/30 flex items-center justify-center shrink-0">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-coral">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-accent">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
@@ -86,8 +86,8 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
             <ul className="space-y-4">
               {data.goodFit.items.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="text-coral mt-1.5 shrink-0">—</span>
-                  <p className="text-coral text-lg font-light leading-[1.65]">
+                  <span className="text-accent mt-1.5 shrink-0">—</span>
+                  <p className="text-accent text-lg font-light leading-[1.65]">
                     {item}
                   </p>
                 </li>
@@ -120,7 +120,7 @@ export default function SuitabilitySection({ data }: { data: SuitabilityData }) 
             <ul className="space-y-4">
               {data.alternative.items.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="text-muted-2 mt-1.5 shrink-0">—</span>
+                  <span className="text-body-2 mt-1.5 shrink-0">—</span>
                   <p className="text-ink/70 text-lg font-light leading-[1.65]">
                     {item}
                   </p>
