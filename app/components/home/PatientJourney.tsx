@@ -146,16 +146,16 @@ export default function PatientJourney() {
 
         <div className="journey-header mb-10 md:mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-6">
           <div>
-            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-coral font-sans mb-3 md:mb-4">
+            <span className="inline-block text-[11.5px] font-medium tracking-eyebrow uppercase text-accent font-sans mb-3 md:mb-4">
               Your Experience
             </span>
             <h2 className="font-serif font-light text-3xl
             lg:text-[clamp(40px,4.6vw,80px)] leading-[1.04] tracking-[-0.025em] text-ink">
               From first call<br />
-              to <em className="not-italic text-coral">lasting smile</em>.
+              to <em className="not-italic text-accent">lasting smile</em>.
             </h2>
           </div>
-          <p className="text-muted font-sans font-light text-[15px] md:text-[16px] max-w-[38ch] leading-[1.7]">
+          <p className="text-body font-sans font-light text-[15px] md:text-[16px] max-w-[38ch] leading-[1.7]">
             Six moments that define every visit — and why patients keep coming back.
           </p>
         </div>
@@ -189,7 +189,7 @@ export default function PatientJourney() {
         {/* End cap */}
         <div className="flex-shrink-0 w-24 flex items-center justify-center">
           <div className="w-12 h-12 rounded-full bg-coral/10 border border-coral/40 flex items-center justify-center">
-            <svg className="w-5 h-5 text-coral" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="w-5 h-5 text-accent" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 10h12M12 6l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
@@ -245,9 +245,9 @@ function JourneyCard({
         {/* Icon + tag row */}
         <div className="flex items-start justify-between mb-4">
           <div className="inline-flex items-center justify-center w-[48px] h-[48px] md:w-[52px] md:h-[52px] rounded-2xl bg-coral/10 shrink-0">
-            <Icon className="w-5 h-5 md:w-6 md:h-6 text-coral" />
+            <Icon className="w-5 h-5 md:w-6 md:h-6 text-accent" />
           </div>
-          <span className="text-[10.5px] tracking-eyebrow uppercase font-medium text-coral/60 font-sans mt-1">
+          <span className="text-[10.5px] tracking-eyebrow uppercase font-medium text-accent/60 font-sans mt-1">
             {m.tag}
           </span>
         </div>
@@ -256,14 +256,14 @@ function JourneyCard({
           <h3 className="font-serif font-normal text-[18px] md:text-[20px] text-ink leading-snug mb-2 md:mb-3">
             {m.title}
           </h3>
-          <p className="text-muted font-sans font-light text-[13.5px] md:text-[14px] leading-[1.7]">
+          <p className="text-body font-sans font-light text-[13.5px] md:text-[14px] leading-[1.7]">
             {m.body}
           </p>
         </div>
       </div>
 
       {/* Hover step badge */}
-      <div className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-coral flex items-center justify-center text-bg text-[11px] font-semibold font-sans shadow-btn opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute -top-3 -right-3 w-9 h-9 rounded-full bg-coral flex items-center justify-center text-ink text-[11px] font-semibold font-sans shadow-btn opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         {m.step}
       </div>
 

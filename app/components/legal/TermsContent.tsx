@@ -14,7 +14,7 @@ type Section = {
 function Callout({ children }: { children: ReactNode }) {
   return (
     <div className="mt-6 rounded-2xl border border-coral/30 bg-coral/5 px-5 py-4 text-[13px] leading-[1.7] text-ink/80">
-      <span className="font-semibold text-coral">Before this goes live: </span>
+      <span className="font-semibold text-accent">Before this goes live: </span>
       {children}
     </div>
   )
@@ -28,7 +28,7 @@ function List({ items }: { items: ReactNode[] }) {
   return (
     <ul className="mt-4 space-y-2.5 pl-5 text-[18   px] leading-[1.7] text-ink/80">
       {items.map((item, i) => (
-        <li key={i} className="list-disc marker:text-coral pl-1.5">
+        <li key={i} className="list-disc marker:text-accent pl-1.5">
           {item}
         </li>
       ))}
@@ -116,7 +116,7 @@ const sections: Section[] = [
       <P>
         We do not guarantee specific treatment outcomes on this website. Certain restorative work
         we perform is backed by our written care guarantee — see our{' '}
-        <Link href="/warranty" className="text-coral hover:text-ink">
+        <Link href="/warranty" className="text-accent underline underline-offset-2 hover:text-ink">
           Warranty page
         </Link>{' '}
         for what is covered, for how long, and what is required to keep coverage active.
@@ -197,7 +197,7 @@ const sections: Section[] = [
             <>Promenade Dental &mdash; 4905 S. Alma School Rd, Suite 1, Chandler, AZ 85248</>,
             <>
               Phone:{' '}
-              <Link href="tel:+14808028188" className="text-coral hover:text-ink">
+              <Link href="tel:+14808028188" className="text-accent underline underline-offset-2 hover:text-ink">
                 (480) 802-8188
               </Link>
             </>,
@@ -213,12 +213,12 @@ export default function TermsContent() {
     <>
       <section className="relative pt-[clamp(120px,15vw,184px)] pb-[clamp(28px,4vw,40px)]">
         <div className="mx-auto max-w-[1240px] px-site">
-          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-coral">
+          <span className="text-[11.5px] font-medium uppercase tracking-[0.32em] text-accent">
             Website terms
           </span>
 
           <h1 className="mt-[18px] font-serif text-[clamp(34px,5.5vw,52px)] font-light leading-[1.05] tracking-[-0.025em] text-ink">
-            Terms &amp; <em className="italic font-normal text-coral">Conditions.</em>
+            Terms &amp; <em className="italic font-normal text-accent">Conditions.</em>
           </h1>
 
           <p className="mt-[20px] max-w-[58ch] text-[20px] font-light leading-[1.7] text-ink/80">
@@ -235,7 +235,7 @@ export default function TermsContent() {
         <div className="mx-auto max-w-[1240px] px-site">
           {/* Table of contents */}
           <nav className="rounded-2xl border border-line/60 px-6 py-5">
-            <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-coral">
+            <span className="text-[11px] font-medium uppercase tracking-[0.28em] text-accent">
               On this page
             </span>
             <ul className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -243,7 +243,7 @@ export default function TermsContent() {
                 <li key={s.id}>
                   <a
                     href={`#${s.id}`}
-                    className="text-[17.5px] text-ink/70 transition-colors hover:text-coral"
+                    className="text-[17.5px] text-ink/70 transition-colors hover:text-accent"
                   >
                     {s.title}
                   </a>
@@ -264,7 +264,7 @@ export default function TermsContent() {
             ))}
           </div>
 
-          <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ink/50">
+          <p className="mt-[clamp(40px,5vw,56px)] text-[12.5px] leading-[1.7] text-ink/65">
             This page is provided for general informational purposes and does not constitute
             legal advice. Please have this content reviewed by qualified legal counsel before
             publishing.
