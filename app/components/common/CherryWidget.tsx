@@ -58,19 +58,37 @@ export function CherryFullPageWidget() {
         debug: false,
         variables: {${VARIABLES}        },
         styles: {
-            primaryColor: '#e89a72',
-            secondaryColor: '#e89a7210',
+            // --color-accent, not the raw brand coral. Cherry paints this page
+            // on white and uses primaryColor for BOTH filled buttons (white
+            // label on the colour) and outlined ones (the colour as label), so
+            // #e89a72 failed AA twice over at 2.25:1. At #BB531E both land on
+            // 4.8:1. Matches the accent the rest of the light surfaces use.
+            primaryColor: '#BB531E',
+            secondaryColor: '#BB531E10',
             fontFamily: 'Poppins',
             headerFontFamily: 'Poppins',
         }
-    }, ['hero','calculator','howitworks','faq']);`}
+    }, ['hero','calculator','faq']);`}
       </Script>
 
-      {/* Mount points Cherry injects into. */}
+      {/* Mount points Cherry injects into.
+
+          'howitworks' is deliberately absent from both the section list and the
+          mount points. Cherry's How-It-Works component builds a ref with
+          useRef(null) and hands it to an IntersectionObserver, but never
+          attaches that ref to any element, so observe() is called with null and
+          throws "parameter 1 is not of type 'Element'" on every page load. The
+          section rendered nothing either way; dropping it just removes the
+          error, and PaymentsHowItWorks.tsx already covers the same ground.
+          The bug is inside widget.js, so re-test if Cherry ships an update.
+
+          Cherry renders every requested section into one shared layout inside
+          the first mount point, so #hero holds the whole widget and the divs
+          below stay empty. That is normal — they are the anchors Cherry's
+          snippet expects, not a sign anything failed. */}
       <div id="all" />
       <div id="hero" />
       <div id="calculator" />
-      <div id="howitworks" />
       <div id="testimony" />
       <div id="faq" />
     </>
