@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import MakeAPaymentButton from '@/app/components/common/MakeAPaymentButton'
+import { FaInstagram } from 'react-icons/fa6'
+import { INSTAGRAM_URL } from '@/app/lib/seo'
 
 
 export default function Footer() {
@@ -26,6 +28,23 @@ export default function Footer() {
             <p className="text-[14px] font-light leading-[1.65] text-[color:var(--muted)]">
               Modern family dentistry designed around comfort, transparency, and long-term oral health — for every stage of life.
             </p>
+
+            {/* The site audit scored Social 0/100 — not because the practice
+                has no presence, but because nothing on the site linked to it,
+                so neither visitors nor crawlers could find it. The same URL is
+                in siteConfig.sameAs, which is what ties the profile to the
+                business in structured data. Add further profiles in both
+                places, and only once the URL is confirmed live. */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Promenade Dental on Instagram (opens in a new tab)"
+              className="mt-5 inline-flex items-center gap-2 text-[14px] no-underline text-body transition-colors duration-[250ms] hover:text-accent"
+            >
+              <FaInstagram size={18} aria-hidden="true" />
+              <span>@promenadedental_chandler</span>
+            </a>
           </div>
 
           {/* Treatments */}
