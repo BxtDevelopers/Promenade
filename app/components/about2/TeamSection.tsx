@@ -4,18 +4,7 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react'
 import Reveal from '../common/Reveal'
-
-/** Group photo shown under the roster. Swap the file at this path to update it. */
-const TEAM_PHOTO = '/assets/team-group.jpg'
-
-/* The four staff in the group photo. Dr. Sarin is the fifth person in it, but
-   she is not listed here — MeetDoctors below covers her properly. */
-const TEAM = [
-  { name: 'Stephanie Crow', role: 'Patient Coordinator' },
-  { name: 'Theresa Kelly', role: 'Dental Assistant' },
-  { name: 'Jolyn Uhrinyak', role: 'Dental Hygienist' },
-  { name: 'Tanisha Begay', role: 'Dental Assistant' },
-]
+import { TEAM, TEAM_PHOTO, TEAM_PHOTO_ALT } from '@/app/lib/data/teamData'
 
 export default function TeamSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -144,24 +133,12 @@ export default function TeamSection() {
         */}
         <Reveal className="mt-[clamp(34px,4vw,56px)]" delay={0.1}>
           <figure className="m-0">
-            {/* Framing was chosen against the actual file (1536x2048, 3:4) by
-                rendering each candidate crop, not by eye.
-
-                The group sits in the lower half — the dark band of scrubs runs
-                from 66% to 100% of the source height, with faces just above it
-                and a lot of empty ceiling on top. A centred crop therefore
-                lands on bare wall and decapitates everyone, and so does a 16:9
-                frame at any anchor loose enough to keep the feet.
-
-                Bottom-anchored at 4:3 shows the group from roughly 44% down:
-                heads, feet and the reception room, with nothing clipped. On
-                mobile the 4:5 frame shows ~94% of the source, which is
-                effectively the whole photo. One anchor covers both. Re-derive
-                this if the photo is ever swapped for a differently framed one. */}
+            {/* Crop geometry is derived from the source file; the reasoning
+                is recorded alongside TEAM_PHOTO in lib/data/teamData.ts. */}
             <div className="relative overflow-hidden rounded-[24px] border border-neutral-200 aspect-[4/5] sm:aspect-[4/3]">
               <Image
                 src={TEAM_PHOTO}
-                alt="The five-person Promenade Dental team standing together in the practice's reception area in Chandler, Arizona."
+                alt={TEAM_PHOTO_ALT}
                 fill
                 sizes="(max-width: 1240px) 100vw, 1240px"
                 className="object-cover object-bottom"
