@@ -206,38 +206,63 @@ export async function listBookableAppointmentTypes(
  */
 export async function listAvailableSlots(
   config: NexHealthConfig,
-  opts: { startDate: string; days: number; durationMinutes?: number },
+  opts: {
+    startDate: string;
+    days: number;
+    appointmentTypeId?: string;
+    durationMinutes?: number;
+  },
 ): Promise<Slot[]> {
-  const groups = await request<SlotGroup[]>(config, "/available_slots", {
-    params: {
-      start_date: opts.startDate,
-      days: String(Math.min(Math.max(opts.days, 1), 14)),
-      lids: [config.locationId],
-      pids: config.providerIds,
-      /*
-       * Duration is sent as slot_length rather than by passing
-       * appointment_type_id, which would be the more obvious call.
-       *
-       * appointment_type_id only returns slots when the practice has mapped
-       * that type to provider or operatory availability inside NexHealth. Where
-       * it has not, the endpoint returns 200 with an empty slot list and no
-       * error — verified against the sandbox, where every appointment type
-       * yields zero slots via that parameter while the same window returns
-       * hundreds without it. Silent emptiness would read as "fully booked".
-       *
-       * slot_length depends on no mapping, so availability is correct on day
-       * one and stays correct if the mapping is never done. slot_interval is
-       * held at 30 minutes so a longer appointment still offers reasonable
-       * start times instead of only back-to-back ones.
-       */
-      ...(opts.durationMinutes
-        ? {
-            slot_length: String(opts.durationMinutes),
-            slot_interval: String(Math.min(30, opts.durationMinutes)),
-          }
-        : {}),
-    },
-  });
+  const base = {
+    start_date: opts.startDate,
+    days: String(Math.min(Math.max(opts.days, 1), 14)),
+    lids: [config.locationId],
+    pids: config.providerIds,
+  };
+
+  /*
+   * Ask by appointment type first; fall back to a raw duration only if that
+   * returns nothing.
+   *
+   * Both paths are needed, because the endpoint behaves differently depending
+   * on whether the practice has mapped its appointment types to provider or
+   * operatory availability inside NexHealth:
+   *
+   *   - Mapped (this practice): appointment_type_id returns the times the type
+   *     can actually be booked into — 7 slots in a fortnight where the
+   *     unfiltered query returns 31. Asking by duration instead would offer
+   *     all 31 and let the patient choose one of the 24 that gets rejected at
+   *     the point of booking, after they have filled in the whole form.
+   *
+   *   - Unmapped (the sandbox, and any practice that has not configured it):
+   *     appointment_type_id returns 200 with an empty slot array and no error,
+   *     which is indistinguishable from "fully booked".
+   *
+   * The second call therefore only happens on a genuinely empty first result,
+   * which is also the case where being wrong is most expensive.
+   */
+  const byType = opts.appointmentTypeId
+    ? await request<SlotGroup[]>(config, "/available_slots", {
+        params: { ...base, appointment_type_id: opts.appointmentTypeId },
+      })
+    : null;
+
+  const groups =
+    byType && byType.some((g) => (g.slots ?? []).length > 0)
+      ? byType
+      : await request<SlotGroup[]>(config, "/available_slots", {
+          params: {
+            ...base,
+            // slot_interval held at 30 minutes so a longer appointment still
+            // offers sensible start times, not only back-to-back ones.
+            ...(opts.durationMinutes
+              ? {
+                  slot_length: String(opts.durationMinutes),
+                  slot_interval: String(Math.min(30, opts.durationMinutes)),
+                }
+              : {}),
+          },
+        });
 
   return (groups ?? [])
     .flatMap((group) =>

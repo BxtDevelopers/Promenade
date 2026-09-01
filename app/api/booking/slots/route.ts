@@ -59,6 +59,7 @@ export async function GET(request: Request) {
     const slots = await listAvailableSlots(config, {
       startDate,
       days,
+      appointmentTypeId,
       durationMinutes: selected?.minutes,
     });
 
