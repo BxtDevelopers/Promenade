@@ -70,10 +70,14 @@ export default function BookingModal({ open, onClose }: BookingModalProps) {
     document.addEventListener('keydown', onKeyDown);
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Read by globals.css to hide Cherry's floating estimator, which paints
+    // over this dialog from a z-index we cannot outrank.
+    document.body.dataset.modalOpen = 'true';
 
     return () => {
       document.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = prevOverflow;
+      delete document.body.dataset.modalOpen;
     };
   }, [open, onClose]);
 

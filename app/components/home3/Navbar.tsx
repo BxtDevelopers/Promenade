@@ -13,6 +13,7 @@ import {
 import { SERVICES } from '@/app/lib/data/serviceData'
 import { SUB_SERVICES } from '@/app/lib/data/subServiceData'
 import MakeAPaymentButton, { PAY_BILL_URL } from '@/app/components/common/MakeAPaymentButton'
+import { useBookingModal } from '@/app/components/common/BookingModalProvider'
 import Image from 'next/image'
 
 
@@ -20,6 +21,8 @@ export default function Navbar({
   textColor = 'text-white', 
   hoverColor = 'hover:text-white/80' 
 }) {
+  const { openBookingModal } = useBookingModal()
+
   const [servicesOpen, setServicesOpen] = useState(false)
   const [aboutOpen, setAboutOpen]       = useState(false)
   const [patientsOpen, setPatientsOpen] = useState(false)
@@ -329,13 +332,17 @@ export default function Navbar({
           <Phone className="w-[19px] h-[19px] stroke-[1.7]" />
           Call
         </Link>
-        <Link 
-          href={`/contact-us`}
-          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-ink bg-coral text-[10.5px] tracking-[0.1em] uppercase font-semibold"
+        {/* Opens the scheduler rather than linking to /contact-us. This is the
+            most-tapped control on mobile, and a button labelled "Book" that
+            lands on a contact page asks the patient to start over. */}
+        <button
+          type="button"
+          onClick={openBookingModal}
+          className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] text-ink bg-coral text-[10.5px] tracking-[0.1em] uppercase font-semibold"
         >
           <Calendar className="w-[19px] h-[19px] stroke-[1.7]" />
           Book
-        </Link>
+        </button>
         <Link 
           href="https://maps.app.goo.gl/ufAu9qeLdfAFBAMr9"
           className="flex flex-col items-center justify-center gap-[5px] p-[11px_6px] no-underline text-white text-[10.5px] tracking-[0.1em] uppercase font-medium"

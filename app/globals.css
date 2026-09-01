@@ -278,3 +278,22 @@
     transform: none !important;
   }
 }
+/*
+ * Cherry's floating payment estimator renders at z-index 9999 (set in
+ * CherryWidget.tsx, where the offset is already tuned around the sticky mobile
+ * bar and the scroll-to-top button). Nothing in our own stacking context can
+ * outrank it, so a dialog cannot simply raise its own z-index above it.
+ *
+ * While a modal owns the screen the estimator is hidden outright. On a 375px
+ * viewport it landed directly on top of the booking form's phone number field
+ * — a patient filling in their number could not see or tap it.
+ *
+ * Both selectors are needed. #floatingEstimator is the div we render for
+ * Cherry to target; their script does not render into it, but appends its own
+ * #widget-floatingEstimator-mount to <body> instead. The first selector is
+ * kept in case that mounting strategy changes back.
+ */
+body[data-modal-open='true'] #floatingEstimator,
+body[data-modal-open='true'] #widget-floatingEstimator-mount {
+  display: none;
+}

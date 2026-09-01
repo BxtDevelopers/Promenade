@@ -12,6 +12,7 @@ import ConsentDefaults from "./components/common/ConsentDefaults";
 import AttributionCapture from "./components/common/AttributionCapture";
 import OpenAiPixel from "./components/common/OpenAiPixel";
 import { getAnalyticsConfig, getOpenAiPixelConfig } from "./lib/analyticsConfig";
+import { getBookingWidgetConfig } from "./lib/bookingConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -30,6 +31,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const googleReviews = await getGoogleReviews();
   const analyticsConfig = getAnalyticsConfig();
   const openAiPixelConfig = getOpenAiPixelConfig();
+  const bookingWidgetConfig = getBookingWidgetConfig();
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -47,7 +49,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="antialiased">
         <JsonLd data={buildOrganizationJsonLd(googleReviews)} />
         <GoogleReviewsProvider value={googleReviews}>
-        <BookingModalProvider>
+        <BookingModalProvider widgetConfig={bookingWidgetConfig}>
           {children}
           </BookingModalProvider>
           </GoogleReviewsProvider>

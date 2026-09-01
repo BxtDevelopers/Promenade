@@ -380,17 +380,39 @@ export default function Hero() {
             Lakes.
           </p>
 
-          <Link
-            href='tel:+14808028188'
-            className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-ink hover:text-bg bg-coral no-underline whitespace-nowrap transition-all duration-300 hover:bg-ink hover:-translate-y-0.5"
-            style={{
-              padding: '17px 30px',
-              boxShadow:
-                '0 20px 44px -18px rgba(232,154,114,0.7)',
-            }}
-          >
-            Schedule my first visit →
-          </Link>
+          {/*
+            Primary books, secondary calls. The primary used to be the tel:
+            link — reasonable when the only booking path was a form the
+            practice answered by phone anyway, and wrong now that the widget
+            holds live availability. The practice is closed Fri-Sun and after
+            7pm, which is exactly when a visitor who can only call gives up.
+
+            The call stays, one tap away, because a phone number is the path
+            that never breaks: no third-party frame, no JavaScript, no
+            availability to be empty.
+          */}
+          <div className="flex flex-wrap items-center gap-[14px]">
+            <button
+              type="button"
+              onClick={openBookingModal}
+              className="inline-flex items-center gap-3 rounded-full font-sans font-semibold text-[14px] tracking-[0.05em] uppercase text-ink hover:text-bg bg-coral whitespace-nowrap transition-all duration-300 hover:bg-ink hover:-translate-y-0.5"
+              style={{
+                padding: '17px 30px',
+                boxShadow:
+                  '0 20px 44px -18px rgba(232,154,114,0.7)',
+              }}
+            >
+              Schedule my first visit →
+            </button>
+
+            <Link
+              href='tel:+14808028188'
+              className="inline-flex items-center gap-3 rounded-full border border-coral font-sans font-medium text-[14px] tracking-[0.05em] uppercase text-white no-underline whitespace-nowrap transition-all duration-300 hover:border-white hover:bg-white/10"
+              style={{ padding: '16px 28px' }}
+            >
+              Call (480) 802-8188
+            </Link>
+          </div>
         </div>
       </div>
 
