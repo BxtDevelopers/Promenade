@@ -13,6 +13,7 @@ import AttributionCapture from "./components/common/AttributionCapture";
 import OpenAiPixel from "./components/common/OpenAiPixel";
 import { getAnalyticsConfig, getOpenAiPixelConfig } from "./lib/analyticsConfig";
 import { getBookingWidgetConfig } from "./lib/bookingConfig";
+import { getNexHealthConfig } from "./lib/nexhealth";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -32,6 +33,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const analyticsConfig = getAnalyticsConfig();
   const openAiPixelConfig = getOpenAiPixelConfig();
   const bookingWidgetConfig = getBookingWidgetConfig();
+  // Presence only — the credentials stay on the server.
+  const nexHealthEnabled = getNexHealthConfig() !== null;
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -49,7 +52,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="antialiased">
         <JsonLd data={buildOrganizationJsonLd(googleReviews)} />
         <GoogleReviewsProvider value={googleReviews}>
-        <BookingModalProvider widgetConfig={bookingWidgetConfig}>
+        <BookingModalProvider widgetConfig={bookingWidgetConfig} nexHealthEnabled={nexHealthEnabled}>
           {children}
           </BookingModalProvider>
           </GoogleReviewsProvider>
